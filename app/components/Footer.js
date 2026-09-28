@@ -2,79 +2,120 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer-clean">
+    <footer className="footer-luxury-architectural">
       <div className="container">
-        <div className="footer-top-grid">
+        {/* Top Header: Brand Authority & Direct Line */}
+        <div className="footer-pre-row">
           <div>
-            <div className="nav-brand-group" style={{ marginBottom: "12px" }}>
-              <div className="brand-cross-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.8" strokeLinecap="round">
-                  <line x1="12" y1="3" x2="12" y2="21"></line>
-                  <line x1="3" y1="12" x2="21" y2="12"></line>
-                </svg>
-              </div>
-              <span className="brand-name">
-                HomesalesFairfax
-              </span>
-            </div>
-            <p style={{ color: "var(--ink-600)", fontSize: "0.88rem", maxWidth: "320px", marginBottom: "16px", lineHeight: "1.6" }}>
-              Your trusted guide to Fairfax County real estate. Led by Kirill at RE/MAX Allegiance. We help local buyers and sellers make confident moves with honest advice and fast service.
+            <span className="footer-brand-primary">HOMESALES FAIRFAX</span>
+            <span className="footer-brand-creds">
+              RE/MAX ALLEGIANCE • YSC REAL ESTATE GROUP
+            </span>
+            <p className="footer-brand-mission">
+              Dedicated in-home listing consultation, verified Bright MLS inventory, and top producer representation across Fairfax County, Virginia.
             </p>
-            <div style={{ display: "flex", gap: "8px", flexWrap: "wrap" }}>
-              <a href="tel:5712760986" className="btn-capsule-black" style={{ padding: "8px 18px", fontSize: "0.82rem" }}>
-                Call Us: (571) 276-0986
-              </a>
-              <a href="sms:+15712760986" className="btn-card-ask" style={{ padding: "8px 14px", fontSize: "0.82rem" }}>
-                Text Us
-              </a>
-            </div>
           </div>
 
-          <div>
-            <h4 style={{ color: "var(--ink-950)", fontSize: "0.95rem", fontWeight: 700, marginBottom: "14px" }}>Fairfax Submarkets</h4>
-            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "8px", fontSize: "0.88rem", color: "var(--ink-600)" }}>
-              <li><Link href="/fairfax-city-homes-for-sale" className="nav-item-link">Fairfax City (22030)</Link></li>
-              <li><Link href="/mosaic-district-homes" className="nav-item-link">Mosaic District (22031)</Link></li>
-              <li><Link href="/oakton-homes-for-sale" className="nav-item-link">Oakton Estates (22124)</Link></li>
-              <li><Link href="/burke-va-homes-for-sale" className="nav-item-link">Burke &amp; Lake Braddock</Link></li>
-              <li><Link href="/#listings" className="nav-item-link">Fair Lakes &amp; Fair Oaks</Link></li>
-              <li><Link href="/#listings" className="nav-item-link">Skyline / Falls Church</Link></li>
-            </ul>
-          </div>
+          <div className="footer-quick-connect-row">
+            <a href="tel:5712760986" className="footer-pill-link" title="Call Us Direct">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>Call: (571) 276-0986</span>
+            </a>
 
-          <div>
-            <h4 style={{ color: "var(--ink-950)", fontSize: "0.95rem", fontWeight: 700, marginBottom: "14px" }}>Seller &amp; Buyer Hub</h4>
-            <ul style={{ listStyle: "none", display: "flex", flexDirection: "column", gap: "8px", fontSize: "0.88rem", color: "var(--ink-600)" }}>
-              <li><Link href="/sell" className="nav-item-link"><strong>Book In-Home Consultation</strong></Link></li>
-              <li><Link href="/home-valuation" className="nav-item-link">Instant Home Valuation</Link></li>
-              <li><Link href="/market-report" className="nav-item-link">Fairfax Market Report</Link></li>
-              <li><Link href="/mortgage-calculator" className="nav-item-link">Mortgage Calculator</Link></li>
-              <li><Link href="/contact" className="nav-item-link">Direct Office &amp; Contact</Link></li>
-            </ul>
-          </div>
+            <a href="sms:+15712760986" className="footer-pill-link" title="Text Us Direct">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+              </svg>
+              <span>Text: (571) 276-0986</span>
+            </a>
 
-          <div>
-            <h4 style={{ color: "var(--ink-950)", fontSize: "0.95rem", fontWeight: 700, marginBottom: "14px" }}>Office &amp; Direct Line</h4>
-            <p style={{ color: "var(--ink-600)", fontSize: "0.88rem", lineHeight: "1.6", marginBottom: "8px" }}>
-              <strong>RE/MAX Allegiance</strong><br />
-              5100 Leesburg Pike, Suite 200<br />
-              Alexandria / Fairfax County, VA 22302
-            </p>
-            <p style={{ color: "var(--ink-600)", fontSize: "0.88rem", lineHeight: "1.6" }}>
-              Direct: <strong>(571) 276-0986</strong><br />
-              Office: <strong>(703) 824-4800</strong><br />
-              Email: <a href="mailto:kirillysc@gmail.com" style={{ color: "var(--ink-950)", fontWeight: 700 }}>kirillysc@gmail.com</a>
-            </p>
+            <a href="mailto:kirillysc@gmail.com" className="footer-pill-link" title="Official Email">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <span>kirillysc@gmail.com</span>
+            </a>
           </div>
         </div>
 
-        <div className="footer-bottom-line">
+        {/* 4 Architectural Navigation Columns */}
+        <div className="footer-quad-grid">
+          {/* Column 1: Submarkets */}
           <div>
-            © {new Date().getFullYear()} homesalesfairfax.com • Kirill | RE/MAX Allegiance. All Rights Reserved.
+            <h4 className="footer-column-title">Fairfax Submarkets</h4>
+            <ul className="footer-nav-list">
+              <li><Link href="/fairfax-city-homes-for-sale">Fairfax City (22030)</Link></li>
+              <li><Link href="/mosaic-district-homes">Mosaic District (22031)</Link></li>
+              <li><Link href="/oakton-homes-for-sale">Oakton Estates (22124)</Link></li>
+              <li><Link href="/burke-va-homes-for-sale">Burke &amp; Lake Braddock</Link></li>
+              <li><Link href="/#listings">Falls Church &amp; Skyline</Link></li>
+              <li><Link href="/#listings">Browse Active Bright MLS</Link></li>
+            </ul>
           </div>
-          <div style={{ display: "flex", gap: "16px" }}>
+
+          {/* Column 2: Seller Advisory */}
+          <div>
+            <h4 className="footer-column-title">Seller Advisory</h4>
+            <ul className="footer-nav-list">
+              <li><Link href="/sell">Book In-Home Consultation</Link></li>
+              <li><Link href="/home-valuation">Instant Home Valuation</Link></li>
+              <li><Link href="/market-report">Fairfax Market Intel Report</Link></li>
+              <li><Link href="/sell">Comprehensive 15-Page CMA</Link></li>
+              <li><Link href="/#referrals">25% Broker Referral Program</Link></li>
+              <li><Link href="/market-report">Recent Closed Sales</Link></li>
+            </ul>
+          </div>
+
+          {/* Column 3: Buyer & Relocation */}
+          <div>
+            <h4 className="footer-column-title">Buyer &amp; Relocation</h4>
+            <ul className="footer-nav-list">
+              <li><Link href="/#listings">Fairfax Single Family Homes</Link></li>
+              <li><Link href="/mosaic-district-homes">Luxury Townhome Living</Link></li>
+              <li><Link href="/mortgage-calculator">Mortgage Payment Estimator</Link></li>
+              <li><Link href="/contact">Schedule Private Showing</Link></li>
+              <li><Link href="/#neighborhoods">Top School Pyramids</Link></li>
+              <li><Link href="/contact">Out-of-State Relocation</Link></li>
+            </ul>
+          </div>
+
+          {/* Column 4: Brokerage & Direct Location */}
+          <div>
+            <h4 className="footer-column-title">Office &amp; Brokerage</h4>
+            <ul className="footer-nav-list">
+              <li style={{ color: "#F1F5F9", fontWeight: 700 }}>
+                Kirill Gorbounov
+              </li>
+              <li style={{ color: "#94A3B8" }}>
+                RE/MAX Allegiance
+              </li>
+              <li style={{ color: "#94A3B8" }}>
+                5100 Leesburg Pike, Suite 200
+              </li>
+              <li style={{ color: "#94A3B8" }}>
+                Alexandria / Fairfax, VA 22302
+              </li>
+              <li style={{ marginTop: "6px" }}>
+                <span style={{ color: "var(--accent-gold)", fontWeight: 700 }}>Office: (703) 824-4800</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom Clean Legal Bar */}
+        <div className="footer-sub-legal">
+          <div>
+            © {new Date().getFullYear()} homesalesfairfax.com • Kirill Gorbounov • RE/MAX Allegiance. All Rights Reserved.
+          </div>
+          <div className="footer-compliance-tags">
             <span>Equal Housing Opportunity</span>
+            <span>•</span>
             <span>Bright MLS IDX Participant</span>
+            <span>•</span>
+            <span>NVAR Top Producer</span>
           </div>
         </div>
       </div>

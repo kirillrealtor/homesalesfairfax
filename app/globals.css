@@ -1296,3 +1296,161 @@ input, select, textarea {
   }
 }
 
+/* ========================================================
+   EDITORIAL LUXURY FOOTER: MINIMALIST, CLEAN & EXPANSIVE
+   ======================================================== */
+.footer-luxury-architectural {
+  background: linear-gradient(180deg, #0D131F 0%, #080C14 100%);
+  color: #FFFFFF;
+  padding: 80px 0 44px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  position: relative;
+}
+
+/* Pre-Row: Brand Title & Direct Action Pills */
+.footer-pre-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: 48px;
+  margin-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.footer-brand-primary {
+  font-family: var(--font-heading), 'Inter', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #FFFFFF;
+  display: block;
+}
+
+.footer-brand-creds {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--accent-gold);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+.footer-brand-mission {
+  color: #94A3B8;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 520px;
+  margin: 12px 0 0;
+}
+
+/* Quick Connect Pills on Top Right */
+.footer-quick-connect-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.footer-pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #F8FAFC;
+  padding: 10px 18px;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.footer-pill-link:hover {
+  background: #FFFFFF;
+  color: var(--ink-950);
+  border-color: #FFFFFF;
+  transform: translateY(-1px);
+}
+
+/* 4 Clean Columns Grid */
+.footer-quad-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  margin-bottom: 64px;
+}
+
+.footer-column-title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+}
+
+.footer-nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-nav-list a {
+  color: #94A3B8;
+  font-size: 0.92rem;
+  line-height: 1.5;
+  transition: all 0.15s ease;
+  text-decoration: none;
+}
+
+.footer-nav-list a:hover {
+  color: #FFFFFF;
+  transform: translateX(2px);
+}
+
+/* Bottom Legal Strip */
+.footer-sub-legal {
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #64748B;
+  font-size: 0.85rem;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.footer-compliance-tags {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #64748B;
+}
+
+@media (max-width: 960px) {
+  .footer-quad-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+  .footer-pre-row {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-quad-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .footer-sub-legal {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
