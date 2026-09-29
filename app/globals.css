@@ -97,23 +97,52 @@ input, select, textarea {
    NAVBAR: COMPLETELY TRANSPARENT, NO BORDER, NO BACKGROUND
    (Exact Match to User Reference Image)
    ======================================================== */
+/* ========================================================
+   NAVBAR: MODERN LUXURY HEADER (Single Line, Never Wraps)
+   ======================================================== */
 .nav-header {
   width: 100%;
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
-  padding: 18px 24px;
+  padding: 16px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
+  position: relative;
+  z-index: 100;
   margin-bottom: 8px;
 }
 
-/* Left: 4-Point Flower/Cross Icon + Brand */
+/* Left: Brand Group with Logo + Divider + Text */
 .nav-brand-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  text-decoration: none;
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+.nav-brand-logo {
+  height: 40px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.nav-brand-divider {
+  width: 1px;
+  height: 28px;
+  background: #CBD5E1;
+  flex-shrink: 0;
+}
+
+.nav-brand-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .brand-cross-icon {
@@ -126,69 +155,178 @@ input, select, textarea {
 }
 
 .brand-name {
-  font-size: 1.18rem;
-  font-weight: 700;
+  font-size: 1.16rem;
+  font-weight: 800;
   color: var(--ink-950);
-  letter-spacing: -0.02em;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+  white-space: nowrap;
 }
 
-/* Center: Centered Minimalist Links */
+.brand-subline {
+  font-size: 0.65rem;
+  color: var(--ink-500);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-top: 1px;
+}
+
+/* Center: Centered Minimalist Links - NEVER WRAPS */
 .nav-menu-center {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 22px;
+  flex-shrink: 1;
+  white-space: nowrap;
 }
 
 .nav-item-link {
-  color: var(--ink-600);
-  font-size: 0.92rem;
-  font-weight: 500;
+  color: var(--ink-700);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  text-decoration: none;
   transition: color 0.15s ease;
+  position: relative;
+  padding: 4px 0;
 }
 
 .nav-item-link:hover {
   color: var(--ink-950);
 }
 
+.nav-item-link:hover::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--accent-gold);
+  border-radius: 2px;
+}
+
 /* Right: Direct Phone & Sleek Black Capsule Pill Button */
 .nav-actions-group {
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 14px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .nav-phone-link {
-  color: var(--ink-700);
+  color: var(--ink-900);
   font-size: 0.88rem;
-  font-weight: 600;
+  font-weight: 700;
   display: flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
+  text-decoration: none;
   transition: color 0.15s ease;
 }
 
 .nav-phone-link:hover {
-  color: var(--ink-950);
+  color: var(--accent-gold);
 }
 
 /* Launch BETA style rounded capsule button */
 .btn-capsule-black {
   background: var(--ink-950);
   color: #FFFFFF;
-  font-size: 0.88rem;
+  font-size: 0.86rem;
   font-weight: 600;
-  padding: 10px 24px;
+  padding: 10px 20px;
   border-radius: var(--radius-pill);
   transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   letter-spacing: -0.01em;
+  white-space: nowrap;
+  text-decoration: none;
 }
 
 .btn-capsule-black:hover {
   background: var(--ink-800);
   transform: translateY(-1px);
+}
+
+/* Mobile Toggle - Hidden on desktop */
+.nav-mobile-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--ink-950);
+  cursor: pointer;
+  padding: 6px;
+}
+
+/* Responsive Scaling: 1200px - 1440px */
+@media (max-width: 1440px) {
+  .nav-menu-center {
+    gap: 16px;
+  }
+  .nav-item-link {
+    font-size: 0.84rem;
+  }
+  .nav-brand-logo {
+    height: 36px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .nav-menu-center {
+    gap: 12px;
+  }
+  .nav-item-link {
+    font-size: 0.80rem;
+  }
+  .btn-capsule-black {
+    padding: 8px 16px;
+    font-size: 0.82rem;
+  }
+}
+
+/* Tablet & Mobile: Show Hamburger, Hide desktop links */
+@media (max-width: 1100px) {
+  .nav-menu-center {
+    display: none;
+  }
+  .nav-mobile-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-mobile-drawer {
+    position: absolute;
+    top: 100%;
+    left: 20px;
+    right: 20px;
+    background: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 16px;
+    box-shadow: 0 16px 40px -10px rgba(15, 23, 42, 0.15);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    z-index: 200;
+  }
+  .nav-mobile-link {
+    color: var(--ink-900);
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 6px 0;
+  }
+  .nav-mobile-link:hover {
+    color: var(--accent-gold);
+  }
 }
 
 /* ========================================================
