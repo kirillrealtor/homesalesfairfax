@@ -3,14 +3,14 @@
 export default function ShowingModal({ property, isOpen, onClose }) {
   if (!isOpen) return null;
 
-  const internationalPhone = "15712760986";
-  const displayPhone = "(571) 276-0986";
-  const email = "kirillysc@gmail.com";
+  const internationalPhone = "17036257888";
+  const displayPhone = "(703) 625-7888";
+  const email = "ElenaYSC@gmail.com";
 
   const propText = property ? property.address : "a Fairfax County home";
-  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Kirill,%20I%20would%20like%20to%20schedule%20a%20private%20showing%20for%20${encodeURIComponent(propText)}.`;
-  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Kirill,%20I%20would%20like%20to%20schedule%20a%20private%20showing%20for%20${encodeURIComponent(propText)}.`;
-  const mailUrl = `mailto:${email}?subject=Private%20Showing%20Request%20-%20${encodeURIComponent(propText)}&body=Hi%20Kirill,%0A%0AI%20would%20like%20to%20schedule%20a%20private%20showing%20for%20${encodeURIComponent(propText)}.`;
+  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Elena,%20I%20would%20like%20to%20schedule%20a%20private%20showing%20for%20${encodeURIComponent(propText)}.`;
+  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Elena,%20I%20would%20like%20to%20schedule%20a%20private%20showing%20for%20${encodeURIComponent(propText)}.`;
+  const mailUrl = `mailto:${email}?subject=Private%20Showing%20Request%20-%20${encodeURIComponent(propText)}&body=Hi%20Elena,%0A%0AI%20would%20like%20to%20schedule%20a%20private%20showing%20for%20${encodeURIComponent(propText)}.`;
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -78,7 +78,7 @@ export default function ShowingModal({ property, isOpen, onClose }) {
         </div>
 
         <div style={{ textAlign: "center", fontSize: "0.85rem", color: "var(--ink-600)", borderTop: "1px solid var(--ink-200)", paddingTop: "16px" }}>
-          🔒 <strong>Zero sales pressure.</strong> You connect straight to Kirill's personal cell phone to confirm showing time and lockbox access.
+          🔒 <strong>Zero sales pressure.</strong> You connect straight to Elena's personal cell phone to confirm showing time and lockbox access.
         </div>
       </div>
     </div>

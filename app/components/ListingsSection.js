@@ -33,7 +33,7 @@ export default function ListingsSection({ searchFilters, onSelectPropertyForTour
           <span className="section-pretitle">Active Inventory &amp; Buyer Demand</span>
           <h2 className="section-title-bold">Active Fairfax County Home Sales</h2>
           <p className="section-lead-text">
-            See how Kirill markets properties across Northern Virginia. Browse current MLS listings, view sale prices, or call us / text us for private off-market access.
+            See how Elena markets properties across Northern Virginia. Browse current MLS listings, view sale prices, or call us / text us for private off-market access.
           </p>
         </div>
 
@@ -145,11 +145,11 @@ export default function ListingsSection({ searchFilters, onSelectPropertyForTour
                     </button>
 
                     <a 
-                      href={`sms:+15712760986?body=Hi%20Kirill,%20I'm%20interested%20in%20a%20private%20showing%20for%20${encodeURIComponent(property.address)}.`}
+                      href={`sms:+17036257888?body=Hi%20Elena,%20I'm%20interested%20in%20a%20private%20showing%20for%20${encodeURIComponent(property.address)}.`}
                       className="btn-card-ask"
                       title="Text Us directly for lockbox or private showing"
                     >
-                      Text Us: (571) 276-0986
+                      Text Us: (703) 625-7888
                     </a>
                   </div>
                 </div>

@@ -22,7 +22,7 @@ export const FAIRFAX_LISTINGS = [
     yearBuilt: 2021,
     garage: "3-Car Garage",
     mlsNumber: "VAFX2198042",
-    showingAgent: "Kirill (Direct Access)"
+    showingAgent: "Elena (Direct Access)"
   },
   {
     id: "ffx-2910",
@@ -47,7 +47,7 @@ export const FAIRFAX_LISTINGS = [
     yearBuilt: 2022,
     garage: "2-Car Attached",
     mlsNumber: "VAFX2194301",
-    showingAgent: "Kirill • Immediate Lockbox Access"
+    showingAgent: "Elena • Immediate Lockbox Access"
   },
   {
     id: "ffx-5100",
@@ -72,7 +72,7 @@ export const FAIRFAX_LISTINGS = [
     yearBuilt: 2018,
     garage: "2 Underground Reserved",
     mlsNumber: "VAFX2189011",
-    showingAgent: "Kirill (Skyline Specialist)"
+    showingAgent: "Elena (Skyline Specialist)"
   },
   {
     id: "ffx-3412",
@@ -97,7 +97,7 @@ export const FAIRFAX_LISTINGS = [
     yearBuilt: 2020,
     garage: "3-Car Side Load",
     mlsNumber: "VAFX2201994",
-    showingAgent: "Kirill (Direct Access)"
+    showingAgent: "Elena (Direct Access)"
   },
   {
     id: "ffx-9805",
@@ -122,7 +122,7 @@ export const FAIRFAX_LISTINGS = [
     yearBuilt: 2015,
     garage: "2-Car Attached",
     mlsNumber: "VAFX2199831",
-    showingAgent: "Kirill • Burke Specialist"
+    showingAgent: "Elena • Burke Specialist"
   },
   {
     id: "ffx-11700",
@@ -147,7 +147,7 @@ export const FAIRFAX_LISTINGS = [
     yearBuilt: 2017,
     garage: "2-Car Garage",
     mlsNumber: "VAFX2190045",
-    showingAgent: "Kirill (Direct Access)"
+    showingAgent: "Elena (Direct Access)"
   }
 ];
 
@@ -159,7 +159,7 @@ export const NEIGHBORHOOD_GUIDES = [
     avgPrice: "$910,000",
     vibe: "Historic Charm, Tree-Lined Walkability & Top Schools",
     highlights: ["Woodson & Fairfax High Pyramids", "Walkable Old Town Square & Dining", "George Mason University Cultural Hub"],
-    image: "/images/hero-estate.jpg"
+    image: "/images/communities/fairfax-city.jpg"
   },
   {
     slug: "mosaic-district",
@@ -168,7 +168,7 @@ export const NEIGHBORHOOD_GUIDES = [
     avgPrice: "$830,000",
     vibe: "Urban Luxury, Premier Dining & Metro Transit",
     highlights: ["Walk to Dunn Loring-Merrifield Metro", "Angelika Film Center & Target", "Modern 4-Level Rooftop Townhomes"],
-    image: "/images/townhouse.jpg"
+    image: "/images/communities/mosaic-district.jpg"
   },
   {
     slug: "oakton",
@@ -177,7 +177,7 @@ export const NEIGHBORHOOD_GUIDES = [
     avgPrice: "$1,450,000",
     vibe: "Secluded Acre Estates & Executive Prestige",
     highlights: ["Top-Rated Oakton High School Pyramid", "Private Wooded Multi-Acre Lots", "10 Mins to Tysons Corner & Dulles Toll Rd"],
-    image: "/images/hero-estate.jpg"
+    image: "/images/communities/oakton-estates.jpg"
   },
   {
     slug: "burke",
@@ -186,6 +186,6 @@ export const NEIGHBORHOOD_GUIDES = [
     avgPrice: "$760,000",
     vibe: "Lakeside Recreation, Family Parks & Direct Commuter Rail",
     highlights: ["Lake Braddock Secondary School", "Burke Centre VRE Direct to DC Union Station", "Lush County Trails & Lake Access"],
-    image: "/images/townhouse.jpg"
+    image: "/images/communities/burke-lake.jpg"
   }
 ];

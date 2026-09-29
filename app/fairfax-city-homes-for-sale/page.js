@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata = {
   title: "Fairfax City VA Homes For Sale | 22030 Real Estate & Listings | homesalesfairfax.com",
-  description: "Explore active homes for sale in Fairfax City, VA (ZIP 22030). Single family estates, Woodson & Fairfax school pyramids, and private tour booking with Kirill.",
+  description: "Explore active homes for sale in Fairfax City, VA (ZIP 22030). Single family estates, Woodson & Fairfax school pyramids, and private tour booking with Elena.",
   alternates: {
     canonical: "https://homesalesfairfax.com/fairfax-city-homes-for-sale",
   },
@@ -81,7 +81,7 @@ export default function FairfaxCityPage() {
                   </div>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px", marginTop: "18px" }}>
                     <a 
-                      href={`sms:+15712760986?body=Hi%20Kirill,%20I'm%20interested%20in%20a%20private%20showing%20for%20${encodeURIComponent(property.address)}.`}
+                      href={`sms:+17036257888?body=Hi%20Elena,%20I'm%20interested%20in%20a%20private%20showing%20for%20${encodeURIComponent(property.address)}.`}
                       className="btn-capsule-black"
                       style={{ textAlign: "center", padding: "10px", fontSize: "0.85rem", fontWeight: 700 }}
                       title="Text Us via SMS"
@@ -89,7 +89,7 @@ export default function FairfaxCityPage() {
                       Text Us
                     </a>
                     <a 
-                      href="tel:5712760986"
+                      href="tel:7036257888"
                       className="btn-card-ask"
                       style={{ textAlign: "center", padding: "10px", fontSize: "0.85rem", fontWeight: 700 }}
                       title="Call Us Direct"

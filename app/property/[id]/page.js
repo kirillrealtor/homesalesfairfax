@@ -114,7 +114,7 @@ export default function PropertyDetailPage({ params }) {
                 ✓ Subdivision: {property.neighborhood}
               </li>
               <li style={{ display: "flex", alignItems: "center", gap: "8px", fontSize: "0.92rem", color: "var(--ink-700)" }}>
-                ✓ Showing Advisory: Kirill (RE/MAX Allegiance / YSC)
+                ✓ Showing Advisory: Elena (RE/MAX Allegiance / YSC)
               </li>
             </ul>
 
@@ -122,7 +122,7 @@ export default function PropertyDetailPage({ params }) {
             <div style={{ background: "var(--bg-subtle)", padding: "24px", borderRadius: "var(--radius-md)", border: "1px solid var(--ink-200)" }}>
               <h3 style={{ fontSize: "1.2rem", fontWeight: 800, marginBottom: "8px" }}>Fairfax County Public Schools</h3>
               <p style={{ fontSize: "0.88rem", color: "var(--ink-600)" }}>
-                This home is served by top-rated Fairfax County Public Schools. Contact Kirill to confirm current school assignments for this address.
+                This home is served by top-rated Fairfax County Public Schools. Contact Elena to confirm current school assignments for this address.
               </p>
             </div>
           </div>
@@ -136,12 +136,12 @@ export default function PropertyDetailPage({ params }) {
               Tour This Home in Person
             </h3>
             <p style={{ fontSize: "0.88rem", color: "var(--ink-500)", marginBottom: "20px" }}>
-              Kirill will coordinate your private walkthrough directly. No pushy sales calls.
+              Elena will coordinate your private walkthrough directly. No pushy sales calls.
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "10px", marginTop: "16px" }}>
               <a 
-                href={`sms:+15712760986?body=Hi%20Kirill,%20I'm%20interested%20in%20a%20private%20showing%20for%20${encodeURIComponent(property.address)}.`}
+                href={`sms:+17036257888?body=Hi%20Elena,%20I'm%20interested%20in%20a%20private%20showing%20for%20${encodeURIComponent(property.address)}.`}
                 className="btn-capsule-black"
                 style={{ width: "100%", padding: "14px", fontSize: "0.95rem", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px" }}
                 title="Text Us via SMS"
@@ -149,11 +149,11 @@ export default function PropertyDetailPage({ params }) {
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
                   <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
                 </svg>
-                Text Us: (571) 276-0986 &rarr;
+                Text Us: (703) 625-7888 &rarr;
               </a>
 
               <a 
-                href="tel:5712760986" 
+                href="tel:7036257888" 
                 className="btn-card-ask"
                 style={{ width: "100%", padding: "12px", textAlign: "center", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", fontWeight: 700 }}
                 title="Call Us Direct"
@@ -161,11 +161,11 @@ export default function PropertyDetailPage({ params }) {
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
                 </svg>
-                Call Us: (571) 276-0986
+                Call Us: (703) 625-7888
               </a>
 
               <a 
-                href={`https://wa.me/15712760986?text=Hi%20Kirill,%20I'm%20interested%20in%20a%20private%20showing%20for%20${encodeURIComponent(property.address)}.`}
+                href={`https://wa.me/17036257888?text=Hi%20Elena,%20I'm%20interested%20in%20a%20private%20showing%20for%20${encodeURIComponent(property.address)}.`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-card-ask"

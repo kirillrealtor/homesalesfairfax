@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function HeroSearch({ onSearch, onOpenTourModal, onSellerAddressSubmit, initialAddress = "" }) {
   const [activeMode, setActiveMode] = useState("sell"); // "sell" is default per boss's business goal!
@@ -81,7 +82,7 @@ export default function HeroSearch({ onSearch, onOpenTourModal, onSellerAddressS
           </h1>
 
           <p className="hero-subtitle-clean">
-            Thinking of selling? Find out what qualified buyers will pay for your property. Book an in-home listing consultation with Kirill to protect your equity and sell with confidence.
+            Thinking of selling? Find out what qualified buyers will pay for your property. Book an in-home listing consultation with Elena to protect your equity and sell with confidence.
           </p>
 
           {/* Seller Address Input Box */}
@@ -103,8 +104,30 @@ export default function HeroSearch({ onSearch, onOpenTourModal, onSellerAddressS
             </button>
           </form>
 
+          {/* Hyper-Local Neighborhood Comps Quick Links */}
+          <div style={{ marginTop: "18px", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", flexWrap: "wrap" }}>
+            <span style={{ fontSize: "0.78rem", color: "#CBD5E1", textTransform: "uppercase", fontWeight: 700, letterSpacing: "0.05em", marginRight: "4px" }}>
+              Monthly Comps Dossiers:
+            </span>
+            <Link href="/mantua-real-estate" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Mantua (22031)
+            </Link>
+            <Link href="/mosby-woods-market" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Mosby Woods (22030)
+            </Link>
+            <Link href="/franklin-farm-values" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Franklin Farm (22033)
+            </Link>
+            <Link href="/kings-park-west-real-estate" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Kings Park West (22032)
+            </Link>
+            <Link href="/market-report" style={{ background: "rgba(197, 168, 128, 0.28)", color: "var(--accent-gold)", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 700, textDecoration: "none", border: "1px solid rgba(197, 168, 128, 0.45)" }}>
+              All ZIP Reports &rarr;
+            </Link>
+          </div>
+
           {/* Clean, quiet proof line */}
-          <div style={{ marginTop: "22px", fontSize: "0.9rem", color: "#CBD5E1", fontWeight: 500, textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
+          <div style={{ marginTop: "18px", fontSize: "0.9rem", color: "#CBD5E1", fontWeight: 500, textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
             Over $320M in Closed Sales • Top 1% Northern Virginia Team • Free In-Home Pricing Strategy
           </div>
         </>
@@ -115,7 +138,7 @@ export default function HeroSearch({ onSearch, onOpenTourModal, onSellerAddressS
           </h1>
 
           <p className="hero-subtitle-clean">
-            Browse active homes updated every 15 minutes from Bright MLS. Book private home tours with zero sales pressure, or plan your move with Kirill.
+            Browse active homes updated every 15 minutes from Bright MLS. Book private home tours with zero sales pressure, or plan your move with Elena.
           </p>
 
           {/* Sleek Capsule Search Bar */}

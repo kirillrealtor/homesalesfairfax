@@ -2,8 +2,8 @@
 
 Premier digital real estate portal for **Fairfax County, Northern Virginia**, featuring active Bright MLS listings, seller in-home consultation booking, computational home valuation benchmarks, and direct client-side tour coordination.
 
-**Represented by:** Kirill Gorbounov • RE/MAX Allegiance • YSC Real Estate Group  
-**Direct Contact:** (571) 276-0986 | kirillysc@gmail.com
+**Represented by:** Elena Gorbounova • RE/MAX Allegiance • YSC Real Estate Group  
+**Direct Contact:** Mobile: (703) 625-7888 | Office: (703) 824-4800 | ElenaYSC@gmail.com
 
 ---
 

@@ -1,15 +1,127 @@
+import Link from "next/link";
 import { NEIGHBORHOOD_GUIDES } from "../data/listings";
 
 export default function NeighborhoodsSection({ onFilterNeighborhood }) {
+  const hyperLocalReports = [
+    {
+      name: "Mantua",
+      zip: "22031",
+      path: "/mantua-real-estate",
+      median: "$995,000",
+      dom: "8 Days",
+      pyramid: "Woodson High School",
+      tagline: "Wooded half-acre lots & active swim/tennis"
+    },
+    {
+      name: "Mosby Woods",
+      zip: "22030",
+      path: "/mosby-woods-market",
+      median: "$865,000",
+      dom: "7 Days",
+      pyramid: "Fairfax High School",
+      tagline: "Vienna Metro corridor & walk to Old Town"
+    },
+    {
+      name: "Franklin Farm",
+      zip: "22033",
+      path: "/franklin-farm-values",
+      median: "$935,000",
+      dom: "8 Days",
+      pyramid: "Oakton / Chantilly",
+      tagline: "6 fishing ponds, 13 miles of trails & pools"
+    },
+    {
+      name: "Kings Park West",
+      zip: "22032",
+      path: "/kings-park-west-real-estate",
+      median: "$825,000",
+      dom: "9 Days",
+      pyramid: "Robinson Secondary IB",
+      tagline: "Lake Royal recreation & George Mason corridor"
+    },
+  ];
+
   return (
     <section id="neighborhoods" className="content-section" style={{ background: "var(--bg-page)" }}>
       <div className="container">
+        {/* Section Header */}
         <div className="section-head-clean">
-          <span className="section-pretitle">Explore Communities</span>
-          <h2 className="section-title-bold">Life Across Fairfax County</h2>
+          <span className="section-pretitle">Hyper-Local Neighborhood Authority</span>
+          <h2 className="section-title-bold">Fairfax County Neighborhood Market Reports</h2>
           <p className="section-lead-text">
-            Fairfax County offers great neighborhoods for every lifestyle. Explore historic town centers, walkable shopping districts, and quiet wooded streets. Find the right community for you below.
+            Sellers want a true neighborhood specialist, not just a generic city agent. Explore live pricing benchmarks, recent closed sales comps, and monthly market reports for high-turnover subdivisions across ZIP codes 22030, 22031, 22032, and 22033.
           </p>
+        </div>
+
+        {/* Hyper-Local Neighborhood Reports Strip (Formula: [Neighborhood Name] + Real Estate / Market Report) */}
+        <div style={{ marginBottom: "48px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "18px", flexWrap: "wrap", gap: "10px" }}>
+            <span style={{ fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+              ✦ Direct Postcard &amp; Monthly QR Dossiers
+            </span>
+            <Link href="/market-report" style={{ fontSize: "0.88rem", color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>
+              View All Fairfax County ZIP Reports &rarr;
+            </Link>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "18px" }}>
+            {hyperLocalReports.map((nh) => (
+              <Link 
+                key={nh.name}
+                href={nh.path}
+                style={{ 
+                  background: "#FFFFFF", 
+                  borderRadius: "var(--radius-md)", 
+                  padding: "24px", 
+                  border: "1.5px solid var(--ink-200)", 
+                  boxShadow: "var(--shadow-card)", 
+                  textDecoration: "none", 
+                  color: "inherit",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  transition: "transform 0.15s ease, border-color 0.15s ease"
+                }}
+              >
+                <div>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "6px" }}>
+                    <span style={{ fontSize: "0.75rem", background: "rgba(197, 168, 128, 0.15)", color: "var(--accent-gold)", padding: "2px 8px", borderRadius: "9999px", fontWeight: 800 }}>
+                      ZIP {nh.zip}
+                    </span>
+                    <span style={{ fontSize: "0.78rem", color: "var(--status-active)", fontWeight: 700 }}>
+                      {nh.dom}
+                    </span>
+                  </div>
+                  <h3 style={{ fontSize: "1.35rem", fontWeight: 800, color: "var(--ink-950)", margin: "4px 0" }}>
+                    {nh.name}
+                  </h3>
+                  <span style={{ display: "block", fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 700, marginBottom: "8px" }}>
+                    {nh.pyramid}
+                  </span>
+                  <p style={{ fontSize: "0.85rem", color: "var(--ink-600)", lineHeight: "1.45", margin: "0 0 16px" }}>
+                    {nh.tagline}
+                  </p>
+                </div>
+
+                <div style={{ borderTop: "1px solid var(--ink-100)", paddingTop: "12px", display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
+                  <div>
+                    <span style={{ fontSize: "0.7rem", color: "var(--ink-400)", textTransform: "uppercase", fontWeight: 700, display: "block" }}>Median Sold</span>
+                    <strong style={{ fontSize: "1.15rem", color: "var(--ink-950)" }}>{nh.median}</strong>
+                  </div>
+                  <span style={{ fontSize: "0.82rem", color: "var(--ink-950)", fontWeight: 700 }}>
+                    Report &rarr;
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Established Submarket Communities */}
+        <div style={{ marginTop: "32px", marginBottom: "18px" }}>
+          <span style={{ fontSize: "0.82rem", color: "var(--ink-500)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+            Fairfax Submarket Exploration
+          </span>
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(270px, 1fr))", gap: "24px" }}>
@@ -88,9 +200,9 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
 
         <div style={{ marginTop: "32px", textAlign: "center", padding: "18px 24px", background: "rgba(255,255,255,0.75)", borderRadius: "14px", border: "1px solid var(--ink-200)" }}>
           <span style={{ fontSize: "0.9rem", color: "var(--ink-700)", lineHeight: "1.6" }}>
-            Considering Vienna, McLean, Great Falls, Reston, or Falls Church? Kirill represents clients across all of Northern Virginia.{" "}
-            <a href="sms:+15712760986?body=Hi%20Kirill,%20I'm%20exploring%20homes%20in%20" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>
-              Text Us at (571) 276-0986 for private off-market insight &rarr;
+            Considering Vienna, McLean, Great Falls, Reston, or Falls Church? Elena represents clients across all of Northern Virginia.{" "}
+            <a href="sms:+17036257888?body=Hi%20Elena,%20I'm%20exploring%20homes%20in%20" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>
+              Text Us at (703) 625-7888 for private off-market insight &rarr;
             </a>
           </span>
         </div>

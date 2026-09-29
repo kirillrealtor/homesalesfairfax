@@ -5,7 +5,7 @@ import HomeValuationTool from "../components/HomeValuationTool";
 
 export const metadata = {
   title: "Sell Your Fairfax Home | Book an In-Home Listing Appointment | homesalesfairfax.com",
-  description: "Schedule an in-home listing consultation with Kirill. Maximize your net proceeds in Fairfax County with our active pre-approved buyer network and top producer negotiation.",
+  description: "Schedule an in-home listing consultation with Elena. Maximize your net proceeds in Fairfax County with our active pre-approved buyer network and top producer negotiation.",
   alternates: {
     canonical: "https://homesalesfairfax.com/sell",
   },
@@ -21,7 +21,7 @@ export default function SellPage() {
       <section className="container" style={{ padding: "40px 20px 20px", textAlign: "center" }}>
         <span className="section-pretitle">Fairfax County Home Sellers</span>
         <h1 className="hero-title-main" style={{ fontSize: "3.2rem", maxWidth: "880px", margin: "10px auto 16px" }}>
-          Sell Your Fairfax Home for Top Dollar with Kirill
+          Sell Your Fairfax Home for Top Dollar with Elena
         </h1>
         <p className="hero-subtitle-clean" style={{ maxWidth: "700px" }}>
           Over $320 Million in closed sales across Northern Virginia. We connect your property with active local buyers. Enjoy professional staging, sharp pricing, and dedicated contract negotiation.

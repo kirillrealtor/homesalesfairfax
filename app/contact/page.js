@@ -4,13 +4,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export default function ContactPage() {
-  const displayPhone = "(571) 276-0986";
-  const internationalPhone = "15712760986";
-  const email = "kirillysc@gmail.com";
+  const displayPhone = "(703) 625-7888";
+  const internationalPhone = "17036257888";
+  const email = "ElenaYSC@gmail.com";
   
-  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Kirill,%20I'm%20interested%20in%20connecting%20regarding%20Fairfax%20real%20estate.`;
-  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Kirill,%20I'm%20interested%20in%20connecting%20regarding%20Fairfax%20real%20estate.`;
-  const mailUrl = `mailto:${email}?subject=Fairfax%20Real%20Estate%20Inquiry&body=Hi%20Kirill,%0A%0AI%20would%20like%20to%20connect%20regarding%20my%20Fairfax%20property%20or%20a%20showing%20tour.`;
+  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Elena,%20I'm%20interested%20in%20connecting%20regarding%20Fairfax%20real%20estate.`;
+  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Elena,%20I'm%20interested%20in%20connecting%20regarding%20Fairfax%20real%20estate.`;
+  const mailUrl = `mailto:${email}?subject=Fairfax%20Real%20Estate%20Inquiry&body=Hi%20Elena,%0A%0AI%20would%20like%20to%20connect%20regarding%20my%20Fairfax%20property%20or%20a%20showing%20tour.`;
 
   return (
     <main>
@@ -58,9 +58,9 @@ export default function ContactPage() {
 
               <div>
                 <span style={{ display: "block", fontSize: "0.8rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>Brokerage Line</span>
-                <span style={{ fontSize: "1.05rem", fontWeight: 600, color: "var(--ink-800)" }}>
+                <a href="tel:7038244800" style={{ fontSize: "1.05rem", fontWeight: 600, color: "var(--ink-800)" }}>
                   (703) 824-4800
-                </span>
+                </a>
               </div>
             </div>
 
@@ -85,10 +85,10 @@ export default function ContactPage() {
               ⚡ Immediate Connection
             </span>
             <h3 style={{ fontSize: "1.6rem", fontWeight: 800, margin: "6px 0 8px", color: "var(--ink-950)" }}>
-              Reach Kirill Direct
+              Reach Elena Direct
             </h3>
             <p style={{ fontSize: "0.95rem", color: "var(--ink-600)", marginBottom: "28px", lineHeight: "1.6" }}>
-              Skip automated form delays. Tap any option below to connect with Kirill right now on his mobile phone:
+              Skip automated form delays. Tap any option below to connect with Elena right now on her mobile phone:
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
@@ -157,7 +157,7 @@ export default function ContactPage() {
             </div>
 
             <div style={{ marginTop: "24px", paddingTop: "18px", borderTop: "1px solid var(--ink-200)", fontSize: "0.86rem", color: "var(--ink-600)", lineHeight: "1.6" }}>
-              🔒 <strong>Direct agent guarantee:</strong> You communicate straight with top producer Kirill Gorbounov. No third-party lead routers or automated sales call centers.
+              🔒 <strong>Direct agent guarantee:</strong> You communicate straight with top producer Elena Gorbounova. No third-party lead routers or automated sales call centers.
             </div>
           </div>
         </div>

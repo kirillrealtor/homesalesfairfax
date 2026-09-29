@@ -225,25 +225,75 @@ input, select, textarea {
   margin-bottom: 22px;
 }
 
-/* Big Bold Modern Typography on Luxury Background */
+/* Big Bold Modern Typography for Pages (Defaults to Dark Slate Ink for 100% clarity) */
 .hero-title-main {
-  font-size: 3.8rem;
+  font-size: 3.2rem;
   font-weight: 800;
+  color: var(--ink-950);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 16px;
+  text-shadow: none;
+}
+
+.hero-subtitle-clean {
+  font-size: 1.15rem;
+  color: var(--ink-700);
+  font-weight: 400;
+  max-width: 720px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+  text-shadow: none;
+}
+
+/* Scoped specifically for dark luxury hero cards (e.g. Homepage Hero Inset Card) */
+.hero-inset-card .hero-title-main {
+  font-size: 3.8rem;
   color: #FFFFFF;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.4);
   line-height: 1.1;
   letter-spacing: -0.035em;
-  margin-bottom: 16px;
 }
 
-.hero-subtitle-clean {
+.hero-inset-card .hero-subtitle-clean {
   font-size: 1.2rem;
   color: #E2E8F0;
-  font-weight: 400;
-  max-width: 680px;
-  margin: 0 auto 36px;
-  line-height: 1.7;
   text-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Clean Consistent Section & Page Headings */
+.section-head-clean {
+  text-align: center;
+  max-width: 820px;
+  margin: 0 auto 36px auto;
+}
+
+.section-pretitle {
+  display: inline-block;
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: #B45309; /* Deep warm amber/gold for high contrast */
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+
+.section-title-bold {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--ink-950);
+  letter-spacing: -0.025em;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  text-shadow: none;
+}
+
+.section-lead-text {
+  font-size: 1.1rem;
+  color: var(--ink-700);
+  line-height: 1.7;
+  margin: 0 auto;
+  text-shadow: none;
 }
 
 /* Hero Intent Switcher (Sell vs Buy) */
@@ -1402,11 +1452,11 @@ input, select, textarea {
   color: #C5A880;
 }
 
-/* Middle Navigation Grid: Compact 3 Columns */
+/* Middle Navigation Grid: Compact 4 Flexible Columns */
 .footer-white-nav-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1.3fr;
-  gap: 36px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 32px;
   margin-bottom: 36px;
 }
 

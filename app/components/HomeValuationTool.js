@@ -1,8 +1,8 @@
 "use client";
 
 export default function HomeValuationTool() {
-  const internationalPhone = "15712760986";
-  const displayPhone = "(571) 276-0986";
+  const internationalPhone = "17036257888";
+  const displayPhone = "(703) 625-7888";
 
   const benchmarks = [
     {
@@ -129,13 +129,13 @@ export default function HomeValuationTool() {
               Want the Exact Value of Your Address?
             </h3>
             <p style={{ fontSize: "1.05rem", color: "var(--ink-700)", lineHeight: "1.7", margin: 0 }}>
-              Don't trust inaccurate computer algorithms. Text your address directly to us. Kirill will pull the 5 most recent closed sales in your immediate school pyramid and text you the verified comps breakdown directly.
+              Don't trust inaccurate computer algorithms. Text your address directly to us. Elena will pull the 5 most recent closed sales in your immediate school pyramid and text you the verified comps breakdown directly.
             </p>
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", gap: "12px", minWidth: "260px" }}>
             <a 
-              href={`sms:+${internationalPhone}?body=Hi%20Kirill,%20please%20send%20me%20a%20verified%20home%20valuation%20report%20for%20my%20Fairfax%20property%20at:`} 
+              href={`sms:+${internationalPhone}?body=Hi%20Elena,%20please%20send%20me%20a%20verified%20home%20valuation%20report%20for%20my%20Fairfax%20property%20at:`} 
               className="btn-capsule-black" 
               style={{ padding: "16px 28px", fontSize: "1rem", fontWeight: 700, textAlign: "center" }}
             >
@@ -144,7 +144,7 @@ export default function HomeValuationTool() {
 
             <div style={{ display: "flex", gap: "10px" }}>
               <a 
-                href={`https://wa.me/${internationalPhone}?text=Hi%20Kirill,%20please%20send%20me%20a%20verified%20home%20valuation%20report%20for%20my%20Fairfax%20property%20at:`}
+                href={`https://wa.me/${internationalPhone}?text=Hi%20Elena,%20please%20send%20me%20a%20verified%20home%20valuation%20report%20for%20my%20Fairfax%20property%20at:`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-card-ask"

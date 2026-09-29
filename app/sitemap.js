@@ -1,4 +1,5 @@
 import { FAIRFAX_LISTINGS } from "./data/listings";
+import { FAIRFAX_COMMUNITIES } from "./data/communities";
 
 export default function sitemap() {
   const baseUrl = "https://homesalesfairfax.com";
@@ -14,6 +15,24 @@ export default function sitemap() {
       url: `${baseUrl}/sell`,
       lastModified: new Date(),
       changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/about`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/about-elena`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/communities`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
       priority: 0.95,
     },
     {
@@ -41,16 +60,46 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
+      url: `${baseUrl}/mantua-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/mosby-woods-market`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/franklin-farm-values`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/kings-park-west-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/market-report`,
       lastModified: new Date(),
       changeFrequency: "weekly",
-      priority: 0.85,
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/testimonials`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/home-valuation`,
       lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.85,
+      changeFrequency: "weekly",
+      priority: 0.95,
     },
     {
       url: `${baseUrl}/mortgage-calculator`,
@@ -62,9 +111,16 @@ export default function sitemap() {
       url: `${baseUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: "monthly",
-      priority: 0.75,
+      priority: 0.8,
     },
   ];
+
+  const communityRoutes = FAIRFAX_COMMUNITIES.map((c) => ({
+    url: `${baseUrl}/communities/${c.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.95,
+  }));
 
   const propertyRoutes = FAIRFAX_LISTINGS.map((p) => ({
     url: `${baseUrl}/property/${p.id}`,
@@ -73,5 +129,5 @@ export default function sitemap() {
     priority: 0.85,
   }));
 
-  return [...staticRoutes, ...propertyRoutes];
+  return [...staticRoutes, ...communityRoutes, ...propertyRoutes];
 }

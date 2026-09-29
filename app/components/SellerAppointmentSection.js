@@ -1,13 +1,13 @@
 "use client";
 
 export default function SellerAppointmentSection() {
-  const internationalPhone = "15712760986";
-  const displayPhone = "(571) 276-0986";
-  const email = "kirillysc@gmail.com";
+  const internationalPhone = "17036257888";
+  const displayPhone = "(703) 625-7888";
+  const email = "ElenaYSC@gmail.com";
 
-  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Kirill,%20I%20would%20like%20to%20book%20an%20in-home%20listing%20consultation%20for%20my%20Fairfax%20home.`;
-  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Kirill,%20I%20would%20like%20to%20book%20an%20in-home%20listing%20consultation%20for%20my%20Fairfax%20home.`;
-  const mailUrl = `mailto:${email}?subject=Fairfax%20In-Home%20Listing%20Appointment&body=Hi%20Kirill,%0A%0AI%20would%20like%20to%20schedule%20an%20in-home%20listing%20consultation%20for%20my%20property%20in%20Fairfax%20County.`;
+  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Elena,%20I%20would%20like%20to%20book%20an%20in-home%20listing%20consultation%20for%20my%20Fairfax%20home.`;
+  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Elena,%20I%20would%20like%20to%20book%20an%20in-home%20listing%20consultation%20for%20my%20Fairfax%20home.`;
+  const mailUrl = `mailto:${email}?subject=Fairfax%20In-Home%20Listing%20Appointment&body=Hi%20Elena,%0A%0AI%20would%20like%20to%20schedule%20an%20in-home%20listing%20consultation%20for%20my%20property%20in%20Fairfax%20County.`;
 
   return (
     <section id="sell" className="content-section" style={{ background: "#FFFFFF", borderTop: "1px solid var(--ink-200)", borderBottom: "1px solid var(--ink-200)" }}>
@@ -33,7 +33,7 @@ export default function SellerAppointmentSection() {
                 Protecting Your Equity <br />At Every Step.
               </h3>
               <p style={{ fontSize: "1.05rem", color: "var(--ink-700)", lineHeight: "1.7", marginBottom: "24px" }}>
-                A home in Fairfax is often a family's top financial asset. Achieving top dollar comes down to three things: accurate pricing, high-end 4K presentation, and tough contract negotiation. You get all three, directly on Kirill's personal phone.
+                A home in Fairfax is often a family's top financial asset. Achieving top dollar comes down to three things: accurate pricing, high-end 4K presentation, and tough contract negotiation. You get all three, directly on Elena's personal phone.
               </p>
             </div>
 
@@ -53,7 +53,7 @@ export default function SellerAppointmentSection() {
                 <div>
                   <strong className="proof-title">Strong Contract Defense</strong>
                   <p className="proof-desc">
-                    Kirill protects your equity, negotiates inspection repairs, and locks in the highest net price and tightest closing terms.
+                    Elena protects your equity, negotiates inspection repairs, and locks in the highest net price and tightest closing terms.
                   </p>
                 </div>
               </div>
@@ -73,7 +73,7 @@ export default function SellerAppointmentSection() {
                 <div>
                   <strong className="proof-title">Direct Personal Representation</strong>
                   <p className="proof-desc">
-                    You work directly with Kirill. Fast answers on his personal cell with zero call-center delays or junior agent handoffs.
+                    You work directly with Elena. Fast answers on her personal cell with zero call-center delays or junior agent handoffs.
                   </p>
                 </div>
               </div>
@@ -84,10 +84,10 @@ export default function SellerAppointmentSection() {
           <div className="luxury-connect-suite">
             <div>
               <span style={{ fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", display: "inline-block", marginBottom: "4px" }}>
-                ✦ Direct Personal Line • Kirill Gorbounov
+                ✦ Direct Personal Line • Elena Gorbounova
               </span>
               <h4 style={{ fontSize: "1.85rem", fontWeight: 800, color: "var(--ink-950)", margin: "4px 0 8px", letterSpacing: "-0.02em" }}>
-                Connect Directly With Kirill
+                Connect Directly With Elena
               </h4>
               <p style={{ fontSize: "0.98rem", color: "var(--ink-600)", margin: 0, lineHeight: "1.6" }}>
                 No forms, no waiting. Choose your preferred channel to schedule an in-home listing consultation:
@@ -178,7 +178,7 @@ export default function SellerAppointmentSection() {
             <div style={{ background: "#FFFFFF", padding: "18px 22px", borderRadius: "14px", border: "1px solid var(--ink-200)", display: "flex", alignItems: "center", gap: "12px" }}>
               <span style={{ fontSize: "1.2rem" }}>🔒</span>
               <p style={{ margin: 0, fontSize: "0.88rem", color: "var(--ink-700)", lineHeight: "1.5" }}>
-                <strong>No forms to fill, zero sales pressure.</strong> You connect straight to Kirill's cell phone to plan your in-home appointment.
+                <strong>No forms to fill, zero sales pressure.</strong> You connect straight to Elena's cell phone to plan your in-home appointment.
               </p>
             </div>
           </div>

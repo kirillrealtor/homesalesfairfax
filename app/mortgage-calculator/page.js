@@ -155,14 +155,14 @@ export default function MortgageCalculatorPage() {
 
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px" }}>
                 <a 
-                  href="tel:5712760986" 
+                  href="tel:7036257888" 
                   className="btn-card-ask" 
                   style={{ textAlign: "center", padding: "10px", fontSize: "0.85rem", background: "rgba(255,255,255,0.08)", color: "#FFFFFF", borderColor: "rgba(255,255,255,0.2)" }}
                 >
                   Call Us
                 </a>
                 <a 
-                  href="sms:+15712760986?body=Hi%20Kirill,%20I%20have%20a%20question%20about%20mortgage%20rates%20and%20Fairfax%20homes." 
+                  href="sms:+17036257888?body=Hi%20Elena,%20I%20have%20a%20question%20about%20mortgage%20rates%20and%20Fairfax%20homes." 
                   className="btn-card-ask" 
                   style={{ textAlign: "center", padding: "10px", fontSize: "0.85rem", background: "rgba(255,255,255,0.08)", color: "#FFFFFF", borderColor: "rgba(255,255,255,0.2)" }}
                 >

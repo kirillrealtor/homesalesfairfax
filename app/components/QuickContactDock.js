@@ -1,19 +1,19 @@
 "use client";
 
 export default function QuickContactDock() {
-  const phoneNumber = "5712760986";
-  const internationalPhone = "15712760986";
-  const email = "kirillysc@gmail.com";
+  const phoneNumber = "7036257888";
+  const internationalPhone = "17036257888";
+  const email = "ElenaYSC@gmail.com";
   
-  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Kirill,%20I'm%20interested%20in%20a%20Fairfax%20listing%20consultation%20/%20home%20tour.`;
-  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Kirill,%20I'm%20interested%20in%20a%20Fairfax%20listing%20consultation%20/%20home%20tour.`;
-  const mailUrl = `mailto:${email}?subject=Fairfax%20Real%20Estate%20Inquiry&body=Hi%20Kirill,%0A%0AI%20would%20like%20to%20connect%20regarding%20my%20Fairfax%20property%20or%20a%20showing%20tour.`;
+  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Elena,%20I'm%20interested%20in%20a%20Fairfax%20listing%20consultation%20/%20home%20tour.`;
+  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Elena,%20I'm%20interested%20in%20a%20Fairfax%20listing%20consultation%20/%20home%20tour.`;
+  const mailUrl = `mailto:${email}?subject=Fairfax%20Real%20Estate%20Inquiry&body=Hi%20Elena,%0A%0AI%20would%20like%20to%20connect%20regarding%20my%20Fairfax%20property%20or%20a%20showing%20tour.`;
 
   return (
     <aside className="quick-dock-container" aria-label="Direct Agent Contact">
       <div className="quick-dock-card">
         {/* Subtle Live Agent Pulse Indicator */}
-        <div className="dock-pulse-wrap" title="Kirill Direct Line Active" style={{ marginLeft: "4px", marginRight: "2px" }}>
+        <div className="dock-pulse-wrap" title="Elena Direct Line Active" style={{ marginLeft: "4px", marginRight: "2px" }}>
           <span className="dock-pulse-ring"></span>
           <span className="dock-pulse-core"></span>
         </div>
@@ -21,7 +21,7 @@ export default function QuickContactDock() {
         {/* 4 Unified Luxury Frosted Action Capsules */}
         <div className="dock-actions-row">
           {/* Call */}
-          <a href={`tel:${phoneNumber}`} className="dock-action-btn dock-call" title="Direct Phone: (571) 276-0986">
+          <a href={`tel:${phoneNumber}`} className="dock-action-btn dock-call" title="Direct Phone: (703) 625-7888">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
             </svg>
@@ -45,7 +45,7 @@ export default function QuickContactDock() {
           </a>
 
           {/* Email */}
-          <a href={mailUrl} className="dock-action-btn dock-mail" title="Email Kirill: kirillysc@gmail.com">
+          <a href={mailUrl} className="dock-action-btn dock-mail" title="Email Elena: ElenaYSC@gmail.com">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
               <polyline points="22,6 12,13 2,6"></polyline>
