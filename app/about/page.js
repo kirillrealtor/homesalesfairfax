@@ -3,14 +3,14 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Elena Gorbounova | Master of Laws (LL.M.), Broker Associate & Top 1% REALTOR®",
-  description: "Meet Elena Gorbounova: Master of Laws (LL.M.), Master Certified Negotiation Expert (MCNE), 18-year former university professor, and Lifetime NVAR Top Producer delivering elite seller & buyer representation across Fairfax County and Northern Virginia.",
+  title: "About Elena Gorbounova | Top 1% REALTOR® & Broker Associate",
+  description: "Meet Elena Gorbounova (LL.M., MCNE): Top 1% Northern Virginia Broker Associate with RE/MAX Allegiance. 400+ properties sold and 21+ years of local mastery.",
   alternates: {
     canonical: "https://homesalesfairfax.com/about",
   },
   openGraph: {
-    title: "About Elena Gorbounova | Elite Northern Virginia Real Estate Advisory",
-    description: "Legal precision, master negotiation, and 20+ years of dedicated market leadership across Fairfax County, VA.",
+    title: "About Elena Gorbounova | Top 1% REALTOR® & Broker Associate",
+    description: "Legal precision, master negotiation, and 21+ years of dedicated market leadership across Fairfax County and Northern Virginia.",
     url: "https://homesalesfairfax.com/about",
     siteName: "homesalesfairfax.com",
     locale: "en_US",
@@ -23,72 +23,181 @@ export const metadata = {
         alt: "Elena Gorbounova - RE/MAX Allegiance Broker Associate",
       }
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Elena Gorbounova | Top 1% REALTOR® & Broker Associate",
+    description: "Meet Elena Gorbounova (LL.M., MCNE): Top 1% Northern Virginia Broker Associate with RE/MAX Allegiance. 400+ properties sold and 21+ years of local mastery.",
+    images: ["https://homesalesfairfax.com/images/elena-portrait.jpg"],
   }
 };
 
 export default function AboutPage() {
-  const agentSchema = {
-    "@context": "https://schema.org",
-    "@type": ["Person", "RealEstateAgent"],
-    "name": "Elena Gorbounova",
-    "jobTitle": "Broker Associate, REALTOR®, Master Certified Negotiation Expert",
-    "image": "https://homesalesfairfax.com/images/elena-portrait.jpg",
-    "telephone": "+17036257888",
-    "email": "ElenaYSC@gmail.com",
-    "url": "https://homesalesfairfax.com/about",
-    "worksFor": {
-      "@type": "RealEstateAgent",
-      "name": "RE/MAX Allegiance • YSC Real Estate Group",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "5100 Leesburg Pike, Suite 200",
-        "addressLocality": "Alexandria",
-        "addressRegion": "VA",
-        "postalCode": "22302",
-        "addressCountry": "US"
+  const structuredData = [
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "@id": "https://homesalesfairfax.com/about#webpage",
+      "url": "https://homesalesfairfax.com/about",
+      "name": "About Elena Gorbounova | Top 1% REALTOR® & Broker Associate",
+      "description": "Meet Elena Gorbounova (LL.M., MCNE): Top 1% Northern Virginia Broker Associate with RE/MAX Allegiance. 400+ properties sold and 21+ years of local mastery.",
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://homesalesfairfax.com/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "About Elena Gorbounova",
+            "item": "https://homesalesfairfax.com/about"
+          }
+        ]
+      },
+      "mainEntity": {
+        "@type": "Person",
+        "@id": "https://homesalesfairfax.com/about#elena-gorbounova",
+        "name": "Elena Gorbounova",
+        "jobTitle": "Broker Associate, REALTOR®, Master Certified Negotiation Expert",
+        "image": "https://homesalesfairfax.com/images/elena-portrait.jpg",
+        "telephone": "+17036257888",
+        "email": "ElenaYSC@gmail.com",
+        "url": "https://homesalesfairfax.com/about",
+        "worksFor": {
+          "@type": "RealEstateAgent",
+          "name": "RE/MAX Allegiance • YSC Real Estate Group",
+          "telephone": "+17038244800",
+          "url": "https://homesalesfairfax.com",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "5100 Leesburg Pike, Suite 200",
+            "addressLocality": "Alexandria",
+            "addressRegion": "VA",
+            "postalCode": "22302",
+            "addressCountry": "US"
+          }
+        },
+        "alumniOf": [
+          {
+            "@type": "CollegeOrUniversity",
+            "name": "American University Washington College of Law",
+            "award": "Master of Laws (LL.M.)"
+          }
+        ],
+        "award": [
+          "Top 1% Real Estate Agents in America (America's Top 100)",
+          "Top 3% of ALL RE/MAX Agents in the United States",
+          "RE/MAX Hall of Fame",
+          "RE/MAX Chairman's Club",
+          "RE/MAX Platinum Club",
+          "Lifetime NVAR Top Producer",
+          "Five Star Real Estate Agent Award (2021-2026)"
+        ],
+        "knowsAbout": [
+          "Fairfax County Real Estate",
+          "Residential Contract Law",
+          "Real Estate Negotiation",
+          "Home Valuation & Bright MLS Comps",
+          "Mantua Real Estate",
+          "Mosby Woods Real Estate",
+          "Franklin Farm Real Estate",
+          "Kings Park West Real Estate",
+          "Oakton Real Estate",
+          "Clifton Luxury Estates"
+        ],
+        "sameAs": [
+          "https://www.youtube.com/c/ElenaGorbounova",
+          "https://www.linkedin.com/in/elenagorbounovaremax",
+          "https://www.facebook.com/egorbounova",
+          "https://www.yourskylineconnection.com/about-elena/"
+        ]
       }
     },
-    "alumniOf": [
-      {
-        "@type": "CollegeOrUniversity",
-        "name": "American University Washington College of Law",
-        "award": "Master of Laws (LL.M.)"
-      }
-    ],
-    "award": [
-      "Top 1% Real Estate Agents in America (America's Top 100)",
-      "Top 3% of ALL RE/MAX Agents in the United States",
-      "RE/MAX Hall of Fame",
-      "RE/MAX Chairman's Club",
-      "RE/MAX Platinum Club",
-      "Lifetime NVAR Top Producer",
-      "Five Star Real Estate Agent Award (2021-2026)"
-    ],
-    "knowsAbout": [
-      "Fairfax County Real Estate",
-      "Residential Contract Law",
-      "Real Estate Negotiation",
-      "Home Valuation & Bright MLS Comps",
-      "Mantua Real Estate",
-      "Mosby Woods Real Estate",
-      "Franklin Farm Real Estate",
-      "Oakton Real Estate",
-      "Clifton Luxury Estates"
-    ],
-    "sameAs": [
-      "https://www.youtube.com/c/ElenaGorbounova",
-      "https://www.linkedin.com/in/elenagorbounovaremax",
-      "https://www.facebook.com/egorbounova",
-      "https://www.yourskylineconnection.com/about-elena/"
-    ]
-  };
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": "https://homesalesfairfax.com/about#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What distinguishes Elena Gorbounova from other Northern Virginia real estate agents?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elena combines an 18-year scholarly background as a university professor with a Master of Laws (LL.M.) from American University's Washington College of Law and the elite Master Certified Negotiation Expert (MCNE®) designation held by less than 1% of agents nationwide. Her legal acumen and tactical negotiation provide unmatched protection and financial leverage for clients."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What real estate credentials and designations does Elena Gorbounova hold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elena is an Associate Broker, REALTOR®, Master Certified Negotiation Expert (MCNE®), and Graduate, REALTOR® Institute (GRI). She has been inducted into the RE/MAX Hall of Fame and Chairman's Club (Top 3% nationally), recognized as America's Top 100 Real Estate Agents (Top 1% nationwide), and honored as a Lifetime NVAR Top Producer."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which geographic areas and subdivisions in Northern Virginia does Elena specialize in?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elena specializes across Fairfax County and Northern Virginia, including Fairfax City, Oakton, Vienna, McLean, Great Falls, Burke, Clifton, and Alexandria. She provides deep micro-market specialization for sought-after subdivisions including Mantua, Mosby Woods, Franklin Farm, and Kings Park West."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which brokerage is Elena Gorbounova affiliated with?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Elena is a Broker Associate with RE/MAX Allegiance and leads the YSC Real Estate Group, headquartered at 5100 Leesburg Pike, Suite 200, Alexandria, VA 22302."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can buyers and sellers contact or schedule a consultation with Elena Gorbounova?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Clients can reach Elena directly by calling or texting (703) 625-7888, emailing ElenaYSC@gmail.com, or submitting an online consultation request at homesalesfairfax.com/sell."
+          }
+        }
+      ]
+    }
+  ];
+
+  const faqs = [
+    {
+      q: "What distinguishes Elena Gorbounova from other Northern Virginia real estate agents?",
+      a: "Elena combines an 18-year scholarly background as a university professor with a Master of Laws (LL.M.) from American University's Washington College of Law and the elite Master Certified Negotiation Expert (MCNE®) designation held by less than 1% of agents nationwide. Her legal acumen and tactical negotiation provide unmatched protection and financial leverage for clients."
+    },
+    {
+      q: "What real estate credentials and designations does Elena Gorbounova hold?",
+      a: "Elena is an Associate Broker, REALTOR®, Master Certified Negotiation Expert (MCNE®), and Graduate, REALTOR® Institute (GRI). She has been inducted into the RE/MAX Hall of Fame and Chairman's Club (Top 3% nationally), recognized in America's Top 100 Real Estate Agents (Top 1% nationwide), and honored as a Lifetime NVAR Top Producer."
+    },
+    {
+      q: "Which geographic areas and subdivisions in Northern Virginia does Elena specialize in?",
+      a: "Elena specializes across Fairfax County and Northern Virginia, including Fairfax City, Oakton, Vienna, McLean, Great Falls, Burke, Clifton, and Alexandria. She provides deep micro-market specialization for sought-after subdivisions including Mantua, Mosby Woods, Franklin Farm, and Kings Park West."
+    },
+    {
+      q: "Which brokerage is Elena Gorbounova affiliated with?",
+      a: "Elena is a Broker Associate with RE/MAX Allegiance and leads the YSC Real Estate Group, headquartered at 5100 Leesburg Pike, Suite 200, Alexandria, VA 22302."
+    },
+    {
+      q: "How can buyers and sellers contact or schedule a consultation with Elena Gorbounova?",
+      a: "Clients can reach Elena directly by calling or texting (703) 625-7888, emailing ElenaYSC@gmail.com, or submitting an online consultation request at homesalesfairfax.com/sell."
+    }
+  ];
 
   return (
     <main style={{ background: "#F8F9FA", minHeight: "100vh" }}>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(agentSchema) }}
-      />
+      {structuredData.map((schema, index) => (
+        <script
+          key={index}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
 
       <div className="page-wrapper" style={{ paddingBottom: 0 }}>
         <Navbar />
@@ -129,6 +238,9 @@ export default function AboutPage() {
               <img
                 src="/images/elena-portrait.jpg"
                 alt="Elena Gorbounova - LL.M., Broker Associate, REALTOR®"
+                width={1100}
+                height={1380}
+                fetchPriority="high"
                 style={{
                   width: "100%",
                   height: "auto",
@@ -170,6 +282,9 @@ export default function AboutPage() {
               <img
                 src="/images/elena-accolades.png"
                 alt="Elena Gorbounova - Five Star Real Estate Agent & America's Top 100"
+                width={600}
+                height={120}
+                loading="lazy"
                 style={{
                   maxWidth: "100%",
                   height: "auto",
@@ -276,7 +391,7 @@ export default function AboutPage() {
             </p>
 
             {/* Cortazzo 3-Dot Minimalist Divider */}
-            <div style={{ display: "flex", gap: "8px", alignItems: "center", marginBottom: "32px" }}>
+            <div style={{ display: "flex", gap: "8px", alignItems: "center", marginBottom: "28px" }}>
               <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--accent-gold)" }}></span>
               <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--accent-gold)" }}></span>
               <span style={{ width: "6px", height: "6px", borderRadius: "50%", background: "var(--accent-gold)" }}></span>
@@ -291,10 +406,10 @@ export default function AboutPage() {
               borderRadius: "16px",
               padding: "20px",
               border: "1px solid #E2E8F0",
-              marginBottom: "36px"
+              marginBottom: "28px"
             }}>
               <div>
-                <div style={{ fontSize: "1.75rem", fontWeight: 800, color: "var(--ink-950)", lineHeight: 1 }}>20+</div>
+                <div style={{ fontSize: "1.75rem", fontWeight: 800, color: "var(--ink-950)", lineHeight: 1 }}>21+</div>
                 <div style={{ fontSize: "0.78rem", color: "var(--ink-500)", marginTop: "4px", fontWeight: 600 }}>Years in NoVA</div>
               </div>
               <div>
@@ -310,6 +425,52 @@ export default function AboutPage() {
                 <div style={{ fontSize: "0.78rem", color: "var(--ink-500)", marginTop: "4px", fontWeight: 600 }}>5-Star Reviews</div>
               </div>
             </div>
+
+            {/* AI Search & LLM Quick Facts Box - Optimized for Snippet Extraction */}
+            <div style={{
+              background: "#F8FAFC",
+              borderRadius: "16px",
+              border: "1px solid #E2E8F0",
+              padding: "22px 24px",
+              marginBottom: "32px"
+            }}>
+              <div style={{ display: "flex", alignItems: "center", gap: "8px", marginBottom: "12px" }}>
+                <span style={{ fontSize: "1rem" }}>📋</span>
+                <span style={{ fontSize: "0.95rem", fontWeight: 800, color: "var(--ink-950)", textTransform: "uppercase", letterSpacing: "0.05em" }}>
+                  Executive Overview &amp; Practice Highlights
+                </span>
+              </div>
+              <ul style={{
+                margin: 0,
+                paddingLeft: "20px",
+                display: "grid",
+                gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+                gap: "8px",
+                fontSize: "0.9rem",
+                color: "var(--ink-700)",
+                lineHeight: 1.55
+              }}>
+                <li><strong>Designations:</strong> Broker Associate, REALTOR®, MCNE®, GRI</li>
+                <li><strong>Legal Education:</strong> Master of Laws (LL.M.), American University WCL</li>
+                <li><strong>Scholarly Foundation:</strong> 18-Year Former University Professor</li>
+                <li><strong>Regional Experience:</strong> 21+ Years Serving Northern Virginia</li>
+                <li><strong>Sales Accomplishment:</strong> 400+ Properties Sold Across NoVA</li>
+                <li><strong>National Standing:</strong> America&apos;s Top 100 Agents (Top 1% Nationwide)</li>
+                <li><strong>Brokerage Affiliation:</strong> RE/MAX Allegiance • YSC Real Estate Group</li>
+                <li><strong>Core Communities:</strong> Fairfax, Oakton, Vienna, Mantua, Franklin Farm</li>
+              </ul>
+            </div>
+
+            {/* Semantic H2 to Maintain Strict Heading Hierarchy */}
+            <h2 style={{
+              fontSize: "1.55rem",
+              fontWeight: 800,
+              color: "var(--ink-950)",
+              marginBottom: "16px",
+              letterSpacing: "-0.02em"
+            }}>
+              Professional Background &amp; Advisory Standard
+            </h2>
 
             {/* Deep Rephrased Editorial Narrative */}
             <div style={{ display: "flex", flexDirection: "column", gap: "24px", color: "var(--ink-700)", fontSize: "1.02rem", lineHeight: 1.8 }}>
@@ -643,6 +804,65 @@ export default function AboutPage() {
               <div style={{ fontWeight: 800, color: "var(--ink-950)", fontSize: "0.95rem" }}>Michael &amp; Christine K.</div>
               <div style={{ fontSize: "0.8rem", color: "var(--ink-500)" }}>Relocation Clients • Alexandria, VA</div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Frequently Asked Questions (FAQ) Section - Optimized for AI Search & Featured Snippets */}
+      <section style={{ maxWidth: "1380px", margin: "0 auto", padding: "0 24px 64px" }}>
+        <div style={{
+          background: "#FFFFFF",
+          borderRadius: "24px",
+          border: "1px solid #E2E8F0",
+          boxShadow: "0 10px 40px -10px rgba(15, 23, 42, 0.04)",
+          padding: "48px 44px"
+        }}>
+          <div style={{ marginBottom: "32px" }}>
+            <span style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--accent-gold)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+              Direct Answers &amp; Advisory Intel
+            </span>
+            <h2 style={{ fontSize: "2.2rem", fontWeight: 800, color: "var(--ink-950)", marginTop: "6px" }}>
+              Frequently Asked Questions About Elena Gorbounova
+            </h2>
+            <p style={{ color: "var(--ink-500)", maxWidth: "760px", marginTop: "8px", fontSize: "0.98rem" }}>
+              Clear, structured answers about Elena&apos;s legal credentials, Master Negotiation certification, Northern Virginia coverage, and seller advisory methodology.
+            </p>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "column", gap: "18px" }}>
+            {faqs.map((faq, idx) => (
+              <div
+                key={idx}
+                style={{
+                  background: "#F8FAFC",
+                  borderRadius: "16px",
+                  border: "1px solid #E2E8F0",
+                  padding: "24px 28px"
+                }}
+              >
+                <h3 style={{
+                  fontSize: "1.1rem",
+                  fontWeight: 800,
+                  color: "var(--ink-950)",
+                  marginBottom: "10px",
+                  display: "flex",
+                  alignItems: "flex-start",
+                  gap: "10px"
+                }}>
+                  <span style={{ color: "var(--accent-gold)", fontSize: "1.1rem", flexShrink: 0 }}>Q:</span>
+                  <span>{faq.q}</span>
+                </h3>
+                <p style={{
+                  margin: 0,
+                  fontSize: "0.95rem",
+                  color: "var(--ink-700)",
+                  lineHeight: 1.7,
+                  paddingLeft: "26px"
+                }}>
+                  {faq.a}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
