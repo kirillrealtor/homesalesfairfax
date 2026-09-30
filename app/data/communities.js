@@ -30,8 +30,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "Nestled within an enchanted forest canopy between Route 50 and Little River Turnpike, Mantua is acclaimed for custom mid-century architecture, sprawling half-acre lots, and top-tier Woodson High School academic rankings.",
     heroHeadline: "Wooded Mid-Century Architecture in Fairfax's Premier Forest Enclave",
     story: "Tucked within a lush, protected forest canopy between Route 50 and Little River Turnpike, Mantua is widely celebrated as one of Fairfax County's most distinctive and architecturally significant residential neighborhoods. Unlike standard uniform suburban tract developments, Mantua's winding curvilinear streets showcase custom mid-century modern split-levels, California-inspired contemporary ranches, and expanded stately colonial revivals set on generous half-acre to full-acre wooded parcels. Homeowners cherish the exceptional natural privacy, bird sanctuary setting along Accotink Creek, and the legendary community spirit centered around the Mantua Swim & Tennis Club.",
-    historyHeadline: "Origins & Heritage of Mantua",
-    history: "Originally rural woodland and agricultural farmland in central Fairfax County, Mantua began its residential transformation in the early 1950s. Visionary regional architects intentionally broke away from conventional post-war floor plans, designing custom homes that harmonized directly with the rolling topography. They integrated expansive floor-to-ceiling glass walls, exposed brick chimneys, vaulted post-and-beam cedar ceilings, and clerestory windows that invited panoramic outdoor forest views. Over five decades, Mantua has matured into a tightly held, highly affluent residential enclave where properties frequently receive multi-offer bidding wars within their first weekend on the market.",
+    historyHeadline: "Origins, 18th-Century Estates & Mid-Century Modern Heritage of Mantua",
+    history: "The origins of Mantua date back to 18th-century colonial Virginia, when the lush woodlands along Accotink Creek were part of vast agrarian patents held by regional planters. The name \"Mantua\" was bestowed in the 19th century after the historic estate in the area, which drew its inspiration from Mantua, Italy—the storied birthplace of the Roman poet Virgil. Throughout the 19th and early 20th centuries, Mantua remained an idyllic rural haven of timberland, family orchards, and pastoral dairy farms.\n\nThe transformation into today's architectural enclave began in the early 1950s. Visionary land developers and progressive architects deliberately rejected the cookie-cutter post-war subdivision models spreading across suburban America. Instead, they embraced the site's rugged topography, carving curvilinear roadways that preserved the natural canopy of century-old white oaks, tulip poplars, and American beeches. Modernist architects collaborated with custom homebuilders to craft residences with exposed post-and-beam timbers, tongue-and-groove cedar ceilings, clerestory ribbon windows, and sweeping floor-to-ceiling glass curtain walls that invited the woodland landscape directly into the living spaces. Over seven decades, Mantua has matured into one of Fairfax County's most architecturally significant and tightly held residential forest communities.",
     architectureHeadline: "Architectural Character, Floor Plans & Renovations",
     architecture: "Mantua is renowned across Northern Virginia for architectural variety. Prominent styles include architect-designed contemporary multi-levels, authentic mid-century modern split-levels, and center-hall brick colonials. In recent years, numerous residences have undergone dramatic seven-figure modernizations—expanding footprint envelopes to 3,500–5,000 square feet, installing custom gourmet kitchens with 10-foot waterfall quartz islands, building main-level primary retreats with spa-grade wet rooms, and designing exterior flagstone courtyards with integrated outdoor kitchens and fire lounges.",
     schoolPyramidDetails: "Mantua is anchored by the renowned W.T. Woodson High School pyramid in Fairfax County Public Schools (FCPS). Mantua Elementary is an established Advanced Academic Program (AAP) Center known for exceptional STEM and language programs. Students advance to Frost Middle School and W.T. Woodson High School, which consistently earns top national rankings for AP course offerings, championship athletics, and distinguished music conservatories.",
@@ -48,6 +48,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Average Lot Size", value: "0.5 - 1.1 Acres" },
       { label: "Commute to D.C.", value: "25 - 35 Mins" }
     ],
+    interestingFacts: [
+      "Named after Mantua, Italy, following a popular 19th-century Virginia tradition of honoring classical European literary and cultural landmarks.",
+      "Accotink Creek stream valley runs directly through the neighborhood, functioning as a protected regional wildlife corridor where red foxes, barred owls, and white-tailed deer are everyday sights.",
+      "Contains Northern Virginia's highest concentration of custom mid-century modern and California-contemporary split-level architecture.",
+      "Operates with zero mandatory HOA dues; the voluntary Mantua Citizens' Association and member-owned Mantua Swim & Tennis Club have maintained community cohesion for over 60 years.",
+      "Mantua Elementary School houses a premier Advanced Academic Program (AAP) Center, serving as an educational anchor within the Woodson High School pyramid.",
+      "The 16-mile Gerry Connolly Cross County Trail passes adjacent to the neighborhood, enabling residents to bike or hike across the entire county."
+],
     faqs: [
       {
         question: "What makes Mantua real estate so desirable in Fairfax County?",
@@ -103,8 +111,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "Centrally positioned between Route 123 and Route 29, Mosby Woods is celebrated for versatile mid-century tri-level floor plans, a private community pool, and 5-minute access to the Vienna Metro and Old Town Fairfax.",
     heroHeadline: "Quintessential Mid-Century Living Minutes from Old Town Fairfax & Vienna Metro",
     story: "Mosby Woods is one of the most vibrant, high-turnover residential communities in central Fairfax. Spanning peaceful curvilinear avenues just off Chain Bridge Road (Route 123) and Lee Highway (Route 29), the neighborhood features beautifully preserved mid-century split-levels, multi-tiered tri-levels, and classic brick colonials. With an exceptionally active civic association, private neighborhood pool, and lush pocket parks along Daniels Run stream valley, Mosby Woods provides an authentic hometown bond paired with unbeatable commuter connectivity.",
-    historyHeadline: "Origins & Development of Mosby Woods",
-    history: "Constructed during the early 1960s suburban expansion, Mosby Woods was master-planned by prominent regional developers who prioritized generous setbacks, dedicated off-street garages, brick wood-burning fireplaces, and deep private backyards. The community was designed with dedicated park easements that preserve forested greenways connecting directly into Fairfax City's park network. Today, the neighborhood represents an ideal hybrid of historic suburban charm and modern metropolitan convenience.",
+    historyHeadline: "Civil War Lore & The Post-War Suburban Vision of Mosby Woods",
+    history: "Mosby Woods occupies historic ground that witnessed pivotal events during the American Civil War. The neighborhood takes its name from Colonel John Singleton Mosby, the legendary Confederate ranger known as the \"Gray Ghost,\" whose partisan cavalry battalion conducted lightning-fast operations throughout Fairfax and Northern Virginia. In March 1863, Mosby executed his most audacious raid just a short distance from this land, slipping through Union lines at night to capture Union Brigadier General Edwin H. Stoughton from his bed in Fairfax Court House without firing a single shot.\n\nA century later, between 1961 and 1965, the prominent Yeonas Development Corporation transformed this forested parcel into an innovative post-war residential community. The Yeonas brothers, who were influential pioneers in Northern Virginia suburban design, engineered Mosby Woods with wide curving avenues, generous front setbacks, and signature multi-level floor plans such as the \"Hampshire\" and \"Shenandoah\" models. When the City of Fairfax incorporated as an independent, sovereign municipality in 1961, Mosby Woods became one of its premier flagship neighborhoods, securing the community's distinct local tax and municipal service advantages that homeowners enjoy to this day.",
     architectureHeadline: "Architectural Character & Signature Floor Plans",
     architecture: "The hallmark of Mosby Woods is its versatile multi-level layout. Distinct builder models like the 'Hampshire' and 'Shenandoah' tri-levels offer clear functional separation: formal light-filled living and dining rooms on the main floor, daylight ground-level family rooms with brick hearths opening to private patios, and upper bedroom suites. Buyers and renovators frequently knock down partition walls between kitchens and dining rooms to create sweeping open-concept entertainment spaces with quartz breakfast peninsulas and recessed LED illumination.",
     schoolPyramidDetails: "Mosby Woods students are served by the Fairfax High School pyramid. Daniels Run Elementary is a neighborhood school with strong dual-language and STEAM enrichment. Katherine Johnson Middle School features modernized technology labs, while Fairfax High School offers comprehensive AP and International Baccalaureate (IB) coursework, award-winning theater and arts programs, and state-of-the-art sports facilities.",
@@ -121,6 +129,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Vienna Metro Access", value: "Under 5 Minutes" },
       { label: "HOA Requirement", value: "Voluntary (nominal dues/yr)" }
     ],
+    interestingFacts: [
+      "Named in memory of Colonel John S. Mosby, who conducted daring reconnaissance throughout the Daniels Run stream valley during the 1860s.",
+      "Built by the Yeonas brothers, celebrated regional builders who pioneered the popular mid-century tri-level floor plan across the mid-Atlantic.",
+      "Located inside the independent City of Fairfax boundary, giving homeowners independent municipal services, zero county property tax, and free seasonal leaf vacuuming.",
+      "Daniels Run Park borders the community with paved wooded fitness trails connecting directly to the historic Old Town Fairfax business district.",
+      "The private Mosby Woods Pool Club hosts the 'Raiders' youth swim team, which has competed in the Northern Virginia Swim League since 1965.",
+      "Commuters can take the city-operated CUE Bus directly from neighborhood perimeter stops to the Vienna/Fairfax-GMU Metrorail station in under seven minutes."
+],
     faqs: [
       {
         question: "Is there a mandatory HOA in Mosby Woods?",
@@ -172,8 +188,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "An acclaimed 850-acre master-planned community in Western Fairfax (ZIP 22033) featuring 13 miles of paved fitness trails, 6 fishing ponds, 2 swimming pool complexes, and top-tier Chantilly High School academics.",
     heroHeadline: "Award-Winning 850-Acre Master Planned Community in Western Fairfax",
     story: "Franklin Farm is widely recognized as the gold standard for master-planned residential living in Northern Virginia. Encompassing 850 rolling acres of former pastoral dairy farmland in Western Fairfax County (ZIP 22033), the community seamlessly incorporates 13 miles of paved fitness and walking trails, 6 picturesque stocked fishing ponds, 6 community tennis courts, multi-purpose sports fields, and two comprehensive swimming pool complexes with active youth swim teams. Franklin Farm combines suburban convenience with resort-caliber recreational amenities.",
-    historyHeadline: "From Working Dairy Farm to Nationally Acclaimed Community",
-    history: "Throughout the late 19th and mid-20th centuries, this land operated as the productive dairy farm of the Franklin family. In 1980, pioneering planners and environmental landscape architects envisioned an ecologically conscious neighborhood. They permanently protected vast swaths of natural stream valleys, old-growth oak and hickory trees, and open water retention ponds, deeding over 180 acres directly into common open space owned and maintained by the Franklin Farm Foundation for future generations.",
+    historyHeadline: "From Historic Working Dairy Farm to Nationally Acclaimed Master Plan",
+    history: "Before becoming one of Virginia's most celebrated planned communities, Franklin Farm was an authentic working agricultural estate. Throughout the late 19th century and first half of the 20th century, the Franklin family operated a productive dairy and cattle farm across 850 rolling acres in Western Fairfax County. Herds of dairy cattle grazed along the gentle freshwater creeks that fed into the Difficult Run and Flatlick watershed, and large timber barns housed modern milking equipment that supplied fresh milk to markets across the Washington metropolitan area.\n\nBy the late 1970s, as Western Fairfax began its transition toward an international technology and aviation corridor, visionary environmental planners stepped in to guide development. The master plan for Franklin Farm, executed beginning in 1980, established a groundbreaking ecological precedent: developers permanently deeded more than 180 acres—over 20% of the entire land area—directly to the community foundation as protected common green space. Six retention ponds were engineered into picturesque, stocked fishing lakes, and a comprehensive network of 13 miles of paved trails was integrated through forested stream valleys, creating an enduring masterpiece of suburban environmental planning.",
     architectureHeadline: "Stately Colonials, Contemporary Executive Homes & Carriage Villas",
     architecture: "Homes in Franklin Farm are celebrated for classic architectural elegance. Traditional center-hall brick colonials feature 2-car side-load garages, 9-foot ceilings, crown moldings, and expansive full-footprint finished basements. Contemporary models introduce dramatic vaulted ceilings, skylights, dual-sided fireplaces, and rear sunrooms. Backyards frequently back onto protected HOA forested parkland, offering peaceful natural vistas from multi-tier composite decks.",
     schoolPyramidDetails: "Franklin Farm feeds into the highly rated Chantilly High School pyramid. Oak Hill Elementary and Franklin Farm Elementary are both award-winning neighborhood schools. Franklin Middle School provides rigorous STEM and advanced academic curricula, while Chantilly High School is recognized statewide for its STEM Governor's Academy, Governor's Health Sciences Academy, and championship athletic programs.",
@@ -190,6 +206,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Fitness Trails", value: "13 Paved Miles" },
       { label: "Ponds & Recreation", value: "6 Ponds & 2 Pools" }
     ],
+    interestingFacts: [
+      "Over 180 acres of the original 850-acre dairy farm is permanently deeded as protected conservation parkland and wildlife sanctuaries.",
+      "Features six scenic fishing ponds stocked with largemouth bass, bluegill, and catfish, hosting an annual youth catch-and-release fishing derby.",
+      "Contains 13 miles of continuous paved walking, jogging, and bicycling trails that link every residential enclave without requiring pedestrians to cross arterial parkways.",
+      "Boasts two comprehensive community recreation centers with 25-meter competition swimming pools, diving wells, six tennis courts, and sand volleyball courts.",
+      "The Franklin Farm Village Center was intentionally planned into the center of the neighborhood so families can walk to local grocery stores, cafes, and healthcare suites.",
+      "Consistently achieves top equity retention in the 22033 ZIP code, zoned for the prestigious Chantilly High School pyramid."
+],
     faqs: [
       {
         question: "What amenities are included in the Franklin Farm HOA fee?",
@@ -241,8 +265,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "Centering on scenic 49-acre Royal Lake, Kings Park West in ZIP 22032 offers miles of continuous waterfront trails, 3 community swim clubs, and direct feed into the prestigious Robinson Secondary School pyramid.",
     heroHeadline: "Lakeside Tranquility & Robinson Secondary Prestige in Fairfax 22032",
     story: "Bordering the scenic shores of 49-acre Royal Lake, Kings Park West (KPW) is a landmark residential community in the 22032 ZIP code. Homeowners enjoy miles of continuous paved lakeside trails, wildlife observation stations, kayak and canoe launch points, and immediate assignment to the acclaimed Robinson Secondary School pyramid (grades 7–12, offering International Baccalaureate programs and championship sports). Kings Park West represents the ultimate blend of peaceful lakefront natural living and central Fairfax convenience.",
-    historyHeadline: "The Story of Royal Lake & Kings Park West",
-    history: "Developed between 1968 and 1978, Kings Park West was masterfully engineered around the creation of Royal Lake, a flood-control reservoir along Pohick Creek that Fairfax County transformed into a premier ecological nature park. Builders carefully preserved mature deciduous hardwoods, resulting in shaded, peaceful streetscapes with wide sidewalks and generous lot setbacks. Over five decades, KPW has maintained an exceptionally active civic spirit and tight-knit neighborhood identity.",
+    historyHeadline: "The Engineering of Royal Lake & The Rise of Kings Park West",
+    history: "The story of Kings Park West is inextricably linked to the engineering of Royal Lake and the broader ecological history of the Pohick Creek watershed. Prior to the late 1960s, this land comprised scenic hardwood ridges and agricultural pastures southwest of Fairfax City. In response to regional storms and runoff challenges in the mid-Atlantic, the United States Department of Agriculture Soil Conservation Service partnered with the Fairfax County Park Authority in 1970 to construct a flood control dam along Pohick Creek. The resulting 49-acre reservoir was christened Royal Lake and quickly became a pristine ecological oasis for migratory waterfowl and freshwater anglers.\n\nBetween 1968 and 1978, regional residential homebuilders, including Richmarr Construction, developed Kings Park West around the lake's perimeter. Rather than stripping the landscape bare, builders followed the natural contour lines of the hills, creating shaded neighborhood streets lined with stately red maples, pin oaks, and tulip trees. They introduced spacious multi-level floor plans, split-foyers, and Dutch colonials with generous lot sizes ranging from a third of an acre to over half an acre. The neighborhood quickly became a favorite of university faculty from adjacent George Mason University, military leaders, and federal professionals.",
     architectureHeadline: "Spacious Multi-Levels, Dutch Colonials & Expanded Floor Plans",
     architecture: "Homes in Kings Park West are celebrated for their substantial square footage and structural solidity. Classic floor plans include the expanded split-foyer with daylight lower-level recreation rooms, Dutch colonials with distinctive gambrel roofs, and 2-story center-hall brick colonials. Large lot sizes—frequently ranging from a third of an acre to over half an acre—allow ample room for private in-ground swimming pools, garden patios, and sunroom additions.",
     schoolPyramidDetails: "The neighborhood is served by Laurel Ridge Elementary School (located right within the community) and the Robinson Secondary School pyramid. Robinson is one of the premier 7-12 schools in Fairfax County, celebrated for its full International Baccalaureate (IB) Diploma program, distinguished fine arts departments, and dominant athletic programs.",
@@ -259,6 +283,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Lake Amenity", value: "49-Acre Royal Lake" },
       { label: "Commuter Rail", value: "Rolling Road VRE (4 Mins)" }
     ],
+    interestingFacts: [
+      "Royal Lake spans 49 pristine freshwater acres, offering a 1.75-mile lakeside loop trail, kayak launch points, and designated wildlife observation docks.",
+      "One of the few Northern Virginia communities with three distinct private swimming pool complexes (KPWC Pools 1, 2, and 3), ensuring quick walkability for all residents.",
+      "Located adjacent to George Mason University, allowing residents to walk to Division I athletic events, EagleBank Arena concerts, and academic lectures.",
+      "Situated just four minutes from the Rolling Road Virginia Railway Express (VRE) station, providing a stress-free direct rail ride to the Pentagon, L'Enfant Plaza, and Union Station in D.C.",
+      "Students attend Laurel Ridge Elementary right inside the community and advance to Robinson Secondary School, renowned for its full International Baccalaureate (IB) diploma program.",
+      "The lake is an important birding stop on the Atlantic flyway, where bald eagles, great blue herons, and osprey are routinely spotted hunting."
+],
     faqs: [
       {
         question: "Does Kings Park West have direct access to Royal Lake?",
@@ -310,8 +342,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "Oakton represents the pinnacle of luxury central Fairfax County living, boasting 1 to 5-acre wooded parcels, gated circular motor courts, and magnificent custom brick estates minutes from Tysons Corner.",
     heroHeadline: "Custom Brick Mansions & Multi-Acre Wooded Privacy in Oakton 22124",
     story: "Oakton represents the pinnacle of executive luxury living in central Fairfax County. Characterized by winding scenic country lanes, gated circular motor courts, and expansive 1 to 5-acre wooded parcels, Oakton allows discerning homeowners to experience profound pastoral privacy and custom architectural scale without sacrificing rapid accessibility to Tysons Corner, the Dulles Technology Corridor, and Washington D.C.",
-    historyHeadline: "From Rural Agrarian Retreat to Premier Luxury Enclave",
-    history: "Historically an agrarian sanctuary along the historic Alexandria-Winchester turnpike, Oakton strictly preserved its low-density zoning as neighboring suburban areas developed. Beginning in the late 1980s and continuing through modern custom builds, Northern Virginia's most accomplished luxury builders crafted bespoke manor homes in enclave communities like Vale Valley, Oakton Reserve, and Hunters Valley, establishing 22124 as one of the state's wealthiest zip codes.",
+    historyHeadline: "The Historic Crossroads of Flint Hill & The Grand Oak of Oakton",
+    history: "Oakton's history spans more than two centuries of Northern Virginia commerce and rural tranquility. In the early 19th century, the settlement was known as \"Flint Hill,\" named after the rocky geological strata exposed along the turnpikes. It served as a critical wagon crossroads connecting the agricultural farms of Loudoun County with the deepwater seaports of Alexandria via the Middle Turnpike (Route 7) and Chain Bridge Road (Route 123). Hunter Mill Road, which traverses northern Oakton, functioned as a major supply and troop movement corridor during the Civil War, witnessing cavalry skirmishes and military encampments from both armies.\n\nIn the late 19th century, the village was formally renamed Oakton in tribute to the \"Great Oak\"—a massive, ancient white oak tree that stood proudly near the central intersection. As the Washington metropolitan area expanded westward in the mid-to-late 20th century, Oakton's civic leaders fought successfully to maintain lower-density residential zoning. While surrounding areas developed high-density townhomes, Oakton Estates and its adjacent enclaves preserved spacious half-acre to three-acre parcels. This created a picturesque enclave of custom-built brick executive residences, gated equestrian estates, and private wooded retreats that remain among Northern Virginia's most exclusive addresses.",
     architectureHeadline: "Grand Georgian, French Provincial & Transitional Masterpieces",
     architecture: "Oakton estates frequently exceed 6,000 to 10,000+ square feet of finished interior living space. Exterior architecture features hand-laid brick, Virginia fieldstone, and slate mansard roofs. Interiors boast double-height grand entrance foyers with curved imperial staircases, commercial elevator banks, 400-bottle wine cellars, home theaters, main-level executive library suites, and resort-style rear grounds with heated saltwater swimming pools, cabanas, and multi-tier flagstone terraces.",
     schoolPyramidDetails: "Oakton students attend the prestigious Oakton High School pyramid. Oakton Elementary and Waples Mill Elementary are celebrated for high academic achievement. Thoreau Middle School feeds into Oakton High School, consistently recognized as a Virginia 'Gold Medal' school with advanced AP programs and prominent athletic traditions. Elite private preparatory schools like Flint Hill School and Oakcrest School are also located right in Oakton.",
@@ -328,6 +360,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Average Lot Size", value: "1.0 - 5.0+ Acres" },
       { label: "Proximity to Tysons", value: "12 Minutes" }
     ],
+    interestingFacts: [
+      "Originally known as Flint Hill in the 1800s before being renamed Oakton after a beloved ancient white oak that dominated the crossroads.",
+      "Hunter Mill Road, which borders many of Oakton's estate properties, is an officially designated Virginia Historic Byway lined with Civil War markers, historic stone churches, and 19th-century farmsteads.",
+      "Home to the Oak Marr Recreation Complex, featuring an Olympic-caliber 50-meter indoor competition pool, diving complex, lighted turf athletic fields, and a 9-hole executive golf course.",
+      "Provides rare 1-to-3 acre private wooded parcels located just five minutes from the Vienna Metrorail station and seven minutes from Tysons Corner.",
+      "Zoned for the elite Oakton High School pyramid, which consistently ranks among the top public high schools in the Commonwealth of Virginia for AP curriculum participation and National Merit Scholars.",
+      "Maintains direct access to the Difficult Run Stream Valley Trail, leading hikers and horseback riders through miles of preserved wilderness all the way to the Potomac River."
+],
     faqs: [
       {
         question: "What are typical lot sizes for single-family estates in Oakton?",
@@ -375,8 +415,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "An independent Virginia municipality featuring historic 18th-century charm, pedestrian Old Town Square dining, low municipal tax rates, and a rich mix of classic colonials and brand-new luxury craftsman infill residences.",
     heroHeadline: "Independent Municipal Charm, Walkable Dining & Historic Heritage in Fairfax City",
     story: "As an independent city within the Commonwealth of Virginia, the City of Fairfax offers an exceptional blend of historic small-town character, independent municipal governance, and vibrant commercial energy. Centered around Old Town Square, the historic 1799 Courthouse, and the modern Fairfax Regional Library, residents enjoy pedestrian-friendly plazas, summer splash pads, fall beer festivals, and award-winning dining—all supported by the city's dedicated municipal services, independent police and fire departments, and competitive property tax rates.",
-    historyHeadline: "A Historic Crossroads in the Heart of Northern Virginia",
-    history: "Established in 1805 as the Town of Providence, Fairfax City grew as a pivotal legal and trading crossroads along the Little River Turnpike. During the Civil War, John Singleton Mosby executed daring raids through its streets. Incorporated as an independent city in 1961, it has carefully guarded its historic architectural core while welcoming George Mason University's rise as Virginia's largest public research university.",
+    historyHeadline: "Crossroads of History: The Town of Providence & The Historic 1800 Courthouse",
+    history: "The City of Fairfax traces its origin to 1805, when it was chartered as the Town of Providence by the Virginia General Assembly. Its establishment centered on the construction of the historic Fairfax County Courthouse in 1799–1800 at the strategic intersection of the Little River Turnpike (one of the earliest private paved toll turnpikes in the United States) and Ox Road. For generations, Providence served as the judicial, commercial, and political capital of Northern Virginia's agrarian society.\n\nDuring the American Civil War, the courthouse grounds and surrounding streets were contested repeatedly by opposing armies. On June 1, 1861, the Battle of Fairfax Court House took place here, marking the first land battle of the war in which casualties occurred. In March 1863, Confederate partisan ranger John S. Mosby staged his famous nighttime raid on the town, capturing Union Brigadier General Edwin H. Stoughton. In 1961, the town took the momentous step of incorporating as an independent, self-governing city separate from Fairfax County. Today, the City of Fairfax preserves its 19th-century brick architectural landmarks alongside a vibrant downtown filled with open-air dining, cultural festivals, and modern amenities.",
     architectureHeadline: "Architectural Variety: Colonial Revival to Modern Luxury Craftsman",
     architecture: "The housing stock in Fairfax City spans charming 1920s Sears craftsman bungalows, 1950s red brick ramblers, elegant mid-century colonials, and brand-new luxury infill craftsman residences. These newly constructed homes feature wrap-around southern front porches, 10-foot ceilings, chef's kitchens with dual ovens, and detached garage carriage suites.",
     schoolPyramidDetails: "The City of Fairfax owns four modernized school facilities operated through an exclusive cooperative agreement with Fairfax County Public Schools (FCPS). Students attend Providence or Daniels Run Elementary, advance to Katherine Johnson Middle School, and graduate from Fairfax High School, ensuring top FCPS educational quality with independent city oversight.",
@@ -393,6 +433,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Transit Option", value: "CUE Bus + Vienna Metro" },
       { label: "Old Town Walkability", value: "High / Pedestrian Plaza" }
     ],
+    interestingFacts: [
+      "The Historic 1800 Fairfax Courthouse archives hold the original, handwritten last will and testament documents of both George Washington and Martha Washington.",
+      "Operates as an independent city under Virginia law, meaning property owners pay zero Fairfax County real estate taxes and enjoy independent city council governance.",
+      "Site of the first land engagement of the Civil War involving casualties: the Battle of Fairfax Court House on June 1, 1861.",
+      "Old Town Square serves as a cultural gathering point with interactive splash fountains, an outdoor concert stage, and seasonal ice-skating and holiday tree lightings.",
+      "Hosts two of Northern Virginia's most popular community traditions: the annual Chocolate Lovers Festival every February and the multi-day Fall for Fairfax festival.",
+      "Home to George Mason University's northern campus edge, bringing world-class performing arts, Division I college athletics, and continuing education right into the city."
+],
     faqs: [
       {
         question: "Is the City of Fairfax separate from Fairfax County?",
@@ -440,8 +488,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "Northern Virginia's premier walkable urban town center in Merrifield, offering sophisticated 4-level luxury townhomes with private rooftop terraces, elevator options, and steps to the Dunn Loring Metro.",
     heroHeadline: "Sophisticated 4-Level Urban Townhomes with Private Rooftop Sky Terraces",
     story: "The Mosaic District represents Northern Virginia's most celebrated urban town center transformation. Located in Merrifield at the junction of Route 29 and Gallows Road, Mosaic features multi-level elevator brownstones and contemporary townhomes situated amidst a curated landscape of boutique retail, chef-driven restaurants, the Angelika Film Center & Cafe, MOM's Organic Market, and Strawberry Park lawn screenings.",
-    historyHeadline: "The Renaissance of Merrifield",
-    history: "Once an industrial and low-density commercial corridor, Merrifield was re-envisioned through an ambitious master plan beginning in 2010. Developed to stringent LEED Silver sustainability standards, with wide pedestrian-first streetscapes and high-density luxury residential brownstones, Mosaic instantly captured regional acclaim as a model for modern urban-suburban living.",
+    historyHeadline: "The Industrial Heritage & Visionary Renaissance of Merrifield",
+    history: "The transformation of Merrifield into the Mosaic District represents one of the most celebrated urban planning triumphs in modern American real estate. In the late 19th and early 20th centuries, Merrifield was a rural rail whistlestop along the Washington and Old Dominion (W&OD) rail corridor. In the post-World War II boom of the 1950s, its location near Route 50 (Arlington Boulevard) and Route 29 (Lee Highway) transformed it into a regional hub for light industry, supply yards, and suburban entertainment, anchored by the beloved Lee Highway Drive-In movie theater.\n\nBy the early 2000s, as the Orange Line Metrorail arrived at nearby Dunn Loring, Fairfax County leaders and visionary developers EDENS recognized the need to convert aging industrial strip centers into an active, walkable downtown. Construction of the Mosaic District began in 2010 with a commitment to LEED environmental sustainability, world-class architecture, and European-inspired street layouts. Developers preserved historical touches—including salvaging elements of the original Lee Highway Drive-In sign—while creating a vibrant pedestrian-only urban core lined with indie boutiques, chef-driven restaurants, and public parks.",
     architectureHeadline: "Modern 4-Level Luxury Brownstones & Elevator Townhomes",
     architecture: "Residences feature striking brick and metal architectural facades, private fourth-floor rooftop sky terraces with outdoor gas fireplaces, optional personal in-home elevators, 2-car rear-entry garages, floor-to-ceiling window walls, and designer kitchens with Sub-Zero and Wolf commercial appliances.",
     schoolPyramidDetails: "Mosaic District is zoned for the Falls Church High School pyramid within Fairfax County Public Schools. Fairhill Elementary is a highly regarded neighborhood school, Luther Jackson Middle School offers specialized arts and technology courses, and Falls Church High School recently completed major campus modernization.",
@@ -458,6 +506,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Inova Medical Campus", value: "4 Minutes" },
       { label: "Townhome Levels", value: "4 Stories + Rooftop" }
     ],
+    interestingFacts: [
+      "Built on the historic site of the Lee Highway Drive-In theater, which welcomed carloads of moviegoers under the Northern Virginia stars from 1952 through the mid-1980s.",
+      "Anchored by the acclaimed Angelika Film Center & Cafe, a multi-screen cinema dedicated to independent, foreign, and specialty art films with gourmet concession fare.",
+      "Strawberry Park features a massive high-definition outdoor LED screen where the community gathers on blanketed lawns for summer movie nights, World Cup screenings, and live music.",
+      "Certified LEED-ND (Neighborhood Development), making it one of the premier environmentally sustainable urban master plans on the East Coast.",
+      "Located under one mile from the Dunn Loring-Merrifield Orange Line Metrorail station, enabling a seamless 20-minute direct subway commute into downtown Washington D.C.",
+      "Hosts a renowned year-round Sunday Farmers Market featuring over 50 regional farms, artisan bakeries, and gourmet purveyors."
+],
     faqs: [
       {
         question: "Can you walk to the Metro from Mosaic District townhomes?",
@@ -505,8 +561,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "A nationally acclaimed 1,700-acre conservancy in Burke (ZIP 22015) featuring 5 community swimming centers, 30 miles of trails, Burke Lake Park, and two direct VRE commuter rail stations.",
     heroHeadline: "Conservancy Parkland, Lakefront Living & Express VRE Train Access in Burke",
     story: "Burke is a crown jewel of Fairfax County family living, highlighted by the 1,700-acre Burke Centre Conservancy and 888-acre Burke Lake Park. Homeowners enjoy a sanctuary of five distinct neighborhood clusters (The Commons, The Landings, The Oaks, The Ponds, and The Woods), each with dedicated community centers, swimming pool complexes, tennis courts, and interconnected forest trail networks.",
-    historyHeadline: "Burke Centre: A Nationally Recognized Conservancy",
-    history: "Beginning development in the mid-1970s, Burke Centre was awarded national recognition as a designated Planned Residential Community. The conservancy design ensured that over 30% of all land remained untouched natural parkland, buffering homes with mature trees and native flora that thrive to this day.",
+    historyHeadline: "Silas Burke's Railway Station & The Burke Centre Conservancy",
+    history: "Burke's rich historical roots date back to 1824, when prominent local farmer, merchant, and justice of the peace Silas Burke constructed a stately brick home overlooking the planned route of the Orange and Alexandria Railroad. In the late 1840s, Silas Burke donated right-of-way land to the railroad, and the newly established \"Burke's Station\" became a crucial transport hub for timber, dairy products, and agricultural crops heading into Washington and Alexandria. During the Civil War, Burke's Station was raided multiple times by Confederate cavalry under General J.E.B. Stuart, who famously sent mocking telegraphs to Union Quartermaster General Montgomery Meigs from the Burke depot.\n\nIn the mid-1970s, Western Fairfax County oversaw the groundbreaking development of Burke Centre—a 1,700-acre master-planned conservancy that won national architectural and environmental planning awards. The conservancy preserved hundreds of acres of old-growth oak and beech forest, six community ponds, and miles of nature trails. Meanwhile, the Fairfax County Park Authority completed Burke Lake Park, transforming 888 acres of woodland around a 218-acre freshwater reservoir into one of the mid-Atlantic's premier recreation destinations.",
     architectureHeadline: "Center-Hall Colonials, Contemporary Villas & Townhomes",
     architecture: "From executive brick colonials on quiet cul-de-sacs to low-maintenance townhomes with finished walk-out basements, homes in Burke offer generous square footage, traditional wood-burning fireplaces, two-car garages, and wooded backyard privacy.",
     schoolPyramidDetails: "Students attend the prestigious Lake Braddock Secondary School pyramid (grades 7-12) or the Robinson Secondary pyramid. Both schools feature robust Advanced Placement (AP) curricula, state-ranked athletic teams, and celebrated marching bands.",
@@ -523,6 +579,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Conservancy Amenities", value: "5 Pools & 30 Mi Trails" },
       { label: "Burke Lake Park", value: "888-Acre Park Adjacent" }
     ],
+    interestingFacts: [
+      "Silas Burke's original 1824 brick mansion still stands on Burke Lake Road and is listed on the National Register of Historic Places.",
+      "Burke Lake Park encompasses 888 acres and features a 218-acre freshwater lake, miniature steam locomotive, 18-hole par-3 golf course, carousel, and a 4.7-mile scenic shoreline trail.",
+      "Burke Centre is divided into five unique 'neighborhoods' (The Commons, The Oaks, The Ponds, The Woods, and The Landings), each with its own private swimming pool, community center, and architectural character.",
+      "The Burke Centre VRE Commuter Rail station features a multi-level parking garage offering direct express train transit to the Pentagon, L'Enfant Plaza, and Union Station in D.C.",
+      "Zoned for the Lake Braddock Secondary School pyramid (grades 7–12), celebrated for top academic honors, championship athletics, and distinguished performing arts.",
+      "During the Civil War, Confederate cavalry under General J.E.B. Stuart captured the Burke telegraph office and famously tapped the line to intercept Union military cables."
+],
     faqs: [
       {
         question: "How does the VRE commuter train work from Burke?",
@@ -570,8 +634,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "An exclusive Fairfax City neighborhood bordering the rolling championship fairways of the Army Navy Country Club, prized for large wooded lots, estate rebuilds, and quiet privacy.",
     heroHeadline: "Rolling Fairway Views Bordering Historic Army Navy Country Club",
     story: "Country Club Hills is one of the most prestigious and scenic neighborhoods in Fairfax City. Flanking the lush championship fairways of the Army Navy Country Club, the neighborhood is prized for its undulating topography, mature oaks, large setback lots, and an extraordinary sense of peaceful seclusion just moments from downtown amenities.",
-    historyHeadline: "The Heritage of Fairfax Golf Course Living",
-    history: "Established alongside the expansion of the Army Navy Country Club's Fairfax course in the late 1950s and 1960s, Country Club Hills was conceived for military officers, judges, and prominent civic leaders who desired custom homes in a park-like golf setting.",
+    historyHeadline: "The Mid-Century Vision of Fairfax Golf Course Living",
+    history: "Country Club Hills was established in the mid-1950s as one of the earliest planned country-club luxury communities in central Fairfax. Conceived alongside the expansion of the historic Country Club of Fairfax (which was originally founded in 1947), the neighborhood was designed to cater to prominent regional attorneys, physicians, military commanders, and civic leaders. These buyers sought generous suburban lots that offered both tranquility and direct proximity to championship golf and social amenities.\n\nThe community was laid out with undulating streetscapes that followed the rolling ridgelines adjacent to the golf course fairways. Homebuilders constructed substantial mid-century modern ranches, split-levels, and center-hall brick colonials set on quarter-acre to half-acre lots with deep setbacks and mature trees. Located entirely within the independent City of Fairfax boundary, Country Club Hills homeowners have enjoyed the dual benefits of independent city governance—such as specialized municipal services and zero county real estate taxes—and a scenic golf club setting just minutes from historic Old Town.",
     architectureHeadline: "Custom Ranch Estates, Tri-Levels & Grand Colonials",
     architecture: "Properties feature expansive single-level living and multi-tiered colonial floor plans. In recent years, substantial custom rebuilds have elevated neighborhood values, introducing transitional architecture with limestone porticos, black-frame Anderson windows, and multi-car carriage garages.",
     schoolPyramidDetails: "Students attend Daniels Run Elementary, Katherine Johnson Middle School, and Fairfax High School, benefiting from city school enhancements within the FCPS network.",
@@ -588,6 +652,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "HOA Dues", value: "None (City of Fairfax)" },
       { label: "Lot Sizes", value: "0.35 - 0.65 Acres" }
     ],
+    interestingFacts: [
+      "Select properties back directly onto the manicured fairways and greens of the private Country Club of Fairfax championship 18-hole golf course.",
+      "Located within the independent City of Fairfax, providing residents with independent municipal police, fire, leaf vacuuming, and zero county property tax.",
+      "Features a mature, 70-year-old tree canopy of flowering dogwoods, Japanese maples, and majestic native oaks that create exceptional privacy.",
+      "Direct pedestrian sidewalk access connects residents to Old Town Fairfax for weekly farmers markets, independent cafes, and the annual Chocolate Lovers Festival.",
+      "Zoned for Katherine Johnson Middle School (named for the pioneering NASA mathematician) and the newly modernized Fairfax High School.",
+      "Homes in the neighborhood have seen significant multimillion-dollar architectural renovations, including expansive second-story additions and open-concept floor plans."
+],
     faqs: [
       {
         question: "Do homes in Country Club Hills back directly to the golf course?",
@@ -635,8 +707,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "A master-planned 300-acre residential golf enclave in Fairfax (ZIP 22033) built around an 18-hole championship course, complete with clubhouse, tennis, fitness center, and Oakton High School pyramid.",
     heroHeadline: "Resort-Style Living Around an 18-Hole Championship Golf Course",
     story: "Penderbrook is a masterfully designed 300-acre residential golf community situated at the intersection of I-66 and Route 50 in Fairfax. Built around the challenging Penderbrook Golf Course (designed by Ed Ault and updated with Arnold Palmer design influences), the community offers an enviable country club lifestyle with low-maintenance luxury.",
-    historyHeadline: "The Vision for Penderbrook",
-    history: "Developed starting in the late 1980s, Penderbrook was envisioned as an all-inclusive resort community where residents could play 18 holes, swim, play tennis, and work out in a private fitness facility without leaving the neighborhood gates.",
+    historyHeadline: "The Master-Planned Golf Course Vision of Penderbrook",
+    history: "The origins of Penderbrook reflect the dynamic growth of Western Fairfax County during the late 1980s. Prior to its development, the land near the intersection of Route 50 (Lee Jackson Memorial Highway) and Interstate 66 was composed of rolling horse pastures, timberland, and rural farmsteads. In 1987, the Penderbrook Development Company conceived a visionary master-planned residential golf community that would integrate diverse housing styles—ranging from luxury single-family colonials to golf-course villas and townhomes—around an 18-hole championship golf course.\n\nRenowned golf course architect Ed Ault was commissioned to design the par-71 course, which skillfully utilized the site's natural elevation changes, water hazards, and mature tree stands to create a challenging, scenic layout. Over the ensuing decade, seven distinct residential enclaves were constructed around the perimeter of the greens. The community quickly became a favored destination for technology professionals, government executives, and defense contractors working in the burgeoning Dulles and Fair Oaks commercial corridors.",
     architectureHeadline: "Golf Villas, Townhomes & Single-Family Homes",
     architecture: "Diverse property offerings include maintenance-free garden condominiums overlooking fairways, spacious 3-story townhomes with walk-out decks, and executive single-family colonials along tranquil cul-de-sacs.",
     schoolPyramidDetails: "Anchored by Waples Mill Elementary, Franklin Middle School, and Oakton High School, providing premier educational ratings.",
@@ -653,6 +725,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "School Pyramid", value: "Oakton High School" },
       { label: "Highway Access", value: "I-66 & Route 50" }
     ],
+    interestingFacts: [
+      "Built around the Penderbrook Golf Club, an 18-hole par-71 championship course designed by Ed Ault featuring picturesque water hazards and rolling fairways.",
+      "Community amenities include a multi-million-dollar clubhouse, modern fitness center, two swimming pools, six lighted tennis courts, and basketball courts.",
+      "Positioned directly at the junction of I-66 and Route 50, providing unparalleled commuting convenience to Tysons Corner, Washington D.C., and Dulles Airport.",
+      "Composed of seven distinct residential enclaves, offering everything from single-family golf-front homes to low-maintenance townhomes and garden condominiums.",
+      "Just two minutes from major retail and dining destinations including Fair Oaks Mall, the Fairfax County Government Center, and the Fairfax Corner outdoor lifestyle center.",
+      "Residents enjoy social clubhouse gatherings, seasonal golf leagues, tennis tournaments, and summer pool events coordinated through the community association."
+],
     faqs: [
       {
         question: "Do residents get discounts on golf at Penderbrook?",
@@ -696,8 +776,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "Consistently ranked among America's top hometowns, Vienna features historic Church Street dining, the 45-mile W&OD Trail, top-ranked James Madison High School, and magnificent modern luxury craftsman homes.",
     heroHeadline: "Classic Hometown Americana Minutes from Tysons Corner & D.C.",
     story: "Consistently ranked among the top towns in the United States, Vienna combines idyllic small-town community warmth with extraordinary economic vibrancy. Centered along historic Maple Avenue and Church Street, Vienna boasts beloved independent cafes, farm-to-table dining, the Freeman Store & Museum, and the famous W&OD 45-mile paved bike trail running through the heart of town.",
-    historyHeadline: "From Rural Whistlestop to Prestigious Enclave",
-    history: "Originally settled in the 1700s and later served by the Washington and Old Dominion Railroad, Vienna played an integral role as a peaceful rural outpost. Today it thrives with active municipal governance, police services, and cherished annual events like the ViVa! Vienna Memorial Day festival and Halloween parades.",
+    historyHeadline: "From Rural Ayr Hill Whistlestop to Prestigious Northern Virginia Enclave",
+    history: "Vienna’s deep heritage began in the mid-18th century when colonial settlers established farmsteads along the road from Alexandria to the Shenandoah Valley. Originally called \"Ayr Hill\" by a prominent Scottish immigrant, the village was renamed Vienna in the 1850s in honor of Vienna, New York, the hometown of a beloved local physician. In 1859, the Washington and Old Dominion (W&OD) Railroad reached Vienna, transforming the sleepy village into a thriving agricultural depot where local farmers shipped milk, apples, and grain to Washington D.C.\n\nDuring the American Civil War, Vienna stood squarely on the front lines. On June 17, 1861, it was the site of the Battle of Vienna, the first time in world military history that a railroad train was ambushed in combat. After the war, Vienna incorporated as an independent town in 1890. In the mid-20th century, the opening of Westwood Country Club (1954) and the town's charming Church Street historic district cemented Vienna and its Westwood enclave as one of Northern Virginia's most desirable and affluent residential addresses.",
     architectureHeadline: "Craftsman Infill Masterpieces & Classic Colonials",
     architecture: "Vienna has witnessed an impressive renaissance of modern luxury craftsman and farmhouse homes. Built with natural cedar shakes, fieldstone accents, three-car garages, and wide wrap-around porches, these residences offer modern high-efficiency luxury on established, tree-shaded suburban lots.",
     schoolPyramidDetails: "Served by James Madison High School, Louise Archer Elementary, and Thoreau Middle School, recognized for exceptional academics and athletics.",
@@ -714,6 +794,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "W&OD Trail", value: "Runs Through Town" },
       { label: "Proximity to Tysons", value: "5 Minutes" }
     ],
+    interestingFacts: [
+      "Site of the Battle of Vienna (June 1861), the first military engagement in world history involving an armored train ambush.",
+      "The 45-mile Washington & Old Dominion (W&OD) Railroad Regional Trail runs straight through downtown Vienna, serving as the town's vibrant pedestrian and bicycling spine.",
+      "Home to Wolf Trap National Park for the Performing Arts—the only national park in the United States dedicated exclusively to the performing arts.",
+      "Historic Church Street features 19th-century architecture, the historic Freeman Store and Museum (built 1859), and an authentic red W&OD caboose.",
+      "Maintains its own independent town government and police department, famous for host events like the historic Halloween Parade and ViVa! Vienna! Memorial Day festival.",
+      "The Westwood neighborhood features custom multi-million dollar residences bordering the championship 18-hole golf course and clay tennis courts of Westwood Country Club."
+],
     faqs: [
       {
         question: "Why are so many new craftsman homes being built in Vienna?",
@@ -757,8 +845,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "Northern Virginia's premier countryside estate destination, featuring 2 to 10+ acre private gated compounds along the Potomac River, equestrian bridle trails, and top-ranked Langley High School.",
     heroHeadline: "Equestrian Elegance & Potomac Riverfront Mansions in Great Falls 22066",
     story: "Great Falls is Northern Virginia's most prestigious countryside estate market. Nestled along the dramatic bluffs of the Potomac River, this tranquil community is renowned for 2-acre, 5-acre, and 10+ acre private estates, equestrian bridle trails, and the breathtaking natural spectacles of Great Falls National Park.",
-    historyHeadline: "The Legacy of Great Falls Country Living",
-    history: "Named for the majestic rapids where the Potomac River plunges into Mather Gorge, Great Falls has maintained an uncompromising commitment to low-density zoning and environmental preservation. The village center maintains a classic European village square feel with fine dining at L'Auberge Chez François.",
+    historyHeadline: "The Roaring Potomac Gorge, George Washington's Canal & Great Falls Estates",
+    history: "Great Falls has captivated explorers and settlers for centuries. Indigenous peoples fished the swirling waters of the Potomac River gorge for thousands of years before colonial settlement. In the 1780s, George Washington personally surveyed the roaring 76-foot cataracts and spearheaded the creation of the Patowmack Canal—one of the earliest civil engineering achievements in the United States—to allow flatboats to navigate safely around the impassable falls. The ruins of this historic canal and the ghost town of Matildaville remain preserved within Great Falls Park today.\n\nThroughout the 19th and early 20th centuries, Great Falls was a remote rural community of sprawling orchards, timber mills, and dairy farms. As suburban growth swept Northern Virginia in the late 20th century, Great Falls civic leaders made a decisive commitment to conservation, establishing strict two-acre and five-acre minimum zoning laws. This landmark zoning prevented dense tract subdivisions and preserved the region's majestic pastoral landscape, transforming Great Falls into one of the nation's wealthiest and most exclusive enclaves of custom architectural estates, equestrian farms, and private gated compounds.",
     architectureHeadline: "Bespoke French Chateaux, European Manors & Modernist Compounds",
     architecture: "Residences in Great Falls represent architectural grandeur: hand-cut stone facades, heated marble motor courts, equestrian stables and riding rings, indoor basketball courts, private wine cellars, and expansive private wooded perimeters.",
     schoolPyramidDetails: "Anchored by Langley High School, Cooper Middle, and Colvin Run Elementary, consistently ranked among the nation's premier academic pyramids.",
@@ -775,6 +863,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Lot Sizes", value: "2.0 - 10.0+ Acres" },
       { label: "National Park", value: "Great Falls on Potomac" }
     ],
+    interestingFacts: [
+      "Great Falls Park preserves 800 acres of dramatic wilderness along the Potomac River gorge, featuring three scenic overlooks of the roaring 76-foot falls and the historic ruins of George Washington's 1785 Patowmack Canal.",
+      "Riverbend Park encompasses over 400 acres of tranquil riverside forest, offering kayak and canoe rentals, nature centers, and direct connection to the Potomac Heritage National Scenic Trail.",
+      "Strict two-acre and five-acre minimum zoning preserves equestrian properties, horse stables, and an unpolluted night sky free from urban light pollution.",
+      "Great Falls Village Centre features charming New England-style architecture, the historic Old Brogue Irish Pub, seasonal farmers markets, and weekly 'Cars & Coffee' exotic automobile showcases.",
+      "Consistently ranks among the top five wealthiest ZIP codes in the United States (ZIP 22066), zoned for the prestigious Langley High School pyramid.",
+      "Countless diplomatic leaders, corporate titans, professional athletes, and tech founders have chosen Great Falls for its unparalleled privacy and natural security."
+],
     faqs: [
       {
         question: "What is the minimum lot size in Great Falls, VA?",
@@ -818,8 +914,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "The epicenter of Mid-Atlantic wealth and diplomatic influence along the Potomac River, featuring stately Georgian mansions, embassy-caliber security compounds, and the fastest commute into Washington D.C.",
     heroHeadline: "World-Class Executive Estates & Diplomatic Riverfront Living in McLean 22101",
     story: "Positioned directly on the Potomac River border with Washington, D.C., McLean is the geographic epicenter of wealth and political influence in the Mid-Atlantic. Home to diplomats, technology founders, and Fortune 500 executives, McLean's 'Gold Coast' along Chain Bridge Road features some of the most valuable estates on the East Coast.",
-    historyHeadline: "The History of McLean",
-    history: "Named for John Roll McLean, former publisher of The Washington Post, the area flourished as an affluent getaway connected by the Great Falls and Old Dominion Railroad. Today it represents the ultimate power address, bordering the CIA headquarters at Langley and the premier retail hub of Tysons Galleria.",
+    historyHeadline: "John Roll McLean's Trolley Line & The Stately Potomac Gold Coast",
+    history: "McLean's development began in 1906 when John Roll McLean, former publisher and owner of The Washington Post, joined forces with Senator Stephen Benton Elkins to build the Great Falls and Old Dominion Railroad. This electric trolley line connected downtown Washington D.C. with the tourist destination of Great Falls, crossing the Potomac via Chain Bridge. The railway depot established at the junction of Chain Bridge Road and Old Dominion Drive was christened \"McLean\" in honor of the rail founder, rapidly blossoming into the commercial heart of the community.\n\nBecause of its immediate proximity to the nation's capital and the breathtaking scenic bluffs above the Potomac River, McLean quickly became the premier home for Washington's political and diplomatic elite. In the mid-20th century, the construction of the Central Intelligence Agency (CIA) headquarters at Langley cemented McLean's international prominence. Along the Potomac riverbank, the famed \"Gold Coast\" along Chain Bridge Road emerged as home to majestic estates, private diplomatic compounds, and architectural masterpieces belonging to Supreme Court justices, cabinet secretaries, ambassadors, and business magnates.",
     architectureHeadline: "Architecturally Significant Mansions & Modern Glass Enclaves",
     architecture: "Estates encompass timeless Georgian mansions, sprawling neo-classical villas, and striking contemporary glass compounds. Properties boast multi-million dollar security systems, embassy-grade ballrooms, staff quarters, and cliffside infinity pools overlooking the river.",
     schoolPyramidDetails: "McLean High School and Chesterbrook Elementary consistently rank at the very top of Virginia and national academic league tables.",
@@ -836,6 +932,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "School Pyramid", value: "McLean High School" },
       { label: "Tysons Galleria", value: "5 Minutes" }
     ],
+    interestingFacts: [
+      "Named after John Roll McLean, former owner of The Washington Post, who built the electric trolley line that opened the area to residential estates in 1906.",
+      "The 'Gold Coast' of McLean along Chain Bridge Road and Georgetown Pike features multimillion-dollar riverside estates on high bluffs overlooking the Potomac River.",
+      "Home to the George Bush Center for Intelligence, the global headquarters of the Central Intelligence Agency (CIA) at Langley.",
+      "Features Clemyjontri Park, an internationally recognized 2-acre all-accessible playground designed for children of all abilities, complete with a historic carousel.",
+      "Directly adjacent to Tysons Corner—Northern Virginia's economic juggernaut—offering premier luxury retail at Tysons Galleria and headquarters for numerous Fortune 500 corporations.",
+      "Langley High School and McLean High School consistently rank among the premier public high schools in the United States for academic rigor, AP offerings, and Ivy League placement."
+],
     faqs: [
       {
         question: "Why is McLean considered Northern Virginia's top address?",
@@ -879,8 +983,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "A registered National Historic District and Virginia wine country haven strictly protected by 5-acre conservation zoning, featuring pastel Victorian village homes and sprawling country estate compounds.",
     heroHeadline: "Historic Victorian Country Town & Sprawling Equestrian Acreage in Clifton 20124",
     story: "Stepping into Clifton feels like entering a storybook Virginia country hamlet. Established along the Orange and Alexandria Railroad, Clifton is an officially registered National Historic District featuring pastel Victorian homes, wooden boardwalks, the beloved Red Caboose ice cream stop, and Paradise Springs Winery. The surrounding residential territory is strictly zoned for 5-acre minimum parcel sizes.",
-    historyHeadline: "The Heritage of Historic Clifton",
-    history: "Originally settled as Devereux Station during the Civil War, Clifton was incorporated as an independent town in 1902. Because the entire region lies within the protected Occoquan watershed basin, Fairfax County enacted strict 5-acre conservation zoning in the early 1980s, permanently safeguarding the community against high-density development.",
+    historyHeadline: "Devereux Station, Victorian Sanctuaries & Historic Clifton Wine Country",
+    history: "Clifton’s storied heritage began in the early 1860s as \"Devereux Station,\" a crucial depot along the Orange and Alexandria Railroad. During the Civil War, the station served as a heavily guarded military supply and telegraph post for Union troops. Following the war, regional developer Harrison G. Otis acquired the surrounding land and discovered therapeutic natural mineral springs. Renaming the settlement Clifton, he developed it into a fashionable summer resort where wealthy Washingtonians, including President Ulysses S. Grant, arrived by steam train to escape the heat of the capital.\n\nIn 1902, Clifton officially incorporated as an independent town. During the 20th century, while surrounding areas developed, Clifton fiercely preserved its historic 19th-century character. In 1985, the entire town was declared a National Historic District on the National Register of Historic Places. Surrounding the town center, the Fairfax County Comprehensive Plan established five-acre minimum conservation zoning, protecting pastoral equestrian estates, winding country roads, and fertile soils that gave birth to the renowned Clifton Wine Country.",
     architectureHeadline: "Historic Victorians & Expansive Custom Country Manors",
     architecture: "Architectural offerings range from lovingly restored 19th-century Queen Anne Victorians in the historic village to newly built 8,000+ square foot custom stone manors on multi-acre private compounds with horse barns, private stocked ponds, and detached workshops.",
     schoolPyramidDetails: "Zoned for Clifton Elementary and the Robinson Secondary or Centreville High School pyramids, recognized across FCPS for excellence.",
@@ -897,6 +1001,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Historic Status", value: "National Historic District" },
       { label: "Local Winery", value: "Paradise Springs Winery" }
     ],
+    interestingFacts: [
+      "The entire 0.25-square-mile Town of Clifton is listed on the National Register of Historic Places, preserving an intact collection of 19th-century Victorian and Gothic Revival homes with gingerbread porches.",
+      "Home to Paradise Springs Winery, the first commercial vineyard and winery in Fairfax County, crafting internationally recognized Virginia wines at the edge of the historic town.",
+      "The surrounding countryside is protected by strict five-acre minimum zoning, safeguarding equestrian stables, private pastures, and rolling forested ridgelines.",
+      "Clifton's historic Main Street features acclaimed dining including Trummer's Restaurant, Peterson's Ice Cream Depot, and the historic Clifton Main Street Cafe.",
+      "The 17-mile Bull Run-Occoquan Trail winds along the riverbank near town, offering pristine hiking, horseback riding, and Civil War earthwork exploration.",
+      "President Ulysses S. Grant frequented Clifton during his presidency, staying at the Clifton Hotel to drink from the town's renowned natural mineral springs."
+],
     faqs: [
       {
         question: "Why does Clifton have a 5-acre minimum lot size rule?",
@@ -940,8 +1052,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "A premier master-planned high-rise enclave in Falls Church offering 24-hour concierge services, panoramic capital skyline vistas, resort pools, and immediate 10-minute connectivity to the Pentagon.",
     heroHeadline: "Resort-Style Vertical Living & Panoramic Skyline Vistas in Falls Church 22041",
     story: "Originally envisioned by legendary developer Charles E. Smith in the early 1970s, the Skyline Subdivision in Falls Church (Baileys Crossroads) is celebrated as one of Northern Virginia's most established master-planned residential environments. Comprising landmark towers such as Skyline Square, Skyline Plaza, and Skyline House, this vibrant vertical village offers a complete lifestyle ecosystem with on-site retail, private fitness centers, swimming pools, and manicured green parks. Residents are situated just 5 miles from the Pentagon and 7 miles from Ronald Reagan Washington National Airport.",
-    historyHeadline: "The Heritage of Skyline: Charles E. Smith Masterwork",
-    history: "Developed on the historic grounds of Washington-Virginia Airport, Skyline was master-planned as a self-contained live-work-play urban enclave. Over five decades, Skyline has maintained its reputation for generous interior layouts, solid concrete construction, and sweeping panoramic views of the Washington monument skyline and Northern Virginia canopy.",
+    historyHeadline: "From Aviation Airfield to Charles E. Smith's High-Rise Masterpiece",
+    history: "Before becoming Northern Virginia’s most recognizable condominium skyline, this elevated promontory was the site of the historic Washington-Virginia Airport. Operating from the late 1930s through 1970, the airfield was a bustling hub for private aviation, flight training, and charter planes serving the nation’s capital. As air traffic modernizations required longer runways, the airport was decommissioned, opening up a magnificent 100-acre hilltop ridge with sweeping, unobstructed vistas of the Washington D.C. skyline, the Potomac River, and the National Cathedral.\n\nProminent real estate visionary Charles E. Smith acquired the land in the early 1970s and conceived \"Skyline City\"—a revolutionary mixed-use urban community of luxury residential towers, commercial office headquarters, and retail complexes. Engineered with solid reinforced architectural concrete and floor-to-ceiling glass balconies, the residential high-rises (Skyline Square, Skyline Plaza, Skyline Towers) set the standard for resort-style condominium living in Northern Virginia. Over five decades, Skyline has maintained its position as a favored residential address for international diplomats, defense contractors, and urban professionals seeking hotel-caliber amenities just minutes from D.C.",
     architectureHeadline: "Spacious Balcony Floor Plans, Floor-to-Ceiling Windows & Modern Upgrades",
     architecture: "Skyline residences range from 850-square-foot one-bedroom suites to expansive 1,800+ square-foot three-bedroom corner homes. Signature features include private covered balconies, walk-in dressing closets, and floor-to-ceiling glass sliders. Many residences have been tastefully updated with granite and quartz countertops, custom cabinetry, and luxury vinyl plank flooring.",
     schoolPyramidDetails: "Skyline residents are served by the Justice High School pyramid in Fairfax County Public Schools, known for its distinguished International Baccalaureate (IB) program.",
@@ -958,6 +1070,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Distance to Pentagon", value: "5.0 Miles" },
       { label: "Transit Option", value: "Direct Bus to Pentagon Metro" }
     ],
+    interestingFacts: [
+      "Built on the site of the historic Washington-Virginia Airport, where private aircraft flew directly over Northern Virginia until 1970.",
+      "Engineered with solid poured-in-place reinforced concrete construction, providing soundproofing and structural durability.",
+      "Boasts resort-style amenities including 24-hour concierge lobbies, Olympic-sized outdoor pools, rooftop penthouse terraces, fitness centers, saunas, and private billiards salons.",
+      "Positioned at the boundary of Alexandria, Arlington, and Fairfax County, offering a 10-minute commute to the Pentagon, Amazon HQ2 at National Landing, and Reagan National Airport.",
+      "Upper-level residences feature panoramic views of the Washington Monument, the Capitol Dome, and the scenic Potomac River valley.",
+      "Direct pedestrian connection to the Skyline shopping concourses, providing on-site grocery shopping, dining, and daily services without needing a car."
+],
     faqs: [
       {
         question: "What is included in the Skyline Condominiums HOA/Condo fee?",
@@ -1005,8 +1125,8 @@ export const FAIRFAX_COMMUNITIES = [
     description: "A prestigious 16-story, 275-unit luxury high-rise condominium in Alexandria featuring a marble-clad lobby, 24/7 executive concierge, heated pool, billiards lounge, and quick transit to the Pentagon.",
     heroHeadline: "Sophisticated High-Rise Living & Full-Service Amenities at Northampton Place",
     story: "Northampton Place is a distinguished 16-story, 275-residence luxury condominium address prominently positioned on the border of Alexandria and Falls Church. Celebrated for its soaring marble and granite lobby, 24-hour concierge, temperature-controlled outdoor pool, state-of-the-art fitness center, and private landscaped courtyard with charcoal dining tables, Northampton Place combines metropolitan sophistication with tranquil residential seclusion.",
-    historyHeadline: "Premier Contemporary Construction in Alexandria",
-    history: "Constructed to elite structural standards, Northampton Place was engineered as an executive sanctuary for professionals desiring quick commutes to the Pentagon, Amazon HQ2, and Capitol Hill. The property is managed by an experienced on-site team ensuring impeccable maintenance throughout the year.",
+    historyHeadline: "Premier Contemporary Construction in Alexandria's West End",
+    history: "Northampton Place was constructed in 2004 by the renowned Crescent Heights development organization as a premier luxury high-rise condominium community in Alexandria's dynamic West End. Prior to the late 20th century, this elevated terrain along the historic Leesburg Pike (Route 7) and Interstate 395 corridor was part of Alexandria's historic perimeter defenses. Nearby Fort Ward, constructed in 1861, was the fifth-largest Civil War fortification in the Defenses of Washington, built to protect the capital and the vital Alexandria turnpikes.\n\nCrescent Heights recognized the site's unmatched commuter geometry: positioned immediately at the King Street interchange of I-395, residents could reach the Pentagon and downtown Washington D.C. in less than 15 minutes. The 16-story high-rise was engineered to the highest contemporary acoustic and structural standards, featuring post-tensioned concrete construction, dual-pane thermal glass, 9-foot ceilings, and full private balconies. Northampton Place quickly established itself as one of Alexandria’s premier luxury condominium addresses.",
     architectureHeadline: "Modern Open-Plan Layouts with Private Balconies & Garage Parking",
     architecture: "Homes at Northampton Place feature high ceilings, crown molding, expansive double-paned windows, gas fireplaces, and private balconies overlooking Alexandria greenery. Every home includes deeded underground garage parking and extra storage lockers.",
     schoolPyramidDetails: "Zoned within Alexandria City public schools, minutes from Episcopal High School, St. Stephen's and St. Agnes, and prestigious private academies.",
@@ -1023,6 +1143,14 @@ export const FAIRFAX_COMMUNITIES = [
       { label: "Concierge Service", value: "24/7 Executive Desk" },
       { label: "Commute to D.C.", value: "15 - 22 Mins" }
     ],
+    interestingFacts: [
+      "Constructed by Crescent Heights in 2004 as a full-service 16-story luxury high-rise with 275 high-specification private residences.",
+      "Features resort-caliber amenities including a 24-hour concierge-staffed lobby, heated outdoor swimming pool, fully equipped fitness center, and an executive clubroom with billiards.",
+      "Positioned directly at the King Street (Route 7) exit of I-395, offering express commuter bus service to the Pentagon Metrorail station in under 12 minutes.",
+      "Located just minutes from historic Old Town Alexandria's riverfront dining, the Village at Shirlington arts district, and the Bradlee Shopping Center.",
+      "Adjacent to historic Fort Ward Park, a 45-acre preserved Civil War fort featuring walking trails, picnic groves, and an authentic military history museum.",
+      "Pet-friendly luxury building with beautifully landscaped private dog-walking grounds and assigned garage parking with EV charging capability."
+],
     faqs: [
       {
         question: "What amenities does Northampton Place offer residents?",

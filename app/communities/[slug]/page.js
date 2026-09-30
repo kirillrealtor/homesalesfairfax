@@ -21,13 +21,13 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `${community.name} Real Estate & Homes For Sale | ${community.zip} Market Guide`,
-    description: `Comprehensive 2026 real estate guide for ${community.name}, ${community.cityState}. View recent settled comps, history, architectural styles, ${community.schools}, and market reports with Elena Gorbounova.`,
+    title: `${community.name}, VA Real Estate & Homes | History, Market Comps & Guide`,
+    description: `Comprehensive 2026 real estate & neighborhood guide for ${community.name}, ${community.cityState}. Settled comps, history, architectural styles, ${community.schools}, and representation with Elena Gorbounova.`,
     alternates: {
       canonical: `https://homesalesfairfax.com/communities/${community.slug}`,
     },
     openGraph: {
-      title: `${community.name} Real Estate | Fairfax County Market Guide`,
+      title: `${community.name} Real Estate & History | Fairfax County Guide`,
       description: community.heroHeadline,
       url: `https://homesalesfairfax.com/communities/${community.slug}`,
       siteName: "homesalesfairfax.com",
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
           url: `https://homesalesfairfax.com${community.image}`,
           width: 1200,
           height: 800,
-          alt: `${community.name} Luxury Real Estate`,
+          alt: `${community.name} Real Estate & History`,
         },
       ],
       locale: "en_US",
@@ -53,7 +53,13 @@ export default async function CommunityDetailPage({ params }) {
     notFound();
   }
 
-  // Schema.org structured data: Place + FAQPage for rich Google SERP snippets
+  const directPhone = "(703) 625-7888";
+  const telHref = "tel:7036257888";
+  const smsHref = `sms:+17036257888?body=Hi%20Elena,%20I'm%20interested%20in%20${encodeURIComponent(community.name)}%20real%20estate.`;
+  const email = "ElenaYSC@gmail.com";
+  const mailHref = `mailto:ElenaYSC@gmail.com?subject=${encodeURIComponent(community.name)}%20Real%20Estate%20Inquiry`;
+
+  // Schema.org structured data: Place + FAQPage
   const structuredData = [
     {
       "@context": "https://schema.org",
@@ -67,6 +73,15 @@ export default async function CommunityDetailPage({ params }) {
         "postalCode": community.zip,
         "addressCountry": "US"
       }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateAgent",
+      "name": "Elena Gorbounova & Kirill - RE/MAX Allegiance",
+      "telephone": "+17036257888",
+      "email": "ElenaYSC@gmail.com",
+      "url": `https://homesalesfairfax.com/communities/${community.slug}`,
+      "areaServed": `${community.name}, ${community.cityState}`
     }
   ];
 
@@ -104,8 +119,8 @@ export default async function CommunityDetailPage({ params }) {
         <Navbar />
       </div>
 
-      {/* Chris Cortazzo Style Area Header Strip */}
-      <section className="container" style={{ maxWidth: "1120px", paddingTop: "36px", paddingBottom: "20px" }}>
+      {/* Header & Breadcrumbs */}
+      <section className="container" style={{ maxWidth: "1080px", paddingTop: "36px", paddingBottom: "20px" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: "12px", borderBottom: "1px solid var(--ink-200)", paddingBottom: "18px" }}>
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "8px", flexWrap: "wrap" }}>
@@ -125,7 +140,6 @@ export default async function CommunityDetailPage({ params }) {
             </div>
           </div>
 
-          {/* Breadcrumb Navigation */}
           <nav aria-label="Breadcrumb" style={{ fontSize: "0.86rem", color: "var(--ink-500)", display: "flex", alignItems: "center", gap: "8px" }}>
             <Link href="/" style={{ color: "var(--ink-600)", textDecoration: "none" }}>Home</Link>
             <span>/</span>
@@ -136,12 +150,12 @@ export default async function CommunityDetailPage({ params }) {
         </div>
       </section>
 
-      {/* Chris Cortazzo Style Hero Image Presentation */}
-      <section className="container" style={{ maxWidth: "1120px", marginBottom: "36px" }}>
+      {/* Hero Visual Presentation */}
+      <section className="container" style={{ maxWidth: "1080px", marginBottom: "36px" }}>
         <div style={{
           position: "relative",
           width: "100%",
-          paddingTop: "50%", /* Cinematic Luxury Ratio */
+          paddingTop: "50%",
           borderRadius: "14px",
           overflow: "hidden",
           boxShadow: "0 18px 45px -10px rgba(15, 23, 42, 0.18)",
@@ -160,7 +174,6 @@ export default async function CommunityDetailPage({ params }) {
             }}
           />
 
-          {/* Luxury Bottom Stats Strip Inside Image */}
           <div style={{
             position: "absolute",
             bottom: 0,
@@ -180,7 +193,7 @@ export default async function CommunityDetailPage({ params }) {
                 {community.subdivision} • ZIP {community.zip}
               </span>
               <div style={{ fontSize: "1.7rem", fontWeight: 800, letterSpacing: "-0.02em", color: "#FFFFFF" }}>
-                High Seller Equity: {community.name}
+                {community.name} Real Estate &amp; Heritage
               </div>
             </div>
 
@@ -211,145 +224,126 @@ export default async function CommunityDetailPage({ params }) {
         </div>
       </section>
 
-      {/* Quick Fast Facts Bar */}
-      {community.fastFacts && (
-        <section className="container" style={{ maxWidth: "1120px", marginBottom: "48px" }}>
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))",
-            gap: "12px",
-            background: "#F8FAFC",
-            border: "1px solid var(--ink-200)",
-            borderRadius: "12px",
-            padding: "20px 24px"
-          }}>
-            {community.fastFacts.map((fact, i) => (
-              <div key={i} style={{ borderRight: i === community.fastFacts.length - 1 ? "none" : "1px solid var(--ink-200)", paddingRight: "10px" }}>
-                <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-                  {fact.label}
-                </span>
-                <strong style={{ fontSize: "1.02rem", color: "var(--ink-950)", fontWeight: 800, marginTop: "3px", display: "block" }}>
-                  {fact.value}
-                </strong>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
       {/* Main Editorial Story Section */}
-      <article className="container" style={{ maxWidth: "900px", margin: "0 auto", padding: "0 20px" }}>
+      <article className="container" style={{ maxWidth: "860px", margin: "0 auto 60px", padding: "0 20px" }}>
         
         {/* Primary Headline */}
         <h2 style={{
-          fontSize: "clamp(1.8rem, 3.2vw, 2.4rem)",
+          fontSize: "clamp(1.8rem, 3.2vw, 2.3rem)",
           fontWeight: 800,
           color: "var(--ink-950)",
           letterSpacing: "-0.025em",
-          lineHeight: 1.25,
-          marginBottom: "24px"
+          lineHeight: 1.3,
+          marginBottom: "20px"
         }}>
           {community.heroHeadline}
         </h2>
 
         {/* Narrative Intro */}
-        <div style={{
-          fontSize: "1.14rem",
+        <p style={{
+          fontSize: "1.12rem",
           color: "var(--ink-800)",
           lineHeight: 1.85,
           marginBottom: "36px"
         }}>
-          <p style={{ marginBottom: "20px" }}>
-            {community.story}
-          </p>
-        </div>
-
-        {/* Cortazzo Three-Dot Divider */}
-        <div style={{ textAlign: "center", margin: "40px 0", color: "var(--accent-gold-hover)", fontSize: "1.6rem", letterSpacing: "12px" }}>
-          •••
-        </div>
+          {community.story}
+        </p>
 
         {/* History Section */}
-        <section style={{ marginBottom: "48px" }}>
-          <h3 style={{
-            fontSize: "1.65rem",
-            fontWeight: 800,
-            color: "var(--ink-950)",
-            letterSpacing: "-0.02em",
-            marginBottom: "16px"
-          }}>
-            {community.historyHeadline}
-          </h3>
-          <p style={{
-            fontSize: "1.06rem",
-            color: "var(--ink-700)",
-            lineHeight: 1.85
-          }}>
-            {community.history}
-          </p>
-        </section>
+        {community.history && (
+          <section style={{ marginBottom: "44px" }}>
+            <h3 style={{
+              fontSize: "1.6rem",
+              fontWeight: 800,
+              color: "var(--ink-950)",
+              letterSpacing: "-0.02em",
+              marginBottom: "16px"
+            }}>
+              {community.historyHeadline || `History & Heritage of ${community.name}`}
+            </h3>
+            {community.history.split("\n\n").map((para, i) => (
+              <p key={i} style={{
+                fontSize: "1.08rem",
+                color: "var(--ink-800)",
+                lineHeight: 1.85,
+                marginBottom: "18px"
+              }}>
+                {para}
+              </p>
+            ))}
+          </section>
+        )}
+
+        {/* Super Interesting & Important Highlights */}
+        {community.interestingFacts && community.interestingFacts.length > 0 && (
+          <section style={{ marginBottom: "44px" }}>
+            <h3 style={{
+              fontSize: "1.6rem",
+              fontWeight: 800,
+              color: "var(--ink-950)",
+              letterSpacing: "-0.02em",
+              marginBottom: "18px"
+            }}>
+              Key Highlights &amp; Fascinating Facts About {community.name}
+            </h3>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "14px" }}>
+              {community.interestingFacts.map((fact, idx) => (
+                <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "12px", fontSize: "1.04rem", color: "var(--ink-800)", lineHeight: 1.75 }}>
+                  <span style={{ color: "var(--accent-gold-hover)", fontWeight: 800, fontSize: "1.15rem", lineHeight: 1.3, flexShrink: 0 }}>✦</span>
+                  <span>{fact}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* Architectural Styles Section */}
-        <section style={{ marginBottom: "48px" }}>
+        {community.architecture && (
+          <section style={{ marginBottom: "44px" }}>
+            <h3 style={{
+              fontSize: "1.6rem",
+              fontWeight: 800,
+              color: "var(--ink-950)",
+              letterSpacing: "-0.02em",
+              marginBottom: "16px"
+            }}>
+              {community.architectureHeadline || "Architectural Character & Floor Plans"}
+            </h3>
+            <p style={{
+              fontSize: "1.08rem",
+              color: "var(--ink-800)",
+              lineHeight: 1.85,
+              marginBottom: 0
+            }}>
+              {community.architecture}
+            </p>
+          </section>
+        )}
+
+        {/* School Pyramid & Education */}
+        <section style={{ marginBottom: "44px" }}>
           <h3 style={{
-            fontSize: "1.65rem",
+            fontSize: "1.6rem",
             fontWeight: 800,
             color: "var(--ink-950)",
             letterSpacing: "-0.02em",
             marginBottom: "16px"
           }}>
-            {community.architectureHeadline}
+            Fairfax County Public Schools: {community.schools}
           </h3>
-          <p style={{
-            fontSize: "1.06rem",
-            color: "var(--ink-700)",
-            lineHeight: 1.85
-          }}>
-            {community.architecture}
+          <p style={{ fontSize: "1.06rem", color: "var(--ink-800)", lineHeight: 1.8, marginBottom: "12px" }}>
+            {community.schoolPyramidDetails || `Residents in ${community.name} enjoy assignment to premier Fairfax County Public Schools, known for advanced academics, International Baccalaureate and AP options, and comprehensive athletic programs.`}
           </p>
-        </section>
-
-        {/* School Pyramid & Education Box */}
-        <section style={{
-          background: "linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%)",
-          borderRadius: "14px",
-          border: "1px solid var(--ink-200)",
-          padding: "32px 28px",
-          marginBottom: "48px",
-          boxShadow: "0 4px 14px rgba(15, 23, 42, 0.04)"
-        }}>
-          <span style={{ fontSize: "0.78rem", color: "#B45309", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: "8px" }}>
-            Fairfax County Public Schools (FCPS)
-          </span>
-          <h3 style={{ fontSize: "1.55rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "12px" }}>
-            Assigned School Pyramid: {community.schools}
-          </h3>
-          {community.schoolPyramidDetails && (
-            <p style={{ fontSize: "0.98rem", color: "var(--ink-700)", lineHeight: 1.7, marginBottom: "20px" }}>
-              {community.schoolPyramidDetails}
-            </p>
-          )}
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px" }}>
-            <div style={{ background: "#FFFFFF", padding: "18px", borderRadius: "10px", border: "1px solid var(--ink-200)" }}>
-              <span style={{ fontSize: "0.75rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>Elementary School</span>
-              <strong style={{ display: "block", color: "var(--ink-950)", fontSize: "0.95rem", marginTop: "4px" }}>{community.elementarySchool}</strong>
-            </div>
-            <div style={{ background: "#FFFFFF", padding: "18px", borderRadius: "10px", border: "1px solid var(--ink-200)" }}>
-              <span style={{ fontSize: "0.75rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>Middle School</span>
-              <strong style={{ display: "block", color: "var(--ink-950)", fontSize: "0.95rem", marginTop: "4px" }}>{community.middleSchool}</strong>
-            </div>
-            <div style={{ background: "#FFFFFF", padding: "18px", borderRadius: "10px", border: "1px solid var(--ink-200)" }}>
-              <span style={{ fontSize: "0.75rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>High School</span>
-              <strong style={{ display: "block", color: "var(--ink-950)", fontSize: "0.95rem", marginTop: "4px" }}>{community.highSchool}</strong>
-            </div>
-          </div>
+          <p style={{ fontSize: "1.04rem", color: "var(--ink-800)", lineHeight: 1.75, marginBottom: 0 }}>
+            <strong>Assigned Schools:</strong> {community.elementarySchool} • {community.middleSchool} • {community.highSchool}
+          </p>
         </section>
 
         {/* Commute & Transit Access */}
         {community.commuteDetails && (
-          <section style={{ marginBottom: "48px" }}>
+          <section style={{ marginBottom: "44px" }}>
             <h3 style={{
-              fontSize: "1.65rem",
+              fontSize: "1.6rem",
               fontWeight: 800,
               color: "var(--ink-950)",
               letterSpacing: "-0.02em",
@@ -358,9 +352,10 @@ export default async function CommunityDetailPage({ params }) {
               Commute Corridors &amp; Metrorail Access
             </h3>
             <p style={{
-              fontSize: "1.06rem",
-              color: "var(--ink-700)",
-              lineHeight: 1.85
+              fontSize: "1.08rem",
+              color: "var(--ink-800)",
+              lineHeight: 1.85,
+              marginBottom: 0
             }}>
               {community.commuteDetails}
             </p>
@@ -368,117 +363,108 @@ export default async function CommunityDetailPage({ params }) {
         )}
 
         {/* Parks, Recreation & Lifestyle */}
-        <section style={{ marginBottom: "48px" }}>
-          <h3 style={{
-            fontSize: "1.65rem",
-            fontWeight: 800,
-            color: "var(--ink-950)",
-            letterSpacing: "-0.02em",
-            marginBottom: "16px"
-          }}>
-            Parks, Recreation &amp; Local Lifestyle
-          </h3>
-          <p style={{
-            fontSize: "1.06rem",
-            color: "var(--ink-700)",
-            lineHeight: 1.85
-          }}>
-            {community.lifestyle}
-          </p>
-        </section>
+        {community.lifestyle && (
+          <section style={{ marginBottom: "44px" }}>
+            <h3 style={{
+              fontSize: "1.6rem",
+              fontWeight: 800,
+              color: "var(--ink-950)",
+              letterSpacing: "-0.02em",
+              marginBottom: "16px"
+            }}>
+              Parks, Recreation &amp; Local Lifestyle
+            </h3>
+            <p style={{
+              fontSize: "1.08rem",
+              color: "var(--ink-800)",
+              lineHeight: 1.85,
+              marginBottom: 0
+            }}>
+              {community.lifestyle}
+            </p>
+          </section>
+        )}
 
         {/* Seller Market Advisory & Equity Guide */}
         {community.sellerAdvice && (
-          <section style={{
-            background: "#FFFBEB",
-            border: "1px solid #FDE68A",
-            borderRadius: "14px",
-            padding: "32px 28px",
-            marginBottom: "52px"
-          }}>
-            <span style={{ fontSize: "0.78rem", color: "#B45309", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: "8px" }}>
-              Subdivision Seller Advisory • Elena Gorbounova
-            </span>
-            <h3 style={{ fontSize: "1.55rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "14px" }}>
-              How to Maximize Your Home Valuation in {community.name}
+          <section style={{ marginBottom: "48px" }}>
+            <h3 style={{
+              fontSize: "1.6rem",
+              fontWeight: 800,
+              color: "var(--ink-950)",
+              letterSpacing: "-0.02em",
+              marginBottom: "16px"
+            }}>
+              How to Maximize Your Home Equity in {community.name}
             </h3>
-            <p style={{ fontSize: "1.02rem", color: "var(--ink-800)", lineHeight: 1.8, marginBottom: "18px" }}>
+            <p style={{
+              fontSize: "1.08rem",
+              color: "var(--ink-800)",
+              lineHeight: 1.85,
+              marginBottom: 0
+            }}>
               {community.sellerAdvice}
             </p>
-            <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center" }}>
-              <Link 
-                href="/home-valuation" 
-                className="btn btn-primary"
-                style={{ background: "#B45309", borderColor: "#B45309", color: "#FFFFFF", padding: "10px 20px", fontSize: "0.9rem" }}
-              >
-                Request Custom Equity Report &rarr;
-              </Link>
-              <Link
-                href={community.postcardHref || "/market-report"}
-                className="btn btn-outline"
-                style={{ borderColor: "#D97706", color: "#92400E", padding: "10px 20px", fontSize: "0.9rem" }}
-              >
-                View Monthly Market Report
-              </Link>
-            </div>
           </section>
         )}
 
         {/* Recent Settled Sales Comparables */}
-        <section style={{ marginBottom: "52px" }}>
-          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "16px", flexWrap: "wrap", gap: "10px" }}>
-            <div>
-              <span style={{ fontSize: "0.78rem", color: "var(--status-active)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em" }}>
-                Bright MLS Verified Closed Transactions
-              </span>
-              <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "var(--ink-950)", margin: "4px 0" }}>
-                Recent Settled Sales in {community.name}
-              </h3>
-            </div>
-            <span style={{ fontSize: "0.82rem", color: "var(--ink-500)" }}>
-              Direct MLSsettled comps
-            </span>
-          </div>
-
-          <div style={{ border: "1px solid var(--ink-200)", borderRadius: "12px", overflow: "hidden", boxShadow: "0 2px 8px rgba(0,0,0,0.03)" }}>
-            {community.comps.map((c, idx) => (
-              <div 
-                key={idx}
-                style={{
-                  display: "flex",
-                  justifyContent: "space-between",
-                  alignItems: "center",
-                  padding: "18px 22px",
-                  background: idx % 2 === 0 ? "#FFFFFF" : "#F8FAFC",
-                  borderBottom: idx === community.comps.length - 1 ? "none" : "1px solid var(--ink-100)",
-                  flexWrap: "wrap",
-                  gap: "12px"
-                }}
-              >
-                <div>
-                  <strong style={{ fontSize: "1.02rem", color: "var(--ink-950)", display: "block" }}>{c.address}</strong>
-                  <span style={{ fontSize: "0.84rem", color: "var(--ink-600)" }}>{c.specs}</span>
-                </div>
-                <div style={{ textAlign: "right" }}>
-                  <div style={{ fontSize: "0.95rem", fontWeight: 800, color: "var(--status-active)" }}>Bright MLS Settled Record</div>
-                  <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", fontWeight: 600 }}>{c.days} • Full Details on Request</span>
-                </div>
+        {community.comps && community.comps.length > 0 && (
+          <section style={{ marginBottom: "52px" }}>
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "16px", flexWrap: "wrap", gap: "10px" }}>
+              <div>
+                <span style={{ fontSize: "0.78rem", color: "var(--status-active)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+                  Bright MLS Verified Closed Transactions
+                </span>
+                <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", margin: "4px 0" }}>
+                  Recent Settled Sales in {community.name}
+                </h3>
               </div>
-            ))}
-          </div>
-        </section>
+              <span style={{ fontSize: "0.82rem", color: "var(--ink-500)" }}>
+                Direct MLS comps
+              </span>
+            </div>
+
+            <div style={{ border: "1px solid var(--ink-200)", borderRadius: "12px", overflow: "hidden" }}>
+              {community.comps.map((c, idx) => (
+                <div 
+                  key={idx}
+                  style={{
+                    display: "flex",
+                    justifyContent: "space-between",
+                    alignItems: "center",
+                    padding: "16px 20px",
+                    background: idx % 2 === 0 ? "#FFFFFF" : "#F8FAFC",
+                    borderBottom: idx === community.comps.length - 1 ? "none" : "1px solid var(--ink-100)",
+                    flexWrap: "wrap",
+                    gap: "12px"
+                  }}
+                >
+                  <div>
+                    <strong style={{ fontSize: "1.02rem", color: "var(--ink-950)", display: "block" }}>{c.address}</strong>
+                    <span style={{ fontSize: "0.84rem", color: "var(--ink-600)" }}>{c.specs}</span>
+                  </div>
+                  <div style={{ textAlign: "right" }}>
+                    <div style={{ fontSize: "0.95rem", fontWeight: 800, color: "var(--status-active)" }}>Bright MLS Settled Record</div>
+                    <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", fontWeight: 600 }}>{c.days} • Full Details on Request</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* Frequently Asked Questions Accordion */}
         {community.faqs && community.faqs.length > 0 && (
-          <section style={{ marginBottom: "60px" }}>
+          <section style={{ marginBottom: "56px" }}>
             <span style={{ fontSize: "0.78rem", color: "var(--accent-gold-hover)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: "6px" }}>
               Buyer &amp; Seller Intelligence
             </span>
-            <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "20px" }}>
+            <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "20px" }}>
               Frequently Asked Questions About {community.name}
             </h3>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               {community.faqs.map((faq, idx) => (
                 <details 
                   key={idx}
@@ -499,7 +485,7 @@ export default async function CommunityDetailPage({ params }) {
                     {faq.question}
                   </summary>
                   <p style={{
-                    fontSize: "0.96rem",
+                    fontSize: "0.98rem",
                     color: "var(--ink-700)",
                     lineHeight: 1.75,
                     marginTop: "12px",
@@ -513,81 +499,84 @@ export default async function CommunityDetailPage({ params }) {
           </section>
         )}
 
-        {/* Cortazzo Dedicated Consultation / Valuation Callout */}
+        {/* Clean Direct Contact Callout */}
         <section style={{
           background: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
           color: "#FFFFFF",
           borderRadius: "16px",
-          padding: "48px 36px",
+          padding: "44px 32px",
           textAlign: "center",
-          marginBottom: "60px",
-          boxShadow: "0 20px 40px -10px rgba(15, 23, 42, 0.25)"
+          boxShadow: "0 20px 40px -10px rgba(15, 23, 42, 0.25)",
+          marginBottom: "56px"
         }}>
           <span style={{
-            fontSize: "0.8rem",
+            fontSize: "0.82rem",
             color: "var(--accent-gold)",
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: "0.08em",
             display: "block",
-            marginBottom: "12px"
+            marginBottom: "10px"
           }}>
-            Fairfax County Specialist • Elena Gorbounova
+            {community.name} Specialist • Elena Gorbounova
           </span>
 
-          <h3 style={{ fontSize: "clamp(1.8rem, 3vw, 2.3rem)", fontWeight: 800, color: "#FFFFFF", marginBottom: "14px", letterSpacing: "-0.02em" }}>
-            Considering Selling Your Home in {community.name}?
+          <h3 style={{ fontSize: "clamp(1.7rem, 2.8vw, 2.2rem)", fontWeight: 800, color: "#FFFFFF", marginBottom: "14px", letterSpacing: "-0.02em" }}>
+            Questions About Buying or Selling in {community.name}?
           </h3>
 
-          <p style={{ fontSize: "1.08rem", color: "#CBD5E1", lineHeight: 1.75, maxWidth: "660px", margin: "0 auto 30px" }}>
-            Discover what active qualified buyers are willing to pay for your specific street address. Elena provides a discreet, in-home valuation, settled comp analysis, and tailored pre-listing strategy.
+          <p style={{ fontSize: "1.08rem", color: "#CBD5E1", lineHeight: 1.75, maxWidth: "620px", margin: "0 auto 28px" }}>
+            Elena Gorbounova provides private in-home valuations, settled comp reports, and off-market buyer matching with zero obligation.
           </p>
 
-          <div style={{ display: "flex", justifyContent: "center", gap: "12px", flexWrap: "wrap" }}>
+          <div style={{ display: "flex", justifyContent: "center", gap: "14px", flexWrap: "wrap", alignItems: "center" }}>
             <a 
-              href="tel:7036257888" 
+              href={telHref} 
               className="btn btn-primary"
               style={{
                 background: "var(--accent-gold-hover)",
                 borderColor: "var(--accent-gold-hover)",
                 color: "#FFFFFF",
-                padding: "14px 28px",
-                fontWeight: 700
+                padding: "14px 26px",
+                fontWeight: 800,
+                fontSize: "1rem"
               }}
             >
-              Call Elena: (703) 625-7888
+              📞 Call Direct: {directPhone}
             </a>
 
             <a 
-              href={`sms:+17036257888?body=Hi%20Elena,%20I%20own%20a%20home%20in%20${encodeURIComponent(community.name)}.%20Can%20you%20send%20me%20recent%20settled%20comps%20and%20an%20equity%20estimate?`}
+              href={mailHref} 
               className="btn btn-outline"
               style={{
                 color: "#FFFFFF",
-                borderColor: "rgba(255, 255, 255, 0.35)",
-                padding: "14px 28px",
-                fontWeight: 600
+                borderColor: "rgba(255, 255, 255, 0.4)",
+                padding: "14px 26px",
+                fontWeight: 700,
+                fontSize: "1rem"
               }}
             >
-              Text Address for Comps
+              ✉️ Email: {email}
             </a>
 
-            <Link 
-              href="/home-valuation" 
+            <a 
+              href={smsHref} 
               className="btn btn-outline"
               style={{
                 color: "#FFFFFF",
-                borderColor: "rgba(255, 255, 255, 0.35)",
-                padding: "14px 28px",
-                fontWeight: 600
+                borderColor: "rgba(255, 255, 255, 0.4)",
+                padding: "14px 22px",
+                fontWeight: 600,
+                fontSize: "0.95rem"
               }}
             >
-              Instant Home Valuation &rarr;
-            </Link>
+              💬 Text for Comps
+            </a>
           </div>
         </section>
 
         {/* Explore Other Fairfax Communities */}
-        <section style={{ borderTop: "1px solid var(--ink-200)", paddingTop: "40px", marginBottom: "60px" }}>
+        <section style={{ borderTop: "1px solid var(--ink-200)", paddingTop: "40px" }}>
           <h4 style={{ fontSize: "1.2rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "20px" }}>
             Explore Nearby Fairfax Communities
           </h4>
@@ -618,7 +607,7 @@ export default async function CommunityDetailPage({ params }) {
                   <strong style={{ fontSize: "0.95rem", color: "var(--ink-950)", display: "block" }}>{other.name}</strong>
                   <span style={{ fontSize: "0.78rem", color: "var(--ink-600)" }}>{other.cityState}</span>
                   <span style={{ fontSize: "0.82rem", color: "var(--accent-gold-hover)", fontWeight: 700, display: "block", marginTop: "2px" }}>
-                    {other.medianPrice}
+                    {other.avgDOM} DOM
                   </span>
                 </div>
               </Link>

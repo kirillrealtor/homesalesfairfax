@@ -21,13 +21,13 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `Sell Your Home in ${sub.name}, VA | Top Listing Agent Elena Gorbounova`,
-    description: `Selling your home in ${sub.name}, ${sub.city} VA (ZIP ${sub.zip})? View recent settled comps, average days on market (${sub.avgDOM} DOM), school pyramids, and our proven listing plan to maximize seller equity.`,
+    title: `${sub.name}, VA Real Estate & Homes | History, Market Comps & Specialist`,
+    description: `Complete guide to ${sub.name}, ${sub.city} VA (${sub.zip}). History, architectural styles, ${sub.schools}, settled comps, and top listing representation with Elena Gorbounova.`,
     alternates: {
       canonical: `https://homesalesfairfax.com/subdivisions/${sub.slug}`,
     },
     openGraph: {
-      title: `Sell Your ${sub.name} Home for Top Dollar | Elena & Kirill`,
+      title: `${sub.name} Real Estate & History | Elena & Kirill`,
       description: sub.sellerLeadSnippet,
       url: `https://homesalesfairfax.com/subdivisions/${sub.slug}`,
       siteName: "homesalesfairfax.com",
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
           url: `https://homesalesfairfax.com${sub.image}`,
           width: 1200,
           height: 800,
-          alt: `${sub.name} Real Estate Listing Specialist`,
+          alt: `${sub.name} Real Estate & History`,
         },
       ],
       locale: "en_US",
@@ -54,6 +54,11 @@ export default async function SubdivisionDetailPage({ params }) {
   }
 
   const division = getDivisionBySlug(sub.divisionSlug);
+  const directPhone = "(703) 625-7888";
+  const telHref = "tel:7036257888";
+  const smsHref = `sms:+17036257888?body=Hi%20Elena,%20I'm%20interested%20in%20${encodeURIComponent(sub.name)}%20real%20estate.`;
+  const email = "ElenaYSC@gmail.com";
+  const mailHref = `mailto:ElenaYSC@gmail.com?subject=${encodeURIComponent(sub.name)}%20Real%20Estate%20Inquiry`;
 
   const structuredData = [
     {
@@ -110,7 +115,7 @@ export default async function SubdivisionDetailPage({ params }) {
       </div>
 
       {/* Header & Breadcrumbs */}
-      <section className="container" style={{ maxWidth: "1120px", paddingTop: "36px", paddingBottom: "20px" }}>
+      <section className="container" style={{ maxWidth: "1080px", paddingTop: "36px", paddingBottom: "20px" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: "12px", borderBottom: "1px solid var(--ink-200)", paddingBottom: "18px" }}>
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "10px", flexWrap: "wrap" }}>
@@ -149,7 +154,7 @@ export default async function SubdivisionDetailPage({ params }) {
       </section>
 
       {/* Hero Visual Presentation */}
-      <section className="container" style={{ maxWidth: "1120px", marginBottom: "36px" }}>
+      <section className="container" style={{ maxWidth: "1080px", marginBottom: "36px" }}>
         <div style={{
           position: "relative",
           width: "100%",
@@ -161,7 +166,7 @@ export default async function SubdivisionDetailPage({ params }) {
         }}>
           <img 
             src={sub.image} 
-            alt={`${sub.name} Real Estate & Homes`}
+            alt={`${sub.name} Real Estate & History`}
             style={{
               position: "absolute",
               top: 0,
@@ -191,7 +196,7 @@ export default async function SubdivisionDetailPage({ params }) {
                 {sub.divisionName} • ZIP {sub.zip}
               </span>
               <div style={{ fontSize: "clamp(1.6rem, 2.8vw, 2.2rem)", fontWeight: 800, letterSpacing: "-0.02em", color: "#FFFFFF", marginTop: "4px" }}>
-                High Seller Equity: {sub.name}
+                {sub.name} Real Estate &amp; Heritage
               </div>
             </div>
 
@@ -222,141 +227,78 @@ export default async function SubdivisionDetailPage({ params }) {
         </div>
       </section>
 
-      {/* Fast Facts Bar */}
-      <section className="container" style={{ maxWidth: "1120px", marginBottom: "48px" }}>
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(130px, 1fr))",
-          gap: "12px",
-          background: "#F8FAFC",
-          border: "1px solid var(--ink-200)",
-          borderRadius: "14px",
-          padding: "20px 24px"
-        }}>
-          <div>
-            <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-              Market Pace
-            </span>
-            <strong style={{ fontSize: "1.02rem", color: "var(--status-active)", fontWeight: 800, marginTop: "3px", display: "block" }}>
-              Under 7 Days DOM
-            </strong>
-          </div>
-
-          <div>
-            <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-              List-to-Sale Ratio
-            </span>
-            <strong style={{ fontSize: "1.02rem", color: "var(--ink-950)", fontWeight: 800, marginTop: "3px", display: "block" }}>
-              {sub.listToSaleRatio}
-            </strong>
-          </div>
-
-          <div>
-            <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-              Average DOM
-            </span>
-            <strong style={{ fontSize: "1.05rem", color: "var(--status-active)", fontWeight: 800, marginTop: "3px", display: "block" }}>
-              {sub.avgDOM}
-            </strong>
-          </div>
-
-          <div>
-            <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-              Seller Demand
-            </span>
-            <strong style={{ fontSize: "1.02rem", color: "var(--status-active)", fontWeight: 800, marginTop: "3px", display: "block" }}>
-              High Equity Favor
-            </strong>
-          </div>
-
-          <div>
-            <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-              Lot Sizes
-            </span>
-            <strong style={{ fontSize: "1.02rem", color: "var(--ink-950)", fontWeight: 800, marginTop: "3px", display: "block" }}>
-              {sub.typicalLotSize}
-            </strong>
-          </div>
-
-          <div>
-            <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-              YoY Appreciation
-            </span>
-            <strong style={{ fontSize: "1.05rem", color: "var(--accent-gold)", fontWeight: 800, marginTop: "3px", display: "block" }}>
-              {sub.priceChangeYoY}
-            </strong>
-          </div>
-        </div>
-      </section>
-
-      {/* Main Editorial Story */}
-      <article className="container" style={{ maxWidth: "900px", margin: "0 auto", padding: "0 20px" }}>
+      {/* Main Editorial & Story */}
+      <article className="container" style={{ maxWidth: "860px", margin: "0 auto 60px", padding: "0 20px" }}>
         
-        <h2 style={{ fontSize: "clamp(1.8rem, 3.2vw, 2.4rem)", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.025em", lineHeight: 1.25, marginBottom: "20px" }}>
+        {/* Headline & Overview */}
+        <h2 style={{ fontSize: "clamp(1.8rem, 3.2vw, 2.3rem)", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.025em", lineHeight: 1.3, marginBottom: "18px" }}>
           {sub.headline}
         </h2>
 
-        <p style={{ fontSize: "1.08rem", color: "var(--ink-800)", lineHeight: 1.8, marginBottom: "32px" }}>
+        <p style={{ fontSize: "1.12rem", color: "var(--ink-800)", lineHeight: 1.85, marginBottom: "36px" }}>
           {sub.overview}
         </p>
 
-        {/* Subdivision Specific Seller Advisory Box */}
-        <section style={{
-          background: "linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%)",
-          border: "1.5px solid var(--accent-gold)",
-          borderRadius: "14px",
-          padding: "32px 28px",
-          marginBottom: "48px"
-        }}>
-          <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "8px" }}>
-            Subdivision Seller Advisory • Elena Gorbounova &amp; Kirill
-          </span>
-          <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "12px" }}>
-            How to Maximize Your Home Equity in {sub.name}
+        {/* History Section */}
+        {sub.history && (
+          <section style={{ marginBottom: "44px" }}>
+            <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.02em", marginBottom: "16px" }}>
+              {sub.historyHeadline || `History & Heritage of ${sub.name}`}
+            </h3>
+            {sub.history.split("\n\n").map((para, i) => (
+              <p key={i} style={{ fontSize: "1.08rem", color: "var(--ink-800)", lineHeight: 1.85, marginBottom: "18px" }}>
+                {para}
+              </p>
+            ))}
+          </section>
+        )}
+
+        {/* Super Interesting & Important Highlights */}
+        {sub.interestingFacts && sub.interestingFacts.length > 0 && (
+          <section style={{ marginBottom: "44px" }}>
+            <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.02em", marginBottom: "18px" }}>
+              Key Highlights &amp; Fascinating Facts About {sub.name}
+            </h3>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "14px" }}>
+              {sub.interestingFacts.map((fact, idx) => (
+                <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "12px", fontSize: "1.04rem", color: "var(--ink-800)", lineHeight: 1.75 }}>
+                  <span style={{ color: "var(--accent-gold)", fontWeight: 800, fontSize: "1.15rem", lineHeight: 1.3, flexShrink: 0 }}>✦</span>
+                  <span>{fact}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {/* Neighborhood Dynamics: Schools, Lots & HOA */}
+        <section style={{ marginBottom: "44px" }}>
+          <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.02em", marginBottom: "16px" }}>
+            Schools, Architecture &amp; Community Setting
           </h3>
-          <p style={{ fontSize: "1.02rem", color: "var(--ink-800)", lineHeight: 1.75, marginBottom: "22px" }}>
-            {sub.sellerStrategy}
+          <p style={{ fontSize: "1.06rem", color: "var(--ink-800)", lineHeight: 1.8, marginBottom: "14px" }}>
+            <strong>Assigned School Pyramid:</strong> {sub.schools}. Top-tier school boundaries in Northern Virginia consistently preserve higher long-term property equity and attract steady out-of-area buyer demand.
           </p>
-          <div style={{ display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center" }}>
-            <Link 
-              href="/sell" 
-              className="btn btn-primary"
-              style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "12px 22px" }}
-            >
-              Book In-Home Consultation &rarr;
-            </Link>
-            <a 
-              href={`sms:+17036257888?body=Hi%20Elena,%20I'm%20interested%20in%20selling%20my%20home%20in%20${encodeURIComponent(sub.name)}.`}
-              className="btn btn-outline"
-              style={{ padding: "12px 20px", fontWeight: 700 }}
-            >
-              Text Elena Direct
-            </a>
-          </div>
+          <p style={{ fontSize: "1.06rem", color: "var(--ink-800)", lineHeight: 1.8, marginBottom: "14px" }}>
+            <strong>Homes &amp; Lot Profiles:</strong> {sub.propertyTypes} situated on generous {sub.typicalLotSize} parcels with mature tree canopies and established streetscapes.
+          </p>
+          <p style={{ fontSize: "1.06rem", color: "var(--ink-800)", lineHeight: 1.8, marginBottom: "0" }}>
+            <strong>Civic &amp; Recreation:</strong> {sub.hoa}.
+          </p>
         </section>
 
-        {/* Key Subdivision Info Details */}
-        <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "48px" }}>
-          <div style={{ background: "#F8FAFC", padding: "20px", borderRadius: "12px", border: "1px solid var(--ink-200)" }}>
-            <span style={{ fontSize: "0.75rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700, display: "block", marginBottom: "4px" }}>
-              School Pyramid
-            </span>
-            <strong style={{ fontSize: "1rem", color: "var(--ink-950)" }}>
-              {sub.schools}
-            </strong>
-          </div>
+        {/* Equity Strategy */}
+        {sub.sellerStrategy && (
+          <section style={{ marginBottom: "48px" }}>
+            <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.02em", marginBottom: "16px" }}>
+              Maximizing Your Home Valuation in {sub.name}
+            </h3>
+            <p style={{ fontSize: "1.08rem", color: "var(--ink-800)", lineHeight: 1.85, marginBottom: "0" }}>
+              {sub.sellerStrategy}
+            </p>
+          </section>
+        )}
 
-          <div style={{ background: "#F8FAFC", padding: "20px", borderRadius: "12px", border: "1px solid var(--ink-200)" }}>
-            <span style={{ fontSize: "0.75rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700, display: "block", marginBottom: "4px" }}>
-              HOA &amp; Recreation
-            </span>
-            <strong style={{ fontSize: "1rem", color: "var(--ink-950)" }}>
-              {sub.hoa}
-            </strong>
-          </div>
-        </div>
-
-        {/* Recent Settled Comps */}
+        {/* Settled Comps */}
         {sub.comps && sub.comps.length > 0 && (
           <section style={{ marginBottom: "52px" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "16px", flexWrap: "wrap", gap: "10px" }}>
@@ -364,7 +306,7 @@ export default async function SubdivisionDetailPage({ params }) {
                 <span style={{ fontSize: "0.78rem", color: "var(--status-active)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em" }}>
                   Bright MLS Verified Closed Transactions
                 </span>
-                <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "var(--ink-950)", margin: "4px 0" }}>
+                <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", margin: "4px 0" }}>
                   Recent Settled Sales in {sub.name}
                 </h3>
               </div>
@@ -373,7 +315,7 @@ export default async function SubdivisionDetailPage({ params }) {
               </span>
             </div>
 
-            <div style={{ border: "1px solid var(--ink-200)", borderRadius: "12px", overflow: "hidden", boxShadow: "0 2px 8px rgba(0,0,0,0.03)" }}>
+            <div style={{ border: "1px solid var(--ink-200)", borderRadius: "12px", overflow: "hidden" }}>
               {sub.comps.map((c, idx) => (
                 <div 
                   key={idx}
@@ -381,7 +323,7 @@ export default async function SubdivisionDetailPage({ params }) {
                     display: "flex",
                     justifyContent: "space-between",
                     alignItems: "center",
-                    padding: "18px 22px",
+                    padding: "16px 20px",
                     background: idx % 2 === 0 ? "#FFFFFF" : "#F8FAFC",
                     borderBottom: idx === sub.comps.length - 1 ? "none" : "1px solid var(--ink-100)",
                     flexWrap: "wrap",
@@ -404,15 +346,15 @@ export default async function SubdivisionDetailPage({ params }) {
 
         {/* FAQs */}
         {sub.faqs && sub.faqs.length > 0 && (
-          <section style={{ marginBottom: "60px" }}>
+          <section style={{ marginBottom: "56px" }}>
             <span style={{ fontSize: "0.78rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: "6px" }}>
               Subdivision Intelligence
             </span>
-            <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "20px" }}>
-              Frequently Asked Questions About Selling in {sub.name}
+            <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "20px" }}>
+              Frequently Asked Questions About {sub.name}
             </h3>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               {sub.faqs.map((faq, idx) => (
                 <details 
                   key={idx}
@@ -426,7 +368,7 @@ export default async function SubdivisionDetailPage({ params }) {
                   <summary style={{ fontSize: "1.02rem", fontWeight: 700, color: "var(--ink-950)", cursor: "pointer" }}>
                     {faq.question}
                   </summary>
-                  <p style={{ fontSize: "0.96rem", color: "var(--ink-700)", lineHeight: 1.75, marginTop: "12px", marginBottom: 0 }}>
+                  <p style={{ fontSize: "0.98rem", color: "var(--ink-700)", lineHeight: 1.75, marginTop: "12px", marginBottom: 0 }}>
                     {faq.answer}
                   </p>
                 </details>
@@ -435,50 +377,58 @@ export default async function SubdivisionDetailPage({ params }) {
           </section>
         )}
 
-        {/* In-Home Listing Consultation Callout */}
+        {/* Clean Direct Contact Callout */}
         <section style={{
           background: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
           color: "#FFFFFF",
           borderRadius: "16px",
-          padding: "48px 36px",
+          padding: "44px 32px",
           textAlign: "center",
-          marginBottom: "60px",
           boxShadow: "0 20px 40px -10px rgba(15, 23, 42, 0.25)"
         }}>
           <span style={{
-            fontSize: "0.8rem",
+            fontSize: "0.82rem",
             color: "var(--accent-gold)",
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: "0.08em",
             display: "block",
-            marginBottom: "12px"
+            marginBottom: "10px"
           }}>
-            Fairfax &amp; Northern Virginia Specialist • Elena Gorbounova
+            {sub.name} Specialist • Elena Gorbounova
           </span>
 
-          <h3 style={{ fontSize: "clamp(1.8rem, 3vw, 2.3rem)", fontWeight: 800, color: "#FFFFFF", marginBottom: "14px", letterSpacing: "-0.02em" }}>
-            Considering Selling Your Home in {sub.name}?
+          <h3 style={{ fontSize: "clamp(1.7rem, 2.8vw, 2.2rem)", fontWeight: 800, color: "#FFFFFF", marginBottom: "14px", letterSpacing: "-0.02em" }}>
+            Questions About Buying or Selling in {sub.name}?
           </h3>
 
-          <p style={{ fontSize: "1.08rem", color: "#CBD5E1", lineHeight: 1.75, maxWidth: "660px", margin: "0 auto 30px" }}>
-            Find out what pre-approved buyers are willing to pay for your address. Elena provides a discreet in-home valuation, verified comp analysis, and our 30-day listing plan.
+          <p style={{ fontSize: "1.08rem", color: "#CBD5E1", lineHeight: 1.75, maxWidth: "620px", margin: "0 auto 28px" }}>
+            Reach out directly to Elena Gorbounova for recent settled sales comps, custom neighborhood valuations, and off-market intelligence.
           </p>
 
-          <div style={{ display: "flex", justifyContent: "center", gap: "12px", flexWrap: "wrap" }}>
-            <Link 
-              href="/sell" 
-              className="btn btn-primary"
-              style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "14px 28px" }}
-            >
-              Book In-Home Listing Appointment
-            </Link>
+          <div style={{ display: "flex", justifyContent: "center", gap: "14px", flexWrap: "wrap", alignItems: "center" }}>
             <a 
-              href="tel:7036257888" 
-              className="btn btn-outline"
-              style={{ color: "#FFFFFF", borderColor: "rgba(255,255,255,0.3)", padding: "14px 28px", fontWeight: 600 }}
+              href={telHref} 
+              className="btn btn-primary"
+              style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "14px 26px", fontSize: "1rem" }}
             >
-              Call Elena Direct: (703) 625-7888
+              📞 Call Direct: {directPhone}
+            </a>
+
+            <a 
+              href={mailHref} 
+              className="btn btn-outline"
+              style={{ color: "#FFFFFF", borderColor: "rgba(255,255,255,0.4)", padding: "14px 26px", fontWeight: 700, fontSize: "1rem" }}
+            >
+              ✉️ Email: {email}
+            </a>
+
+            <a 
+              href={smsHref} 
+              className="btn btn-outline"
+              style={{ color: "#FFFFFF", borderColor: "rgba(255,255,255,0.4)", padding: "14px 22px", fontWeight: 600, fontSize: "0.95rem" }}
+            >
+              💬 Text for Comps
             </a>
           </div>
         </section>

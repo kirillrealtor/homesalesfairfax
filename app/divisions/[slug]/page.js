@@ -21,13 +21,13 @@ export async function generateMetadata({ params }) {
   }
 
   return {
-    title: `Sell Your Home in ${division.name}, VA | Top Listing Agent Elena Gorbounova`,
-    description: `Planning to sell in ${division.fullName}? Average ${division.avgDOM} DOM and ${division.listToSaleRatio} list-to-sale ratio. Discover our 30-day listing blueprint, settled comps, and book an in-home consultation.`,
+    title: `${division.name}, VA Real Estate Guide | History, Top Subdivisions & Specialist`,
+    description: `Comprehensive real estate & community guide for ${division.fullName}. Settled comps, history, top school pyramids, subdivisions directory, and listing representation with Elena Gorbounova.`,
     alternates: {
       canonical: `https://homesalesfairfax.com/divisions/${division.slug}`,
     },
     openGraph: {
-      title: `Sell Your ${division.name} Home for Top Dollar | Elena & Kirill`,
+      title: `${division.name} Real Estate & History Guide | Elena & Kirill`,
       description: division.subheadline,
       url: `https://homesalesfairfax.com/divisions/${division.slug}`,
       siteName: "homesalesfairfax.com",
@@ -36,7 +36,7 @@ export async function generateMetadata({ params }) {
           url: `https://homesalesfairfax.com${division.image}`,
           width: 1200,
           height: 800,
-          alt: `${division.name} Real Estate Listing Authority`,
+          alt: `${division.name} Real Estate & History`,
         },
       ],
       locale: "en_US",
@@ -52,6 +52,12 @@ export default async function DivisionDetailPage({ params }) {
   if (!division) {
     notFound();
   }
+
+  const directPhone = "(703) 625-7888";
+  const telHref = "tel:7036257888";
+  const smsHref = `sms:+17036257888?body=Hi%20Elena,%20I'm%20interested%20in%20real%20estate%20in%20${encodeURIComponent(division.name)}.`;
+  const email = "ElenaYSC@gmail.com";
+  const mailHref = `mailto:ElenaYSC@gmail.com?subject=${encodeURIComponent(division.name)}%20Real%20Estate%20Inquiry`;
 
   const structuredData = [
     {
@@ -106,7 +112,7 @@ export default async function DivisionDetailPage({ params }) {
       </div>
 
       {/* Header & Breadcrumb */}
-      <section className="container" style={{ maxWidth: "1120px", paddingTop: "36px", paddingBottom: "20px" }}>
+      <section className="container" style={{ maxWidth: "1080px", paddingTop: "36px", paddingBottom: "20px" }}>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", flexWrap: "wrap", gap: "12px", borderBottom: "1px solid var(--ink-200)", paddingBottom: "18px" }}>
           <div>
             <div style={{ display: "flex", alignItems: "center", gap: "10px", flexWrap: "wrap" }}>
@@ -137,7 +143,7 @@ export default async function DivisionDetailPage({ params }) {
       </section>
 
       {/* Hero Visual Presentation */}
-      <section className="container" style={{ maxWidth: "1120px", marginBottom: "36px" }}>
+      <section className="container" style={{ maxWidth: "1080px", marginBottom: "36px" }}>
         <div style={{
           position: "relative",
           width: "100%",
@@ -149,7 +155,7 @@ export default async function DivisionDetailPage({ params }) {
         }}>
           <img 
             src={division.image} 
-            alt={`${division.fullName} Real Estate Listing Authority`}
+            alt={`${division.fullName} Real Estate & History`}
             style={{
               position: "absolute",
               top: 0,
@@ -210,184 +216,106 @@ export default async function DivisionDetailPage({ params }) {
         </div>
       </section>
 
-      {/* Division Key Stats Bar */}
-      <section className="container" style={{ maxWidth: "1120px", marginBottom: "48px" }}>
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(150px, 1fr))",
-          gap: "12px",
-          background: "#F8FAFC",
-          border: "1px solid var(--ink-200)",
-          borderRadius: "14px",
-          padding: "20px 24px"
-        }}>
-          <div>
-            <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-              Average Days on Market
-            </span>
-            <strong style={{ fontSize: "1.15rem", color: "var(--status-active)", fontWeight: 800, marginTop: "3px", display: "block" }}>
-              {division.avgDOM} DOM
-            </strong>
-          </div>
-
-          <div>
-            <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-              List-to-Sale Ratio
-            </span>
-            <strong style={{ fontSize: "1.15rem", color: "var(--ink-950)", fontWeight: 800, marginTop: "3px", display: "block" }}>
-              {division.listToSaleRatio}
-            </strong>
-          </div>
-
-          <div>
-            <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-              Market Inventory Pace
-            </span>
-            <strong style={{ fontSize: "1.05rem", color: "var(--status-active)", fontWeight: 800, marginTop: "3px", display: "block" }}>
-              High Seller Favor
-            </strong>
-          </div>
-
-          <div>
-            <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-              Annual Closed Volume
-            </span>
-            <strong style={{ fontSize: "1.15rem", color: "var(--ink-950)", fontWeight: 800, marginTop: "3px", display: "block" }}>
-              {division.annualClosedSales}
-            </strong>
-          </div>
-
-          <div>
-            <span style={{ fontSize: "0.72rem", color: "var(--ink-500)", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-              Absorption Index
-            </span>
-            <strong style={{ fontSize: "0.95rem", color: "var(--status-active)", fontWeight: 800, marginTop: "5px", display: "block" }}>
-              {division.sellerDemandIndex.split("(")[0]}
-            </strong>
-          </div>
-        </div>
-      </section>
-
-      {/* Main Editorial & Seller Blueprint */}
-      <article className="container" style={{ maxWidth: "920px", margin: "0 auto", padding: "0 20px" }}>
+      {/* Main Editorial & Overview */}
+      <article className="container" style={{ maxWidth: "860px", margin: "0 auto 60px", padding: "0 20px" }}>
         
-        <h2 style={{ fontSize: "clamp(1.8rem, 3.2vw, 2.4rem)", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.025em", lineHeight: 1.25, marginBottom: "20px" }}>
-          The Seller's Guide to {division.fullName} Real Estate
+        {/* Section Headline & Description */}
+        <h2 style={{ fontSize: "clamp(1.8rem, 3.2vw, 2.3rem)", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.025em", lineHeight: 1.3, marginBottom: "18px" }}>
+          The Complete Guide to {division.fullName} Real Estate
         </h2>
 
-        <p style={{ fontSize: "1.08rem", color: "var(--ink-800)", lineHeight: 1.8, marginBottom: "32px" }}>
+        <p style={{ fontSize: "1.12rem", color: "var(--ink-800)", lineHeight: 1.85, marginBottom: "36px" }}>
           {division.description}
         </p>
 
-        {/* Why Hire Us for this Division */}
-        <section style={{
-          background: "#F8FAFC",
-          border: "1.5px solid var(--ink-200)",
-          borderRadius: "16px",
-          padding: "36px 30px",
-          marginBottom: "48px"
-        }}>
-          <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "8px" }}>
-            ✦ Elena Gorbounova &amp; Kirill Advantage
-          </span>
-          <h3 style={{ fontSize: "1.75rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "20px", letterSpacing: "-0.02em" }}>
-            Why Hire Our Team to List Your {division.name} Home
-          </h3>
-
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "20px" }}>
-            {division.whyHireUs.map((pillar, idx) => (
-              <div key={idx} style={{ background: "#FFFFFF", padding: "20px", borderRadius: "12px", border: "1px solid var(--ink-200)" }}>
-                <strong style={{ fontSize: "1.05rem", color: "var(--ink-950)", display: "block", marginBottom: "6px" }}>
-                  ✓ {pillar.title}
-                </strong>
-                <p style={{ fontSize: "0.9rem", color: "var(--ink-700)", lineHeight: 1.6, margin: 0 }}>
-                  {pillar.desc}
-                </p>
-              </div>
+        {/* History Section */}
+        {division.history && (
+          <section style={{ marginBottom: "44px" }}>
+            <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.02em", marginBottom: "16px" }}>
+              {division.historyHeadline || `History & Regional Heritage of ${division.name}`}
+            </h3>
+            {division.history.split("\n\n").map((para, i) => (
+              <p key={i} style={{ fontSize: "1.08rem", color: "var(--ink-800)", lineHeight: 1.85, marginBottom: "18px" }}>
+                {para}
+              </p>
             ))}
-          </div>
+          </section>
+        )}
 
-          <div style={{ marginTop: "28px", display: "flex", gap: "12px", flexWrap: "wrap", alignItems: "center" }}>
-            <Link 
-              href="/sell" 
-              className="btn btn-primary"
-              style={{ padding: "12px 24px", fontWeight: 800 }}
-            >
-              Book In-Home Consultation &rarr;
-            </Link>
-            <a 
-              href="sms:+17036257888?body=Hi%20Elena,%20I'm%20interested%20in%20listing%20my%20property%20in%20"
-              className="btn btn-outline"
-              style={{ padding: "12px 20px", fontWeight: 700 }}
-            >
-              Text Elena Direct
-            </a>
-          </div>
-        </section>
+        {/* Super Interesting & Important Highlights */}
+        {division.interestingFacts && division.interestingFacts.length > 0 && (
+          <section style={{ marginBottom: "44px" }}>
+            <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.02em", marginBottom: "18px" }}>
+              Fascinating Facts &amp; Key Highlights of {division.name}
+            </h3>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "14px" }}>
+              {division.interestingFacts.map((fact, idx) => (
+                <li key={idx} style={{ display: "flex", alignItems: "flex-start", gap: "12px", fontSize: "1.04rem", color: "var(--ink-800)", lineHeight: 1.75 }}>
+                  <span style={{ color: "var(--accent-gold)", fontWeight: 800, fontSize: "1.15rem", lineHeight: 1.3, flexShrink: 0 }}>✦</span>
+                  <span>{fact}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         {/* School Pyramids Impact */}
         {division.topSchoolPyramids && (
-          <section style={{ marginBottom: "48px" }}>
-            <span style={{ fontSize: "0.78rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: "6px" }}>
-              Equity Multipliers
-            </span>
-            <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "16px" }}>
-              Top School Pyramids Driving Buyer Demand in {division.name}
+          <section style={{ marginBottom: "44px" }}>
+            <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.02em", marginBottom: "16px" }}>
+              Top School Pyramids Driving Demand in {division.name}
             </h3>
-            <p style={{ fontSize: "1rem", color: "var(--ink-700)", lineHeight: 1.7, marginBottom: "18px" }}>
-              In Northern Virginia, school pyramids represent one of the most powerful price drivers. We market your specific boundary to out-of-area relocations willing to pay a premium.
+            <p style={{ fontSize: "1.06rem", color: "var(--ink-800)", lineHeight: 1.8, marginBottom: "16px" }}>
+              In Northern Virginia, school assignments represent one of the primary drivers of long-term property equity. Highly acclaimed pyramids across {division.name} include:
             </p>
-            <div style={{ display: "flex", flexDirection: "column", gap: "10px" }}>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
               {division.topSchoolPyramids.map((pyr, i) => (
-                <div key={i} style={{ display: "flex", alignItems: "center", gap: "12px", padding: "14px 18px", background: "#F8FAFC", borderRadius: "10px", border: "1px solid var(--ink-200)" }}>
+                <li key={i} style={{ display: "flex", alignItems: "center", gap: "10px", fontSize: "1.02rem", color: "var(--ink-900)" }}>
                   <span style={{ color: "var(--accent-gold)", fontSize: "1.1rem" }}>🎓</span>
-                  <strong style={{ fontSize: "0.96rem", color: "var(--ink-900)" }}>{pyr}</strong>
-                </div>
+                  <strong>{pyr}</strong>
+                </li>
               ))}
-            </div>
+            </ul>
           </section>
         )}
 
         {/* Subdivisions Directory inside this Division */}
-        <section style={{ marginBottom: "56px" }}>
-          <span style={{ fontSize: "0.78rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: "6px" }}>
-            Hyper-Local Neighborhood Intelligence
-          </span>
-          <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "20px" }}>
-            Featured Subdivisions &amp; Enclaves in {division.name}
+        <section style={{ marginBottom: "48px" }}>
+          <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.02em", marginBottom: "18px" }}>
+            Featured Subdivisions &amp; Communities in {division.name}
           </h3>
+          <p style={{ fontSize: "1.06rem", color: "var(--ink-800)", lineHeight: 1.8, marginBottom: "20px" }}>
+            Explore specific neighborhoods across {division.name} with verified sales comps, school boundaries, and community market trends:
+          </p>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "16px" }}>
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "14px" }}>
             {division.subdivisions.map((sub, i) => (
               <div 
                 key={i}
                 style={{
-                  background: "#FFFFFF",
                   border: "1px solid var(--ink-200)",
-                  borderRadius: "12px",
-                  padding: "18px 20px",
-                  boxShadow: "0 2px 6px rgba(0,0,0,0.03)"
+                  borderRadius: "10px",
+                  padding: "16px 18px",
+                  background: "#FAFAFA"
                 }}
               >
                 <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", marginBottom: "6px" }}>
-                  <h4 style={{ fontSize: "1.1rem", fontWeight: 800, color: "var(--ink-950)", margin: 0 }}>
+                  <h4 style={{ fontSize: "1.05rem", fontWeight: 800, color: "var(--ink-950)", margin: 0 }}>
                     {sub.name}
                   </h4>
                   <span style={{ fontSize: "0.75rem", color: "var(--ink-500)", fontWeight: 600 }}>
                     ZIP {sub.zip}
                   </span>
                 </div>
-
-                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "10px", borderTop: "1px solid var(--ink-100)", paddingTop: "10px" }}>
-                  <div>
-                    <span style={{ fontSize: "0.68rem", color: "var(--ink-500)", textTransform: "uppercase", display: "block" }}>Market Pace</span>
-                    <strong style={{ fontSize: "0.98rem", color: "var(--status-active)" }}>High Seller Demand</strong>
-                  </div>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: "8px" }}>
+                  <span style={{ fontSize: "0.8rem", color: "var(--status-active)", fontWeight: 700 }}>
+                    Avg {sub.dom || "5 Days"} DOM
+                  </span>
                   <Link 
                     href={`/subdivisions/${sub.slug}`}
-                    style={{ fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 700 }}
+                    style={{ fontSize: "0.84rem", color: "var(--accent-gold)", fontWeight: 700, textDecoration: "underline" }}
                   >
-                    Seller Report &rarr;
+                    Neighborhood Guide &rarr;
                   </Link>
                 </div>
               </div>
@@ -397,15 +325,15 @@ export default async function DivisionDetailPage({ params }) {
 
         {/* FAQs Section */}
         {division.faqs && division.faqs.length > 0 && (
-          <section style={{ marginBottom: "60px" }}>
+          <section style={{ marginBottom: "56px" }}>
             <span style={{ fontSize: "0.78rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em", display: "block", marginBottom: "6px" }}>
-              Seller Intelligence
+              Division Intelligence
             </span>
-            <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "20px" }}>
-              Frequently Asked Questions About Selling in {division.name}
+            <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "20px" }}>
+              Frequently Asked Questions About {division.name}
             </h3>
 
-            <div style={{ display: "flex", flexDirection: "column", gap: "14px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
               {division.faqs.map((faq, idx) => (
                 <details 
                   key={idx}
@@ -419,7 +347,7 @@ export default async function DivisionDetailPage({ params }) {
                   <summary style={{ fontSize: "1.02rem", fontWeight: 700, color: "var(--ink-950)", cursor: "pointer" }}>
                     {faq.question}
                   </summary>
-                  <p style={{ fontSize: "0.96rem", color: "var(--ink-700)", lineHeight: 1.75, marginTop: "12px", marginBottom: 0 }}>
+                  <p style={{ fontSize: "0.98rem", color: "var(--ink-700)", lineHeight: 1.75, marginTop: "12px", marginBottom: 0 }}>
                     {faq.answer}
                   </p>
                 </details>
@@ -428,50 +356,58 @@ export default async function DivisionDetailPage({ params }) {
           </section>
         )}
 
-        {/* In-Home Listing Appointment Callout Banner */}
+        {/* Clean Direct Contact Callout Banner */}
         <section style={{
           background: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
           color: "#FFFFFF",
           borderRadius: "16px",
-          padding: "48px 36px",
+          padding: "44px 32px",
           textAlign: "center",
-          marginBottom: "60px",
           boxShadow: "0 20px 40px -10px rgba(15, 23, 42, 0.25)"
         }}>
           <span style={{
-            fontSize: "0.8rem",
+            fontSize: "0.82rem",
             color: "var(--accent-gold)",
             fontWeight: 700,
             textTransform: "uppercase",
             letterSpacing: "0.08em",
             display: "block",
-            marginBottom: "12px"
+            marginBottom: "10px"
           }}>
-            Direct Fiduciary Leadership • Elena Gorbounova
+            {division.name} Real Estate Specialist • Elena Gorbounova
           </span>
 
-          <h3 style={{ fontSize: "clamp(1.8rem, 3vw, 2.3rem)", fontWeight: 800, color: "#FFFFFF", marginBottom: "14px", letterSpacing: "-0.02em" }}>
-            Considering Selling in {division.name}?
+          <h3 style={{ fontSize: "clamp(1.7rem, 2.8vw, 2.2rem)", fontWeight: 800, color: "#FFFFFF", marginBottom: "14px", letterSpacing: "-0.02em" }}>
+            Planning to Buy or Sell in {division.name}?
           </h3>
 
-          <p style={{ fontSize: "1.08rem", color: "#CBD5E1", lineHeight: 1.75, maxWidth: "660px", margin: "0 auto 30px" }}>
-            Book a private, in-home listing consultation. Elena will review verified closed comps on your street, recommend highest-ROI repairs, and share our active buyer list.
+          <p style={{ fontSize: "1.08rem", color: "#CBD5E1", lineHeight: 1.75, maxWidth: "620px", margin: "0 auto 28px" }}>
+            Connect directly with Elena Gorbounova for hyper-local pricing insights, verified closed comps on your block, and customized consultation.
           </p>
 
-          <div style={{ display: "flex", justifyContent: "center", gap: "12px", flexWrap: "wrap" }}>
-            <Link 
-              href="/sell" 
-              className="btn btn-primary"
-              style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "14px 28px" }}
-            >
-              Book In-Home Listing Consultation
-            </Link>
+          <div style={{ display: "flex", justifyContent: "center", gap: "14px", flexWrap: "wrap", alignItems: "center" }}>
             <a 
-              href="tel:7036257888" 
-              className="btn btn-outline"
-              style={{ color: "#FFFFFF", borderColor: "rgba(255,255,255,0.3)", padding: "14px 28px", fontWeight: 600 }}
+              href={telHref} 
+              className="btn btn-primary"
+              style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "14px 26px", fontSize: "1rem" }}
             >
-              Call Elena Direct: (703) 625-7888
+              📞 Call Direct: {directPhone}
+            </a>
+
+            <a 
+              href={mailHref} 
+              className="btn btn-outline"
+              style={{ color: "#FFFFFF", borderColor: "rgba(255,255,255,0.4)", padding: "14px 26px", fontWeight: 700, fontSize: "1rem" }}
+            >
+              ✉️ Email: {email}
+            </a>
+
+            <a 
+              href={smsHref} 
+              className="btn btn-outline"
+              style={{ color: "#FFFFFF", borderColor: "rgba(255,255,255,0.4)", padding: "14px 22px", fontWeight: 600, fontSize: "0.95rem" }}
+            >
+              💬 Text for Market Report
             </a>
           </div>
         </section>
