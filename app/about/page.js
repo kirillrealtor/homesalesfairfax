@@ -64,14 +64,24 @@ export default function AboutPage() {
         "name": "Elena Gorbounova",
         "jobTitle": "Broker Associate, REALTOR®, Master Certified Negotiation Expert",
         "image": "https://www.homesalesfairfax.com/images/elena-portrait.jpg",
-        "telephone": "+17036257888",
+        "telephone": "+1-703-625-7888",
         "email": "ElenaYSC@gmail.com",
         "url": "https://www.homesalesfairfax.com/about",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "5100 Leesburg Pike, Suite 200",
+          "addressLocality": "Alexandria",
+          "addressRegion": "VA",
+          "postalCode": "22302",
+          "addressCountry": "US"
+        },
         "worksFor": {
           "@type": "RealEstateAgent",
           "name": "RE/MAX Allegiance • YSC Real Estate Group",
-          "telephone": "+17038244800",
+          "image": "https://www.homesalesfairfax.com/images/elena-portrait.jpg",
+          "telephone": "+1-703-824-4800",
           "url": "https://www.homesalesfairfax.com",
+          "priceRange": "$$$$",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "5100 Leesburg Pike, Suite 200",

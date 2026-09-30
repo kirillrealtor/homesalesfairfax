@@ -75,9 +75,19 @@ export default async function DivisionDetailPage({ params }) {
       "@context": "https://schema.org",
       "@type": "RealEstateAgent",
       "name": "Elena Gorbounova & Kirill - RE/MAX Allegiance",
-      "telephone": "+17036257888",
+      "image": "https://www.homesalesfairfax.com/images/elena-portrait.jpg",
+      "telephone": "+1-703-625-7888",
       "email": "ElenaYSC@gmail.com",
       "url": `https://www.homesalesfairfax.com/divisions/${division.slug}`,
+      "priceRange": "$$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "5100 Leesburg Pike, Suite 200",
+        "addressLocality": "Alexandria",
+        "addressRegion": "VA",
+        "postalCode": "22302",
+        "addressCountry": "US"
+      },
       "areaServed": division.fullName
     }
   ];
