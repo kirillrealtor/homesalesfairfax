@@ -206,18 +206,21 @@ export const VIRGINIA_DIVISIONS = [
       {
         "name": "Mosby Woods",
         "slug": "mosby-woods",
+        "href": "/subdivisions/mosby-woods",
         "dom": "5 Days",
         "zip": "22030"
       },
       {
         "name": "Country Club Hills",
         "slug": "country-club-hills",
+        "href": "/subdivisions/country-club-hills",
         "dom": "6 Days",
         "zip": "22030"
       },
       {
         "name": "Old Town & City Center",
-        "slug": "fairfax-city",
+        "slug": "mosby-woods",
+        "href": "/fairfax-city-homes-for-sale",
         "dom": "7 Days",
         "zip": "22030"
       }
@@ -285,19 +288,22 @@ export const VIRGINIA_DIVISIONS = [
     "subdivisions": [
       {
         "name": "Clarendon & Courthouse",
-        "slug": "arlington-county",
+        "slug": "skyline-condos",
+        "href": "/communities/skyline",
         "dom": "6 Days",
         "zip": "22201"
       },
       {
         "name": "Ballston & Virginia Square",
-        "slug": "arlington-county",
+        "slug": "skyline-condos",
+        "href": "/communities/northampton-place",
         "dom": "7 Days",
         "zip": "22203"
       },
       {
         "name": "Fairlington Historic Village",
-        "slug": "arlington-county",
+        "slug": "skyline-condos",
+        "href": "/subdivisions/skyline-condos",
         "dom": "6 Days",
         "zip": "22206"
       }
@@ -365,25 +371,29 @@ export const VIRGINIA_DIVISIONS = [
     "subdivisions": [
       {
         "name": "Northampton Place Condominiums",
-        "slug": "northampton-place",
+        "slug": "skyline-condos",
+        "href": "/communities/northampton-place",
         "dom": "8 Days",
         "zip": "22311"
       },
       {
         "name": "Skyline High-Rise Condominiums",
         "slug": "skyline-condos",
+        "href": "/subdivisions/skyline-condos",
         "dom": "7 Days",
         "zip": "22041"
       },
       {
         "name": "Kingstowne Planned Community",
         "slug": "kingstowne",
+        "href": "/subdivisions/kingstowne",
         "dom": "6 Days",
         "zip": "22315"
       },
       {
         "name": "Old Town Historic Waterfront",
-        "slug": "city-of-alexandria",
+        "slug": "kingstowne",
+        "href": "/communities/skyline",
         "dom": "9 Days",
         "zip": "22314"
       }
@@ -449,18 +459,21 @@ export const VIRGINIA_DIVISIONS = [
       {
         "name": "Broadlands & Ashburn",
         "slug": "broadlands-ashburn",
+        "href": "/subdivisions/broadlands-ashburn",
         "dom": "6 Days",
         "zip": "20148"
       },
       {
         "name": "Brambleton Master Planned",
-        "slug": "loudoun-county",
+        "slug": "broadlands-ashburn",
+        "href": "/subdivisions/broadlands-ashburn",
         "dom": "7 Days",
         "zip": "20148"
       },
       {
         "name": "South Riding",
-        "slug": "loudoun-county",
+        "slug": "broadlands-ashburn",
+        "href": "/subdivisions/broadlands-ashburn",
         "dom": "6 Days",
         "zip": "20152"
       }
@@ -520,13 +533,15 @@ export const VIRGINIA_DIVISIONS = [
     "subdivisions": [
       {
         "name": "Lake Ridge & Occoquan",
-        "slug": "prince-william-county",
+        "slug": "burke-centre",
+        "href": "/subdivisions/burke-centre",
         "dom": "7 Days",
         "zip": "22192"
       },
       {
         "name": "Dominion Valley & Haymarket",
-        "slug": "prince-william-county",
+        "slug": "clifton-estates",
+        "href": "/subdivisions/clifton-estates",
         "dom": "8 Days",
         "zip": "20169"
       }

@@ -323,7 +323,7 @@ export default async function DivisionDetailPage({ params }) {
                     Avg {sub.dom || "5 Days"} DOM
                   </span>
                   <Link 
-                    href={`/subdivisions/${sub.slug}`}
+                    href={sub.href || `/subdivisions/${sub.slug}`}
                     style={{ fontSize: "0.84rem", color: "var(--accent-gold)", fontWeight: 700, textDecoration: "underline" }}
                   >
                     Neighborhood Guide &rarr;
