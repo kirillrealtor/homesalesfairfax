@@ -24,7 +24,7 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Elena Gorbounova (LL.M., MCNE®) | Top 1% Northern Virginia Real Estate Broker",
+    title: "Elena Gorbounova, LL.M. | Top 1% Northern Virginia Realtor",
     description: "Learn about Elena Gorbounova, Associate Broker at RE/MAX Allegiance. 21+ years experience, Top 1% nationwide, MCNE® negotiation expert & legal scholar.",
     images: ["https://www.homesalesfairfax.com/images/elena-portrait.jpg"],
   }

@@ -482,66 +482,74 @@ export default function AboutPage() {
               Professional Background &amp; Advisory Standard
             </h2>
 
-            {/* Deep Rephrased Editorial Narrative */}
-            <div style={{ display: "flex", flexDirection: "column", gap: "24px", color: "var(--ink-700)", fontSize: "1.02rem", lineHeight: 1.8 }}>
+            {/* Editorial Narrative with High Readability & Bulleted Takeaways */}
+            <div style={{ display: "flex", flexDirection: "column", gap: "22px", color: "var(--ink-700)", fontSize: "1rem", lineHeight: 1.7 }}>
               <p>
-                In an era where real estate is frequently commoditized into impersonal algorithms and rushed transactions, <strong>Elena Gorbounova</strong> represents a rare and commanding standard of advisory excellence. For over two decades, Elena has served as the trusted advisor of choice for discerning homeowners, corporate executives, attorneys, and international families navigating the high-stakes property landscapes of Fairfax County and Northern Virginia.
+                <strong>Elena Gorbounova</strong> is a top real estate broker associate in Northern Virginia. For over 21 years, she has helped homeowners, attorneys, and local families sell and buy homes with complete confidence.
               </p>
 
               <p>
-                Her practice is constructed upon a singular, unwavering creed: <em>real estate representation is not a transactional service, but the strategic stewardship of a client’s most significant financial and emotional milestone.</em>
+                Her philosophy is simple: <em>every client deserves expert advice, honest guidance, and top dollar for their home.</em>
               </p>
 
-              {/* Sub-heading 1: Academic Pedigree */}
-              <div style={{ marginTop: "12px" }}>
-                <h3 style={{ fontSize: "1.35rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "8px" }}>
-                  An 18-Year Scholarly Foundation &amp; Global Worldview
+              {/* Sub-heading 1: Teaching & Global Background */}
+              <div style={{ marginTop: "10px", background: "#F8FAFC", padding: "18px 20px", borderRadius: "14px", border: "1px solid #E2E8F0" }}>
+                <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "8px" }}>
+                  18 Years of Teaching &amp; Global Experience
                 </h3>
                 <p>
-                  Elena’s analytical depth distinguishes her from the conventional real estate field. Prior to entering American residential real estate, she completed an illustrious <strong>18-year tenure as a Senior University Professor</strong> at a premier academic institution in Russia. Throughout her scholarly career, Elena lectured, conducted research, and traveled extensively across Europe, Asia, and Africa.
+                  Before working in real estate, Elena spent <strong>18 years as a university professor</strong>. She taught classes, led academic research, and worked across Europe and Asia.
                 </p>
-                <p style={{ marginTop: "12px" }}>
-                  This international immersion instilled a sophisticated mastery of cross-cultural diplomacy, demographic migration, and macroeconomic forces. In Northern Virginia—one of the most cosmopolitan, international, and intellectually rigorous metropolitan regions in the world—Elena’s ability to communicate with cultural fluidity and strategic empathy provides her clients with an invaluable competitive advantage.
-                </p>
+                <ul style={{ margin: "10px 0 0", paddingLeft: "20px", display: "flex", flexDirection: "column", gap: "6px", fontSize: "0.92rem" }}>
+                  <li><strong>Clear Communication:</strong> Explains market data and contracts in simple terms.</li>
+                  <li><strong>Global Reach:</strong> Connects with international buyers and relocations.</li>
+                  <li><strong>Client-First Service:</strong> Focuses on your goals in every transaction.</li>
+                </ul>
               </div>
 
-              {/* Sub-heading 2: Legal Foundation */}
-              <div style={{ marginTop: "12px" }}>
-                <h3 style={{ fontSize: "1.35rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "8px" }}>
-                  Forensic Legal Acumen: Master of Laws (LL.M.)
+              {/* Sub-heading 2: Legal Education */}
+              <div style={{ marginTop: "10px", background: "#F8FAFC", padding: "18px 20px", borderRadius: "14px", border: "1px solid #E2E8F0" }}>
+                <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "8px" }}>
+                  Legal Degree: Master of Laws (LL.M.)
                 </h3>
                 <p>
-                  Recognizing that residential property transactions are fundamentally binding legal covenants involving hundreds of thousands to millions of dollars in equity, Elena advanced her expertise by earning a <strong>Master of Laws (LL.M.) from American University&apos;s Washington College of Law</strong>. Her rigorous curriculum focused on complex United States legal frameworks, statutory interpretation, refugee and asylum policy, and contractual governance.
+                  Real estate sales involve binding legal agreements. To give her clients the best legal protection, Elena earned a <strong>Master of Laws (LL.M.) from American University Washington College of Law</strong>.
                 </p>
-                <p style={{ marginTop: "12px" }}>
-                  This formidable legal training directly benefits her clients at every inflection point of the purchase and sale cycle. Whether dissecting complex HOA and condominium resale disclosures, drafting airtight escalation clauses, structuring creative financing terms, or resolving title defects, Elena operates with attorney-grade scrutiny. Her clients move forward with total certainty, shielded against latent liabilities and contractual ambiguities.
-                </p>
+                <ul style={{ margin: "10px 0 0", paddingLeft: "20px", display: "flex", flexDirection: "column", gap: "6px", fontSize: "0.92rem" }}>
+                  <li><strong>Contract Review:</strong> Checks every clause to protect your earnest money deposit.</li>
+                  <li><strong>HOA &amp; Condo Audits:</strong> Spots hidden fees, special assessments, and budget deficits.</li>
+                  <li><strong>Smooth Closings:</strong> Resolves inspection and title hurdles before they cause delays.</li>
+                </ul>
               </div>
 
-              {/* Sub-heading 3: Negotiation Excellence */}
-              <div style={{ marginTop: "12px" }}>
-                <h3 style={{ fontSize: "1.35rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "8px" }}>
+              {/* Sub-heading 3: Master Negotiation */}
+              <div style={{ marginTop: "10px", background: "#F8FAFC", padding: "18px 20px", borderRadius: "14px", border: "1px solid #E2E8F0" }}>
+                <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "8px" }}>
                   Master Certified Negotiation Expert (MCNE®)
                 </h3>
                 <p>
-                  Less than 1% of licensed REALTORS® nationwide hold the prestigious <strong>Master Certified Negotiation Expert (MCNE®)</strong> designation. Elena does not approach negotiations with passive hope; she enters negotiations armed with tactical game theory, psychological framing, and exhaustive market data.
+                  Less than 1% of agents in the nation hold the <strong>Master Certified Negotiation Expert (MCNE®)</strong> credential. Elena relies on proven market data and active negotiation tactics.
                 </p>
-                <p style={{ marginTop: "12px" }}>
-                  For home sellers, this means positioning properties to orchestrate competitive bidding environments, defending appraisal benchmarks, and capturing the absolute apex of market value. For buyers, it translates to winning fiercely contested multiple-offer situations without recklessly overpaying or relinquishing critical statutory protections.
-                </p>
+                <ul style={{ margin: "10px 0 0", paddingLeft: "20px", display: "flex", flexDirection: "column", gap: "6px", fontSize: "0.92rem" }}>
+                  <li><strong>For Sellers:</strong> Creates bidding wars to sell homes above list price.</li>
+                  <li><strong>For Buyers:</strong> Wins multiple-offer situations without overpaying.</li>
+                  <li><strong>Appraisal Defense:</strong> Defends high sales prices directly with bank appraisers.</li>
+                </ul>
               </div>
 
-              {/* Sub-heading 4: Fitness & Tenacity */}
-              <div style={{ marginTop: "12px" }}>
-                <h3 style={{ fontSize: "1.35rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "8px" }}>
-                  Athletic Discipline, Unyielding Stamina &amp; 24/7 Advocacy
+              {/* Sub-heading 4: Work Ethic */}
+              <div style={{ marginTop: "10px", background: "#F8FAFC", padding: "18px 20px", borderRadius: "14px", border: "1px solid #E2E8F0" }}>
+                <h3 style={{ fontSize: "1.2rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "8px" }}>
+                  Daily Athletic Discipline &amp; Direct Support
                 </h3>
                 <p>
-                  Elena’s professional tenacity is fueled by a profound personal commitment to health and physical fitness. A dedicated daily gym athlete, she approaches her real estate practice with the same relentless focus, stamina, and mental clarity that define elite conditioning.
+                  Elena trains in the gym every day. Her physical stamina fuels a fast, dedicated work ethic. In Northern Virginia&apos;s fast market, her quick action helps clients win.
                 </p>
-                <p style={{ marginTop: "12px" }}>
-                  In Northern Virginia&apos;s fast-moving market—where high-demand homes in Mantua, Mosby Woods, or Franklin Farm can secure multiple contracts within 48 hours—Elena’s tireless energy ensures lightning-fast responsiveness. When you partner with Elena, you work directly with her. You never encounter call centers, inexperienced assistants, or passing-the-buck excuses. Your telephone calls are answered, your inquiries are prioritized, and your interests are defended around the clock.
-                </p>
+                <ul style={{ margin: "10px 0 0", paddingLeft: "20px", display: "flex", flexDirection: "column", gap: "6px", fontSize: "0.92rem" }}>
+                  <li><strong>Direct Access:</strong> You always work directly with Elena, not a call center.</li>
+                  <li><strong>Fast Response:</strong> Immediate replies to calls, texts, and emails 7 days a week.</li>
+                  <li><strong>Full Support:</strong> Personal guidance from initial valuation to closing day.</li>
+                </ul>
               </div>
             </div>
 
@@ -580,7 +588,7 @@ export default function AboutPage() {
             Credentials, Honors &amp; Designations
           </h2>
           <p style={{ color: "var(--ink-500)", maxWidth: "680px", margin: "10px auto 0", fontSize: "0.98rem" }}>
-            The formal certifications and regional accolades that validate Elena&apos;s standing among the upper echelon of real estate practitioners in the Commonwealth of Virginia.
+            Professional credentials and awards that recognize Elena among the top real estate brokers in Virginia.
           </p>
         </div>
 
@@ -601,7 +609,7 @@ export default function AboutPage() {
               American University Washington College of Law
             </div>
             <p style={{ fontSize: "0.92rem", color: "var(--ink-600)", lineHeight: 1.6, margin: 0 }}>
-              Specialized postgraduate legal mastery in U.S. jurisprudence, contractual construction, statutory compliance, and risk containment.
+              Advanced law degree focusing on contract review, property rights, and protecting client interests.
             </p>
           </div>
 
@@ -617,7 +625,7 @@ export default function AboutPage() {
               Elite Top 1% Designation
             </div>
             <p style={{ fontSize: "0.92rem", color: "var(--ink-600)", lineHeight: 1.6, margin: 0 }}>
-              Advanced training in multi-party bargaining, behavioral economics, competitive concession strategy, and high-value transactional closing.
+              Elite training in negotiation tactics, pricing psychology, and securing top dollar for sellers.
             </p>
           </div>
 
@@ -633,7 +641,7 @@ export default function AboutPage() {
               Top 1% Nationwide Peer Group
             </div>
             <p style={{ fontSize: "0.92rem", color: "var(--ink-600)", lineHeight: 1.6, margin: 0 }}>
-              Independently verified for career transaction sales volume, community integrity, and unparalleled client satisfaction ratings.
+              Recognized among the top 1% of agents nationwide for career sales volume and outstanding client reviews.
             </p>
           </div>
 
@@ -649,7 +657,7 @@ export default function AboutPage() {
               Top 3% of RE/MAX Agents in the U.S.
             </div>
             <p style={{ fontSize: "0.92rem", color: "var(--ink-600)", lineHeight: 1.6, margin: 0 }}>
-              Awarded for enduring career sales excellence, benchmark production, and superior dedication to real estate industry standards.
+              Honored for career sales volume, industry leadership, and exceptional results for clients.
             </p>
           </div>
 
@@ -665,7 +673,7 @@ export default function AboutPage() {
               Northern Virginia Association of REALTORS®
             </div>
             <p style={{ fontSize: "0.92rem", color: "var(--ink-600)", lineHeight: 1.6, margin: 0 }}>
-              Recognizing multiple consecutive years of multi-million dollar settled volume across Northern Virginia&apos;s most competitive submarkets.
+              Recognized for consistent multi-million dollar sales volume across Northern Virginia&apos;s top neighborhoods.
             </p>
           </div>
 
@@ -681,7 +689,7 @@ export default function AboutPage() {
               Graduate, REALTOR® Institute
             </div>
             <p style={{ fontSize: "0.92rem", color: "var(--ink-600)", lineHeight: 1.6, margin: 0 }}>
-              Highest level of real estate professional licensing and in-depth training in market research, taxation, technology, and real estate finance.
+              Highest level of real estate licensing with deep training in market analysis, finance, and contracts.
             </p>
           </div>
         </div>
@@ -703,7 +711,7 @@ export default function AboutPage() {
               Why Hyper-Local Subdivision Intel Wins for Sellers
             </h2>
             <p style={{ fontSize: "1.05rem", color: "#CBD5E1", lineHeight: 1.7, marginBottom: "32px" }}>
-              Broad city-wide statistics obscure true property value. In Fairfax County, market dynamics vary by individual streets, high school pyramids, and micro-subdivisions. Elena structures targeted market campaigns and custom direct-mail reports tailored directly to the community:
+              City-wide statistics can hide true home values. In Fairfax County, market trends change by street, school district, and neighborhood. Elena creates custom market plans and local reports tailored directly to your community:
             </p>
           </div>
 
@@ -934,7 +942,7 @@ export default function AboutPage() {
             Connect Directly with Elena Gorbounova
           </h2>
           <p style={{ color: "var(--ink-600)", maxWidth: "680px", margin: "0 auto 36px", fontSize: "1.05rem", lineHeight: 1.7 }}>
-            Whether you are considering selling a residence, seeking an authoritative confidential equity valuation, or searching for a luxury home in Northern Virginia, Elena provides immediate, discrete guidance.
+            Whether you want to sell your home, find out its current market value, or tour homes for sale in Northern Virginia, Elena provides fast, direct guidance.
           </p>
 
           <div style={{
