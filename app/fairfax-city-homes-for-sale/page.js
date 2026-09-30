@@ -7,7 +7,7 @@ export const metadata = {
   title: "Fairfax City VA Homes For Sale | 22030 Real Estate & Listings | homesalesfairfax.com",
   description: "Explore active homes for sale in Fairfax City, VA (ZIP 22030). Single family estates, Woodson & Fairfax school pyramids, and private tour booking with Elena.",
   alternates: {
-    canonical: "https://homesalesfairfax.com/fairfax-city-homes-for-sale",
+    canonical: "https://www.homesalesfairfax.com/fairfax-city-homes-for-sale",
   },
 };
 

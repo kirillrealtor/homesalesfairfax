@@ -2,7 +2,7 @@ import "./globals.css";
 import QuickContactDock from "./components/QuickContactDock";
 
 export const metadata = {
-  metadataBase: new URL("https://homesalesfairfax.com"),
+  metadataBase: new URL("https://www.homesalesfairfax.com"),
   title: "Fairfax VA Homes For Sale | Showing Tours & Top Producer Listings | homesalesfairfax.com",
   description: "Browse active Fairfax County, Virginia homes for sale directly from Bright MLS. Book instant private showing tours and in-home seller listing consultations with Elena.",
   keywords: "Fairfax VA homes for sale, Fairfax real estate, sell my home Fairfax, showing agents Fairfax, Mosaic District townhomes, Oakton luxury homes, Burke real estate, Elena Gorbounova, Northern Virginia real estate",
@@ -10,7 +10,7 @@ export const metadata = {
   openGraph: {
     title: "Fairfax VA Homes For Sale | Showing Tours & Top Producer Listings",
     description: "Browse active Fairfax County VA real estate, book private showing tours in minutes, and schedule in-home seller listing consultations with Elena.",
-    url: "https://homesalesfairfax.com",
+    url: "https://www.homesalesfairfax.com",
     siteName: "homesalesfairfax.com",
     images: [
       {
@@ -54,7 +54,7 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "RealEstateAgent",
   "name": "homesalesfairfax.com - Elena Gorbounova | Fairfax Real Estate & Showing Network",
-  "image": "https://homesalesfairfax.com/images/hero-estate.jpg",
+  "image": "https://www.homesalesfairfax.com/images/hero-estate.jpg",
   "telephone": "+1-703-625-7888",
   "email": "ElenaYSC@gmail.com",
   "address": {
@@ -70,7 +70,7 @@ const jsonLd = {
     "latitude": 38.8462,
     "longitude": -77.3064
   },
-  "url": "https://homesalesfairfax.com",
+  "url": "https://www.homesalesfairfax.com",
   "priceRange": "$$$$",
   "areaServed": [
     "Fairfax, VA",

@@ -7,7 +7,7 @@ export const metadata = {
   title: "Oakton VA Luxury Homes For Sale | 22124 Real Estate",
   description: "Browse luxury single-family homes, custom estates, and acre properties in Oakton, VA (ZIP 22124). Oakton High School pyramid and private showings.",
   alternates: {
-    canonical: "https://homesalesfairfax.com/oakton-homes-for-sale",
+    canonical: "https://www.homesalesfairfax.com/oakton-homes-for-sale",
   },
 };
 

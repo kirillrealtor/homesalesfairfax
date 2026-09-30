@@ -10,12 +10,12 @@ export const metadata = {
   title: "Hire Northern Virginia Top Listing Agents | Sell for Top Dollar | homesalesfairfax.com",
   description: "Hire Elena Gorbounova & Kirill to list your Northern Virginia home. 400+ properties sold, 102.8% average list-to-sale ratio, 5.2 days DOM. Book your in-home listing consultation today.",
   alternates: {
-    canonical: "https://homesalesfairfax.com/sell",
+    canonical: "https://www.homesalesfairfax.com/sell",
   },
   openGraph: {
     title: "Hire Northern Virginia's Top Listing Team | Elena & Kirill",
     description: "Sell your home for top dollar with professional staging, 4K HDR media, pre-approved buyer matching, and seasoned contract defense.",
-    url: "https://homesalesfairfax.com/sell",
+    url: "https://www.homesalesfairfax.com/sell",
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "website",

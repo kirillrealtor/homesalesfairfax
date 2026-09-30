@@ -24,16 +24,16 @@ export async function generateMetadata({ params }) {
     title: `${community.name}, VA Real Estate & Homes | History, Market Comps & Guide`,
     description: `Comprehensive 2026 real estate & neighborhood guide for ${community.name}, ${community.cityState}. Settled comps, history, architectural styles, ${community.schools}, and representation with Elena Gorbounova.`,
     alternates: {
-      canonical: `https://homesalesfairfax.com/communities/${community.slug}`,
+      canonical: `https://www.homesalesfairfax.com/communities/${community.slug}`,
     },
     openGraph: {
       title: `${community.name} Real Estate & History | Fairfax County Guide`,
       description: community.heroHeadline,
-      url: `https://homesalesfairfax.com/communities/${community.slug}`,
+      url: `https://www.homesalesfairfax.com/communities/${community.slug}`,
       siteName: "homesalesfairfax.com",
       images: [
         {
-          url: `https://homesalesfairfax.com${community.image}`,
+          url: `https://www.homesalesfairfax.com${community.image}`,
           width: 1200,
           height: 800,
           alt: `${community.name} Real Estate & History`,
@@ -80,7 +80,7 @@ export default async function CommunityDetailPage({ params }) {
       "name": "Elena Gorbounova & Kirill - RE/MAX Allegiance",
       "telephone": "+17036257888",
       "email": "ElenaYSC@gmail.com",
-      "url": `https://homesalesfairfax.com/communities/${community.slug}`,
+      "url": `https://www.homesalesfairfax.com/communities/${community.slug}`,
       "areaServed": `${community.name}, ${community.cityState}`
     }
   ];

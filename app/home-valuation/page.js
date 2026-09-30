@@ -7,7 +7,7 @@ export const metadata = {
   title: "Fairfax Home Valuation | Instant Market Value & Pricing Estimate | homesalesfairfax.com",
   description: "Get an instant computational home valuation for your Fairfax County property based on recent Bright MLS comparable sales with Elena.",
   alternates: {
-    canonical: "https://homesalesfairfax.com/home-valuation",
+    canonical: "https://www.homesalesfairfax.com/home-valuation",
   },
 };
 

@@ -7,7 +7,7 @@ export const metadata = {
   title: "Burke VA Homes For Sale | Lake Braddock Real Estate (22015)",
   description: "Browse single family homes and townhomes in Burke, VA (ZIP 22015). Lake Braddock school district, Burke Centre VRE commuter station, and active listings.",
   alternates: {
-    canonical: "https://homesalesfairfax.com/burke-va-homes-for-sale",
+    canonical: "https://www.homesalesfairfax.com/burke-va-homes-for-sale",
   },
 };
 

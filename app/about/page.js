@@ -6,18 +6,18 @@ export const metadata = {
   title: "About Elena Gorbounova | Top 1% REALTOR® & Broker Associate",
   description: "Meet Elena Gorbounova (LL.M., MCNE): Top 1% Northern Virginia Broker Associate with RE/MAX Allegiance. 400+ properties sold and 21+ years of local mastery.",
   alternates: {
-    canonical: "https://homesalesfairfax.com/about",
+    canonical: "https://www.homesalesfairfax.com/about",
   },
   openGraph: {
     title: "About Elena Gorbounova | Top 1% REALTOR® & Broker Associate",
     description: "Legal precision, master negotiation, and 21+ years of dedicated market leadership across Fairfax County and Northern Virginia.",
-    url: "https://homesalesfairfax.com/about",
+    url: "https://www.homesalesfairfax.com/about",
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "profile",
     images: [
       {
-        url: "https://homesalesfairfax.com/images/elena-portrait.jpg",
+        url: "https://www.homesalesfairfax.com/images/elena-portrait.jpg",
         width: 1100,
         height: 1380,
         alt: "Elena Gorbounova - RE/MAX Allegiance Broker Associate",
@@ -28,7 +28,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "About Elena Gorbounova | Top 1% REALTOR® & Broker Associate",
     description: "Meet Elena Gorbounova (LL.M., MCNE): Top 1% Northern Virginia Broker Associate with RE/MAX Allegiance. 400+ properties sold and 21+ years of local mastery.",
-    images: ["https://homesalesfairfax.com/images/elena-portrait.jpg"],
+    images: ["https://www.homesalesfairfax.com/images/elena-portrait.jpg"],
   }
 };
 
@@ -37,8 +37,8 @@ export default function AboutPage() {
     {
       "@context": "https://schema.org",
       "@type": "AboutPage",
-      "@id": "https://homesalesfairfax.com/about#webpage",
-      "url": "https://homesalesfairfax.com/about",
+      "@id": "https://www.homesalesfairfax.com/about#webpage",
+      "url": "https://www.homesalesfairfax.com/about",
       "name": "About Elena Gorbounova | Top 1% REALTOR® & Broker Associate",
       "description": "Meet Elena Gorbounova (LL.M., MCNE): Top 1% Northern Virginia Broker Associate with RE/MAX Allegiance. 400+ properties sold and 21+ years of local mastery.",
       "breadcrumb": {
@@ -48,30 +48,30 @@ export default function AboutPage() {
             "@type": "ListItem",
             "position": 1,
             "name": "Home",
-            "item": "https://homesalesfairfax.com/"
+            "item": "https://www.homesalesfairfax.com/"
           },
           {
             "@type": "ListItem",
             "position": 2,
             "name": "About Elena Gorbounova",
-            "item": "https://homesalesfairfax.com/about"
+            "item": "https://www.homesalesfairfax.com/about"
           }
         ]
       },
       "mainEntity": {
         "@type": "Person",
-        "@id": "https://homesalesfairfax.com/about#elena-gorbounova",
+        "@id": "https://www.homesalesfairfax.com/about#elena-gorbounova",
         "name": "Elena Gorbounova",
         "jobTitle": "Broker Associate, REALTOR®, Master Certified Negotiation Expert",
-        "image": "https://homesalesfairfax.com/images/elena-portrait.jpg",
+        "image": "https://www.homesalesfairfax.com/images/elena-portrait.jpg",
         "telephone": "+17036257888",
         "email": "ElenaYSC@gmail.com",
-        "url": "https://homesalesfairfax.com/about",
+        "url": "https://www.homesalesfairfax.com/about",
         "worksFor": {
           "@type": "RealEstateAgent",
           "name": "RE/MAX Allegiance • YSC Real Estate Group",
           "telephone": "+17038244800",
-          "url": "https://homesalesfairfax.com",
+          "url": "https://www.homesalesfairfax.com",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "5100 Leesburg Pike, Suite 200",
@@ -120,7 +120,7 @@ export default function AboutPage() {
     {
       "@context": "https://schema.org",
       "@type": "FAQPage",
-      "@id": "https://homesalesfairfax.com/about#faq",
+      "@id": "https://www.homesalesfairfax.com/about#faq",
       "mainEntity": [
         {
           "@type": "Question",

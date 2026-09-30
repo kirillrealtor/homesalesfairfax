@@ -7,12 +7,12 @@ export const metadata = {
   title: "Virginia Real Estate Divisions & Subdivisions | List Your Home with Elena & Kirill",
   description: "Comprehensive guide to Virginia real estate divisions and subdivisions across Fairfax County, City of Fairfax, Arlington, Alexandria, and Loudoun. Hire Northern Virginia's top listing team to sell for top dollar.",
   alternates: {
-    canonical: "https://homesalesfairfax.com/divisions",
+    canonical: "https://www.homesalesfairfax.com/divisions",
   },
   openGraph: {
     title: "Virginia Divisions & Subdivisions | Top Listing Real Estate Agents",
     description: "Explore Virginia county divisions and high-turnover subdivisions. Settled comps, school pyramids, and proven listing strategies to maximize seller equity.",
-    url: "https://homesalesfairfax.com/divisions",
+    url: "https://www.homesalesfairfax.com/divisions",
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "website",

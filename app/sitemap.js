@@ -3,7 +3,7 @@ import { FAIRFAX_COMMUNITIES } from "./data/communities";
 import { VIRGINIA_DIVISIONS, VIRGINIA_SUBDIVISIONS } from "./data/virginiaDivisions";
 
 export default function sitemap() {
-  const baseUrl = "https://homesalesfairfax.com";
+  const baseUrl = "https://www.homesalesfairfax.com";
 
   const staticRoutes = [
     {

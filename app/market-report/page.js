@@ -7,12 +7,12 @@ export const metadata = {
   title: "Fairfax VA Real Estate Market Report & ZIP Code Comps (22030–22033)",
   description: "Live 2026 Fairfax County real estate market reports by ZIP code (22030, 22031, 22032, 22033) and high-turnover neighborhoods (Mantua, Mosby Woods, Franklin Farm, Kings Park West).",
   alternates: {
-    canonical: "https://homesalesfairfax.com/market-report",
+    canonical: "https://www.homesalesfairfax.com/market-report",
   },
   openGraph: {
     title: "Fairfax VA Real Estate Market Report & Hyper-Local Neighborhood Comps",
     description: "Subdivision-level market reports for Mantua, Mosby Woods, Franklin Farm, Kings Park West, and Fairfax County ZIP codes.",
-    url: "https://homesalesfairfax.com/market-report",
+    url: "https://www.homesalesfairfax.com/market-report",
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "website",

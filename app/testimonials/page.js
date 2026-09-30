@@ -8,12 +8,12 @@ export const metadata = {
   title: "Client Testimonials & Reviews | Elena Gorbounova • RE/MAX Allegiance",
   description: "Read 325+ verified five-star client testimonials and real estate reviews for Elena Gorbounova across Fairfax County, Falls Church, Alexandria, and Northern Virginia.",
   alternates: {
-    canonical: "https://homesalesfairfax.com/testimonials",
+    canonical: "https://www.homesalesfairfax.com/testimonials",
   },
   openGraph: {
     title: "325+ Verified Real Estate Client Reviews | Elena Gorbounova",
     description: "Authentic seller and buyer reviews across Fairfax County and Northern Virginia.",
-    url: "https://homesalesfairfax.com/testimonials",
+    url: "https://www.homesalesfairfax.com/testimonials",
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "website",
@@ -26,7 +26,7 @@ export default function TestimonialsPage() {
     "@context": "https://schema.org",
     "@type": "RealEstateAgent",
     "name": "Elena Gorbounova - RE/MAX Allegiance",
-    "image": "https://homesalesfairfax.com/images/kirill.jpg",
+    "image": "https://www.homesalesfairfax.com/images/kirill.jpg",
     "telephone": "+17036257888",
     "email": "ElenaYSC@gmail.com",
     "address": {

@@ -7,12 +7,12 @@ export const metadata = {
   title: "Virginia Subdivisions Real Estate Guide | Sell Your Home with Elena & Kirill",
   description: "Browse high-demand Northern Virginia subdivisions including Mantua, Mosby Woods, Franklin Farm, Kings Park West, Burke Centre, Oakton, and Reston. Recent sales comps and top listing agent representation.",
   alternates: {
-    canonical: "https://homesalesfairfax.com/subdivisions",
+    canonical: "https://www.homesalesfairfax.com/subdivisions",
   },
   openGraph: {
     title: "Virginia Subdivisions Real Estate Directory | Top Listing Agents",
     description: "Subdivision-level market reports, closed comps, and top producer listing strategies across Northern Virginia.",
-    url: "https://homesalesfairfax.com/subdivisions",
+    url: "https://www.homesalesfairfax.com/subdivisions",
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "website",

@@ -24,16 +24,16 @@ export async function generateMetadata({ params }) {
     title: `${sub.name}, VA Real Estate & Homes | History, Market Comps & Specialist`,
     description: `Complete guide to ${sub.name}, ${sub.city} VA (${sub.zip}). History, architectural styles, ${sub.schools}, settled comps, and top listing representation with Elena Gorbounova.`,
     alternates: {
-      canonical: `https://homesalesfairfax.com/subdivisions/${sub.slug}`,
+      canonical: `https://www.homesalesfairfax.com/subdivisions/${sub.slug}`,
     },
     openGraph: {
       title: `${sub.name} Real Estate & History | Elena & Kirill`,
       description: sub.sellerLeadSnippet,
-      url: `https://homesalesfairfax.com/subdivisions/${sub.slug}`,
+      url: `https://www.homesalesfairfax.com/subdivisions/${sub.slug}`,
       siteName: "homesalesfairfax.com",
       images: [
         {
-          url: `https://homesalesfairfax.com${sub.image}`,
+          url: `https://www.homesalesfairfax.com${sub.image}`,
           width: 1200,
           height: 800,
           alt: `${sub.name} Real Estate & History`,
@@ -80,7 +80,7 @@ export default async function SubdivisionDetailPage({ params }) {
       "name": "Elena Gorbounova & Kirill - RE/MAX Allegiance",
       "telephone": "+17036257888",
       "email": "ElenaYSC@gmail.com",
-      "url": `https://homesalesfairfax.com/subdivisions/${sub.slug}`,
+      "url": `https://www.homesalesfairfax.com/subdivisions/${sub.slug}`,
       "areaServed": `${sub.name}, ${sub.city}, VA`
     }
   ];

@@ -7,7 +7,7 @@ export const metadata = {
   title: "Mosaic District Homes & Townhomes For Sale | Merrifield Fairfax VA | homesalesfairfax.com",
   description: "Browse luxury townhomes and condos in Mosaic District, Merrifield VA (ZIP 22031). Walk to Dunn Loring Metro, boutique shopping, and dining with Elena.",
   alternates: {
-    canonical: "https://homesalesfairfax.com/mosaic-district-homes",
+    canonical: "https://www.homesalesfairfax.com/mosaic-district-homes",
   },
 };
 
