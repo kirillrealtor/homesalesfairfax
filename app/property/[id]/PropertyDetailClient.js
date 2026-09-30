@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import ShowingModal from "../../components/ShowingModal";
 import Link from "next/link";
+import { FAIRFAX_LISTINGS } from "../../data/listings";
 
 export default function PropertyDetailClient({ property }) {
   const [tourModalOpen, setTourModalOpen] = useState(false);
@@ -173,6 +174,61 @@ export default function PropertyDetailClient({ property }) {
             <div style={{ marginTop: "18px", paddingTop: "14px", borderTop: "1px solid var(--ink-200)", fontSize: "0.82rem", color: "var(--ink-500)", textAlign: "center" }}>
               ⚡ Direct agent communication • Instant lockbox &amp; tour access
             </div>
+          </div>
+        </div>
+
+        {/* Other Featured Listings */}
+        <div style={{ marginTop: "64px", borderTop: "1px solid var(--ink-200)", paddingTop: "40px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "24px", flexWrap: "wrap", gap: "10px" }}>
+            <div>
+              <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+                Active Portfolio
+              </span>
+              <h3 style={{ fontSize: "1.6rem", fontWeight: 800, color: "var(--ink-950)", margin: "4px 0 0" }}>
+                Explore More Featured Fairfax Listings
+              </h3>
+            </div>
+            <Link href="/#listings" style={{ fontSize: "0.9rem", color: "var(--accent-gold-hover)", fontWeight: 700 }}>
+              View All Listings &rarr;
+            </Link>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
+            {FAIRFAX_LISTINGS.filter(p => p.id !== property.id).slice(0, 3).map((other) => (
+              <Link
+                key={other.id}
+                href={`/property/${other.id}`}
+                style={{
+                  background: "#FFFFFF",
+                  borderRadius: "var(--radius-md)",
+                  border: "1px solid var(--ink-200)",
+                  overflow: "hidden",
+                  textDecoration: "none",
+                  color: "inherit",
+                  boxShadow: "var(--shadow-card)",
+                  transition: "transform 0.15s ease"
+                }}
+              >
+                <div style={{ height: "180px", overflow: "hidden", position: "relative" }}>
+                  <img
+                    src={other.image}
+                    alt={other.title}
+                    style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                    loading="lazy"
+                  />
+                  <div style={{ position: "absolute", bottom: "8px", left: "8px", background: "rgba(15,23,42,0.85)", color: "#fff", padding: "3px 8px", borderRadius: "6px", fontSize: "0.75rem", fontWeight: 700 }}>
+                    {other.neighborhood}
+                  </div>
+                </div>
+                <div style={{ padding: "16px" }}>
+                  <strong style={{ fontSize: "1.05rem", color: "var(--ink-950)", display: "block" }}>{other.address}</strong>
+                  <span style={{ fontSize: "0.82rem", color: "var(--ink-500)", display: "block", marginTop: "2px" }}>{other.city}, VA • {other.beds} Beds • {other.baths} Baths</span>
+                  <span style={{ fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 700, display: "block", marginTop: "8px" }}>
+                    View Property Details &rarr;
+                  </span>
+                </div>
+              </Link>
+            ))}
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { FAIRFAX_COMMUNITIES, getCommunityBySlug } from "../../data/communities";
+import { VIRGINIA_DIVISIONS } from "../../data/virginiaDivisions";
 
 export function generateStaticParams() {
   return FAIRFAX_COMMUNITIES.map((c) => ({
@@ -110,10 +111,13 @@ export default async function CommunityDetailPage({ params }) {
     });
   }
 
-  // Get neighboring communities for quick cross-linking
-  const otherCommunities = FAIRFAX_COMMUNITIES
-    .filter(c => c.slug !== community.slug)
-    .slice(0, 3);
+  // Get rotating neighboring communities for comprehensive internal network linking
+  const currentIndex = FAIRFAX_COMMUNITIES.findIndex(c => c.slug === community.slug);
+  const otherCommunities = [];
+  for (let i = 1; i <= 6; i++) {
+    const nextIndex = (currentIndex + i) % FAIRFAX_COMMUNITIES.length;
+    otherCommunities.push(FAIRFAX_COMMUNITIES[nextIndex]);
+  }
 
   return (
     <main style={{ background: "#FFFFFF", color: "var(--ink-950)" }}>
@@ -586,40 +590,74 @@ export default async function CommunityDetailPage({ params }) {
         </section>
 
         {/* Explore Other Fairfax Communities */}
-        <section style={{ borderTop: "1px solid var(--ink-200)", paddingTop: "40px" }}>
-          <h4 style={{ fontSize: "1.2rem", fontWeight: 800, color: "var(--ink-950)", marginBottom: "20px" }}>
-            Explore Nearby Fairfax Communities
-          </h4>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "16px" }}>
+        <section style={{ borderTop: "1px solid var(--ink-200)", paddingTop: "40px", marginBottom: "40px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px", flexWrap: "wrap", gap: "10px" }}>
+            <h4 style={{ fontSize: "1.25rem", fontWeight: 800, color: "var(--ink-950)", margin: 0 }}>
+              Explore Nearby Northern Virginia Communities
+            </h4>
+            <Link href="/communities" style={{ fontSize: "0.88rem", color: "var(--accent-gold)", fontWeight: 700, textDecoration: "none" }}>
+              View All 16 Communities &rarr;
+            </Link>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "16px" }}>
             {otherCommunities.map(other => (
               <Link 
                 key={other.id} 
-                href={other.href}
+                href={`/communities/${other.slug}`}
                 style={{
                   display: "flex",
                   gap: "14px",
                   alignItems: "center",
                   textDecoration: "none",
                   color: "inherit",
-                  padding: "12px",
-                  borderRadius: "10px",
+                  padding: "14px",
+                  borderRadius: "12px",
                   border: "1px solid var(--ink-200)",
                   background: "#F8FAFC",
-                  transition: "background 0.2s ease"
+                  transition: "all 0.2s ease"
                 }}
               >
                 <img 
                   src={other.image} 
                   alt={other.name} 
-                  style={{ width: "64px", height: "64px", borderRadius: "8px", objectFit: "cover" }}
+                  style={{ width: "68px", height: "68px", borderRadius: "8px", objectFit: "cover", flexShrink: 0 }}
                 />
                 <div>
                   <strong style={{ fontSize: "0.95rem", color: "var(--ink-950)", display: "block" }}>{other.name}</strong>
-                  <span style={{ fontSize: "0.78rem", color: "var(--ink-600)" }}>{other.cityState}</span>
+                  <span style={{ fontSize: "0.78rem", color: "var(--ink-600)", display: "block" }}>{other.cityState}</span>
                   <span style={{ fontSize: "0.82rem", color: "var(--accent-gold-hover)", fontWeight: 700, display: "block", marginTop: "2px" }}>
-                    {other.avgDOM} DOM
+                    {other.avgDOM} DOM • {other.schools}
                   </span>
                 </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Regional Virginia Divisions Cross-Link Strip */}
+        <section style={{ borderTop: "1px solid var(--ink-200)", paddingTop: "32px" }}>
+          <span style={{ fontSize: "0.78rem", fontWeight: 800, color: "var(--accent-gold)", textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "8px" }}>
+            Explore Virginia Regional Divisions &amp; Jurisdictions
+          </span>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "12px" }}>
+            {VIRGINIA_DIVISIONS.map(div => (
+              <Link
+                key={div.id}
+                href={`/divisions/${div.slug}`}
+                style={{
+                  padding: "8px 14px",
+                  background: "#F1F5F9",
+                  borderRadius: "9999px",
+                  fontSize: "0.85rem",
+                  fontWeight: 600,
+                  color: "var(--ink-800)",
+                  textDecoration: "none",
+                  border: "1px solid var(--ink-200)",
+                  transition: "background 0.15s ease"
+                }}
+              >
+                {div.name} Division &rarr;
               </Link>
             ))}
           </div>

@@ -2,7 +2,8 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
-import { VIRGINIA_SUBDIVISIONS, getSubdivisionBySlug, getDivisionBySlug } from "../../data/virginiaDivisions";
+import { VIRGINIA_SUBDIVISIONS, VIRGINIA_DIVISIONS, getSubdivisionBySlug, getDivisionBySlug } from "../../data/virginiaDivisions";
+import { FAIRFAX_COMMUNITIES } from "../../data/communities";
 
 export function generateStaticParams() {
   return VIRGINIA_SUBDIVISIONS.map((s) => ({
@@ -59,6 +60,14 @@ export default async function SubdivisionDetailPage({ params }) {
   const smsHref = `sms:+17036257888?body=Hi%20Elena,%20I'm%20interested%20in%20${encodeURIComponent(sub.name)}%20real%20estate.`;
   const email = "ElenaYSC@gmail.com";
   const mailHref = `mailto:ElenaYSC@gmail.com?subject=${encodeURIComponent(sub.name)}%20Real%20Estate%20Inquiry`;
+
+  // Get rotating neighboring subdivisions for comprehensive internal network linking
+  const currentIndex = VIRGINIA_SUBDIVISIONS.findIndex(s => s.slug === sub.slug);
+  const otherSubdivisions = [];
+  for (let i = 1; i <= 6; i++) {
+    const nextIndex = (currentIndex + i) % VIRGINIA_SUBDIVISIONS.length;
+    otherSubdivisions.push(VIRGINIA_SUBDIVISIONS[nextIndex]);
+  }
 
   const structuredData = [
     {
@@ -443,6 +452,74 @@ export default async function SubdivisionDetailPage({ params }) {
           </div>
         </section>
 
+        {/* Explore Other Subdivisions */}
+        <section style={{ borderTop: "1px solid var(--ink-200)", paddingTop: "40px", marginTop: "48px", marginBottom: "36px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "18px", flexWrap: "wrap", gap: "10px" }}>
+            <h4 style={{ fontSize: "1.25rem", fontWeight: 800, color: "var(--ink-950)", margin: 0 }}>
+              Explore Nearby Virginia Subdivisions
+            </h4>
+            <Link href="/subdivisions" style={{ fontSize: "0.88rem", color: "var(--accent-gold)", fontWeight: 700, textDecoration: "none" }}>
+              All 16 Subdivisions &rarr;
+            </Link>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "14px" }}>
+            {otherSubdivisions.map(s => (
+              <Link
+                key={s.id}
+                href={`/subdivisions/${s.slug}`}
+                style={{
+                  padding: "16px",
+                  borderRadius: "12px",
+                  background: "#F8FAFC",
+                  border: "1px solid var(--ink-200)",
+                  textDecoration: "none",
+                  color: "inherit",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  transition: "all 0.2s ease"
+                }}
+              >
+                <div>
+                  <strong style={{ fontSize: "1rem", color: "var(--ink-950)", display: "block" }}>{s.name}</strong>
+                  <span style={{ fontSize: "0.8rem", color: "var(--ink-500)", display: "block", marginTop: "2px" }}>{s.city}, VA {s.zip} • {s.schools}</span>
+                </div>
+                <span style={{ fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 700, marginTop: "10px" }}>
+                  View Subdivision Guide &rarr;
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Regional Virginia Divisions Cross-Link Strip */}
+        <section style={{ borderTop: "1px solid var(--ink-200)", paddingTop: "32px" }}>
+          <span style={{ fontSize: "0.78rem", fontWeight: 800, color: "var(--accent-gold)", textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "8px" }}>
+            Virginia Regional Jurisdictions
+          </span>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "12px" }}>
+            {VIRGINIA_DIVISIONS.map(div => (
+              <Link
+                key={div.id}
+                href={`/divisions/${div.slug}`}
+                style={{
+                  padding: "8px 14px",
+                  background: "#F1F5F9",
+                  borderRadius: "9999px",
+                  fontSize: "0.85rem",
+                  fontWeight: 600,
+                  color: "var(--ink-800)",
+                  textDecoration: "none",
+                  border: "1px solid var(--ink-200)",
+                  transition: "background 0.15s ease"
+                }}
+              >
+                {div.name} &rarr;
+              </Link>
+            ))}
+          </div>
+        </section>
       </article>
 
       <Footer />

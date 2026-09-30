@@ -196,9 +196,15 @@ export default function SellPage() {
             ))}
           </div>
 
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center", display: "flex", justifyContent: "center", gap: "14px", flexWrap: "wrap" }}>
             <Link href="/subdivisions" className="btn btn-outline" style={{ fontWeight: 700, padding: "12px 24px" }}>
-              View All Virginia Subdivisions Directory &rarr;
+              All 16 Subdivisions Directory &rarr;
+            </Link>
+            <Link href="/communities" className="btn btn-outline" style={{ fontWeight: 700, padding: "12px 24px" }}>
+              All 16 Regional Communities &rarr;
+            </Link>
+            <Link href="/divisions" className="btn btn-outline" style={{ fontWeight: 700, padding: "12px 24px" }}>
+              All Virginia Divisions &rarr;
             </Link>
           </div>
         </div>

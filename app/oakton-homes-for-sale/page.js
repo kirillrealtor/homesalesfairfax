@@ -117,7 +117,33 @@ export default function OaktonHomesPage() {
           ))}
         </div>
 
-        <div style={{ textAlign: "center", marginTop: "50px" }}>
+        <div style={{ textAlign: "center", marginTop: "50px", borderTop: "1px solid var(--ink-200)", paddingTop: "36px" }}>
+          <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "12px" }}>
+            Explore Other Northern Virginia Area Guides
+          </span>
+          <div style={{ display: "flex", justifyContent: "center", gap: "10px", flexWrap: "wrap", marginBottom: "24px" }}>
+            <Link href="/fairfax-city-homes-for-sale" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+              Fairfax City &rarr;
+            </Link>
+            <Link href="/mosaic-district-homes" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+              Mosaic District &rarr;
+            </Link>
+            <Link href="/burke-va-homes-for-sale" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+              Burke &amp; Lake Braddock &rarr;
+            </Link>
+            <Link href="/communities/clifton" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+              Clifton Estates &rarr;
+            </Link>
+            <Link href="/communities/mclean" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+              McLean &amp; Gold Coast &rarr;
+            </Link>
+            <Link href="/communities/country-club-hills" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+              Country Club Hills &rarr;
+            </Link>
+            <Link href="/divisions/arlington-county" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+              Arlington County &rarr;
+            </Link>
+          </div>
           <Link href="/" className="btn-card-ask" style={{ display: "inline-block", padding: "12px 24px" }}>
             ← Return to Full Fairfax Portal
           </Link>

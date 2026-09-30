@@ -41,6 +41,37 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
     },
   ];
 
+  const featuredHighEquityCommunities = [
+    {
+      name: "Clifton & Wine Country",
+      slug: "/communities/clifton",
+      desc: "5-acre equestrian manors & historic village charm",
+      zip: "22024",
+      badge: "Estate Luxury"
+    },
+    {
+      name: "McLean & Gold Coast",
+      slug: "/communities/mclean",
+      desc: "Potomac River corridor, Langley pyramid & embassy estates",
+      zip: "22101",
+      badge: "Ultra Luxury"
+    },
+    {
+      name: "Country Club Hills",
+      slug: "/communities/country-club-hills",
+      desc: "Army Navy CC fairway frontage & Woodson pyramid",
+      zip: "22030",
+      badge: "Golf Enclave"
+    },
+    {
+      name: "Arlington County Division",
+      slug: "/divisions/arlington-county",
+      desc: "Clarendon, Ballston, Rosslyn & National Landing corridor",
+      zip: "22201+",
+      badge: "Metro Division"
+    }
+  ];
+
   return (
     <section id="neighborhoods" className="content-section" style={{ background: "var(--bg-page)" }}>
       <div className="container">
@@ -53,7 +84,7 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
           </p>
         </div>
 
-        {/* Hyper-Local Neighborhood Reports Strip (Formula: [Neighborhood Name] + Real Estate / Market Report) */}
+        {/* Hyper-Local Neighborhood Reports Strip */}
         <div style={{ marginBottom: "48px" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "18px", flexWrap: "wrap", gap: "10px" }}>
             <span style={{ fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em" }}>
@@ -117,6 +148,69 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
           </div>
         </div>
 
+        {/* Featured High-Equity Regional Enclaves: Clifton, McLean, Country Club Hills, Arlington */}
+        <div style={{ marginBottom: "48px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "18px", flexWrap: "wrap", gap: "10px" }}>
+            <span style={{ fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+              ✦ Premier Regional Communities &amp; Divisions
+            </span>
+            <div style={{ display: "flex", gap: "14px" }}>
+              <Link href="/communities" style={{ fontSize: "0.88rem", color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>
+                All Communities &rarr;
+              </Link>
+              <Link href="/divisions" style={{ fontSize: "0.88rem", color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>
+                All Divisions &rarr;
+              </Link>
+            </div>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "18px" }}>
+            {featuredHighEquityCommunities.map((c) => (
+              <Link
+                key={c.name}
+                href={c.slug}
+                style={{
+                  background: "#FFFFFF",
+                  borderRadius: "var(--radius-md)",
+                  padding: "22px",
+                  border: "1.5px solid var(--ink-200)",
+                  boxShadow: "var(--shadow-card)",
+                  textDecoration: "none",
+                  color: "inherit",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  transition: "transform 0.15s ease"
+                }}
+              >
+                <div>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
+                    <span style={{ fontSize: "0.72rem", background: "var(--ink-950)", color: "#FFFFFF", padding: "3px 8px", borderRadius: "9999px", fontWeight: 700 }}>
+                      {c.badge}
+                    </span>
+                    <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", fontWeight: 600 }}>
+                      {c.zip}
+                    </span>
+                  </div>
+                  <h3 style={{ fontSize: "1.22rem", fontWeight: 800, color: "var(--ink-950)", margin: "4px 0 6px" }}>
+                    {c.name}
+                  </h3>
+                  <p style={{ fontSize: "0.86rem", color: "var(--ink-600)", lineHeight: "1.5", margin: 0 }}>
+                    {c.desc}
+                  </p>
+                </div>
+
+                <div style={{ marginTop: "16px", paddingTop: "12px", borderTop: "1px solid var(--ink-100)", display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                  <span style={{ fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 700 }}>
+                    Explore Guide &amp; Comps
+                  </span>
+                  <span style={{ fontSize: "0.88rem", color: "var(--ink-950)", fontWeight: 800 }}>&rarr;</span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+
         {/* Established Submarket Communities */}
         <div style={{ marginTop: "32px", marginBottom: "18px" }}>
           <span style={{ fontSize: "0.82rem", color: "var(--ink-500)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em" }}>
@@ -172,7 +266,7 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
                 </div>
 
                 <p style={{ fontSize: "0.88rem", color: "var(--ink-600)", marginBottom: "16px", fontStyle: "italic", lineHeight: "1.5" }}>
-                  "{nh.vibe}"
+                  &ldquo;{nh.vibe}&rdquo;
                 </p>
 
                 <ul style={{ listStyle: "none", marginBottom: "20px", display: "flex", flexDirection: "column", gap: "7px" }}>
@@ -186,25 +280,54 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
                   ))}
                 </ul>
 
-                <button 
-                  onClick={() => onFilterNeighborhood(nh.name.split(" ")[0])}
-                  className="btn-card-ask" 
-                  style={{ width: "100%", textAlign: "center", marginTop: "auto", fontWeight: 700 }}
-                >
-                  Explore {nh.name.split(" ")[0]} Residences &rarr;
-                </button>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px", marginTop: "auto" }}>
+                  <Link 
+                    href={
+                      nh.slug === "fairfax-city" ? "/fairfax-city-homes-for-sale" :
+                      nh.slug === "mosaic-district" ? "/mosaic-district-homes" :
+                      nh.slug === "oakton" ? "/oakton-homes-for-sale" :
+                      "/burke-va-homes-for-sale"
+                    }
+                    className="btn-card-ask" 
+                    style={{ textAlign: "center", fontWeight: 700, fontSize: "0.82rem", padding: "10px 4px", textDecoration: "none" }}
+                  >
+                    Area Guide &rarr;
+                  </Link>
+                  <button 
+                    onClick={() => onFilterNeighborhood(nh.name.split(" ")[0])}
+                    className="btn-card-ask" 
+                    style={{ textAlign: "center", fontWeight: 700, fontSize: "0.82rem", padding: "10px 4px", background: "var(--ink-950)", color: "#FFFFFF", borderColor: "var(--ink-950)" }}
+                  >
+                    Filter Homes
+                  </button>
+                </div>
               </div>
             </div>
           ))}
         </div>
 
-        <div style={{ marginTop: "32px", textAlign: "center", padding: "18px 24px", background: "rgba(255,255,255,0.75)", borderRadius: "14px", border: "1px solid var(--ink-200)" }}>
-          <span style={{ fontSize: "0.9rem", color: "var(--ink-700)", lineHeight: "1.6" }}>
-            Considering Vienna, McLean, Great Falls, Reston, or Falls Church? Elena represents clients across all of Northern Virginia.{" "}
-            <a href="sms:+17036257888?body=Hi%20Elena,%20I'm%20exploring%20homes%20in%20" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>
-              Text Us at (703) 625-7888 for private off-market insight &rarr;
+        {/* Hyper-Linked Regional Authority Navigation Banner */}
+        <div style={{ marginTop: "36px", padding: "24px 28px", background: "rgba(255,255,255,0.85)", borderRadius: "16px", border: "1px solid var(--ink-200)", display: "flex", flexDirection: "column", gap: "14px" }}>
+          <div style={{ fontSize: "0.95rem", color: "var(--ink-800)", lineHeight: "1.7" }}>
+            <strong>Northern Virginia Regional Coverage:</strong> Elena represents luxury sellers and buyers across{" "}
+            <Link href="/communities/clifton" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Clifton</Link>,{" "}
+            <Link href="/communities/mclean" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>McLean</Link>,{" "}
+            <Link href="/communities/country-club-hills" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Country Club Hills</Link>,{" "}
+            <Link href="/divisions/fairfax-county" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Fairfax County</Link>,{" "}
+            <Link href="/divisions/arlington-county" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Arlington County</Link>,{" "}
+            <Link href="/communities/vienna-wolftrap" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Vienna</Link>,{" "}
+            <Link href="/communities/mosaic-district" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Mosaic District</Link>, and{" "}
+            <Link href="/divisions/alexandria-city" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Alexandria</Link>.
+          </div>
+
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", borderTop: "1px solid var(--ink-100)", paddingTop: "12px" }}>
+            <span style={{ fontSize: "0.85rem", color: "var(--ink-500)" }}>
+              Need confidential, off-market pricing advisory for your neighborhood?
+            </span>
+            <a href="sms:+17036257888?body=Hi%20Elena,%20I'm%20exploring%20homes%20in%20" style={{ color: "var(--accent-gold-hover)", fontWeight: 800, fontSize: "0.9rem", textDecoration: "none" }}>
+              Text Elena Direct at (703) 625-7888 &rarr;
             </a>
-          </span>
+          </div>
         </div>
       </div>
     </section>

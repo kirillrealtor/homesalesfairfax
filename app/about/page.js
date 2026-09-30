@@ -751,6 +751,46 @@ export default function AboutPage() {
                 </p>
               </div>
             </Link>
+
+            <Link href="/communities/clifton" style={{ textDecoration: "none" }}>
+              <div style={{ background: "rgba(255, 255, 255, 0.06)", border: "1px solid rgba(255, 255, 255, 0.12)", borderRadius: "14px", padding: "20px" }}>
+                <div style={{ color: "var(--accent-gold)", fontWeight: 800, fontSize: "1.1rem" }}>Clifton &amp; Wine Country</div>
+                <div style={{ color: "#94A3B8", fontSize: "0.82rem", marginTop: "4px" }}>ZIP 22024 • 5-Acre Estates</div>
+                <p style={{ color: "#E2E8F0", fontSize: "0.86rem", marginTop: "10px", lineHeight: 1.5 }}>
+                  Equestrian parcels, custom luxury builds, and historic village charm.
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/communities/mclean" style={{ textDecoration: "none" }}>
+              <div style={{ background: "rgba(255, 255, 255, 0.06)", border: "1px solid rgba(255, 255, 255, 0.12)", borderRadius: "14px", padding: "20px" }}>
+                <div style={{ color: "var(--accent-gold)", fontWeight: 800, fontSize: "1.1rem" }}>McLean &amp; Gold Coast</div>
+                <div style={{ color: "#94A3B8", fontSize: "0.82rem", marginTop: "4px" }}>ZIP 22101 • Potomac River Corridor</div>
+                <p style={{ color: "#E2E8F0", fontSize: "0.86rem", marginTop: "10px", lineHeight: 1.5 }}>
+                  Langley pyramid, multi-million dollar estates, and embassy residences.
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/communities/country-club-hills" style={{ textDecoration: "none" }}>
+              <div style={{ background: "rgba(255, 255, 255, 0.06)", border: "1px solid rgba(255, 255, 255, 0.12)", borderRadius: "14px", padding: "20px" }}>
+                <div style={{ color: "var(--accent-gold)", fontWeight: 800, fontSize: "1.1rem" }}>Country Club Hills</div>
+                <div style={{ color: "#94A3B8", fontSize: "0.82rem", marginTop: "4px" }}>ZIP 22030 • Army Navy Golf</div>
+                <p style={{ color: "#E2E8F0", fontSize: "0.86rem", marginTop: "10px", lineHeight: 1.5 }}>
+                  Fairway-fronting custom homes and Woodson High School pyramid.
+                </p>
+              </div>
+            </Link>
+
+            <Link href="/divisions/arlington-county" style={{ textDecoration: "none" }}>
+              <div style={{ background: "rgba(255, 255, 255, 0.06)", border: "1px solid rgba(255, 255, 255, 0.12)", borderRadius: "14px", padding: "20px" }}>
+                <div style={{ color: "var(--accent-gold)", fontWeight: 800, fontSize: "1.1rem" }}>Arlington County Division</div>
+                <div style={{ color: "#94A3B8", fontSize: "0.82rem", marginTop: "4px" }}>Clarendon • Ballston • Rosslyn</div>
+                <p style={{ color: "#E2E8F0", fontSize: "0.86rem", marginTop: "10px", lineHeight: 1.5 }}>
+                  High-density urban luxury, Metro transit, and National Landing.
+                </p>
+              </div>
+            </Link>
           </div>
         </div>
       </section>

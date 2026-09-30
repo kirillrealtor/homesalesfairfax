@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { FAIRFAX_LISTINGS } from "../data/listings";
 
 export default function ListingsSection({ searchFilters, onSelectPropertyForTour }) {
@@ -61,12 +62,14 @@ export default function ListingsSection({ searchFilters, onSelectPropertyForTour
             filteredListings.map((property) => (
               <article key={property.id} className="property-card-clean">
                 <div className="card-top-img-wrap">
-                  <img 
-                    src={property.image} 
-                    alt={property.title} 
-                    className="card-img-element"
-                    loading="lazy"
-                  />
+                  <Link href={`/property/${property.id}`} style={{ display: "block", width: "100%", height: "100%" }}>
+                    <img 
+                      src={property.image} 
+                      alt={property.title} 
+                      className="card-img-element"
+                      loading="lazy"
+                    />
+                  </Link>
                   <div className="card-tag-status">
                     <span className="dot-green"></span>
                     <span>{property.status}</span>
@@ -82,7 +85,11 @@ export default function ListingsSection({ searchFilters, onSelectPropertyForTour
                     <span className="property-badge-type">{property.propertyType}</span>
                   </div>
 
-                  <h3 className="card-street-name">{property.address}</h3>
+                  <h3 className="card-street-name">
+                    <Link href={`/property/${property.id}`} style={{ color: "inherit", textDecoration: "none" }}>
+                      {property.address}
+                    </Link>
+                  </h3>
                   <p className="card-city-zip">
                     {property.city}, {property.state} {property.zip} • MLS #{property.mlsNumber}
                   </p>

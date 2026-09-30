@@ -3,6 +3,7 @@ import Link from "next/link";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { VIRGINIA_DIVISIONS, getDivisionBySlug } from "../../data/virginiaDivisions";
+import { FAIRFAX_COMMUNITIES } from "../../data/communities";
 
 export function generateStaticParams() {
   return VIRGINIA_DIVISIONS.map((d) => ({
@@ -422,6 +423,74 @@ export default async function DivisionDetailPage({ params }) {
           </div>
         </section>
 
+        {/* Explore All Virginia Divisions */}
+        <section style={{ borderTop: "1px solid var(--ink-200)", paddingTop: "40px", marginTop: "48px", marginBottom: "36px" }}>
+          <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "18px", flexWrap: "wrap", gap: "10px" }}>
+            <h4 style={{ fontSize: "1.25rem", fontWeight: 800, color: "var(--ink-950)", margin: 0 }}>
+              Explore Virginia Regional Jurisdictions
+            </h4>
+            <Link href="/divisions" style={{ fontSize: "0.88rem", color: "var(--accent-gold)", fontWeight: 700, textDecoration: "none" }}>
+              All Virginia Divisions &rarr;
+            </Link>
+          </div>
+
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "14px" }}>
+            {VIRGINIA_DIVISIONS.filter(d => d.slug !== division.slug).map((d) => (
+              <Link
+                key={d.id}
+                href={`/divisions/${d.slug}`}
+                style={{
+                  padding: "16px",
+                  borderRadius: "12px",
+                  background: "#F8FAFC",
+                  border: "1px solid var(--ink-200)",
+                  textDecoration: "none",
+                  color: "inherit",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  transition: "all 0.2s ease"
+                }}
+              >
+                <div>
+                  <strong style={{ fontSize: "1rem", color: "var(--ink-950)", display: "block" }}>{d.name}</strong>
+                  <span style={{ fontSize: "0.8rem", color: "var(--ink-500)", display: "block", marginTop: "2px" }}>{d.divisionType}</span>
+                </div>
+                <span style={{ fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 700, marginTop: "10px" }}>
+                  View Division Guide &rarr;
+                </span>
+              </Link>
+            ))}
+          </div>
+        </section>
+
+        {/* Featured Communities Cross-Link Strip */}
+        <section style={{ borderTop: "1px solid var(--ink-200)", paddingTop: "32px" }}>
+          <span style={{ fontSize: "0.78rem", fontWeight: 800, color: "var(--accent-gold)", textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "8px" }}>
+            Regional Communities &amp; Enclaves
+          </span>
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "10px", marginTop: "12px" }}>
+            {FAIRFAX_COMMUNITIES.slice(0, 8).map(c => (
+              <Link
+                key={c.id}
+                href={`/communities/${c.slug}`}
+                style={{
+                  padding: "8px 14px",
+                  background: "#F1F5F9",
+                  borderRadius: "9999px",
+                  fontSize: "0.85rem",
+                  fontWeight: 600,
+                  color: "var(--ink-800)",
+                  textDecoration: "none",
+                  border: "1px solid var(--ink-200)",
+                  transition: "background 0.15s ease"
+                }}
+              >
+                {c.name} &rarr;
+              </Link>
+            ))}
+          </div>
+        </section>
       </article>
 
       <Footer />
