@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const pageTitle = `${division.name}, VA Real Estate Guide`;
+  const pageTitle = `${division.name}, VA Division Guide`;
 
   return {
     title: pageTitle,
