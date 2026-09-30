@@ -29,13 +29,47 @@ export default function OaktonHomesPage() {
           </p>
         </div>
 
-        <div style={{ maxWidth: "840px", margin: "0 auto 50px", lineHeight: "1.7", color: "var(--ink-700)" }}>
-          <p style={{ marginBottom: "16px" }}>
-            Oakton is famous for its quiet wooded acreage, custom estate homes, and top-ranked schools like Oakton High School.
-          </p>
-          <p>
-            Home prices in Oakton typically range from <strong>$1.2M to over $3.5M</strong>. You get peaceful country privacy just minutes from I-66 and Route 123.
-          </p>
+        {/* High-Converting Seller Advisory Card */}
+        <div style={{
+          background: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
+          color: "#FFFFFF",
+          borderRadius: "16px",
+          padding: "32px 28px",
+          marginBottom: "44px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: "20px"
+        }}>
+          <div style={{ maxWidth: "660px" }}>
+            <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "6px" }}>
+              ✦ Oakton Estate Sellers • Elena Gorbounova &amp; Kirill
+            </span>
+            <h2 style={{ fontSize: "1.65rem", fontWeight: 800, color: "#FFFFFF", margin: "0 0 8px" }}>
+              Planning to Sell Your Oakton Estate?
+            </h2>
+            <p style={{ fontSize: "0.96rem", color: "#CBD5E1", margin: 0, lineHeight: 1.6 }}>
+              Oakton custom homes and acre parcels command <strong>exceptional equity premiums</strong> and rapid absorption of <strong>7 Days on Market</strong>. Discover our cinematic 4K drone marketing, private wealth syndication, and school pyramid pricing.
+            </p>
+          </div>
+
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+            <Link 
+              href="/subdivisions/oakton-estates" 
+              className="btn btn-outline"
+              style={{ color: "#FFFFFF", borderColor: "rgba(255,255,255,0.3)", padding: "12px 20px", fontWeight: 600, fontSize: "0.88rem" }}
+            >
+              Oakton Seller Guide &rarr;
+            </Link>
+            <Link 
+              href="/sell" 
+              className="btn btn-primary"
+              style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "12px 20px", fontSize: "0.88rem" }}
+            >
+              Book In-Home Consultation
+            </Link>
+          </div>
         </div>
 
         <div className="properties-3col">

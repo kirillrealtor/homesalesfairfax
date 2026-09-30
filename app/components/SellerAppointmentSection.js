@@ -1,23 +1,55 @@
 "use client";
 
-export default function SellerAppointmentSection() {
+export default function SellerAppointmentSection({ prefilledAddress = "" }) {
   const internationalPhone = "17036257888";
   const displayPhone = "(703) 625-7888";
   const email = "ElenaYSC@gmail.com";
 
-  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Elena,%20I%20would%20like%20to%20book%20an%20in-home%20listing%20consultation%20for%20my%20Fairfax%20home.`;
-  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Elena,%20I%20would%20like%20to%20book%20an%20in-home%20listing%20consultation%20for%20my%20Fairfax%20home.`;
-  const mailUrl = `mailto:${email}?subject=Fairfax%20In-Home%20Listing%20Appointment&body=Hi%20Elena,%0A%0AI%20would%20like%20to%20schedule%20an%20in-home%20listing%20consultation%20for%20my%20property%20in%20Fairfax%20County.`;
+  const addressSuffix = prefilledAddress ? ` at ${prefilledAddress}` : "";
+  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Elena,%20I%20would%20like%20to%20hire%20you%20to%20list%20my%20property${encodeURIComponent(addressSuffix)}.%20Let's%20schedule%20an%20in-home%20consultation.`;
+  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Elena,%20I%20would%20like%20to%20hire%20you%20to%20list%20my%20property${encodeURIComponent(addressSuffix)}.%20Let's%20schedule%20an%20in-home%20consultation.`;
+  const mailUrl = `mailto:${email}?subject=Fairfax%20In-Home%20Listing%20Appointment${encodeURIComponent(addressSuffix)}&body=Hi%20Elena,%0A%0AI%20would%20like%20to%20hire%20you%20to%20list%20my%20property${encodeURIComponent(addressSuffix)}.%20Please%20contact%20me%20to%20schedule%20an%20in-home%20consultation.`;
 
   return (
-    <section id="sell" className="content-section" style={{ background: "#FFFFFF", borderTop: "1px solid var(--ink-200)", borderBottom: "1px solid var(--ink-200)" }}>
+    <section id="sell" className="content-section" style={{ background: "#FFFFFF", borderTop: "none", borderBottom: "1px solid var(--ink-200)", paddingTop: "44px" }}>
       <div className="container">
+        {/* Optional Prefilled Address Banner from Hero */}
+        {prefilledAddress && (
+          <div style={{
+            background: "linear-gradient(135deg, rgba(184, 142, 82, 0.12) 0%, rgba(184, 142, 82, 0.05) 100%)",
+            border: "1.5px solid var(--accent-gold)",
+            borderRadius: "12px",
+            padding: "16px 22px",
+            marginBottom: "32px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: "12px"
+          }}>
+            <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
+              <span style={{ fontSize: "1.3rem" }}>📍</span>
+              <div>
+                <span style={{ fontSize: "0.78rem", color: "var(--accent-gold)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", display: "block" }}>
+                  Selected Property for In-Home Consultation:
+                </span>
+                <strong style={{ fontSize: "1.1rem", color: "var(--ink-950)" }}>
+                  {prefilledAddress}
+                </strong>
+              </div>
+            </div>
+            <span style={{ fontSize: "0.82rem", background: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "4px 12px", borderRadius: "9999px" }}>
+              ⚡ High Priority Consultation
+            </span>
+          </div>
+        )}
+
         {/* Section Header */}
         <div className="section-head-clean">
-          <span className="section-pretitle">Fairfax County Home Sellers</span>
+          <span className="section-pretitle">Northern Virginia Home Sellers</span>
           <h2 className="section-title-bold">Book an In-Home Listing Appointment</h2>
           <p className="section-lead-text">
-            Discover what active pre-approved buyers will pay for your home. We review recent sales, plan your pricing, and protect your equity.
+            Hire Northern Virginia's top listing team. We analyze recent settled sales, calculate your maximum net proceeds, and prepare your 30-day listing launch.
           </p>
         </div>
 
@@ -32,9 +64,40 @@ export default function SellerAppointmentSection() {
               <h3 style={{ fontSize: "2.2rem", fontWeight: 800, margin: "4px 0 14px", color: "var(--ink-950)", lineHeight: "1.2", letterSpacing: "-0.02em" }}>
                 Protecting Your Equity <br />At Every Step.
               </h3>
-              <p style={{ fontSize: "1.05rem", color: "var(--ink-700)", lineHeight: "1.7", marginBottom: "24px" }}>
+              <p style={{ fontSize: "1.05rem", color: "var(--ink-700)", lineHeight: "1.7", marginBottom: "20px" }}>
                 A home in Fairfax is often a family's top financial asset. Achieving top dollar comes down to three things: accurate pricing, high-end 4K presentation, and tough contract negotiation. You get all three, directly on Elena's personal phone.
               </p>
+
+              {/* Trust Badge & Agent Headshot Card */}
+              <div style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "18px",
+                background: "#F8FAFC",
+                border: "1.5px solid var(--ink-200)",
+                borderRadius: "14px",
+                padding: "14px 20px",
+                marginBottom: "24px",
+                flexWrap: "wrap"
+              }}>
+                <div style={{ width: "68px", height: "68px", borderRadius: "50%", overflow: "hidden", border: "2.5px solid var(--accent-gold)", flexShrink: 0, background: "#E2E8F0" }}>
+                  <img 
+                    src="/images/elena-portrait.jpg" 
+                    alt="Elena Gorbounova - RE/MAX Allegiance" 
+                    style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top" }} 
+                  />
+                </div>
+                <div style={{ flex: 1, minWidth: "190px" }}>
+                  <img 
+                    src="/images/elena-accolades.png" 
+                    alt="2026 Five Star Real Estate Agent & America's Top 100 Real Estate Agents Top 1%" 
+                    style={{ height: "38px", width: "auto", objectFit: "contain", marginBottom: "4px", display: "block" }}
+                  />
+                  <span style={{ fontSize: "0.82rem", color: "var(--ink-700)", display: "block" }}>
+                    <strong style={{ color: "var(--ink-950)" }}>Elena Gorbounova:</strong> 2026 Five Star Agent &amp; America's Top 100 (Top 1%)
+                  </span>
+                </div>
+              </div>
             </div>
 
             <div className="seller-proof-grid">

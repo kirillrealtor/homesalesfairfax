@@ -1,5 +1,6 @@
 import { FAIRFAX_LISTINGS } from "./data/listings";
 import { FAIRFAX_COMMUNITIES } from "./data/communities";
+import { VIRGINIA_DIVISIONS, VIRGINIA_SUBDIVISIONS } from "./data/virginiaDivisions";
 
 export default function sitemap() {
   const baseUrl = "https://homesalesfairfax.com";
@@ -113,7 +114,33 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
+    {
+      url: `${baseUrl}/divisions`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.98,
+    },
+    {
+      url: `${baseUrl}/subdivisions`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.98,
+    },
   ];
+
+  const divisionRoutes = VIRGINIA_DIVISIONS.map((d) => ({
+    url: `${baseUrl}/divisions/${d.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.95,
+  }));
+
+  const subdivisionRoutes = VIRGINIA_SUBDIVISIONS.map((s) => ({
+    url: `${baseUrl}/subdivisions/${s.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.95,
+  }));
 
   const communityRoutes = FAIRFAX_COMMUNITIES.map((c) => ({
     url: `${baseUrl}/communities/${c.slug}`,
@@ -129,5 +156,5 @@ export default function sitemap() {
     priority: 0.85,
   }));
 
-  return [...staticRoutes, ...communityRoutes, ...propertyRoutes];
+  return [...staticRoutes, ...divisionRoutes, ...subdivisionRoutes, ...communityRoutes, ...propertyRoutes];
 }

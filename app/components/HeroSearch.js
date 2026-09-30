@@ -78,11 +78,11 @@ export default function HeroSearch({ onSearch, onOpenTourModal, onSellerAddressS
       {activeMode === "sell" ? (
         <>
           <h1 className="hero-title-main">
-            Sell Your Fairfax Home for Top Dollar.
+            Hire Northern Virginia's Top Listing Team.
           </h1>
 
           <p className="hero-subtitle-clean">
-            Thinking of selling? Find out what qualified buyers will pay for your property. Book an in-home listing consultation with Elena to protect your equity and sell with confidence.
+            Thinking of selling? Over 400 properties closed with a 102.8% average list-to-sale ratio and 5.2 days absorption. Book an in-home listing consultation with Elena &amp; Kirill to maximize your net equity.
           </p>
 
           {/* Seller Address Input Box */}
@@ -104,31 +104,37 @@ export default function HeroSearch({ onSearch, onOpenTourModal, onSellerAddressS
             </button>
           </form>
 
-          {/* Hyper-Local Neighborhood Comps Quick Links */}
+          {/* Hyper-Local Divisions & Subdivisions Quick Links */}
           <div style={{ marginTop: "18px", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", flexWrap: "wrap" }}>
             <span style={{ fontSize: "0.78rem", color: "#CBD5E1", textTransform: "uppercase", fontWeight: 700, letterSpacing: "0.05em", marginRight: "4px" }}>
-              Monthly Comps Dossiers:
+              Explore Divisions &amp; Subdivisions:
             </span>
-            <Link href="/mantua-real-estate" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
-              Mantua (22031)
+            <Link href="/divisions/fairfax-county" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Fairfax County
             </Link>
-            <Link href="/mosby-woods-market" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
-              Mosby Woods (22030)
+            <Link href="/divisions/city-of-fairfax" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Fairfax City
             </Link>
-            <Link href="/franklin-farm-values" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
-              Franklin Farm (22033)
+            <Link href="/subdivisions/mantua" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Mantua
             </Link>
-            <Link href="/kings-park-west-real-estate" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
-              Kings Park West (22032)
+            <Link href="/subdivisions/mosby-woods" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Mosby Woods
             </Link>
-            <Link href="/market-report" style={{ background: "rgba(197, 168, 128, 0.28)", color: "var(--accent-gold)", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 700, textDecoration: "none", border: "1px solid rgba(197, 168, 128, 0.45)" }}>
-              All ZIP Reports &rarr;
+            <Link href="/subdivisions/franklin-farm" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Franklin Farm
+            </Link>
+            <Link href="/subdivisions/burke-centre" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Burke Centre
+            </Link>
+            <Link href="/divisions" style={{ background: "rgba(197, 168, 128, 0.28)", color: "var(--accent-gold)", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 700, textDecoration: "none", border: "1px solid rgba(197, 168, 128, 0.45)" }}>
+              All Divisions &rarr;
             </Link>
           </div>
 
           {/* Clean, quiet proof line */}
           <div style={{ marginTop: "18px", fontSize: "0.9rem", color: "#CBD5E1", fontWeight: 500, textShadow: "0 1px 6px rgba(0,0,0,0.4)" }}>
-            Over $320M in Closed Sales • Top 1% Northern Virginia Team • Free In-Home Pricing Strategy
+            400+ Properties Closed • Top 1% Northern Virginia Producers • Free In-Home Listing Strategy
           </div>
         </>
       ) : (

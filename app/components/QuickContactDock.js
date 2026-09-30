@@ -5,9 +5,9 @@ export default function QuickContactDock() {
   const internationalPhone = "17036257888";
   const email = "ElenaYSC@gmail.com";
   
-  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Elena,%20I'm%20interested%20in%20a%20Fairfax%20listing%20consultation%20/%20home%20tour.`;
-  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Elena,%20I'm%20interested%20in%20a%20Fairfax%20listing%20consultation%20/%20home%20tour.`;
-  const mailUrl = `mailto:${email}?subject=Fairfax%20Real%20Estate%20Inquiry&body=Hi%20Elena,%0A%0AI%20would%20like%20to%20connect%20regarding%20my%20Fairfax%20property%20or%20a%20showing%20tour.`;
+  const smsUrl = `sms:+${internationalPhone}?body=Hi%20Elena,%20I%20would%20like%20to%20hire%20you%20to%20list%20my%20property.%20Let's%20schedule%20an%20in-home%20consultation.`;
+  const whatsappUrl = `https://wa.me/${internationalPhone}?text=Hi%20Elena,%20I%20would%20like%20to%20hire%20you%20to%20list%20my%20property.%20Let's%20schedule%20an%20in-home%20consultation.`;
+  const mailUrl = `mailto:${email}?subject=In-Home%20Listing%20Consultation%20Request&body=Hi%20Elena,%0A%0AI%20would%20like%20to%20hire%20you%20to%20list%20my%20property%20in%20Northern%20Virginia.%20Please%20contact%20me%20to%20schedule%20an%20in-home%20consultation%20and%20net%20proceeds%20review.`;
 
   return (
     <aside className="quick-dock-container" aria-label="Direct Agent Contact">

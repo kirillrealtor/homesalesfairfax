@@ -8,34 +8,34 @@ export default function HomeValuationTool() {
     {
       area: "Fairfax City & Old Town",
       zip: "22030",
-      medianPrice: "$910,000",
-      range: "$750,000 – $1,650,000",
-      absorption: "12 Days on Market",
-      keyFactor: "Woodson & Fairfax High Pyramids • Historic Walkability"
+      velocity: "Extreme Seller Favor",
+      compsType: "Woodson & Fairfax High Pyramids",
+      absorption: "5–7 Days DOM",
+      keyFactor: "0% County Tax • Historic Old Town Walkability • Vienna Metro Access"
     },
     {
       area: "Mosaic District & Merrifield",
       zip: "22031",
-      medianPrice: "$830,000",
-      range: "$650,000 – $1,250,000",
-      absorption: "9 Days on Market",
-      keyFactor: "Walk to Metro & 50+ Shops • Luxury Rooftop Living"
+      velocity: "High Buyer Velocity",
+      compsType: "Luxury Condos & Urban Townhomes",
+      absorption: "6–8 Days DOM",
+      keyFactor: "Dunn Loring Metro • 50+ Premier Retail & Dining Destinations"
     },
     {
       area: "Oakton Estates & Vienna",
       zip: "22124",
-      medianPrice: "$1,450,000",
-      range: "$1,150,000 – $3,500,000+",
-      absorption: "14 Days on Market",
-      keyFactor: "Top-Ranked Oakton High • 1-Acre Wooded Lots"
+      velocity: "Luxury Equity Demand",
+      compsType: "Acre Wooded Parcels & Custom Colonials",
+      absorption: "7–10 Days DOM",
+      keyFactor: "Top-Ranked Oakton High Pyramid • Secluded Executive Estates"
     },
     {
       area: "Burke & Lake Braddock",
       zip: "22015",
-      medianPrice: "$760,000",
-      range: "$620,000 – $1,050,000",
-      absorption: "10 Days on Market",
-      keyFactor: "Lake Braddock Secondary • Burke Centre VRE Rail"
+      velocity: "Ultra-Fast Absorption",
+      compsType: "Single Family & Townhome Enclaves",
+      absorption: "5–6 Days DOM",
+      keyFactor: "Lake Braddock Secondary Pyramid • Burke Centre VRE Commuter Rail"
     }
   ];
 
@@ -47,7 +47,7 @@ export default function HomeValuationTool() {
           <span className="section-pretitle">Fairfax County Home Equity</span>
           <h2 className="section-title-bold">What Is Your Fairfax Home Worth Today?</h2>
           <p className="section-lead-text">
-            Online estimates often miss your kitchen remodel, finished basement, or quiet cul-de-sac lot. Explore verified neighborhood benchmarks below, or request an authentic Bright MLS pricing dossier.
+            Automated online algorithms often misjudge kitchen remodels, finished basements, or school boundary premiums. Request an authentic, verified Bright MLS comparative market analysis prepared directly by Elena &amp; Kirill.
           </p>
         </div>
 
@@ -88,13 +88,13 @@ export default function HomeValuationTool() {
 
                 <div style={{ marginBottom: "16px" }}>
                   <span style={{ display: "block", fontSize: "0.82rem", color: "var(--ink-600)", textTransform: "uppercase", fontWeight: 700 }}>
-                    Median Sold Benchmark
+                    Market Performance
                   </span>
-                  <div style={{ fontSize: "2.1rem", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.02em" }}>
-                    {b.medianPrice}
+                  <div style={{ fontSize: "1.4rem", fontWeight: 800, color: "var(--status-active)", letterSpacing: "-0.01em", marginTop: "4px" }}>
+                    {b.velocity}
                   </div>
-                  <span style={{ fontSize: "0.92rem", color: "var(--ink-600)" }}>
-                    Typical Closed Range: <strong>{b.range}</strong>
+                  <span style={{ fontSize: "0.88rem", color: "var(--ink-600)", display: "block", marginTop: "4px" }}>
+                    Focus: <strong>{b.compsType}</strong>
                   </span>
                 </div>
               </div>

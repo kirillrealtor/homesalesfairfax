@@ -38,7 +38,7 @@ export default function FairfaxCityPage() {
               Fairfax City offers a wonderful blend of small-town charm and modern convenience. Residents enjoy historic Old Town dining, community festivals, and easy commutes to Washington, D.C. and Tysons Corner.
             </p>
             <p style={{ marginBottom: "20px", color: "var(--ink-700)", lineHeight: "1.7" }}>
-              Median home prices range from <strong>$850,000 to $1,475,000</strong>. You will find charming colonials, updated ramblers, and modern luxury estates near George Mason University and the Orange Line Metro.
+              Fairfax City features charming colonials, updated ramblers, and modern luxury estates near George Mason University and the Orange Line Metro, commanding high seller equity and rapid absorption.
             </p>
 
             <div style={{ background: "var(--bg-subtle)", padding: "28px", borderRadius: "var(--radius-md)", borderLeft: "4px solid var(--accent-gold)", margin: "32px 0" }}>
@@ -49,6 +49,49 @@ export default function FairfaxCityPage() {
                 <li><strong>Average Days on Market:</strong> 9 - 14 Days</li>
                 <li><strong>Public Transit:</strong> Vienna/Fairfax-GMU Metro &amp; CUE Bus</li>
               </ul>
+            </div>
+          </div>
+
+          {/* High-Converting Seller Advisory Card */}
+          <div style={{
+            background: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
+            color: "#FFFFFF",
+            borderRadius: "16px",
+            padding: "32px 28px",
+            marginBottom: "40px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: "20px"
+          }}>
+            <div style={{ maxWidth: "660px" }}>
+              <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "6px" }}>
+                ✦ City of Fairfax Sellers • Elena Gorbounova &amp; Kirill
+              </span>
+              <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "#FFFFFF", margin: "0 0 8px" }}>
+                Selling Your Property in the City of Fairfax?
+              </h3>
+              <p style={{ fontSize: "0.96rem", color: "#CBD5E1", margin: 0, lineHeight: 1.6 }}>
+                Homes in Mosby Woods, Country Club Hills, and Old Town average <strong>5 Days on Market</strong> with <strong>103.2% list-to-sale ratio</strong>. We highlight the 0% County tax advantage and market to Vienna Metro commuters.
+              </p>
+            </div>
+
+            <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+              <Link 
+                href="/divisions/city-of-fairfax" 
+                className="btn btn-outline"
+                style={{ color: "#FFFFFF", borderColor: "rgba(255,255,255,0.3)", padding: "12px 20px", fontWeight: 600, fontSize: "0.88rem" }}
+              >
+                City Division Guide &rarr;
+              </Link>
+              <Link 
+                href="/sell" 
+                className="btn btn-primary"
+                style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "12px 20px", fontSize: "0.88rem" }}
+              >
+                Book In-Home Consultation
+              </Link>
             </div>
           </div>
 

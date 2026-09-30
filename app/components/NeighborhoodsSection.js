@@ -7,8 +7,8 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
       name: "Mantua",
       zip: "22031",
       path: "/mantua-real-estate",
-      median: "$995,000",
-      dom: "8 Days",
+      velocity: "High Seller Favor",
+      dom: "8 Days DOM",
       pyramid: "Woodson High School",
       tagline: "Wooded half-acre lots & active swim/tennis"
     },
@@ -16,8 +16,8 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
       name: "Mosby Woods",
       zip: "22030",
       path: "/mosby-woods-market",
-      median: "$865,000",
-      dom: "7 Days",
+      velocity: "Multiple Offer Pace",
+      dom: "7 Days DOM",
       pyramid: "Fairfax High School",
       tagline: "Vienna Metro corridor & walk to Old Town"
     },
@@ -25,8 +25,8 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
       name: "Franklin Farm",
       zip: "22033",
       path: "/franklin-farm-values",
-      median: "$935,000",
-      dom: "8 Days",
+      velocity: "Rapid Absorption",
+      dom: "8 Days DOM",
       pyramid: "Oakton / Chantilly",
       tagline: "6 fishing ponds, 13 miles of trails & pools"
     },
@@ -34,8 +34,8 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
       name: "Kings Park West",
       zip: "22032",
       path: "/kings-park-west-real-estate",
-      median: "$825,000",
-      dom: "9 Days",
+      velocity: "High Equity Velocity",
+      dom: "9 Days DOM",
       pyramid: "Robinson Secondary IB",
       tagline: "Lake Royal recreation & George Mason corridor"
     },
@@ -105,8 +105,8 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
 
                 <div style={{ borderTop: "1px solid var(--ink-100)", paddingTop: "12px", display: "flex", justifyContent: "space-between", alignItems: "baseline" }}>
                   <div>
-                    <span style={{ fontSize: "0.7rem", color: "var(--ink-400)", textTransform: "uppercase", fontWeight: 700, display: "block" }}>Median Sold</span>
-                    <strong style={{ fontSize: "1.15rem", color: "var(--ink-950)" }}>{nh.median}</strong>
+                    <span style={{ fontSize: "0.7rem", color: "var(--ink-400)", textTransform: "uppercase", fontWeight: 700, display: "block" }}>Market Velocity</span>
+                    <strong style={{ fontSize: "1.05rem", color: "var(--accent-gold)" }}>{nh.velocity}</strong>
                   </div>
                   <span style={{ fontSize: "0.82rem", color: "var(--ink-950)", fontWeight: 700 }}>
                     Report &rarr;
@@ -168,7 +168,7 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
                 </h3>
 
                 <div style={{ fontSize: "0.85rem", color: "var(--accent-gold-hover)", fontWeight: 700, marginBottom: "10px" }}>
-                  Benchmark Value: {nh.avgPrice}
+                  Market Pace: {nh.marketVelocity || "High Seller Favor"}
                 </div>
 
                 <p style={{ fontSize: "0.88rem", color: "var(--ink-600)", marginBottom: "16px", fontStyle: "italic", lineHeight: "1.5" }}>

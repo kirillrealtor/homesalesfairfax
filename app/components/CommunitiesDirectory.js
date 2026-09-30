@@ -228,10 +228,10 @@ export default function CommunitiesDirectory() {
                   }}>
                     <div>
                       <span style={{ fontSize: "0.72rem", color: "#CBD5E1", textTransform: "uppercase", letterSpacing: "0.06em", display: "block", fontWeight: 600 }}>
-                        Median Sold
+                        Market Velocity
                       </span>
-                      <strong style={{ fontSize: "1.25rem", fontWeight: 800, color: "#FFFFFF", letterSpacing: "-0.01em" }}>
-                        {item.medianPrice}
+                      <strong style={{ fontSize: "1.1rem", fontWeight: 800, color: "#FFFFFF", letterSpacing: "-0.01em" }}>
+                        High Seller Demand
                       </strong>
                     </div>
 

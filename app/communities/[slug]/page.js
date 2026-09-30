@@ -180,7 +180,7 @@ export default async function CommunityDetailPage({ params }) {
                 {community.subdivision} • ZIP {community.zip}
               </span>
               <div style={{ fontSize: "1.7rem", fontWeight: 800, letterSpacing: "-0.02em", color: "#FFFFFF" }}>
-                Median Sold: {community.medianPrice}
+                High Seller Equity: {community.name}
               </div>
             </div>
 
@@ -460,8 +460,8 @@ export default async function CommunityDetailPage({ params }) {
                   <span style={{ fontSize: "0.84rem", color: "var(--ink-600)" }}>{c.specs}</span>
                 </div>
                 <div style={{ textAlign: "right" }}>
-                  <div style={{ fontSize: "1.2rem", fontWeight: 800, color: "var(--ink-950)" }}>{c.price}</div>
-                  <span style={{ fontSize: "0.78rem", color: "var(--status-active)", fontWeight: 600 }}>{c.days} • {c.status}</span>
+                  <div style={{ fontSize: "0.95rem", fontWeight: 800, color: "var(--status-active)" }}>Bright MLS Settled Record</div>
+                  <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", fontWeight: 600 }}>{c.days} • Full Details on Request</span>
                 </div>
               </div>
             ))}

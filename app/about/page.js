@@ -616,7 +616,7 @@ export default function AboutPage() {
                 {"★★★★★"}
               </div>
               <p style={{ fontSize: "0.98rem", color: "var(--ink-800)", lineHeight: 1.7, fontStyle: "italic", marginBottom: "16px" }}>
-                &ldquo;Elena&apos;s legal acumen and negotiation skills saved us over $40,000 on our purchase contract. She dissected the seller disclosures, identified critical title nuances, and guided us with complete poise. She is the fiercest advocate you could ever have in your corner.&rdquo;
+                &ldquo;Elena&apos;s legal acumen and negotiation skills saved us tens of thousands on our purchase contract. She dissected the seller disclosures, identified critical title nuances, and guided us with complete poise. She is the fiercest advocate you could ever have in your corner.&rdquo;
               </p>
               <div style={{ fontWeight: 800, color: "var(--ink-950)", fontSize: "0.95rem" }}>Dr. Robert &amp; Sarah M.</div>
               <div style={{ fontSize: "0.8rem", color: "var(--ink-500)" }}>Verified Home Buyer • Fairfax, VA</div>

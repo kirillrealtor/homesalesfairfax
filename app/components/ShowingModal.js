@@ -26,7 +26,7 @@ export default function ShowingModal({ property, isOpen, onClose }) {
           </h3>
           <p style={{ color: "var(--ink-700)", fontSize: "1rem", lineHeight: "1.6", marginTop: "8px" }}>
             {property ? (
-              <>Viewing: <strong>{property.address}</strong> ({property.priceFormatted})</>
+              <>Viewing: <strong>{property.address}</strong></>
             ) : (
               "Tour any active Fairfax County property on your schedule with zero sales pressure."
             )}

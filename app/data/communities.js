@@ -12,15 +12,12 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "High-Turnover Subdivision",
     image: "/images/communities/mantua.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$1,085,000",
-    priceRange: "$950,000 - $1,750,000",
     avgDOM: "5 Days",
     listToSale: "102.8%",
     priceChangeYoY: "+6.8%",
-    pricePerSqFt: "$395 - $485",
     typicalLotSize: "0.5 to 1.1 Acres (Wooded)",
     propertyTypes: "Mid-Century Modern, Contemporary Ranches & Expanded Colonials",
-    hoaFee: "Optional Civic Association ($45/year) + Swim Club Membership",
+    hoaFee: "Optional Civic Association (Nominal Annual Dues) + Swim Club Membership",
     nearestMetro: "Vienna / Fairfax-GMU (Orange Line - 7 mins) & Dunn Loring (9 mins)",
     transitTimeDC: "25–35 minutes via I-66 Express or Route 50",
     schools: "Woodson HS Pyramid",
@@ -42,10 +39,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Residents enjoy a deeply rooted outdoor lifestyle. Direct neighborhood trailheads connect to the 16-mile Accotink Creek Stream Valley Trail and Eakin Community Park. The neighborhood social anchor is the Mantua Swim & Tennis Club, hosting community swim meets, summer barbecues, and tennis clinics. The vibrant Mosaic District is just 5 minutes away, providing boutique shopping, artisan dining, and open-air lawn screenings at the Angelika Film Center.",
     sellerAdvice: "Because of Mantua's strong architectural pedigree and the Woodson High School pyramid, inventory remains exceptionally scarce. Sellers who professionally highlight architectural features—such as original tongue-and-groove beam ceilings, custom window walls, and private wooded outdoor entertaining decks—command premium valuations well above average Fairfax County benchmarks. Elena Gorbounova provides hyper-local pricing strategies, targeted subdivision marketing, and discreet private comps to ensure maximum seller equity.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$1,085,000" },
-      { label: "Price Range", value: "$950K - $1.75M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "5 Days" },
-      { label: "Price Per Sq Ft", value: "$395 - $485" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "102.8%" },
       { label: "FCPS School Pyramid", value: "Woodson High" },
       { label: "Average Lot Size", value: "0.5 - 1.1 Acres" },
@@ -58,7 +55,7 @@ export const FAIRFAX_COMMUNITIES = [
       },
       {
         question: "Does Mantua have a mandatory HOA fee?",
-        answer: "No. Mantua does not have a mandatory homeowners association (HOA). There is an active, optional Mantua Citizens Association (MCA) with nominal annual dues (~$45) that organizes neighborhood events, street maintenance advocacy, and seasonal parades. The Mantua Swim & Tennis Club is a separate private membership."
+        answer: "No. Mantua does not have a mandatory homeowners association (HOA). There is an active, optional Mantua Citizens Association (MCA) with nominal annual dues (nominal annual dues) that organizes neighborhood events, street maintenance advocacy, and seasonal parades. The Mantua Swim & Tennis Club is a separate private membership."
       },
       {
         question: "How fast do homes sell in Mantua, Fairfax VA?",
@@ -70,9 +67,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "9214 Barkwood Ct", price: "$1,085,000", days: "5 Days", specs: "5 Beds • 4 Baths • 3,450 Sq Ft", status: "Settled Bright MLS" },
-      { address: "3408 Glenbrook Rd", price: "$1,150,000", days: "4 Days", specs: "4 Beds • 3.5 Baths • 3,680 Sq Ft", status: "Settled Bright MLS" },
-      { address: "9102 Pinewood Dr", price: "$1,040,000", days: "6 Days", specs: "5 Beds • 3 Baths • 3,120 Sq Ft", status: "Settled Bright MLS" }
+      { address: "9214 Barkwood Ct", price: "Bright MLS Settled Record", days: "5 Days", specs: "5 Beds • 4 Baths • 3,450 Sq Ft", status: "Settled Bright MLS" },
+      { address: "3408 Glenbrook Rd", price: "Bright MLS Settled Record", days: "4 Days", specs: "4 Beds • 3.5 Baths • 3,680 Sq Ft", status: "Settled Bright MLS" },
+      { address: "9102 Pinewood Dr", price: "Bright MLS Settled Record", days: "6 Days", specs: "5 Beds • 3 Baths • 3,120 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -88,15 +85,12 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "High-Turnover Subdivision",
     image: "/images/communities/mosby-woods.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$895,000",
-    priceRange: "$790,000 - $1,150,000",
     avgDOM: "5 Days",
     listToSale: "103.2%",
     priceChangeYoY: "+7.4%",
-    pricePerSqFt: "$360 - $445",
     typicalLotSize: "0.25 to 0.40 Acres",
     propertyTypes: "Mid-Century Tri-Levels, Split-Levels & Brick Colonials",
-    hoaFee: "Voluntary Civic Association ($30/year) + Mosby Woods Pool Club",
+    hoaFee: "Voluntary Civic Association (Nominal Annual Dues) + Mosby Woods Pool Club",
     nearestMetro: "Vienna / Fairfax-GMU (Orange Line - 5 mins)",
     transitTimeDC: "25–35 minutes via I-66 Express or Orange Line",
     schools: "Fairfax HS Pyramid",
@@ -118,19 +112,19 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Residents enjoy a walkable community lifestyle. A short sidewalk stroll leads into Old Town Fairfax for weekly farmers markets, summer concert series, Fall for Fairfax festivals, and acclaimed independent dining spots. The private Mosby Woods Pool is the summer gathering place for swim team meets and neighborhood food truck nights.",
     sellerAdvice: "Homes in Mosby Woods boast some of the highest buyer absorption velocities in the entire 22030 ZIP code. Properties that showcase refreshed hardwood floors, updated kitchens, modern electrical panels, and manicured landscaping routinely generate competitive multi-offer escalation addenda within 48 to 72 hours of listing. Elena Gorbounova's targeted direct-mail marketing and digital buyer outreach consistently yield top market value for Mosby Woods sellers.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$895,000" },
-      { label: "Price Range", value: "$790K - $1.15M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "5 Days" },
-      { label: "Price Per Sq Ft", value: "$360 - $445" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "103.2%" },
       { label: "FCPS School Pyramid", value: "Fairfax High" },
       { label: "Vienna Metro Access", value: "Under 5 Minutes" },
-      { label: "HOA Requirement", value: "Voluntary ($30/yr)" }
+      { label: "HOA Requirement", value: "Voluntary (nominal dues/yr)" }
     ],
     faqs: [
       {
         question: "Is there a mandatory HOA in Mosby Woods?",
-        answer: "No, Mosby Woods does not have a mandatory HOA. The Mosby Woods Community Association (MWCA) is completely voluntary with modest annual dues of $30, which fund community newsletters, holiday decorating contests, and annual neighborhood block parties."
+        answer: "No, Mosby Woods does not have a mandatory HOA. The Mosby Woods Community Association (MWCA) is completely voluntary with modest annual dues of nominal dues, which fund community newsletters, holiday decorating contests, and annual neighborhood block parties."
       },
       {
         question: "How close is Mosby Woods to the Metro?",
@@ -142,9 +136,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "3110 Plantation Dr", price: "$895,000", days: "5 Days", specs: "4 Beds • 3 Baths • 2,540 Sq Ft", status: "Settled Bright MLS" },
-      { address: "10214 Mosby Woods Dr", price: "$915,000", days: "4 Days", specs: "5 Beds • 3 Baths • 2,720 Sq Ft", status: "Settled Bright MLS" },
-      { address: "3205 Ranger Rd", price: "$870,000", days: "6 Days", specs: "4 Beds • 2.5 Baths • 2,390 Sq Ft", status: "Settled Bright MLS" }
+      { address: "3110 Plantation Dr", price: "Bright MLS Settled Record", days: "5 Days", specs: "4 Beds • 3 Baths • 2,540 Sq Ft", status: "Settled Bright MLS" },
+      { address: "10214 Mosby Woods Dr", price: "Bright MLS Settled Record", days: "4 Days", specs: "5 Beds • 3 Baths • 2,720 Sq Ft", status: "Settled Bright MLS" },
+      { address: "3205 Ranger Rd", price: "Bright MLS Settled Record", days: "6 Days", specs: "4 Beds • 2.5 Baths • 2,390 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -160,15 +154,12 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "High-Turnover Subdivision",
     image: "/images/communities/franklin-farm.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$980,000",
-    priceRange: "$850,000 - $1,350,000",
     avgDOM: "5 Days",
     listToSale: "103.5%",
     priceChangeYoY: "+5.9%",
-    pricePerSqFt: "$375 - $460",
     typicalLotSize: "0.22 to 0.45 Acres",
     propertyTypes: "Center-Hall Colonials, Contemporary 2-Story Homes & Carriage Townhomes",
-    hoaFee: "Master Planned HOA (~$110/month including pools & 13 mi trails)",
+    hoaFee: "Master Planned HOA (Comprehensive Amenities including pools & 13 mi trails)",
     nearestMetro: "Herndon / Reston Silver Line (10 mins) & Vienna Orange Line (14 mins)",
     transitTimeDC: "30–40 minutes via I-66 Express or Dulles Toll Road",
     schools: "Chantilly HS Pyramid",
@@ -190,10 +181,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Recreational living is woven into everyday life. Families walk or cycle along tree-canopied paths to the Franklin Farm Village Center, home to local grocery shopping, medical suites, cafes, and restaurants. The community holds seasonal triathlons, summer concerts, pond fishing derbies, and holiday light tours that foster an unmatched neighborhood camaraderie.",
     sellerAdvice: "Demand for single-family colonials in Franklin Farm remains among the highest in Fairfax County. Homes that are properly staged, priced according to settled Bright MLS comp trends, and marketed to incoming defense, technology, and government executives consistently achieve over-asking contracts with waived appraisal contingencies. Elena Gorbounova's subdivision-exclusive postcard campaigns ensure active qualified buyers are waiting before your home hits the MLS.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$980,000" },
-      { label: "Price Range", value: "$850K - $1.35M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "5 Days" },
-      { label: "Price Per Sq Ft", value: "$375 - $460" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "103.5%" },
       { label: "FCPS School Pyramid", value: "Chantilly High" },
       { label: "Fitness Trails", value: "13 Paved Miles" },
@@ -214,9 +205,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "12902 Tranquility Ln", price: "$980,000", days: "5 Days", specs: "5 Beds • 4.5 Baths • 3,420 Sq Ft", status: "Settled Bright MLS" },
-      { address: "3104 Franklin Farm Rd", price: "$1,045,000", days: "4 Days", specs: "5 Beds • 4 Baths • 3,750 Sq Ft", status: "Settled Bright MLS" },
-      { address: "13108 Pond Green Way", price: "$945,000", days: "5 Days", specs: "4 Beds • 3.5 Baths • 3,180 Sq Ft", status: "Settled Bright MLS" }
+      { address: "12902 Tranquility Ln", price: "Bright MLS Settled Record", days: "5 Days", specs: "5 Beds • 4.5 Baths • 3,420 Sq Ft", status: "Settled Bright MLS" },
+      { address: "3104 Franklin Farm Rd", price: "Bright MLS Settled Record", days: "4 Days", specs: "5 Beds • 4 Baths • 3,750 Sq Ft", status: "Settled Bright MLS" },
+      { address: "13108 Pond Green Way", price: "Bright MLS Settled Record", days: "5 Days", specs: "4 Beds • 3.5 Baths • 3,180 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -232,15 +223,12 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "Park & Lake Community",
     image: "/images/communities/kings-park-west.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$875,000",
-    priceRange: "$775,000 - $1,100,000",
     avgDOM: "6 Days",
     listToSale: "102.1%",
     priceChangeYoY: "+6.1%",
-    pricePerSqFt: "$350 - $430",
     typicalLotSize: "0.28 to 0.50 Acres",
     propertyTypes: "Split-Foyers, Multi-Level Tri-Levels & Center-Hall Colonials",
-    hoaFee: "Optional Civic Association ($35/yr) + 3 Private Community Swim Clubs",
+    hoaFee: "Optional Civic Association (Nominal Annual Dues) + 3 Private Community Swim Clubs",
     nearestMetro: "Rolling Road VRE Commuter Rail (4 mins) & Vienna Metro (12 mins)",
     transitTimeDC: "30–40 minutes via VRE Express Train or I-66/Braddock Rd",
     schools: "Robinson Secondary Pyramid",
@@ -262,10 +250,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Recreational amenities are peerless. Three private neighborhood swim clubs (KPWC Pools 1, 2, and 3) host summer swim teams and social events. Royal Lake Park features fitness courses, soccer fields, basketball courts, and fishing docks where residents catch bass and sunfish at sunset.",
     sellerAdvice: "Kings Park West attracts a constant influx of military officers, university professors, and healthcare professionals seeking large lots and the Robinson school pyramid. In-demand home features that yield top dollar include renovated open-concept kitchens, updated primary baths, finished walk-out lower levels, and outdoor entertaining spaces. Elena Gorbounova's hyper-local market analysis helps sellers capitalize on pent-up buyer demand.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$875,000" },
-      { label: "Price Range", value: "$775K - $1.10M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "6 Days" },
-      { label: "Price Per Sq Ft", value: "$350 - $430" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "102.1%" },
       { label: "FCPS School Pyramid", value: "Robinson Secondary" },
       { label: "Lake Amenity", value: "49-Acre Royal Lake" },
@@ -286,9 +274,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "5104 Commonwealth Blvd", price: "$875,000", days: "6 Days", specs: "5 Beds • 3 Baths • 2,680 Sq Ft", status: "Settled Bright MLS" },
-      { address: "10118 Cluny Ct", price: "$910,000", days: "5 Days", specs: "5 Beds • 3.5 Baths • 2,940 Sq Ft", status: "Settled Bright MLS" },
-      { address: "5219 Carriagepark Rd", price: "$855,000", days: "7 Days", specs: "4 Beds • 3 Baths • 2,490 Sq Ft", status: "Settled Bright MLS" }
+      { address: "5104 Commonwealth Blvd", price: "Bright MLS Settled Record", days: "6 Days", specs: "5 Beds • 3 Baths • 2,680 Sq Ft", status: "Settled Bright MLS" },
+      { address: "10118 Cluny Ct", price: "Bright MLS Settled Record", days: "5 Days", specs: "5 Beds • 3.5 Baths • 2,940 Sq Ft", status: "Settled Bright MLS" },
+      { address: "5219 Carriagepark Rd", price: "Bright MLS Settled Record", days: "7 Days", specs: "4 Beds • 3 Baths • 2,490 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -304,15 +292,12 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "Luxury Estates & Acreage",
     image: "/images/communities/oakton-estates.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$1,890,000",
-    priceRange: "$1,450,000 - $3,800,000",
     avgDOM: "10 Days",
     listToSale: "101.4%",
     priceChangeYoY: "+8.2%",
-    pricePerSqFt: "$420 - $580",
     typicalLotSize: "1.0 to 5.0+ Private Acres",
     propertyTypes: "Custom Brick Georgian Manors, French Provincial & Modern Farmhouses",
-    hoaFee: "Varies by Enclave ($0 to $150/mo for private gate maintenance)",
+    hoaFee: "Varies by Enclave (Varies by Enclave for private gate maintenance)",
     nearestMetro: "Vienna / Fairfax-GMU (Orange Line - 6 mins)",
     transitTimeDC: "25–35 minutes via I-66 Express or Dulles Access Rd",
     schools: "Oakton HS Pyramid",
@@ -334,10 +319,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Residents enjoy a country-estate ambiance paired with world-class suburban conveniences. The Town of Vienna's gourmet restaurants and boutique shopping are just 5 minutes east. Outdoor enthusiasts take advantage of horse trails along Difficult Run stream valley and the pristine botanical gardens at Meadowlark.",
     sellerAdvice: "Luxury real estate in Oakton requires sophisticated narrative marketing, professional architectural cinematography, and discreet outreach to high-net-worth buyers in tech, diplomacy, and finance. Elena Gorbounova's bespoke luxury marketing delivers exceptional reach, positioning custom estates to secure premium valuation terms.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$1,890,000" },
-      { label: "Price Range", value: "$1.45M - $3.8M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "10 Days" },
-      { label: "Price Per Sq Ft", value: "$420 - $580" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "101.4%" },
       { label: "FCPS School Pyramid", value: "Oakton High" },
       { label: "Average Lot Size", value: "1.0 - 5.0+ Acres" },
@@ -354,9 +339,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "3412 Jermantown Rd", price: "$1,890,000", days: "10 Days", specs: "6 Beds • 6.5 Baths • 5,800 Sq Ft", status: "Settled Bright MLS" },
-      { address: "10415 Vale Rd", price: "$2,150,000", days: "8 Days", specs: "6 Beds • 7 Baths • 6,400 Sq Ft", status: "Settled Bright MLS" },
-      { address: "2914 Fox Mill Rd", price: "$1,725,000", days: "12 Days", specs: "5 Beds • 5.5 Baths • 5,100 Sq Ft", status: "Settled Bright MLS" }
+      { address: "3412 Jermantown Rd", price: "Bright MLS Settled Record", days: "10 Days", specs: "6 Beds • 6.5 Baths • 5,800 Sq Ft", status: "Settled Bright MLS" },
+      { address: "10415 Vale Rd", price: "Bright MLS Settled Record", days: "8 Days", specs: "6 Beds • 7 Baths • 6,400 Sq Ft", status: "Settled Bright MLS" },
+      { address: "2914 Fox Mill Rd", price: "Bright MLS Settled Record", days: "12 Days", specs: "5 Beds • 5.5 Baths • 5,100 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -372,12 +357,9 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "Urban & Historic Village",
     image: "/images/communities/fairfax-city.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$885,000",
-    priceRange: "$650,000 - $1,650,000",
     avgDOM: "8 Days",
     listToSale: "102.5%",
     priceChangeYoY: "+5.5%",
-    pricePerSqFt: "$365 - $460",
     typicalLotSize: "0.20 to 0.45 Acres",
     propertyTypes: "Historic Craftsman Bungalows, Brick Colonials & Modern Luxury Infill",
     hoaFee: "None (Municipal Independent City Services)",
@@ -402,10 +384,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Living in Fairfax City means stepping outside to concerts at Old Town Square, dining at beloved restaurants like The Wine House, Bollywood Bistro, and High Side, and strolling through 250+ acres of city parks including Van Dyck Park, Ratcliffe Park, and Daniels Run.",
     sellerAdvice: "Due to zero HOA restrictions and independent municipal zoning, properties in Fairfax City—especially those on wider lots suitable for expansion or modern craftsman redevelopment—attract strong competition from both families and custom infill builders. Elena Gorbounova's deep understanding of city zoning and comp history yields top net proceeds for sellers.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$885,000" },
-      { label: "Price Range", value: "$650K - $1.65M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "8 Days" },
-      { label: "Price Per Sq Ft", value: "$365 - $460" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "102.5%" },
       { label: "Government", value: "Independent City (Low Tax)" },
       { label: "Transit Option", value: "CUE Bus + Vienna Metro" },
@@ -422,9 +404,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "10820 Judicial Dr", price: "$1,475,000", days: "7 Days", specs: "5 Beds • 5 Baths • 4,620 Sq Ft", status: "Active Listing" },
-      { address: "3920 University Dr", price: "$910,000", days: "6 Days", specs: "4 Beds • 3.5 Baths • 2,750 Sq Ft", status: "Settled Bright MLS" },
-      { address: "10410 Main St", price: "$840,000", days: "9 Days", specs: "4 Beds • 3 Baths • 2,420 Sq Ft", status: "Settled Bright MLS" }
+      { address: "10820 Judicial Dr", price: "Bright MLS Settled Record", days: "7 Days", specs: "5 Beds • 5 Baths • 4,620 Sq Ft", status: "Active Listing" },
+      { address: "3920 University Dr", price: "Bright MLS Settled Record", days: "6 Days", specs: "4 Beds • 3.5 Baths • 2,750 Sq Ft", status: "Settled Bright MLS" },
+      { address: "10410 Main St", price: "Bright MLS Settled Record", days: "9 Days", specs: "4 Beds • 3 Baths • 2,420 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -440,15 +422,12 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "Urban Walkable & Metro",
     image: "/images/communities/mosaic-district.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$925,000",
-    priceRange: "$720,000 - $1,400,000",
     avgDOM: "7 Days",
     listToSale: "101.9%",
     priceChangeYoY: "+5.1%",
-    pricePerSqFt: "$410 - $510",
     typicalLotSize: "Urban Townhome Parcel",
     propertyTypes: "4-Level Luxury Brownstones, Rooftop Terrace Townhomes & Condos",
-    hoaFee: "Master Urban HOA (~$195/month including community grounds & amenities)",
+    hoaFee: "Master Urban HOA (Comprehensive Maintenance including community grounds & amenities)",
     nearestMetro: "Dunn Loring-Merrifield (Orange Line - Walkable 8 mins)",
     transitTimeDC: "20–28 minutes via Metro Orange Line or I-66",
     schools: "Falls Church HS Pyramid",
@@ -470,10 +449,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Urban living at its finest: walk down your brownstone steps to fresh Sunday farmers markets, artisan coffee shops, lululemon, Anthropologie, Target, and outdoor cinema nights on the Strawberry Park lawn.",
     sellerAdvice: "Demand for Mosaic townhomes remains intense from tech executives, corporate attorneys, and Inova medical professionals who prioritize low maintenance and walkability. Highlighting rooftop terrace enhancements, designer kitchen finishes, and proximity to Dunn Loring Metro ensures premium sales prices.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$925,000" },
-      { label: "Price Range", value: "$720K - $1.4M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "7 Days" },
-      { label: "Price Per Sq Ft", value: "$410 - $510" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "101.9%" },
       { label: "Metro Distance", value: "8-Min Walk (Dunn Loring)" },
       { label: "Inova Medical Campus", value: "4 Minutes" },
@@ -490,9 +469,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "2910 District Ave #402", price: "$925,000", days: "7 Days", specs: "4 Beds • 3.5 Baths • 2,850 Sq Ft", status: "Settled Bright MLS" },
-      { address: "8190 Strawberry Ln", price: "$965,000", days: "5 Days", specs: "4 Beds • 4.5 Baths • 3,020 Sq Ft", status: "Settled Bright MLS" },
-      { address: "2880 Merrifield Ave", price: "$895,000", days: "8 Days", specs: "3 Beds • 3.5 Baths • 2,450 Sq Ft", status: "Settled Bright MLS" }
+      { address: "2910 District Ave #402", price: "Bright MLS Settled Record", days: "7 Days", specs: "4 Beds • 3.5 Baths • 2,850 Sq Ft", status: "Settled Bright MLS" },
+      { address: "8190 Strawberry Ln", price: "Bright MLS Settled Record", days: "5 Days", specs: "4 Beds • 4.5 Baths • 3,020 Sq Ft", status: "Settled Bright MLS" },
+      { address: "2880 Merrifield Ave", price: "Bright MLS Settled Record", days: "8 Days", specs: "3 Beds • 3.5 Baths • 2,450 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -508,15 +487,12 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "Park & Lake Community",
     image: "/images/communities/burke-lake.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$785,000",
-    priceRange: "$650,000 - $1,150,000",
     avgDOM: "7 Days",
     listToSale: "102.3%",
     priceChangeYoY: "+6.4%",
-    pricePerSqFt: "$340 - $425",
     typicalLotSize: "0.22 to 0.40 Acres",
     propertyTypes: "Center-Hall Colonials, Contemporary Split-Levels & Conservancy Townhomes",
-    hoaFee: "Burke Centre Conservancy (~$115/month including 5 pools & 30 miles trails)",
+    hoaFee: "Burke Centre Conservancy (Comprehensive Amenities including 5 pools & 30 miles trails)",
     nearestMetro: "Burke Centre VRE Commuter Rail & Rolling Road VRE (In-Town)",
     transitTimeDC: "30–38 minutes via VRE Commuter Train directly to Union Station",
     schools: "Lake Braddock Secondary Pyramid",
@@ -538,10 +514,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Recreation centers on Burke Lake's 218-acre freshwater lake, par-3 golf course, carousel, and 4.7-mile scenic shoreline loop trail. The community hosts the annual Burke Centre Festival every September.",
     sellerAdvice: "Homes in Burke appeal strongly to government and defense personnel commuting via VRE. Highlighting recent roof replacements, updated HVAC systems, and turnkey interior finishes consistently triggers fast offers.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$785,000" },
-      { label: "Price Range", value: "$650K - $1.15M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "7 Days" },
-      { label: "Price Per Sq Ft", value: "$340 - $425" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "102.3%" },
       { label: "Commuter Rail", value: "2 VRE Stations in Town" },
       { label: "Conservancy Amenities", value: "5 Pools & 30 Mi Trails" },
@@ -558,9 +534,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "9812 Burke Pond Ln", price: "$840,000", days: "6 Days", specs: "5 Beds • 3.5 Baths • 2,980 Sq Ft", status: "Settled Bright MLS" },
-      { address: "6014 Lake Braddock Dr", price: "$785,000", days: "7 Days", specs: "4 Beds • 3 Baths • 2,620 Sq Ft", status: "Settled Bright MLS" },
-      { address: "10214 Covey Ct", price: "$810,000", days: "5 Days", specs: "4 Beds • 3.5 Baths • 2,750 Sq Ft", status: "Settled Bright MLS" }
+      { address: "9812 Burke Pond Ln", price: "Bright MLS Settled Record", days: "6 Days", specs: "5 Beds • 3.5 Baths • 2,980 Sq Ft", status: "Settled Bright MLS" },
+      { address: "6014 Lake Braddock Dr", price: "Bright MLS Settled Record", days: "7 Days", specs: "4 Beds • 3 Baths • 2,620 Sq Ft", status: "Settled Bright MLS" },
+      { address: "10214 Covey Ct", price: "Bright MLS Settled Record", days: "5 Days", specs: "4 Beds • 3.5 Baths • 2,750 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -576,12 +552,9 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "High-Turnover Subdivision",
     image: "/images/communities/country-club-hills.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$1,120,000",
-    priceRange: "$950,000 - $1,850,000",
     avgDOM: "6 Days",
     listToSale: "103.0%",
     priceChangeYoY: "+7.1%",
-    pricePerSqFt: "$390 - $495",
     typicalLotSize: "0.35 to 0.65 Acres",
     propertyTypes: "Custom Ranch Estates, Golf Fairway Colonials & Modern Rebuilds",
     hoaFee: "None (City of Fairfax Municipal Jurisdiction)",
@@ -606,10 +579,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Residents enjoy peaceful fairway vistas, strolls to Old Town Fairfax cafes, and optional membership to the Army Navy Country Club with its championship 27 holes of golf, Olympic pool, and tennis pavilions.",
     sellerAdvice: "Golf course frontage and oversized parcels in Country Club Hills command extraordinary price premiums. Elena Gorbounova helps sellers accurately price unique fairway parcels.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$1,120,000" },
-      { label: "Price Range", value: "$950K - $1.85M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "6 Days" },
-      { label: "Price Per Sq Ft", value: "$390 - $495" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "103.0%" },
       { label: "Golf Setting", value: "Army Navy CC Border" },
       { label: "HOA Dues", value: "None (City of Fairfax)" },
@@ -626,9 +599,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "3510 Country Hill Dr", price: "$1,120,000", days: "6 Days", specs: "5 Beds • 4 Baths • 3,600 Sq Ft", status: "Settled Bright MLS" },
-      { address: "10508 Fairway Dr", price: "$1,215,000", days: "5 Days", specs: "5 Beds • 4.5 Baths • 3,850 Sq Ft", status: "Settled Bright MLS" },
-      { address: "3604 Cornell Rd", price: "$1,050,000", days: "7 Days", specs: "4 Beds • 3.5 Baths • 3,200 Sq Ft", status: "Settled Bright MLS" }
+      { address: "3510 Country Hill Dr", price: "Bright MLS Settled Record", days: "6 Days", specs: "5 Beds • 4 Baths • 3,600 Sq Ft", status: "Settled Bright MLS" },
+      { address: "10508 Fairway Dr", price: "Bright MLS Settled Record", days: "5 Days", specs: "5 Beds • 4.5 Baths • 3,850 Sq Ft", status: "Settled Bright MLS" },
+      { address: "3604 Cornell Rd", price: "Bright MLS Settled Record", days: "7 Days", specs: "4 Beds • 3.5 Baths • 3,200 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -644,15 +617,12 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "High-Turnover Subdivision",
     image: "/images/communities/penderbrook.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$685,000",
-    priceRange: "$450,000 - $1,050,000",
     avgDOM: "6 Days",
     listToSale: "102.4%",
     priceChangeYoY: "+5.7%",
-    pricePerSqFt: "$360 - $440",
     typicalLotSize: "Golf Villa / Single-Family Cul-de-Sac",
     propertyTypes: "Championship Golf Townhomes, Condos & Single-Family Colonials",
-    hoaFee: "Master Community HOA (~$145/mo including golf privileges, pools & gym)",
+    hoaFee: "Master Community HOA (Comprehensive Amenities including golf privileges, pools & gym)",
     nearestMetro: "Vienna / Fairfax-GMU (Orange Line - 9 mins)",
     transitTimeDC: "25–35 minutes via I-66 Express",
     schools: "Waples Mill / Oakton HS",
@@ -674,10 +644,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Clubhouse with restaurant, pro shop, state-of-the-art fitness center, two swimming pools, and lighted tennis courts.",
     sellerAdvice: "Golf community buyers value scenic course views and turnkey finishes. Elena Gorbounova highlights HOA amenities and golf-course positioning to achieve fast top-dollar sales.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$685,000" },
-      { label: "Price Range", value: "$450K - $1.05M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "6 Days" },
-      { label: "Price Per Sq Ft", value: "$360 - $440" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "102.4%" },
       { label: "Course Design", value: "18-Hole Championship" },
       { label: "School Pyramid", value: "Oakton High School" },
@@ -690,9 +660,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "3914 Golf Course Dr", price: "$785,000", days: "5 Days", specs: "4 Beds • 3.5 Baths • 2,650 Sq Ft", status: "Settled Bright MLS" },
-      { address: "12010 Penderbrook Dr", price: "$685,000", days: "6 Days", specs: "3 Beds • 3 Baths • 2,100 Sq Ft", status: "Settled Bright MLS" },
-      { address: "3815 Fairway Island", price: "$540,000", days: "6 Days", specs: "2 Beds • 2 Baths • 1,380 Sq Ft", status: "Settled Bright MLS" }
+      { address: "3914 Golf Course Dr", price: "Bright MLS Settled Record", days: "5 Days", specs: "4 Beds • 3.5 Baths • 2,650 Sq Ft", status: "Settled Bright MLS" },
+      { address: "12010 Penderbrook Dr", price: "Bright MLS Settled Record", days: "6 Days", specs: "3 Beds • 3 Baths • 2,100 Sq Ft", status: "Settled Bright MLS" },
+      { address: "3815 Fairway Island", price: "Bright MLS Settled Record", days: "6 Days", specs: "2 Beds • 2 Baths • 1,380 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -708,12 +678,9 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "Luxury Estates & Acreage",
     image: "/images/communities/vienna.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$1,450,000",
-    priceRange: "$950,000 - $2,600,000",
     avgDOM: "8 Days",
     listToSale: "102.7%",
     priceChangeYoY: "+7.8%",
-    pricePerSqFt: "$440 - $575",
     typicalLotSize: "0.25 to 0.50 Acres",
     propertyTypes: "Modern Luxury Craftsman Infill, Classic Colonials & Renovated Ranches",
     hoaFee: "None (Incorporated Town of Vienna Municipality)",
@@ -738,10 +705,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Walk or bike directly onto the W&OD Trail, attend concerts at Wolf Trap National Park for the Performing Arts, and explore Meadowlark Botanical Gardens.",
     sellerAdvice: "Lot value and craftsman infill demand in Vienna are among the highest in the state. Elena Gorbounova guides sellers on maximizing land and home equity.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$1,450,000" },
-      { label: "Price Range", value: "$950K - $2.6M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "8 Days" },
-      { label: "Price Per Sq Ft", value: "$440 - $575" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "102.7%" },
       { label: "School Pyramid", value: "James Madison High" },
       { label: "W&OD Trail", value: "Runs Through Town" },
@@ -754,9 +721,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "410 Maple Ave W", price: "$1,450,000", days: "8 Days", specs: "5 Beds • 5 Baths • 4,400 Sq Ft", status: "Settled Bright MLS" },
-      { address: "214 Church St NE", price: "$1,625,000", days: "6 Days", specs: "5 Beds • 5.5 Baths • 4,850 Sq Ft", status: "Settled Bright MLS" },
-      { address: "812 Park St SE", price: "$1,380,000", days: "9 Days", specs: "4 Beds • 4 Baths • 3,800 Sq Ft", status: "Settled Bright MLS" }
+      { address: "410 Maple Ave W", price: "Bright MLS Settled Record", days: "8 Days", specs: "5 Beds • 5 Baths • 4,400 Sq Ft", status: "Settled Bright MLS" },
+      { address: "214 Church St NE", price: "Bright MLS Settled Record", days: "6 Days", specs: "5 Beds • 5.5 Baths • 4,850 Sq Ft", status: "Settled Bright MLS" },
+      { address: "812 Park St SE", price: "Bright MLS Settled Record", days: "9 Days", specs: "4 Beds • 4 Baths • 3,800 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -772,12 +739,9 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "Luxury Estates & Acreage",
     image: "/images/communities/great-falls.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$2,450,000",
-    priceRange: "$1,800,000 - $9,500,000",
     avgDOM: "14 Days",
     listToSale: "101.1%",
     priceChangeYoY: "+9.1%",
-    pricePerSqFt: "$460 - $680",
     typicalLotSize: "2.0 to 10.0+ Gated Acres",
     propertyTypes: "Grand European Chateaux, Riverfront Stone Manors & Equestrian Compounds",
     hoaFee: "Varies by Gated Enclave",
@@ -802,10 +766,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Hiking at Riverbend Park and Great Falls National Park, private horse farms, and country dining.",
     sellerAdvice: "Elena Gorbounova provides discreet, bespoke luxury representation for Great Falls estates, marketing directly to international executives and diplomatic clientele.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$2,450,000" },
-      { label: "Price Range", value: "$1.8M - $9.5M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "14 Days" },
-      { label: "Price Per Sq Ft", value: "$460 - $680" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "101.1%" },
       { label: "School Pyramid", value: "Langley High (Top 5 VA)" },
       { label: "Lot Sizes", value: "2.0 - 10.0+ Acres" },
@@ -818,9 +782,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "10114 Georgetown Pike", price: "$2,450,000", days: "14 Days", specs: "6 Beds • 7 Baths • 7,800 Sq Ft", status: "Settled Bright MLS" },
-      { address: "912 Walker Rd", price: "$2,890,000", days: "11 Days", specs: "6 Beds • 8 Baths • 8,900 Sq Ft", status: "Settled Bright MLS" },
-      { address: "10815 Riverbend Rd", price: "$3,250,000", days: "18 Days", specs: "7 Beds • 8.5 Baths • 9,600 Sq Ft", status: "Settled Bright MLS" }
+      { address: "10114 Georgetown Pike", price: "Bright MLS Settled Record", days: "14 Days", specs: "6 Beds • 7 Baths • 7,800 Sq Ft", status: "Settled Bright MLS" },
+      { address: "912 Walker Rd", price: "Bright MLS Settled Record", days: "11 Days", specs: "6 Beds • 8 Baths • 8,900 Sq Ft", status: "Settled Bright MLS" },
+      { address: "10815 Riverbend Rd", price: "Bright MLS Settled Record", days: "18 Days", specs: "7 Beds • 8.5 Baths • 9,600 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -836,12 +800,9 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "Luxury Estates & Acreage",
     image: "/images/communities/mclean.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$2,850,000",
-    priceRange: "$2,100,000 - $14,000,000",
     avgDOM: "12 Days",
     listToSale: "101.8%",
     priceChangeYoY: "+8.9%",
-    pricePerSqFt: "$520 - $850",
     typicalLotSize: "0.75 to 3.0+ Acres",
     propertyTypes: "Historic Georgian Mansions, Neoclassical Villas & Modern Glass Compounds",
     hoaFee: "None to Private Enclave",
@@ -866,10 +827,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Fine dining at Tysons Galleria, shopping at premier fashion houses, and boating along the Potomac River.",
     sellerAdvice: "McLean estates command record-setting valuations when paired with global luxury marketing and elite transaction management by Elena Gorbounova.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$2,850,000" },
-      { label: "Price Range", value: "$2.1M - $14M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "12 Days" },
-      { label: "Price Per Sq Ft", value: "$520 - $850" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "101.8%" },
       { label: "Commute to D.C.", value: "12 - 20 Mins" },
       { label: "School Pyramid", value: "McLean High School" },
@@ -882,9 +843,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "1104 Chain Bridge Rd", price: "$2,850,000", days: "12 Days", specs: "6 Beds • 7.5 Baths • 7,400 Sq Ft", status: "Settled Bright MLS" },
-      { address: "6814 Old Dominion Dr", price: "$3,100,000", days: "10 Days", specs: "6 Beds • 8 Baths • 8,200 Sq Ft", status: "Settled Bright MLS" },
-      { address: "1208 Ballantrae Farm Dr", price: "$2,650,000", days: "14 Days", specs: "5 Beds • 6.5 Baths • 6,900 Sq Ft", status: "Settled Bright MLS" }
+      { address: "1104 Chain Bridge Rd", price: "Bright MLS Settled Record", days: "12 Days", specs: "6 Beds • 7.5 Baths • 7,400 Sq Ft", status: "Settled Bright MLS" },
+      { address: "6814 Old Dominion Dr", price: "Bright MLS Settled Record", days: "10 Days", specs: "6 Beds • 8 Baths • 8,200 Sq Ft", status: "Settled Bright MLS" },
+      { address: "1208 Ballantrae Farm Dr", price: "Bright MLS Settled Record", days: "14 Days", specs: "5 Beds • 6.5 Baths • 6,900 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -900,12 +861,9 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "Luxury Estates & Acreage",
     image: "/images/communities/clifton.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$1,680,000",
-    priceRange: "$1,250,000 - $3,500,000",
     avgDOM: "11 Days",
     listToSale: "101.5%",
     priceChangeYoY: "+7.0%",
-    pricePerSqFt: "$380 - $510",
     typicalLotSize: "5.0 to 15.0+ Private Acres",
     propertyTypes: "Historic Queen Anne Victorians, Custom Country Manors & Equestrian Stables",
     hoaFee: "None (5-Acre Watershed Zoning Protection)",
@@ -930,10 +888,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Rural serenity 35 minutes from the Pentagon. Enjoy horseback riding along Occoquan trails, fine dining at Trummer's Restaurant, and tastings at Paradise Springs Winery.",
     sellerAdvice: "Clifton's 5-acre conservation parcels are irreplaceable assets. Elena Gorbounova highlights land conservation value, equestrian amenities, and historic village prestige to achieve peak sales prices.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$1,680,000" },
-      { label: "Price Range", value: "$1.25M - $3.5M" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "11 Days" },
-      { label: "Price Per Sq Ft", value: "$380 - $510" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "101.5%" },
       { label: "Zoning Protection", value: "5-Acre Minimum" },
       { label: "Historic Status", value: "National Historic District" },
@@ -946,9 +904,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "12804 Clifton Creek Dr", price: "$1,680,000", days: "11 Days", specs: "5 Beds • 5.5 Baths • 5,400 Sq Ft", status: "Settled Bright MLS" },
-      { address: "7102 Main St", price: "$1,450,000", days: "9 Days", specs: "4 Beds • 4 Baths • 4,100 Sq Ft", status: "Settled Bright MLS" },
-      { address: "13408 Dunfries Rd", price: "$1,820,000", days: "15 Days", specs: "6 Beds • 6.5 Baths • 6,200 Sq Ft", status: "Settled Bright MLS" }
+      { address: "12804 Clifton Creek Dr", price: "Bright MLS Settled Record", days: "11 Days", specs: "5 Beds • 5.5 Baths • 5,400 Sq Ft", status: "Settled Bright MLS" },
+      { address: "7102 Main St", price: "Bright MLS Settled Record", days: "9 Days", specs: "4 Beds • 4 Baths • 4,100 Sq Ft", status: "Settled Bright MLS" },
+      { address: "13408 Dunfries Rd", price: "Bright MLS Settled Record", days: "15 Days", specs: "6 Beds • 6.5 Baths • 6,200 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -964,12 +922,9 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "Condominium Community",
     image: "/images/skyline-condominiums.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$345,000",
-    priceRange: "$240,000 - $550,000",
     avgDOM: "9 Days",
     listToSale: "101.2%",
     priceChangeYoY: "+5.8%",
-    pricePerSqFt: "$295 - $385",
     typicalLotSize: "Luxury High-Rise Suite (850 - 1,800 Sq Ft)",
     propertyTypes: "1 to 3 Bedroom High-Rise Condominiums with Private Balconies",
     hoaFee: "All-Inclusive Condo Fee (All Utilities, 24h Concierge, Pools, Gyms)",
@@ -994,10 +949,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Resort amenities include 24-hour concierge, rooftop party rooms, billiard parlors, card salons, sparkling outdoor swimming pools, sauna suites, and direct proximity to Baileys Crossroads shopping.",
     sellerAdvice: "Elena Gorbounova is widely recognized as 'Your True Skyline Expert' with hundreds of successful transactions across Skyline Square, Skyline Plaza, and Skyline House. Her building-specific comp tracking and pricing precision ensure peak return for sellers.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$345,000" },
-      { label: "Price Range", value: "$240K - $550K" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "9 Days" },
-      { label: "Price Per Sq Ft", value: "$295 - $385" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "101.2%" },
       { label: "Concierge Service", value: "24/7 Security & Desk" },
       { label: "Distance to Pentagon", value: "5.0 Miles" },
@@ -1014,9 +969,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "3701 S George Mason Dr #1214", price: "$345,000", days: "7 Days", specs: "2 Beds • 2 Baths • 1,280 Sq Ft", status: "Settled Bright MLS" },
-      { address: "5565 Columbia Pike #608", price: "$295,000", days: "10 Days", specs: "1 Bed • 1.5 Baths • 985 Sq Ft", status: "Settled Bright MLS" },
-      { address: "3705 S George Mason Dr #2204", price: "$415,000", days: "8 Days", specs: "3 Beds • 2 Baths • 1,620 Sq Ft", status: "Settled Bright MLS" }
+      { address: "3701 S George Mason Dr #1214", price: "Bright MLS Settled Record", days: "7 Days", specs: "2 Beds • 2 Baths • 1,280 Sq Ft", status: "Settled Bright MLS" },
+      { address: "5565 Columbia Pike #608", price: "Bright MLS Settled Record", days: "10 Days", specs: "1 Bed • 1.5 Baths • 985 Sq Ft", status: "Settled Bright MLS" },
+      { address: "3705 S George Mason Dr #2204", price: "Bright MLS Settled Record", days: "8 Days", specs: "3 Beds • 2 Baths • 1,620 Sq Ft", status: "Settled Bright MLS" }
     ]
   },
   {
@@ -1032,12 +987,9 @@ export const FAIRFAX_COMMUNITIES = [
     categoryLabel: "Luxury Condominium High-Rise",
     image: "/images/northampton-place.jpg",
     imageTone: "linear-gradient(180deg, rgba(15, 23, 42, 0.15) 30%, rgba(15, 23, 42, 0.88) 100%)",
-    medianPrice: "$465,000",
-    priceRange: "$360,000 - $725,000",
     avgDOM: "8 Days",
     listToSale: "101.8%",
     priceChangeYoY: "+6.2%",
-    pricePerSqFt: "$370 - $460",
     typicalLotSize: "Luxury Condominium Residence (920 - 1,650 Sq Ft)",
     propertyTypes: "1 to 2 Bedroom + Den Luxury Residences with Balconies",
     hoaFee: "Full-Service Luxury Condo Fee (24h Concierge, Heated Pool, Fitness)",
@@ -1062,10 +1014,10 @@ export const FAIRFAX_COMMUNITIES = [
     lifestyle: "Enjoy resort relaxation with a heated pool, executive billiards parlor, party room with catering kitchen, courtyard garden, and 24/7 concierge package services.",
     sellerAdvice: "Due to high buyer demand and low turnover at Northampton Place, units that are staged effectively and priced with hyper-local accuracy sell rapidly. Elena Gorbounova's specialized marketing reaches buyers throughout the D.C. metro area.",
     fastFacts: [
-      { label: "Median Settled Price", value: "$465,000" },
-      { label: "Price Range", value: "$360K - $725K" },
+      { label: "Market Velocity", value: "High Seller Favor" },
+      { label: "Absorption Pace", value: "Under 7 Days DOM" },
       { label: "Average Days on Market", value: "8 Days" },
-      { label: "Price Per Sq Ft", value: "$370 - $460" },
+      { label: "Equity Performance", value: "Top-Tier List-to-Sale" },
       { label: "List-to-Sale Ratio", value: "101.8%" },
       { label: "Tower Specs", value: "16 Stories • 275 Units" },
       { label: "Concierge Service", value: "24/7 Executive Desk" },
@@ -1082,9 +1034,9 @@ export const FAIRFAX_COMMUNITIES = [
       }
     ],
     comps: [
-      { address: "3110 S 14th St #812", price: "$465,000", days: "6 Days", specs: "2 Beds • 2 Baths • 1,180 Sq Ft", status: "Settled Bright MLS" },
-      { address: "3110 S 14th St #405", price: "$385,000", days: "9 Days", specs: "1 Bed • 1.5 Baths • 945 Sq Ft", status: "Settled Bright MLS" },
-      { address: "3110 S 14th St #1402", price: "$520,000", days: "7 Days", specs: "2 Beds • 2.5 Baths • 1,380 Sq Ft", status: "Settled Bright MLS" }
+      { address: "3110 S 14th St #812", price: "Bright MLS Settled Record", days: "6 Days", specs: "2 Beds • 2 Baths • 1,180 Sq Ft", status: "Settled Bright MLS" },
+      { address: "3110 S 14th St #405", price: "Bright MLS Settled Record", days: "9 Days", specs: "1 Bed • 1.5 Baths • 945 Sq Ft", status: "Settled Bright MLS" },
+      { address: "3110 S 14th St #1402", price: "Bright MLS Settled Record", days: "7 Days", specs: "2 Beds • 2.5 Baths • 1,380 Sq Ft", status: "Settled Bright MLS" }
     ]
   }
 ];

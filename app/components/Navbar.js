@@ -31,13 +31,15 @@ export default function Navbar({ onOpenTourModal }) {
 
       {/* Center: Desktop Navigation Links (Strictly Single Line) */}
       <nav className="nav-menu-center" aria-label="Main Navigation">
+        <Link href="/divisions" className="nav-item-link">Divisions</Link>
+        <Link href="/subdivisions" className="nav-item-link">Subdivisions</Link>
         <Link href="/communities" className="nav-item-link">Communities</Link>
-        <Link href="/about" className="nav-item-link">About Elena</Link>
+        <Link href="/sell" className="nav-item-link" style={{ fontWeight: 800, color: "var(--accent-gold-hover)" }}>
+          ✦ List Your Property
+        </Link>
         <Link href="/market-report" className="nav-item-link">Market Reports</Link>
         <Link href="/testimonials" className="nav-item-link">Reviews</Link>
-        <Link href="/sell" className="nav-item-link">Sell Your Home</Link>
-        <Link href="/home-valuation" className="nav-item-link">Home Valuation</Link>
-        <a href="/#listings" className="nav-item-link">Active Homes</a>
+        <Link href="/about" className="nav-item-link">About Elena</Link>
       </nav>
 
       {/* Right Action: Direct Phone, Sleek Capsule CTA & Mobile Hamburger */}
@@ -55,16 +57,15 @@ export default function Navbar({ onOpenTourModal }) {
             onClick={onOpenTourModal}
             className="btn-capsule-black"
           >
-            Book Appointment
+            Book Listing Consultation
           </button>
         ) : (
-          <a
-            href="/#sell"
-            onClick={handleBookClick}
+          <Link
+            href="/sell"
             className="btn-capsule-black"
           >
-            Book Appointment
-          </a>
+            Book Listing Consultation
+          </Link>
         )}
 
         {/* Mobile Hamburger Button */}
@@ -93,11 +94,17 @@ export default function Navbar({ onOpenTourModal }) {
       {/* Mobile Menu Dropdown Drawer */}
       {mobileMenuOpen && (
         <div className="nav-mobile-drawer" role="menu">
+          <Link href="/divisions" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
+            Virginia Divisions
+          </Link>
+          <Link href="/subdivisions" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
+            Subdivisions Directory
+          </Link>
           <Link href="/communities" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
             Communities
           </Link>
-          <Link href="/about" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
-            About Elena
+          <Link href="/sell" className="nav-mobile-link" style={{ fontWeight: 800, color: "var(--accent-gold-hover)" }} onClick={() => setMobileMenuOpen(false)}>
+            ✦ List Your Property
           </Link>
           <Link href="/market-report" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
             Market Reports
@@ -105,15 +112,9 @@ export default function Navbar({ onOpenTourModal }) {
           <Link href="/testimonials" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
             Client Reviews (325+)
           </Link>
-          <Link href="/sell" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
-            Sell Your Home
+          <Link href="/about" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
+            About Elena
           </Link>
-          <Link href="/home-valuation" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
-            Free Home Valuation
-          </Link>
-          <a href="/#listings" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
-            Active MLS Homes
-          </a>
 
           <div style={{ borderTop: "1px solid #E2E8F0", margin: "6px 0", paddingTop: "12px", display: "flex", flexDirection: "column", gap: "10px" }}>
             <a

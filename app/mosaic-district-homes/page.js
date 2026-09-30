@@ -42,6 +42,49 @@ export default function MosaicDistrictPage() {
             </p>
           </div>
 
+          {/* High-Converting Seller Advisory Card */}
+          <div style={{
+            background: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
+            color: "#FFFFFF",
+            borderRadius: "16px",
+            padding: "32px 28px",
+            marginBottom: "40px",
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: "20px"
+          }}>
+            <div style={{ maxWidth: "660px" }}>
+              <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "6px" }}>
+                ✦ Mosaic District &amp; Merrifield Sellers • Elena &amp; Kirill
+              </span>
+              <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "#FFFFFF", margin: "0 0 8px" }}>
+                Selling Your Mosaic Brownstone or Condo?
+              </h3>
+              <p style={{ fontSize: "0.96rem", color: "#CBD5E1", margin: 0, lineHeight: 1.6 }}>
+                Four-level townhomes and modern condos in 22031 sell in <strong>9 Days on Market</strong>. We target affluent D.C. and Tysons commuters looking for walkable metro-accessible luxury.
+              </p>
+            </div>
+
+            <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+              <Link 
+                href="/communities/mosaic-district" 
+                className="btn btn-outline"
+                style={{ color: "#FFFFFF", borderColor: "rgba(255,255,255,0.3)", padding: "12px 20px", fontWeight: 600, fontSize: "0.88rem" }}
+              >
+                Mosaic Comps &rarr;
+              </Link>
+              <Link 
+                href="/sell" 
+                className="btn btn-primary"
+                style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "12px 20px", fontSize: "0.88rem" }}
+              >
+                Book In-Home Consultation
+              </Link>
+            </div>
+          </div>
+
           <div className="section-head-clean">
             <span className="section-pretitle">Featured Submarket Inventory</span>
             <h2 className="section-title-bold">Mosaic District &amp; Metro-Accessible Homes</h2>

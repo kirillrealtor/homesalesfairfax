@@ -7,8 +7,9 @@ import { testimonials } from "../data/testimonials";
 export default function TestimonialsSection() {
   const [activeCategory, setActiveCategory] = useState("all");
   const [searchQuery, setSearchQuery] = useState("");
-  const [displayCount, setDisplayCount] = useState(6);
+  const [currentPage, setCurrentPage] = useState(1);
   const [expandedId, setExpandedId] = useState(null);
+  const reviewsPerPage = 6;
 
   const categories = [
     { id: "all", label: `All Reviews (${testimonials.length})` },
@@ -56,7 +57,30 @@ export default function TestimonialsSection() {
     return list;
   }, [activeCategory, searchQuery]);
 
-  const displayedList = filteredReviews.slice(0, displayCount);
+  const totalPages = Math.max(1, Math.ceil(filteredReviews.length / reviewsPerPage));
+  const displayedList = filteredReviews.slice((currentPage - 1) * reviewsPerPage, currentPage * reviewsPerPage);
+
+  const handlePageChange = (newPage) => {
+    if (newPage < 1 || newPage > totalPages) return;
+    setCurrentPage(newPage);
+    const el = document.getElementById("reviews");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  const getVisiblePages = () => {
+    if (totalPages <= 5) {
+      return Array.from({ length: totalPages }, (_, i) => i + 1);
+    }
+    if (currentPage <= 3) {
+      return [1, 2, 3, 4, "...", totalPages];
+    }
+    if (currentPage >= totalPages - 2) {
+      return [1, "...", totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+    }
+    return [1, "...", currentPage - 1, currentPage, currentPage + 1, "...", totalPages];
+  };
 
   return (
     <section id="reviews" className="content-section" style={{ background: "var(--bg-page)", padding: "80px 0" }}>
@@ -111,7 +135,7 @@ export default function TestimonialsSection() {
               value={searchQuery}
               onChange={(e) => {
                 setSearchQuery(e.target.value);
-                setDisplayCount(6);
+                setCurrentPage(1);
               }}
               placeholder="Search by client name, neighborhood, building, or keyword (e.g., 'offer', 'listing', 'Fairfax')..."
               style={{
@@ -164,7 +188,7 @@ export default function TestimonialsSection() {
                 key={c.id}
                 onClick={() => {
                   setActiveCategory(c.id);
-                  setDisplayCount(6);
+                  setCurrentPage(1);
                 }}
                 style={{
                   padding: "8px 16px",
@@ -308,38 +332,141 @@ export default function TestimonialsSection() {
           })}
         </div>
 
-        {/* Load More & Full Library CTA */}
-        <div style={{ display: "flex", justifyContent: "center", alignItems: "center", gap: "16px", flexWrap: "wrap", marginTop: "40px" }}>
-          {displayCount < filteredReviews.length && (
-            <button
-              onClick={() => setDisplayCount(prev => Math.min(prev + 9, filteredReviews.length))}
-              className="btn btn-outline"
-              style={{
-                padding: "12px 28px",
-                borderRadius: "var(--radius-sm)",
-                fontWeight: 600,
-                fontSize: "0.92rem",
-                cursor: "pointer"
-              }}
-            >
-              Load More Reviews (+9)
-            </button>
+        {/* Circular Pagination & Full Directory Navigation */}
+        <div style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          gap: "20px",
+          marginTop: "48px"
+        }}>
+          {/* Circular Navigation Bar: [ ← ] [ 1 ] [ 2 ] [ 3 ] [ 4 ] [ → ] */}
+          {totalPages > 1 && (
+            <div style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "8px",
+              background: "#FFFFFF",
+              padding: "8px 14px",
+              borderRadius: "9999px",
+              border: "1.5px solid var(--ink-200)",
+              boxShadow: "0 4px 16px rgba(0, 0, 0, 0.06)"
+            }}>
+              {/* Circular Left Arrow Button */}
+              <button
+                onClick={() => handlePageChange(currentPage - 1)}
+                disabled={currentPage === 1}
+                aria-label="Previous Reviews"
+                title="Previous Page"
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  borderRadius: "50%",
+                  border: "1.5px solid #E2E8F0",
+                  background: currentPage === 1 ? "#F8FAFC" : "#FFFFFF",
+                  color: currentPage === 1 ? "#CBD5E1" : "var(--ink-950)",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  cursor: currentPage === 1 ? "not-allowed" : "pointer",
+                  transition: "all 0.2s ease"
+                }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+
+              {/* Circular Page Numbers */}
+              <div style={{ display: "flex", alignItems: "center", gap: "6px" }}>
+                {getVisiblePages().map((p, idx) => {
+                  if (p === "...") {
+                    return (
+                      <span key={`dots-${idx}`} style={{ padding: "0 6px", color: "var(--ink-400)", fontWeight: 700, fontSize: "0.85rem", letterSpacing: "1px" }}>
+                        •••
+                      </span>
+                    );
+                  }
+
+                  const isActive = p === currentPage;
+                  return (
+                    <button
+                      key={p}
+                      onClick={() => handlePageChange(p)}
+                      aria-label={`Go to page ${p}`}
+                      style={{
+                        width: "40px",
+                        height: "40px",
+                        borderRadius: "50%",
+                        border: isActive ? "1.5px solid var(--ink-950)" : "1.5px solid transparent",
+                        background: isActive ? "var(--ink-950)" : "transparent",
+                        color: isActive ? "#FFFFFF" : "var(--ink-800)",
+                        fontWeight: isActive ? 800 : 600,
+                        fontSize: "0.92rem",
+                        cursor: "pointer",
+                        transition: "all 0.15s ease",
+                        boxShadow: isActive ? "0 4px 10px rgba(15, 23, 42, 0.22)" : "none"
+                      }}
+                    >
+                      {p}
+                    </button>
+                  );
+                })}
+              </div>
+
+              {/* Circular Right Arrow Button */}
+              <button
+                onClick={() => handlePageChange(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                aria-label="Next Reviews"
+                title="Next Page"
+                style={{
+                  width: "42px",
+                  height: "42px",
+                  borderRadius: "50%",
+                  border: "1.5px solid #E2E8F0",
+                  background: currentPage === totalPages ? "#F8FAFC" : "#FFFFFF",
+                  color: currentPage === totalPages ? "#CBD5E1" : "var(--ink-950)",
+                  display: "inline-flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  cursor: currentPage === totalPages ? "not-allowed" : "pointer",
+                  transition: "all 0.2s ease"
+                }}
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
           )}
 
-          <Link
-            href="/testimonials"
-            className="btn btn-primary"
-            style={{
-              padding: "12px 28px",
-              borderRadius: "var(--radius-sm)",
-              fontWeight: 600,
-              fontSize: "0.92rem",
-              background: "var(--ink-950)",
-              color: "#FFFFFF"
-            }}
-          >
-            View Complete Directory of 325+ Reviews →
-          </Link>
+          {/* Clean Directory CTA Link */}
+          <div>
+            <Link
+              href="/testimonials"
+              style={{
+                fontSize: "0.88rem",
+                color: "var(--ink-700)",
+                fontWeight: 700,
+                textDecoration: "none",
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "8px",
+                padding: "8px 20px",
+                borderRadius: "9999px",
+                background: "rgba(197, 168, 128, 0.12)",
+                border: "1px solid rgba(197, 168, 128, 0.35)",
+                transition: "all 0.2s ease"
+              }}
+            >
+              <span>Explore Complete Directory of 325+ Client Stories</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </Link>
+          </div>
         </div>
       </div>
     </section>

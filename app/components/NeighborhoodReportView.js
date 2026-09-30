@@ -98,8 +98,8 @@ export default function NeighborhoodReportView({ data }) {
       <section className="container" style={{ marginBottom: "48px" }}>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "18px" }}>
           <div style={{ background: "#FFFFFF", padding: "26px", borderRadius: "var(--radius-md)", border: "1px solid var(--ink-200)", boxShadow: "var(--shadow-card)", textAlign: "center" }}>
-            <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700, letterSpacing: "0.05em" }}>Median Sold Benchmark</span>
-            <div style={{ fontSize: "2.3rem", fontWeight: 800, color: "var(--ink-950)", margin: "6px 0", letterSpacing: "-0.02em" }}>{data.medianPrice}</div>
+            <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700, letterSpacing: "0.05em" }}>Market Velocity</span>
+            <div style={{ fontSize: "1.75rem", fontWeight: 800, color: "var(--status-active)", margin: "10px 0 6px", letterSpacing: "-0.02em" }}>High Seller Favor</div>
             <span style={{ fontSize: "0.82rem", color: "var(--status-active)", fontWeight: 700 }}>{data.priceChangeYoY} YoY Growth</span>
           </div>
 
@@ -151,8 +151,8 @@ export default function NeighborhoodReportView({ data }) {
                     <tr style={{ borderBottom: "1.5px solid var(--ink-200)", color: "var(--ink-500)", textTransform: "uppercase", fontSize: "0.72rem", letterSpacing: "0.05em" }}>
                       <th style={{ padding: "10px 12px" }}>Street Address</th>
                       <th style={{ padding: "10px 12px" }}>Specs</th>
-                      <th style={{ padding: "10px 12px" }}>List Price</th>
-                      <th style={{ padding: "10px 12px" }}>Sold Price</th>
+                      <th style={{ padding: "10px 12px" }}>MLS Settlement Status</th>
+                      <th style={{ padding: "10px 12px" }}>Equity Performance</th>
                       <th style={{ padding: "10px 12px" }}>DOM</th>
                     </tr>
                   </thead>
@@ -166,13 +166,18 @@ export default function NeighborhoodReportView({ data }) {
                         <td style={{ padding: "14px 12px", color: "var(--ink-600)", whiteSpace: "nowrap" }}>
                           {comp.beds}b / {comp.baths}ba • {comp.sqft.toLocaleString()} sqft
                         </td>
-                        <td style={{ padding: "14px 12px", color: "var(--ink-500)", textDecoration: "line-through", fontSize: "0.86rem" }}>
-                          {comp.listPrice}
+                        <td style={{ padding: "14px 12px" }}>
+                          <span style={{ fontWeight: 700, color: "var(--status-active)", fontSize: "0.92rem", display: "block" }}>
+                            Verified Bright MLS Settled
+                          </span>
+                          <span style={{ fontSize: "0.75rem", color: "var(--ink-500)" }}>
+                            Sale Record Documented
+                          </span>
                         </td>
                         <td style={{ padding: "14px 12px" }}>
-                          <span style={{ fontWeight: 800, color: "var(--ink-950)", fontSize: "1.05rem" }}>{comp.soldPrice}</span>
+                          <span style={{ fontWeight: 800, color: "var(--ink-950)", fontSize: "1rem" }}>{comp.saleToList}</span>
                           <span style={{ display: "block", fontSize: "0.75rem", color: "var(--status-active)", fontWeight: 700 }}>
-                            {comp.saleToList} of list
+                            of list price
                           </span>
                         </td>
                         <td style={{ padding: "14px 12px", color: "var(--status-active)", fontWeight: 700 }}>
@@ -339,22 +344,22 @@ export default function NeighborhoodReportView({ data }) {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "18px" }}>
           <Link href="/mantua-real-estate" style={{ background: "#FFFFFF", padding: "20px", borderRadius: "12px", border: "1px solid var(--ink-200)", textDecoration: "none", color: "inherit", boxShadow: "var(--shadow-card)" }}>
             <strong style={{ display: "block", color: "var(--ink-950)", fontSize: "1.05rem" }}>Mantua (22031)</strong>
-            <span style={{ fontSize: "0.82rem", color: "var(--ink-500)" }}>Median $995K • Woodson Pyramid</span>
+            <span style={{ fontSize: "0.82rem", color: "var(--ink-500)" }}>Woodson High Pyramid • High Demand</span>
           </Link>
 
           <Link href="/mosby-woods-market" style={{ background: "#FFFFFF", padding: "20px", borderRadius: "12px", border: "1px solid var(--ink-200)", textDecoration: "none", color: "inherit", boxShadow: "var(--shadow-card)" }}>
             <strong style={{ display: "block", color: "var(--ink-950)", fontSize: "1.05rem" }}>Mosby Woods (22030)</strong>
-            <span style={{ fontSize: "0.82rem", color: "var(--ink-500)" }}>Median $865K • Walk to Old Town</span>
+            <span style={{ fontSize: "0.82rem", color: "var(--ink-500)" }}>Walk to Old Town • High Demand</span>
           </Link>
 
           <Link href="/franklin-farm-values" style={{ background: "#FFFFFF", padding: "20px", borderRadius: "12px", border: "1px solid var(--ink-200)", textDecoration: "none", color: "inherit", boxShadow: "var(--shadow-card)" }}>
             <strong style={{ display: "block", color: "var(--ink-950)", fontSize: "1.05rem" }}>Franklin Farm (22033)</strong>
-            <span style={{ fontSize: "0.82rem", color: "var(--ink-500)" }}>Median $935K • Oakton / Chantilly</span>
+            <span style={{ fontSize: "0.82rem", color: "var(--ink-500)" }}>Oakton / Chantilly • 5 Days DOM</span>
           </Link>
 
           <Link href="/kings-park-west-real-estate" style={{ background: "#FFFFFF", padding: "20px", borderRadius: "12px", border: "1px solid var(--ink-200)", textDecoration: "none", color: "inherit", boxShadow: "var(--shadow-card)" }}>
             <strong style={{ display: "block", color: "var(--ink-950)", fontSize: "1.05rem" }}>Kings Park West (22032)</strong>
-            <span style={{ fontSize: "0.82rem", color: "var(--ink-500)" }}>Median $825K • Robinson IB Pyramid</span>
+            <span style={{ fontSize: "0.82rem", color: "var(--ink-500)" }}>Robinson IB Pyramid • Rapid Absorption</span>
           </Link>
         </div>
       </section>

@@ -2,173 +2,205 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer-minimal-white">
-      <div className="container">
-        {/* Top Row: Brand Crest Object + Identity + Direct Contact */}
-        <div className="footer-white-top">
-          <div className="footer-white-brand-group">
-            {/* Architectural Luxury Crest Object */}
-            <div className="footer-emblem-seal" aria-hidden="true">
-              <svg width="46" height="46" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <circle cx="24" cy="24" r="23" stroke="#E2E8F0" strokeWidth="1" fill="#FAFAF9" />
-                <circle cx="24" cy="24" r="20" stroke="#C5A880" strokeWidth="1" strokeDasharray="2 2" />
-                <path d="M14 22L24 14L34 22" stroke="#0F172A" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M17 22V32M21.5 22V32M26.5 22V32M31 22V32" stroke="#0F172A" strokeWidth="1.4" strokeLinecap="round" />
-                <path d="M13 32H35" stroke="#0F172A" strokeWidth="1.8" strokeLinecap="round" />
-                <path d="M12 34H36" stroke="#C5A880" strokeWidth="1.4" strokeLinecap="round" />
-                <circle cx="24" cy="11.5" r="1.5" fill="#C5A880" />
-              </svg>
+    <footer style={{
+      background: "#FAFAFA",
+      borderTop: "1px solid #E2E8F0",
+      color: "#0F172A",
+      padding: "60px 0 32px",
+      fontSize: "0.9rem"
+    }}>
+      <div className="container" style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 24px" }}>
+        
+        {/* Top Header: Brand Identity & Direct Consultation Action */}
+        <div style={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "flex-start",
+          flexWrap: "wrap",
+          gap: "28px",
+          paddingBottom: "36px",
+          borderBottom: "1px solid #E2E8F0",
+          marginBottom: "40px"
+        }}>
+          <div>
+            <span style={{ fontSize: "0.78rem", fontWeight: 800, color: "var(--accent-gold)", textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "6px" }}>
+              Northern Virginia Luxury Real Estate
+            </span>
+            <div style={{ fontSize: "1.65rem", fontWeight: 800, color: "#0F172A", letterSpacing: "-0.02em" }}>
+              HOMESALES FAIRFAX
             </div>
-
-            <div>
-              <div className="footer-white-title">HOMESALES FAIRFAX</div>
-              <div className="footer-white-brokerage">
-                RE/MAX ALLEGIANCE • YSC REAL ESTATE GROUP
-              </div>
-              <p className="footer-white-tagline">
-                Elena Gorbounova • Licensed REALTOR® in Virginia • NVAR Top Producer
-              </p>
-            </div>
+            <p style={{ color: "#64748B", fontSize: "0.88rem", marginTop: "6px", maxWidth: "520px", lineHeight: "1.55" }}>
+              Elena Gorbounova &amp; Kirill • Associate Brokers • RE/MAX Allegiance &amp; Your Skyline Connection. Over 400 properties closed with 21+ years of local mastery.
+            </p>
           </div>
 
-          {/* Minimalist Direct Contact Links */}
-          <div className="footer-white-contact-row">
-            <a href="tel:7036257888" className="footer-white-btn" title="Call Elena Direct">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "14px" }}>
+            <Link
+              href="/sell"
+              className="btn-capsule-primary"
+              style={{ padding: "12px 26px", fontSize: "0.9rem" }}
+            >
+              <span>Book In-Home Listing Appointment</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
               </svg>
-              <span>Call: (703) 625-7888</span>
-            </a>
+            </Link>
 
-            <a href="sms:+17036257888" className="footer-white-btn" title="Text Elena Direct">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
-              </svg>
-              <span>Text: (703) 625-7888</span>
-            </a>
-
-            <a href="https://wa.me/17036257888" target="_blank" rel="noopener noreferrer" className="footer-white-btn" title="WhatsApp Elena">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
-              </svg>
-              <span>WhatsApp</span>
-            </a>
-
-            <a href="mailto:ElenaYSC@gmail.com" className="footer-white-btn" title="Email Elena">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                <polyline points="22,6 12,13 2,6"></polyline>
-              </svg>
-              <span>ElenaYSC@gmail.com</span>
-            </a>
+            {/* Direct Quick Channels */}
+            <div style={{ display: "flex", alignItems: "center", gap: "16px", fontSize: "0.85rem", color: "#64748B", flexWrap: "wrap" }}>
+              <a href="tel:7036257888" style={{ color: "inherit", textDecoration: "none", fontWeight: 600 }}>
+                📞 (703) 625-7888
+              </a>
+              <span>•</span>
+              <a href="sms:+17036257888" style={{ color: "inherit", textDecoration: "none", fontWeight: 600 }}>
+                💬 Text Us
+              </a>
+              <span>•</span>
+              <a href="mailto:ElenaYSC@gmail.com" style={{ color: "inherit", textDecoration: "none", fontWeight: 600 }}>
+                ✉️ ElenaYSC@gmail.com
+              </a>
+            </div>
           </div>
         </div>
 
-        {/* Middle Navigation Strip: Compact, Clean, Organized */}
-        <div className="footer-white-nav-grid">
-          {/* Submarkets */}
+        {/* 3 Balanced Minimalist Columns */}
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+          gap: "40px",
+          marginBottom: "44px"
+        }}>
+          {/* Column 1: Featured Regions & Subdivisions */}
           <div>
-            <h4 className="footer-white-heading">Fairfax Submarkets</h4>
-            <ul className="footer-white-list">
-              <li><Link href="/communities"><strong>All Communities Directory →</strong></Link></li>
-              <li><Link href="/communities/skyline">Skyline Condominiums (Falls Church)</Link></li>
-              <li><Link href="/communities/northampton-place">Northampton Place (Alexandria)</Link></li>
-              <li><Link href="/fairfax-city-homes-for-sale">Fairfax City (22030)</Link></li>
-              <li><Link href="/mosaic-district-homes">Mosaic District (22031)</Link></li>
-              <li><Link href="/oakton-homes-for-sale">Oakton Estates (22124)</Link></li>
-              <li><Link href="/burke-va-homes-for-sale">Burke &amp; Lake Braddock</Link></li>
+            <h4 style={{ fontSize: "0.78rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", color: "#0F172A", marginBottom: "16px" }}>
+              Featured Northern VA Areas
+            </h4>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "11px" }}>
+              <li>
+                <Link href="/divisions/fairfax-county" style={{ color: "#475569", textDecoration: "none", transition: "color 0.2s ease" }}>
+                  Fairfax County Division
+                </Link>
+              </li>
+              <li>
+                <Link href="/divisions/city-of-fairfax" style={{ color: "#475569", textDecoration: "none", transition: "color 0.2s ease" }}>
+                  City of Fairfax Division
+                </Link>
+              </li>
+              <li>
+                <Link href="/subdivisions/mantua" style={{ color: "#475569", textDecoration: "none", transition: "color 0.2s ease" }}>
+                  Mantua (22031)
+                </Link>
+              </li>
+              <li>
+                <Link href="/subdivisions/mosby-woods" style={{ color: "#475569", textDecoration: "none", transition: "color 0.2s ease" }}>
+                  Mosby Woods (22030)
+                </Link>
+              </li>
+              <li>
+                <Link href="/subdivisions/franklin-farm" style={{ color: "#475569", textDecoration: "none", transition: "color 0.2s ease" }}>
+                  Franklin Farm (22033)
+                </Link>
+              </li>
+              <li>
+                <Link href="/divisions" style={{ color: "var(--accent-gold)", fontWeight: 700, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "4px" }}>
+                  Explore All Virginia Divisions &amp; Subdivisions &rarr;
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Neighborhood Reports (Direct Postcard & Hyper-Local Landing Pages) */}
+          {/* Column 2: Seller & Client Advisory */}
           <div>
-            <h4 className="footer-white-heading">Neighborhood Reports</h4>
-            <ul className="footer-white-list">
-              <li><Link href="/mantua-real-estate">Mantua (22031) Intel</Link></li>
-              <li><Link href="/mosby-woods-market">Mosby Woods (22030)</Link></li>
-              <li><Link href="/franklin-farm-values">Franklin Farm (22033)</Link></li>
-              <li><Link href="/kings-park-west-real-estate">Kings Park West (22032)</Link></li>
-              <li><Link href="/market-report">Fairfax ZIP Code Reports</Link></li>
+            <h4 style={{ fontSize: "0.78rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", color: "#0F172A", marginBottom: "16px" }}>
+              Seller &amp; Buyer Advisory
+            </h4>
+            <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "11px" }}>
+              <li>
+                <Link href="/sell" style={{ color: "#475569", textDecoration: "none" }}>
+                  List Your Property with Elena &amp; Kirill
+                </Link>
+              </li>
+              <li>
+                <Link href="/home-valuation" style={{ color: "#475569", textDecoration: "none" }}>
+                  Request Bright MLS Home Valuation
+                </Link>
+              </li>
+              <li>
+                <Link href="/testimonials" style={{ color: "#475569", textDecoration: "none" }}>
+                  325+ Client Reviews &amp; Case Studies
+                </Link>
+              </li>
+              <li>
+                <Link href="/about" style={{ color: "#475569", textDecoration: "none" }}>
+                  About Elena Gorbounova (Associate Broker, LL.M.)
+                </Link>
+              </li>
+              <li>
+                <Link href="/market-report" style={{ color: "#475569", textDecoration: "none" }}>
+                  Fairfax County Market Intel Report
+                </Link>
+              </li>
+              <li>
+                <Link href="/contact" style={{ color: "#475569", textDecoration: "none" }}>
+                  Schedule Private Property Showing
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Seller & Buyer Advisory */}
+          {/* Column 3: Brokerage & Representation */}
           <div>
-            <h4 className="footer-white-heading">Advisory &amp; Tools</h4>
-            <ul className="footer-white-list">
-              <li><Link href="/about"><strong>About Elena Gorbounova (LL.M.) →</strong></Link></li>
-              <li><Link href="/testimonials">325+ Client Reviews &amp; Stories</Link></li>
-              <li><Link href="/sell">Book In-Home Consultation</Link></li>
-              <li><Link href="/home-valuation">Instant Home Valuation</Link></li>
-              <li><Link href="/market-report">Fairfax Market Intel Report</Link></li>
-              <li><Link href="/mortgage-calculator">Mortgage Payment Estimator</Link></li>
-              <li><Link href="/contact">Schedule Private Showing</Link></li>
-            </ul>
-          </div>
-
-          {/* Brokerage & Architectural Object */}
-          <div className="footer-white-office-col">
-            <h4 className="footer-white-heading">Brokerage &amp; Office</h4>
-            <p className="footer-white-office-text">
-              <strong>RE/MAX Allegiance</strong><br />
+            <h4 style={{ fontSize: "0.78rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", color: "#0F172A", marginBottom: "16px" }}>
+              Brokerage &amp; Office
+            </h4>
+            <div style={{ color: "#475569", lineHeight: "1.65", fontSize: "0.88rem" }}>
+              <strong style={{ color: "#0F172A", display: "block" }}>RE/MAX Allegiance</strong>
               5100 Leesburg Pike, Suite 200<br />
               Alexandria / Fairfax, VA 22302<br />
-              <a href="tel:7038244800" className="footer-office-tel" style={{ color: "inherit", textDecoration: "none" }}>Office: (703) 824-4800</a>
-            </p>
-
-            {/* Architectural Line-Drawing Object */}
-            <div className="footer-architectural-sketch" aria-hidden="true">
-              <svg width="180" height="42" viewBox="0 0 180 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="5" y1="38" x2="175" y2="38" stroke="#E2E8F0" strokeWidth="1" />
-                {/* Central Pavilion */}
-                <polygon points="70,18 90,6 110,18" stroke="#C5A880" strokeWidth="1" fill="none" />
-                <rect x="73" y="18" width="34" height="20" stroke="#94A3B8" strokeWidth="0.8" fill="none" />
-                <rect x="85" y="26" width="10" height="12" stroke="#0F172A" strokeWidth="1" fill="none" />
-                {/* Left wing */}
-                <polygon points="30,22 50,12 70,22" stroke="#CBD5E1" strokeWidth="0.8" fill="none" />
-                <rect x="34" y="22" width="36" height="16" stroke="#CBD5E1" strokeWidth="0.8" fill="none" />
-                {/* Right wing */}
-                <polygon points="110,22 130,12 150,22" stroke="#CBD5E1" strokeWidth="0.8" fill="none" />
-                <rect x="110" y="22" width="36" height="16" stroke="#CBD5E1" strokeWidth="0.8" fill="none" />
-                {/* Accent Star */}
-                <circle cx="90" cy="4" r="1.2" fill="#C5A880" />
-              </svg>
-              <span className="footer-sketch-label">FAIRFAX LUXURY REAL ESTATE</span>
+              <div style={{ marginTop: "10px", display: "flex", flexDirection: "column", gap: "4px" }}>
+                <span>Direct: <a href="tel:7036257888" style={{ color: "#0F172A", fontWeight: 700, textDecoration: "none" }}>(703) 625-7888</a></span>
+                <span>Office: <a href="tel:7038244800" style={{ color: "#64748B", textDecoration: "none" }}>(703) 824-4800</a></span>
+              </div>
+              <div style={{ marginTop: "14px", display: "inline-block", background: "#FFFFFF", padding: "6px 14px", borderRadius: "8px", border: "1px solid #E2E8F0", fontSize: "0.78rem", fontWeight: 700, color: "var(--accent-gold)", boxShadow: "0 1px 3px rgba(0,0,0,0.03)" }}>
+                ★ Lifetime NVAR Top Producer
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Bottom Legal & Accolades Strip Matching Screenshot 1 */}
-        <div className="footer-white-bottom" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "20px", paddingTop: "28px", borderTop: "1px solid #E2E8F0" }}>
-          <div className="footer-white-copy" style={{ color: "var(--ink-500)", fontSize: "0.85rem" }}>
-            © 2026 Elena Gorbounova • homesalesfairfax.com • RE/MAX Allegiance
-          </div>
-          
-          {/* Screenshot 1: Centered Accolades Logo */}
-          <div style={{ textAlign: "center" }}>
-            <img
-              src="/images/elena-accolades.png"
-              alt="Elena Gorbounova - 2026 Five Star Real Estate Agent & America's Top 100 Top 1%"
-              style={{ height: "46px", width: "auto", display: "inline-block" }}
-            />
+        {/* Minimal Bottom Bar: Clean & Uncluttered */}
+        <div style={{
+          borderTop: "1px solid #E2E8F0",
+          paddingTop: "24px",
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          flexWrap: "wrap",
+          gap: "16px",
+          fontSize: "0.82rem",
+          color: "#94A3B8"
+        }}>
+          <div>
+            © 2026 Elena Gorbounova • homesalesfairfax.com • RE/MAX Allegiance. All Rights Reserved.
           </div>
 
-          <div className="footer-white-compliance" style={{ display: "flex", alignItems: "center", gap: "12px", fontSize: "0.82rem", color: "var(--ink-500)" }}>
-            {/* Equal Housing Logo SVG */}
-            <span className="compliance-badge-item" title="Equal Housing Opportunity" style={{ display: "inline-flex", alignItems: "center", gap: "4px" }}>
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
+            <span style={{ display: "inline-flex", alignItems: "center", gap: "5px" }}>
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                 <line x1="9" y1="12" x2="15" y2="12"></line>
                 <line x1="9" y1="16" x2="15" y2="16"></line>
               </svg>
-              <span>Equal Housing</span>
+              <span>Equal Housing Opportunity</span>
             </span>
-            <span className="compliance-dot">•</span>
+            <span>•</span>
             <span>Bright MLS IDX</span>
-            <span className="compliance-dot">•</span>
-            <span>NVAR Top Producer</span>
+            <span>•</span>
+            <span>Virginia Licensed REALTOR®</span>
           </div>
         </div>
+
       </div>
     </footer>
   );

@@ -122,8 +122,112 @@ export default function TestimonialsPage() {
         </div>
       </section>
 
+      {/* Trust & Accolades Hero Section (Exact Match to User Reference) */}
+      <section className="container" style={{ maxWidth: "1100px", padding: "48px 20px 20px" }}>
+        <div style={{
+          background: "#FFFFFF",
+          border: "1px solid var(--ink-200)",
+          borderRadius: "16px",
+          padding: "36px 32px",
+          boxShadow: "var(--shadow-card)",
+          display: "grid",
+          gridTemplateColumns: "1.3fr 1fr",
+          gap: "40px",
+          alignItems: "center"
+        }}>
+          {/* Left Column: Transparency statement & Official Accolades Badges */}
+          <div>
+            <h2 style={{ fontSize: "1.75rem", fontWeight: 800, color: "var(--ink-950)", letterSpacing: "-0.02em", marginBottom: "8px" }}>
+              I'm all ears / Full Transparency &amp; Accountability
+            </h2>
+            <p style={{ fontSize: "1.02rem", color: "var(--ink-700)", lineHeight: 1.65, marginBottom: "28px" }}>
+              I welcome all of your feedback! This is an opportunity to tell the world about your experience working with me.
+            </p>
+
+            {/* Official 2026 Five Star & America's Top 100 Badge */}
+            <div style={{
+              background: "#F8FAFC",
+              border: "1px solid var(--ink-200)",
+              borderRadius: "12px",
+              padding: "20px 24px",
+              display: "flex",
+              alignItems: "center",
+              gap: "20px",
+              flexWrap: "wrap"
+            }}>
+              <img 
+                src="/images/elena-accolades.png" 
+                alt="2026 Five Star Real Estate Agent and America's Top 100 Real Estate Agents Top 1% - Elena Gorbounova" 
+                style={{
+                  height: "90px",
+                  width: "auto",
+                  objectFit: "contain",
+                  maxWidth: "100%"
+                }}
+              />
+              <div style={{ flex: 1, minWidth: "200px" }}>
+                <span style={{ fontSize: "0.78rem", color: "var(--accent-gold)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", display: "block" }}>
+                  Verified Professional Excellence
+                </span>
+                <strong style={{ fontSize: "1rem", color: "var(--ink-950)", display: "block", marginTop: "2px" }}>
+                  2026 Five Star Real Estate Agent
+                </strong>
+                <span style={{ fontSize: "0.84rem", color: "var(--ink-600)" }}>
+                  Winner 2021 • 2022 • 2023 • 2024 • 2025 • 2026
+                </span>
+                <div style={{ fontSize: "0.82rem", color: "var(--status-active)", fontWeight: 700, marginTop: "4px" }}>
+                  ★ America's Top 100 Top 1% Real Estate Agents
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Column: Elena's Portrait Card */}
+          <div style={{
+            background: "#FFFFFF",
+            border: "1px solid var(--ink-200)",
+            borderRadius: "14px",
+            overflow: "hidden",
+            boxShadow: "0 10px 25px -5px rgba(0, 0, 0, 0.08)",
+            textAlign: "center",
+            maxWidth: "340px",
+            margin: "0 auto"
+          }}>
+            <div style={{ height: "340px", overflow: "hidden", background: "#F1F5F9", position: "relative" }}>
+              <img 
+                src="/images/elena-portrait.jpg" 
+                alt="Elena Gorbounova - RE/MAX Allegiance"
+                style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center" }}
+              />
+            </div>
+            
+            <div style={{ background: "#0F4C81", color: "#FFFFFF", padding: "16px 14px" }}>
+              <h3 style={{ fontSize: "1.25rem", fontWeight: 800, margin: "0 0 4px", color: "#FFFFFF" }}>
+                Elena Gorbounova
+              </h3>
+              <p style={{ fontSize: "0.82rem", color: "#E0F2FE", margin: 0, fontWeight: 600 }}>
+                Your Northern Virginia &amp; Skyline Expert
+              </p>
+            </div>
+
+            <div style={{ padding: "14px 18px", background: "#0F172A", color: "#CBD5E1", fontSize: "0.82rem", lineHeight: 1.5 }}>
+              400+ properties sold. 21+ years of local expertise. Hire Elena &amp; Kirill to list your property and command top dollar.
+              <div style={{ marginTop: "10px" }}>
+                <Link 
+                  href="/sell"
+                  className="btn btn-primary"
+                  style={{ width: "100%", padding: "8px 12px", fontSize: "0.82rem", fontWeight: 700, background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A" }}
+                >
+                  Book Listing Consultation &rarr;
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Main Directory Section */}
-      <section className="container" style={{ padding: "50px 20px 90px" }}>
+      <section className="container" style={{ padding: "30px 20px 90px" }}>
         <TestimonialsDirectory />
       </section>
 

@@ -15,31 +15,58 @@ export default function AgentAuthority({ onOpenTourModal }) {
               overflow: "hidden",
               boxShadow: "var(--shadow-card)",
               border: "1px solid var(--ink-200)",
-              minHeight: "420px",
-              background: "var(--ink-950)"
+              background: "#F8FAFC"
             }}>
-              <img 
-                src="/images/hero-estate.jpg"
-                alt="Fairfax County Luxury Real Estate - Elena Gorbounova"
-                style={{ width: "100%", height: "100%", minHeight: "420px", objectFit: "cover", display: "block", opacity: 0.88 }}
-                loading="lazy"
-              />
+              <div style={{ height: "440px", overflow: "hidden", position: "relative", background: "#F1F5F9" }}>
+                <img 
+                  src="/images/elena-portrait.jpg"
+                  alt="Elena Gorbounova - Top 1% REALTOR® in Northern Virginia"
+                  style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "top center", display: "block" }}
+                  loading="lazy"
+                />
+                <div style={{
+                  position: "absolute",
+                  bottom: 0,
+                  left: 0,
+                  right: 0,
+                  background: "linear-gradient(180deg, transparent 0%, rgba(15, 23, 42, 0.94) 100%)",
+                  padding: "24px 22px",
+                  color: "#FFFFFF"
+                }}>
+                  <span style={{ fontSize: "0.75rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em" }}>
+                    Leadership &amp; Client Representation
+                  </span>
+                  <h4 style={{ color: "#FFFFFF", fontSize: "1.45rem", margin: "4px 0", fontWeight: 800 }}>Elena Gorbounova</h4>
+                  <p style={{ color: "#E2E8F0", fontSize: "0.86rem", margin: 0 }}>
+                    RE/MAX Allegiance • Your Skyline Connection • 400+ Properties Sold
+                  </p>
+                </div>
+              </div>
+
+              {/* Accolades Badge Strip beneath portrait */}
               <div style={{
-                position: "absolute",
-                bottom: 0,
-                left: 0,
-                right: 0,
-                background: "linear-gradient(180deg, transparent 0%, rgba(11, 15, 25, 0.94) 100%)",
-                padding: "26px",
-                color: "#FFFFFF"
+                background: "#FFFFFF",
+                padding: "16px 20px",
+                borderTop: "1px solid var(--ink-200)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "space-between",
+                gap: "12px",
+                flexWrap: "wrap"
               }}>
-                <span style={{ fontSize: "0.75rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.06em" }}>
-                  Leadership &amp; Client Representation
-                </span>
-                <h4 style={{ color: "#FFFFFF", fontSize: "1.45rem", margin: "4px 0", fontWeight: 800 }}>Elena Gorbounova</h4>
-                <p style={{ color: "#E5E7EB", fontSize: "0.86rem", margin: 0 }}>
-                  RE/MAX Allegiance • YSC Real Estate Group • Northern Virginia
-                </p>
+                <img 
+                  src="/images/elena-accolades.png" 
+                  alt="2026 Five Star Real Estate Agent & America's Top 100 Real Estate Agents Top 1%" 
+                  style={{ height: "54px", width: "auto", objectFit: "contain" }}
+                />
+                <div style={{ textAlign: "right" }}>
+                  <strong style={{ fontSize: "0.82rem", color: "var(--ink-950)", display: "block" }}>
+                    Top 1% Nationwide
+                  </strong>
+                  <span style={{ fontSize: "0.76rem", color: "var(--status-active)", fontWeight: 700 }}>
+                    Lifetime NVAR Top Producer
+                  </span>
+                </div>
               </div>
             </div>
           </div>
@@ -47,29 +74,29 @@ export default function AgentAuthority({ onOpenTourModal }) {
           <div>
             <span className="section-pretitle">Direct Local Representation</span>
             <h2 className="section-title-bold">
-              Real Estate Built on Trust, <br />Not Sales Pressure.
+              Why Sellers Hire Elena &amp; Kirill <br />to List Their Properties.
             </h2>
             <p style={{ marginBottom: "16px", color: "var(--ink-600)", fontSize: "0.98rem", lineHeight: "1.7" }}>
-              Buying or selling a home is a major step. You deserve clear guidance at every stage. Elena brings deep Northern Virginia experience, honest pricing, and fast answers.
+              Selling a property in Northern Virginia is a major financial milestone. Achieving top dollar comes down to strategic pricing, high-end 4K HDR presentation, and aggressive fiduciary negotiation.
             </p>
             <p style={{ marginBottom: "26px", color: "var(--ink-600)", fontSize: "0.98rem", lineHeight: "1.7" }}>
-              When you reach out, you speak directly with Elena. You will never deal with call centers, pushy sales reps, or junior assistants. From your first private showing to the closing table, your goals always come first.
+              When you hire Elena Gorbounova and Kirill, you work directly with veteran top producers who have closed over 400 transactions with 21+ years of local mastery. You will never deal with call centers or junior assistants. From our initial in-home pricing walkthrough to the closing table, your net proceeds always come first.
             </p>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "28px" }}>
-              <div style={{ borderLeft: "3px solid var(--ink-950)", paddingLeft: "14px" }}>
-                <strong style={{ display: "block", color: "var(--ink-950)", fontSize: "1rem" }}>Private Home Tours</strong>
-                <span style={{ fontSize: "0.85rem", color: "var(--ink-500)" }}>Tour on your schedule with zero sales pressure</span>
+              <div style={{ borderLeft: "3px solid var(--accent-gold)", paddingLeft: "14px" }}>
+                <strong style={{ display: "block", color: "var(--ink-950)", fontSize: "1rem" }}>Cinema 4K Marketing</strong>
+                <span style={{ fontSize: "0.85rem", color: "var(--ink-500)" }}>Architectural drone footage and professional interior staging</span>
               </div>
-              <div style={{ borderLeft: "3px solid var(--ink-950)", paddingLeft: "14px" }}>
-                <strong style={{ display: "block", color: "var(--ink-950)", fontSize: "1rem" }}>Strong Negotiation</strong>
-                <span style={{ fontSize: "0.85rem", color: "var(--ink-500)" }}>Protecting your equity with clean contract terms</span>
+              <div style={{ borderLeft: "3px solid var(--accent-gold)", paddingLeft: "14px" }}>
+                <strong style={{ display: "block", color: "var(--ink-950)", fontSize: "1rem" }}>Fierce Contract Defense</strong>
+                <span style={{ fontSize: "0.85rem", color: "var(--ink-500)" }}>Defending your equity with tight contingency waivers</span>
               </div>
             </div>
 
             <div style={{ display: "flex", gap: "14px", flexWrap: "wrap", alignItems: "center" }}>
               <a href="#sell" className="btn-capsule-black" style={{ padding: "12px 24px" }}>
-                Plan Your Sale
+                Book In-Home Listing Appointment
               </a>
               <a href="tel:7036257888" className="btn-card-ask">
                 Call Us: (703) 625-7888

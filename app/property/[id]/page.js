@@ -49,11 +49,11 @@ export default function PropertyDetailPage({ params }) {
           </div>
 
           <div>
-            <div style={{ fontSize: "2.4rem", fontWeight: 800, color: "var(--ink-950)", textAlign: "right" }}>
-              {property.priceFormatted}
+            <div style={{ fontSize: "1.5rem", fontWeight: 800, color: "var(--ink-950)", textAlign: "right" }}>
+              Price Upon Request
             </div>
             <span style={{ fontSize: "0.85rem", color: "var(--accent-gold)", fontWeight: 700, display: "block", textAlign: "right" }}>
-              {property.pricePerSqft}
+              Contact Elena &amp; Kirill for Details &amp; Showing
             </span>
           </div>
         </div>

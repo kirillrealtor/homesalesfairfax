@@ -113,7 +113,7 @@ export default function MortgageCalculatorPage() {
             </div>
 
             <div style={{ background: "var(--bg-subtle)", padding: "16px", borderRadius: "var(--radius-sm)", fontSize: "0.85rem", color: "var(--ink-600)" }}>
-              💡 Fairfax County standard real estate tax rate is set at $1.06 per $100 of assessed value.
+              💡 Fairfax County standard real estate tax rate is approximately 1.06% of assessed value.
             </div>
           </div>
 

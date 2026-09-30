@@ -21,19 +21,19 @@ export const metadata = {
 
 export default function MarketReportPage() {
   const countyMetrics = [
-    { label: "Fairfax Median Sold", value: "$885,000", change: "+5.2% YoY", sub: "All Property Types" },
+    { label: "Market Momentum", value: "Severe Seller Favor", change: "+5.2% YoY Growth", sub: "All Property Types" },
     { label: "Average Absorption", value: "9 Days", change: "Fast Absorption", sub: "Single Family & Townhomes" },
     { label: "Sale-to-List Ratio", value: "102.3%", change: "Competitive Multiple Offers", sub: "Countywide Average" },
     { label: "Available Inventory", value: "1.1 Months", change: "Severe Seller Market", sub: "Active Bright MLS Supply" },
   ];
 
   const recentClosedSales = [
-    { address: "9214 Barkwood Ct", neighborhood: "Mantua (22031)", soldPrice: "$1,085,000", listPrice: "$1,049,000", days: "5 Days", specs: "5b / 4ba • 3,450 sqft" },
-    { address: "3110 Plantation Dr", neighborhood: "Mosby Woods (22030)", soldPrice: "$895,000", listPrice: "$865,000", days: "5 Days", specs: "4b / 3ba • 2,540 sqft" },
-    { address: "12902 Tranquility Ln", neighborhood: "Franklin Farm (22033)", soldPrice: "$980,000", listPrice: "$945,000", days: "5 Days", specs: "5b / 4.5ba • 3,420 sqft" },
-    { address: "5104 Commonwealth Blvd", neighborhood: "Kings Park West (22032)", soldPrice: "$875,000", listPrice: "$850,000", days: "6 Days", specs: "5b / 3ba • 2,680 sqft" },
-    { address: "2910 District Ave #402", neighborhood: "Mosaic District (22031)", soldPrice: "$925,000", listPrice: "$915,000", days: "7 Days", specs: "4b / 3.5ba • 2,850 sqft" },
-    { address: "3412 Jermantown Rd", neighborhood: "Oakton (22124)", soldPrice: "$1,890,000", listPrice: "$1,850,000", days: "10 Days", specs: "6b / 6.5ba • 5,800 sqft" },
+    { address: "9214 Barkwood Ct", neighborhood: "Mantua (22031)", status: "Settled Bright MLS", days: "5 Days", specs: "5b / 4ba • 3,450 sqft", ratio: "103.4% of list" },
+    { address: "3110 Plantation Dr", neighborhood: "Mosby Woods (22030)", status: "Settled Bright MLS", days: "5 Days", specs: "4b / 3ba • 2,540 sqft", ratio: "103.2% of list" },
+    { address: "12902 Tranquility Ln", neighborhood: "Franklin Farm (22033)", status: "Settled Bright MLS", days: "5 Days", specs: "5b / 4.5ba • 3,420 sqft", ratio: "102.8% of list" },
+    { address: "5104 Commonwealth Blvd", neighborhood: "Kings Park West (22032)", status: "Settled Bright MLS", days: "6 Days", specs: "5b / 3ba • 2,680 sqft", ratio: "102.9% of list" },
+    { address: "2910 District Ave #402", neighborhood: "Mosaic District (22031)", status: "Settled Bright MLS", days: "7 Days", specs: "4b / 3.5ba • 2,850 sqft", ratio: "101.1% of list" },
+    { address: "3412 Jermantown Rd", neighborhood: "Oakton (22124)", status: "Settled Bright MLS", days: "10 Days", specs: "6b / 6.5ba • 5,800 sqft", ratio: "102.2% of list" },
   ];
 
   return (
@@ -102,8 +102,8 @@ export default function MarketReportPage() {
                   Woodson High School pyramid, wooded half-acre lots, swim &amp; tennis club, and active buyer demand.
                 </p>
                 <div style={{ marginBottom: "18px" }}>
-                  <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>Median Sold Price</span>
-                  <div style={{ fontSize: "1.85rem", fontWeight: 800, color: "var(--ink-950)" }}>$995,000</div>
+                  <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>Market Velocity</span>
+                  <div style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--status-active)" }}>High Seller Favor</div>
                   <span style={{ fontSize: "0.82rem", color: "var(--status-active)", fontWeight: 700 }}>102.8% Sale-to-List</span>
                 </div>
               </div>
@@ -130,8 +130,8 @@ export default function MarketReportPage() {
                   Fairfax City location, Daniels Run &amp; Fairfax High, walk to Old Town and Vienna Metro corridor.
                 </p>
                 <div style={{ marginBottom: "18px" }}>
-                  <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>Median Sold Price</span>
-                  <div style={{ fontSize: "1.85rem", fontWeight: 800, color: "var(--ink-950)" }}>$865,000</div>
+                  <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>Market Velocity</span>
+                  <div style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--status-active)" }}>High Seller Favor</div>
                   <span style={{ fontSize: "0.82rem", color: "var(--status-active)", fontWeight: 700 }}>103.2% Sale-to-List</span>
                 </div>
               </div>
@@ -158,8 +158,8 @@ export default function MarketReportPage() {
                   Oakton &amp; Chantilly pyramids, 6 community fishing ponds, 13 miles of trails, and shopping village.
                 </p>
                 <div style={{ marginBottom: "18px" }}>
-                  <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>Median Sold Price</span>
-                  <div style={{ fontSize: "1.85rem", fontWeight: 800, color: "var(--ink-950)" }}>$935,000</div>
+                  <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>Market Velocity</span>
+                  <div style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--status-active)" }}>High Seller Favor</div>
                   <span style={{ fontSize: "0.82rem", color: "var(--status-active)", fontWeight: 700 }}>102.5% Sale-to-List</span>
                 </div>
               </div>
@@ -186,8 +186,8 @@ export default function MarketReportPage() {
                   Robinson Secondary IB pyramid, Lake Royal trails, 3 swim clubs, and George Mason University corridor.
                 </p>
                 <div style={{ marginBottom: "18px" }}>
-                  <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>Median Sold Price</span>
-                  <div style={{ fontSize: "1.85rem", fontWeight: 800, color: "var(--ink-950)" }}>$825,000</div>
+                  <span style={{ fontSize: "0.78rem", color: "var(--ink-500)", textTransform: "uppercase", fontWeight: 700 }}>Market Velocity</span>
+                  <div style={{ fontSize: "1.45rem", fontWeight: 800, color: "var(--status-active)" }}>High Seller Favor</div>
                   <span style={{ fontSize: "0.82rem", color: "var(--status-active)", fontWeight: 700 }}>101.9% Sale-to-List</span>
                 </div>
               </div>
@@ -268,8 +268,8 @@ export default function MarketReportPage() {
                 <tr style={{ borderBottom: "1.5px solid var(--ink-200)", color: "var(--ink-500)", textTransform: "uppercase", fontSize: "0.74rem", letterSpacing: "0.05em" }}>
                   <th style={{ padding: "12px 14px" }}>Address</th>
                   <th style={{ padding: "12px 14px" }}>Neighborhood &amp; ZIP</th>
-                  <th style={{ padding: "12px 14px" }}>List Price</th>
-                  <th style={{ padding: "12px 14px" }}>Closed Price</th>
+                  <th style={{ padding: "12px 14px" }}>MLS Settlement Record</th>
+                  <th style={{ padding: "12px 14px" }}>Equity Result</th>
                   <th style={{ padding: "12px 14px" }}>DOM</th>
                   <th style={{ padding: "12px 14px" }}>Specs</th>
                 </tr>
@@ -279,8 +279,10 @@ export default function MarketReportPage() {
                   <tr key={i} style={{ borderBottom: "1px solid var(--ink-100)" }}>
                     <td style={{ padding: "16px 14px", fontWeight: 700, color: "var(--ink-950)" }}>{sale.address}</td>
                     <td style={{ padding: "16px 14px", color: "var(--ink-700)" }}>{sale.neighborhood}</td>
-                    <td style={{ padding: "16px 14px", color: "var(--ink-500)", textDecoration: "line-through" }}>{sale.listPrice}</td>
-                    <td style={{ padding: "16px 14px", fontWeight: 800, color: "var(--ink-950)", fontSize: "1.05rem" }}>{sale.soldPrice}</td>
+                    <td style={{ padding: "16px 14px" }}>
+                      <span style={{ fontWeight: 700, color: "var(--status-active)" }}>Verified Settled Bright MLS</span>
+                    </td>
+                    <td style={{ padding: "16px 14px", fontWeight: 800, color: "var(--ink-950)", fontSize: "1rem" }}>{sale.ratio}</td>
                     <td style={{ padding: "16px 14px", color: "var(--status-active)", fontWeight: 700 }}>{sale.days}</td>
                     <td style={{ padding: "16px 14px", color: "var(--ink-600)" }}>{sale.specs}</td>
                   </tr>
