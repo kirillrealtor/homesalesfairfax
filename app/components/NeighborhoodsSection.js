@@ -315,9 +315,9 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
             <Link href="/communities/country-club-hills" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Country Club Hills</Link>,{" "}
             <Link href="/divisions/fairfax-county" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Fairfax County</Link>,{" "}
             <Link href="/divisions/arlington-county" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Arlington County</Link>,{" "}
-            <Link href="/communities/vienna-wolftrap" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Vienna</Link>,{" "}
+            <Link href="/communities/vienna" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Vienna</Link>,{" "}
             <Link href="/communities/mosaic-district" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Mosaic District</Link>, and{" "}
-            <Link href="/divisions/alexandria-city" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Alexandria</Link>.
+            <Link href="/divisions/city-of-alexandria" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Alexandria</Link>.
           </div>
 
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", borderTop: "1px solid var(--ink-100)", paddingTop: "12px" }}>

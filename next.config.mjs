@@ -19,7 +19,17 @@ const nextConfig = {
       },
       {
         source: '/subdivisions/city-of-alexandria',
-        destination: '/divisions/alexandria-city',
+        destination: '/divisions/city-of-alexandria',
+        permanent: true,
+      },
+      {
+        source: '/divisions/alexandria-city',
+        destination: '/divisions/city-of-alexandria',
+        permanent: true,
+      },
+      {
+        source: '/communities/vienna-wolftrap',
+        destination: '/communities/vienna',
         permanent: true,
       },
       {

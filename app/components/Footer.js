@@ -154,7 +154,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/divisions/alexandria-city" style={{ color: "#475569", textDecoration: "none" }}>
+                <Link href="/divisions/city-of-alexandria" style={{ color: "#475569", textDecoration: "none" }}>
                   City of Alexandria Division
                 </Link>
               </li>
