@@ -4,7 +4,7 @@ import Link from "next/link";
 import { VIRGINIA_SUBDIVISIONS } from "../data/virginiaDivisions";
 
 export const metadata = {
-  title: "Virginia Subdivisions Real Estate Guide | Sell Your Home with Elena & Kirill",
+  title: "Virginia Subdivisions Directory | Fairfax & Northern VA",
   description: "Browse high-demand Northern Virginia subdivisions including Mantua, Mosby Woods, Franklin Farm, Kings Park West, Burke Centre, Oakton, and Reston. Recent sales comps and top listing agent representation.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/subdivisions",

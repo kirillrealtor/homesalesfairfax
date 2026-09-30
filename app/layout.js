@@ -3,12 +3,12 @@ import QuickContactDock from "./components/QuickContactDock";
 
 export const metadata = {
   metadataBase: new URL("https://www.homesalesfairfax.com"),
-  title: "Fairfax VA Homes For Sale | Showing Tours & Top Producer Listings | homesalesfairfax.com",
+  title: "Fairfax VA Homes For Sale | Top Listings & Showing Tours",
   description: "Browse active Fairfax County, Virginia homes for sale directly from Bright MLS. Book instant private showing tours and in-home seller listing consultations with Elena.",
   keywords: "Fairfax VA homes for sale, Fairfax real estate, sell my home Fairfax, showing agents Fairfax, Mosaic District townhomes, Oakton luxury homes, Burke real estate, Elena Gorbounova, Northern Virginia real estate",
   authors: [{ name: "homesalesfairfax.com" }],
   openGraph: {
-    title: "Fairfax VA Homes For Sale | Showing Tours & Top Producer Listings",
+    title: "Fairfax VA Homes For Sale | Top Listings & Showing Tours",
     description: "Browse active Fairfax County VA real estate, book private showing tours in minutes, and schedule in-home seller listing consultations with Elena.",
     url: "https://www.homesalesfairfax.com",
     siteName: "homesalesfairfax.com",

@@ -21,14 +21,16 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const pageTitle = `${community.name}, VA Real Estate Guide`;
+
   return {
-    title: `${community.name}, VA Real Estate & Homes | History, Market Comps & Guide`,
+    title: pageTitle,
     description: `Comprehensive 2026 real estate & neighborhood guide for ${community.name}, ${community.cityState}. Settled comps, history, architectural styles, ${community.schools}, and representation with Elena Gorbounova.`,
     alternates: {
       canonical: `https://www.homesalesfairfax.com/communities/${community.slug}`,
     },
     openGraph: {
-      title: `${community.name} Real Estate & History | Fairfax County Guide`,
+      title: pageTitle,
       description: community.heroHeadline,
       url: `https://www.homesalesfairfax.com/communities/${community.slug}`,
       siteName: "homesalesfairfax.com",

@@ -4,7 +4,7 @@ import Link from "next/link";
 import { VIRGINIA_DIVISIONS, VIRGINIA_SUBDIVISIONS } from "../data/virginiaDivisions";
 
 export const metadata = {
-  title: "Virginia Real Estate Divisions & Subdivisions | List Your Home with Elena & Kirill",
+  title: "Virginia Real Estate Divisions & Counties | Regional Guides",
   description: "Comprehensive guide to Virginia real estate divisions and subdivisions across Fairfax County, City of Fairfax, Arlington, Alexandria, and Loudoun. Hire Northern Virginia's top listing team to sell for top dollar.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/divisions",

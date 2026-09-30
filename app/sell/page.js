@@ -7,7 +7,7 @@ import Link from "next/link";
 import { VIRGINIA_DIVISIONS, VIRGINIA_SUBDIVISIONS } from "../data/virginiaDivisions";
 
 export const metadata = {
-  title: "Hire Northern Virginia Top Listing Agents | Sell for Top Dollar | homesalesfairfax.com",
+  title: "Sell Your Fairfax Home for Top Dollar | Elena Gorbounova",
   description: "Hire Elena Gorbounova & Kirill to list your Northern Virginia home. 400+ properties sold, 102.8% average list-to-sale ratio, 5.2 days DOM. Book your in-home listing consultation today.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/sell",

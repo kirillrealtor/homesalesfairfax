@@ -2,13 +2,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Contact Elena Gorbounova & Kirill | Fairfax VA Real Estate Team",
+  title: "Contact Elena Gorbounova & Kirill | Fairfax Real Estate",
   description: "Connect directly with top producer Elena Gorbounova (RE/MAX Allegiance) for in-home seller listing appointments, private showing tours, and local market valuations.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/contact",
   },
   openGraph: {
-    title: "Contact Elena Gorbounova & Kirill | Fairfax VA Real Estate Team",
+    title: "Contact Elena Gorbounova & Kirill | Fairfax Real Estate",
     description: "Direct mobile phone, SMS, and email contact channels for top producer Elena Gorbounova and Kirill.",
     url: "https://www.homesalesfairfax.com/contact",
     siteName: "homesalesfairfax.com",

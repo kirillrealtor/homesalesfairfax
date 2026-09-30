@@ -4,7 +4,7 @@ import HomeValuationTool from "../components/HomeValuationTool";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Fairfax Home Valuation | Instant Market Value & Pricing Estimate | homesalesfairfax.com",
+  title: "Fairfax Home Valuation | Instant Value & Equity Estimate",
   description: "Get an instant computational home valuation for your Fairfax County property based on recent Bright MLS comparable sales with Elena.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/home-valuation",

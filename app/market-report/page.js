@@ -4,7 +4,7 @@ import Link from "next/link";
 import { ZIP_CODE_SUMMARIES, NEIGHBORHOOD_REPORTS } from "../data/neighborhoodReports";
 
 export const metadata = {
-  title: "Fairfax VA Real Estate Market Report & ZIP Code Comps (22030–22033)",
+  title: "Fairfax VA Real Estate Market Report & Comps (22030–22033)",
   description: "Live 2026 Fairfax County real estate market reports by ZIP code (22030, 22031, 22032, 22033) and high-turnover neighborhoods (Mantua, Mosby Woods, Franklin Farm, Kings Park West).",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/market-report",

@@ -21,14 +21,16 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const pageTitle = `${division.name}, VA Real Estate Guide`;
+
   return {
-    title: `${division.name}, VA Real Estate Guide | History, Top Subdivisions & Specialist`,
+    title: pageTitle,
     description: `Comprehensive real estate & community guide for ${division.fullName}. Settled comps, history, top school pyramids, subdivisions directory, and listing representation with Elena Gorbounova.`,
     alternates: {
       canonical: `https://www.homesalesfairfax.com/divisions/${division.slug}`,
     },
     openGraph: {
-      title: `${division.name} Real Estate & History Guide | Elena & Kirill`,
+      title: pageTitle,
       description: division.subheadline,
       url: `https://www.homesalesfairfax.com/divisions/${division.slug}`,
       siteName: "homesalesfairfax.com",

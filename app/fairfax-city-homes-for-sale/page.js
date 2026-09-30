@@ -4,7 +4,7 @@ import { FAIRFAX_LISTINGS } from "../data/listings";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Fairfax City VA Homes For Sale | 22030 Real Estate & Listings | homesalesfairfax.com",
+  title: "Fairfax City VA Homes For Sale | 22030 Real Estate Guide",
   description: "Explore active homes for sale in Fairfax City, VA (ZIP 22030). Single family estates, Woodson & Fairfax school pyramids, and private tour booking with Elena.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/fairfax-city-homes-for-sale",

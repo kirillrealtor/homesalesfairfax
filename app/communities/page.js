@@ -4,13 +4,13 @@ import Link from "next/link";
 import CommunitiesDirectory from "../components/CommunitiesDirectory";
 
 export const metadata = {
-  title: "Fairfax County & Northern Virginia Communities | Elena Gorbounova",
+  title: "Fairfax County & Northern VA Communities | Area Guides",
   description: "Explore premier communities and subdivisions across Fairfax County, VA. Settled comps, market reports, and luxury residences in Mantua, Mosby Woods, Franklin Farm, Oakton, and beyond.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/communities",
   },
   openGraph: {
-    title: "Fairfax County & Northern Virginia Communities | Elena Gorbounova",
+    title: "Fairfax County & Northern VA Communities | Area Guides",
     description: "Discover high-turnover subdivisions, luxury acreage estates, and vibrant town centers across Fairfax County.",
     url: "https://www.homesalesfairfax.com/communities",
     siteName: "homesalesfairfax.com",

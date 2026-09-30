@@ -13,7 +13,7 @@ export async function generateMetadata({ params }) {
 
   if (!property) {
     return {
-      title: "Fairfax VA Property | Showing Tours & Top Producer Listings",
+      title: "Fairfax Property | Showing Tours & Top Listings",
       description: "Explore active Fairfax County Virginia real estate listings with Elena Gorbounova and Kirill.",
       alternates: {
         canonical: "https://www.homesalesfairfax.com",
@@ -21,7 +21,8 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const title = `${property.address}, ${property.city}, VA ${property.zip} | ${property.neighborhood} Homes For Sale`;
+  const cleanCity = property.city.includes("/") ? property.city.split("/")[0].trim() : property.city;
+  const title = `${property.address}, ${cleanCity} VA | Homes For Sale`;
   const description = `${property.title}: ${property.beds} Bed, ${property.baths} Bath, ${property.sqft.toLocaleString()} SqFt ${property.propertyType} in ${property.neighborhood}, ${property.city} VA. Schedule a private showing tour with Elena & Kirill.`;
 
   return {

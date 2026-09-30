@@ -1,13 +1,13 @@
 import AboutPage from "../about/page";
 
 export const metadata = {
-  title: "Elena Gorbounova (LL.M., MCNE®) | Top 1% Northern Virginia Real Estate Broker",
+  title: "Elena Gorbounova, LL.M. | Top 1% Northern Virginia Realtor",
   description: "Learn about Elena Gorbounova, Associate Broker at RE/MAX Allegiance. 21+ years experience, Top 1% nationwide, MCNE® negotiation expert & legal scholar.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/about-elena",
   },
   openGraph: {
-    title: "Elena Gorbounova (LL.M., MCNE®) | Top 1% Northern Virginia Real Estate Broker",
+    title: "Elena Gorbounova, LL.M. | Top 1% Northern Virginia Realtor",
     description: "Legal precision, master negotiation, and 21+ years of dedicated market leadership across Fairfax County and Northern Virginia.",
     url: "https://www.homesalesfairfax.com/about-elena",
     siteName: "homesalesfairfax.com",
