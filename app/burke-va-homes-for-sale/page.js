@@ -4,11 +4,16 @@ import { FAIRFAX_LISTINGS } from "../data/listings";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Burke VA Homes For Sale | Lake Braddock Real Estate (22015)",
-  description: "Browse single family homes and townhomes in Burke, VA (ZIP 22015). Lake Braddock school district, Burke Centre VRE commuter station, and active listings.",
+  title: "Burke VA Homes For Sale | Houses & Real Estate in 22015",
+  description: "Browse active homes for sale in Burke, VA (ZIP 22015). Single-family houses, townhomes, Lake Braddock school pyramid, and Burke Centre VRE commuter access.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/burke-va-homes-for-sale",
   },
+  openGraph: {
+    title: "Burke VA Homes For Sale | Houses & Real Estate in 22015",
+    description: "Browse single family homes and townhomes in Burke, VA with top Fairfax real estate agents Elena & Kirill.",
+    url: "https://www.homesalesfairfax.com/burke-va-homes-for-sale",
+  }
 };
 
 export default function BurkeHomesPage() {
@@ -149,6 +154,26 @@ export default function BurkeHomesPage() {
           </Link>
         </div>
       </section>
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "RealEstateListing",
+            "name": "Burke VA Homes For Sale",
+            "description": "Active homes for sale and real estate listings in Burke, VA (ZIP 22015).",
+            "url": "https://www.homesalesfairfax.com/burke-va-homes-for-sale",
+            "broker": {
+              "@type": "RealEstateAgent",
+              "name": "Elena Gorbounova & Kirill",
+              "telephone": "(703) 625-7888",
+              "url": "https://www.homesalesfairfax.com"
+            }
+          })
+        }}
+      />
 
       <Footer />
     </main>

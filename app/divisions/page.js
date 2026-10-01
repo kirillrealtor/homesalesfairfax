@@ -347,6 +347,21 @@ export default function DivisionsPage() {
         </div>
       </section>
 
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Virginia Real Estate Divisions & Counties",
+            "description": "Comprehensive guide to Virginia real estate divisions and counties across Northern Virginia.",
+            "url": "https://www.homesalesfairfax.com/divisions",
+            "itemListOrder": "https://schema.org/ItemListUnordered"
+          })
+        }}
+      />
+
       <Footer />
     </main>
   );

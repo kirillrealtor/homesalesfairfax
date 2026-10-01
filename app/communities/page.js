@@ -131,6 +131,21 @@ export default function CommunitiesPage() {
         </div>
       </section>
 
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Fairfax County & Northern VA Communities",
+            "description": "Directory of premier communities and subdivisions across Fairfax County, VA.",
+            "url": "https://www.homesalesfairfax.com/communities",
+            "itemListOrder": "https://schema.org/ItemListUnordered"
+          })
+        }}
+      />
+
       <Footer />
     </main>
   );

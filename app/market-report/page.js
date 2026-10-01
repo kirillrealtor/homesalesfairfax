@@ -4,8 +4,8 @@ import Link from "next/link";
 import { ZIP_CODE_SUMMARIES, NEIGHBORHOOD_REPORTS } from "../data/neighborhoodReports";
 
 export const metadata = {
-  title: "Fairfax VA Real Estate Market Report & Comps (22030–22033)",
-  description: "Live 2026 Fairfax County real estate market reports by ZIP code (22030, 22031, 22032, 22033) and high-turnover neighborhoods (Mantua, Mosby Woods, Franklin Farm, Kings Park West).",
+  title: "Fairfax VA Real Estate Market Report & Comps | Housing Market 2026",
+  description: "Access the live Fairfax real estate market report and recent sales comps across Fairfax County ZIP codes (22030, 22031, 22032, 22033) and high-demand subdivisions.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/market-report",
   },
@@ -335,6 +335,26 @@ export default function MarketReportPage() {
           </div>
         </div>
       </section>
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Report",
+            "name": "Fairfax VA Real Estate Market Report 2026",
+            "description": "Comprehensive hyper-local real estate market report and sales comps for Fairfax County, VA.",
+            "url": "https://www.homesalesfairfax.com/market-report",
+            "publisher": {
+              "@type": "RealEstateAgent",
+              "name": "Elena Gorbounova & Kirill",
+              "telephone": "(703) 625-7888",
+              "url": "https://www.homesalesfairfax.com"
+            }
+          })
+        }}
+      />
 
       <Footer />
     </main>

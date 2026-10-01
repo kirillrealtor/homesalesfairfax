@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const pageTitle = `${sub.name}, VA Subdivision Guide`;
+  const pageTitle = `${sub.name} Homes For Sale & Real Estate | ${sub.city} VA Guide`;
 
   return {
     title: pageTitle,

@@ -2,14 +2,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 export const metadata = {
-  title: "Contact Elena Gorbounova & Kirill | Fairfax Real Estate",
-  description: "Connect directly with top producer Elena Gorbounova (RE/MAX Allegiance) for in-home seller listing appointments, private showing tours, and local market valuations.",
+  title: "Contact Top Fairfax Real Estate Agents | Elena Gorbounova & Kirill",
+  description: "Connect with top realtors in Fairfax VA Elena Gorbounova & Kirill (RE/MAX Allegiance). Schedule in-home seller consultations, private property tours, and home valuations.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/contact",
   },
   openGraph: {
-    title: "Contact Elena Gorbounova & Kirill | Fairfax Real Estate",
-    description: "Direct mobile phone, SMS, and email contact channels for top producer Elena Gorbounova and Kirill.",
+    title: "Contact Top Fairfax Real Estate Agents | Elena Gorbounova & Kirill",
+    description: "Direct phone, SMS, and consultation booking with top 1% Fairfax real estate agents Elena Gorbounova & Kirill.",
     url: "https://www.homesalesfairfax.com/contact",
     siteName: "homesalesfairfax.com",
     locale: "en_US",
@@ -176,6 +176,33 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            "name": "Contact Elena Gorbounova & Kirill",
+            "url": "https://www.homesalesfairfax.com/contact",
+            "mainEntity": {
+              "@type": "RealEstateAgent",
+              "name": "Elena Gorbounova & Kirill - RE/MAX Allegiance",
+              "telephone": "+1-703-625-7888",
+              "email": "ElenaYSC@gmail.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "5100 Leesburg Pike, Suite 200",
+                "addressLocality": "Alexandria",
+                "addressRegion": "VA",
+                "postalCode": "22302",
+                "addressCountry": "US"
+              }
+            }
+          })
+        }}
+      />
 
       <Footer />
     </main>

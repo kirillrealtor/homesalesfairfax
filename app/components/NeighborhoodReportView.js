@@ -364,6 +364,26 @@ export default function NeighborhoodReportView({ data }) {
         </div>
       </section>
 
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Report",
+            "name": `${data.name} Real Estate & Market Report`,
+            "description": data.metaDescription,
+            "url": `https://www.homesalesfairfax.com/${data.slug}`,
+            "publisher": {
+              "@type": "RealEstateAgent",
+              "name": "Elena Gorbounova & Kirill",
+              "telephone": "(703) 625-7888",
+              "url": "https://www.homesalesfairfax.com"
+            }
+          })
+        }}
+      />
+
       <Footer />
 
       <ShowingModal 

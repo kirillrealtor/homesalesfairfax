@@ -7,13 +7,13 @@ import Link from "next/link";
 import { VIRGINIA_DIVISIONS, VIRGINIA_SUBDIVISIONS } from "../data/virginiaDivisions";
 
 export const metadata = {
-  title: "Sell Your Fairfax Home for Top Dollar | Elena Gorbounova",
-  description: "Hire Elena Gorbounova & Kirill to list your Northern Virginia home. 400+ properties sold, 102.8% average list-to-sale ratio, 5.2 days DOM. Book your in-home listing consultation today.",
+  title: "Sell Home Fairfax VA | Top Listing Agent & Home Equity Strategy",
+  description: "Looking to sell your home in Fairfax VA? Elena Gorbounova & Kirill provide 102.8% sale-to-list ratio, 5 days on market, 4K HDR media, and master contract defense.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/sell",
   },
   openGraph: {
-    title: "Hire Northern Virginia's Top Listing Team | Elena & Kirill",
+    title: "Sell Home Fairfax VA | Top Listing Agent & Home Equity Strategy",
     description: "Sell your home for top dollar with professional staging, 4K HDR media, pre-approved buyer matching, and seasoned contract defense.",
     url: "https://www.homesalesfairfax.com/sell",
     siteName: "homesalesfairfax.com",
@@ -242,6 +242,36 @@ export default function SellPage() {
           ))}
         </div>
       </section>
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "FAQPage",
+                "mainEntity": sellerFaqs.map(f => ({
+                  "@type": "Question",
+                  "name": f.q,
+                  "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": f.a
+                  }
+                }))
+              },
+              {
+                "@type": "RealEstateAgent",
+                "name": "Elena Gorbounova & Kirill - Top Fairfax Listing Team",
+                "url": "https://www.homesalesfairfax.com/sell",
+                "telephone": "(703) 625-7888",
+                "priceRange": "$$$$"
+              }
+            ]
+          })
+        }}
+      />
 
       <Footer />
     </main>

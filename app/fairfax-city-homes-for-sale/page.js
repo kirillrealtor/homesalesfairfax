@@ -4,8 +4,8 @@ import { FAIRFAX_LISTINGS } from "../data/listings";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Fairfax City VA Homes For Sale | 22030 Real Estate Guide",
-  description: "Explore active homes for sale in Fairfax City, VA (ZIP 22030). Single family estates, Woodson & Fairfax school pyramids, and private tour booking with Elena.",
+  title: "Houses For Sale Fairfax City Virginia | 22030 Real Estate & Homes",
+  description: "Browse houses for sale in Fairfax City, Virginia (ZIP 22030). Historic colonials, single-family homes, Woodson & Fairfax school pyramids with Elena & Kirill.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/fairfax-city-homes-for-sale",
   },
@@ -21,24 +21,26 @@ export default function FairfaxCityPage() {
       </div>
       
       <section className="container" style={{ padding: "40px 20px 20px", textAlign: "center", maxWidth: "860px" }}>
-        <span className="section-pretitle">Fairfax City Real Estate Guide</span>
+        <span className="section-pretitle">Fairfax City Real Estate &amp; Neighborhood Guide</span>
         <h1 className="hero-title-main" style={{ fontSize: "3.2rem", margin: "10px auto 16px" }}>
-          Fairfax City, VA Homes For Sale
+          Houses For Sale in Fairfax City, Virginia
         </h1>
         <p className="hero-subtitle-clean" style={{ maxWidth: "700px" }}>
-          A local guide to living, buying, and selling in historic Fairfax City (ZIP 22030). Quiet neighborhoods, top-rated schools, and private home tours.
+          Your local guide to buying and selling real estate in Fairfax City, VA (ZIP 22030). Explore active MLS listings, historic Old Town living, top-tier schools, and private home tours.
         </p>
       </section>
 
       <section className="content-section" style={{ background: "#FFFFFF", borderTop: "1px solid var(--ink-200)", borderBottom: "1px solid var(--ink-200)" }}>
         <div className="container">
           <div style={{ maxWidth: "860px", margin: "0 auto 48px" }}>
-            <h2 className="section-title-bold" style={{ fontSize: "2rem", marginBottom: "16px" }}>Why Homebuyers Choose Fairfax City</h2>
+            <h2 className="section-title-bold" style={{ fontSize: "2rem", marginBottom: "16px" }}>
+              Fairfax City Real Estate &amp; Lifestyle Highlights
+            </h2>
             <p style={{ marginBottom: "18px", color: "var(--ink-700)", lineHeight: "1.7" }}>
-              Fairfax City offers a wonderful blend of small-town charm and modern convenience. Residents enjoy historic Old Town dining, community festivals, and easy commutes to Washington, D.C. and Tysons Corner.
+              Searching for <strong>houses for sale Fairfax City Virginia</strong>? Fairfax City offers a unique combination of independent municipal efficiency, historic small-town charm, and rapid commuter connectivity to Washington, D.C. and Tysons Corner. 
             </p>
             <p style={{ marginBottom: "20px", color: "var(--ink-700)", lineHeight: "1.7" }}>
-              Fairfax City features charming colonials, updated ramblers, and modern luxury estates near George Mason University and the Orange Line Metro, commanding high seller equity and rapid absorption.
+              Whether you are shopping for detached <strong>homes for sale in Fairfax City</strong> near Old Town Square or evaluating current <strong>real estate Fairfax City VA</strong> market trends near George Mason University, homes in neighborhoods like Mosby Woods and Country Club Hills command high equity appreciation and rapid sales velocity.
             </p>
 
             <div style={{ background: "var(--bg-subtle)", padding: "28px", borderRadius: "var(--radius-md)", borderLeft: "4px solid var(--accent-gold)", margin: "32px 0" }}>
@@ -178,6 +180,26 @@ export default function FairfaxCityPage() {
           </div>
         </div>
       </section>
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "RealEstateListing",
+            "name": "Houses For Sale Fairfax City Virginia",
+            "description": "Active homes for sale and real estate in Fairfax City, VA (ZIP 22030).",
+            "url": "https://www.homesalesfairfax.com/fairfax-city-homes-for-sale",
+            "broker": {
+              "@type": "RealEstateAgent",
+              "name": "Elena Gorbounova & Kirill",
+              "telephone": "(703) 625-7888",
+              "url": "https://www.homesalesfairfax.com"
+            }
+          })
+        }}
+      />
 
       <Footer />
     </main>

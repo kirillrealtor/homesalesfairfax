@@ -3,14 +3,14 @@ import Footer from "../components/Footer";
 import Link from "next/link";
 
 export const metadata = {
-  title: "About Elena Gorbounova | Top 1% REALTOR® & Broker Associate",
-  description: "Meet Elena Gorbounova (LL.M., MCNE): Top 1% Northern Virginia Broker Associate with RE/MAX Allegiance. 400+ properties sold and 21+ years of local mastery.",
+  title: "Fairfax Real Estate Agents | Elena Gorbounova & Kirill | REALTORS® in Fairfax VA",
+  description: "Looking for top Fairfax real estate agents? Elena Gorbounova (LL.M., MCNE) and Kirill are premier realtors in Fairfax VA with 21+ years of mastery and 400+ sold properties.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/about",
   },
   openGraph: {
-    title: "About Elena Gorbounova | Top 1% REALTOR® & Broker Associate",
-    description: "Legal precision, master negotiation, and 21+ years of dedicated market leadership across Fairfax County and Northern Virginia.",
+    title: "Fairfax Real Estate Agents | Elena Gorbounova & Kirill | Top REALTORS®",
+    description: "Ranked among America's Top 100 Real Estate Agents. Elena Gorbounova & Kirill provide master fiduciary advocacy across Fairfax County.",
     url: "https://www.homesalesfairfax.com/about",
     siteName: "homesalesfairfax.com",
     locale: "en_US",
@@ -20,14 +20,14 @@ export const metadata = {
         url: "https://www.homesalesfairfax.com/images/elena-portrait.jpg",
         width: 1100,
         height: 1380,
-        alt: "Elena Gorbounova - RE/MAX Allegiance Broker Associate",
+        alt: "Elena Gorbounova - Top Real Estate Agent Fairfax VA",
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "About Elena Gorbounova | Top 1% REALTOR® & Broker Associate",
-    description: "Meet Elena Gorbounova (LL.M., MCNE): Top 1% Northern Virginia Broker Associate with RE/MAX Allegiance. 400+ properties sold and 21+ years of local mastery.",
+    title: "Fairfax Real Estate Agents | Elena Gorbounova & Kirill",
+    description: "Top 1% Northern Virginia Broker Associate with RE/MAX Allegiance. 400+ properties sold across Fairfax County.",
     images: ["https://www.homesalesfairfax.com/images/elena-portrait.jpg"],
   }
 };
@@ -375,7 +375,7 @@ export default function AboutPage() {
               textTransform: "uppercase",
               marginBottom: "14px"
             }}>
-              Executive Profile &amp; Practice Philosophy
+              Top-Ranked Fairfax Real Estate Agents • Executive Profile
             </div>
 
             <h1 style={{
@@ -397,7 +397,7 @@ export default function AboutPage() {
               marginBottom: "28px",
               lineHeight: 1.45
             }}>
-              Master of Laws (LL.M.) • Broker Associate • Master Certified Negotiation Expert (MCNE) • RE/MAX Hall of Fame
+              Premier REALTOR® in Fairfax VA • Master of Laws (LL.M.) • Broker Associate • Master Certified Negotiation Expert (MCNE) • RE/MAX Hall of Fame
             </p>
 
             {/* Cortazzo 3-Dot Minimalist Divider */}

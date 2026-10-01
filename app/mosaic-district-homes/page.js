@@ -4,11 +4,16 @@ import { FAIRFAX_LISTINGS } from "../data/listings";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Mosaic District Homes & Condos | Merrifield Fairfax VA",
-  description: "Browse luxury townhomes and condos in Mosaic District, Merrifield VA (ZIP 22031). Walk to Dunn Loring Metro, boutique shopping, and dining with Elena.",
+  title: "Mosaic District Condos & Townhomes | Merrifield Fairfax VA 22031",
+  description: "Browse luxury townhomes and condos for sale in Mosaic District, Merrifield VA (ZIP 22031). Walk to Dunn Loring Metro, Angelika Film Center, and private showings.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/mosaic-district-homes",
   },
+  openGraph: {
+    title: "Mosaic District Condos & Townhomes | Merrifield Fairfax VA",
+    description: "Browse luxury brownstones and condominiums in Mosaic District, Fairfax VA with Elena Gorbounova & Kirill.",
+    url: "https://www.homesalesfairfax.com/mosaic-district-homes",
+  }
 };
 
 export default function MosaicDistrictPage() {
@@ -168,6 +173,26 @@ export default function MosaicDistrictPage() {
           </div>
         </div>
       </section>
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "RealEstateListing",
+            "name": "Mosaic District Condos & Townhomes",
+            "description": "Active townhomes and condominiums for sale in Mosaic District, Merrifield, Fairfax VA (ZIP 22031).",
+            "url": "https://www.homesalesfairfax.com/mosaic-district-homes",
+            "broker": {
+              "@type": "RealEstateAgent",
+              "name": "Elena Gorbounova & Kirill",
+              "telephone": "(703) 625-7888",
+              "url": "https://www.homesalesfairfax.com"
+            }
+          })
+        }}
+      />
 
       <Footer />
     </main>

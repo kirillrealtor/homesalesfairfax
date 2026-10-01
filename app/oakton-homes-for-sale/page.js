@@ -4,8 +4,8 @@ import { FAIRFAX_LISTINGS } from "../data/listings";
 import Link from "next/link";
 
 export const metadata = {
-  title: "Oakton VA Luxury Homes For Sale | 22124 Real Estate",
-  description: "Browse luxury single-family homes, custom estates, and acre properties in Oakton, VA (ZIP 22124). Oakton High School pyramid and private showings.",
+  title: "Houses For Sale Oakton VA | Homes For Sale in Oakton 22124",
+  description: "Browse houses for sale in Oakton, VA (ZIP 22124) and homes for sale in Oakton VA. Luxury acreage estates, Oakton High School pyramid, and private broker showings.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/oakton-homes-for-sale",
   },
@@ -22,10 +22,10 @@ export default function OaktonHomesPage() {
 
       <section className="container" style={{ padding: "40px 20px 80px" }}>
         <div className="section-head-clean">
-          <span className="section-pretitle">Fairfax Luxury Communities</span>
-          <h1 className="section-title-bold">Oakton, VA Luxury Homes For Sale</h1>
+          <span className="section-pretitle">Fairfax County Luxury Real Estate</span>
+          <h1 className="section-title-bold">Houses For Sale in Oakton, VA</h1>
           <p className="section-lead-text">
-            Private wooded lots, top-rated schools, and quick access to Tysons Corner and Vienna Metro.
+            Explore active homes for sale in Oakton VA (ZIP 22124). Private wooded acre lots, custom luxury manors, top-rated Oakton High School pyramid, and swift access to Tysons Corner and Vienna Metro.
           </p>
         </div>
 
@@ -149,6 +149,26 @@ export default function OaktonHomesPage() {
           </Link>
         </div>
       </section>
+
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "RealEstateListing",
+            "name": "Houses For Sale Oakton VA",
+            "description": "Active homes for sale and luxury acreage estates in Oakton, VA (ZIP 22124).",
+            "url": "https://www.homesalesfairfax.com/oakton-homes-for-sale",
+            "broker": {
+              "@type": "RealEstateAgent",
+              "name": "Elena Gorbounova & Kirill",
+              "telephone": "(703) 625-7888",
+              "url": "https://www.homesalesfairfax.com"
+            }
+          })
+        }}
+      />
 
       <Footer />
     </main>

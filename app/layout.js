@@ -3,13 +3,13 @@ import QuickContactDock from "./components/QuickContactDock";
 
 export const metadata = {
   metadataBase: new URL("https://www.homesalesfairfax.com"),
-  title: "Fairfax VA Homes For Sale | Top Listings & Showing Tours",
-  description: "Browse active Fairfax County, Virginia homes for sale directly from Bright MLS. Book instant private showing tours and in-home seller listing consultations with Elena.",
-  keywords: "Fairfax VA homes for sale, Fairfax real estate, sell my home Fairfax, showing agents Fairfax, Mosaic District townhomes, Oakton luxury homes, Burke real estate, Elena Gorbounova, Northern Virginia real estate",
+  title: "Fairfax VA House For Sale | Single Family Homes & MLS Listings",
+  description: "Browse single family homes for sale in Fairfax VA and houses for sale across Fairfax County directly from Bright MLS. Private showings with top Fairfax real estate agents Elena & Kirill.",
+  keywords: "single family homes for sale in fairfax va, fairfax va house for sale, house for sale in fairfax virginia, fairfax station homes for sale, fairfax condos for sale, fairfax real estate agents, realtors in fairfax, Elena Gorbounova, Northern Virginia real estate",
   authors: [{ name: "homesalesfairfax.com" }],
   openGraph: {
-    title: "Fairfax VA Homes For Sale | Top Listings & Showing Tours",
-    description: "Browse active Fairfax County VA real estate, book private showing tours in minutes, and schedule in-home seller listing consultations with Elena.",
+    title: "Fairfax VA House For Sale | Single Family Homes & MLS Listings",
+    description: "Browse single family homes and houses for sale across Fairfax County VA. Schedule private showings and instant valuations with Elena Gorbounova & Kirill.",
     url: "https://www.homesalesfairfax.com",
     siteName: "homesalesfairfax.com",
     images: [
@@ -17,7 +17,7 @@ export const metadata = {
         url: "/images/hero-estate.jpg",
         width: 1200,
         height: 630,
-        alt: "Luxury Homes For Sale in Fairfax Virginia"
+        alt: "Houses For Sale in Fairfax Virginia"
       }
     ],
     locale: "en_US",

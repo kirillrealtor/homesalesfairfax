@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const pageTitle = `${community.name}, VA Community Guide`;
+  const pageTitle = `${community.name} VA Homes For Sale & Real Estate Guide`;
 
   return {
     title: pageTitle,

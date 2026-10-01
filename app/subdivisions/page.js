@@ -242,6 +242,21 @@ export default function SubdivisionsIndexPage() {
         </div>
       </section>
 
+      {/* JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "name": "Virginia Subdivisions Directory",
+            "description": "High-demand Northern Virginia subdivisions and neighborhoods directory.",
+            "url": "https://www.homesalesfairfax.com/subdivisions",
+            "itemListOrder": "https://schema.org/ItemListUnordered"
+          })
+        }}
+      />
+
       <Footer />
     </main>
   );

@@ -239,6 +239,51 @@ export default function Footer() {
           flexDirection: "column",
           gap: "18px"
         }}>
+          {/* High-Intent Northern Virginia Property Guides Strip */}
+          <div>
+            <span style={{ fontSize: "0.75rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--accent-gold)", display: "block", marginBottom: "8px" }}>
+              Targeted MLS Property Guides:
+            </span>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 14px", fontSize: "0.82rem" }}>
+              <Link href="/fairfax-city-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Fairfax City Houses For Sale
+              </Link>
+              <Link href="/fairfax-station-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Fairfax Station Homes For Sale
+              </Link>
+              <Link href="/springfield-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Springfield VA Homes For Sale
+              </Link>
+              <Link href="/falls-church-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Falls Church VA Houses For Sale
+              </Link>
+              <Link href="/great-falls-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Great Falls VA Luxury Estates
+              </Link>
+              <Link href="/chantilly-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Chantilly VA Homes For Sale
+              </Link>
+              <Link href="/fairfax-condos-townhomes" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Fairfax Condos &amp; Townhomes
+              </Link>
+              <Link href="/arlington-va-condos-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Arlington VA Condos For Sale
+              </Link>
+              <Link href="/reston-va-townhomes-condos" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Reston &amp; Herndon Townhomes
+              </Link>
+              <Link href="/alexandria-va-townhomes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Alexandria Townhomes &amp; Condos
+              </Link>
+              <Link href="/oakton-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Oakton Houses For Sale
+              </Link>
+              <Link href="/burke-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Burke VA Real Estate
+              </Link>
+            </div>
+          </div>
+
           {/* All 16 Communities Strip */}
           <div>
             <span style={{ fontSize: "0.75rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--ink-500)", display: "block", marginBottom: "8px" }}>

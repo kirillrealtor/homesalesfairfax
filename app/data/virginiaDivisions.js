@@ -17,7 +17,7 @@ export const VIRGINIA_DIVISIONS = [
     "priceChangeYoY": "+6.4%",
     "annualClosedSales": "14,200+",
     "sellerDemandIndex": "Extreme Seller Favor (1.1 Months Inventory)",
-    "description": "Fairfax County is the residential and commercial cornerstone of Northern Virginia. Spanning from McLean along the Potomac River to master-planned communities like Franklin Farm and Burke Centre, Fairfax County draws an uninterrupted flow of affluent corporate executives, defense contractors, and healthcare leaders. Homes priced accurately and marketed with high-end media consistently command multi-offer escalation addenda.",
+    "description": "Fairfax County is the residential and commercial cornerstone of Northern Virginia. Spanning from McLean along the Potomac River to master-planned communities like Franklin Farm and Burke Centre, Fairfax County draws an uninterrupted flow of affluent corporate executives, defense contractors, and healthcare leaders. Homeowners and buyers frequently research the Fairfax County zoning map, zoning Fairfax County guidelines, and the Fairfax County GIS map to explore lot additions, accessory dwelling units, and school pyramids. Whether you are researching the best elementary schools in Fairfax County VA, searching the Fairfax County register of deeds, or comparing Fairfax City vs Fairfax County, properties priced accurately and marketed with high-end media consistently command multi-offer escalation addenda.",
     "historyHeadline": "Colonial Land Patents, Founding Fathers & Northern Virginia's Economic Center",
     "history": "Fairfax County was established in 1742 from Prince William County, named in honor of Thomas Fairfax, 6th Lord Fairfax of Cameron, who inherited the massive 5-million-acre Northern Neck proprietary land grant from King Charles II. Throughout the 18th century, Fairfax County was the intellectual and political crucible of the American Revolution. George Washington surveyed its forests and made his permanent home at Mount Vernon along the Potomac River. His close friend and neighbor, George Mason of Gunston Hall, penned the landmark Virginia Declaration of Rights in 1776—the foundational document that directly inspired Thomas Jefferson's Declaration of Independence and James Madison's United States Bill of Rights.\n\nDuring the American Civil War, Fairfax County was fiercely contested terrain lying on the border between the Union capital of Washington and the Confederate capital of Richmond. Historic turnpikes, including Little River Turnpike and Ox Road, saw heavy troop movements, skirmishes, and the Battle of Chantilly (Ox Hill) in 1862. In the 20th century, the opening of Washington Dulles International Airport in 1962, the expansion of the Capital Beltway (I-495), and the growth of the federal government transformed Fairfax County from a landscape of dairy farms and apple orchards into a premier international economic engine, home to high-technology corridors, defense headquarters, and one of the nation's most acclaimed public school systems.",
     "interestingFacts": [
@@ -149,6 +149,22 @@ export const VIRGINIA_DIVISIONS = [
       {
         "question": "When is the best time to list a home in Fairfax County?",
         "answer": "While the early spring market (February through May) traditionally sees high buyer volume, Northern Virginia's robust tech and government employment creates strong buyer demand year-round. Tight inventory in autumn and winter often produces multiple-offer bidding wars due to scarce competition."
+      },
+      {
+        "question": "How do I check the Fairfax County zoning map and zoning regulations for my property?",
+        "answer": "Homeowners and buyers can consult the official Fairfax County zoning map and GIS mapping portal to determine residential zoning classifications (such as R-1, R-2, R-3, or commercial/mixed-use). Understanding zoning Fairfax County regulations is critical for evaluating ADU (accessory dwelling unit) additions, setback allowances, home businesses, and lot subdividing potential."
+      },
+      {
+        "question": "Where can I search Fairfax County register of deeds and land records?",
+        "answer": "Fairfax County register of deeds and land records are officially maintained through the Fairfax County Circuit Court Land Records Division. As licensed Northern Virginia listing brokers, Elena & Kirill pull official title deeds, boundary plats, easements, and historical liens prior to listing to ensure a clean, frictionless settlement."
+      },
+      {
+        "question": "What are the best elementary schools in Fairfax County VA and how do boundary locators work?",
+        "answer": "Top-ranked public elementary schools in Fairfax County include Mantua Elementary (Woodson pyramid), Colvin Run Elementary, Haycock Elementary, Chesterbrook Elementary, and Oakton Elementary. Parents and buyers use the Fairfax County boundary locator to verify exact school assignments, as boundary reviews can impact local property valuations."
+      },
+      {
+        "question": "Fairfax City vs. Fairfax County: What is the key distinction for real estate?",
+        "answer": "While geographically adjacent, the City of Fairfax is an independent, sovereign municipality, whereas Fairfax County is a county division. City residents pay independent municipal taxes and receive city-managed utilities and transit (CUE bus), with zero secondary county tax. Both jurisdictions share acclaimed public school standards and rapid commuter access."
       }
     ]
   },
@@ -167,7 +183,7 @@ export const VIRGINIA_DIVISIONS = [
     "priceChangeYoY": "+7.1%",
     "annualClosedSales": "850+",
     "sellerDemandIndex": "Critical Inventory Shortage (0.9 Months Supply)",
-    "description": "The City of Fairfax is an independent, sovereign municipality surrounded by Fairfax County. It offers unique civic advantages including independent real estate tax rates, municipal trash and leaf vacuuming, and the dedicated Fairfax City CUE Bus transit system. Featuring cherished enclaves like Mosby Woods, Country Club Hills, and historic Old Town, properties here experience exceptional absorption velocity from buyers seeking suburban lots with urban accessibility.",
+    "description": "The City of Fairfax is an independent, sovereign municipality surrounded by Fairfax County. It offers unique civic advantages governed by the City of Fairfax zoning ordinance, independent real estate tax rates, municipal trash and leaf vacuuming, and the dedicated Fairfax City CUE Bus transit system. Regulated by City of Fairfax zoning and City of Fairfax inspections, and enriched by exceptional City of Fairfax Parks & Recreation facilities, cherished enclaves like Mosby Woods, Country Club Hills, and historic Old Town experience exceptional absorption velocity from buyers seeking suburban lots with urban accessibility.",
     "historyHeadline": "The Town of Providence, The Historic 1800 Courthouse & Sovereign Municipal Charter",
     "history": "The City of Fairfax traces its heritage to 1805, when it was chartered as the Town of Providence by the Virginia General Assembly. Its establishment centered on the construction of the historic Fairfax County Courthouse in 1799–1800 at the strategic intersection of the Little River Turnpike (one of America's first engineered paved toll roads) and Ox Road. For generations, Providence was the judicial and trading center for Northern Virginia farmers shipping flour, cider, and tobacco to deepwater wharves in Alexandria.\n\nDuring the Civil War, the courthouse grounds witnessed intense military action, including the Battle of Fairfax Court House on June 1, 1861—the first land engagement of the war involving casualties. In March 1863, Confederate partisan ranger John S. Mosby executed his famous stealth raid on the town, capturing Union Brigadier General Edwin H. Stoughton from his bed without firing a shot. In 1961, the community took the historic step of separating from Fairfax County to incorporate as an independent, self-governing city under Virginia law. Today, the City of Fairfax preserves its 19th-century brick architecture, historic taverns, and tree-lined avenues while operating its own municipal services, schools, and civic festivals.",
     "interestingFacts": [
@@ -233,6 +249,14 @@ export const VIRGINIA_DIVISIONS = [
       {
         "question": "How fast do homes sell in the City of Fairfax?",
         "answer": "Homes in neighborhoods like Mosby Woods and Country Club Hills currently sell in an average of 5 days, frequently receiving multi-offer bids over the opening weekend."
+      },
+      {
+        "question": "How does the City of Fairfax zoning ordinance and zoning regulations work?",
+        "answer": "The City of Fairfax operates under its own municipal City of Fairfax zoning ordinance, completely distinct from Fairfax County zoning. This governs residential lot coverage, historic district architectural reviews in Old Town, building heights, and commercial revitalization corridors. When remodeling or adding square footage, City of Fairfax inspections and permits are processed directly through City Hall."
+      },
+      {
+        "question": "What amenities are provided by City of Fairfax Parks & Recreation?",
+        "answer": "City of Fairfax Parks & Recreation oversees over 250 acres of public parkland, including Van Dyck Park, historic Ashby Pond Conservatory, community splash pads in Old Town Square, and direct connections to the scenic George Johnson and Accotink trails."
       }
     ]
   },
@@ -251,7 +275,7 @@ export const VIRGINIA_DIVISIONS = [
     "priceChangeYoY": "+5.8%",
     "annualClosedSales": "3,100+",
     "sellerDemandIndex": "High Velocity (1.3 Months Supply)",
-    "description": "Bordering the Potomac River and Washington, D.C., Arlington County is one of the most affluent and dense real estate markets in the United States. Featuring iconic urban villages like Clarendon, Ballston, and Rosslyn, along with leafy residential enclaves in North Arlington and Fairlington, properties here attract prime buyers seeking top-ranked public schools and instant commutes into D.C., the Pentagon, and National Landing.",
+    "description": "Bordering the Potomac River and Washington, D.C., Arlington County is one of the most affluent and dense real estate markets in the United States. Featuring iconic urban villages like Clarendon, Ballston, and Rosslyn, along with leafy residential enclaves mapped out in the Arlington County neighborhood map, properties here attract prime buyers seeking top Arlington County middle schools, rapid access to the Arlington County Circuit Court VA, and instant commutes into D.C., the Pentagon, and National Landing.",
     "historyHeadline": "D.C. Retrocession, The Robert E. Lee Custis Estate & The Nerve Center of American Defense",
     "history": "Arlington County possesses one of the most remarkable jurisdictional histories in the United States. Originally inhabited by Algonquian-speaking Native Americans along the Potomac riverbanks, the land was included in the 10-mile-square federal district surveyed in 1791 by Andrew Ellicott and Benjamin Banneker to form Washington D.C., known then as Alexandria County of the District of Columbia. In 1846, following economic and political petitions by local residents, the United States Congress officially retroceded the entire parcel south of the Potomac back to the Commonwealth of Virginia.\n\nIn 1920, the county was officially renamed Arlington County in tribute to Arlington House—the historic neoclassic mansion constructed by Martha Washington's grandson, George Washington Parke Custis, which later became the home of General Robert E. Lee. During the Civil War, the Union Army fortified the high bluffs overlooking Washington, and in 1864, Quartermaster General Montgomery Meigs established Arlington National Cemetery on the estate grounds. During World War II, the rapid construction of the Pentagon (completed in 1943) established Arlington as the military command capital of the free world. In recent decades, visionary urban transit planning along the Rosslyn-Ballston and Jefferson Davis corridors transformed Arlington into a global model for smart transit-oriented development.",
     "interestingFacts": [
@@ -316,6 +340,18 @@ export const VIRGINIA_DIVISIONS = [
       {
         "question": "Can I sell my Arlington home with a post-occupancy rent-back?",
         "answer": "Yes! In today's competitive seller's market, we routinely negotiate complimentary 30 to 60-day post-settlement occupancy (rent-back) agreements, allowing you to collect your sale proceeds and smoothly transition into your next residence."
+      },
+      {
+        "question": "How do Arlington County Virginia property records and assessments affect market value?",
+        "answer": "Arlington County property records and annual tax assessments establish the municipality's tax baseline, but active market value typically exceeds county assessments due to severe inventory constraints and competitive buyer escalation. We analyze recent settled sales to capture top-dollar market value."
+      },
+      {
+        "question": "What are the top Arlington County middle schools and how do school boundaries work?",
+        "answer": "Acclaimed Arlington County middle schools include Swanson Middle School, Williamsburg Middle School, Kenmore Middle School (STEAM Focus), and Dorothy Hamm Middle School. Buyers consult the Arlington County neighborhood map to verify school attendance zones across North and South Arlington."
+      },
+      {
+        "question": "Where is the Arlington County Circuit Court VA located and how does it handle deed recording?",
+        "answer": "The Arlington County Circuit Court VA is located at the Arlington County Justice Center (1425 N Courthouse Rd). The Land Records Division within the Clerk of Court records all property deeds, liens, and title transfers for Arlington real estate transactions."
       }
     ]
   },
@@ -334,7 +370,7 @@ export const VIRGINIA_DIVISIONS = [
     "priceChangeYoY": "+5.2%",
     "annualClosedSales": "2,600+",
     "sellerDemandIndex": "Steady Seller Market (1.4 Months Supply)",
-    "description": "The City of Alexandria blends 18th-century cobblestone heritage with modern transit-oriented luxury living. Spanning the iconic Potomac waterfront, historic Old Town, Del Ray's vibrant arts avenue, and West End high-rise condominium towers (such as Northampton Place and the Skyline corridor), Alexandria draws discerning buyers seeking charm, culture, and immediate proximity to Reagan National Airport and Washington, D.C.",
+    "description": "The City of Alexandria blends 18th-century cobblestone heritage with modern transit-oriented luxury living. Spanning the iconic Potomac waterfront and the City of Alexandria marina, historic Old Town, Del Ray's vibrant arts avenue, and West End high-rise condominium towers (such as Northampton Place and the Skyline corridor), Alexandria draws discerning buyers seeking charm, culture, municipal City of Alexandria utilities, and immediate proximity to Reagan National Airport and Washington, D.C.",
     "historyHeadline": "1749 Scottish Seaport, George Washington's Hometown & Living Colonial Heritage",
     "history": "Founded in 1749 by Scottish merchants and licensed by the Virginia colonial assembly, Alexandria was surveyed in part by a 17-year-old apprentice surveyor named George Washington. Because of its deepwater harbor on the Potomac River, Alexandria rapidly expanded into one of the busiest and wealthiest seaports in colonial North America, exporting Virginia tobacco, grain, and timber across the Atlantic Ocean. George Washington maintained an intimate lifelong connection with Alexandria: he maintained a townhouse on Cameron Street, drilled his militia at Market Square, worshipped at Christ Church, and dined regularly with Thomas Jefferson and John Adams at Gadsby's Tavern.\n\nIn 1791, Alexandria was ceded to the federal government to form part of the new District of Columbia. However, feeling economically neglected by Congress and concerned over maritime shipping laws, Alexandria citizens voted in 1846 to retrocede back to Virginia. In 1946, Alexandria established America's third-oldest designated historic district in Old Town. Today, Alexandria seamlessly blends 18th-century cobblestone streets, gas lantern-lit alleyways, and rowhouses with a thriving international tech and culinary scene along the King Street Mile.",
     "interestingFacts": [
@@ -402,6 +438,18 @@ export const VIRGINIA_DIVISIONS = [
       {
         "question": "Why is Elena Gorbounova known as the top agent for Alexandria & Skyline condos?",
         "answer": "Elena has represented hundreds of buyers and sellers at Skyline Plaza, Skyline Square, Skyline City, and Northampton Place over two decades. Her granular knowledge of building bylaws, reserve studies, floor plans, and unit valuations ensures sellers achieve the highest price per square foot."
+      },
+      {
+        "question": "How do City of Alexandria real estate tax records and land records work?",
+        "answer": "Because Alexandria is an independent Virginia city, land records and real estate assessments are administered by the City of Alexandria rather than Fairfax County. Tax assessments are published annually, and our team cross-references city records with recent private MLS comps to price your property at the absolute market ceiling."
+      },
+      {
+        "question": "How do City of Alexandria utilities and services work for residents?",
+        "answer": "City of Alexandria utilities include municipal trash, leaf vacuuming, and recycling programs, with water provided by Virginia American Water and natural gas via Washington Gas. Electricity is served by Dominion Energy, and the city operates its own independent stormwater utility."
+      },
+      {
+        "question": "What waterfront amenities are offered at the City of Alexandria marina?",
+        "answer": "Located in historic Old Town along the Potomac River, the City of Alexandria marina provides commercial and recreational boat slips, direct water taxi service to Georgetown, The Wharf, and National Harbor, and front-row access to waterfront dining along Union Street."
       }
     ]
   },
@@ -420,7 +468,7 @@ export const VIRGINIA_DIVISIONS = [
     "priceChangeYoY": "+6.9%",
     "annualClosedSales": "6,800+",
     "sellerDemandIndex": "High Demand (1.2 Months Supply)",
-    "description": "Loudoun County is a global powerhouse of technology, data infrastructure, and affluent residential living. From premier master-planned communities like Broadlands, Brambleton, and South Riding in the east, to historic Leesburg and panoramic equestrian estates in Western Loudoun, this market attracts buyers with immense purchasing power. The Silver Line Metro expansion has accelerated buyer absorption across the Dulles corridor.",
+    "description": "Loudoun County is a global powerhouse of technology, data infrastructure, and affluent residential living. Whether searching for houses for sale loudoun county va, townhomes for sale in ashburn va, or luxury equestrian acreage in Leesburg, this market attracts buyers with immense purchasing power. From premier master-planned communities like Broadlands, Brambleton, and South Riding in the east, to historic Leesburg and panoramic Blue Ridge estates mapped in the Loudoun County GIS and parcel database, properties here benefit from low real estate tax rates and top-rated public school pyramids.",
     "historyHeadline": "1757 Colonial Farmland, Safe Haven for the U.S. Constitution & The Global Internet Hub",
     "history": "Loudoun County was created in 1757 from Fairfax County and named for John Campbell, 4th Earl of Loudoun, who served as Commander-in-Chief of British armed forces in North America during the French and Indian War. During the War of 1812, when British forces marched on Washington and burned the Capitol and White House, President James Madison fled to Loudoun County. State Department clerk Stephen Pleasonton evacuated the original Declaration of Independence and the United States Constitution to Leesburg, secretly hiding them in Rokeby House to preserve the foundational documents of the American republic.\n\nFor more than two centuries, Loudoun County was defined by its rolling agricultural hills, Quaker mill villages like historic Waterford, thoroughbred horse farms, and scenic views of the Blue Ridge Mountains. In the late 20th century, the opening of the Dulles Greenway, the arrival of America Online (AOL) headquarters, and the establishment of MAE-East (one of the original Internet backbone exchange points) triggered a revolutionary economic transformation. Today, eastern Loudoun County—known globally as \"Data Center Alley\"—processes the vast majority of the world's digital traffic, while western Loudoun preserves Virginia's premier horse and wine country.",
     "interestingFacts": [
@@ -482,6 +530,18 @@ export const VIRGINIA_DIVISIONS = [
       {
         "question": "How does the Dulles Tech Corridor impact home sales in Loudoun County?",
         "answer": "With Ashburn known as 'Data Center Alley' carrying over 70% of the world's internet traffic, Loudoun County attracts high-salary engineers and executives. These buyers prioritize move-in-ready homes with smart technology, dedicated home offices, and luxury finishes."
+      },
+      {
+        "question": "How do Loudoun County real estate tax and property assessments work?",
+        "answer": "Loudoun County real estate tax rates are historically among the most competitive in Northern Virginia, bolstered by commercial revenues from the Dulles tech corridor. Homeowners can verify their Loudoun County parcel database and house assessment records, but active market sales consistently outpace assessed values in high-demand enclaves like Ashburn, Brambleton, and Leesburg."
+      },
+      {
+        "question": "Are townhomes in Ashburn and Leesburg in high demand?",
+        "answer": "Yes! Townhomes for sale in Ashburn VA and townhouses in Leesburg sell rapidly—often within 5 to 7 days—driven by Silver Line Metro access, resort-style master HOA amenities, and proximity to major tech employers."
+      },
+      {
+        "question": "How do I search the Loudoun County GIS map and parcel database?",
+        "answer": "Homeowners and buyers utilize the Loudoun County GIS mapping portal (Loudoun County parcel database) to verify property boundaries, topography, floodplain layers, and parcel acreage. This is particularly valuable when assessing Western Loudoun equestrian acreage or Eastern Loudoun master-planned subdivisions."
       }
     ]
   },
@@ -500,7 +560,7 @@ export const VIRGINIA_DIVISIONS = [
     "priceChangeYoY": "+6.1%",
     "annualClosedSales": "5,900+",
     "sellerDemandIndex": "Fast Absorption (1.3 Months Supply)",
-    "description": "Prince William County offers an appealing combination of affordability, space, and community lifestyle in Northern Virginia. Featuring scenic waterfront neighborhoods in Lake Ridge along the Occoquan River, golf communities like Dominion Valley and Braemar, and easy commuter rail via the Virginia Railway Express (VRE), sellers here benefit from relentless buyer demand from D.C., Pentagon, and Fort Belvoir commuters.",
+    "description": "Prince William County offers an appealing combination of affordability, space, and community lifestyle in Northern Virginia. Whether searching for homes for sale in prince william county va, houses for sale in prince william county va, lots for sale in prince william county va, or townhomes in manassas va for sale, this market delivers exceptional square footage and value. Utilizing GIS Prince William County and the official Prince William County zoning map, buyers explore scenic waterfront neighborhoods in Lake Ridge along the Occoquan River, golf communities like Dominion Valley and Braemar, and rapid commuter rail via the Virginia Railway Express (VRE).",
     "historyHeadline": "Colonial Tobacco Ports, Historic Manassas Battlefields & Quantico Heritage",
     "history": "Prince William County was created in 1731 by the Virginia General Assembly, named in honor of Prince William, Duke of Cumberland. When originally chartered, it encompassed virtually all of Northern Virginia, later giving birth to Fairfax, Arlington, and Loudoun counties. The historic river port at Occoquan served as an industrial milling and shipping center along the Occoquan River, where inventor Oliver Evans built America's first automated commercial grist mill in the 1780s. Dumfries, chartered in 1749, rivaled New York and Boston as a primary tobacco export port on the Potomac.\n\nPrince William County holds profound significance in American military history as the site of two monumental Civil War clashes: the First Battle of Manassas (Bull Run) in July 1861—the first major land battle of the war—and the Second Battle of Manassas in August 1862. In 1917, the United States Marine Corps established Marine Barracks Quantico along the Potomac, which grew into the worldwide intellectual and tactical center of the Marine Corps. Today, Prince William County combines preserved national parks, historic river towns, and thriving suburban master plans offering premier equity value.",
     "interestingFacts": [
@@ -550,6 +610,18 @@ export const VIRGINIA_DIVISIONS = [
       {
         "question": "Why are buyers moving to Prince William County from closer-in suburbs?",
         "answer": "Buyers often seek larger lot sizes, modern square footage, and comprehensive HOA amenities that are harder to find at the same price point in Arlington or Fairfax. We highlight this value equation to maximize your listing's sales price."
+      },
+      {
+        "question": "How do Prince William County VA property tax and real estate assessments affect sellers?",
+        "answer": "Prince William County real estate tax assessments provide the baseline for annual county property taxes. When listing your home, we review Prince William County tax records and settled neighborhood comps to price for maximum buyer competition and multiple offers."
+      },
+      {
+        "question": "What are the most popular townhome communities in Prince William County?",
+        "answer": "Townhomes for sale in Manassas and Woodbridge, as well as townhome enclaves in Gainesville and Haymarket, are highly sought after by commuters seeking garage parking, commuter rail access (VRE), and modern open-concept floor plans."
+      },
+      {
+        "question": "How do I access GIS Prince William County and zoning maps?",
+        "answer": "Buyers and investors access GIS Prince William County and the official Prince William County zoning map through the county's interactive County Mapper tool. This allows you to inspect zoning boundaries, environmental resource protections, and acreage when searching for single-family homes or lots for sale in Prince William County VA."
       }
     ]
   }
@@ -576,7 +648,7 @@ export const VIRGINIA_SUBDIVISIONS = [
     "image": "/images/communities/mantua.jpg",
     "headline": "Sell Your Mantua Home for Top Dollar with Elena & Kirill",
     "sellerLeadSnippet": "Mantua is one of Fairfax County's most architecturally coveted neighborhoods. Wooded half-acre lots and the Woodson High School pyramid create intense multi-offer bidding wars for well-prepared listings.",
-    "overview": "Nestled within an enchanted forest canopy between Route 50 and Little River Turnpike, Mantua is acclaimed for custom mid-century modern split-levels, California ranches, and stately expanded colonials. With an active civic association, neighborhood swim club, and direct access to Accotink Creek trails, Mantua represents prime Fairfax County equity.",
+    "overview": "Nestled within an enchanted forest canopy between Route 50 and Little River Turnpike in Fairfax VA (ZIP 22031), Mantua is acclaimed for custom mid-century modern split-levels, California ranches, and stately expanded colonials. With high search interest for Mantua homes for sale and Mantua houses for sale, buyers seek out this neighborhood for the top-ranked Mantua Elementary School (Woodson High School pyramid), the Mantua Civic Association, the neighborhood Mantua Swim & Tennis Club, and direct access to Accotink Creek trails.",
     "historyHeadline": "From 18th-Century Accotink Farmland to Custom Mid-Century Architectural Enclave",
     "history": "Mantua’s roots extend to 18th-century colonial Virginia, named after the historic local estate that took its inspiration from Mantua, Italy. In the early 1950s, visionary builders collaborated with modernist architects to develop a wooded community that followed the natural contours of Accotink Creek. Instead of clearing the land, they nestled custom mid-century modern split-levels, California ranches, and contemporary post-and-beam homes beneath an ancient forest canopy. Today, Mantua is celebrated for its half-acre to full-acre lots, Woodson High School pyramid, and close-knit civic identity.",
     "interestingFacts": [
@@ -618,6 +690,14 @@ export const VIRGINIA_SUBDIVISIONS = [
       {
         "question": "What upgrades yield the highest return for Mantua sellers?",
         "answer": "Opening the kitchen into the dining area, refreshing original hardwood flooring, staging private rear wooded patios, and highlighting Woodson High School boundaries consistently generate maximum return on investment."
+      },
+      {
+        "question": "What are the boundaries and feeder schools for Mantua Elementary School?",
+        "answer": "Mantua Elementary School (located within Mantua at 9107 Horner Ct, Fairfax VA 22031) feeds directly into Frost Middle School and W.T. Woodson High School. It is recognized as one of the premier elementary schools in Fairfax County, hosting an Advanced Academic Program (AAP) center that consistently commands strong home valuation premiums."
+      },
+      {
+        "question": "What is the function of the Mantua Civic Association and neighborhood swim club?",
+        "answer": "The Mantua Civic Association is a voluntary community organization maintaining neighborhood parks, seasonal events, and civic representation with zero mandatory HOA fees. Residents also enjoy the private Mantua Swim & Tennis Club, which serves as a central social hub during summer months."
       }
     ]
   },
@@ -641,7 +721,7 @@ export const VIRGINIA_SUBDIVISIONS = [
     "image": "/images/communities/mosby-woods.jpg",
     "headline": "List Your Mosby Woods Home with Elena & Kirill",
     "sellerLeadSnippet": "Positioned 5 minutes from the Vienna Metro with 0% County tax in the City of Fairfax, Mosby Woods homes sell in just 5 days on market.",
-    "overview": "Centrally positioned between Route 123 and Route 29, Mosby Woods features signature builder models like the 'Hampshire' and 'Shenandoah' tri-levels, private community pool club, and walking access to Old Town Fairfax festivals, dining, and CUE bus transit.",
+    "overview": "Centrally positioned between Route 123 (Chain Bridge Rd) and Route 29 in the independent City of Fairfax (ZIP 22030), Mosby Woods features signature builder models like the 'Hampshire' and 'Shenandoah' tri-levels, the private Mosby Woods Community Pool, and walking access to Old Town Fairfax festivals, dining, Daniels Run parkland, and CUE bus transit directly to Vienna Metro. With zero Fairfax County real estate tax, Mosby Woods homes for sale experience rapid absorption velocity.",
     "historyHeadline": "Civil War Heritage & Yeonas Brothers' 1960s Architectural Vision",
     "history": "Named in honor of Civil War partisan ranger John S. Mosby, who conducted historic raids in Fairfax, Mosby Woods was constructed between 1961 and 1965 by the renowned Yeonas Development Corporation. The Yeonas brothers designed versatile tri-level and split-level models featuring open layouts and brick fireplaces. When Fairfax City incorporated as an independent city in 1961, Mosby Woods became one of its premier residential neighborhoods, offering independent city services and zero county real estate taxes.",
     "interestingFacts": [
@@ -679,6 +759,10 @@ export const VIRGINIA_SUBDIVISIONS = [
       {
         "question": "Is there a mandatory HOA in Mosby Woods?",
         "answer": "No. The Mosby Woods Community Association is voluntary with modest annual dues. This absence of high HOA fees makes homes particularly attractive to buyers, which we emphasize in our marketing."
+      },
+      {
+        "question": "Why do buyers choose Mosby Woods homes for sale over surrounding Fairfax neighborhoods?",
+        "answer": "Buyers choose Mosby Woods for its unbeatable central location in the City of Fairfax, five-minute drive to the Vienna Metro, voluntary civic association dues, active community pool, and 0% Fairfax County property tax rate. Homes feed into Daniels Run Elementary, Katherine Johnson Middle, and modernized Fairfax High School."
       }
     ]
   },
@@ -702,7 +786,7 @@ export const VIRGINIA_SUBDIVISIONS = [
     "image": "/images/communities/franklin-farm.jpg",
     "headline": "Sell Your Franklin Farm Home for Record Value",
     "sellerLeadSnippet": "An 850-acre western Fairfax planned community featuring 13 miles of paved fitness trails, 6 fishing ponds, and the premier Chantilly High School pyramid.",
-    "overview": "Franklin Farm combines resort-caliber recreational amenities with exceptional suburban connectivity. Residents walk to the Franklin Farm Village Center, cycle along tree-lined stream valleys, and enjoy immediate access to Route 286, Route 50, and the Reston Silver Line Metro.",
+    "overview": "Franklin Farm is an acclaimed 850-acre master-planned community in Western Fairfax County (Herndon/Oak Hill, ZIP 22033). Combining resort-caliber recreational amenities with exceptional suburban connectivity, residents walk to the Franklin Farm Village Center, cycle along 13 miles of paved trails across 6 stocked ponds, and enjoy immediate access to Route 286, Route 50, and the Chantilly High School pyramid (Oak Hill Elementary and Franklin Middle School).",
     "historyHeadline": "Historic Franklin Dairy Farm to Award-Winning 850-Acre Master Plan",
     "history": "For over a century, Franklin Farm operated as a thriving dairy and cattle farm owned by the Franklin family in Western Fairfax. In 1980, environmental planners transformed the 850-acre property into a nationally recognized master-planned community. Developers preserved over 180 acres of common green space, engineered six scenic fishing ponds, and laid out 13 miles of paved fitness trails. It remains a model for ecologically sensitive suburban development.",
     "interestingFacts": [
@@ -740,6 +824,10 @@ export const VIRGINIA_SUBDIVISIONS = [
       {
         "question": "What makes Franklin Farm so desirable for single-family buyers?",
         "answer": "The 850-acre community features 13 miles of paved paths, 6 ponds, 2 pool complexes, and tennis courts, combined with top-tier Chantilly High School ranking. Inventory is in constant high demand."
+      },
+      {
+        "question": "What shopping and recreational amenities are located within Franklin Farm Herndon VA?",
+        "answer": "Franklin Farm features the Franklin Farm Village Center (anchored by Giant Food, medical offices, and restaurants), two master swimming pool complexes, six tennis courts, multiple tot lots, and 13 miles of paved paths linking six fishing ponds, ensuring a complete self-contained lifestyle."
       }
     ]
   },
@@ -763,7 +851,7 @@ export const VIRGINIA_SUBDIVISIONS = [
     "image": "/images/communities/kings-park-west.jpg",
     "headline": "List Your Kings Park West Home with Elena & Kirill",
     "sellerLeadSnippet": "Centering on scenic 49-acre Royal Lake with direct Robinson Secondary school feed and 4-minute access to the Rolling Road VRE Commuter Rail.",
-    "overview": "Kings Park West offers continuous paved lakeside trails, wildlife observation stations, kayak access on Royal Lake, and spacious lots. Homeowners enjoy a quick commute to George Mason University, the Pentagon, and Washington D.C.",
+    "overview": "Centering on scenic 49-acre Royal Lake in Fairfax VA (ZIP 22032), Kings Park West offers continuous paved lakeside trails, wildlife observation stations, kayak access, and spacious lots. Homeowners enjoy assignment to Laurel Ridge Elementary and the Robinson Secondary School pyramid (grades 7-12, IB program), along with 4-minute access to the Rolling Road VRE Commuter Rail station connecting to the Pentagon and downtown Washington, D.C.",
     "historyHeadline": "Creation of Royal Lake & Development of Kings Park West",
     "history": "Kings Park West was developed between 1968 and 1978 surrounding the newly engineered 49-acre Royal Lake. Constructed by the USDA Soil Conservation Service and Fairfax County Park Authority as a flood control reservoir along Pohick Creek, the lake became the centerpiece for this forested community. Richmarr Construction and other builders crafted spacious split-foyers, multi-level homes, and Dutch colonials nestled on generous half-acre lots with tree-canopied streets.",
     "interestingFacts": [
@@ -801,6 +889,10 @@ export const VIRGINIA_SUBDIVISIONS = [
       {
         "question": "How does the VRE commuter station affect Kings Park West property values?",
         "answer": "The Rolling Road VRE station allows a stress-free 30-minute train ride directly to L'Enfant Plaza and Union Station in D.C. This makes KPW one of the top choices for federal workers, driving fierce buyer demand."
+      },
+      {
+        "question": "What makes Royal Lake and Kings Park West homes for sale unique in Fairfax County?",
+        "answer": "Kings Park West wraps around the 49-acre Royal Lake, providing a 1.75-mile lakeside loop trail, sports courts, and three neighborhood swim clubs (KPWC Pools 1, 2, and 3). Combined with immediate access to George Mason University and the Rolling Road VRE train station, Kings Park West properties experience persistent buyer escalation."
       }
     ]
   },
@@ -883,9 +975,9 @@ export const VIRGINIA_SUBDIVISIONS = [
     "schools": "Fairfax High School Pyramid",
     "hoa": "Voluntary Civic Association • Bordering Army Navy Country Club",
     "image": "/images/communities/country-club-hills.jpg",
-    "headline": "List Your Country Club Hills Home for Top Dollar",
-    "sellerLeadSnippet": "Charming wooded enclave bordering the prestigious Army Navy Country Club in the independent City of Fairfax.",
-    "overview": "Country Club Hills is celebrated for peaceful winding streets, mature hardwoods, and direct views of the rolling fairways of Army Navy Country Club. Situated minutes from Old Town Fairfax, homeowners enjoy civic pride, excellent walkability, and strong capital appreciation.",
+    "headline": "Country Club Hills Fairfax VA Homes For Sale & Real Estate Guide",
+    "sellerLeadSnippet": "Wooded golf enclave bordering the Country Club of Fairfax with 0% county property tax in the independent City of Fairfax. Country Club Hills homes for sale sell in 6 days.",
+    "overview": "Country Club Hills is an exclusive wooded residential enclave bordering the prestigious Country Club of Fairfax (Army Navy Country Club championship 18-hole course) in the independent City of Fairfax (ZIP 22030). With high demand for Country Club Hills homes for sale and Country Club Hills Fairfax VA properties, buyers seek out this neighborhood for peaceful winding streets, mature hardwoods, brick colonials, custom ranches, 0% county tax, Daniels Run trails, and walking distance to historic Old Town Fairfax dining and festivals.",
     "historyHeadline": "The 1950s Country Club Enclave of Historic Fairfax",
     "history": "Conceived in the mid-1950s alongside the expansion of the private Country Club of Fairfax (founded 1947), Country Club Hills was designed for prominent physicians, attorneys, and civic leaders. The neighborhood was laid out with undulating streets following the ridges bordering the championship golf course. Stately mid-century ranches and colonials sit on mature quarter-acre to half-acre lots under 60-year-old flowering trees.",
     "interestingFacts": [
@@ -916,6 +1008,14 @@ export const VIRGINIA_SUBDIVISIONS = [
       {
         "question": "Does living in Country Club Hills include golf club membership?",
         "answer": "Membership in the Army Navy Country Club is separate, but the views, tranquility, and prestige of the adjacent grounds elevate property valuations significantly across Country Club Hills."
+      },
+      {
+        "question": "What are the architectural styles and lot sizes in Country Club Hills Fairfax VA?",
+        "answer": "Country Club Hills primarily features 1950s and 1960s custom brick colonials, mid-century California ranches, and expanded split-levels situated on generous 0.25 to 0.50-acre wooded lots. Many homes feature direct golf course views or walk-out basements overlooking mature dogwood and oak tree canopies."
+      },
+      {
+        "question": "Why are homes for sale in Country Club Hills so popular among Fairfax buyers?",
+        "answer": "Buyers target Country Club Hills for its quiet, tree-canopied residential streets bordering the golf course, walking distance to Old Town Fairfax restaurants, independent City of Fairfax public services, and 0% Fairfax County property tax."
       }
     ]
   },
@@ -1334,9 +1434,9 @@ export const VIRGINIA_SUBDIVISIONS = [
     "schools": "Hayfield Secondary School Pyramid",
     "hoa": "Kingstowne Residential Community (2 outdoor pools, 2 fitness centers, 12 miles trails)",
     "image": "/images/townhouse.jpg",
-    "headline": "List Your Kingstowne Home with Elena & Kirill",
-    "sellerLeadSnippet": "Master-planned lakes, pools, and fitness centers minutes from the Franconia-Springfield Metro, Fort Belvoir, and Kingstowne Towne Center.",
-    "overview": "Kingstowne is one of the most vibrant master-planned communities in southern Fairfax County / Alexandria. Featuring two expansive lakes, two fitness centers, outdoor pools, and walking access to Kingstowne Towne Center dining and movie theaters.",
+    "headline": "Kingstowne VA Homes For Sale & Real Estate | Alexandria & Franconia",
+    "sellerLeadSnippet": "Master-planned lakes, pools, and fitness centers in Kingstowne Franconia VA (ZIP 22315). Houses for sale in Kingstowne VA sell in 6 days with top listing representation.",
+    "overview": "Kingstowne is a premier 1,200-acre master-planned community in Alexandria and Franconia VA (ZIP 22315). Featuring two expansive lakes, two multi-pool fitness centers, and walking access to Kingstowne Center VA and Kingstowne Towne Center shopping, dining, and cinemas. Kingstowne homes for sale, houses for sale in Kingstowne VA, and luxury townhomes offer rapid connectivity to Fort Belvoir, the Mark Center, and the Franconia-Springfield Metro (Blue Line).",
     "historyHeadline": "The Master-Planned Transformation of Alexandria's Historic South Ridge",
     "history": "Constructed beginning in the late 1980s by the Halle Companies across 1,200 acres of rolling forest in eastern Fairfax County, Kingstowne was planned as a comprehensive European-inspired master plan. The development integrated residential villages around scenic lakes, community clubhouses, and the Kingstowne Towne Center, providing urban shopping, movie theaters, and dining within walking distance of quiet neighborhood avenues.",
     "interestingFacts": [
@@ -1358,8 +1458,20 @@ export const VIRGINIA_SUBDIVISIONS = [
     ],
     "faqs": [
       {
-        "question": "What makes Kingstowne attractive to military and government relocations?",
-        "answer": "Proximity to Fort Belvoir, the Mark Center, the Pentagon, and direct Blue Line Metro transit makes Kingstowne a top choice, ensuring active buyers all year round."
+        "question": "What makes Kingstowne Franconia VA attractive to military and government relocations?",
+        "answer": "Proximity to Fort Belvoir, the Mark Center, the Pentagon, and direct Franconia-Springfield Blue Line Metro transit makes Kingstowne Alexandria VA a top choice, ensuring active buyers all year round for both townhomes and single-family houses."
+      },
+      {
+        "question": "What shopping, dining, and transit options are near Kingstowne Center VA?",
+        "answer": "Kingstowne Towne Center and Kingstowne Shopping Center Virginia provide over 1 million square feet of walkable retail, including grocery stores, specialty boutiques, and a 16-screen movie theater. Residents are under 5 minutes from the Franconia-Springfield Metrorail station (Blue Line) and major commuter arteries (I-95/I-495 and Fairfax County Parkway)."
+      },
+      {
+        "question": "What amenities are maintained by the Kingstowne Residential Owners Corp (KROC) homeowners association?",
+        "answer": "The Kingstowne Residential Owners Corporation (KROC) manages premier master HOA facilities including two large swimming pools, two fitness centers, 12 miles of lakeside trails, tennis courts, and neighborhood gathering spaces with low monthly dues."
+      },
+      {
+        "question": "What is the Kingstowne VA zip code and geographic coverage?",
+        "answer": "Kingstowne VA is located in ZIP code 22315, spanning the Franconia and Alexandria sectors of Fairfax County. The 22315 zip code is renowned for strong property appreciation and exceptional proximity to major employment hubs."
       }
     ]
   },
@@ -1381,9 +1493,9 @@ export const VIRGINIA_SUBDIVISIONS = [
     "schools": "Stuart / Justice High School Pyramid",
     "hoa": "All-Inclusive Condo Fee (24/7 concierge, pool, fitness, rooftop sundeck, utilities)",
     "image": "/images/skyline-condominiums.jpg",
-    "headline": "Sell Your Skyline Condominium with Elena Gorbounova — #1 Skyline Specialist",
-    "sellerLeadSnippet": "Over 20 years of unmatched sales leadership at Skyline Square and Skyline Plaza. 10 minutes to the Pentagon and downtown Washington, D.C.",
-    "overview": "Elena Gorbounova and Kirill are widely celebrated as the foremost condominium experts in the entire Skyline district. Offering luxury high-rise amenities, 24/7 security, panoramic views of the Washington monument skyline, and instant Metrobus transit to the Pentagon.",
+    "headline": "Skyline Condominiums For Sale | Falls Church & Alexandria VA 22041",
+    "sellerLeadSnippet": "Elena Gorbounova has led Skyline Square & Skyline Plaza condominium sales for over 20 years. 10 minutes to the Pentagon and Amazon HQ2 with all-inclusive HOA fees.",
+    "overview": "Skyline Condominiums (Skyline Square, Skyline Plaza, and Skyline City at 5599 Seminary Rd, Falls Church / Alexandria VA 22041) represents Northern Virginia's premier high-rise luxury condominium corridor. Whether searching for a 2 bedroom condo for sale, evaluating condo vs townhouse and condo vs house living, or exploring condos for sale in Falls Church VA and Arlington, Skyline delivers 24/7 concierge lobbies, Olympic swimming pools, fitness centers, private balconies with Washington Monument views, and all-inclusive condo fees. Elena Gorbounova is widely recognized as the #1 listing agent and building authority in the Skyline district.",
     "historyHeadline": "Historic Washington-Virginia Airport to Charles E. Smith's High-Rise Landmark",
     "history": "Skyline was constructed on the elevated 100-acre site of the historic Washington-Virginia Airport, which operated private aircraft until 1970. Prominent developer Charles E. Smith envisioned a modern high-rise community with sweeping vistas of Washington D.C. Engineered with solid reinforced architectural concrete, the Skyline towers offer resort-style amenities, private balconies, and quick access to the Pentagon and National Landing.",
     "interestingFacts": [
@@ -1414,6 +1526,18 @@ export const VIRGINIA_SUBDIVISIONS = [
       {
         "question": "Why should I sell my Skyline condo with Elena Gorbounova?",
         "answer": "Elena has represented hundreds of Skyline buyers and sellers over two decades. She knows every stack, every view orientation, and every HOA detail, achieving record sales prices for building residents."
+      },
+      {
+        "question": "What is the difference between a condo and a townhouse at Skyline vs surrounding neighborhoods?",
+        "answer": "A high-rise condo like Skyline Square or Skyline Plaza offers single-level luxury living with all-inclusive HOA fees covering 24/7 front desk security, elevators, swimming pools, fitness centers, and utilities, with zero exterior maintenance. A townhouse typically requires individual homeowner responsibility for roofs, siding, and yards. Skyline condos provide turnkey convenience with express Metrobus transit directly to the Pentagon."
+      },
+      {
+        "question": "What utilities and amenities are included in Skyline condo HOA fees at 5599 Seminary Rd?",
+        "answer": "Skyline condo fees are famously comprehensive, typically including all basic utilities (electricity, water, sewer, trash, gas, heating, and air conditioning), 24-hour security, access to multiple outdoor pools, sauna and steam rooms, billiards rooms, rooftop observation decks, and reserved garage parking."
+      },
+      {
+        "question": "How do 2 bedroom condos for sale in Skyline compare to condos in Arlington VA and Falls Church?",
+        "answer": "A 2 bedroom condo for sale at Skyline (5599 Seminary Rd) offers roughly 30% to 40% more square footage than comparable units in Arlington or central Falls Church, while including complete utility coverage and garage parking, making it one of the strongest value propositions in Northern Virginia."
       }
     ]
   }

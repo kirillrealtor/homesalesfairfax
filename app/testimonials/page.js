@@ -5,8 +5,8 @@ import TestimonialsDirectory from "../components/TestimonialsDirectory";
 import { testimonials } from "../data/testimonials";
 
 export const metadata = {
-  title: "Client Testimonials & Reviews | Elena Gorbounova Realtor",
-  description: "Read 325+ verified five-star client testimonials and real estate reviews for Elena Gorbounova across Fairfax County, Falls Church, Alexandria, and Northern Virginia.",
+  title: "Elena Gorbounova Reviews | Best Realtor in Fairfax VA Testimonials",
+  description: "Read 325+ verified five-star client testimonials and reviews for top real estate agent Elena Gorbounova & Kirill across Fairfax County and Northern Virginia.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/testimonials",
   },

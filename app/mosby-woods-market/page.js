@@ -20,5 +20,27 @@ export const metadata = {
 };
 
 export default function MosbyWoodsMarketPage() {
-  return <NeighborhoodReportView data={data} />;
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "Report",
+    "name": data.title,
+    "description": data.metaDescription,
+    "url": `https://www.homesalesfairfax.com/${data.slug}`,
+    "publisher": {
+      "@type": "RealEstateAgent",
+      "name": "Elena Gorbounova & Kirill",
+      "telephone": "(703) 625-7888",
+      "url": "https://www.homesalesfairfax.com"
+    }
+  };
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <NeighborhoodReportView data={data} />
+    </>
+  );
 }

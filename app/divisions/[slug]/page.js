@@ -21,7 +21,7 @@ export async function generateMetadata({ params }) {
     };
   }
 
-  const pageTitle = `${division.name}, VA Division Guide`;
+  const pageTitle = `${division.name} VA Real Estate & Homes For Sale | Division Guide`;
 
   return {
     title: pageTitle,
