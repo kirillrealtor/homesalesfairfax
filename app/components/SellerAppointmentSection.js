@@ -1,6 +1,6 @@
 "use client";
 
-export default function SellerAppointmentSection({ prefilledAddress = "" }) {
+export default function SellerAppointmentSection({ prefilledAddress = "", isH1 = false }) {
   const internationalPhone = "17036257888";
   const displayPhone = "(703) 625-7888";
   const email = "ElenaYSC@gmail.com";
@@ -47,7 +47,11 @@ export default function SellerAppointmentSection({ prefilledAddress = "" }) {
         {/* Section Header */}
         <div className="section-head-clean">
           <span className="section-pretitle">Northern Virginia Home Sellers</span>
-          <h2 className="section-title-bold">Book an In-Home Listing Appointment</h2>
+          {isH1 ? (
+            <h1 className="section-title-bold">Book an In-Home Listing Appointment</h1>
+          ) : (
+            <h2 className="section-title-bold">Book an In-Home Listing Appointment</h2>
+          )}
           <p className="section-lead-text">
             Hire Northern Virginia's top listing team. We analyze recent settled sales, calculate your maximum net proceeds, and prepare your 30-day listing launch.
           </p>

@@ -49,7 +49,7 @@ export default function PropertyDetailClient({ property }) {
               Price Upon Request
             </div>
             <span style={{ fontSize: "0.85rem", color: "var(--accent-gold)", fontWeight: 700, display: "block", textAlign: "right" }}>
-              Contact Elena &amp; Kirill for Details &amp; Showing
+              Contact Elena for Details &amp; Showing
             </span>
           </div>
         </div>
@@ -114,12 +114,50 @@ export default function PropertyDetailClient({ property }) {
               </li>
             </ul>
 
-            {/* Schools Info */}
-            <div style={{ background: "var(--bg-subtle)", padding: "24px", borderRadius: "var(--radius-md)", border: "1px solid var(--ink-200)" }}>
-              <h3 style={{ fontSize: "1.2rem", fontWeight: 800, marginBottom: "8px" }}>Fairfax County Public Schools</h3>
-              <p style={{ fontSize: "0.88rem", color: "var(--ink-600)" }}>
-                This home is served by top-rated Fairfax County Public Schools. Contact Elena to confirm current school assignments for this address.
+            {/* Schools & Educational Pyramid */}
+            <div style={{ background: "var(--bg-subtle)", padding: "24px", borderRadius: "var(--radius-md)", border: "1px solid var(--ink-200)", marginBottom: "28px" }}>
+              <h3 style={{ fontSize: "1.2rem", fontWeight: 800, marginBottom: "8px", color: "var(--ink-950)" }}>Fairfax County Public Schools &amp; Education</h3>
+              <p style={{ fontSize: "0.92rem", color: "var(--ink-700)", lineHeight: "1.7", margin: 0 }}>
+                This property is located in an established Fairfax County residential corridor. Proximity to advanced academics, International Baccalaureate programs, and premier high school pyramids sustains strong long-term property equity. Contact Elena directly to verify exact current bus routes, boundary assignments, and enrollment details for this parcel.
               </p>
+            </div>
+
+            {/* Buyer Advocacy & Tactical Representation */}
+            <div style={{ background: "#FFFFFF", padding: "28px", borderRadius: "var(--radius-md)", border: "1px solid var(--ink-200)", marginBottom: "28px" }}>
+              <h3 style={{ fontSize: "1.25rem", fontWeight: 800, marginBottom: "12px", color: "var(--ink-950)" }}>
+                Buyer Advocacy &amp; Negotiation Protection
+              </h3>
+              <p style={{ fontSize: "0.94rem", color: "var(--ink-700)", lineHeight: "1.75", marginBottom: "14px" }}>
+                When purchasing residential real estate in Northern Virginia, having an elite fiduciary advocate in your corner is essential. Elena Gorbounova holds a Master of Laws (LL.M.) from American University's Washington College of Law and is an accredited Master Certified Negotiation Expert (MCNE®).
+              </p>
+              <p style={{ fontSize: "0.94rem", color: "var(--ink-700)", lineHeight: "1.75", margin: 0 }}>
+                Our team meticulously audits NVAR residential sales contracts, home inspection contingencies, HOA covenants, and title commitments, ensuring buyers secure ideal price terms and contingency leverage before submitting formal offers.
+              </p>
+            </div>
+
+            {/* Purchase & Touring FAQs */}
+            <div style={{ background: "#FFFFFF", padding: "28px", borderRadius: "var(--radius-md)", border: "1px solid var(--ink-200)" }}>
+              <h3 style={{ fontSize: "1.25rem", fontWeight: 800, marginBottom: "16px", color: "var(--ink-950)" }}>
+                Private Showing &amp; Offer Consultation FAQ
+              </h3>
+              <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+                <div>
+                  <h4 style={{ fontSize: "0.98rem", fontWeight: 700, color: "var(--ink-950)", marginBottom: "4px" }}>
+                    How do I schedule an in-person or virtual walkthrough for this home?
+                  </h4>
+                  <p style={{ fontSize: "0.9rem", color: "var(--ink-600)", lineHeight: "1.65", margin: 0 }}>
+                    Simply call or text Elena Gorbounova at (703) 625-7888 or tap the SMS/WhatsApp buttons. We coordinate directly with the listing brokerage to confirm instant lockbox access and private showings around your personal schedule.
+                  </p>
+                </div>
+                <div>
+                  <h4 style={{ fontSize: "0.98rem", fontWeight: 700, color: "var(--ink-950)", marginBottom: "4px" }}>
+                    Can you provide recent settled sales comparables for this neighborhood?
+                  </h4>
+                  <p style={{ fontSize: "0.9rem", color: "var(--ink-600)", lineHeight: "1.65", margin: 0 }}>
+                    Yes. We generate comprehensive Bright MLS comparative market analysis (CMA) reports showing unadjusted and adjusted settled sales from the past 90 days, days on market, and list-to-sold ratios across this immediate subdivision.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -193,8 +231,8 @@ export default function PropertyDetailClient({ property }) {
             </Link>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: "20px" }}>
-            {FAIRFAX_LISTINGS.filter(p => p.id !== property.id).slice(0, 3).map((other) => (
+          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "20px" }}>
+            {FAIRFAX_LISTINGS.filter(p => p.id !== property.id).map((other) => (
               <Link
                 key={other.id}
                 href={`/property/${other.id}`}

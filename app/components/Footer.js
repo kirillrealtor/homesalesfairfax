@@ -1,6 +1,4 @@
 import Link from "next/link";
-import { FAIRFAX_COMMUNITIES } from "../data/communities";
-import { VIRGINIA_DIVISIONS, VIRGINIA_SUBDIVISIONS } from "../data/virginiaDivisions";
 
 export default function Footer() {
   return (
@@ -28,17 +26,28 @@ export default function Footer() {
             <span style={{ fontSize: "0.78rem", fontWeight: 800, color: "var(--accent-gold)", textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "6px" }}>
               Northern Virginia Luxury Real Estate &amp; Top Producer Advisory
             </span>
-            <div style={{ fontSize: "1.65rem", fontWeight: 800, color: "#0F172A", letterSpacing: "-0.02em" }}>
+            <Link
+              href="/"
+              style={{
+                fontSize: "1.65rem",
+                fontWeight: 800,
+                color: "#0F172A",
+                letterSpacing: "-0.02em",
+                textDecoration: "none",
+                display: "inline-block"
+              }}
+              aria-label="HomesalesFairfax Homepage"
+            >
               HOMESALES FAIRFAX
-            </div>
+            </Link>
             <p style={{ color: "#64748B", fontSize: "0.88rem", marginTop: "6px", maxWidth: "560px", lineHeight: "1.55" }}>
-              Elena Gorbounova (LL.M., MCNE®) &amp; Kirill • Associate Brokers • RE/MAX Allegiance &amp; YSC Real Estate Group. Over 400 properties closed with 21+ years of local mastery across Fairfax County, Arlington, and Northern Virginia.
+              Elena Gorbounova (LL.M., MCNE®) • Associate Broker • RE/MAX Allegiance &amp; YSC Real Estate Group. Over 400 properties closed, serving Northern Virginia since 2006 across Fairfax County and Arlington.
             </p>
           </div>
 
           <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: "14px" }}>
             <Link
-              href="/sell"
+              href="/#sell"
               className="btn-capsule-primary"
               style={{ padding: "12px 26px", fontSize: "0.9rem" }}
             >
@@ -73,94 +82,79 @@ export default function Footer() {
           gap: "36px",
           marginBottom: "44px"
         }}>
-          {/* Column 1: Featured Communities */}
+          {/* Column 1: Northern Virginia Markets */}
           <div>
             <h4 style={{ fontSize: "0.78rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", color: "#0F172A", marginBottom: "16px" }}>
-              Featured Communities
+              Northern Virginia Markets
             </h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
               <li>
-                <Link href="/communities/clifton" style={{ color: "#475569", textDecoration: "none" }}>
-                  Clifton &amp; Wine Country
+                <Link href="/oakton-homes-for-sale" style={{ color: "#475569", textDecoration: "none" }}>
+                  Oakton Luxury Estates
                 </Link>
               </li>
               <li>
-                <Link href="/communities/mclean" style={{ color: "#475569", textDecoration: "none" }}>
-                  McLean &amp; Gold Coast
+                <Link href="/burke-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none" }}>
+                  Burke &amp; Lake Braddock
                 </Link>
               </li>
               <li>
-                <Link href="/communities/country-club-hills" style={{ color: "#475569", textDecoration: "none" }}>
-                  Country Club Hills (Fairfax)
+                <Link href="/great-falls-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none" }}>
+                  Great Falls Luxury Estates
                 </Link>
               </li>
               <li>
-                <Link href="/communities/mantua" style={{ color: "#475569", textDecoration: "none" }}>
-                  Mantua (22031)
+                <Link href="/falls-church-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none" }}>
+                  Falls Church Houses
                 </Link>
               </li>
               <li>
-                <Link href="/communities/mosby-woods" style={{ color: "#475569", textDecoration: "none" }}>
-                  Mosby Woods (22030)
+                <Link href="/arlington-va-condos-for-sale" style={{ color: "#475569", textDecoration: "none" }}>
+                  Arlington VA Condos
                 </Link>
               </li>
               <li>
-                <Link href="/communities/franklin-farm" style={{ color: "#475569", textDecoration: "none" }}>
-                  Franklin Farm (22033)
-                </Link>
-              </li>
-              <li>
-                <Link href="/communities/kings-park-west" style={{ color: "#475569", textDecoration: "none" }}>
-                  Kings Park West (22032)
-                </Link>
-              </li>
-              <li>
-                <Link href="/communities" style={{ color: "var(--accent-gold)", fontWeight: 700, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "4px" }}>
-                  View All 16 Communities &rarr;
+                <Link href="/alexandria-va-townhomes-for-sale" style={{ color: "#475569", textDecoration: "none" }}>
+                  Alexandria Townhomes &amp; Condos
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 2: Regional Divisions & Counties */}
+          {/* Column 2: Regional Property Guides */}
           <div>
             <h4 style={{ fontSize: "0.78rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", color: "#0F172A", marginBottom: "16px" }}>
-              Virginia Divisions &amp; Counties
+              Regional Property Guides
             </h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
               <li>
-                <Link href="/divisions/fairfax-county" style={{ color: "#475569", textDecoration: "none" }}>
-                  Fairfax County Division
+                <Link href="/fairfax-station-homes-for-sale" style={{ color: "#475569", textDecoration: "none" }}>
+                  Fairfax Station Estates
                 </Link>
               </li>
               <li>
-                <Link href="/divisions/arlington-county" style={{ color: "#475569", textDecoration: "none" }}>
-                  Arlington County Division
+                <Link href="/springfield-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none" }}>
+                  Springfield VA Real Estate
                 </Link>
               </li>
               <li>
-                <Link href="/divisions/city-of-fairfax" style={{ color: "#475569", textDecoration: "none" }}>
-                  City of Fairfax Division
+                <Link href="/reston-va-townhomes-condos" style={{ color: "#475569", textDecoration: "none" }}>
+                  Reston &amp; Herndon Townhomes
                 </Link>
               </li>
               <li>
-                <Link href="/divisions/loudoun-county" style={{ color: "#475569", textDecoration: "none" }}>
-                  Loudoun County Division
+                <Link href="/chantilly-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none" }}>
+                  Chantilly Homes &amp; Townhomes
                 </Link>
               </li>
               <li>
-                <Link href="/divisions/prince-william-county" style={{ color: "#475569", textDecoration: "none" }}>
-                  Prince William County Division
+                <Link href="/mosaic-district-homes" style={{ color: "#475569", textDecoration: "none" }}>
+                  Mosaic District Real Estate
                 </Link>
               </li>
               <li>
-                <Link href="/divisions/city-of-alexandria" style={{ color: "#475569", textDecoration: "none" }}>
-                  City of Alexandria Division
-                </Link>
-              </li>
-              <li>
-                <Link href="/divisions" style={{ color: "var(--accent-gold)", fontWeight: 700, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "4px" }}>
-                  All Virginia Divisions &rarr;
+                <Link href="/fairfax-condos-townhomes" style={{ color: "#475569", textDecoration: "none" }}>
+                  Fairfax Condos &amp; Townhomes
                 </Link>
               </li>
             </ul>
@@ -173,19 +167,14 @@ export default function Footer() {
             </h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
               <li>
-                <Link href="/sell" style={{ color: "#475569", textDecoration: "none" }}>
-                  Sell Your Home for Top Dollar
+                <Link href="/" style={{ color: "#0F172A", fontWeight: 700, textDecoration: "none" }}>
+                  Fairfax Real Estate Home
                 </Link>
               </li>
               <li>
-                <Link href="/home-valuation" style={{ color: "#475569", textDecoration: "none" }}>
-                  Request Bright MLS Valuation
-                </Link>
-              </li>
-              <li>
-                <Link href="/market-report" style={{ color: "#475569", textDecoration: "none" }}>
-                  Fairfax Market Intel Report
-                </Link>
+                <a href="/#sell" style={{ color: "#475569", textDecoration: "none" }}>
+                  Schedule Listing Consultation
+                </a>
               </li>
               <li>
                 <Link href="/mortgage-calculator" style={{ color: "#475569", textDecoration: "none" }}>
@@ -203,9 +192,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" style={{ color: "#475569", textDecoration: "none" }}>
-                  Contact Our Real Estate Team
-                </Link>
+                <a href="tel:7036257888" style={{ color: "#475569", textDecoration: "none" }}>
+                  Direct Phone: (703) 625-7888
+                </a>
               </li>
             </ul>
           </div>
@@ -239,15 +228,39 @@ export default function Footer() {
           flexDirection: "column",
           gap: "18px"
         }}>
+          {/* Featured Active MLS Properties Strip */}
+          <div>
+            <span style={{ fontSize: "0.75rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--accent-gold)", display: "block", marginBottom: "8px" }}>
+              Active Fairfax &amp; Northern Virginia Listings:
+            </span>
+            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 14px", fontSize: "0.82rem" }}>
+              <Link href="/property/ffx-10820" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                10820 Judicial Dr, Fairfax VA (Oakridge Estate)
+              </Link>
+              <Link href="/property/ffx-2910" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                2910 District Ave, Fairfax VA (Mosaic District Townhome)
+              </Link>
+              <Link href="/property/ffx-5100" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                5100 Leesburg Pike, Falls Church VA (Skyline Penthouse)
+              </Link>
+              <Link href="/property/ffx-3412" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                3412 Jermantown Rd, Oakton VA (Oakton Colonial Manor)
+              </Link>
+              <Link href="/property/ffx-9805" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                9805 Braddock Rd, Burke VA (Lake Braddock Retreat)
+              </Link>
+              <Link href="/property/ffx-11700" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                11700 Fair Oaks Pkwy, Fairfax VA (Fair Lakes Townhome)
+              </Link>
+            </div>
+          </div>
+
           {/* High-Intent Northern Virginia Property Guides Strip */}
           <div>
             <span style={{ fontSize: "0.75rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--accent-gold)", display: "block", marginBottom: "8px" }}>
               Targeted MLS Property Guides:
             </span>
             <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 14px", fontSize: "0.82rem" }}>
-              <Link href="/fairfax-city-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
-                Fairfax City Houses For Sale
-              </Link>
               <Link href="/fairfax-station-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
                 Fairfax Station Homes For Sale
               </Link>
@@ -281,60 +294,9 @@ export default function Footer() {
               <Link href="/burke-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
                 Burke VA Real Estate
               </Link>
-            </div>
-          </div>
-
-          {/* All 16 Communities Strip */}
-          <div>
-            <span style={{ fontSize: "0.75rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--ink-500)", display: "block", marginBottom: "8px" }}>
-              Northern Virginia Communities &amp; Enclaves:
-            </span>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 12px", fontSize: "0.82rem" }}>
-              {FAIRFAX_COMMUNITIES.map((c) => (
-                <Link
-                  key={c.id}
-                  href={`/communities/${c.slug}`}
-                  style={{ color: "#64748B", textDecoration: "none", transition: "color 0.15s ease" }}
-                >
-                  {c.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* All 6 Divisions Strip */}
-          <div>
-            <span style={{ fontSize: "0.75rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--ink-500)", display: "block", marginBottom: "8px" }}>
-              Virginia Regional Divisions &amp; Jurisdictions:
-            </span>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 12px", fontSize: "0.82rem" }}>
-              {VIRGINIA_DIVISIONS.map((d) => (
-                <Link
-                  key={d.id}
-                  href={`/divisions/${d.slug}`}
-                  style={{ color: "#64748B", textDecoration: "none", transition: "color 0.15s ease" }}
-                >
-                  {d.name}
-                </Link>
-              ))}
-            </div>
-          </div>
-
-          {/* All 16 Subdivisions Strip */}
-          <div>
-            <span style={{ fontSize: "0.75rem", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em", color: "var(--ink-500)", display: "block", marginBottom: "8px" }}>
-              High-Turnover Virginia Subdivisions:
-            </span>
-            <div style={{ display: "flex", flexWrap: "wrap", gap: "6px 12px", fontSize: "0.82rem" }}>
-              {VIRGINIA_SUBDIVISIONS.map((s) => (
-                <Link
-                  key={s.id}
-                  href={`/subdivisions/${s.slug}`}
-                  style={{ color: "#64748B", textDecoration: "none", transition: "color 0.15s ease" }}
-                >
-                  {s.name}
-                </Link>
-              ))}
+              <Link href="/mosaic-district-homes" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Mosaic District Real Estate
+              </Link>
             </div>
           </div>
         </div>
@@ -352,10 +314,16 @@ export default function Footer() {
           color: "#94A3B8"
         }}>
           <div>
-            © 2026 Elena Gorbounova &amp; Kirill • homesalesfairfax.com • RE/MAX Allegiance. All Rights Reserved.
+            © 2026 Elena Gorbounova • homesalesfairfax.com • RE/MAX Allegiance. All Rights Reserved.
           </div>
 
           <div style={{ display: "flex", alignItems: "center", gap: "14px", flexWrap: "wrap" }}>
+            <Link href="/" style={{ color: "#64748B", textDecoration: "none", fontWeight: 600 }}>Home</Link>
+
+            <span>•</span>
+            <Link href="/testimonials" style={{ color: "#64748B", textDecoration: "none" }}>Reviews</Link>
+
+            <span>•</span>
             <span style={{ display: "inline-flex", alignItems: "center", gap: "5px" }}>
               <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>

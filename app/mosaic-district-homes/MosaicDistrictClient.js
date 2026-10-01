@@ -1,19 +1,10 @@
+"use client";
+
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import { FAIRFAX_LISTINGS } from "../data/listings";
 import Link from "next/link";
 
-export const metadata = {
-  title: "Houses For Sale Fairfax City Virginia | 22030 Real Estate & Homes",
-  description: "Browse houses for sale in Fairfax City, Virginia (ZIP 22030). Historic colonials, single-family homes, Woodson & Fairfax school pyramids with Elena & Kirill.",
-  alternates: {
-    canonical: "https://www.homesalesfairfax.com/fairfax-city-homes-for-sale",
-  },
-};
-
-export default function FairfaxCityPage() {
-  const fairfaxCityHomes = FAIRFAX_LISTINGS.filter(h => h.city === "Fairfax" || h.neighborhood === "Fairfax City");
-
+export default function MosaicDistrictClient({ mosaicHomes }) {
   return (
     <main>
       <div className="page-wrapper" style={{ paddingBottom: 0 }}>
@@ -21,37 +12,32 @@ export default function FairfaxCityPage() {
       </div>
       
       <section className="container" style={{ padding: "40px 20px 20px", textAlign: "center", maxWidth: "860px" }}>
-        <span className="section-pretitle">Fairfax City Real Estate &amp; Neighborhood Guide</span>
+        {/* Breadcrumb Navigation */}
+        <div style={{ display: "flex", justifyContent: "center", gap: "8px", fontSize: "0.85rem", color: "var(--ink-500)", marginBottom: "16px" }}>
+          <Link href="/" style={{ color: "var(--ink-600)", textDecoration: "none" }}>Home</Link>
+          <span>/</span>
+          <span style={{ color: "var(--ink-950)", fontWeight: 600 }}>Mosaic District Condos &amp; Townhomes</span>
+        </div>
+
+        <span className="section-pretitle">Walkable Modern Living</span>
         <h1 className="hero-title-main" style={{ fontSize: "3.2rem", margin: "10px auto 16px" }}>
-          Houses For Sale in Fairfax City, Virginia
+          Mosaic District &amp; Merrifield Townhomes
         </h1>
         <p className="hero-subtitle-clean" style={{ maxWidth: "700px" }}>
-          Your local guide to buying and selling real estate in Fairfax City, VA (ZIP 22030). Explore active MLS listings, historic Old Town living, top-tier schools, and private home tours.
+          Northern Virginia's favorite walkable community. Modern brownstones, private rooftop terraces, and steps to dining and metro.
         </p>
       </section>
 
       <section className="content-section" style={{ background: "#FFFFFF", borderTop: "1px solid var(--ink-200)", borderBottom: "1px solid var(--ink-200)" }}>
         <div className="container">
           <div style={{ maxWidth: "860px", margin: "0 auto 48px" }}>
-            <h2 className="section-title-bold" style={{ fontSize: "2rem", marginBottom: "16px" }}>
-              Fairfax City Real Estate &amp; Lifestyle Highlights
-            </h2>
+            <h2 className="section-title-bold" style={{ fontSize: "2rem", marginBottom: "16px" }}>The Mosaic District Lifestyle in Fairfax</h2>
             <p style={{ marginBottom: "18px", color: "var(--ink-700)", lineHeight: "1.7" }}>
-              Searching for <strong>houses for sale Fairfax City Virginia</strong>? Fairfax City offers a unique combination of independent municipal efficiency, historic small-town charm, and rapid commuter connectivity to Washington, D.C. and Tysons Corner. 
+              Mosaic District is one of the most exciting neighborhoods in Northern Virginia. Residents can walk to over 50 restaurants, boutique shops, the Angelika Film Center, and fresh grocery stores.
             </p>
             <p style={{ marginBottom: "20px", color: "var(--ink-700)", lineHeight: "1.7" }}>
-              Whether you are shopping for detached <strong>homes for sale in Fairfax City</strong> near Old Town Square or evaluating current <strong>real estate Fairfax City VA</strong> market trends near George Mason University, homes in neighborhoods like Mosby Woods and Country Club Hills command high equity appreciation and rapid sales velocity.
+              Townhomes here offer spacious four-level layouts, private two-car garages, and rooftop decks with outdoor kitchens. The Dunn Loring-Merrifield Metro is just a short stroll away.
             </p>
-
-            <div style={{ background: "var(--bg-subtle)", padding: "28px", borderRadius: "var(--radius-md)", borderLeft: "4px solid var(--accent-gold)", margin: "32px 0" }}>
-              <h3 style={{ fontSize: "1.25rem", fontWeight: 800, marginBottom: "8px", color: "var(--ink-950)" }}>Fairfax City Quick Market Facts</h3>
-              <ul style={{ listStyle: "none", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "12px", marginTop: "16px", color: "var(--ink-700)" }}>
-                <li><strong>Jurisdiction:</strong> Independent City (Surrounded by Fairfax County)</li>
-                <li><strong>Primary ZIP Code:</strong> 22030, 22031</li>
-                <li><strong>Average Days on Market:</strong> 9 - 14 Days</li>
-                <li><strong>Public Transit:</strong> Vienna/Fairfax-GMU Metro &amp; CUE Bus</li>
-              </ul>
-            </div>
           </div>
 
           {/* High-Converting Seller Advisory Card */}
@@ -69,26 +55,19 @@ export default function FairfaxCityPage() {
           }}>
             <div style={{ maxWidth: "660px" }}>
               <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "6px" }}>
-                ✦ City of Fairfax Sellers • Elena Gorbounova &amp; Kirill
+                ✦ Mosaic District &amp; Merrifield Sellers • Elena
               </span>
               <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "#FFFFFF", margin: "0 0 8px" }}>
-                Selling Your Property in the City of Fairfax?
+                Selling Your Mosaic Brownstone or Condo?
               </h3>
               <p style={{ fontSize: "0.96rem", color: "#CBD5E1", margin: 0, lineHeight: 1.6 }}>
-                Homes in Mosby Woods, Country Club Hills, and Old Town average <strong>5 Days on Market</strong> with <strong>103.2% list-to-sale ratio</strong>. We highlight the 0% County tax advantage and market to Vienna Metro commuters.
+                Four-level townhomes and modern condos in 22031 sell in <strong>9 Days on Market</strong>. We target affluent D.C. and Tysons commuters looking for walkable metro-accessible luxury.
               </p>
             </div>
 
             <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
               <Link 
-                href="/divisions/city-of-fairfax" 
-                className="btn btn-outline"
-                style={{ color: "#FFFFFF", borderColor: "rgba(255,255,255,0.3)", padding: "12px 20px", fontWeight: 600, fontSize: "0.88rem" }}
-              >
-                City Division Guide &rarr;
-              </Link>
-              <Link 
-                href="/sell" 
+                href="/#sell" 
                 className="btn btn-primary"
                 style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "12px 20px", fontSize: "0.88rem" }}
               >
@@ -98,15 +77,17 @@ export default function FairfaxCityPage() {
           </div>
 
           <div className="section-head-clean">
-            <span className="section-pretitle">Verified Bright MLS Feed</span>
-            <h2 className="section-title-bold">Active Fairfax City Properties</h2>
+            <span className="section-pretitle">Featured Submarket Inventory</span>
+            <h2 className="section-title-bold">Mosaic District &amp; Metro-Accessible Homes</h2>
           </div>
 
           <div className="properties-3col">
-            {fairfaxCityHomes.map((property) => (
+            {mosaicHomes.map((property) => (
               <article key={property.id} className="property-card-clean">
                 <div className="card-top-img-wrap">
-                  <img src={property.image} alt={property.title} className="card-img-element" />
+                  <Link href={`/property/${property.id}`} style={{ display: "block", width: "100%", height: "100%" }}>
+                    <img src={property.image} alt={property.title} className="card-img-element" />
+                  </Link>
                   <div className="card-tag-status">
                     <span className="dot-green"></span>
                     <span>{property.status}</span>
@@ -117,12 +98,35 @@ export default function FairfaxCityPage() {
                     <span className="price-big">{property.priceFormatted}</span>
                     <span className="property-badge-type">{property.propertyType}</span>
                   </div>
-                  <h3 className="card-street-name">{property.address}</h3>
+                  <h3 className="card-street-name">
+                    <Link href={`/property/${property.id}`} style={{ color: "inherit", textDecoration: "none" }}>
+                      {property.address}
+                    </Link>
+                  </h3>
                   <p className="card-city-zip">{property.city}, {property.state} {property.zip}</p>
                   <div className="card-specs-row">
                     <div className="spec-entry"><strong>{property.beds}</strong> <span>Beds</span></div>
                     <div className="spec-entry"><strong>{property.baths}</strong> <span>Baths</span></div>
                     <div className="spec-entry"><strong>{property.sqft.toLocaleString()}</strong> <span>SqFt</span></div>
+                  </div>
+                  <div style={{ marginTop: "12px", marginBottom: "6px" }}>
+                    <Link
+                      href={`/property/${property.id}`}
+                      style={{
+                        display: "block",
+                        textAlign: "center",
+                        padding: "8px 12px",
+                        borderRadius: "8px",
+                        background: "#F8FAFC",
+                        border: "1px solid var(--ink-200)",
+                        color: "var(--ink-900)",
+                        fontWeight: 700,
+                        fontSize: "0.85rem",
+                        textDecoration: "none"
+                      }}
+                    >
+                      View Property Details &rarr;
+                    </Link>
                   </div>
                   <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px", marginTop: "18px" }}>
                     <a 
@@ -152,8 +156,8 @@ export default function FairfaxCityPage() {
               Explore Other Northern Virginia Area Guides
             </span>
             <div style={{ display: "flex", justifyContent: "center", gap: "10px", flexWrap: "wrap", marginBottom: "24px" }}>
-              <Link href="/mosaic-district-homes" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-                Mosaic District &rarr;
+              <Link href="/fairfax-station-homes-for-sale" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+                Fairfax Station &rarr;
               </Link>
               <Link href="/oakton-homes-for-sale" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
                 Oakton Luxury Estates &rarr;
@@ -161,17 +165,17 @@ export default function FairfaxCityPage() {
               <Link href="/burke-va-homes-for-sale" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
                 Burke &amp; Lake Braddock &rarr;
               </Link>
-              <Link href="/communities/clifton" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-                Clifton Estates &rarr;
+              <Link href="/great-falls-va-homes-for-sale" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+                Great Falls &rarr;
               </Link>
-              <Link href="/communities/mclean" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-                McLean &amp; Gold Coast &rarr;
+              <Link href="/falls-church-va-homes-for-sale" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+                Falls Church &rarr;
               </Link>
-              <Link href="/communities/country-club-hills" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-                Country Club Hills &rarr;
+              <Link href="/chantilly-va-homes-for-sale" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+                Chantilly &rarr;
               </Link>
-              <Link href="/divisions/arlington-county" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-                Arlington County &rarr;
+              <Link href="/arlington-va-condos-for-sale" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
+                Arlington Condos &rarr;
               </Link>
             </div>
             <Link href="/" className="btn-card-ask" style={{ padding: "12px 28px", fontWeight: 700 }}>
@@ -180,26 +184,6 @@ export default function FairfaxCityPage() {
           </div>
         </div>
       </section>
-
-      {/* JSON-LD Schema */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "RealEstateListing",
-            "name": "Houses For Sale Fairfax City Virginia",
-            "description": "Active homes for sale and real estate in Fairfax City, VA (ZIP 22030).",
-            "url": "https://www.homesalesfairfax.com/fairfax-city-homes-for-sale",
-            "broker": {
-              "@type": "RealEstateAgent",
-              "name": "Elena Gorbounova & Kirill",
-              "telephone": "(703) 625-7888",
-              "url": "https://www.homesalesfairfax.com"
-            }
-          })
-        }}
-      />
 
       <Footer />
     </main>

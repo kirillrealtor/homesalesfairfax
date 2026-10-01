@@ -153,13 +153,13 @@ export const FAIRFAX_LISTINGS = [
 
 export const NEIGHBORHOOD_GUIDES = [
   {
-    slug: "fairfax-city",
-    name: "Fairfax City & Old Town",
-    zip: "22030",
-    marketVelocity: "Rapid Absorption",
-    vibe: "Historic Charm, Tree-Lined Walkability & Top Schools",
-    highlights: ["Woodson & Fairfax High Pyramids", "Walkable Old Town Square & Dining", "George Mason University Cultural Hub"],
-    image: "/images/communities/fairfax-city.jpg"
+    slug: "fairfax-station",
+    name: "Fairfax Station Woodlands",
+    zip: "22039",
+    marketVelocity: "High Seller Demand",
+    vibe: "Wooded Custom Acreage, Secluded Estates & Equestrian Charm",
+    highlights: ["Robinson & South County Pyramids", "Burke Lake & Fountainhead Regional Parks", "Private 2-to-5-Acre Wooded Lots"],
+    image: "/images/communities/oakton-estates.jpg"
   },
   {
     slug: "mosaic-district",

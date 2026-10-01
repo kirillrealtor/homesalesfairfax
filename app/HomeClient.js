@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Navbar from "./components/Navbar";
-import HeroSearch from "./components/HeroSearch";
 import TrustStats from "./components/TrustStats";
 import ListingsSection from "./components/ListingsSection";
 import HomeValuationTool from "./components/HomeValuationTool";
@@ -45,20 +44,13 @@ export default function HomeClient() {
 
   return (
     <main>
-      <div className="page-wrapper">
+      <div className="page-wrapper" style={{ paddingBottom: 0 }}>
         <Navbar onOpenTourModal={handleOpenGeneralTour} />
-        
-        <HeroSearch 
-          onSearch={setSearchFilters} 
-          onOpenTourModal={handleOpenGeneralTour} 
-          onSellerAddressSubmit={setSellerAddress}
-          initialAddress={sellerAddress}
-        />
       </div>
 
       <TrustStats />
 
-      <SellerAppointmentSection prefilledAddress={sellerAddress} />
+      <SellerAppointmentSection prefilledAddress={sellerAddress} isH1={true} />
 
       <ListingsSection 
         searchFilters={searchFilters} 

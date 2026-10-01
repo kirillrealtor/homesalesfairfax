@@ -47,7 +47,7 @@ export default function HomeValuationTool() {
           <span className="section-pretitle">Fairfax County Home Equity</span>
           <h2 className="section-title-bold">What Is Your Fairfax Home Worth Today?</h2>
           <p className="section-lead-text">
-            Automated online algorithms often misjudge kitchen remodels, finished basements, or school boundary premiums. Request an authentic, verified Bright MLS comparative market analysis prepared directly by Elena &amp; Kirill.
+            Automated online algorithms often misjudge kitchen remodels, finished basements, or school boundary premiums. Request an authentic, verified Bright MLS comparative market analysis prepared directly by Elena.
           </p>
         </div>
 

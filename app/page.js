@@ -2,13 +2,13 @@ import HomeClient from "./HomeClient";
 
 export const metadata = {
   title: "Fairfax VA House For Sale | Single Family Homes & MLS Listings",
-  description: "Browse single family homes for sale in Fairfax VA and houses for sale across Fairfax County directly from Bright MLS. Private showings and seller consultations with top Fairfax real estate agents Elena & Kirill.",
+  description: "Browse single family homes for sale in Fairfax VA and houses for sale across Fairfax County directly from Bright MLS. Private showings and seller consultations with top Fairfax real estate agents Elena Gorbounova.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com",
   },
   openGraph: {
     title: "Fairfax VA House For Sale | Single Family Homes & MLS Listings",
-    description: "Active Bright MLS real estate feed for Fairfax County, VA. Book private tours and schedule confidential seller CMA consultations with Elena Gorbounova & Kirill.",
+    description: "Active Bright MLS real estate feed for Fairfax County, VA. Book private tours and schedule confidential seller CMA consultations with Elena Gorbounova.",
     url: "https://www.homesalesfairfax.com",
     siteName: "homesalesfairfax.com",
     images: [
@@ -25,7 +25,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Fairfax VA House For Sale | Single Family Homes & MLS Listings",
-    description: "Browse single family homes and active listings in Fairfax County, VA with top real estate agents Elena Gorbounova & Kirill.",
+    description: "Browse single family homes and active listings in Fairfax County, VA with top real estate agents Elena Gorbounova.",
     images: ["/images/hero-estate.jpg"],
   }
 };
@@ -49,7 +49,7 @@ export default function Page() {
       {
         "@type": "RealEstateAgent",
         "@id": "https://www.homesalesfairfax.com/#realestateagent",
-        "name": "Elena Gorbounova & Kirill - RE/MAX Allegiance",
+        "name": "Elena Gorbounova - RE/MAX Allegiance",
         "url": "https://www.homesalesfairfax.com",
         "telephone": "+1-703-625-7888",
         "email": "ElenaYSC@gmail.com",

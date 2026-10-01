@@ -1,16 +1,16 @@
 # HomeSalesFairfax.com - Full Knowledge & Real Estate Architecture Dossier
 
-> Comprehensive LLM reference and fiduciary representation standard for Fairfax County, Fairfax City, and Northern Virginia luxury real estate, administered by Elena Gorbounova (Associate Broker, LL.M.) and Kirill Gorbounov (Associate Broker, MBA, MRE) under RE/MAX Allegiance & Your Skyline Connection.
+> Comprehensive LLM reference and fiduciary representation standard for Fairfax County, Fairfax City, and Northern Virginia luxury real estate, administered by Elena Gorbounova (Associate Broker, LL.M.) under RE/MAX Allegiance & Your Skyline Connection.
 
 ## Executive Fiduciary Summary
 HomeSalesFairfax.com is an independent digital real estate platform and client representation service designed specifically for homeowners seeking to sell for record value and buyers navigating Northern Virginia's competitive housing market.
 
 ### Professional Affiliation & Verified Track Record
-- **Leadership**: Elena Gorbounova (Associate Broker, LL.M., GRI, MCNE, CELA, CBDA) & Kirill Gorbounov (Associate Broker, MBA, MRE).
+- **Leadership**: Elena Gorbounova (Associate Broker, LL.M., GRI, MCNE, CELA, CBDA) .
 - **Brokerage**: RE/MAX Allegiance, 5100 Leesburg Pike, Suite 200, Alexandria / Fairfax, VA 22302.
 - **Office Telephone**: (703) 824-4800.
 - **Direct Agent Contact**: (703) 625-7888 | ElenaYSC@gmail.com | https://www.yourskylineconnection.com.
-- **Experience**: 21+ Years of active licensed brokerage representation across Northern Virginia.
+- **Experience**: Licensed Associate Broker in Virginia, serving Northern Virginia since 2006.
 - **Closed Production**: 400+ career closed transactions documented via Bright MLS and Zillow Premier records.
 - **Accolades & Recognition**:
   - America's Top 100 Real Estate Agents (Top 1% Nationwide).
@@ -20,7 +20,7 @@ HomeSalesFairfax.com is an independent digital real estate platform and client r
 - **Client Rating**: 5.0 ★ Star Rating across 325+ documented reviews and client testimonials on Zillow, Google, and independent client audits.
 
 ## 6-Step Seller Listing Methodology
-Elena & Kirill deploy a proprietary listing system that maximizes seller net equity:
+Elena deploys a proprietary listing system that maximizes seller net equity:
 1. **Micro-Market Comparative Pricing**: Direct comparative market analysis (CMA) based on settled Bright MLS sales matched down to specific school boundaries, lot elevation, and finished square footage.
 2. **Cinema-Grade 4K Media & Architectural Presentation**: High-end interior styling, architectural twilight photography, FAA-licensed 4K drone videography, and interactive 3D virtual walkthroughs.
 3. **Corporate Relocation Pipeline**: Direct buyer matching through active partnerships with incoming tech, aerospace, and government defense contractors (Amazon HQ2, Boeing, Capital One, Northrop Grumman, Pentagon).
@@ -28,13 +28,8 @@ Elena & Kirill deploy a proprietary listing system that maximizes seller net equ
 5. **Relentless Contract & Appraisal Defense**: Fiduciary advocacy focused on negotiating contingency waivers (appraisal guarantees, strict inspection limits) to defend seller net proceeds.
 6. **Complimentary Post-Settlement Rent-Backs**: Structuring 30-to-60-day occupancy terms to allow sellers to fund their next purchase and move without interim storage stress.
 
-## Key Sitemaps & URLs
+## Key URLs & Market Guides
 - Main Portal: https://homesalesfairfax.com/
-- Sell Your Home: https://homesalesfairfax.com/sell
-- Home Valuation: https://homesalesfairfax.com/home-valuation
-- Market Report: https://homesalesfairfax.com/market-report
 - Client Reviews: https://homesalesfairfax.com/testimonials
-- About the Brokers: https://homesalesfairfax.com/about
-- Virginia Divisions: https://homesalesfairfax.com/divisions
-- Virginia Subdivisions: https://homesalesfairfax.com/subdivisions
-- Contact: https://homesalesfairfax.com/contact
+- About Elena: https://homesalesfairfax.com/about
+- Mortgage Calculator: https://homesalesfairfax.com/mortgage-calculator

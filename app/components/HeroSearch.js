@@ -82,7 +82,7 @@ export default function HeroSearch({ onSearch, onOpenTourModal, onSellerAddressS
           </h1>
 
           <p className="hero-subtitle-clean">
-            Thinking of selling? Over 400 properties closed with a 102.8% average list-to-sale ratio and 5.2 days absorption. Book an in-home listing consultation with Elena &amp; Kirill to maximize your net equity.
+            Thinking of selling? Over 400 properties closed with a 102.8% average list-to-sale ratio and 5.2 days absorption. Book an in-home listing consultation with Elena to maximize your net equity.
           </p>
 
           {/* Seller Address Input Box */}
@@ -104,31 +104,34 @@ export default function HeroSearch({ onSearch, onOpenTourModal, onSellerAddressS
             </button>
           </form>
 
-          {/* Hyper-Local Divisions & Subdivisions Quick Links */}
+          {/* Regional Markets Quick Links */}
           <div style={{ marginTop: "18px", display: "flex", alignItems: "center", justifyContent: "center", gap: "8px", flexWrap: "wrap" }}>
             <span style={{ fontSize: "0.78rem", color: "#CBD5E1", textTransform: "uppercase", fontWeight: 700, letterSpacing: "0.05em", marginRight: "4px" }}>
-              Explore Divisions &amp; Subdivisions:
+              Explore Markets:
             </span>
-            <Link href="/divisions/fairfax-county" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
-              Fairfax County
+            <Link href="/oakton-homes-for-sale" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Oakton
             </Link>
-            <Link href="/divisions/city-of-fairfax" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
-              Fairfax City
+            <Link href="/burke-va-homes-for-sale" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Burke
             </Link>
-            <Link href="/subdivisions/mantua" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
-              Mantua
+            <Link href="/chantilly-va-homes-for-sale" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Chantilly
             </Link>
-            <Link href="/subdivisions/mosby-woods" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
-              Mosby Woods
+            <Link href="/great-falls-va-homes-for-sale" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Great Falls
             </Link>
-            <Link href="/subdivisions/franklin-farm" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
-              Franklin Farm
+            <Link href="/falls-church-va-homes-for-sale" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Falls Church
             </Link>
-            <Link href="/subdivisions/burke-centre" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
-              Burke Centre
+            <Link href="/arlington-va-condos-for-sale" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Arlington
             </Link>
-            <Link href="/divisions" style={{ background: "rgba(197, 168, 128, 0.28)", color: "var(--accent-gold)", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 700, textDecoration: "none", border: "1px solid rgba(197, 168, 128, 0.45)" }}>
-              All Divisions &rarr;
+            <Link href="/fairfax-station-homes-for-sale" style={{ background: "rgba(255,255,255,0.14)", backdropFilter: "blur(4px)", color: "#FFFFFF", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 600, textDecoration: "none", border: "1px solid rgba(255,255,255,0.25)" }}>
+              Fairfax Station
+            </Link>
+            <Link href="/contact" style={{ background: "rgba(197, 168, 128, 0.28)", color: "var(--accent-gold)", padding: "4px 12px", borderRadius: "9999px", fontSize: "0.8rem", fontWeight: 700, textDecoration: "none", border: "1px solid rgba(197, 168, 128, 0.45)" }}>
+              Sell In NoVA &rarr;
             </Link>
           </div>
 

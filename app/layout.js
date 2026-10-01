@@ -4,12 +4,12 @@ import QuickContactDock from "./components/QuickContactDock";
 export const metadata = {
   metadataBase: new URL("https://www.homesalesfairfax.com"),
   title: "Fairfax VA House For Sale | Single Family Homes & MLS Listings",
-  description: "Browse single family homes for sale in Fairfax VA and houses for sale across Fairfax County directly from Bright MLS. Private showings with top Fairfax real estate agents Elena & Kirill.",
+  description: "Browse single family homes for sale in Fairfax VA and houses for sale across Fairfax County directly from Bright MLS. Private showings with top Fairfax real estate agents Elena Gorbounova.",
   keywords: "single family homes for sale in fairfax va, fairfax va house for sale, house for sale in fairfax virginia, fairfax station homes for sale, fairfax condos for sale, fairfax real estate agents, realtors in fairfax, Elena Gorbounova, Northern Virginia real estate",
   authors: [{ name: "homesalesfairfax.com" }],
   openGraph: {
     title: "Fairfax VA House For Sale | Single Family Homes & MLS Listings",
-    description: "Browse single family homes and houses for sale across Fairfax County VA. Schedule private showings and instant valuations with Elena Gorbounova & Kirill.",
+    description: "Browse single family homes and houses for sale across Fairfax County VA. Schedule private showings and instant valuations with Elena Gorbounova.",
     url: "https://www.homesalesfairfax.com",
     siteName: "homesalesfairfax.com",
     images: [
@@ -42,11 +42,11 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/images/kirill.jpeg", sizes: "any" },
-      { url: "/images/kirill.jpg", sizes: "any" },
+      { url: "/icon.jpeg", sizes: "any" },
+      
     ],
-    shortcut: "/images/kirill.jpeg",
-    apple: "/images/kirill.jpeg",
+    shortcut: "/icon.jpeg",
+    apple: "/icon.jpeg",
   },
 };
 
@@ -86,6 +86,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var h=window.location.hostname;var isLocal=h==='localhost'||h==='127.0.0.1'||h.endsWith('.local')||h==='';var isPreview=window.location.search.indexOf('preview=fairfax2026')!==-1||document.cookie.indexOf('preview_access=true')!==-1;if(window.location.search.indexOf('preview=fairfax2026')!==-1){document.cookie='preview_access=true;path=/;max-age=2592000';}if(!isLocal&&!isPreview){document.documentElement.innerHTML='<head><meta name="robots" content="noindex,nofollow"><title></title></head><body style="background:#fff"></body>';}}catch(e){}})();`
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

@@ -25,19 +25,12 @@ export default function Navbar({ onOpenTourModal }) {
         <div className="nav-brand-divider" aria-hidden="true" />
         <div className="nav-brand-text">
           <span className="brand-name">HomesalesFairfax</span>
-          <span className="brand-subline">Elena Gorbounova • RE/MAX</span>
         </div>
       </Link>
 
       {/* Center: Desktop Navigation Links (Strictly Single Line) */}
       <nav className="nav-menu-center" aria-label="Main Navigation">
-        <Link href="/divisions" className="nav-item-link">Divisions</Link>
-        <Link href="/subdivisions" className="nav-item-link">Subdivisions</Link>
-        <Link href="/communities" className="nav-item-link">Communities</Link>
-        <Link href="/sell" className="nav-item-link" style={{ fontWeight: 800, color: "var(--accent-gold-hover)" }}>
-          ✦ List Your Property
-        </Link>
-        <Link href="/market-report" className="nav-item-link">Market Reports</Link>
+        <Link href="/mortgage-calculator" className="nav-item-link">Calculator</Link>
         <Link href="/testimonials" className="nav-item-link">Reviews</Link>
         <Link href="/about" className="nav-item-link">About Elena</Link>
       </nav>
@@ -61,7 +54,7 @@ export default function Navbar({ onOpenTourModal }) {
           </button>
         ) : (
           <Link
-            href="/sell"
+            href="/#sell"
             className="btn-capsule-black"
           >
             Book Listing Consultation
@@ -94,26 +87,17 @@ export default function Navbar({ onOpenTourModal }) {
       {/* Mobile Menu Dropdown Drawer */}
       {mobileMenuOpen && (
         <div className="nav-mobile-drawer" role="menu">
-          <Link href="/divisions" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
-            Virginia Divisions
-          </Link>
-          <Link href="/subdivisions" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
-            Subdivisions Directory
-          </Link>
-          <Link href="/communities" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
-            Communities
-          </Link>
-          <Link href="/sell" className="nav-mobile-link" style={{ fontWeight: 800, color: "var(--accent-gold-hover)" }} onClick={() => setMobileMenuOpen(false)}>
-            ✦ List Your Property
-          </Link>
-          <Link href="/market-report" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
-            Market Reports
+          <Link href="/" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
+            Home
           </Link>
           <Link href="/testimonials" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
             Client Reviews (325+)
           </Link>
           <Link href="/about" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
             About Elena
+          </Link>
+          <Link href="/mortgage-calculator" className="nav-mobile-link" onClick={() => setMobileMenuOpen(false)}>
+            Mortgage Calculator
           </Link>
 
           <div style={{ borderTop: "1px solid #E2E8F0", margin: "6px 0", paddingTop: "12px", display: "flex", flexDirection: "column", gap: "10px" }}>

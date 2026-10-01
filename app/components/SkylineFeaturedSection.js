@@ -243,7 +243,7 @@ export default function SkylineFeaturedSection() {
               </p>
 
               <Link
-                href="/communities/skyline"
+                href="/alexandria-va-townhomes-for-sale"
                 style={{
                   background: "#C53030",
                   color: "#FFFFFF",
@@ -312,7 +312,7 @@ export default function SkylineFeaturedSection() {
               </p>
 
               <Link
-                href="/communities/northampton-place"
+                href="/alexandria-va-townhomes-for-sale"
                 style={{
                   background: "#C53030",
                   color: "#FFFFFF",

@@ -675,7 +675,7 @@ export default function MortgageCalculatorPage() {
         }}>
           <div style={{ maxWidth: "680px" }}>
             <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "6px" }}>
-              ✦ Trusted Northern Virginia Real Estate Advisory • Elena &amp; Kirill
+              ✦ Trusted Northern Virginia Real Estate Advisory • Elena
             </span>
             <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "#FFFFFF", margin: "0 0 8px" }}>
               Ready to Tour Homes in Your Target Budget?
@@ -693,13 +693,13 @@ export default function MortgageCalculatorPage() {
             >
               Browse Active Listings &rarr;
             </Link>
-            <Link 
-              href="/contact" 
+            <a 
+              href="tel:7036257888" 
               className="btn btn-primary"
-              style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "12px 22px", fontSize: "0.9rem" }}
+              style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "12px 22px", fontSize: "0.9rem", textDecoration: "none" }}
             >
-              Connect with Elena
-            </Link>
+              Call Elena: (703) 625-7888
+            </a>
           </div>
         </div>
       </section>

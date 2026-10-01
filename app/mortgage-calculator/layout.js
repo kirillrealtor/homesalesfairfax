@@ -32,7 +32,7 @@ export default function MortgageCalculatorLayout({ children }) {
         "description": "Comprehensive mortgage calculator featuring 15 vs 30-year fixed comparisons, bi-weekly extra payment schedules, jumbo loan calculations, and Fairfax County property tax integration.",
         "provider": {
           "@type": "RealEstateAgent",
-          "name": "Elena Gorbounova & Kirill",
+          "name": "Elena Gorbounova",
           "telephone": "(703) 625-7888",
           "url": "https://www.homesalesfairfax.com"
         }

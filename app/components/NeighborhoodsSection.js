@@ -4,71 +4,71 @@ import { NEIGHBORHOOD_GUIDES } from "../data/listings";
 export default function NeighborhoodsSection({ onFilterNeighborhood }) {
   const hyperLocalReports = [
     {
-      name: "Mantua",
-      zip: "22031",
-      path: "/mantua-real-estate",
-      velocity: "High Seller Favor",
-      dom: "8 Days DOM",
-      pyramid: "Woodson High School",
-      tagline: "Wooded half-acre lots & active swim/tennis"
+      name: "Oakton Estates",
+      zip: "22124",
+      path: "/oakton-homes-for-sale",
+      velocity: "Luxury Equity Premium",
+      dom: "7 Days DOM",
+      pyramid: "Oakton High School",
+      tagline: "Custom acreage estates & 10 mins to Tysons Corner"
     },
     {
-      name: "Mosby Woods",
-      zip: "22030",
-      path: "/mosby-woods-market",
+      name: "Burke & Lake Braddock",
+      zip: "22015",
+      path: "/burke-va-homes-for-sale",
+      velocity: "Fast Family Absorption",
+      dom: "6 Days DOM",
+      pyramid: "Lake Braddock Secondary",
+      tagline: "Lakeside trails & Burke Centre VRE direct to DC"
+    },
+    {
+      name: "Chantilly & Oak Hill",
+      zip: "22033",
+      path: "/chantilly-va-homes-for-sale",
       velocity: "Multiple Offer Pace",
       dom: "7 Days DOM",
-      pyramid: "Fairfax High School",
-      tagline: "Vienna Metro corridor & walk to Old Town"
+      pyramid: "Chantilly High School",
+      tagline: "Tech corridor access & expansive residential enclaves"
     },
     {
-      name: "Franklin Farm",
-      zip: "22033",
-      path: "/franklin-farm-values",
-      velocity: "Rapid Absorption",
+      name: "Fairfax Station",
+      zip: "22039",
+      path: "/fairfax-station-homes-for-sale",
+      velocity: "High Seller Favor",
       dom: "8 Days DOM",
-      pyramid: "Oakton / Chantilly",
-      tagline: "6 fishing ponds, 13 miles of trails & pools"
-    },
-    {
-      name: "Kings Park West",
-      zip: "22032",
-      path: "/kings-park-west-real-estate",
-      velocity: "High Equity Velocity",
-      dom: "9 Days DOM",
-      pyramid: "Robinson Secondary IB",
-      tagline: "Lake Royal recreation & George Mason corridor"
+      pyramid: "Robinson / South County",
+      tagline: "Wooded 5-acre custom manors & equestrian charm"
     },
   ];
 
-  const featuredHighEquityCommunities = [
+  const featuredRegionalMarkets = [
     {
-      name: "Clifton & Wine Country",
-      slug: "/communities/clifton",
-      desc: "5-acre equestrian manors & historic village charm",
-      zip: "22024",
+      name: "Great Falls Luxury Estates",
+      slug: "/great-falls-va-homes-for-sale",
+      desc: "Potomac River corridor, Langley pyramid & multi-acre private compounds",
+      zip: "22066",
       badge: "Estate Luxury"
     },
     {
-      name: "McLean & Gold Coast",
-      slug: "/communities/mclean",
-      desc: "Potomac River corridor, Langley pyramid & embassy estates",
-      zip: "22101",
-      badge: "Ultra Luxury"
+      name: "Falls Church Houses",
+      slug: "/falls-church-va-homes-for-sale",
+      desc: "Historic tree-lined walkability, Metro transit, and top school pyramids",
+      zip: "22046",
+      badge: "Metro Luxury"
     },
     {
-      name: "Country Club Hills",
-      slug: "/communities/country-club-hills",
-      desc: "Army Navy CC fairway frontage & Woodson pyramid",
-      zip: "22030",
-      badge: "Golf Enclave"
+      name: "Reston Town Center",
+      slug: "/reston-va-townhomes-condos",
+      desc: "Executive townhomes, Silver Line Metro, and Dulles tech hub dining",
+      zip: "20190",
+      badge: "Urban Tech Hub"
     },
     {
-      name: "Arlington County Division",
-      slug: "/divisions/arlington-county",
-      desc: "Clarendon, Ballston, Rosslyn & National Landing corridor",
-      zip: "22201+",
-      badge: "Metro Division"
+      name: "Arlington Luxury Condos",
+      slug: "/arlington-va-condos-for-sale",
+      desc: "High-rise luxury condos, Potomac skyline views, and Amazon HQ2 corridor",
+      zip: "22209",
+      badge: "Urban Tower"
     }
   ];
 
@@ -78,9 +78,9 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
         {/* Section Header */}
         <div className="section-head-clean">
           <span className="section-pretitle">Hyper-Local Neighborhood Authority</span>
-          <h2 className="section-title-bold">Fairfax County Neighborhood Market Reports</h2>
+          <h2 className="section-title-bold">Featured Northern Virginia Markets &amp; Enclaves</h2>
           <p className="section-lead-text">
-            Sellers want a true neighborhood specialist, not just a generic city agent. Explore live pricing benchmarks, recent closed sales comps, and monthly market reports for high-turnover subdivisions across ZIP codes 22030, 22031, 22032, and 22033.
+            Sellers want a true micro-market specialist with verified comps. Explore live pricing benchmarks, recent closed sales, and active listings across Northern Virginia&apos;s most desirable school pyramids and commuter corridors.
           </p>
         </div>
 
@@ -88,11 +88,11 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
         <div style={{ marginBottom: "48px" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "18px", flexWrap: "wrap", gap: "10px" }}>
             <span style={{ fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em" }}>
-              ✦ Direct Postcard &amp; Monthly QR Dossiers
+              ✦ High-Demand Communities &amp; School Pyramids
             </span>
-            <Link href="/market-report" style={{ fontSize: "0.88rem", color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>
-              View All Fairfax County ZIP Reports &rarr;
-            </Link>
+            <a href="/#sell" style={{ fontSize: "0.88rem", color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>
+              Schedule Consultation &rarr;
+            </a>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "18px" }}>
@@ -140,7 +140,7 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
                     <strong style={{ fontSize: "1.05rem", color: "var(--accent-gold)" }}>{nh.velocity}</strong>
                   </div>
                   <span style={{ fontSize: "0.82rem", color: "var(--ink-950)", fontWeight: 700 }}>
-                    Report &rarr;
+                    Guide &rarr;
                   </span>
                 </div>
               </Link>
@@ -148,24 +148,21 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
           </div>
         </div>
 
-        {/* Featured High-Equity Regional Enclaves: Clifton, McLean, Country Club Hills, Arlington */}
+        {/* Featured High-Equity Regional Enclaves */}
         <div style={{ marginBottom: "48px" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "18px", flexWrap: "wrap", gap: "10px" }}>
             <span style={{ fontSize: "0.82rem", color: "var(--accent-gold)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.06em" }}>
-              ✦ Premier Regional Communities &amp; Divisions
+              ✦ Premier Regional Markets &amp; Enclaves
             </span>
             <div style={{ display: "flex", gap: "14px" }}>
-              <Link href="/communities" style={{ fontSize: "0.88rem", color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>
-                All Communities &rarr;
-              </Link>
-              <Link href="/divisions" style={{ fontSize: "0.88rem", color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>
-                All Divisions &rarr;
-              </Link>
+              <a href="/#sell" style={{ fontSize: "0.88rem", color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>
+                Consult with Elena &rarr;
+              </a>
             </div>
           </div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))", gap: "18px" }}>
-            {featuredHighEquityCommunities.map((c) => (
+            {featuredRegionalMarkets.map((c) => (
               <Link
                 key={c.name}
                 href={c.slug}
@@ -283,7 +280,7 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
                 <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px", marginTop: "auto" }}>
                   <Link 
                     href={
-                      nh.slug === "fairfax-city" ? "/fairfax-city-homes-for-sale" :
+                      nh.slug === "fairfax-station" ? "/fairfax-station-homes-for-sale" :
                       nh.slug === "mosaic-district" ? "/mosaic-district-homes" :
                       nh.slug === "oakton" ? "/oakton-homes-for-sale" :
                       "/burke-va-homes-for-sale"
@@ -310,14 +307,15 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
         <div style={{ marginTop: "36px", padding: "24px 28px", background: "rgba(255,255,255,0.85)", borderRadius: "16px", border: "1px solid var(--ink-200)", display: "flex", flexDirection: "column", gap: "14px" }}>
           <div style={{ fontSize: "0.95rem", color: "var(--ink-800)", lineHeight: "1.7" }}>
             <strong>Northern Virginia Regional Coverage:</strong> Elena represents luxury sellers and buyers across{" "}
-            <Link href="/communities/clifton" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Clifton</Link>,{" "}
-            <Link href="/communities/mclean" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>McLean</Link>,{" "}
-            <Link href="/communities/country-club-hills" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Country Club Hills</Link>,{" "}
-            <Link href="/divisions/fairfax-county" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Fairfax County</Link>,{" "}
-            <Link href="/divisions/arlington-county" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Arlington County</Link>,{" "}
-            <Link href="/communities/vienna" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Vienna</Link>,{" "}
-            <Link href="/communities/mosaic-district" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Mosaic District</Link>, and{" "}
-            <Link href="/divisions/city-of-alexandria" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Alexandria</Link>.
+            <Link href="/oakton-homes-for-sale" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Oakton</Link>,{" "}
+            <Link href="/burke-va-homes-for-sale" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Burke</Link>,{" "}
+            <Link href="/great-falls-va-homes-for-sale" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Great Falls</Link>,{" "}
+            <Link href="/falls-church-va-homes-for-sale" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Falls Church</Link>,{" "}
+            <Link href="/fairfax-station-homes-for-sale" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Fairfax Station</Link>,{" "}
+            <Link href="/chantilly-va-homes-for-sale" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Chantilly</Link>,{" "}
+            <Link href="/mosaic-district-homes" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Mosaic District</Link>,{" "}
+            <Link href="/arlington-va-condos-for-sale" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Arlington</Link>, and{" "}
+            <Link href="/alexandria-va-townhomes-for-sale" style={{ color: "var(--ink-950)", fontWeight: 700, textDecoration: "underline" }}>Alexandria</Link>.
           </div>
 
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: "12px", borderTop: "1px solid var(--ink-100)", paddingTop: "12px" }}>
@@ -329,6 +327,7 @@ export default function NeighborhoodsSection({ onFilterNeighborhood }) {
             </a>
           </div>
         </div>
+
       </div>
     </section>
   );

@@ -34,7 +34,7 @@ export default function ListingsSection({ searchFilters, onSelectPropertyForTour
           <span className="section-pretitle">Showcase Portfolio &amp; Buyer Demand</span>
           <h2 className="section-title-bold">Featured Listing Portfolio &amp; Active Inventory</h2>
           <p className="section-lead-text">
-            See how Elena &amp; Kirill present and market properties to command top dollar across Northern Virginia. Every listing receives architectural 4K HDR media, custom drone footage, and targeted corporate relocation distribution.
+            See how Elena presents and markets properties to command top dollar across Northern Virginia. Every listing receives architectural 4K HDR media, custom drone footage, and targeted corporate relocation distribution.
           </p>
         </div>
 

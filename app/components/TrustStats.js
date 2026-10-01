@@ -11,13 +11,13 @@ export default function TrustStats() {
       sub: "America's Top 100 & Five Star"
     },
     {
-      number: "21+ Yrs",
+      number: "Since 2006",
       label: "Local Market Authority",
       sub: "Associate Broker & LL.M."
     },
     {
       number: "5.0 ★",
-      label: "130+ Client Reviews",
+      label: "325+ Client Reviews",
       sub: "Zillow & Google 5-Star Rated"
     }
   ];

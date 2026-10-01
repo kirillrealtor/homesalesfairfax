@@ -74,13 +74,13 @@ export default function AgentAuthority({ onOpenTourModal }) {
           <div>
             <span className="section-pretitle">Direct Local Representation</span>
             <h2 className="section-title-bold">
-              Why Sellers Hire Elena &amp; Kirill <br />to List Their Properties.
+              Why Sellers Hire Elena <br />to List Their Properties.
             </h2>
             <p style={{ marginBottom: "16px", color: "var(--ink-600)", fontSize: "0.98rem", lineHeight: "1.7" }}>
               Selling a property in Northern Virginia is a major financial milestone. Achieving top dollar comes down to strategic pricing, high-end 4K HDR presentation, and aggressive fiduciary negotiation.
             </p>
             <p style={{ marginBottom: "26px", color: "var(--ink-600)", fontSize: "0.98rem", lineHeight: "1.7" }}>
-              When you hire Elena Gorbounova and Kirill, you work directly with veteran top producers who have closed over 400 transactions with 21+ years of local mastery. You will never deal with call centers or junior assistants. From our initial in-home pricing walkthrough to the closing table, your net proceeds always come first.
+              When you hire Elena Gorbounova, you work directly with a veteran top producer who has closed over 400 transactions, serving Northern Virginia since 2006. You will never deal with call centers or junior assistants. From initial in-home pricing walkthrough to the closing table, your net proceeds always come first.
             </p>
 
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "20px", marginBottom: "28px" }}>

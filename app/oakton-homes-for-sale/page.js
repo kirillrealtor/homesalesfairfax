@@ -1,7 +1,5 @@
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import { FAIRFAX_LISTINGS } from "../data/listings";
-import Link from "next/link";
+import PillarLandingClient from "../components/PillarLandingClient";
 
 export const metadata = {
   title: "Houses For Sale Oakton VA | Homes For Sale in Oakton 22124",
@@ -12,165 +10,76 @@ export const metadata = {
 };
 
 export default function OaktonHomesPage() {
-  const oaktonHomes = FAIRFAX_LISTINGS.filter(h => h.neighborhood.includes("Oakton") || h.zip === "22124");
+  const oaktonHomes = FAIRFAX_LISTINGS
+    .filter(h => h.neighborhood.includes("Oakton") || h.zip === "22124")
+    .map(p => ({
+      id: p.id,
+      title: p.title,
+      image: p.image,
+      status: p.status,
+      priceFormatted: p.priceFormatted,
+      propertyType: p.propertyType,
+      address: p.address,
+      city: p.city,
+      state: p.state,
+      zip: p.zip,
+      beds: p.beds,
+      baths: p.baths,
+      sqft: p.sqft
+    }));
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "RealEstateListing",
+    "name": "Houses For Sale Oakton VA",
+    "description": "Active luxury houses and homes for sale in Oakton, VA (ZIP 22124).",
+    "url": "https://www.homesalesfairfax.com/oakton-homes-for-sale",
+    "broker": {
+      "@type": "RealEstateAgent",
+      "name": "Elena Gorbounova",
+      "telephone": "(703) 625-7888",
+      "url": "https://www.homesalesfairfax.com"
+    }
+  };
+
+  const sellerCard = {
+    tag: "✦ Oakton Estate Sellers • Elena Gorbounova",
+    title: "Planning to Sell Your Oakton Estate?",
+    description: "Oakton custom homes and acre parcels command exceptional equity premiums and rapid absorption of 7 Days on Market. Discover our cinematic 4K drone marketing, private wealth syndication, and school pyramid pricing.",
+    guideLink: "/contact",
+    guideText: "Oakton Seller Guide →"
+  };
+
+  const insights = [
+    {
+      title: "Wooded Acreage & Custom Architecture",
+      text: "Unlike higher-density Northern Virginia suburbs, Oakton is renowned for preserving scenic topography with one- to five-acre estate zoning. Properties feature custom architectural styles including brick Georgian colonials, stone transitionals, and modern craftsman residences with private swimming pools and circular drives."
+    },
+    {
+      title: "Top-Ranked Oakton High School Pyramid",
+      text: "Residents enjoy access to Fairfax County Public Schools' prestigious Oakton High School pyramid, known for academic excellence, AP programs, and state champion athletic teams. Proximity to Oakton Elementary and Flint Hill private academy offers premier educational flexibility."
+    },
+    {
+      title: "Strategic Northern Virginia Commuter Access",
+      text: "Oakton offers unmatched geographical positioning. Situated directly between Vienna, Reston, and Fairfax City, residents access Route 123, Interstate 66, and the Vienna / Fairfax-GMU Orange Line Metro in under 7 minutes, while Tysons Corner's world-class retail and corporate centers are only 10 minutes away."
+    }
+  ];
 
   return (
-    <main>
-      <div className="page-wrapper" style={{ paddingBottom: 0 }}>
-        <Navbar />
-      </div>
-
-      <section className="container" style={{ padding: "40px 20px 80px" }}>
-        <div className="section-head-clean">
-          <span className="section-pretitle">Fairfax County Luxury Real Estate</span>
-          <h1 className="section-title-bold">Houses For Sale in Oakton, VA</h1>
-          <p className="section-lead-text">
-            Explore active homes for sale in Oakton VA (ZIP 22124). Private wooded acre lots, custom luxury manors, top-rated Oakton High School pyramid, and swift access to Tysons Corner and Vienna Metro.
-          </p>
-        </div>
-
-        {/* High-Converting Seller Advisory Card */}
-        <div style={{
-          background: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
-          color: "#FFFFFF",
-          borderRadius: "16px",
-          padding: "32px 28px",
-          marginBottom: "44px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexWrap: "wrap",
-          gap: "20px"
-        }}>
-          <div style={{ maxWidth: "660px" }}>
-            <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "6px" }}>
-              ✦ Oakton Estate Sellers • Elena Gorbounova &amp; Kirill
-            </span>
-            <h2 style={{ fontSize: "1.65rem", fontWeight: 800, color: "#FFFFFF", margin: "0 0 8px" }}>
-              Planning to Sell Your Oakton Estate?
-            </h2>
-            <p style={{ fontSize: "0.96rem", color: "#CBD5E1", margin: 0, lineHeight: 1.6 }}>
-              Oakton custom homes and acre parcels command <strong>exceptional equity premiums</strong> and rapid absorption of <strong>7 Days on Market</strong>. Discover our cinematic 4K drone marketing, private wealth syndication, and school pyramid pricing.
-            </p>
-          </div>
-
-          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-            <Link 
-              href="/subdivisions/oakton-estates" 
-              className="btn btn-outline"
-              style={{ color: "#FFFFFF", borderColor: "rgba(255,255,255,0.3)", padding: "12px 20px", fontWeight: 600, fontSize: "0.88rem" }}
-            >
-              Oakton Seller Guide &rarr;
-            </Link>
-            <Link 
-              href="/sell" 
-              className="btn btn-primary"
-              style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "12px 20px", fontSize: "0.88rem" }}
-            >
-              Book In-Home Consultation
-            </Link>
-          </div>
-        </div>
-
-        <div className="properties-3col">
-          {oaktonHomes.map((property) => (
-            <article key={property.id} className="property-card-clean">
-              <div className="card-top-img-wrap">
-                <img src={property.image} alt={property.title} className="card-img-element" />
-                <div className="card-tag-status">
-                  <span className="dot-green"></span>
-                  <span>{property.status}</span>
-                </div>
-              </div>
-              <div className="card-body-clean">
-                <div className="card-price-headline">
-                  <span className="price-big">{property.priceFormatted}</span>
-                  <span className="property-badge-type">{property.propertyType}</span>
-                </div>
-                <h3 className="card-street-name">{property.address}</h3>
-                <p className="card-city-zip">{property.city}, {property.state} {property.zip}</p>
-                <div className="card-specs-row">
-                  <span><strong>{property.beds}</strong> Beds</span>
-                  <span><strong>{property.baths}</strong> Baths</span>
-                  <span><strong>{property.sqft.toLocaleString()}</strong> SqFt</span>
-                </div>
-                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px", marginTop: "14px" }}>
-                  <a 
-                    href={`sms:+17036257888?body=Hi%20Elena,%20I'm%20interested%20in%20a%20private%20showing%20for%20${encodeURIComponent(property.address)}.`}
-                    className="btn-capsule-black"
-                    style={{ textAlign: "center", padding: "10px", fontSize: "0.85rem", fontWeight: 700 }}
-                    title="Text Us via SMS"
-                  >
-                    Text Us
-                  </a>
-                  <a 
-                    href="tel:7036257888"
-                    className="btn-card-ask"
-                    style={{ textAlign: "center", padding: "10px", fontSize: "0.85rem", fontWeight: 700 }}
-                    title="Call Us Direct"
-                  >
-                    Call Us
-                  </a>
-                </div>
-              </div>
-            </article>
-          ))}
-        </div>
-
-        <div style={{ textAlign: "center", marginTop: "50px", borderTop: "1px solid var(--ink-200)", paddingTop: "36px" }}>
-          <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 800, textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "12px" }}>
-            Explore Other Northern Virginia Area Guides
-          </span>
-          <div style={{ display: "flex", justifyContent: "center", gap: "10px", flexWrap: "wrap", marginBottom: "24px" }}>
-            <Link href="/fairfax-city-homes-for-sale" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-              Fairfax City &rarr;
-            </Link>
-            <Link href="/mosaic-district-homes" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-              Mosaic District &rarr;
-            </Link>
-            <Link href="/burke-va-homes-for-sale" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-              Burke &amp; Lake Braddock &rarr;
-            </Link>
-            <Link href="/communities/clifton" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-              Clifton Estates &rarr;
-            </Link>
-            <Link href="/communities/mclean" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-              McLean &amp; Gold Coast &rarr;
-            </Link>
-            <Link href="/communities/country-club-hills" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-              Country Club Hills &rarr;
-            </Link>
-            <Link href="/divisions/arlington-county" className="btn btn-outline" style={{ fontSize: "0.85rem", padding: "8px 16px" }}>
-              Arlington County &rarr;
-            </Link>
-          </div>
-          <Link href="/" className="btn-card-ask" style={{ display: "inline-block", padding: "12px 24px" }}>
-            ← Return to Full Fairfax Portal
-          </Link>
-        </div>
-      </section>
-
-      {/* JSON-LD Schema */}
+    <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "RealEstateListing",
-            "name": "Houses For Sale Oakton VA",
-            "description": "Active homes for sale and luxury acreage estates in Oakton, VA (ZIP 22124).",
-            "url": "https://www.homesalesfairfax.com/oakton-homes-for-sale",
-            "broker": {
-              "@type": "RealEstateAgent",
-              "name": "Elena Gorbounova & Kirill",
-              "telephone": "(703) 625-7888",
-              "url": "https://www.homesalesfairfax.com"
-            }
-          })
-        }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-
-      <Footer />
-    </main>
+      <PillarLandingClient
+        pretitle="Fairfax County Luxury Real Estate"
+        title="Houses For Sale in Oakton, VA"
+        leadText="Explore active homes for sale in Oakton VA (ZIP 22124). Private wooded acre lots, custom luxury manors, top-rated Oakton High School pyramid, and swift access to Tysons Corner and Vienna Metro."
+        breadcrumbLabel="Oakton Houses For Sale"
+        sellerCard={sellerCard}
+        properties={oaktonHomes}
+        insights={insights}
+      />
+    </>
   );
 }

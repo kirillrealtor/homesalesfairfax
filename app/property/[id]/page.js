@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
   if (!property) {
     return {
       title: "Fairfax Property | Showing Tours & Top Listings",
-      description: "Explore active Fairfax County Virginia real estate listings with Elena Gorbounova and Kirill.",
+      description: "Explore active Fairfax County Virginia real estate listings with Elena Gorbounova.",
       alternates: {
         canonical: "https://www.homesalesfairfax.com",
       },
@@ -23,7 +23,7 @@ export async function generateMetadata({ params }) {
 
   const cleanCity = property.city.includes("/") ? property.city.split("/")[0].trim() : property.city;
   const title = `${property.address}, ${cleanCity} VA | Homes For Sale`;
-  const description = `${property.title}: ${property.beds} Bed, ${property.baths} Bath, ${property.sqft.toLocaleString()} SqFt ${property.propertyType} in ${property.neighborhood}, ${property.city} VA. Schedule a private showing tour with Elena & Kirill.`;
+  const description = `${property.title}: ${property.beds} Bed, ${property.baths} Bath, ${property.sqft.toLocaleString()} SqFt ${property.propertyType} in ${property.neighborhood}, ${property.city} VA. Schedule a private showing tour with Elena.`;
 
   return {
     title,
@@ -85,7 +85,7 @@ export default async function PropertyDetailPage({ params }) {
     "url": `https://www.homesalesfairfax.com/property/${property.id}`,
     "broker": {
       "@type": "RealEstateAgent",
-      "name": "Elena Gorbounova & Kirill",
+      "name": "Elena Gorbounova",
       "telephone": "(703) 625-7888",
       "url": "https://www.homesalesfairfax.com"
     }

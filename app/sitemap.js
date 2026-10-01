@@ -1,6 +1,4 @@
 import { FAIRFAX_LISTINGS } from "./data/listings";
-import { FAIRFAX_COMMUNITIES } from "./data/communities";
-import { VIRGINIA_DIVISIONS, VIRGINIA_SUBDIVISIONS } from "./data/virginiaDivisions";
 
 export default function sitemap() {
   const baseUrl = "https://www.homesalesfairfax.com";
@@ -13,12 +11,6 @@ export default function sitemap() {
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/sell`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
       url: `${baseUrl}/about`,
       lastModified: new Date(),
       changeFrequency: "weekly",
@@ -26,18 +18,6 @@ export default function sitemap() {
     },
     {
       url: `${baseUrl}/about-elena`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/communities`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/fairfax-city-homes-for-sale`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.95,
@@ -115,45 +95,9 @@ export default function sitemap() {
       priority: 0.9,
     },
     {
-      url: `${baseUrl}/mantua-real-estate`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/mosby-woods-market`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/franklin-farm-values`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/kings-park-west-real-estate`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/market-report`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.95,
-    },
-    {
       url: `${baseUrl}/testimonials`,
       lastModified: new Date(),
       changeFrequency: "daily",
-      priority: 0.95,
-    },
-    {
-      url: `${baseUrl}/home-valuation`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
       priority: 0.95,
     },
     {
@@ -162,46 +106,7 @@ export default function sitemap() {
       changeFrequency: "monthly",
       priority: 0.8,
     },
-    {
-      url: `${baseUrl}/contact`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/divisions`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.98,
-    },
-    {
-      url: `${baseUrl}/subdivisions`,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 0.98,
-    },
   ];
-
-  const divisionRoutes = VIRGINIA_DIVISIONS.map((d) => ({
-    url: `${baseUrl}/divisions/${d.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.95,
-  }));
-
-  const subdivisionRoutes = VIRGINIA_SUBDIVISIONS.map((s) => ({
-    url: `${baseUrl}/subdivisions/${s.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.95,
-  }));
-
-  const communityRoutes = FAIRFAX_COMMUNITIES.map((c) => ({
-    url: `${baseUrl}/communities/${c.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly",
-    priority: 0.95,
-  }));
 
   const propertyRoutes = FAIRFAX_LISTINGS.map((p) => ({
     url: `${baseUrl}/property/${p.id}`,
@@ -210,5 +115,5 @@ export default function sitemap() {
     priority: 0.85,
   }));
 
-  return [...staticRoutes, ...divisionRoutes, ...subdivisionRoutes, ...communityRoutes, ...propertyRoutes];
+  return [...staticRoutes, ...propertyRoutes];
 }

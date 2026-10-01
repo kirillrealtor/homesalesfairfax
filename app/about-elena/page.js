@@ -2,13 +2,13 @@ import AboutPage from "../about/page";
 
 export const metadata = {
   title: "Elena Gorbounova | Real Estate Agent Fairfax VA & Top Broker",
-  description: "Meet Elena Gorbounova (LL.M., MCNE): Premier real estate agent in Fairfax VA with RE/MAX Allegiance. 21+ years experience, Top 1% nationwide, and 400+ properties sold.",
+  description: "Meet Elena Gorbounova (LL.M., MCNE): Premier real estate agent in Fairfax VA with RE/MAX Allegiance. Serving NoVA since 2006, Top 1% nationwide, and 400+ properties sold.",
   alternates: {
     canonical: "https://www.homesalesfairfax.com/about-elena",
   },
   openGraph: {
     title: "Elena Gorbounova | Real Estate Agent Fairfax VA & Top Broker",
-    description: "Legal precision, master negotiation, and 21+ years of dedicated market leadership across Fairfax County and Northern Virginia.",
+    description: "Legal precision, master negotiation, and dedicated market leadership since 2006 across Fairfax County and Northern Virginia.",
     url: "https://www.homesalesfairfax.com/about-elena",
     siteName: "homesalesfairfax.com",
     locale: "en_US",
@@ -25,7 +25,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Elena Gorbounova | Real Estate Agent Fairfax VA & Top Broker",
-    description: "Meet Elena Gorbounova (LL.M., MCNE): Premier real estate agent in Fairfax VA with RE/MAX Allegiance. 21+ years experience and 400+ properties sold.",
+    description: "Meet Elena Gorbounova (LL.M., MCNE): Premier real estate agent in Fairfax VA with RE/MAX Allegiance. Serving Northern Virginia since 2006 and 400+ properties sold.",
     images: ["https://www.homesalesfairfax.com/images/elena-portrait.jpg"],
   }
 };
