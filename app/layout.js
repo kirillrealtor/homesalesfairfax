@@ -87,11 +87,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <script
-          dangerouslySetInnerHTML={{
-            __html: `(function(){try{var h=window.location.hostname;var isLocal=h==='localhost'||h==='127.0.0.1'||h.endsWith('.local')||h==='';var isPreview=window.location.search.indexOf('preview=fairfax2026')!==-1||document.cookie.indexOf('preview_access=true')!==-1;if(window.location.search.indexOf('preview=fairfax2026')!==-1){document.cookie='preview_access=true;path=/;max-age=2592000';}if(!isLocal&&!isPreview){document.documentElement.innerHTML='<head><meta name="robots" content="noindex,nofollow"><title></title></head><body style="background:#fff"></body>';}}catch(e){}})();`
-          }}
-        />
-        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
