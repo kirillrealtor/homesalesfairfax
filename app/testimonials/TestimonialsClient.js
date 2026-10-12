@@ -82,15 +82,11 @@ export default function TestimonialsClient() {
 
       {/* Trust & Accolades Hero Section */}
       <section className="container" style={{ maxWidth: "1100px", padding: "48px 20px 20px" }}>
-        <div style={{
+        <div className="testimonials-hero-grid" style={{
           background: "#FFFFFF",
           border: "1px solid var(--ink-200)",
           borderRadius: "16px",
-          padding: "36px 32px",
           boxShadow: "var(--shadow-card)",
-          display: "grid",
-          gridTemplateColumns: "1.3fr 1fr",
-          gap: "40px",
           alignItems: "center"
         }}>
           {/* Left Column: Transparency statement & Official Accolades Badges */}

@@ -56,7 +56,7 @@ export default function SkylineFeaturedSection() {
 
           <h2 style={{
             fontFamily: "var(--font-main)",
-            fontSize: "clamp(2.4rem, 5vw, 3.8rem)",
+            fontSize: "clamp(1.8rem, 5.5vw, 3.8rem)",
             fontWeight: 900,
             color: "#FFFFFF",
             letterSpacing: "0.02em",
@@ -177,7 +177,7 @@ export default function SkylineFeaturedSection() {
       </div>
 
       {/* 3. Screenshot 4 Middle: Skyline Condominiums & Northampton Place Condominiums */}
-      <div className="container" style={{ padding: "64px 24px" }}>
+      <div className="container skyline-condos-container">
         <div style={{ textAlign: "center", marginBottom: "48px" }}>
           <span style={{ fontSize: "0.82rem", fontWeight: 700, color: "var(--accent-gold)", letterSpacing: "0.1em", textTransform: "uppercase" }}>
             Northern Virginia High-Rise Living
@@ -190,11 +190,7 @@ export default function SkylineFeaturedSection() {
           </p>
         </div>
 
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(460px, 1fr))",
-          gap: "40px"
-        }}>
+        <div className="skyline-condo-cards-grid">
           {/* Card 1: Skyline Condominiums */}
           <div style={{
             background: "#FFFFFF",
@@ -336,25 +332,11 @@ export default function SkylineFeaturedSection() {
       </div>
 
       {/* 4. Screenshot 4 Bottom: Elena's Personal Ally Invitation Section */}
-      <div style={{ background: "#F8FAFC", borderTop: "1px solid #E2E8F0", padding: "64px 24px" }}>
-        <div className="container" style={{
-          display: "grid",
-          gridTemplateColumns: "380px 1fr",
-          gap: "56px",
-          alignItems: "center"
-        }}>
+      <div className="skyline-ally-section-wrap" style={{ background: "#F8FAFC", borderTop: "1px solid #E2E8F0" }}>
+        <div className="container skyline-ally-grid">
           {/* Elena Photo in Black Dress */}
           <div style={{ textAlign: "center" }}>
-            <div style={{
-              position: "relative",
-              maxWidth: "340px",
-              margin: "0 auto",
-              borderRadius: "20px",
-              overflow: "hidden",
-              boxShadow: "0 12px 32px -8px rgba(15, 23, 42, 0.16)",
-              border: "1px solid #E2E8F0",
-              background: "#FFFFFF"
-            }}>
+            <div className="skyline-ally-photo-wrap">
               <img
                 src="/images/elena-portrait.jpg"
                 alt="Elena Gorbounova - RE/MAX Allegiance"
@@ -384,7 +366,7 @@ export default function SkylineFeaturedSection() {
               I am dedicated to guiding you through every phase of the transaction with energy, enthusiasm, persistence, and determination. As a results-oriented professional, I balance aggressive marketing strategies, comprehensive market data, and seasoned negotiation skills to satisfy each and every client. My commitment is paramount because I want to be your real estate ally, not only for one transaction, but for many years to come. You can count on me whenever you need guidance.
             </p>
 
-            <div style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
+            <div className="skyline-ally-cta-row" style={{ display: "flex", gap: "16px", flexWrap: "wrap", alignItems: "center" }}>
               <Link
                 href="/about"
                 style={{

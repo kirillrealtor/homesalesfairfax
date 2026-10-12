@@ -94,12 +94,7 @@ export default function NorthamptonPlaceClient() {
       {/* Two-Column Showcase Section: Interactive Image Carousel + Monograph Text */}
       <section className="content-section" style={{ background: "#FFFFFF", borderTop: "1px solid var(--ink-200)", borderBottom: "1px solid var(--ink-200)", padding: "64px 0" }}>
         <div className="container">
-          <div style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(420px, 1fr))",
-            gap: "48px",
-            alignItems: "center"
-          }}>
+          <div className="condo-showcase-grid">
             {/* Left Column: Image Carousel with 10 Photos */}
             <div
               onMouseEnter={() => setIsPaused(true)}

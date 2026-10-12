@@ -181,12 +181,7 @@ export default function TestimonialsDirectory() {
           </button>
         </div>
       ) : (
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-          gap: "24px",
-          alignItems: "start"
-        }}>
+        <div className="testimonials-cards-grid">
           {currentReviews.map((r) => {
             const isLong = r.quote.length > 280;
             const isExpanded = expandedId === r.id;

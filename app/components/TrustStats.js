@@ -36,7 +36,7 @@ export default function TrustStats() {
         </div>
 
         {/* Verified Industry Accolades Badge Strip - Prominent & Prestigious */}
-        <div style={{
+        <div className="trust-accolades-strip" style={{
           marginTop: "24px",
           padding: "20px 32px",
           background: "linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%)",

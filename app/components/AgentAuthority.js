@@ -2,12 +2,7 @@ export default function AgentAuthority({ onOpenTourModal }) {
   return (
     <section id="agents" className="content-section" style={{ background: "#FFFFFF", borderTop: "1px solid var(--ink-200)" }}>
       <div className="container">
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "1fr 1.3fr",
-          gap: "50px",
-          alignItems: "center"
-        }}>
+        <div className="agent-authority-grid">
           <div>
             <div style={{
               position: "relative",

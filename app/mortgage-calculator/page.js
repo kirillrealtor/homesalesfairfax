@@ -111,18 +111,7 @@ export default function MortgageCalculatorPage() {
         </div>
 
         {/* Main Calculator Grid */}
-        <div style={{
-          display: "grid",
-          gridTemplateColumns: "1.2fr 1fr",
-          gap: "40px",
-          maxWidth: "1150px",
-          margin: "0 auto",
-          background: "#FFFFFF",
-          padding: "40px",
-          borderRadius: "var(--radius-card)",
-          border: "1px solid var(--ink-200)",
-          boxShadow: "var(--shadow-card)"
-        }}>
+        <div className="mortgage-calc-main-grid">
           {/* Left Column: Interactive Inputs */}
           <div>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "20px" }}>

@@ -64,11 +64,11 @@ export default function PropertyDetailClient({ property }) {
         </div>
 
         {/* 2-Column Layout: Details on Left, Booking Sidebar on Right */}
-        <div style={{ display: "grid", gridTemplateColumns: "1.4fr 1fr", gap: "40px", alignItems: "flex-start" }}>
+        <div className="property-detail-main-grid">
           {/* Left Details */}
           <div>
             {/* Quick Specs Grid */}
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "16px", background: "#FFFFFF", padding: "20px", borderRadius: "var(--radius-md)", border: "1px solid var(--ink-200)", marginBottom: "30px", textAlign: "center" }}>
+            <div className="property-specs-grid" style={{ background: "#FFFFFF", padding: "20px", borderRadius: "var(--radius-md)", border: "1px solid var(--ink-200)", marginBottom: "30px", textAlign: "center" }}>
               <div>
                 <span style={{ display: "block", fontSize: "1.5rem", fontWeight: 800, color: "var(--ink-950)" }}>{property.beds}</span>
                 <span style={{ fontSize: "0.8rem", color: "var(--ink-500)", textTransform: "uppercase" }}>Bedrooms</span>

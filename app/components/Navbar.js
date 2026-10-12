@@ -48,14 +48,14 @@ export default function Navbar({ onOpenTourModal }) {
           <button
             type="button"
             onClick={onOpenTourModal}
-            className="btn-capsule-black"
+            className="btn-capsule-black nav-cta-btn"
           >
             Book Listing Consultation
           </button>
         ) : (
           <Link
             href="/#sell"
-            className="btn-capsule-black"
+            className="btn-capsule-black nav-cta-btn"
           >
             Book Listing Consultation
           </Link>
