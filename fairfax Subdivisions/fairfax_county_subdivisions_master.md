@@ -1,0 +1,6098 @@
+# Fairfax County Real Estate Subdivisions & Communities by ZIP Code
+
+Official geospatial extraction from Fairfax County GIS & Real Estate Mapping Services.
+
+### Executive Summary
+
+- **Total Requested ZIP Codes:** 85
+- **Active Residential / Mixed ZIP Codes:** 52
+- **PO Box Only / Specialized Facility ZIP Codes:** 33
+- **Total Subdivision / Community Entries:** 5,092
+- **Total Recorded Address Units:** 351,517
+
+## Table of Contents
+
+| ZIP Code | Community / City | Type | Subdivisions | Total Addresses | Individual File |
+|---|---|---|---:|---:|---|
+| **20041** | Dulles (Washington Dulles Int'l Airport) | Special Facility / Postal Hub | 0 | 0 | [View ZIP_20041.md](by_zip/ZIP_20041.md) |
+| **20069** | Dulles / Federal Processing | Government / PO Box | 0 | 0 | [View ZIP_20069.md](by_zip/ZIP_20069.md) |
+| **20070** | Herndon | PO Box Only | 0 | 0 | [View ZIP_20070.md](by_zip/ZIP_20070.md) |
+| **20120** | Centreville | Standard Residential | 89 | 12,884 | [View ZIP_20120.md](by_zip/ZIP_20120.md) |
+| **20121** | Centreville | Standard Residential | 56 | 8,430 | [View ZIP_20121.md](by_zip/ZIP_20121.md) |
+| **20122** | Centreville | PO Box Only | 0 | 0 | [View ZIP_20122.md](by_zip/ZIP_20122.md) |
+| **20124** | Clifton | Standard Residential | 128 | 4,681 | [View ZIP_20124.md](by_zip/ZIP_20124.md) |
+| **20151** | Chantilly | Standard Residential | 112 | 8,949 | [View ZIP_20151.md](by_zip/ZIP_20151.md) |
+| **20153** | Chantilly | PO Box / Commercial | 1 | 1 | [View ZIP_20153.md](by_zip/ZIP_20153.md) |
+| **20170** | Herndon | Standard Residential | 176 | 12,289 | [View ZIP_20170.md](by_zip/ZIP_20170.md) |
+| **20171** | Herndon / Oak Hill | Standard Residential | 156 | 14,534 | [View ZIP_20171.md](by_zip/ZIP_20171.md) |
+| **20172** | Herndon | PO Box Only | 0 | 0 | [View ZIP_20172.md](by_zip/ZIP_20172.md) |
+| **20190** | Reston (North / Town Center) | Standard Residential | 66 | 8,223 | [View ZIP_20190.md](by_zip/ZIP_20190.md) |
+| **20191** | Reston (South) | Standard Residential | 50 | 11,068 | [View ZIP_20191.md](by_zip/ZIP_20191.md) |
+| **20192** | Herndon | PO Box Only | 0 | 0 | [View ZIP_20192.md](by_zip/ZIP_20192.md) |
+| **20194** | Reston (North) | Standard Residential | 17 | 4,793 | [View ZIP_20194.md](by_zip/ZIP_20194.md) |
+| **20195** | Reston | PO Box Only | 0 | 0 | [View ZIP_20195.md](by_zip/ZIP_20195.md) |
+| **20196** | Reston | PO Box Only | 0 | 0 | [View ZIP_20196.md](by_zip/ZIP_20196.md) |
+| **20206** | Dulles | Government / Specialized | 0 | 0 | [View ZIP_20206.md](by_zip/ZIP_20206.md) |
+| **22003** | Annandale | Standard Residential | 269 | 17,198 | [View ZIP_22003.md](by_zip/ZIP_22003.md) |
+| **22009** | Burke | PO Box Only | 0 | 0 | [View ZIP_22009.md](by_zip/ZIP_22009.md) |
+| **22015** | Burke | Standard Residential | 108 | 14,425 | [View ZIP_22015.md](by_zip/ZIP_22015.md) |
+| **22027** | Dunn Loring | Standard Residential | 38 | 644 | [View ZIP_22027.md](by_zip/ZIP_22027.md) |
+| **22030** | Fairfax (West / City) | Standard Residential | 154 | 8,423 | [View ZIP_22030.md](by_zip/ZIP_22030.md) |
+| **22031** | Fairfax (East / Mantua) | Standard Residential | 130 | 8,331 | [View ZIP_22031.md](by_zip/ZIP_22031.md) |
+| **22032** | Fairfax (South / George Mason) | Standard Residential | 110 | 9,420 | [View ZIP_22032.md](by_zip/ZIP_22032.md) |
+| **22033** | Fairfax (Fair Oaks / Greenbriar) | Standard Residential | 92 | 12,951 | [View ZIP_22033.md](by_zip/ZIP_22033.md) |
+| **22034** | Fairfax | PO Box Only | 0 | 0 | [View ZIP_22034.md](by_zip/ZIP_22034.md) |
+| **22035** | Fairfax (County Government Center) | Government Complex | 1 | 4 | [View ZIP_22035.md](by_zip/ZIP_22035.md) |
+| **22036** | Fairfax | PO Box Only | 0 | 0 | [View ZIP_22036.md](by_zip/ZIP_22036.md) |
+| **22037** | Fairfax | PO Box Only | 0 | 0 | [View ZIP_22037.md](by_zip/ZIP_22037.md) |
+| **22038** | Fairfax | PO Box Only | 0 | 0 | [View ZIP_22038.md](by_zip/ZIP_22038.md) |
+| **22039** | Fairfax Station | Standard Residential | 143 | 5,987 | [View ZIP_22039.md](by_zip/ZIP_22039.md) |
+| **22041** | Falls Church (Bailey's Crossroads / Culmore) | Standard Residential | 87 | 6,937 | [View ZIP_22041.md](by_zip/ZIP_22041.md) |
+| **22042** | Falls Church (Seven Corners / Sleepy Hollow) | Standard Residential | 137 | 10,359 | [View ZIP_22042.md](by_zip/ZIP_22042.md) |
+| **22043** | Falls Church (Pimmit Hills / Idylwood) | Standard Residential | 147 | 7,416 | [View ZIP_22043.md](by_zip/ZIP_22043.md) |
+| **22044** | Falls Church (Lake Barcroft) | Standard Residential | 55 | 3,884 | [View ZIP_22044.md](by_zip/ZIP_22044.md) |
+| **22046** | Falls Church (City / Overlap) | Standard Residential | 61 | 1,999 | [View ZIP_22046.md](by_zip/ZIP_22046.md) |
+| **22060** | Fort Belvoir | Military Facility | 1 | 257 | [View ZIP_22060.md](by_zip/ZIP_22060.md) |
+| **22066** | Great Falls | Standard Residential | 268 | 5,347 | [View ZIP_22066.md](by_zip/ZIP_22066.md) |
+| **22067** | Greenway | PO Box Only | 0 | 0 | [View ZIP_22067.md](by_zip/ZIP_22067.md) |
+| **22079** | Lorton | Standard Residential | 158 | 10,960 | [View ZIP_22079.md](by_zip/ZIP_22079.md) |
+| **22081** | Merrifield | PO Box / Commercial Hub | 0 | 0 | [View ZIP_22081.md](by_zip/ZIP_22081.md) |
+| **22082** | Merrifield | PO Box Only | 0 | 0 | [View ZIP_22082.md](by_zip/ZIP_22082.md) |
+| **22095** | Chantilly | PO Box Only | 0 | 0 | [View ZIP_22095.md](by_zip/ZIP_22095.md) |
+| **22096** | Reston / Chantilly | PO Box Only | 0 | 0 | [View ZIP_22096.md](by_zip/ZIP_22096.md) |
+| **22101** | McLean | Standard Residential | 285 | 10,891 | [View ZIP_22101.md](by_zip/ZIP_22101.md) |
+| **22102** | McLean / Tysons | Standard Residential | 148 | 9,100 | [View ZIP_22102.md](by_zip/ZIP_22102.md) |
+| **22103** | McLean | PO Box Only | 0 | 0 | [View ZIP_22103.md](by_zip/ZIP_22103.md) |
+| **22106** | McLean | PO Box / Commercial | 1 | 1 | [View ZIP_22106.md](by_zip/ZIP_22106.md) |
+| **22107** | McLean | PO Box Only | 0 | 0 | [View ZIP_22107.md](by_zip/ZIP_22107.md) |
+| **22108** | McLean | PO Box Only | 0 | 0 | [View ZIP_22108.md](by_zip/ZIP_22108.md) |
+| **22109** | McLean | PO Box Only | 0 | 0 | [View ZIP_22109.md](by_zip/ZIP_22109.md) |
+| **22116** | Merrifield | PO Box Only | 0 | 0 | [View ZIP_22116.md](by_zip/ZIP_22116.md) |
+| **22118** | Oakton | PO Box Only | 0 | 0 | [View ZIP_22118.md](by_zip/ZIP_22118.md) |
+| **22119** | Oakton | PO Box Only | 0 | 0 | [View ZIP_22119.md](by_zip/ZIP_22119.md) |
+| **22121** | Mount Vernon | PO Box Only | 0 | 0 | [View ZIP_22121.md](by_zip/ZIP_22121.md) |
+| **22122** | Newington | PO Box Only | 0 | 0 | [View ZIP_22122.md](by_zip/ZIP_22122.md) |
+| **22124** | Oakton | Standard Residential | 197 | 6,437 | [View ZIP_22124.md](by_zip/ZIP_22124.md) |
+| **22150** | Springfield (Central) | Standard Residential | 65 | 6,786 | [View ZIP_22150.md](by_zip/ZIP_22150.md) |
+| **22151** | Springfield (North) | Standard Residential | 35 | 5,701 | [View ZIP_22151.md](by_zip/ZIP_22151.md) |
+| **22152** | Springfield (West) | Standard Residential | 85 | 10,450 | [View ZIP_22152.md](by_zip/ZIP_22152.md) |
+| **22153** | Springfield (South / Newington) | Standard Residential | 96 | 11,108 | [View ZIP_22153.md](by_zip/ZIP_22153.md) |
+| **22156** | Springfield | PO Box Only | 0 | 0 | [View ZIP_22156.md](by_zip/ZIP_22156.md) |
+| **22158** | Springfield | PO Box Only | 0 | 0 | [View ZIP_22158.md](by_zip/ZIP_22158.md) |
+| **22159** | Springfield (Industrial) | PO Box / Commercial | 1 | 1 | [View ZIP_22159.md](by_zip/ZIP_22159.md) |
+| **22160** | Springfield (Industrial) | PO Box / Commercial | 1 | 1 | [View ZIP_22160.md](by_zip/ZIP_22160.md) |
+| **22161** | Springfield (Industrial) | PO Box / Commercial | 1 | 1 | [View ZIP_22161.md](by_zip/ZIP_22161.md) |
+| **22180** | Vienna (Town / South) | Standard Residential | 226 | 8,084 | [View ZIP_22180.md](by_zip/ZIP_22180.md) |
+| **22181** | Vienna (West / Oakton border) | Standard Residential | 123 | 5,129 | [View ZIP_22181.md](by_zip/ZIP_22181.md) |
+| **22182** | Vienna (North / Tysons) | Standard Residential | 251 | 8,717 | [View ZIP_22182.md](by_zip/ZIP_22182.md) |
+| **22183** | Vienna | PO Box Only | 0 | 0 | [View ZIP_22183.md](by_zip/ZIP_22183.md) |
+| **22185** | Vienna | PO Box Only | 0 | 0 | [View ZIP_22185.md](by_zip/ZIP_22185.md) |
+| **22199** | Lorton / Mason Neck | PO Box Only | 0 | 0 | [View ZIP_22199.md](by_zip/ZIP_22199.md) |
+| **22207** | Arlington (Fairfax Border Overlap) | Border Overlap | 9 | 77 | [View ZIP_22207.md](by_zip/ZIP_22207.md) |
+| **22303** | Alexandria (Huntington / Penn Daw) | Standard Residential | 50 | 5,045 | [View ZIP_22303.md](by_zip/ZIP_22303.md) |
+| **22304** | Alexandria (West End Overlap) | Border Overlap | 1 | 148 | [View ZIP_22304.md](by_zip/ZIP_22304.md) |
+| **22306** | Alexandria (Groveton / Hybla Valley) | Standard Residential | 116 | 7,096 | [View ZIP_22306.md](by_zip/ZIP_22306.md) |
+| **22307** | Alexandria (Belle Haven) | Standard Residential | 41 | 4,673 | [View ZIP_22307.md](by_zip/ZIP_22307.md) |
+| **22308** | Alexandria (Fort Hunt) | Standard Residential | 65 | 4,867 | [View ZIP_22308.md](by_zip/ZIP_22308.md) |
+| **22309** | Alexandria (Mount Vernon / Woodlawn) | Standard Residential | 137 | 9,551 | [View ZIP_22309.md](by_zip/ZIP_22309.md) |
+| **22310** | Alexandria (Franconia / Rose Hill) | Standard Residential | 185 | 10,360 | [View ZIP_22310.md](by_zip/ZIP_22310.md) |
+| **22311** | Alexandria (Lincolnia Border Overlap) | Border Overlap | 15 | 585 | [View ZIP_22311.md](by_zip/ZIP_22311.md) |
+| **22312** | Alexandria (Lincolnia / Pinecrest) | Standard Residential | 94 | 6,087 | [View ZIP_22312.md](by_zip/ZIP_22312.md) |
+| **22315** | Alexandria (Kingstowne / Island Creek) | Standard Residential | 54 | 10,227 | [View ZIP_22315.md](by_zip/ZIP_22315.md) |
+
+---
+
+## ZIP Code 20041 - Dulles (Washington Dulles Int'l Airport)
+
+- **Postal Classification:** Special Facility / Postal Hub
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as Special Facility / Postal Hub).*
+
+---
+
+## ZIP Code 20069 - Dulles / Federal Processing
+
+- **Postal Classification:** Government / PO Box
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as Government / PO Box).*
+
+---
+
+## ZIP Code 20070 - Herndon
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 20120 - Centreville
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 89
+- **Total Recorded Units:** 12,884
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | AMERICAN FEDERAL SAVINGS BANK DIVISION | 12 |
+| 2 | BARROS CIRCLE | 97 |
+| 3 | BATTERY RIDGE | 103 |
+| 4 | BELLE POND FARM | 192 |
+| 5 | BIG ROCKY FOREST | 18 |
+| 6 | BRADDOCK DOWNS | 7 |
+| 7 | BRYARTON | 173 |
+| 8 | BULL RUN WOODS | 14 |
+| 9 | CABELLS MILL | 309 |
+| 10 | CALVIN H HALEY | 3 |
+| 11 | CARDINAL FOREST ESTATES | 10 |
+| 12 | CECIL D HYLTON SUBDIVISION | 2 |
+| 13 | CEDAR CREST ESTATES | 48 |
+| 14 | CENTER HEIGHTS | 6 |
+| 15 | CENTER TERRACE | 143 |
+| 16 | CENTRE SQUARE CONDOMINIUM | 16 |
+| 17 | CENTREVILLE FARMS | 57 |
+| 18 | CHALET WOODS | 299 |
+| 19 | COUNTRY CLUB MANOR | 939 |
+| 20 | CROOKED CREEK | 12 |
+| 21 | DEVEREAUX ESTATES | 25 |
+| 22 | ENGLEWOOD MFWS | 202 |
+| 23 | ENTWISLE PROPERTY | 7 |
+| 24 | FAIR LAKES CHASE | 48 |
+| 25 | FAIR LAKES CHASE II | 30 |
+| 26 | FAIRCREST | 555 |
+| 27 | FAIRCREST NORTH | 310 |
+| 28 | FAIRCREST SOUTH | 108 |
+| 29 | FAIRLAKES CROSSING | 109 |
+| 30 | FAIRLAKES CROSSING, ADDITION TO | 74 |
+| 31 | FOX MEADOW | 39 |
+| 32 | HACOR INC | 2 |
+| 33 | HATCHER PROPERTY | 16 |
+| 34 | HAWTHORNE FOREST | 110 |
+| 35 | HERITAGE CROSSING | 150 |
+| 36 | HERON PINES | 7 |
+| 37 | HIDDEN CREEK AT FAIR LAKES | 18 |
+| 38 | HUNT CHASE | 20 |
+| 39 | HUNTER'S POND | 32 |
+| 40 | JENN SUBD | 5 |
+| 41 | JILLIAN'S FOREST ESTATES | 7 |
+| 42 | LIFESTYLE AT SULLY STATION | 136 |
+| 43 | LONDON COMMONS | 57 |
+| 44 | LONDON TOWNE | 855 |
+| 45 | LONDON TOWNE WEST | 344 |
+| 46 | LONG MEADOW | 34 |
+| 47 | NEWGATE | 809 |
+| 48 | PLEASANT FOREST | 43 |
+| 49 | PLEASANT HILL | 542 |
+| 50 | PLEASANT VALLEY ROAD PROPERTIES | 45 |
+| 51 | PROPERTY OF WILLIAM S STEPHENS & BONNIE S STEPHENS | 2 |
+| 52 | RATCLIFFES SUBDIVISION | 14 |
+| 53 | RESERVE AT CENTREVILLE FARMS, THE | 4 |
+| 54 | ROCKY RUN | 164 |
+| 55 | SEQUOIA FARMS | 349 |
+| 56 | STONE CROSSING | 70 |
+| 57 | STONE POND | 23 |
+| 58 | STONE ROAD PROPERTY | 10 |
+| 59 | STONEBRIDGE CHASE | 30 |
+| 60 | STONEGATE AT FAIRCREST CONDOMINIUM | 401 |
+| 61 | STONEHENGE | 50 |
+| 62 | SUDLEY FARM | 60 |
+| 63 | SULLY ESTATES | 69 |
+| 64 | SULLY MANOR | 164 |
+| 65 | SULLY STATION | 1,971 |
+| 66 | SULLY STATION II | 36 |
+| 67 | SWART FARM | 8 |
+| 68 | THE COURTS AT RIVERWIND | 10 |
+| 69 | THE RIDINGS AT VIRGINIA RUN | 51 |
+| 70 | THE WOODLANDS OF FAIR LAKES | 68 |
+| 71 | TOWNES AT FAIR LAKES GLEN | 66 |
+| 72 | TRINITY 15 CONDOMINIUM | 2 |
+| 73 | TRINITY CENTRE | 11 |
+| 74 | VICTORIAS LANDING | 17 |
+| 75 | VILLAGE AT MOUNT GILEAD THE | 47 |
+| 76 | VIRGINIA CHASE | 18 |
+| 77 | VIRGINIA RUN THE ESTATES | 15 |
+| 78 | WALNEY GLEN | 59 |
+| 79 | WALNEY MILLS | 52 |
+| 80 | WELTMAN ESTATES | 286 |
+| 81 | WESTPORT | 584 |
+| 82 | WESTSIDE | 6 |
+| 83 | WHARTON PARK | 9 |
+| 84 | WILLOUGHBYS RIDGE CONDOMINIUM | 165 |
+| 85 | WINCHESTER AT FAIRCREST | 117 |
+| 86 | WOODGATE CROSSING | 147 |
+| 87 | WOODGATE MANOR | 138 |
+| 88 | WOODGATE VILLAGE | 123 |
+| 89 | XANADU ESTATES | 269 |
+
+---
+
+## ZIP Code 20121 - Centreville
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 56
+- **Total Recorded Units:** 8,430
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | AUBREY PLAINS | 5 |
+| 2 | BULL RUN ESTATES | 21 |
+| 3 | CEDAR SPRINGS | 23 |
+| 4 | CENTER RIDGE | 13 |
+| 5 | CENTRE RIDGE | 1,269 |
+| 6 | CENTRE VILLAGE | 72 |
+| 7 | CENTRELEE BUSINESS PARK CONDOMINIUM | 137 |
+| 8 | CENTREVILLE CROSSING CONDOMINIUM | 192 |
+| 9 | CENTREVILLE RIDGE | 8 |
+| 10 | CLIFTON TOWNES | 159 |
+| 11 | COMPTON CHASE | 10 |
+| 12 | COMPTON RD LLC | 6 |
+| 13 | COMPTON RIDGE | 26 |
+| 14 | COMPTON VALLEY ESTATES | 166 |
+| 15 | COMPTON VILLAGE | 535 |
+| 16 | COMPTON VILLAGE CONDOMINIUM | 16 |
+| 17 | CONFEDERATE RIDGE | 207 |
+| 18 | CORBIN LANDING | 8 |
+| 19 | CROFTON COMMONS | 264 |
+| 20 | DAVIS DRIVE LLC | 4 |
+| 21 | DEERFIELD RIDGE | 126 |
+| 22 | EWELL PROPERTY | 12 |
+| 23 | FERN WOODS | 18 |
+| 24 | GATE POST ESTATES | 185 |
+| 25 | GRAND CENTREVILLE CONDOMINIUM | 33 |
+| 26 | GRAND VIEW | 3 |
+| 27 | GREEN TRAILS | 635 |
+| 28 | GRIGSBY MILL | 6 |
+| 29 | HANNA ESTATES | 46 |
+| 30 | HARRIS PROPERTY | 34 |
+| 31 | HERITAGE ESTATES | 586 |
+| 32 | JACKSON FIELDS | 22 |
+| 33 | JOHN FARR | 2 |
+| 34 | KATHERINE T MOORE FARM | 6 |
+| 35 | LEE OVERLOOK | 145 |
+| 36 | LEROY HARRIS PROPERTY | 5 |
+| 37 | LITTLE ROCKY RUN | 740 |
+| 38 | MADISON RIDGE CONDOMINIUM | 119 |
+| 39 | MEADOWS THE | 619 |
+| 40 | NEWGATE FOREST | 72 |
+| 41 | NORTH HART RUN | 263 |
+| 42 | OLD CENTREVILLE TOWNES | 41 |
+| 43 | OLD MILL | 75 |
+| 44 | OLD MILL ROAD | 33 |
+| 45 | PENDLETON PARK | 57 |
+| 46 | REDWOOD SQUARE CONDOMINIUM | 2 |
+| 47 | ROBINSON JAMES P. | 2 |
+| 48 | SANDERLING CONDOMINIUM | 319 |
+| 49 | SINGLETON'S GROVE | 675 |
+| 50 | STUARTS CROSSING | 20 |
+| 51 | SUNSET RIDGE | 156 |
+| 52 | SWART FARM | 10 |
+| 53 | TANNERS RIDGE | 47 |
+| 54 | WILLOUGHBY WOODS | 27 |
+| 55 | WINDING RIDGE | 141 |
+| 56 | WOODS AT BULL RUN | 7 |
+
+---
+
+## ZIP Code 20122 - Centreville
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 20124 - Clifton
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 128
+- **Total Recorded Units:** 4,681
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ARMSTRONG & ENGLISH TRACTS | 23 |
+| 2 | ASHLEIGH OF CLIFTON | 20 |
+| 3 | BAILY & MARGARET E. CONNELLY | 10 |
+| 4 | BALMORAL | 2 |
+| 5 | BALMORAL GREENS | 185 |
+| 6 | BEECHNUT ACRES | 7 |
+| 7 | BRADDOCK FARMS | 24 |
+| 8 | BRADDOCK WOODS | 59 |
+| 9 | BRIARCROFT | 6 |
+| 10 | BRIARCROFT VALLEY | 7 |
+| 11 | BULIN DIV. | 7 |
+| 12 | BURWYCK | 5 |
+| 13 | CALVIN H. HALEY AND HOWARD R. LADY, THE SUBDIVISION OF | 7 |
+| 14 | CAVALIER WOODS | 82 |
+| 15 | CEDAR KNOLLS OF CLIFTON | 20 |
+| 16 | CENTREVILLE GREEN | 370 |
+| 17 | CHAPEL KNOLLS | 11 |
+| 18 | CHAPEL STATION | 1 |
+| 19 | CHAPEL TRAILS | 15 |
+| 20 | CHAPEL VIEW ESTATES | 9 |
+| 21 | CHEQUERS OF CLIFTON | 7 |
+| 22 | CLIFTON CREEK RIDGE | 12 |
+| 23 | CLIFTON CREST | 82 |
+| 24 | CLIFTON DOWNS | 5 |
+| 25 | CLIFTON FARM SUBDIVISION | 74 |
+| 26 | CLIFTON FOREST | 8 |
+| 27 | CLIFTON GREEN | 12 |
+| 28 | CLIFTON GREEN SUBDIVISION | 14 |
+| 29 | CLIFTON GROVE | 26 |
+| 30 | CLIFTON HEIGHTS | 13 |
+| 31 | CLIFTON HUNT | 50 |
+| 32 | CLIFTON HUNT II | 5 |
+| 33 | CLIFTON MANOR | 49 |
+| 34 | CLIFTON MEADOWS | 5 |
+| 35 | CLIFTON NORTH | 5 |
+| 36 | CLIFTON OAKS | 8 |
+| 37 | CLIFTON OVERLOOK | 8 |
+| 38 | CLIFTON PINES | 10 |
+| 39 | CLIFTON PINES II | 6 |
+| 40 | CLIFTON POINT | 10 |
+| 41 | CLIFTON RIDGE | 14 |
+| 42 | CLIFTON TRAILS | 12 |
+| 43 | CLIFTON WOODS | 12 |
+| 44 | CLOVERLEAF FARM ESTATES | 20 |
+| 45 | COLEWOOD ESTATES | 5 |
+| 46 | COMPTON HEIGHTS | 118 |
+| 47 | COUNTRYVIEW | 12 |
+| 48 | CRAFTOWN | 1 |
+| 49 | CROUCH COMMONS | 5 |
+| 50 | DEEPWOOD FARMS | 26 |
+| 51 | DUNDAS SUBDIVISION | 7 |
+| 52 | EDGELEA | 13 |
+| 53 | ELI STOKES ESTATES | 8 |
+| 54 | EVANS FORD ESTATES | 4 |
+| 55 | EVENING HILLS | 20 |
+| 56 | FAIRWOOD PARK | 7 |
+| 57 | FERGUSON KNOLLS | 27 |
+| 58 | FIRST ADDITION TO VANNOY PARK | 9 |
+| 59 | FLOSSIE E. COMPTON | 6 |
+| 60 | FORD MILL WOODS | 12 |
+| 61 | FROG HILL | 11 |
+| 62 | FROSTY MEADOWS | 13 |
+| 63 | GEORGE E. & MARY F. CRANSTON SUBDIVISION | 7 |
+| 64 | GILLIAM, JAMES W. & SANDRA G | 6 |
+| 65 | GLENCAIRN | 27 |
+| 66 | GORDON KINCHELOE | 1 |
+| 67 | GRACE J KELLEY | 8 |
+| 68 | HENDERSON HILLS | 14 |
+| 69 | HOOVER PROPERTY | 5 |
+| 70 | KATHERINE T MOORE FARM | 2 |
+| 71 | LAKEWOOD ESTATES | 1 |
+| 72 | LAUREL GLEN | 13 |
+| 73 | LEE MILL | 2 |
+| 74 | LEES MILL SUBD | 5 |
+| 75 | LITTLE ROCKY RUN | 1,631 |
+| 76 | LOTH LORIAN | 7 |
+| 77 | MAPLE BRANCH | 25 |
+| 78 | MARGARET & DALE DOANE | 6 |
+| 79 | MEGILL'S CROSSING | 23 |
+| 80 | MILL BRANCH | 20 |
+| 81 | MOORES HAMLET | 23 |
+| 82 | MORWOOD | 8 |
+| 83 | NOBLE ESTATES | 33 |
+| 84 | OLD CLIFTON PARK | 8 |
+| 85 | PARADISE SPRING | 8 |
+| 86 | PLANTATION HILLS | 32 |
+| 87 | PONDS AT CENTREVILLE CONDOMINIUM THE | 250 |
+| 88 | POPES HEAD VALLEY OF CLIFTON | 9 |
+| 89 | REDLAC FOREST | 36 |
+| 90 | REISER PROPERTY | 8 |
+| 91 | ROCKPOINTE | 210 |
+| 92 | ROSE HALL | 17 |
+| 93 | SANGSTERS STATION | 10 |
+| 94 | SECOND ADDITION VANNOY PARK | 10 |
+| 95 | SEQUOIA LEA | 177 |
+| 96 | SEVEN HILLS ADDITION TO SPRUCE VALLEY | 12 |
+| 97 | SOUTHERN KNOLL FARMS | 5 |
+| 98 | SOUTHERN PINES | 11 |
+| 99 | SPRINGDALE EST | 6 |
+| 100 | SPRINGDALE ESTATES | 5 |
+| 101 | SPRUCE VALLEY | 7 |
+| 102 | SQUIRES PLACE | 16 |
+| 103 | STILLWELL KNOLLS | 6 |
+| 104 | STONEHEDGE | 6 |
+| 105 | SURREY ACRES | 6 |
+| 106 | SWIFT RUN TRAILS | 1 |
+| 107 | SYLVAN MANOR | 11 |
+| 108 | THIRD ADDITION TO VANNOY PARK | 27 |
+| 109 | TRADITIONS | 2 |
+| 110 | TURTLE VALLEY ESTATES | 8 |
+| 111 | UNION MILL ESTATES | 12 |
+| 112 | UNION MILL ESTATES II | 6 |
+| 113 | VALLEY RUN ESTATES | 10 |
+| 114 | VANNOY PARK | 9 |
+| 115 | WALNUT ACRES | 12 |
+| 116 | WEDGEWOOD | 9 |
+| 117 | WHIPPOORWILL | 9 |
+| 118 | WHITE ROCK ESTATES | 6 |
+| 119 | WILGUSON HILLS | 15 |
+| 120 | WILLIAMS & CONLEY | 6 |
+| 121 | WILLOW SPRING | 57 |
+| 122 | WILLOWBROOK ESTS | 2 |
+| 123 | WILTONSHIRE | 7 |
+| 124 | WOLF RUN | 24 |
+| 125 | WOLF RUN ESTATES | 23 |
+| 126 | WOLF RUN SHOALS | 7 |
+| 127 | WONDERLAND | 3 |
+| 128 | WYCKLAND | 52 |
+
+---
+
+## ZIP Code 20151 - Chantilly
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 112
+- **Total Recorded Units:** 8,949
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | AJB ASSOCIATES, INC | 8 |
+| 2 | ARMFIELD ESTATES | 45 |
+| 3 | ARMFIELD FARMS | 426 |
+| 4 | AVION DEVELOPMENT | 27 |
+| 5 | AVION PARK CONDOMINIUM | 17 |
+| 6 | BAILEYS PROPERTY | 13 |
+| 7 | BIG ROCKY FOREST | 50 |
+| 8 | BOULEVARDS AT WESTFIELDS CONDOMINIUM | 7 |
+| 9 | BOULEVARDS AT WESTFIELDS CONDOMINIUM, THE | 123 |
+| 10 | BOULEVARDS AT WESTFIELDS, CONDOMINIUM THE | 7 |
+| 11 | BOULEVARDS AT WESTFIELDS, THE | 67 |
+| 12 | BROOKFIELD | 912 |
+| 13 | BROOKFIELD 3 A CONDOMINIUM | 18 |
+| 14 | BROOKFIELD 4 CONDOMINIUM | 25 |
+| 15 | BROOKFIELD CORPORATE CENTER | 24 |
+| 16 | BROOKFIELD PLAZA A CONDOMINIUM | 11 |
+| 17 | BROOKLEIGH | 321 |
+| 18 | BROOKS RIDGE | 13 |
+| 19 | BROOKSIDE | 137 |
+| 20 | C.G.I.P. PROPERTY | 70 |
+| 21 | CENTREVILLE ROAD PROPERTIES | 98 |
+| 22 | CHANTILLY CORPORATE CENTER A CONDOMINIUM | 11 |
+| 23 | CHANTILLY CORPORATE CENTER II A CONDOMINIUM | 12 |
+| 24 | CHANTILLY CROSSING | 4 |
+| 25 | CHANTILLY ESTATES | 59 |
+| 26 | CHANTILLY GREEN | 126 |
+| 27 | CHANTILLY INDUSTRIAL PARK | 115 |
+| 28 | CHANTILLY PARK A CONDOMINIUM | 207 |
+| 29 | CHANTILLY PLACE SHOPPING CENTER | 18 |
+| 30 | COLONELS RIDGE OFFICE CONDOMINIUM | 42 |
+| 31 | COMMONWEALTH PLACE | 120 |
+| 32 | COMMONWEALTH PLACE AT WESTFIELDS CONDOMINIUM | 117 |
+| 33 | COMMONWEALTH PLACE BELLE HAVEN AT WESTFIELDS CONDOMINIUM | 87 |
+| 34 | DALY CONDOMINIUM | 3 |
+| 35 | DIVISION OF C.C.I.P. PROPERTY | 3 |
+| 36 | DULLES BUSINESS PARK | 23 |
+| 37 | DULLES INTERNATIONAL BUSINESS CENTER | 4 |
+| 38 | DULLES SOUTH COURT CONDOMINIUM | 15 |
+| 39 | DULLES SOUTHGATE CONDOMINIUM I | 23 |
+| 40 | ELLIPSE AT WESTFIELDS | 108 |
+| 41 | ELLIPSE AT WESTFIELDS MOSAIC CONDOMINIUM | 75 |
+| 42 | ELLIPSE AT WESTFIELDS TOWNHOME-STYLE CONDOMINIUM | 214 |
+| 43 | ENTERPRISE CENTER LAND CONDOMINIUM | 4 |
+| 44 | EVERWOOD | 8 |
+| 45 | FAIR OAKS FARMS | 71 |
+| 46 | FAIRFAX MANOR ESTATES | 8 |
+| 47 | FAIRVIEW SQUARE | 41 |
+| 48 | FAIRWOOD ESTATES | 30 |
+| 49 | FLINT LEE BUSINESS PARK CONDOMINIUM | 39 |
+| 50 | GALLERY PARK AT WESTFIELDS CONDOMINIUM | 168 |
+| 51 | GLENBROOK | 6 |
+| 52 | HEADQUARTERS 2 LLC THE PROPERTIES | 1 |
+| 53 | HUNTERS RUN | 88 |
+| 54 | J ROBERTS BUSINESS CENTER CONDOMINIUM | 7 |
+| 55 | LAFAYETTE BUSINESS CENTER | 32 |
+| 56 | LAFAYETTE POINT A CONDOMINIUM | 21 |
+| 57 | LAFAYETTE WEST A COMMERCIAL CONDOMINIUM | 11 |
+| 58 | LEE JACKSON CENTER, A CONDOMINIUM | 36 |
+| 59 | LINDBERGH CONDOMINIUM | 12 |
+| 60 | MAPLE HILL ESTATES | 48 |
+| 61 | MARBROOK CENTRE A CONDOMINIUM THE | 25 |
+| 62 | MARIAH BUSINESS CENTER CONDOMINIUM | 20 |
+| 63 | MARIAH BUSINESS CENTER II A CONDOMINIUM | 60 |
+| 64 | MARIAN WOODS | 27 |
+| 65 | MARKEY BUS CENTER II A CONDOMINIUM | 10 |
+| 66 | MARKEY BUSINESS CENTER VI A CONDOMINIUM | 24 |
+| 67 | MARKEY BUSINESS PARK A CONDOMINIUM | 15 |
+| 68 | MARKEY COMMERCE CENTER II A CONDOMINIUM | 9 |
+| 69 | NEWBROOK ONE CONDOMINIUM | 3 |
+| 70 | PARKE-LONG AT SULLYFIELD | 48 |
+| 71 | PARKEAST | 36 |
+| 72 | PARKSIDE MANOR | 37 |
+| 73 | PINEWOOD MEADOWS | 139 |
+| 74 | PLEASANT VALLEY | 542 |
+| 75 | PLEASANT VALLEY OFFICE CONDOMINIUM | 7 |
+| 76 | PONDS AT LAFAYETTE CONDOMINIUM THE | 31 |
+| 77 | POPLAR CORNER | 19 |
+| 78 | POPLAR ESTATES | 17 |
+| 79 | POPLAR PARK | 66 |
+| 80 | POPLAR TREE ESTATES | 733 |
+| 81 | POPLAR TREE LEWIS PROPERTY | 51 |
+| 82 | POPLAR TREE WOODS | 28 |
+| 83 | PRESERVE AT WESTFIELDS, THE | 155 |
+| 84 | PROPERTY OF CSH FAIRFAX LLC | 1 |
+| 85 | QUINN FARM PROPERTY | 1 |
+| 86 | REALTY DIVERSIFIED SERVICES | 1 |
+| 87 | RESERVE AT WALNEY PARK | 8 |
+| 88 | RETREAT AT WESTFIELDS THE PARCEL 15C | 157 |
+| 89 | ROCKLAND VILLAGE | 177 |
+| 90 | ROCKLAND VILLAGE BECKNER | 4 |
+| 91 | ROCKLAND VILLAGE GREEN | 24 |
+| 92 | ROGER MACK COURT | 12 |
+| 93 | SOUTHGATE INDUSTRIAL PARK | 7 |
+| 94 | STONEBROOK AT WESTFIELDS | 14 |
+| 95 | STONEBROOK AT WESTFIELDS CONDOMINIUM | 129 |
+| 96 | STONECROFT BUSINESS PARK CONDOMINIUM | 11 |
+| 97 | SULLYFIELD BUSINESS PARK | 186 |
+| 98 | SUTTON OAKS | 102 |
+| 99 | THE ESTATES AT LEETON MANOR | 50 |
+| 100 | THE HUNTER PROPERTY | 10 |
+| 101 | THE PRESERVE AT WYNMAR | 138 |
+| 102 | WALNEY ESTATES | 41 |
+| 103 | WALNEY ROAD SUBDIVISION | 160 |
+| 104 | WALNEY VILLAGE | 168 |
+| 105 | WALNEY WOODS | 39 |
+| 106 | WAVERLY CROSSING | 239 |
+| 107 | WEST FAIRFAX COMMERCE CENTER | 56 |
+| 108 | WESTFAX INDUSTRIAL PARK | 42 |
+| 109 | WESTFIELDS INTERNATIONAL CENTER AT DULLES | 60 |
+| 110 | WESTFIELDS THE INTERNATIONAL CENTER AT DULLES | 26 |
+| 111 | WILLARD INDUSTRIAL PARK | 54 |
+| 112 | WINDING BROOK CONDOMINIUM | 494 |
+
+---
+
+## ZIP Code 20153 - Chantilly
+
+- **Postal Classification:** PO Box / Commercial
+- **Total Subdivisions:** 1
+- **Total Recorded Units:** 1
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | BROOKFIELD CORPORATE CENTER | 1 |
+
+---
+
+## ZIP Code 20170 - Herndon
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 176
+- **Total Recorded Units:** 12,289
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ASHBURN | 31 |
+| 2 | B.H. BREADY SUBDIVISION | 11 |
+| 3 | BALLOU SUBDIVISION | 31 |
+| 4 | BARKER HILL | 102 |
+| 5 | BENICIA ESTATES | 51 |
+| 6 | BLACKSTONE AT SHAKER WOODS | 6 |
+| 7 | BLUEMONT | 97 |
+| 8 | BROAD OAKS | 47 |
+| 9 | CARIS GLENNE | 39 |
+| 10 | CARLISLE DRIVE BUSINESS CENTER A CONDOMINIUM | 17 |
+| 11 | CAVALIER PARK | 176 |
+| 12 | CEDAR CHASE | 50 |
+| 13 | CHANDON | 157 |
+| 14 | CHANDON WOODS | 82 |
+| 15 | CHARLES GOETTLING SUBDIVISION | 4 |
+| 16 | CHELMSFORD | 70 |
+| 17 | CHESTNUT GROVE | 6 |
+| 18 | CLIFF EDGE | 7 |
+| 19 | COLVIN HUNT | 46 |
+| 20 | COURTS OF CHANDON | 292 |
+| 21 | CRESTBROOK | 462 |
+| 22 | CRESTVIEW | 140 |
+| 23 | CRESTVIEW MEADOWS | 8 |
+| 24 | CRIPPEN'S CORNER | 1 |
+| 25 | CROSSROADS OF DULLES OFFICE CONDO | 79 |
+| 26 | D VAN VLECKS ADDITION TO THE TOWN OF HERNDON | 91 |
+| 27 | D VAN VLECKS ADDITION TO THE TOWN OF HERNDON SUBD | 15 |
+| 28 | DOMINION RIDGE SUBDIVISION | 53 |
+| 29 | DOWSKIN & RINALDI PROPERTY | 63 |
+| 30 | DRANESVILLE ESTATES | 165 |
+| 31 | DRANESVILLE MEADOW | 16 |
+| 32 | DULLES GREENS | 79 |
+| 33 | DULLES PARK | 70 |
+| 34 | DULLES PARK TOWNHOUSES | 99 |
+| 35 | DUMBARTON SQUARE | 59 |
+| 36 | E SAUBERS SUBDIVISION | 9 |
+| 37 | ELWARDSTONE SUBDIVISION | 25 |
+| 38 | ESTATES AT EAGLE LIE | 48 |
+| 39 | FAIRBROOK LAND CONDOMINIUM | 4 |
+| 40 | FENG SUBDIVISION | 7 |
+| 41 | FOREST HEIGHTS ESTATES | 14 |
+| 42 | FOREST RIDGE | 52 |
+| 43 | FORTNIGHTLY SQUARE | 84 |
+| 44 | FORTNIGHTLY SQUARE CONDOMINIUM | 64 |
+| 45 | FOUR SEASONS | 387 |
+| 46 | FOUR SEASONS REGIME | 298 |
+| 47 | GASLIGHT SQUARE CONDOMINIUM | 19 |
+| 48 | GRAND HAMPTONS | 19 |
+| 49 | GRAND HAMPTONS II | 55 |
+| 50 | GRANT BUSINESS CENTRE CONDOMINIUM | 12 |
+| 51 | GRANT PROFESSIONAL CENTER CONDOMINIUM | 12 |
+| 52 | GRAYMOOR | 25 |
+| 53 | GREENS OVERLOOK | 5 |
+| 54 | GUEST HOUSE PROPERTY | 5 |
+| 55 | HALOYON OF HERNDON | 45 |
+| 56 | HAMMOND PROPERTY | 6 |
+| 57 | HASTINGS HUNT | 367 |
+| 58 | HEGLAR OAKS | 9 |
+| 59 | HERNDON ACREAGE | 8 |
+| 60 | HERNDON COMMERCE CENTER A CONDOMINIUM | 9 |
+| 61 | HERNDON COURT | 7 |
+| 62 | HERNDON CROSSING | 20 |
+| 63 | HERNDON ESTATES | 24 |
+| 64 | HERNDON HARBOR HOUSE II CONDOMINIUM | 3 |
+| 65 | HERNDON II AN OFFICE CONDOMINIUM | 24 |
+| 66 | HERNDON PARK A CONDOMINIUM | 28 |
+| 67 | HERNDON PARK STATION | 11 |
+| 68 | HERNDON STATION | 18 |
+| 69 | HERNDON VILLAGE APARTMENTS | 75 |
+| 70 | HERNDON WOODS | 71 |
+| 71 | HIDDENBROOK | 395 |
+| 72 | HINKS ADDITION TO STUART RIDGE | 7 |
+| 73 | HOLLY CREEK | 7 |
+| 74 | HUNTERS CREEK | 274 |
+| 75 | HUTCHISON & MITCHELL SUBDIVISION | 13 |
+| 76 | INTERNATIONAL APARTMENTS | 9 |
+| 77 | IRETON SUBDIVISION | 10 |
+| 78 | IRON RIDGE | 61 |
+| 79 | JEFFERSON MEWS | 265 |
+| 80 | JENEBA WOODS | 4 |
+| 81 | JENKINS RIDGE | 55 |
+| 82 | JUNCTION SQUARE | 19 |
+| 83 | JUNCTION SQUARE CONDOMINIUM | 10 |
+| 84 | KINGSTON CHASE | 539 |
+| 85 | KINGSTREAM | 459 |
+| 86 | LAING AT SUGARLAND | 21 |
+| 87 | LANGHORNE COURTS | 1 |
+| 88 | LAURA'S WAY SUBDIVISION | 5 |
+| 89 | LIANG HOMES AT HERNDON CHASE | 13 |
+| 90 | LIBERTY MEETING | 3 |
+| 91 | LIFESTYLE | 145 |
+| 92 | LOCUST STREET TOWNHOUSES | 6 |
+| 93 | LOCUST STREET TOWNHOUSES II | 6 |
+| 94 | MADISON FOREST | 31 |
+| 95 | MADISON RIDGE | 16 |
+| 96 | MADISON RIDGE WEST | 10 |
+| 97 | MENA ESTATES SUBDIVISION | 11 |
+| 98 | MERRELL AND CALKINS | 4 |
+| 99 | METRO SQUARE CONDOMINIUM | 68 |
+| 100 | MILDRED E. POOLE SUBDIVISION | 3 |
+| 101 | MILLWOOD POND | 19 |
+| 102 | MONROE HILL | 11 |
+| 103 | MONROE PLACE | 5 |
+| 104 | MOSBY HEIGHTS | 59 |
+| 105 | McMILLEN FARM | 13 |
+| 106 | NORTH POINT GLEN | 25 |
+| 107 | OAK CREST ESTATES | 11 |
+| 108 | OLD DOMINION TOWNES CONDOMINIUM | 6 |
+| 109 | OLD DRANESVILLE HUNT CLUB | 99 |
+| 110 | PARK AVENUE SQUARE | 147 |
+| 111 | PARK PLACE | 56 |
+| 112 | PARK PLACE CONDOMINIUM | 63 |
+| 113 | PARKWAY CROSSING A PROFESSIONAL OFFICE CONDOMINIUM | 22 |
+| 114 | PARKWAY PLAZA | 116 |
+| 115 | PARKWAY PLAZA SUBDIVISION | 4 |
+| 116 | PARKWAY TRADE CENTER | 23 |
+| 117 | PINE STREET PLAZA CONDOMINIUM | 12 |
+| 118 | POTOMAC FAIRWAYS | 252 |
+| 119 | PRESIDENTS COURT | 27 |
+| 120 | QUAIL RUN | 6 |
+| 121 | REFLECTION LAKE | 1,001 |
+| 122 | RESIDENCES AT THE STATION | 9 |
+| 123 | RESTON | 5 |
+| 124 | RESTON HERNDON CENTER CONDOMINIUM | 43 |
+| 125 | RIDGEGATE WOODS | 109 |
+| 126 | RIELY RIDGE | 7 |
+| 127 | ROCK HILL | 113 |
+| 128 | ROCK HILL CONDOMINIUM | 14 |
+| 129 | ROYAL ELM ESTATES | 9 |
+| 130 | RUNNYMEDE MANOR | 34 |
+| 131 | SALEM VILLAGE A CONDOMINIUM | 7 |
+| 132 | SHAKER GROVE | 11 |
+| 133 | SHAKER KNOLLS | 9 |
+| 134 | SHAKER WOODS | 316 |
+| 135 | SOUTH VAN BUREN | 74 |
+| 136 | SPRING GLEN | 12 |
+| 137 | SPRING PARK TECHNOLOGY CENTER | 8 |
+| 138 | SPRING PARK TOWNHOMES | 41 |
+| 139 | SPRINGWOOD OFFICE CENTER CONDOMINIUM | 23 |
+| 140 | STANTON PARK OVERLOOK | 9 |
+| 141 | STONEY CREEK WOODS | 19 |
+| 142 | STUART ESTATES | 8 |
+| 143 | STUART HILLS | 18 |
+| 144 | STUART PROFESSIONAL VILLAGE CONDOMINIUM | 57 |
+| 145 | STUART RIDGE | 188 |
+| 146 | STUART WOODS | 130 |
+| 147 | SUGAR CREEK | 102 |
+| 148 | SUGAR CREEK 1ST. ADDITION | 50 |
+| 149 | SUGARLAND | 9 |
+| 150 | SUGARLAND HEIGHTS | 57 |
+| 151 | SUGARLAND INDUSTRIAL PARK | 33 |
+| 152 | SUMMERHOUSE LANDING | 30 |
+| 153 | SUNSET BUSINESS CONDOMINIUM | 21 |
+| 154 | SUNSET BUSINESS PARK | 17 |
+| 155 | SUNSET BUSINESS PARK II A CONDOMINIUM | 36 |
+| 156 | THE DOWNS | 165 |
+| 157 | THE FONTAINE AT PRESIDENTS PARK | 34 |
+| 158 | THE VILLAGES | 12 |
+| 159 | TIMBER KNOLL | 10 |
+| 160 | TOWNS AT STUART POINTE THE | 38 |
+| 161 | TOWNS ON THE GREENS | 15 |
+| 162 | TRALEE | 125 |
+| 163 | TREESIDE | 203 |
+| 164 | TREESIDE - MORGANS ADDN TO SUGARLAND HEIGHTS | 2 |
+| 165 | TY-LIN-DA ESTATES | 7 |
+| 166 | UNION MILL | 55 |
+| 167 | VAN BUREN ESTATES | 25 |
+| 168 | VICTORIA MANOR | 19 |
+| 169 | VILLAGE AT HERNDON MILLS | 75 |
+| 170 | VINEHAVEN | 18 |
+| 171 | VINTAGE PLACE II | 5 |
+| 172 | WATERFORD PARK | 76 |
+| 173 | WESTFIELD | 92 |
+| 174 | WORLDGATE | 106 |
+| 175 | WORLDGATE CONDOMINIUM | 510 |
+| 176 | YOUNT SUBDIVISION | 31 |
+
+---
+
+## ZIP Code 20171 - Herndon / Oak Hill
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 156
+- **Total Recorded Units:** 14,534
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 2875 TOWERVIEW CONDOMINIUM | 4 |
+| 2 | ARPINA VALLEY CONDOMINIUM | 28 |
+| 3 | ARROWBROOK CENTRE | 38 |
+| 4 | ARROWBROOK CENTRE LANDBAY B2 | 10 |
+| 5 | ASHBURTON MANORS | 81 |
+| 6 | ASHBURTON OAKS II | 50 |
+| 7 | AUDUBON COVE | 5 |
+| 8 | BENNETT FARMS SUBDIVISION | 32 |
+| 9 | BLUEBERRY FARM | 5 |
+| 10 | BORNEHAM WOOD SUBDIVISION | 80 |
+| 11 | BRADLEY ACRES | 349 |
+| 12 | BRYSON AT WOODLAND PARK CONDOMINIUM | 585 |
+| 13 | CAMBERLEY EAST | 29 |
+| 14 | CAMBERLEY WEST | 18 |
+| 15 | CHANTILLY HIGHLANDS | 963 |
+| 16 | CINNAMON OAKS | 25 |
+| 17 | COCKERILL PLACE | 12 |
+| 18 | COPPER CREEK | 28 |
+| 19 | COPPER CROSSING | 58 |
+| 20 | COPPER CROSSING SOUTH | 30 |
+| 21 | COPPERMILL | 218 |
+| 22 | COPPERMINE CROSSING | 165 |
+| 23 | COPPERMINE CROSSING CONDOMINIUM | 284 |
+| 24 | CREEKSIDE | 93 |
+| 25 | CROSEN PROPERTY | 18 |
+| 26 | CROSSFIELDS | 17 |
+| 27 | DARTMOOR WOODS | 38 |
+| 28 | DISCOVERY SQUARE | 237 |
+| 29 | DISCOVERY SQUARE CONDOMINIUM | 197 |
+| 30 | DULLES CORNER | 5 |
+| 31 | DULLES GREENS | 1 |
+| 32 | DULLES INTERNATIONAL CENTRE | 5 |
+| 33 | DULLES PROFESSIONAL CENTER CONDOMINIUM | 8 |
+| 34 | DULLES STATION AT DULLES CORNER | 32 |
+| 35 | EMERALD CHASE | 168 |
+| 36 | FIRST ADDITION TO MOUNTAIN VIEW | 16 |
+| 37 | FLATS AT METROPARK AT ARROWBROOK CONDOMINIUM THE | 128 |
+| 38 | FLORIS DOWNS | 42 |
+| 39 | FOLKSTONE | 255 |
+| 40 | FOSTERS GLEN | 229 |
+| 41 | FOSTERS GLEN CONDOMINIUM | 107 |
+| 42 | FOX HUNT ESTATES | 13 |
+| 43 | FOX MILL ACRES | 43 |
+| 44 | FOX MILL ESTATES | 1,372 |
+| 45 | FOX MILL HEIGHTS | 40 |
+| 46 | FOX MILL STATION A CONDOMINIUM | 166 |
+| 47 | FRANKLIN CORNER | 37 |
+| 48 | FRANKLIN FARM | 1,681 |
+| 49 | FRANKLIN OAKS | 120 |
+| 50 | FRANKLIN WOODS | 36 |
+| 51 | FRANKLIN'S TRUST | 34 |
+| 52 | GARNCHAYNE | 20 |
+| 53 | GREAT OAK | 187 |
+| 54 | GREAT OAK GREG-ROY | 8 |
+| 55 | HAVERHILL WEST | 21 |
+| 56 | HIDDEN VALLEY | 5 |
+| 57 | HIGHLAND MEWS | 150 |
+| 58 | HORSE PEN ACRES | 8 |
+| 59 | INNOVATION CENTER SOUTH | 4 |
+| 60 | IRIS HILLS | 10 |
+| 61 | JOCELYNE HILL SUBDIVISION | 5 |
+| 62 | LAMBERT PROPERTY | 7 |
+| 63 | LIBERTY PARK | 81 |
+| 64 | LIBERTY PARK CONDOMINIUM | 88 |
+| 65 | MANDERLEY | 11 |
+| 66 | MANORS AT MCNAIR FARMS CONDOMINIUM THE | 116 |
+| 67 | MCLEAREN LLC LAND CONDOMINIUM | 2 |
+| 68 | MCNAIR FARMS | 976 |
+| 69 | MEADOW HALL | 120 |
+| 70 | METROPARK AT ARROWBROOK CONDOMINIUM | 116 |
+| 71 | MIDDLETON FARM | 233 |
+| 72 | MONEYS CORNER SUBDIVISION | 56 |
+| 73 | MONROE CHASE | 73 |
+| 74 | MONROE MANOR | 166 |
+| 75 | MONTEREY | 231 |
+| 76 | MOSAIC AT WOODLAND PARK CONDOMINIUM | 98 |
+| 77 | MOUNTAIN VIEW | 37 |
+| 78 | MUSTANG CROSSING | 32 |
+| 79 | MYTERRA | 39 |
+| 80 | MYTERRA MANOR | 22 |
+| 81 | McLEAREN SQUARE SUBDIVISION | 23 |
+| 82 | McNAIR FARMS WEST | 142 |
+| 83 | NAVY PARK | 4 |
+| 84 | NAVY SUBDIVISION | 3 |
+| 85 | NUGGET PARCEL D-1 LAND C0NDOMINIUM | 1 |
+| 86 | O.C. DOWNS | 9 |
+| 87 | OAK FARMS | 127 |
+| 88 | OAK HILL COVE | 4 |
+| 89 | OAK HILL MANORS | 13 |
+| 90 | OAK HILL RESERVE | 53 |
+| 91 | OAK MERE | 4 |
+| 92 | OAKDALE ESTATES | 12 |
+| 93 | OAKMILL | 178 |
+| 94 | OAKTON CHASE | 37 |
+| 95 | OAKTON HILL | 5 |
+| 96 | OAKTON RIDGE | 43 |
+| 97 | ORCHARD GLEN | 14 |
+| 98 | OVATION AT ARROWBROOK CONDOMINIUM | 15 |
+| 99 | OVERLOOK AT DULLES TECH CONDOMINIUM | 186 |
+| 100 | OX MEADOW | 25 |
+| 101 | OXFORD FOREST | 14 |
+| 102 | PARKSIDE VILLAGE | 14 |
+| 103 | PINE OAKS | 6 |
+| 104 | POND MIST RESERVE | 12 |
+| 105 | PRINCE TOWNE | 9 |
+| 106 | PROFFITT SUBDIVISION | 5 |
+| 107 | PROPERTY OF DULLES CREEK ASSOCIATES LLC | 19 |
+| 108 | RENAISSANCE TECHNOLOGY PARK | 9 |
+| 109 | RESERVE AT OAKTON, THE | 4 |
+| 110 | RESERVE AT SPRING LAKE. THE | 27 |
+| 111 | RESERVE AT STONE HILL THE | 36 |
+| 112 | RESIDENCES AT DISCOVERY SQUARE CONDOMINIUM THE | 180 |
+| 113 | ROBALEED | 26 |
+| 114 | ROCKY KNOLL | 8 |
+| 115 | ROGERS FARM | 34 |
+| 116 | ROGERS SUBDIVISION | 3 |
+| 117 | RUNYON & NADANYI | 5 |
+| 118 | RUTHERFORD TRACT | 5 |
+| 119 | SASSCER'S HILL | 20 |
+| 120 | SHADETREE | 1 |
+| 121 | SHADETREE ESTATES | 25 |
+| 122 | SHANGRILA | 10 |
+| 123 | SMITHFIELD AT WEST OX | 26 |
+| 124 | SOUTHFIELD | 28 |
+| 125 | SPRING LAKE ESTATES | 3 |
+| 126 | SPRING LAKE ESTATES WEST | 109 |
+| 127 | SQUIRREL HILL | 104 |
+| 128 | STILL OAKS | 81 |
+| 129 | SUBDIVISION OF GLENBROOKE WOODS | 127 |
+| 130 | SUMMERFIELD | 27 |
+| 131 | SUNRISE VALLEY | 157 |
+| 132 | SUNRISE VALLEY LAND CONDOMINIUM | 11 |
+| 133 | SUNRISE VALLEY LANDBAY E | 1 |
+| 134 | SYCAMORE LAKES | 148 |
+| 135 | SYCAMORE RIDGE | 262 |
+| 136 | THOMPSON ROAD PROPERTY | 10 |
+| 137 | TOWERVIEW COMMERCE CENTER CONDOMINIUM | 8 |
+| 138 | TOWNS OF CARTERS GROVE | 35 |
+| 139 | TST WOODLAND LLC | 2 |
+| 140 | VALE VALLEY FARMS | 20 |
+| 141 | VAN METRE WOODLAND PARK | 44 |
+| 142 | WATERVIEW AT WOODLAND PARK | 33 |
+| 143 | WATERVIEW AT WOODLAND PARK CONDOMINIUM | 58 |
+| 144 | WELLBORNS ADDITION FOX MILL ACRES | 24 |
+| 145 | WELLESLEY | 188 |
+| 146 | WEST OAKS ESTATES | 16 |
+| 147 | WEST OX CLUSTER | 92 |
+| 148 | WEST RIDGE | 20 |
+| 149 | WEXFORD TOWNHOMES AT MCNAIR FARMS | 16 |
+| 150 | WHITE PROPERTY | 5 |
+| 151 | WOODLAND ASSOCIATES | 35 |
+| 152 | WOODLAND PARK | 100 |
+| 153 | WOODLAND PARK CROSSING LAND CONDOMINUM | 29 |
+| 154 | WOODLAND PARK EAST | 83 |
+| 155 | WOODLAND PARK EAST CONDOMINIUM | 90 |
+| 156 | WYNNEWOOD | 15 |
+
+---
+
+## ZIP Code 20172 - Herndon
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 20190 - Reston (North / Town Center)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 66
+- **Total Recorded Units:** 8,223
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | AMERICAN DREAM WAY | 75 |
+| 2 | APA PROPERTIES NO. 6 L.P | 8 |
+| 3 | ATRIUM I CONDOMINIUM OFFICE PROJECT | 23 |
+| 4 | AVANT CONDOMINIUMS AT RESTON TOWN CENTER | 5 |
+| 5 | BENTANA PARK CONDOMINIUM | 241 |
+| 6 | BOWMAN GREEN | 26 |
+| 7 | C.R. BALL SUBDIVISION | 11 |
+| 8 | CARLTON HOUSE CONDOMINIUM | 297 |
+| 9 | CHARTER OAK APARTMENTS RESTON | 40 |
+| 10 | CHESTNUT GROVE CONDOMINIUM | 227 |
+| 11 | EDGEWATER AT TOWN CENTER CONDOMINIUM | 174 |
+| 12 | EQUESTRIAN PARK SUBDIVISION | 31 |
+| 13 | EXO CONDOMINIUM | 2 |
+| 14 | FAIRFAX HUNT ESTATES | 9 |
+| 15 | FAIRWAY APARTMENTS W. RESTON | 49 |
+| 16 | FAIRWAY EXECUTIVE CENTER A CONDOMINIUM | 25 |
+| 17 | FARADAY PROFESSIONAL CENTER A CONDOMINIUM | 22 |
+| 18 | FLATS AT TALL OAKS CONDOMINIUM, THE | 70 |
+| 19 | HOSPITAL CENTER MEDICAL PAVILION CONDOMINIUM | 21 |
+| 20 | HOSPITAL CENTER MEDICAL PLAZA A CONDOMINIUM | 58 |
+| 21 | ISAAC NEWTON BUSINESS CENTER A CONDOMINIUM | 5 |
+| 22 | IVY OAK CONDOMINIUM | 96 |
+| 23 | LAKE ANNE HOUSE | 36 |
+| 24 | LAKE ANNE OF RESTON CONDOMINIUM | 135 |
+| 25 | LAKE FAIRFAX BUSINESS CENTER | 15 |
+| 26 | LAKE FAIRFAX PARK ESTATES | 26 |
+| 27 | LINCOLN PARK CONDOMINIUM | 104 |
+| 28 | LOFTS AT RESTON STATION CONDOMINIUM THE | 46 |
+| 29 | MADISON PARK AT WEST MARKET CONDOMINIUM | 122 |
+| 30 | MARKET STREET AT TOWN CENTER CONDOMINIUM | 334 |
+| 31 | MIDLINE SUBDIVISION | 114 |
+| 32 | MIDTOWN AT RESTON CENTER CONDOMINIUM | 296 |
+| 33 | MIDTOWN NORTH CONDOMINIUM | 78 |
+| 34 | NORTHGATE CONDOMINIUM | 442 |
+| 35 | OAK PARK CONDOMINIUM AT RESTON TOWN CENTER | 181 |
+| 36 | PARAMOUNT CONDOMINIUM THE | 100 |
+| 37 | PARCRESTON CONDOMINIUM | 337 |
+| 38 | PARKWAY MEDICAL TOWER CONDOMINIUM | 27 |
+| 39 | PAVILION 2 MEDICAL OFFICE BUILDING CONDOMINIUM | 17 |
+| 40 | PLAZA AMERICA | 4 |
+| 41 | RESTON | 2,802 |
+| 42 | RESTON GARDENS APARTMENTS | 1 |
+| 43 | RESTON GATEWAY CONDOMINIUM | 31 |
+| 44 | RESTON INDUSTRIAL VENTURE | 1 |
+| 45 | RESTON PCL 6 | 21 |
+| 46 | RESTON PCL 6A | 20 |
+| 47 | RESTON PCL 6D | 1 |
+| 48 | RESTON PCL 6E | 8 |
+| 49 | RESTON RESUB OF PCL 11A | 50 |
+| 50 | RESTON ROW BUILDING C CONDOMINIUM | 95 |
+| 51 | RESTON ROW LAND CONDOMINIUM | 8 |
+| 52 | RESTON,INDUSTRIAL GROUP FACILITIES COMPLEX | 13 |
+| 53 | RESTON-LAKEVIEW CONDOMINIUM | 105 |
+| 54 | RTC BLOCK 4 CONDOMINIUM | 17 |
+| 55 | SAVOY AT RESTON TOWN CENTER CONDOMINIUM | 365 |
+| 56 | STRATFORD CONDOMINIUM | 342 |
+| 57 | SUNSET STATION | 9 |
+| 58 | TALL OAKS AT NORTH SHORE | 44 |
+| 59 | THE HUNT AT LAKE FAIRFAX | 44 |
+| 60 | TOWNES AT WATERFORD | 43 |
+| 61 | TWO OVER TWOS TALL OAKS CONDOMINIUM THE | 32 |
+| 62 | TWO OVER TWOS TALL OAKS CONDOMINIUM, THE | 13 |
+| 63 | VANTAGE HILL CONDOMINIUM | 152 |
+| 64 | VANTAGE HILL TOWNHOMES | 28 |
+| 65 | WATERFORD SQUARE CONDOMINIUM | 48 |
+| 66 | WOODLAND PARK EAST CONDOMINIUM | 1 |
+
+---
+
+## ZIP Code 20191 - Reston (South)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 50
+- **Total Recorded Units:** 11,068
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | AUDUBON TERRACE | 26 |
+| 2 | AUDUBON TERRACE RESTON | 56 |
+| 3 | BRISTOL HOUSE CONDOMINIUM | 153 |
+| 4 | CASCADES SOUTH CONDOMINIUM | 14 |
+| 5 | COURTS OF FOX MILL THE | 115 |
+| 6 | DEEPWOOD | 349 |
+| 7 | DOCKSIDE CONDOMINIUM | 46 |
+| 8 | EXECUTIVE II OFFICE CONDOMINIUMS | 19 |
+| 9 | FOX MILL WOODS | 239 |
+| 10 | GENERATION | 125 |
+| 11 | GLADE AT HUNTERS WOODS CONDOMINIUMS THE | 48 |
+| 12 | GLADE CLUSTER - RESTON | 63 |
+| 13 | GLENVALE CONDOMINIUM | 204 |
+| 14 | HARBOR POINT CONDOMINIUM | 100 |
+| 15 | HIDDEN VALLEY | 2 |
+| 16 | HUNTER'S CROSSING A CONDOMINIUM | 85 |
+| 17 | HUNTERS SQUARE | 154 |
+| 18 | HUNTERS WOODS VILLAGE CONDOMINIUM | 222 |
+| 19 | LAWYERS CREST SUBDIVISION | 5 |
+| 20 | LAWYERS GLEN | 6 |
+| 21 | LAWYERS RIDGE | 6 |
+| 22 | MERCER A CONDOMINIUM THE | 194 |
+| 23 | MUMFORD PARK | 3 |
+| 24 | NANTUCKET AT RESTON A CONDOMINIUM | 56 |
+| 25 | POLO FIELDS | 404 |
+| 26 | POND COMMERICAL CONDOMINIUM BUILDING, THE | 11 |
+| 27 | PRESTON WHITE PROFESSIONAL CENTER A CONDOMINIUM | 10 |
+| 28 | RACCOON RIDGE | 25 |
+| 29 | RESTON | 6,386 |
+| 30 | RESTON ARBORETUM | 40 |
+| 31 | RESTON ARBORETUM CONDOMINIUM | 1 |
+| 32 | RESTON BUSINESS CENTER A PROFESSIONAL CONDOMINIUM | 30 |
+| 33 | RESTON HEIGHTS | 15 |
+| 34 | RESTON SQUARE LAND CONDOMINIUM | 2 |
+| 35 | RESUB. PAR. A RESTON | 122 |
+| 36 | SHADOWOOD CONDOMINIUM | 452 |
+| 37 | SOUTHGATE CONDOMINIUM | 300 |
+| 38 | SPRINGWOOD CONDOMINIUMS | 96 |
+| 39 | STONELEDGE | 9 |
+| 40 | STRATTON WOODS | 269 |
+| 41 | SUNRISE OAK PROFESSIONAL CONDOMINIUM | 33 |
+| 42 | SUNRISE PROFESSIONAL CENTER CONDOMINIUM | 22 |
+| 43 | SUNRISE SQUARE | 34 |
+| 44 | SUNRISE SQUARE A CONDOMINIUM | 10 |
+| 45 | SUNRISE VALLEY CONVENIENCE CENTER CONDOMINIUM | 11 |
+| 46 | THOREAU PLACE CONDOMINIUM | 135 |
+| 47 | VALLEY AND PARK | 54 |
+| 48 | VILLARIDGE CONDOMINIUM | 217 |
+| 49 | WOODSLOPE | 5 |
+| 50 | WOODWINDS II CONDOMINIUM | 85 |
+
+---
+
+## ZIP Code 20192 - Herndon
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 20194 - Reston (North)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 17
+- **Total Recorded Units:** 4,793
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ASCOT SUBDIVISION | 70 |
+| 2 | BALDWIN GROVE A CONDOMINIUM | 127 |
+| 3 | BRANDERMILL | 30 |
+| 4 | CRIPPEN'S CORNER | 235 |
+| 5 | CRYSTAL COVE AT RESTON TOWNE CENTER | 22 |
+| 6 | ESTATES AT WYNDHAM HILLS | 56 |
+| 7 | FALLS PARK | 16 |
+| 8 | HAMPTON POINTE CONDOMINIUM | 140 |
+| 9 | HUNTERS END | 42 |
+| 10 | NEW BEDFORD SUBDIVISION | 18 |
+| 11 | NORTH POINT VILLAS CONDOMINIUM | 106 |
+| 12 | PINEY RUN MEADOW | 25 |
+| 13 | RESTON | 3,481 |
+| 14 | SHAKER WOODS | 53 |
+| 15 | SMC STUART ROAD | 11 |
+| 16 | SUMMER RIDGE CONDOMINIUM | 168 |
+| 17 | SUTTON RIDGE CONDOMINIUM | 193 |
+
+---
+
+## ZIP Code 20195 - Reston
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 20196 - Reston
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 20206 - Dulles
+
+- **Postal Classification:** Government / Specialized
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as Government / Specialized).*
+
+---
+
+## ZIP Code 22003 - Annandale
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 269
+- **Total Recorded Units:** 17,198
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 1ST ADDITION TO HOLMES RUN HEIGHTS | 38 |
+| 2 | 2ND ADDITION TO HOLMES RUN HEIGHTS | 29 |
+| 3 | 7535 LITTLE RIVER TURNPIKE, A PROFESSIONAL CONDOMINIUM | 31 |
+| 4 | ACCOTINK HEIGHTS | 55 |
+| 5 | ADAMS WALK | 69 |
+| 6 | ALPINE | 20 |
+| 7 | ALPINE SUBDIVISION | 26 |
+| 8 | AMERICANA FAIRFAX | 176 |
+| 9 | ANNA GROVE | 9 |
+| 10 | ANNANDALE ACRES | 123 |
+| 11 | ANNANDALE GARDENS | 21 |
+| 12 | ANNANDALE GARDENS CONDOMINIUM | 143 |
+| 13 | ANNANDALE MEDICAL CONDOMINIUM | 19 |
+| 14 | ANNANDALE MEWS | 9 |
+| 15 | ANNANDALE OAKS | 8 |
+| 16 | ANNANDALE PROFESSIONAL CENTER CONDOMINIUM | 17 |
+| 17 | ANNANDALE SQUARE A CONDOMINIUM | 42 |
+| 18 | ANNANDALE SUBDIVISION | 82 |
+| 19 | ANNANDALE TERRACE | 186 |
+| 20 | ANNANDALE WOODS | 81 |
+| 21 | ANNANWOOD | 22 |
+| 22 | ARDFOUR SUBDIVISION | 15 |
+| 23 | ASHTON C. JONES | 8 |
+| 24 | ASPEN HILL SUBDIVISION | 39 |
+| 25 | AUTUMN WOODS | 11 |
+| 26 | BANNERWOOD ESTATES | 13 |
+| 27 | BARCROFT KNOLLS | 12 |
+| 28 | BEACHS ADDITION TO PINE RIDGE | 15 |
+| 29 | BECKEDORFF SUBDIVISION | 3 |
+| 30 | BECKER KNOLLS | 9 |
+| 31 | BENNETT ESTATES | 18 |
+| 32 | BENNETT WOODS | 10 |
+| 33 | BEVERLY MANOR | 12 |
+| 34 | BRADDOCK ACRES | 11 |
+| 35 | BRADDOCK HILLS | 102 |
+| 36 | BRADFIELD | 66 |
+| 37 | BRAINWOODS | 17 |
+| 38 | BRENTLEIGH | 49 |
+| 39 | BRIARWOOD COURT CONDOMINIUM | 128 |
+| 40 | BRISTOW | 149 |
+| 41 | BRISTOW CENTER CONDOMINIUM | 24 |
+| 42 | BROADVALE | 14 |
+| 43 | BROADVALE, EISENLOHRS ADDITION TO | 3 |
+| 44 | BROOK HILLS ESTATES | 109 |
+| 45 | BROYHILL CREST | 510 |
+| 46 | BROYHILL CREST STAFFORDS ADDN. | 1 |
+| 47 | BYRNELEY VIEW | 39 |
+| 48 | CALLAWAY | 29 |
+| 49 | CAMELOT | 353 |
+| 50 | CAMELOT GREENS | 27 |
+| 51 | CAMELOT HEIGHTS | 50 |
+| 52 | CAMELOT SQUARE | 56 |
+| 53 | CANTERBURY WOODS | 616 |
+| 54 | CARRICO KNOLL | 4 |
+| 55 | CAVALCADE | 232 |
+| 56 | CEDAR CREST | 117 |
+| 57 | CHACONAS ESTATES | 20 |
+| 58 | CHAPEL GLEN | 17 |
+| 59 | CHAPEL HILL | 90 |
+| 60 | CHAPEL LAKE | 33 |
+| 61 | CHAPEL LAKE ESTATES | 31 |
+| 62 | CHAPEL SQUARE | 167 |
+| 63 | CHAPEL SQUARE WEST | 42 |
+| 64 | CHAPELWOOD | 30 |
+| 65 | CHATELAIN VILLAGE | 48 |
+| 66 | CHESTNUT HILL | 88 |
+| 67 | CHESTNUT WOODS SUBDIVISION | 12 |
+| 68 | CLARK W L | 13 |
+| 69 | CLEARFIELD | 1 |
+| 70 | COFFEE, MARY E, PRTY. | 2 |
+| 71 | COFFEE, MARY, PRTY | 3 |
+| 72 | COLERIDGE SUBDIVISION | 16 |
+| 73 | COLUMBIA OAKS | 17 |
+| 74 | COLUMBIA OAKS SUBDIVISION | 11 |
+| 75 | COLUMBIA PINES | 306 |
+| 76 | COUNTRY LANE | 8 |
+| 77 | CREST MEADOW | 27 |
+| 78 | CRESTWOOD MANOR | 190 |
+| 79 | CURTIS ADDITION TO OAK HILL | 3 |
+| 80 | DAVIAN PINES | 9 |
+| 81 | DAVIAN PLACE | 47 |
+| 82 | DEAN SUBD. | 6 |
+| 83 | DEGROFF COURT | 15 |
+| 84 | DEMARCO PROPERTY | 2 |
+| 85 | DEREN PARK | 15 |
+| 86 | DMV/ANNANDALE | 20 |
+| 87 | ELAN MEWS | 85 |
+| 88 | ELCINO MANOR | 10 |
+| 89 | ENGLANDBORO | 52 |
+| 90 | EVERGREEN HEIGHTS | 65 |
+| 91 | EVERGREEN OFFICE CONDOMINIUM | 54 |
+| 92 | EVERGREEN PROFESSIONAL CENTER CONDOMINIUM | 17 |
+| 93 | EVERGREEN SQUARE OFFICE CONDOMINIUM | 32 |
+| 94 | FAIRDALE | 57 |
+| 95 | FAIRFAX HERITAGE CONDOMINIUM | 476 |
+| 96 | FAIRFAX HERITAGE CONDOMINIUM PHASE X | 151 |
+| 97 | FAIRFAX HERITAGE CONDOMINIUMS | 293 |
+| 98 | FAIRFAX HILLS | 72 |
+| 99 | FAIRFAX MEDICAL CONDOMINIUM | 29 |
+| 100 | FAIRMONT GARDENS APPARTMENTS | 72 |
+| 101 | FARR & McCANDLISH | 32 |
+| 102 | FENTON D.W.&E.E | 5 |
+| 103 | FIRST ADDITION TO LEEWOOD | 14 |
+| 104 | FIRST ADDITION TO STATE HILL SUBD | 7 |
+| 105 | FONTAINEBLEAU ESTATES | 21 |
+| 106 | FOREST GROVE | 19 |
+| 107 | FOREST HILLS | 45 |
+| 108 | FOSTER BROS ADDITION TO WILLOW WOODS | 34 |
+| 109 | GALANIS WOODS | 17 |
+| 110 | GALLOWS ESTATES | 26 |
+| 111 | GEORGE T BENNETT | 2 |
+| 112 | GLEN HOLLOW A CONDOMINIUM | 42 |
+| 113 | HERITAGE 2 | 18 |
+| 114 | HERITAGE COURT | 289 |
+| 115 | HERITAGE HILLS | 14 |
+| 116 | HERITAGE MALL RESIDENTIAL | 67 |
+| 117 | HERITAGE WOODS | 20 |
+| 118 | HERITAGE WOODS NORTH CONDOMINIUM | 211 |
+| 119 | HILLBROOK | 5 |
+| 120 | HILLBROOK FOREST | 62 |
+| 121 | HILLBROOK SPRINGS | 7 |
+| 122 | HILLBROOK SUBDIVISION | 21 |
+| 123 | HOLLY ROAD SUBDIVISION | 18 |
+| 124 | HOLLY WOODS ESTATES | 4 |
+| 125 | HOLMES RUN HEIGHTS | 40 |
+| 126 | HOLMES RUN VILLAGE | 74 |
+| 127 | HUMMER WOODS ESTATES | 18 |
+| 128 | INDIAN RUN TOWNHOUSES | 39 |
+| 129 | IVYMOUNT COURT CONDOMINIUM | 171 |
+| 130 | JOANN | 2 |
+| 131 | JOHN MARR DRIVE PROFESSIONAL CENTER CONDOMINIUM | 16 |
+| 132 | JOHN O. BECK | 1 |
+| 133 | JOHNSON'S GARDEN | 9 |
+| 134 | JONES ASHTON C | 1 |
+| 135 | KENSINGTON SQUARE | 27 |
+| 136 | KENWOOD | 141 |
+| 137 | KINGS COURT | 7 |
+| 138 | KIRBY DALE | 13 |
+| 139 | KORFONTAS ADDITION TO ANNANDALE OAKS | 5 |
+| 140 | KORFONTAS ADDITION TO GALANIS WOODS | 7 |
+| 141 | LAFAYETTE FOREST A CONDOMINIUM | 182 |
+| 142 | LAFAYETTE PARK | 65 |
+| 143 | LAFAYETTE PARK WEST | 90 |
+| 144 | LAFAYETTE VILLAGE | 317 |
+| 145 | LITTLE RIVER CENTER | 45 |
+| 146 | LITTLE RIVER MEWS | 42 |
+| 147 | LITTLE RIVER SQUARE CONDOMINIUM | 225 |
+| 148 | LOGANWOOD GLEN | 4 |
+| 149 | LONG BRANCH | 263 |
+| 150 | LUCIUS ADDITION TO KENWOOD | 10 |
+| 151 | MARQUERITE PERRELL | 26 |
+| 152 | MARRION CENTRE AN OFFICE CONDOMINIUM | 48 |
+| 153 | MASONVILLE HEIGHTS | 62 |
+| 154 | MERRION SQUARE AN OFFICE CONDOMINIUM | 28 |
+| 155 | MILL CREEK PARK | 137 |
+| 156 | MONROE KNOLLS | 4 |
+| 157 | MOORE & KEITH | 65 |
+| 158 | MT. PLEASANT | 38 |
+| 159 | MT. PLEASANT CIRCLE | 12 |
+| 160 | McADAMS ADDN. TO HILLBROOK | 21 |
+| 161 | McADAMS-HILLBROOK | 66 |
+| 162 | NEW HOPE | 30 |
+| 163 | NEW HOPE RESUBDIVISION | 3 |
+| 164 | NORMAC | 24 |
+| 165 | O. C. DRESSER SUBDIVISION | 8 |
+| 166 | OAK HILL | 184 |
+| 167 | OAK KNOLL ESTATES | 12 |
+| 168 | OLD COLUMBIA PIKE | 5 |
+| 169 | OLIVER KNOLLS | 16 |
+| 170 | OLIVER PARK | 19 |
+| 171 | OVERLOOK KNOLLS | 29 |
+| 172 | PANORAMIC HILLS | 32 |
+| 173 | PARK GLEN HEIGHTS | 87 |
+| 174 | PERRELL MARGUERITE | 5 |
+| 175 | PERRELL PROPERTY | 3 |
+| 176 | PHILRALPH | 4 |
+| 177 | PINE RIDGE | 6 |
+| 178 | PINECREST | 9 |
+| 179 | PINECREST ESTATES | 24 |
+| 180 | PINECREST HEIGHTS | 197 |
+| 181 | PLEASANT RIDGE SUBDIVISION | 109 |
+| 182 | PLEASANT VILLA | 2 |
+| 183 | POPLAR HILL | 21 |
+| 184 | POPLAR STREET OFFICES CONDOMINIUM | 6 |
+| 185 | PROSPERITY HEIGHTS SUBDIVISION | 208 |
+| 186 | QUIET COVE | 9 |
+| 187 | RAINBOW GLEN | 13 |
+| 188 | RAINTREE | 74 |
+| 189 | RAMBLEWOOD | 55 |
+| 190 | RAVENS CORNER A CONDOMINIUM | 9 |
+| 191 | RAVENSDALE | 39 |
+| 192 | RAVENSWORTH GROVE | 185 |
+| 193 | RAVENSWORTH PARK | 183 |
+| 194 | RAVENSWORTH VILLA | 6 |
+| 195 | RAYNES ADDITION TO WILLOWRUN | 6 |
+| 196 | RED FOX FOREST | 200 |
+| 197 | RED OAK MANOR | 6 |
+| 198 | RESERVES AT PINECREST THE | 11 |
+| 199 | RIVERVIEW HEIGHTS | 17 |
+| 200 | ROBERTS PLACE | 47 |
+| 201 | ROCART TERRACE | 43 |
+| 202 | ROLF HEIGHTS | 76 |
+| 203 | ROYAL COURT | 248 |
+| 204 | RUSSELL C WOOD SUBDIVISION | 1 |
+| 205 | RUSSELL C. WOOD SUBDIVISION | 39 |
+| 206 | SANPINE SPRINGS | 18 |
+| 207 | SEVILLE ESTATES | 10 |
+| 208 | SHADOW LAWN SUBDIVISION | 12 |
+| 209 | SHAMROCK HEIGHTS | 34 |
+| 210 | SHEFFIELDS ADDITION TO WILLOW WOODS | 5 |
+| 211 | SLEEPY HOLLOW PLACE | 8 |
+| 212 | SLEEPY HOLLOW RUN | 144 |
+| 213 | SLEEPY HOLLOW WOODS | 366 |
+| 214 | SPRINGBROOK FOREST | 198 |
+| 215 | SPRINGDALE PROFESSIONAL CENTER CONDOMINIUM | 85 |
+| 216 | STAFFORDS ADDITION TO BROYHILL CREST | 14 |
+| 217 | STATE HILL | 29 |
+| 218 | STATECREST WOODS | 12 |
+| 219 | STONE HAVEN | 100 |
+| 220 | STRATHMEADE SQUARE | 310 |
+| 221 | STRATHMEDE SPRINGS | 1 |
+| 222 | STRATMEADE SPRINGS GAINE'S ADDITION NO. 1 | 25 |
+| 223 | STRATMEADE SPRINGS GAINE'S ADDITION NO. 2 | 10 |
+| 224 | STRATMEADE SPRINGS GAINE'S ADDITION NO. 3 | 14 |
+| 225 | SUBDIVISION OF HERITAGE VILLAGE | 62 |
+| 226 | SUBIVISION OF THE LAND OF COUNTY INVESTMENTS COMPANY INCORPORATED | 23 |
+| 227 | SUNRISE AT SUNSET | 6 |
+| 228 | SUNSET COURT | 6 |
+| 229 | SUNSET HILL SUBDIVISION | 5 |
+| 230 | SUNSET LANE | 3 |
+| 231 | SUNSET VILLAGE | 59 |
+| 232 | SUNSET WOODS | 11 |
+| 233 | SYPHAX & ALBRITTAINS ADDITION TO CAMELOT SQUARE | 9 |
+| 234 | TAB CONDOMINIUM THE | 8 |
+| 235 | TALL OAKS | 81 |
+| 236 | TERRACE TOWNHOUSES OF ANNANDALE | 276 |
+| 237 | THE COFFEY PROPERTY | 4 |
+| 238 | THE MAINS AT ANNANDALE | 9 |
+| 239 | THURNER COURT | 5 |
+| 240 | TOLL HOUSE WOODS | 10 |
+| 241 | TOWNES AT LITTLE RIVER CROSSINGS PH-1 | 43 |
+| 242 | TOWNES OF WAKEFIELD | 51 |
+| 243 | TRINITY ESTATE | 7 |
+| 244 | TRINITY II | 6 |
+| 245 | TRURO | 379 |
+| 246 | VARSITY PARK | 39 |
+| 247 | WAKEFIELD CHAPEL ESTATES | 282 |
+| 248 | WAKEFIELD CHAPEL WOODS | 125 |
+| 249 | WAKEFIELD FOREST | 173 |
+| 250 | WAKEFIELD OAKS | 8 |
+| 251 | WALTON WOODS | 8 |
+| 252 | WEAKLEYS SUBDIVISION | 7 |
+| 253 | WEBBWOOD SUBDIVISION | 12 |
+| 254 | WILBURDALE | 68 |
+| 255 | WILBURDALE SUBDIVISION | 41 |
+| 256 | WILLOW WOODS | 361 |
+| 257 | WILLOWRUN | 103 |
+| 258 | WINTERSET | 151 |
+| 259 | WOODBINE ESTATES | 23 |
+| 260 | WOODBURN HEIGHTS | 28 |
+| 261 | WOODBURN VILLAGE CONDOMINIUM | 606 |
+| 262 | WOODLAND FOREST | 19 |
+| 263 | WOODLAND MEADOWS ESTATES | 12 |
+| 264 | WOODLAND PALACE | 6 |
+| 265 | WOODS OF ILDA | 83 |
+| 266 | WOODSIDE SUBDIVISION | 5 |
+| 267 | WOOLFENDEN PROPERTY | 17 |
+| 268 | WRIGHTS ADDITION TO PLEASANT RIDGE | 3 |
+| 269 | WYNFIELD | 98 |
+
+---
+
+## ZIP Code 22009 - Burke
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22015 - Burke
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 108
+- **Total Recorded Units:** 14,425
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | BELLEAIR | 12 |
+| 2 | BENT TREE | 217 |
+| 3 | BHP ASSOCIATES LIMITED PARTNERSHIP | 7 |
+| 4 | BRITFORD | 83 |
+| 5 | BRYCE ESTATES | 9 |
+| 6 | BURKE CENTER | 203 |
+| 7 | BURKE CENTER SUBDIVISION | 36 |
+| 8 | BURKE CENTRE | 3,908 |
+| 9 | BURKE CENTRE CONDOMINIUM OFFICES | 15 |
+| 10 | BURKE CHASE | 16 |
+| 11 | BURKE COVE CONDOMINIUM | 448 |
+| 12 | BURKE ESTATES | 18 |
+| 13 | BURKE HEIGHTS SUBDIVISION | 21 |
+| 14 | BURKE HILLS ASSOCIATION | 21 |
+| 15 | BURKE LAKE MEADOW | 52 |
+| 16 | BURKE MANOR | 66 |
+| 17 | BURKE MILL COVE | 11 |
+| 18 | BURKE PROFESSIONAL CENTER | 78 |
+| 19 | BURKE RIDGE CLUSTER SUBDIVISION | 48 |
+| 20 | BURKE STATION SQUARE | 506 |
+| 21 | BURKE VILLAGE | 229 |
+| 22 | BURKES WAY | 19 |
+| 23 | BURKEWOOD GLEN | 41 |
+| 24 | CARDINAL ESTATES | 169 |
+| 25 | CARDINAL GLEN | 355 |
+| 26 | CAROLINE OAKS | 107 |
+| 27 | CARR'S FIRST ADDITION TO SIGNAL HILL | 40 |
+| 28 | CARR'S SECOND ADDITION TO SIGNAL HILL | 25 |
+| 29 | CARRLEIGH | 46 |
+| 30 | CHERRY RUN | 543 |
+| 31 | CLAYTON'S GROVE | 27 |
+| 32 | CREVENNA OAK CLUSTER | 52 |
+| 33 | CROWNLEIGH | 144 |
+| 34 | DOMINON GREEN AN OFFICE CONDOMINIUM | 45 |
+| 35 | DUNLEIGH | 151 |
+| 36 | DUNLEIGH OAKS | 5 |
+| 37 | EDGEWATER | 117 |
+| 38 | ENCLAVE OF BURKE | 12 |
+| 39 | FOUR OAKS ESTATE | 25 |
+| 40 | FOX LAIR | 143 |
+| 41 | GREENFIELD FARM | 160 |
+| 42 | HERITAGE SQUARE | 100 |
+| 43 | HERITAGE SQUARE NORTH | 39 |
+| 44 | HILLSDALE | 115 |
+| 45 | HOLLY RIDGE | 10 |
+| 46 | HOMEWOOD | 105 |
+| 47 | HONEY TREE | 14 |
+| 48 | INDIAN OAKS | 60 |
+| 49 | INGLEWOOD ESTATES | 37 |
+| 50 | ISLE OF WYGHT | 24 |
+| 51 | KEENE MILL FOREST | 12 |
+| 52 | KEENE MILL OAKS | 5 |
+| 53 | KEENE MILL WOODS | 82 |
+| 54 | KEENE MILL WOODS CONDOMINIUM | 303 |
+| 55 | KINGS GROVE | 17 |
+| 56 | LAKE BRADDOCK | 1,250 |
+| 57 | LAKE VIEW PARK | 4 |
+| 58 | LAKE VIEW PARK SUBDIVISION | 5 |
+| 59 | LAKEHAVEN ESTATES | 1 |
+| 60 | LAKEPOINTE | 422 |
+| 61 | LEE CHAPEL FOREST | 36 |
+| 62 | LEE CHAPEL RIDGE | 12 |
+| 63 | LEE CHAPEL WOODS | 20 |
+| 64 | LONGWOOD KNOLLS | 554 |
+| 65 | MEADOW BROOK COVE | 12 |
+| 66 | MEADOWS OF NARNIA | 113 |
+| 67 | MILLSTONE POND | 31 |
+| 68 | OAK LEATHER TOWNHOMES | 8 |
+| 69 | OAKWOOD COMMONS | 32 |
+| 70 | OAKWOOD COMMONS AT BURKE CENTRE A CONDOMINIUM | 198 |
+| 71 | OLD BURKE LAKE PRESERVE SUBDIVISION | 3 |
+| 72 | OLD MILL COMMUNITY | 100 |
+| 73 | OLD MILL COMMUNITY SUBDIVISION | 108 |
+| 74 | OLD STONE MILL | 54 |
+| 75 | ORANGE HUNT WEST | 72 |
+| 76 | PARK LEE | 25 |
+| 77 | PEPPER TREE | 54 |
+| 78 | PROSPECT KNOLLS SUBDIVISION | 12 |
+| 79 | QUEEN'S GATE | 88 |
+| 80 | ROLLING VALLEY PROFESSIONAL CENTER CONDOMINIUM | 37 |
+| 81 | ROLLING VALLEY WEST | 302 |
+| 82 | ROLLINGWOODS ESTATES | 24 |
+| 83 | SHANNON STATION | 49 |
+| 84 | SIGNAL HILL | 493 |
+| 85 | SIGNAL HILL ESTATES | 25 |
+| 86 | SILAS STATION | 9 |
+| 87 | SIMPSON SUBDIVISION | 5 |
+| 88 | SKIDMORE | 8 |
+| 89 | SOUTHPORT | 220 |
+| 90 | SPRING GARDEN | 9 |
+| 91 | SPRING LAKE FARMS | 9 |
+| 92 | SPRING LAKE WOODS | 10 |
+| 93 | STEAMBOAT LANDING | 3 |
+| 94 | SUMMERDAY | 52 |
+| 95 | THE PINES | 24 |
+| 96 | TIMARRON COVE | 51 |
+| 97 | TOWNES AT BURKE LAKE CROSSING SUBDIVISION THE | 12 |
+| 98 | TOWNES OF BURKE | 70 |
+| 99 | TRIPOLIS AT LAKE BRADDOCK | 53 |
+| 100 | WALDEN AT BURKE CENTRE A CONDOMINIUM | 130 |
+| 101 | WAVERLY EAST | 12 |
+| 102 | WAVERLY WEST | 43 |
+| 103 | WESTON HILLS SUBDIVISION | 20 |
+| 104 | WESTWOOD MANOR COURT | 25 |
+| 105 | WINDSOR KNOLLS | 7 |
+| 106 | WOODED GLEN | 136 |
+| 107 | WOODRIDGE | 34 |
+| 108 | WOODWALK A CONDOMINIUM | 186 |
+
+---
+
+## ZIP Code 22027 - Dunn Loring
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 38
+- **Total Recorded Units:** 644
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ARDEN OAKS SUBDIVISION | 34 |
+| 2 | BLITZ PROPERTY, THE | 21 |
+| 3 | BRAZIL PROPERTY | 6 |
+| 4 | BRIGHT MEADOWS | 35 |
+| 5 | BROAD WALK | 12 |
+| 6 | CHATHAM SQUARE | 18 |
+| 7 | DUNN LORING GARDENS | 2 |
+| 8 | DUNN LORING SQUARE | 8 |
+| 9 | DUNN LORING STATION | 8 |
+| 10 | GEORGE A MERRY SUBD | 2 |
+| 11 | HARRISON GROVE | 16 |
+| 12 | IDYLWOOD CREST | 12 |
+| 13 | KINGS GLEN | 40 |
+| 14 | LAING AT GOVERNORS SQUARE | 42 |
+| 15 | LEIGH WOODS SUBDIVISION | 10 |
+| 16 | LUPO PROPERTY | 17 |
+| 17 | MINCHEW OFFICE PARK CONDOMINIUM | 8 |
+| 18 | MORGAN CHASE | 36 |
+| 19 | NORTH PARK | 17 |
+| 20 | PAGE ACRES | 4 |
+| 21 | PORTER AT SANDBURG | 6 |
+| 22 | PRICHARDS CORNER | 18 |
+| 23 | REGAL OAKS THE | 64 |
+| 24 | REVATOM SUBDIVISION | 7 |
+| 25 | SANDBURG COURT | 9 |
+| 26 | SANDBURG HILL | 7 |
+| 27 | SANDBURG PARK I | 6 |
+| 28 | SANDBURG PARK II | 13 |
+| 29 | SANDBURG TERRACE SUBDIVISION | 5 |
+| 30 | SHADY BROOK | 22 |
+| 31 | SHREVE HILL | 18 |
+| 32 | STENWOOD | 4 |
+| 33 | STENWOOD PROPERTY | 18 |
+| 34 | TIMBER VALLEY | 11 |
+| 35 | TYSONS EXECUTIVE VILLAGE | 34 |
+| 36 | TYSONS GLEN | 9 |
+| 37 | TYSONS GROVE | 20 |
+| 38 | WOODCROFT | 25 |
+
+---
+
+## ZIP Code 22030 - Fairfax (West / City)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 154
+- **Total Recorded Units:** 8,423
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 3930 PENDER OFFICE CONDOMINIUM | 29 |
+| 2 | AVENSHIRE SUBDIVISION | 40 |
+| 3 | BEAUMONT | 5 |
+| 4 | BEECH RIDGE ESTATES | 11 |
+| 5 | BELL SUBDIVISION | 8 |
+| 6 | BERKSHIRE WOODS | 42 |
+| 7 | BIRCHTREE | 46 |
+| 8 | BRADDOCK FOREST | 18 |
+| 9 | BRADDOX SUBDIVISION | 42 |
+| 10 | BRECON RIDGE | 139 |
+| 11 | BRECON RIDGE WOODS | 23 |
+| 12 | BRENTWOOD | 182 |
+| 13 | BUCKLEY'S RESERVE | 247 |
+| 14 | BUCKNER FOREST | 21 |
+| 15 | CAMBRYAR | 41 |
+| 16 | CANNON FOREST | 7 |
+| 17 | CANNON RIDGE | 37 |
+| 18 | CANNONBALL RUN | 7 |
+| 19 | CARRIAGE PARK CONDOMINIUM | 192 |
+| 20 | CASTLE BRANCH | 5 |
+| 21 | CAVALIER WOODS | 37 |
+| 22 | CECIL D. HYLTON SUBDIVISION | 15 |
+| 23 | CENTENNIAL HILLS | 9 |
+| 24 | CHANDLER GROVE | 24 |
+| 25 | CHARLES M. BAILEY PROPERTY | 2 |
+| 26 | CHARLESTON SQUARE TOWNHOME CONDOMINIUM | 57 |
+| 27 | CHILTON WOODS | 8 |
+| 28 | CLOISTERS OF FAIRFAX | 70 |
+| 29 | COLCHESTER ACRES | 20 |
+| 30 | COLCHESTER HEIGHTS | 9 |
+| 31 | COLCHESTER HUNT | 128 |
+| 32 | COLCHESTER MEADOW | 11 |
+| 33 | COUNTRY CLUB VIEW | 8 |
+| 34 | COURTS AT WESCOTT RIDGE CONDOMINIUM | 169 |
+| 35 | CREEKSIDE AT FOX CHAPEL ESTATES | 5 |
+| 36 | CRYSTAL SPRINGS | 56 |
+| 37 | DECOUR ESTATES | 21 |
+| 38 | DEERFIELD FOREST | 41 |
+| 39 | DIXIE HILL SUBDIVISION | 4 |
+| 40 | DOROTHY LADUE | 5 |
+| 41 | DUDLEY HEIGHTS | 11 |
+| 42 | DeBUSK | 6 |
+| 43 | DeBUSK SUBDIVISION | 4 |
+| 44 | ELEVEN OAKS | 39 |
+| 45 | ESTATES AT FAIRFAX | 42 |
+| 46 | ESTATES AT LEEWOOD | 26 |
+| 47 | ETHELS POND | 7 |
+| 48 | FAIR CHASE | 342 |
+| 49 | FAIR OAKS | 73 |
+| 50 | FAIR OAKS HILL | 16 |
+| 51 | FAIRBROOK SUBDIVISION | 10 |
+| 52 | FAIRFAX ACRES | 63 |
+| 53 | FAIRFAX CENTER | 274 |
+| 54 | FAIRFAX CENTRE II | 3 |
+| 55 | FAIRFAX COUNTY GOVERNMENTAL CENTER | 41 |
+| 56 | FAIRFAX EXECUTIVE PARK | 6 |
+| 57 | FAIRFAX GATEWAY | 37 |
+| 58 | FAIRFAX HUNT | 68 |
+| 59 | FAIRFAX RIDGE | 65 |
+| 60 | FAIRFAX RIDGE CONDOMINIUM | 422 |
+| 61 | FAIRFAX VILLA | 424 |
+| 62 | FAIRFAX WOODS | 9 |
+| 63 | FERGUSON PROPERTY | 7 |
+| 64 | FIRST ADDITION TO CANNON RIDGE | 5 |
+| 65 | FIRST ADDITION TO VANNOY PARK | 6 |
+| 66 | FOREST HILLS OF FAIRFAX | 35 |
+| 67 | FOULGER & BOLDOG | 44 |
+| 68 | FOX CHAPEL ESTATES | 9 |
+| 69 | GEORGE MASON WOODS | 11 |
+| 70 | GLEN ALDEN | 173 |
+| 71 | GLEN-ALDEN | 72 |
+| 72 | GRACE J KELLEY | 7 |
+| 73 | HAMPTON ESTATES | 17 |
+| 74 | HAMPTON FOREST | 557 |
+| 75 | HAMPTON WOODS | 31 |
+| 76 | HEATHERBROOK | 99 |
+| 77 | HOLLAND PROPERTY | 6 |
+| 78 | HUNTWOOD ESTATES | 3 |
+| 79 | HUNTWOOD MANOR | 11 |
+| 80 | JEAN M. BAILEY PROP. | 6 |
+| 81 | KIEL GARDENS | 5 |
+| 82 | KIELS-GARDENS | 37 |
+| 83 | KNOLLWOOD ESTATES | 6 |
+| 84 | LAKE FAIRFAX EST | 10 |
+| 85 | LAKE FAIRFAX ESTATES | 10 |
+| 86 | LANCASTER ESTATES | 9 |
+| 87 | LEE PINES | 39 |
+| 88 | LEEHIGH VILLAGE | 120 |
+| 89 | LEEHIGH WOODS | 10 |
+| 90 | LEGATO CORNER CONDOMINIUM | 202 |
+| 91 | LEWIS PARK | 113 |
+| 92 | LINCOLN PARK | 52 |
+| 93 | LODGE AT AUTUMN WILLOW LAND CONDOMINIUM THE | 1 |
+| 94 | LaBELLMONT | 5 |
+| 95 | MAPLE RIDGE CONDOMINIUM | 9 |
+| 96 | MAPLE TERRACE | 6 |
+| 97 | MARSHALL FARMS | 1 |
+| 98 | MARSHALL HILLS | 11 |
+| 99 | MARYMEAD | 30 |
+| 100 | MCKAY SUBDIVISION | 7 |
+| 101 | MORRISONS WAY VILLAGE | 9 |
+| 102 | NORTH HILL | 175 |
+| 103 | NOVAK | 8 |
+| 104 | PINEWOOD | 2 |
+| 105 | PINEY BRANCH | 11 |
+| 106 | POPES HEAD ESTATES | 15 |
+| 107 | POPES HEAD VIEW | 36 |
+| 108 | PROPERTY OF MRS ALICE MOORE | 3 |
+| 109 | QUIET BROOK | 12 |
+| 110 | RANDOM HILLS | 337 |
+| 111 | RANDOM HILLS CENTER COMMERCIAL CONDOMINIUM | 18 |
+| 112 | RANDOM HILLS CONDOMINIUM | 139 |
+| 113 | REDFIELDS | 8 |
+| 114 | RESERVE AT HAMPTON SPRINGS SUBDIVISION THE | 13 |
+| 115 | RIDGE TOP ROAD | 116 |
+| 116 | RIDGE TOP TERRACE | 120 |
+| 117 | RIDGES OF GLENDILOUGH | 8 |
+| 118 | RIDGEWOOD | 38 |
+| 119 | ROBERTSON FARM | 35 |
+| 120 | ROBEYS MEADOW | 16 |
+| 121 | ROSEGLEN | 16 |
+| 122 | ROSEHAVEN ESTATES | 11 |
+| 123 | ROWLAND | 3 |
+| 124 | SCHUYLER DOLINGER ESTATE | 4 |
+| 125 | SENES PROP | 16 |
+| 126 | SHIRLEY GATE ESTATES | 11 |
+| 127 | SHIRLEY GATE PARK | 78 |
+| 128 | STEVENSON STREET TOWNHOMES | 18 |
+| 129 | SWAYZE SUBDIVISION | 7 |
+| 130 | THE GREENS AT WESCOTT RIDGE CONDOMINIUM | 72 |
+| 131 | THE RESIDENCES AT FAIR CHASE CONDOMINIUM | 130 |
+| 132 | THE RIDGES OF GLENDILOUGH | 82 |
+| 133 | THIRD ADDITION TO VANNOY PARK | 5 |
+| 134 | TREGARON | 39 |
+| 135 | UNIVERSITY SQUARE | 166 |
+| 136 | VANNOY ACRES | 17 |
+| 137 | WAPLES MILL COMMERCE CENTER | 10 |
+| 138 | WARREN, RAYMOND L. | 13 |
+| 139 | WESCOTT RIDGE | 175 |
+| 140 | WEST GROVE | 24 |
+| 141 | WEST HILL | 29 |
+| 142 | WEST OAKS CORNER | 188 |
+| 143 | WEST OX ROAD INDUSTRIAL PARK | 4 |
+| 144 | WEST RIDGE ESTATES | 4 |
+| 145 | WESTBROOK | 30 |
+| 146 | WESTBROOK FOREST CONDOMINIUM | 12 |
+| 147 | WESTBROOKE COURT CONDOMINIUM | 141 |
+| 148 | WILLOW PONDS | 192 |
+| 149 | WILLOW SPRING | 8 |
+| 150 | WILLOWMEADE | 25 |
+| 151 | WINDSOR GATE | 15 |
+| 152 | WINDSOR MEWS | 130 |
+| 153 | WONDERLAND | 8 |
+| 154 | WOODLANDS OF FAIR LAKES | 10 |
+
+---
+
+## ZIP Code 22031 - Fairfax (East / Mantua)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 130
+- **Total Recorded Units:** 8,331
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ALLIANCE CENTER CONDOMINIUM | 24 |
+| 2 | ARMISTEAD PARK | 237 |
+| 3 | ASHLEY PARK SUBDIVISION | 20 |
+| 4 | ATRIUM AT METROWEST THE | 208 |
+| 5 | AVONDALE | 9 |
+| 6 | BEAR BRANCH TERRACE | 14 |
+| 7 | BEECH GROVE SUBDIVISION | 73 |
+| 8 | BEECH PARK | 18 |
+| 9 | BLAKE MANOR | 14 |
+| 10 | BLAKE TREE MANOR | 40 |
+| 11 | BLAKEVIEW | 86 |
+| 12 | BOULEVARD ESTATES | 18 |
+| 13 | BOULEVARD PROFESSIONAL CENTER CONDOMINIUM | 20 |
+| 14 | BRAXTON | 79 |
+| 15 | BRIAN ACRES | 8 |
+| 16 | BRIARWOOD FARM | 8 |
+| 17 | BRIARWOOD FARMS | 81 |
+| 18 | BRIARWOOD TRACE | 88 |
+| 19 | CEDAR GROVE PARK | 51 |
+| 20 | CEDAREST | 1 |
+| 21 | CEDAREST ASSEMBLAGE | 24 |
+| 22 | CHELSEA COURT | 3 |
+| 23 | CHESTERFIELD MEWS | 150 |
+| 24 | CHICHESTER LANE | 4 |
+| 25 | CIRCLE WOODS | 268 |
+| 26 | CIRCLE WOODS CONDOMINIUM | 17 |
+| 27 | COPELAND POND | 13 |
+| 28 | COVINGTON | 478 |
+| 29 | CYRANDALL VALLEY | 12 |
+| 30 | CYRANDALL VALLEY PHILLIPS ADDITION | 8 |
+| 31 | DUVALL E MARTIN SUBDIVISION | 17 |
+| 32 | FAIRFAX CIRCLE OFFICES LC | 5 |
+| 33 | FAIRFAX FOREST | 27 |
+| 34 | FAIRFAX LANDING | 28 |
+| 35 | FAIRFAX PLAZA OFFICE PARK | 37 |
+| 36 | FAIRFAX PLAZA TOWNHOUSES | 162 |
+| 37 | FAIRFIELD MANOR | 6 |
+| 38 | FAIRHILL ON THE BOULEVARD | 118 |
+| 39 | FIRST CHOICE PARK CONDOMINIUM | 19 |
+| 40 | FIVE OAKS ESTATES | 32 |
+| 41 | FIVE OAKS LANDING | 37 |
+| 42 | FIVE OAKS PLACE | 61 |
+| 43 | FLATS AT METRO WEST CONDOMINIUM THE | 160 |
+| 44 | FLOYD HEIGTS SUBDIVISION | 8 |
+| 45 | FLOYD PARK | 15 |
+| 46 | FOREST GROVE | 6 |
+| 47 | FOUR SEASONS AT MOSAIC | 41 |
+| 48 | HALSTEAD AT THE MERTO II CONDOMINIUM | 235 |
+| 49 | HALSTEAD AT THE METRO CONDO | 203 |
+| 50 | HAMAKER | 9 |
+| 51 | HAMPTON COURT | 137 |
+| 52 | HAWTHORNE VILLAGE APARTMENTS CONDOMINIUM | 363 |
+| 53 | HIDEAWAY HILL | 7 |
+| 54 | HIDEAWAY PARK | 102 |
+| 55 | HIDEAWAY WOODS | 4 |
+| 56 | HUNTERS BRANCH | 89 |
+| 57 | HUNTERS BRANCH CONDOMINIUM | 96 |
+| 58 | JAVIER FERNANDO | 6 |
+| 59 | JONES ASHTON C | 1 |
+| 60 | LANGHORNE ACRES | 38 |
+| 61 | LEE FOREST | 13 |
+| 62 | LEE HI INDUSTRIAL PARK | 97 |
+| 63 | LEE MANOR | 30 |
+| 64 | LINDA MARIA HEIGHTS | 9 |
+| 65 | LINDEN SQUARE | 92 |
+| 66 | LITTLE RIVER PINES | 28 |
+| 67 | LOFTS AT METRO WEST CONDOMINIUM, THE | 122 |
+| 68 | MANTUA | 159 |
+| 69 | MANTUA HILLS | 744 |
+| 70 | MANTUA WOODS | 35 |
+| 71 | MCDANIELS ADDITION TO SUNNYHILL | 5 |
+| 72 | MELVILLE | 8 |
+| 73 | MERRIFIELD TOWN CENTER | 25 |
+| 74 | MERRILEE CONDOMINIUM | 14 |
+| 75 | MERRILEE INDUSTRIAL PARK | 72 |
+| 76 | METRO ROW | 141 |
+| 77 | METROWEST | 220 |
+| 78 | METROWEST LAND CONDOMINIUM | 10 |
+| 79 | MORNINGSIDE | 12 |
+| 80 | MOSAIC AT MERRIFIELD | 131 |
+| 81 | MOSAIC DISTRICT LAND CONDOMINIUM | 83 |
+| 82 | NORTH PINE RIDGE | 32 |
+| 83 | NORTH RIDGE | 17 |
+| 84 | NUTLEY-LEE HIGHWAY PROPERTY | 29 |
+| 85 | OAK SPRING VILLAGE | 19 |
+| 86 | OLD LEE HIGHWAY PROFESSIONAL CONDOMINIUM | 23 |
+| 87 | PANOS' NORTH PINE RIDGE | 14 |
+| 88 | PEDRON | 28 |
+| 89 | PENNELL STREET SUBDIVISION | 2 |
+| 90 | PINE RIDGE | 244 |
+| 91 | POPLAR TERRACE | 44 |
+| 92 | PROSPERITY BUSINESS CAMPUS | 16 |
+| 93 | PROSPERITY CORNER | 19 |
+| 94 | RIDGELEA | 23 |
+| 95 | RIDGELEA EST | 53 |
+| 96 | RIDGELEA HILLS | 177 |
+| 97 | RIDGELEA WOODS | 51 |
+| 98 | SAINTSBURY PLAZA CONDOMINIUM | 111 |
+| 99 | SETH WILLIAMS SUBDIVISION | 1 |
+| 100 | SHADY KNOLLS SUBDIVISION | 12 |
+| 101 | SHIRLEY PROPERTY | 6 |
+| 102 | SKYBROOK | 36 |
+| 103 | SNIDER E. N | 2 |
+| 104 | STOCKBRIDGE | 47 |
+| 105 | STONEHURST | 308 |
+| 106 | STONEWALL SQUARE CONDOMINIUM | 24 |
+| 107 | SUNNYHILL | 36 |
+| 108 | SUTHERLAND SQUARE | 26 |
+| 109 | SUTTON PLACE | 96 |
+| 110 | SUZANNES WAY | 5 |
+| 111 | THE BRIARS AT WESTCHESTER | 40 |
+| 112 | THE RETREAT AT SYCAMORE RIDGE | 14 |
+| 113 | THREE OAKS | 14 |
+| 114 | TOWNS OF COVINGTON SQUARE | 43 |
+| 115 | TRI-ANGLE ACRES | 6 |
+| 116 | TUDOR HALL | 48 |
+| 117 | VANDA LANE | 13 |
+| 118 | VIENNA METRO II | 54 |
+| 119 | VIENNA WOODS | 3 |
+| 120 | VILLA D'ESTE | 58 |
+| 121 | VILLA D'ESTE VILLAGE | 77 |
+| 122 | VILLALEE | 46 |
+| 123 | WALTHALLS ADDITION TO SHADY KNOLLS | 4 |
+| 124 | WELLS PROPERTY | 145 |
+| 125 | WESTCHESTER | 38 |
+| 126 | WILLIAMS, SETH | 3 |
+| 127 | WILLOW OAKS | 1 |
+| 128 | WILLOW POINT | 3 |
+| 129 | WOODSON RESERVE | 22 |
+| 130 | WYNFORD ESTATES | 5 |
+
+---
+
+## ZIP Code 22032 - Fairfax (South / George Mason)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 110
+- **Total Recorded Units:** 9,420
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ADAMS LANDING | 10 |
+| 2 | ADDITION TO VERTAIN PARK | 4 |
+| 3 | AMANDA PLACE | 18 |
+| 4 | ASHFORD | 25 |
+| 5 | ASHFORD EAST | 47 |
+| 6 | ASHLEY SQUARE | 4 |
+| 7 | ASHWOOD SUBDIVISION | 15 |
+| 8 | BAILEY PROPERTY SUBDIVISION | 9 |
+| 9 | BARTON'S GROVE | 33 |
+| 10 | BERRYWOOD SUBDIVISION | 16 |
+| 11 | BLUE OAKS | 1 |
+| 12 | BONNIE BRAE | 277 |
+| 13 | BONNIE BRAE WOODS | 4 |
+| 14 | BRADDOCK GREEN SUBDIVISION | 15 |
+| 15 | BRADDOCK LAND CONDOMINIUM | 2 |
+| 16 | BRADDOCK MANOR | 28 |
+| 17 | BRADDOCK MASON DEVELOPMENT CORP | 42 |
+| 18 | BRADFIELD | 75 |
+| 19 | BRIARWOOD | 202 |
+| 20 | BURKE CENTRE | 113 |
+| 21 | BURKE JUNCTION | 17 |
+| 22 | BURKE STATION WOODS | 6 |
+| 23 | CHAPEL RIDGE | 22 |
+| 24 | CHESTNUT HILLS WEST | 80 |
+| 25 | CHESTNUT KNOLLS | 10 |
+| 26 | CLARA BARTON'S ADDITION TO MIDDLERIDGE SUBDIVISION | 14 |
+| 27 | CLASSIC ADDITION TO HOLLY PARK | 7 |
+| 28 | COLONY PARK | 326 |
+| 29 | COLUMBIA'S ADDITION TO MIDDLERIDGE | 6 |
+| 30 | COUNTRY CLUB VIEW | 458 |
+| 31 | COVE MANOR | 14 |
+| 32 | DOVEVILLE | 31 |
+| 33 | EASTWOOD | 20 |
+| 34 | ESTATES OF BURKE CHASE | 11 |
+| 35 | FAIR OAKS | 5 |
+| 36 | FAIRFAX CLUB ESTATES | 273 |
+| 37 | GEORGE MASON FOREST | 155 |
+| 38 | GLEN COVE | 306 |
+| 39 | GOINS MANOR | 30 |
+| 40 | GREENFIELD FARM | 1 |
+| 41 | GROVES THE | 8 |
+| 42 | HALL ACRES | 6 |
+| 43 | HAYWOOD | 28 |
+| 44 | HICKORY FARMS | 200 |
+| 45 | HOLLY PARK | 30 |
+| 46 | HOLLY PARK AUGST ADDITION | 9 |
+| 47 | HOLLY PARK ESTATES | 28 |
+| 48 | HUNTERS GLEN | 38 |
+| 49 | HUNTS VILLAGE | 16 |
+| 50 | HUNTSVILLE | 6 |
+| 51 | JONES ASHTON C | 10 |
+| 52 | JUDD PROPERTY | 8 |
+| 53 | KENILWORTH II | 10 |
+| 54 | KENILWORTH SUBDIVISION | 9 |
+| 55 | KEYS CROSSING | 25 |
+| 56 | KINGS PARK WEST | 2,249 |
+| 57 | KINGSBERRY | 71 |
+| 58 | KNOLLS THE | 10 |
+| 59 | LEE FOREST | 80 |
+| 60 | LEE MEADOWS | 24 |
+| 61 | LINDSAY PARK | 37 |
+| 62 | LITTLE RUN ESTATES | 36 |
+| 63 | LONG BRANCH ESTATES | 33 |
+| 64 | LONGWOOD GROVE | 17 |
+| 65 | LOUESTA KNOLL | 15 |
+| 66 | MAURY HEIGHTS | 23 |
+| 67 | MAYWOOD TERRACE | 53 |
+| 68 | MIDDLERIDGE | 537 |
+| 69 | NELLIE WHITE ESTATES | 10 |
+| 70 | NEWCOME PROPERTIES | 4 |
+| 71 | OLD CREEK ESTATES | 189 |
+| 72 | OLDE FORGE | 171 |
+| 73 | OLLEY LANE SUBDIVISION | 21 |
+| 74 | PARK PLACE | 6 |
+| 75 | PATRIOT SQUARE A CONDOMINIUM | 38 |
+| 76 | PENNS CROSSING | 10 |
+| 77 | POWELL ROAD PROPERTY | 10 |
+| 78 | RIDGE MANOR | 29 |
+| 79 | ROBERTS SQUARE | 9 |
+| 80 | ROLLINGWOODS ESTATES | 68 |
+| 81 | RUSTBURG COVE | 8 |
+| 82 | RUTHERFORD | 262 |
+| 83 | RYERS ADDITION TO MIDDLERIDGE | 7 |
+| 84 | SHADOW OAKS SUBDIVISION | 5 |
+| 85 | SILVERBROOK | 21 |
+| 86 | SISSON ESTATES | 7 |
+| 87 | SOMERSET | 233 |
+| 88 | SOMERSET SOUTH | 213 |
+| 89 | SPRINGBROOK FOREST | 178 |
+| 90 | SPRINGBROOK SUBDIVISION | 17 |
+| 91 | STARLIT PONDS | 135 |
+| 92 | SURREY SQUARE | 201 |
+| 93 | SUSSEX | 25 |
+| 94 | SWEET BRIAR FOREST | 44 |
+| 95 | THE GROVES | 9 |
+| 96 | THE PRESERVE | 25 |
+| 97 | THE RESERVE AT MARTIN'S POINTE | 62 |
+| 98 | TWINBROOK | 255 |
+| 99 | VERTAIN PARK | 53 |
+| 100 | VILLAGE PARK THE | 274 |
+| 101 | WAKEFIELD FOREST PARK | 16 |
+| 102 | WAVERLEE WOODS SUBDIVISION | 26 |
+| 103 | WHITACRE ESTATES | 7 |
+| 104 | WHITFIELD GREEN | 154 |
+| 105 | WINDSOR HILLS | 29 |
+| 106 | WOODBURY WOODS SUBDIVISION | 30 |
+| 107 | WOODGLENN ESTATES | 14 |
+| 108 | WOODYLYNNE COMMUNITY | 173 |
+| 109 | ZION DRIVE PROPERTY | 5 |
+| 110 | ZION MEWS | 19 |
+
+---
+
+## ZIP Code 22033 - Fairfax (Fair Oaks / Greenbriar)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 92
+- **Total Recorded Units:** 12,951
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ALEXANDRA ESTATES | 9 |
+| 2 | BIRCH POND | 116 |
+| 3 | BLACKSTONE COMMUNITIES ADDITION TO VESTAVIA WOODS | 8 |
+| 4 | CARR AT CEDAR LAKES | 117 |
+| 5 | CEDAR LAKE CONDOMINIUM | 48 |
+| 6 | CEDAR LAKES | 166 |
+| 7 | CEDAR LAKES CONDOMINIUM | 76 |
+| 8 | CEDAR LAKES II CONDOMINIUM | 40 |
+| 9 | CENTERPOINTE III | 91 |
+| 10 | CENTURY OAK | 353 |
+| 11 | CHANTILLY FARM | 30 |
+| 12 | CHANTILLY FARM SUBDIVISION | 89 |
+| 13 | CHRISTOPHER AT CEDAR LAKES CONDOMINIUM | 142 |
+| 14 | DARTMOOR WOODS | 64 |
+| 15 | DAWI DEVELOPMENT CORPORATION PROPERTY | 2 |
+| 16 | EAST MARKET AT FAIR LAKES I CONDOMINIUM | 108 |
+| 17 | EAST MARKET II CONDOMINIUM | 102 |
+| 18 | ELAN AT EAST MARKET CONDOMINIUM | 208 |
+| 19 | ESTATES AT FAIR OAKS | 10 |
+| 20 | ESTATES AT MEADOWBROOK RUN, THE | 8 |
+| 21 | FAIR LAKES | 503 |
+| 22 | FAIR LAKES CONDOMINIUM | 167 |
+| 23 | FAIR LAKES COURT | 211 |
+| 24 | FAIR LAKES PROMENADE | 23 |
+| 25 | FAIR LAKES RESIDENTIAL | 173 |
+| 26 | FAIR OAKS CHASE | 95 |
+| 27 | FAIR OAKS ESTATES | 340 |
+| 28 | FAIR OAKS GABLES | 23 |
+| 29 | FAIR OAKS GLEN | 43 |
+| 30 | FAIR OAKS HUNT | 49 |
+| 31 | FAIR RIDGE | 464 |
+| 32 | FAIR WOODS | 483 |
+| 33 | FAIRFAX ASSOCIATES | 268 |
+| 34 | FAIRFAX FARMS | 94 |
+| 35 | FAIRFIELD HOUSE | 190 |
+| 36 | FAIRMONT | 108 |
+| 37 | FIFTY WEST CORPORATE CENTER | 3 |
+| 38 | FLAGSTAFF | 23 |
+| 39 | FOXFIELD | 645 |
+| 40 | FRANKLIN FARM | 21 |
+| 41 | FRANKLIN GLEN | 732 |
+| 42 | FRANKLIN MANOR | 33 |
+| 43 | GENE P MITCHELL SUBDIVISION | 16 |
+| 44 | GRAYS POINTE A CONDOMINIUM | 208 |
+| 45 | GREENBRIAR | 1,855 |
+| 46 | GREENBRIAR MEADOWS | 22 |
+| 47 | GREENS AT FAIR LAKES THE | 214 |
+| 48 | HEIGHTS AT PENDERBROOK | 450 |
+| 49 | HICKORY HILLS III | 29 |
+| 50 | HIGHLAND OAKS | 271 |
+| 51 | HOMESTEAD VILLAGE | 3 |
+| 52 | KENSINGTON MANOR | 112 |
+| 53 | KENSINGTON PARC | 34 |
+| 54 | KINGSTON ROYCE HOMES AT FAIRFAX FARMS II | 9 |
+| 55 | LEONARD PROPERTY | 109 |
+| 56 | LINDEN AT FAIR RIDGE | 128 |
+| 57 | MAPLE HILL MEADOWS | 8 |
+| 58 | MARY RIDGE | 20 |
+| 59 | MURRAY FARMS | 9 |
+| 60 | NAVY PARK | 1 |
+| 61 | OAK HILL ESTATES | 82 |
+| 62 | OAKWOOD ESTATES | 27 |
+| 63 | OXFORD HOUSE | 150 |
+| 64 | PARI TOWNS SUBDIVISION | 6 |
+| 65 | PARK AT FAIR OAKS CONDOMINIUM | 99 |
+| 66 | PENDER OAKS | 92 |
+| 67 | PENDER OAKS CONDOMINIUM | 132 |
+| 68 | PENDERBROOK | 745 |
+| 69 | PENDERBROOK SQUARE CONDOMINIUM | 426 |
+| 70 | PENDERLAN | 2 |
+| 71 | PENDERWOOD | 4 |
+| 72 | QUAIL CREEK SUBDIVISION | 8 |
+| 73 | RA ADDITION TO FAIR RIDGE | 37 |
+| 74 | ROGERS PROPERTY | 10 |
+| 75 | RUGBY ROAD | 98 |
+| 76 | S.M.C. PENDERBROOK | 14 |
+| 77 | STONE CREEK CROSSING | 148 |
+| 78 | STONECROFT | 277 |
+| 79 | TADDEO ESTATES | 2 |
+| 80 | THE GATES OF FAIR LAKES | 235 |
+| 81 | THE OAKS | 8 |
+| 82 | THOMPSON ROAD PROPERTY | 21 |
+| 83 | THOMPSONS CREST | 6 |
+| 84 | TILTON VALLEY ESTATES | 30 |
+| 85 | TOWNES OF GREENBRIAR | 53 |
+| 86 | VALLEY ROAD SUBDIVISION | 4 |
+| 87 | WAPLES MILL MANOR | 1 |
+| 88 | WEST GROVE ESTATES | 37 |
+| 89 | WESTVALE | 44 |
+| 90 | WESTVALE WOODS | 10 |
+| 91 | WILLOW OAKS AT FAIR LAKES | 119 |
+| 92 | WILLOW OAKS CONDOMINIUM | 48 |
+
+---
+
+## ZIP Code 22034 - Fairfax
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22035 - Fairfax (County Government Center)
+
+- **Postal Classification:** Government Complex
+- **Total Subdivisions:** 1
+- **Total Recorded Units:** 4
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | FAIRFAX COUNTY GOVERNMENTAL CENTER | 4 |
+
+---
+
+## ZIP Code 22036 - Fairfax
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22037 - Fairfax
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22038 - Fairfax
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22039 - Fairfax Station
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 143
+- **Total Recorded Units:** 5,987
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ANDREW FOREST | 5 |
+| 2 | ARDMORE WOODS | 118 |
+| 3 | AVON FOREST | 10 |
+| 4 | BARRINGTON | 477 |
+| 5 | BARRINGTON CHASE | 9 |
+| 6 | BARTON PLACE | 69 |
+| 7 | BEAUMONT | 11 |
+| 8 | BRETT ESTATES | 3 |
+| 9 | BRIARLYNN ESTATES | 33 |
+| 10 | BRIMSTONE | 45 |
+| 11 | BURKE CENTER | 1 |
+| 12 | BURKE LAKE CLUSTER | 64 |
+| 13 | BURKE LAKE ESTATES | 48 |
+| 14 | BURKE RIDGE ESTATES | 5 |
+| 15 | CALVIN H. HALEY AND HOWARD R. LADY, THE SUBDIVISION OF | 23 |
+| 16 | CAMERON OAKS | 4 |
+| 17 | CANTERBERRY ESTATES | 41 |
+| 18 | CANTERBERRY FOREST | 6 |
+| 19 | CATHEDRAL FOREST | 4 |
+| 20 | CATHEDRAL FOREST SUBDIVISION | 29 |
+| 21 | CENTREPOINTE | 11 |
+| 22 | CHADWICKE | 5 |
+| 23 | CHAPEL BRIDGE ESTATES | 7 |
+| 24 | CHAPEL KNOLLS | 6 |
+| 25 | CLIFTON AT WOLF RUN | 7 |
+| 26 | CLIFTON PARK | 16 |
+| 27 | CLIFTON STATION | 10 |
+| 28 | COLCHESTER HILLS | 9 |
+| 29 | COLT VALLEY FARMS | 12 |
+| 30 | CRAFTOWN | 19 |
+| 31 | CREST LANDING | 8 |
+| 32 | CREST RIDGE | 7 |
+| 33 | CROSSPOINTE | 778 |
+| 34 | DEVEREUX STATION | 47 |
+| 35 | DOMINION VALLEY HUNT SUBDIVISION | 47 |
+| 36 | DONOVANS NINE SUBDIVISION | 17 |
+| 37 | DONOVANS RIDGE | 42 |
+| 38 | EDGEWATER | 28 |
+| 39 | ENGLISH HILLS THE | 13 |
+| 40 | ENGLISH KNOLL | 3 |
+| 41 | ENGLISH KNOLLS | 3 |
+| 42 | ESTATES AT ROSELAND, THE | 43 |
+| 43 | FAIRFAX MANOR | 3 |
+| 44 | FAIRFAX STATION | 549 |
+| 45 | FAIRFAX STATION EAST | 80 |
+| 46 | FAIRVIEW WOODS | 72 |
+| 47 | FAIRWOOD ACRES | 44 |
+| 48 | FAIRWOOD PARK | 17 |
+| 49 | FOUNTAINHEAD | 82 |
+| 50 | FOX PROPERTY | 1 |
+| 51 | FOXFIRE | 14 |
+| 52 | GILES RUN | 131 |
+| 53 | GLENMORE | 20 |
+| 54 | GLENVERDANT | 48 |
+| 55 | GLENWOOD | 11 |
+| 56 | HAMPTON ACRES | 25 |
+| 57 | HAMPTON HILLS | 47 |
+| 58 | HAMPTON HUNT ESTATES | 7 |
+| 59 | HAMPTON MANOR ESTATES | 14 |
+| 60 | HAMPTON RESERVE | 7 |
+| 61 | HAMPTON WOODS EAST | 29 |
+| 62 | HAMPTON WOODS III | 11 |
+| 63 | HAMPTON WOODS WEST | 18 |
+| 64 | HARGETT ADDITTION TO SOUTH RUN OAKS | 7 |
+| 65 | HARVEY W FOX PROPERTY | 16 |
+| 66 | HEARTHSIDE | 12 |
+| 67 | HENDERSON WOODS | 7 |
+| 68 | HOECK PROPERTY | 6 |
+| 69 | HOGES SUBDIVISION | 4 |
+| 70 | HUNT AT FAIRFAX STATION THE | 11 |
+| 71 | INNISVALE | 83 |
+| 72 | JERRY Y. CAROTHERS PROPERTY | 6 |
+| 73 | KILLARNEY | 12 |
+| 74 | LAKE HILLS | 2 |
+| 75 | LAKEHAVEN ESTATES | 3 |
+| 76 | LAKEWOOD ESTATES | 33 |
+| 77 | LEE CHAPEL GROVE | 30 |
+| 78 | MANOR RIDGE ESTATES | 3 |
+| 79 | MANORS OF OX HUNT THE | 7 |
+| 80 | OAKS AT CROSSPOINTE | 70 |
+| 81 | OLIVER MANOR | 5 |
+| 82 | OX HUNT ESTATES | 10 |
+| 83 | OX ROAD ESTATES | 13 |
+| 84 | PARK VIEW ESTATES | 9 |
+| 85 | PARVIS ESTATES | 3 |
+| 86 | PICKWICK WOODS | 22 |
+| 87 | POBURN WOODS | 20 |
+| 88 | POHICK CREST | 6 |
+| 89 | POHICK STATION | 20 |
+| 90 | POPES HEAD MILL ESTATES | 5 |
+| 91 | PORT CHARLOTTE | 1 |
+| 92 | QUAILWOOD | 11 |
+| 93 | RAINBOW | 5 |
+| 94 | RAINBOW SUBD. | 23 |
+| 95 | REDLAC FOREST | 5 |
+| 96 | RONDELAY | 20 |
+| 97 | SANDY RUN ESTATES | 13 |
+| 98 | SANDY RUN FOREST ESTATES | 17 |
+| 99 | SEVEN HILLS ESTATES | 20 |
+| 100 | SHADOWALK | 49 |
+| 101 | SHADOWALK SUBDIVISION | 28 |
+| 102 | SILVER BROOK | 4 |
+| 103 | SILVERBROOK FARMS | 29 |
+| 104 | SILVERBROOK FOREST | 226 |
+| 105 | SMOKE RISE | 23 |
+| 106 | SOUTH RUN | 531 |
+| 107 | SOUTH RUN OAKS | 295 |
+| 108 | STATION CROSSING | 8 |
+| 109 | STATION HILLS | 8 |
+| 110 | STONECREST | 13 |
+| 111 | STONEY CREEK | 19 |
+| 112 | SUMMERWIND | 22 |
+| 113 | SUMMERWIND SUBDIVISION | 12 |
+| 114 | SWIFT RUN TRAILS | 23 |
+| 115 | TEN PENNY WOODS | 15 |
+| 116 | THE CHASE | 20 |
+| 117 | THE ENGLISH HILLS | 38 |
+| 118 | THE ESTATES AT ROSELAND | 38 |
+| 119 | THE HOLLY FOREST | 42 |
+| 120 | THE HUNT AT FAIRFAX STATION | 60 |
+| 121 | THE PATTERNS | 38 |
+| 122 | THE SINGING WOODS | 41 |
+| 123 | TIMBER RIDGE | 121 |
+| 124 | TRADITIONS | 5 |
+| 125 | TRENTON FOREST | 1 |
+| 126 | TRIPLE RIDGE | 37 |
+| 127 | TRIPLE RIDGE II | 88 |
+| 128 | TWELVE OAKS | 19 |
+| 129 | VAUGHN'S | 2 |
+| 130 | WALNUT ACRES | 10 |
+| 131 | WESTWOOD OF STONELEIGH | 7 |
+| 132 | WHISPERING HILLS | 6 |
+| 133 | WILDWOOD HILLS EST. | 27 |
+| 134 | WILDWOOD HILLS ESTATES | 52 |
+| 135 | WILLOWBROOK ESTS | 3 |
+| 136 | WINDRUSH | 1 |
+| 137 | WOLF RUN | 24 |
+| 138 | WOLF RUN FARMS | 12 |
+| 139 | WOLF RUN HILLS | 9 |
+| 140 | WOLF RUN HUNT | 7 |
+| 141 | WOODOVER FARMS | 18 |
+| 142 | WOODS AT SOUTH RUN | 36 |
+| 143 | WOODVALE POND ESTATES | 7 |
+
+---
+
+## ZIP Code 22041 - Falls Church (Bailey's Crossroads / Culmore)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 87
+- **Total Recorded Units:** 6,937
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ALICE B WALKERS SUBDIVISION | 9 |
+| 2 | AMBROSE HILLS | 81 |
+| 3 | AURA HEIGHTS | 18 |
+| 4 | AURA HEIGHTS FIRST ADDITION | 29 |
+| 5 | AURA HEIGHTS SUBDIVISION | 4 |
+| 6 | BAILEYS ESTATES | 6 |
+| 7 | BARCROFT HILLS | 93 |
+| 8 | BARCROFT HILLS CONDOMINIUMS/REMBRANDT CONDOMINIUM | 140 |
+| 9 | BARCROFT KNOLLS | 4 |
+| 10 | BARCROFT MEWS | 49 |
+| 11 | BARCROFT TERRACE | 4 |
+| 12 | BARCROFT WOODS | 99 |
+| 13 | BELL MANOR ESTATES | 16 |
+| 14 | BELVEDERE | 212 |
+| 15 | BETTS LAKE BARCROFT | 11 |
+| 16 | BUILDAMERICA AT SKYLINE | 64 |
+| 17 | CARLYN PARK SUBDIVISION | 70 |
+| 18 | CARLYN RIDGE | 14 |
+| 19 | CARLYN SQUARE | 37 |
+| 20 | CEDAR HEIGHTS | 37 |
+| 21 | CHARING CROSS A CONDOMINIUM | 66 |
+| 22 | CHICAMUXEN | 8 |
+| 23 | CONGRESSIONAL ACRES | 25 |
+| 24 | COURTLAND PARK | 230 |
+| 25 | COURTYARD AT FALLS GATE | 19 |
+| 26 | CULMORE | 86 |
+| 27 | DOWDEN CENTER | 23 |
+| 28 | DOWDEN TERR. | 1 |
+| 29 | DOWDEN TERRACE | 2 |
+| 30 | E L WHITE SUBDIVISION | 2 |
+| 31 | EDGINGTON COURT TOWNHOUSES | 16 |
+| 32 | ELIZA PINKETT | 10 |
+| 33 | ELLERY PLACE | 55 |
+| 34 | FRANKLYN | 10 |
+| 35 | GLEN ACRES | 26 |
+| 36 | GLEN ACRES HEISCHMANS ADDITION | 4 |
+| 37 | GLEN ACRES HEISCHMANS ADDN | 1 |
+| 38 | GLEN FOREST | 111 |
+| 39 | HALL FORREST J | 10 |
+| 40 | HALLRAN | 14 |
+| 41 | HALLWOOD | 1 |
+| 42 | HARDWICK COURT | 49 |
+| 43 | JEFFERSON HILL | 8 |
+| 44 | JOHN L. KLEIN ESTATE | 1 |
+| 45 | LACEY BOULEVARD SUBDIVISION | 22 |
+| 46 | LACY SQUARE OFFICE CONDOMINIUM | 13 |
+| 47 | LAFAYETTE PARK CONDOMINIUM | 401 |
+| 48 | LAKE BARCROFT | 489 |
+| 49 | LAKE BARCROFT CLOISTERS | 26 |
+| 50 | LAKE BARCROFT SHORES | 103 |
+| 51 | LAKESIDE PLAZA CONDOMINIUM | 354 |
+| 52 | LAKEWOOD | 41 |
+| 53 | LEBANON | 29 |
+| 54 | MADISON LANE | 127 |
+| 55 | MAGNOLIA WOODS | 3 |
+| 56 | MARIE G. BAILY ESTATE | 14 |
+| 57 | MILLERS POINTE | 7 |
+| 58 | MONCURE R C L | 13 |
+| 59 | MUNSON HILL | 1 |
+| 60 | MUNSON HILL FARMS | 31 |
+| 61 | MUNSON HILL TOWERS | 5 |
+| 62 | OVERLOOK KNOLLS | 15 |
+| 63 | PARKHAVEN | 55 |
+| 64 | PARKLAWN | 9 |
+| 65 | PARKWOOD | 44 |
+| 66 | PINEHURST | 44 |
+| 67 | POWELL SUBDIVISION | 23 |
+| 68 | REGENCY AT BAILEYS CROSSROADS CONDOMINIUM THE | 58 |
+| 69 | RESERVOIR HEIGHTS | 11 |
+| 70 | ROCK SPRING PROFESSIONAL CENTER A CONDOMINIUM | 76 |
+| 71 | ROCK SPRING SUBDIVISION | 18 |
+| 72 | ROCK TERRACE | 35 |
+| 73 | ROOK SPRING | 1 |
+| 74 | SAVOY PARK CONDOMINIUM | 258 |
+| 75 | SKYLINE ENTRE PLAZA | 6 |
+| 76 | SKYLINE HOUSE CONDOMINIUM | 557 |
+| 77 | SKYLINE PLAZA NORTH CONDOMINIUM PROJECT | 958 |
+| 78 | SKYLINE SQUARE CONDOMINIUM | 847 |
+| 79 | SPRING LANE TOWNHOUSES | 43 |
+| 80 | SPRINGDALE | 23 |
+| 81 | STEPPES OF BARCROFT CONDOMINIUM | 160 |
+| 82 | SUNSET MANOR | 36 |
+| 83 | THE GLEN OF CARLYN | 30 |
+| 84 | THE PALISADES | 1 |
+| 85 | TOWNES AT MADISON LANE | 10 |
+| 86 | WATERS EDGE A CONDOMINIUM | 120 |
+| 87 | WESTMOR GARDENS SUBDIVISION | 45 |
+
+---
+
+## ZIP Code 22042 - Falls Church (Seven Corners / Sleepy Hollow)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 137
+- **Total Recorded Units:** 10,359
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ALLENDER'S ADDITION TO CHATEAU | 2 |
+| 2 | ALOLA SUBDIVISION | 9 |
+| 3 | ANNALEE HEIGHTS | 249 |
+| 4 | ANNANDALE ROAD PROPERTY | 12 |
+| 5 | ARNOLD PARK | 8 |
+| 6 | BEECH TREE MANOR | 58 |
+| 7 | BEECHTREE | 10 |
+| 8 | BEL AIR | 426 |
+| 9 | BENNETT J.G | 17 |
+| 10 | BERKELEY PLACE | 11 |
+| 11 | BIRCH | 42 |
+| 12 | BLAKE VIEW ESTATES | 9 |
+| 13 | BODORS ADDITION RAYMONDALE | 11 |
+| 14 | BODORS ADDITION TO HOLMES RUN ACRES | 11 |
+| 15 | BORDEAUX HEIGHTS | 21 |
+| 16 | BROYHILL PARK | 669 |
+| 17 | BUFFALO HILL | 2 |
+| 18 | CAROL SQUARE | 55 |
+| 19 | CARR NEW PROVIDENCE | 118 |
+| 20 | CHARLES SUBDIVISION | 3 |
+| 21 | CHARLES W LEE ESTATES | 11 |
+| 22 | CHAS C MILLESON | 2 |
+| 23 | CHATEAU | 7 |
+| 24 | CHATEAU SUBDIVISION | 4 |
+| 25 | CHERRYWOOD | 40 |
+| 26 | CITY PARK HOMES | 556 |
+| 27 | DARWIN HEIGHTS | 23 |
+| 28 | DENBY | 1 |
+| 29 | DEVONSHIRE GARDENS | 95 |
+| 30 | DOLLS ADDITION TO THE YACHT CLUB AT SEQUIOA VILLAGE | 70 |
+| 31 | EH HARRIS ADDITION TO MERRIFIELD | 1 |
+| 32 | EMMA J LEE | 1 |
+| 33 | ESTES PARK | 4 |
+| 34 | FAIRFIELD COMMONS CONDOMINIUM | 188 |
+| 35 | FAIRVIEW PARK | 44 |
+| 36 | FALLS CHURCH MANOR | 4 |
+| 37 | FALLS COURT | 17 |
+| 38 | FENWICK HILLS | 12 |
+| 39 | FENWICK PARK | 212 |
+| 40 | FENWICK PARK ROGER'S ADDITION | 25 |
+| 41 | FENWICK PARK-JONES ADDITION | 13 |
+| 42 | FRENCH, LUCY C | 18 |
+| 43 | G.G. SHERFEY | 3 |
+| 44 | GARNER ACRES | 6 |
+| 45 | GILMORES SLEEPY HOLLOW KNOLLS | 2 |
+| 46 | GLENPARK ADDITION TO SLEEPY HOLLOW | 31 |
+| 47 | GRAHAM PARK PLAZA | 173 |
+| 48 | GREAT OAK SQUARE | 64 |
+| 49 | GREENWAY DOWNS | 303 |
+| 50 | H.D. FLOYD PROPERTY | 10 |
+| 51 | HABITAT HOMES | 1 |
+| 52 | HICKORY HALL ESTATES | 9 |
+| 53 | HICKORY HALL ESTATES RESUB | 15 |
+| 54 | HIGH POINTE AT JEFFERSON PARK CONDOMINIUM | 223 |
+| 55 | HILLWOOD | 267 |
+| 56 | HILLWOOD SQUARE APTS | 28 |
+| 57 | HOLMES RUN ACRES | 349 |
+| 58 | HOLMES RUN CROSSING | 101 |
+| 59 | HOLMES RUN PARK | 64 |
+| 60 | HOLMES RUN WOODS WEST | 142 |
+| 61 | HOMECREST | 22 |
+| 62 | HOMECREST 1ST. ADDITION | 31 |
+| 63 | HURWITZ APTS | 1 |
+| 64 | ICHABOD GROVE | 9 |
+| 65 | JACOBS PARK | 33 |
+| 66 | JACOBS PARK, FIRST ADDITION | 17 |
+| 67 | JAMES LEE CONDOMINIUM | 94 |
+| 68 | JAMES LEE SUBDIVISION | 87 |
+| 69 | JEFFERSON PARK | 52 |
+| 70 | JEFFERSON PARK CONDOMINIUM | 56 |
+| 71 | JEFFERSON VILLAGE APARTMENTS | 538 |
+| 72 | KALMIA LEE CONDOMINIUM | 64 |
+| 73 | KAREN KNOLLS | 25 |
+| 74 | KEARNS ESTATE | 5 |
+| 75 | KIMBERLY HILLS | 6 |
+| 76 | KNOLLWOOD | 19 |
+| 77 | KNOLLWOOD FIRST ADDITION | 22 |
+| 78 | LAKEFORD | 231 |
+| 79 | LEE GRAHAM SQUARE | 15 |
+| 80 | LEE LANDING CONDOMINIUM | 63 |
+| 81 | LEE LANDING PARK | 48 |
+| 82 | LIEB'S ADDITION TO DARWIN HEIGHTS | 5 |
+| 83 | MARLO HEIGHTS | 33 |
+| 84 | MASON TERRACE | 137 |
+| 85 | MASONVILLE HEIGHTS | 4 |
+| 86 | NEW PROVIDENCE VILLAGE AT LAKEFORD | 252 |
+| 87 | OAK KNOLL | 33 |
+| 88 | PINE SPRING | 178 |
+| 89 | POMPONIO BEL AIR | 21 |
+| 90 | POMPONIO VALLEY BROOK | 33 |
+| 91 | POMPONIO-VALLEY BROOK | 31 |
+| 92 | PUTNAM HILL | 9 |
+| 93 | RAVENWOOD | 3 |
+| 94 | RAYMONDALE | 132 |
+| 95 | REITER SUBDIVISION | 11 |
+| 96 | RESERVE AT HOLMES RUN THE | 8 |
+| 97 | RIXEY ESTATES | 26 |
+| 98 | ROBERT E. BPRADLEY ESTATES | 8 |
+| 99 | ROUNDTREE | 73 |
+| 100 | ROUNDTREE PARK ESTATES | 11 |
+| 101 | SEVEN OAKS | 94 |
+| 102 | SHERWOOD PARK | 1 |
+| 103 | SLADES ADDITION TO BROYHILL PARK SUBDIVISION | 15 |
+| 104 | SLEEPY HOLLOW | 223 |
+| 105 | SLEEPY HOLLOW EPPARD'S ADDITION | 12 |
+| 106 | SLEEPY HOLLOW ESTATES | 3 |
+| 107 | SLEEPY HOLLOW KNOLLS | 36 |
+| 108 | SLEEPY HOLLOW MANOR | 18 |
+| 109 | SLEEPY HOLLOW PARK | 35 |
+| 110 | SLEEPY HOLLOW PROPERTY | 5 |
+| 111 | SLEEPY HOLLOW SUBDIVISION | 6 |
+| 112 | SOUTHGATE | 46 |
+| 113 | STAFFORDALE | 39 |
+| 114 | STATE HILL | 8 |
+| 115 | STEPHEN BOWMAN ESTATES | 10 |
+| 116 | TAYNTONS ADDITION TO VALLEYBROOK | 1 |
+| 117 | THE COVE CONDOMINIUM | 196 |
+| 118 | THREE M'S | 22 |
+| 119 | TREMONT GARDENS | 130 |
+| 120 | TYLER PARK | 252 |
+| 121 | TYLER PARK HYLTON ADDN | 29 |
+| 122 | VALLEY BROOK SUBDIVISION | 102 |
+| 123 | VANTANGE AT MERRIFILED TOWN CENTER CONDOMINIUM | 278 |
+| 124 | VIRGINIA TERRACE | 22 |
+| 125 | WALNUT HILL | 58 |
+| 126 | WALNUT HILL ESTATES | 20 |
+| 127 | WALTERS ADDITION TO SLEEPY HOLLOW PARK | 4 |
+| 128 | WEST LAWN | 404 |
+| 129 | WILLOW OAKS | 2 |
+| 130 | WILLOW POINT A CONDOMINIUM | 156 |
+| 131 | WOODLEY NORTH | 152 |
+| 132 | WOODLEY SUBDIVISION | 258 |
+| 133 | WOODLEY WEST | 80 |
+| 134 | WOODS ADDITION TO ARNOLD PARK | 5 |
+| 135 | YORKTOWN RESEARCH & DEVELOPMENT | 10 |
+| 136 | YORKTOWN SQUARE CONDOMINIUM | 297 |
+| 137 | ZIRKLE SUBDIVISION | 2 |
+
+---
+
+## ZIP Code 22043 - Falls Church (Pimmit Hills / Idylwood)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 147
+- **Total Recorded Units:** 7,416
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ADA GROVE SUBDIVISION | 15 |
+| 2 | AIKEN PROPERTY | 6 |
+| 3 | AUTUMN CHASE | 14 |
+| 4 | BAUMAN SUBDIVISION | 2 |
+| 5 | BEACON HILL | 6 |
+| 6 | BEACON HILL SUBDIVISION | 16 |
+| 7 | BORDEN'S ADDITION TO MONTOUR HEIGHTS | 3 |
+| 8 | BRITTANY PARC AT TYSONS | 42 |
+| 9 | BROOKS SQUARE | 32 |
+| 10 | BROOKSIDE MANOR | 17 |
+| 11 | BROTHER'S ADDITION TO MONTOUR HEIGHTS | 4 |
+| 12 | BRYANTS ADDITION TO ELLISON HEIGHTS | 1 |
+| 13 | BUILD AMERICA 4 | 21 |
+| 14 | BURROUGHS SUBDIVISION | 20 |
+| 15 | CENTERSIDE | 21 |
+| 16 | CHESTNUT HILL | 7 |
+| 17 | CHURCHHILL SQUARE | 106 |
+| 18 | CHURCHILL | 163 |
+| 19 | CNESTNUT PLACE | 53 |
+| 20 | CRIMMINS SUBDIVISiON | 32 |
+| 21 | CRUTCHFIELD | 9 |
+| 22 | DALE VIEW MANOR | 35 |
+| 23 | DAVENPORT'S ADDITION TO FALLS HILL | 4 |
+| 24 | DOMINION | 133 |
+| 25 | DOMINION HEIGHTS | 15 |
+| 26 | DOMINION HEIGHTS HERRELLS | 20 |
+| 27 | DUNN, C.L | 2 |
+| 28 | ELLISON HEIGHTS | 13 |
+| 29 | FALLS CHURCH GARDENS | 187 |
+| 30 | FALLS HILL | 252 |
+| 31 | FALLS PLACE I | 5 |
+| 32 | FALLS PLACE TOWNHOUSES | 29 |
+| 33 | FALLS REST | 5 |
+| 34 | FALLSMERE | 30 |
+| 35 | FIRST ADDITION TO IDYLWOOD COURT | 11 |
+| 36 | FOLLIN HILL SUBDIVISION | 5 |
+| 37 | FRANKLIN CLUSTER | 7 |
+| 38 | GATES AT WESTFALLS A CONDOMINIUM | 39 |
+| 39 | GATES OF WESTFALLS A CONDOMINIUM | 49 |
+| 40 | GEORGE MASON HEIGHTS | 4 |
+| 41 | GLENMONT | 9 |
+| 42 | GOLDLEAF TERRACE | 17 |
+| 43 | GORDON'S SECOND SUBDIVISION | 16 |
+| 44 | GORDON'S SUBDIVISION | 17 |
+| 45 | GORDONS ADDITION TO WEST FALLS CHURCH | 3 |
+| 46 | HARROW AND HOWES ADDITION TO MONTOUR HEIGHTS | 28 |
+| 47 | HARTLEE CENTER CONDOMINIUM | 10 |
+| 48 | HIGHLAND ESTATES | 28 |
+| 49 | HILLSIDE | 8 |
+| 50 | HILLSIDE MANOR | 9 |
+| 51 | HOLLY CREST | 84 |
+| 52 | HOLTS ADDITION TO FALLS HILL | 7 |
+| 53 | IDYLWOOD COURT | 24 |
+| 54 | IDYLWOOD KNOLL | 24 |
+| 55 | IDYLWOOD STATION | 62 |
+| 56 | IDYLWOOD TERRACE | 14 |
+| 57 | IDYLWOOD TOWERS CONDOMINIUM | 484 |
+| 58 | IRVINGTON | 5 |
+| 59 | IVY RIDGE | 6 |
+| 60 | JEFFERSON PARK TOWNHOUSES | 20 |
+| 61 | JOHNSTONS ADDITION TO FALLS HILL | 7 |
+| 62 | KINGWOOD PARK | 24 |
+| 63 | KINGWOOD PARK, POMPONIOS 1ST ADDITION TO | 5 |
+| 64 | KINGWOOD PARK, POMPONIOS 2ND ADDITION TO | 7 |
+| 65 | KINGWOOD PARK, POMPONIOS 3RD ADDITION TO | 11 |
+| 66 | KIRBY COURT SUBDIVISION | 18 |
+| 67 | L AMBIANCE OF McLEAN | 45 |
+| 68 | LEE LANDING PARK | 100 |
+| 69 | LEELAND PARK | 17 |
+| 70 | LEONARD SUBDIVISION | 63 |
+| 71 | LINDEN TREE ESTATES | 12 |
+| 72 | LIONS GATE | 6 |
+| 73 | MAGARITY HEIGHTS | 33 |
+| 74 | MAGARITY MEWS | 17 |
+| 75 | MARLBOROUGH | 103 |
+| 76 | MARSHALL HEIGHTS | 179 |
+| 77 | MARTHA'S WAY | 6 |
+| 78 | MAYFAIR OF McLEAN | 37 |
+| 79 | MCGINNIS ADDITION TO MARLBOROUGH | 5 |
+| 80 | MCLEAN PLACE TOWNHOME CONDOMINIUM | 1 |
+| 81 | MERRELL PARK | 71 |
+| 82 | METROWEST CONDOMINIUM | 9 |
+| 83 | MICKLERS ADDITION TO PIMMIT HILLS | 33 |
+| 84 | MISTY WOODS | 50 |
+| 85 | MONTIVIDEO SQUARE | 92 |
+| 86 | MOUNT AT TYSONS CORNER THE | 24 |
+| 87 | McCREAS ADDITION TO DALEVIEW MANOR | 5 |
+| 88 | McLEAN PROVINCE | 128 |
+| 89 | McLEAN VALLEY ESTATES | 13 |
+| 90 | NANTUCKET | 85 |
+| 91 | NORTH IDYLWOOD | 13 |
+| 92 | OFFUTTS ADDITION TO BEACON HILL | 6 |
+| 93 | OFFUTTS ADDITION TO LEELAND PARK | 17 |
+| 94 | OLDEWOODE | 23 |
+| 95 | OLNEY PARK | 71 |
+| 96 | ORCHARD CREST | 42 |
+| 97 | PARK SQUARE AT MERRIFIELD | 22 |
+| 98 | PAVILLION CONDOMINIUM THE | 153 |
+| 99 | PENGUIN PIMMIT RUN | 7 |
+| 100 | PENGUIN PLACE | 7 |
+| 101 | PIMMIT HILLS | 1,287 |
+| 102 | PIMMIT VIEW | 80 |
+| 103 | PINEWOOD GREENS | 307 |
+| 104 | PODOLNICK SUBDIVISION | 6 |
+| 105 | POWHATAN HILLS | 58 |
+| 106 | PROVIDENCE WOODS | 24 |
+| 107 | REDDFIELD | 36 |
+| 108 | REDDWARREN SUBDIVISION | 20 |
+| 109 | REGISTERS ADDITION TO PIMMIT HILLS | 21 |
+| 110 | RENAISSANCE 2230 A CONDOMINIUM | 333 |
+| 111 | RETLAW TERRACE | 32 |
+| 112 | ROWENA S. PHILLIPS SUBDIVISION | 4 |
+| 113 | SHADY BROOK | 4 |
+| 114 | SHERMONT | 9 |
+| 115 | SHREVE MANOR | 7 |
+| 116 | SHREVE SUBDIVISION | 14 |
+| 117 | SHREVECREST | 42 |
+| 118 | SHREVEWOOD | 78 |
+| 119 | SHREVEWOOD ESTATES | 21 |
+| 120 | SIGMONA PARK | 55 |
+| 121 | SOUTHAMPTON | 82 |
+| 122 | SOUTHAMPTON FOREST | 68 |
+| 123 | SPORTSMAN PARK | 42 |
+| 124 | STAFFORDS ADDITION TO OLDEWOODE | 8 |
+| 125 | STOCKWELL MANOR | 100 |
+| 126 | STORMS ADDITION TO PIMMIT HILLS | 3 |
+| 127 | TORONTO STREET SUBDIVISION | 6 |
+| 128 | TYSONS OFFICE PARK | 15 |
+| 129 | TYSONS RIDGE | 105 |
+| 130 | VELVADALE | 5 |
+| 131 | VILLAGE CONDOMINIUM THE | 100 |
+| 132 | WATTERS GLEN | 9 |
+| 133 | WEST STAFFORD LANDING | 18 |
+| 134 | WESTHAMPTON | 93 |
+| 135 | WESTMETRO PLAZA CONDOMINIUM | 54 |
+| 136 | WESTMORE GARDENS | 64 |
+| 137 | WESTMORELAND | 12 |
+| 138 | WESTMORELAND HEIGHTS | 20 |
+| 139 | WESTMORELAND PARK | 8 |
+| 140 | WESTMORELAND SQUARE | 182 |
+| 141 | WESTWOOD | 9 |
+| 142 | WEXFORD MANOR LAND CONDOMINIUM | 7 |
+| 143 | WHITESTONE | 10 |
+| 144 | WHITESTONES ADDITION TO MARSHALL HEIGHTS | 11 |
+| 145 | WILLIAMSBURG POND SUBDIVISION | 22 |
+| 146 | WMATA-WEST FALLS CHURCH | 5 |
+| 147 | WREN DALE ACRES | 43 |
+
+---
+
+## ZIP Code 22044 - Falls Church (Lake Barcroft)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 55
+- **Total Recorded Units:** 3,884
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ANDERSON PROPERTY | 4 |
+| 2 | ASHLAWN RIDGE | 26 |
+| 3 | BOULEVARD 6060 | 37 |
+| 4 | BOULEVARD SQUARE CONDOMINIUM | 13 |
+| 5 | BROOKS PLACE | 27 |
+| 6 | BUFFALO HILL | 64 |
+| 7 | BUFFALO HILLS, DODD'S ADDITION | 8 |
+| 8 | CAVIL'S ADDITION TO RAVENWOOD PARK | 17 |
+| 9 | CHATEAUX A CONDOMINIUM | 109 |
+| 10 | CLUADE W. OWEN SUBDIVISION | 7 |
+| 11 | COUNTRY SQUIRE | 20 |
+| 12 | DEARBORN TERRACE | 14 |
+| 13 | DEZENDORF, ARTHUR G | 2 |
+| 14 | DONOHUES ADDITION TO RAVENWOOD PARK | 4 |
+| 15 | FALLSWOOD COURT | 17 |
+| 16 | FALLSWOOD GLEN COURT. SPRINGBERGS ADDITION | 7 |
+| 17 | FEDERAL HILL | 76 |
+| 18 | FORT BUFFALO | 5 |
+| 19 | GORDON JOHNSONS ADDITION TO HOLMES RUN PARK | 2 |
+| 20 | HILLWOOD | 19 |
+| 21 | HOLLYBROOK CONDOMINIUM | 186 |
+| 22 | HOLLYBROOKE II CONDOMINIUM | 250 |
+| 23 | HOLMES RUN PARK | 10 |
+| 24 | LAKE BARCROFT | 59 |
+| 25 | LAKE BARCROFT SHORES | 403 |
+| 26 | LEE BOULEVARD HEIGHTS | 118 |
+| 27 | MALBROOK | 23 |
+| 28 | MARI-DALE | 23 |
+| 29 | MCILVAINE COURT | 4 |
+| 30 | MUNSON HILL | 106 |
+| 31 | MUNSON HILL TOWERS | 2 |
+| 32 | PROFESSIONAL COURTS | 21 |
+| 33 | RAVENSWOOD PARK | 2 |
+| 34 | RAVENWOOD | 106 |
+| 35 | RAVENWOOD PARK | 180 |
+| 36 | RAVENWOOD PARK WHITE'S | 16 |
+| 37 | RAVENWOOD TOWER APTS | 7 |
+| 38 | RESERVE AT OAKVIEW | 7 |
+| 39 | RICH-E-LAND | 35 |
+| 40 | ROWS ADDITION TO LEE BOULEVARD HEIGHTS | 18 |
+| 41 | SAINT ANDREWS SQUARE CONDOMINIUM | 36 |
+| 42 | SEVEN CORNERS PROFESSIONAL PARK | 47 |
+| 43 | SLEEPY HOLLOW ESTATES | 104 |
+| 44 | SLEEPY HOLLOW MANOR | 236 |
+| 45 | SLEEPY HOLLOW MEWS | 6 |
+| 46 | SLEEPY HOLLOW PARK | 5 |
+| 47 | ST ANDREWS SQUARE CONDOMINIUM | 2 |
+| 48 | VILLAGES AT FALLS CHURCH A CONDOMINIUM | 244 |
+| 49 | VINEWOOD | 36 |
+| 50 | WALTERS WOODS | 65 |
+| 51 | WHITES ADDITION TO RAVENWOOD PARK | 34 |
+| 52 | WILLSTON NORTH | 147 |
+| 53 | WILSTON SOUTH | 34 |
+| 54 | WOODLAKE TOWERS CONDOMINIUM | 830 |
+| 55 | YOUNGS BUFFALO HILLS | 4 |
+
+---
+
+## ZIP Code 22046 - Falls Church (City / Overlap)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 61
+- **Total Recorded Units:** 1,999
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ABBOTTS ORCHARD | 7 |
+| 2 | AYLOR ESTATES | 16 |
+| 3 | BOEHLERT'S ADDITION TO WOODLAND GLEN | 4 |
+| 4 | BRILYN PARK | 91 |
+| 5 | BROPPWOOD | 11 |
+| 6 | BRUCE SUBDIVISION | 2 |
+| 7 | BRYANTS ADDITION TO ELLISON HEIGHTS | 17 |
+| 8 | CASEMONT SUBDIVISION | 25 |
+| 9 | CHARLES H TINNER | 8 |
+| 10 | D.J. SHEAR SUBDIVISION | 3 |
+| 11 | DAHNK'S ADDITION TO MOUNT DANIEL | 5 |
+| 12 | DAMICOS ADDNITION TO WESTMORE GARDENS | 6 |
+| 13 | DANIELS SUBDIVISION | 14 |
+| 14 | DEVONSHIRE GARDENS | 3 |
+| 15 | DONCASTER ESTATES | 43 |
+| 16 | DONNA LEE GARDENS | 131 |
+| 17 | ELLISON HEIGHTS | 121 |
+| 18 | FAIRFAX TERRACE | 31 |
+| 19 | FALLS GLEN | 13 |
+| 20 | FOREST HEIGHTS | 48 |
+| 21 | GORDONS ADDITION TO WEST FALLS CHURCH | 5 |
+| 22 | GREENWAY DOWNS | 24 |
+| 23 | HERRING PROPERTY | 4 |
+| 24 | HERTZ ADDITION TO WEST FALLS CHURCH | 3 |
+| 25 | HERTZ W. F. C. | 3 |
+| 26 | JACOB C DePUTRON | 7 |
+| 27 | JOHN URBAN DONAHUE SUBDIVISION OF | 4 |
+| 28 | LEE OAKS CONDOMINIUM | 121 |
+| 29 | LOCUST RIDGE SUBDIVISION | 8 |
+| 30 | MASON TERRACE | 10 |
+| 31 | MAYNARD ERWIN | 6 |
+| 32 | MERIDIAN PARK | 36 |
+| 33 | MOUNT DANIEL | 28 |
+| 34 | McLEAN MEADOWS | 18 |
+| 35 | OFFUTTS ADDITION TO BEACON HILL | 3 |
+| 36 | PATRAM'S FIRST ADDITION TO MERIDIAN PARK | 4 |
+| 37 | POPLAR HEIGHTS | 188 |
+| 38 | POPLAR HGTS | 4 |
+| 39 | RIXEY ESTATES | 4 |
+| 40 | SOUTHGATE | 1 |
+| 41 | SPEER SUBDIVISION | 31 |
+| 42 | STODDARD WOODS | 4 |
+| 43 | TIMBERLANE | 6 |
+| 44 | TIMBERLANE VILLAGE GARDEN CONDOMINIUM | 368 |
+| 45 | TOWER HGTS | 3 |
+| 46 | VELVADALE | 1 |
+| 47 | WALNUT GROVE | 17 |
+| 48 | WALNUT HILL | 65 |
+| 49 | WEST FALLS CROSSING | 6 |
+| 50 | WEST FALLS VILLAGE | 12 |
+| 51 | WESTBRIAR | 28 |
+| 52 | WESTMORE GARDENS | 48 |
+| 53 | WESTMORELAND PARK | 93 |
+| 54 | WESTWOOD | 4 |
+| 55 | WESTWOOD PARK | 176 |
+| 56 | WIELAND PROPERTY | 5 |
+| 57 | WILLIAM R. GOODWIN | 5 |
+| 58 | WILSONS ADDITION TO WEST FALLS CHURCH | 3 |
+| 59 | WOODCREST | 8 |
+| 60 | WOODLAND GLEN | 7 |
+| 61 | Z.B. GROVES' SUBDIVISION | 29 |
+
+---
+
+## ZIP Code 22060 - Fort Belvoir
+
+- **Postal Classification:** Military Facility
+- **Total Subdivisions:** 1
+- **Total Recorded Units:** 257
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | COOK INLET | 257 |
+
+---
+
+## ZIP Code 22066 - Great Falls
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 268
+- **Total Recorded Units:** 5,347
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 1039 SPRINGVALE | 5 |
+| 2 | ADDICOTT HILLS | 17 |
+| 3 | AKHTAMARS HAVEN | 7 |
+| 4 | ALLEGRO | 9 |
+| 5 | ALLENWOOD | 6 |
+| 6 | ARDEN AT MCLEAN | 92 |
+| 7 | ARDEN AT MCLEAN ADDITION TO SECTION 1 | 11 |
+| 8 | ARNON LAKE | 23 |
+| 9 | ARNON MEADOW | 11 |
+| 10 | ARNON RIDGE | 10 |
+| 11 | BEACH MILL | 7 |
+| 12 | BEACH MILL DOWNS | 30 |
+| 13 | BEACH MILL ESTATES | 16 |
+| 14 | BEACH MILL FARMS SUBDIVISION | 8 |
+| 15 | BEACH MILL HILL | 13 |
+| 16 | BEACH MILL WOODS | 5 |
+| 17 | BECKMAN HILLS | 8 |
+| 18 | BIRNHAM WOODS | 9 |
+| 19 | BITTERSWEET FARMS | 5 |
+| 20 | BLACK RIFFLES ESTATES | 22 |
+| 21 | BOUNDBROOK | 27 |
+| 22 | BRADLEY OAKS | 20 |
+| 23 | BRANDES ESTATES | 16 |
+| 24 | BRICK MILL MANOR | 8 |
+| 25 | BRICK MILL MANOR ESTATES | 1 |
+| 26 | BROWN'S LANDING | 12 |
+| 27 | BUFF SUBDIVISION | 4 |
+| 28 | CANTERWOOD | 44 |
+| 29 | CASA CONTINENTAL | 11 |
+| 30 | CASCADES ESTATES | 37 |
+| 31 | CHADWICK | 4 |
+| 32 | CHALLEDON COURT | 5 |
+| 33 | CHAMBORLEY | 8 |
+| 34 | CHESHIRE | 14 |
+| 35 | CHESTERWOOD ESTATES | 3 |
+| 36 | CHINQUAPIN MANOR | 8 |
+| 37 | CLARKS BRANCH SUBDIVISION | 5 |
+| 38 | CLUB VIEW RIDGE | 8 |
+| 39 | COLD STREAM FARMS | 6 |
+| 40 | COLLAS G. HARRIS | 7 |
+| 41 | COLVIN MANOR | 5 |
+| 42 | COLVIN MEADOW ESTATES | 18 |
+| 43 | COLVIN MEADOWS | 14 |
+| 44 | COLVIN MILL GARDENS | 10 |
+| 45 | COLVIN MILL RUN | 49 |
+| 46 | CORNWELL FARM | 33 |
+| 47 | CORNWELL MANOR VIEW | 6 |
+| 48 | CRAMPTON SUBDIVISION | 8 |
+| 49 | CREWS WOODS | 18 |
+| 50 | CRIPPEN'S CORNER | 22 |
+| 51 | CROOKED CROW ESTATES | 3 |
+| 52 | D J SMITHERS | 9 |
+| 53 | DEEP GLEN | 20 |
+| 54 | DEEPWOODS HOLLOW | 10 |
+| 55 | DEER PARK | 8 |
+| 56 | DEERFIELD FARM | 10 |
+| 57 | DEERFIELD POND | 24 |
+| 58 | DIVISION OF LAND OF GEROGE CARR & RITA BELL DAVIS | 25 |
+| 59 | DIVISION OF THE KARA PROPERTY | 6 |
+| 60 | DIVISION OF THE OFFUTT LAND A | 2 |
+| 61 | DOGWOOD FARM | 14 |
+| 62 | DOGWOOD FOREST | 5 |
+| 63 | DOGWOOD HILLS | 3 |
+| 64 | DOWN PATRICK FARMS | 12 |
+| 65 | EAGON HILLS SUBDIVISION | 30 |
+| 66 | EATON PARK | 13 |
+| 67 | ECOLAND ESTATES | 5 |
+| 68 | EL-FAROUKI ADDITION TO MARMOTA FARM | 11 |
+| 69 | ESTATE OF HENRY S. MURPHY | 7 |
+| 70 | ESTATES AT LEIGH MILL ROAD, THE | 5 |
+| 71 | EVONSHIRE | 9 |
+| 72 | FALCON RIDGE | 102 |
+| 73 | FALLS FARM | 7 |
+| 74 | FALLS FARM II | 10 |
+| 75 | FALLS POINTE | 22 |
+| 76 | FALLS RUN | 16 |
+| 77 | FALLSWOOD | 10 |
+| 78 | FINGER LAKES ESTATES | 13 |
+| 79 | FIRST ADDITION TO KENTLAND FARMS | 2 |
+| 80 | FIRST ADDITION TO OLIVER ESTATES | 6 |
+| 81 | FIRST ADDITION TO SENECA RIDGE | 13 |
+| 82 | FITZ FOLLY FARMS | 19 |
+| 83 | FIVE STAR SUBDIVISION | 4 |
+| 84 | FOREST LAKE ESTATES | 21 |
+| 85 | FORESTVILLE ESTATES | 14 |
+| 86 | FORESTVILLE FARMS | 16 |
+| 87 | FORESTVILLE HEIGHTS | 6 |
+| 88 | FORESTVILLE MEADOWS | 32 |
+| 89 | FOX CREEK FARM | 9 |
+| 90 | FOX RUN | 30 |
+| 91 | G. L. SEKEL SUBDIVISION | 6 |
+| 92 | GASCHS DIVISION OF THE ALBERT JACKSON FARM | 22 |
+| 93 | GEORGETOWN ACRES | 4 |
+| 94 | GEORGETOWN COURT | 5 |
+| 95 | GEORGETOWN ESTATES | 5 |
+| 96 | GEORGETOWN MANOR ESTATES | 10 |
+| 97 | GLEN HAVEN FARMS SUBDIVISION | 28 |
+| 98 | GLENDALE KNOLLS | 2 |
+| 99 | GOEPFERT PROPERTY | 18 |
+| 100 | GOLDEN WOODS | 6 |
+| 101 | GOULDMAN ACRES | 19 |
+| 102 | GREAT FALLS BUSINESS CENTER OFFICE CONDOMINIUM | 17 |
+| 103 | GREAT FALLS CROSSROADS CONDOMINIUM | 8 |
+| 104 | GREAT FALLS ESTATES | 17 |
+| 105 | GREAT FALLS FOREST | 9 |
+| 106 | GREAT FALLS GLEN | 26 |
+| 107 | GREAT FALLS HEIGHTS | 8 |
+| 108 | GREAT FALLS HILLS | 7 |
+| 109 | GREAT FALLS HUNT | 23 |
+| 110 | GREAT FALLS LANDING | 9 |
+| 111 | GREAT FALLS MEADOWS | 22 |
+| 112 | GREAT FALLS RIVER BEND ESTATES | 11 |
+| 113 | GREAT FALLS WEST | 67 |
+| 114 | GREAT FALLS WOODS | 36 |
+| 115 | GREEN ACRES | 66 |
+| 116 | GREEN BRANCH ESTATES SUBDIVISION | 4 |
+| 117 | GREGORY AND ANN STREETER SUBDIVISION | 3 |
+| 118 | GROVEMONT PROPERTY | 13 |
+| 119 | HANSON'S ADDITION TO EDWIN D. BECKER | 4 |
+| 120 | HANSON'S ADDITION TO EDWIN D.BECKER | 2 |
+| 121 | HAVER HILL | 52 |
+| 122 | HERRICK ESTATES | 8 |
+| 123 | HICKORY CREEK | 206 |
+| 124 | HICKORY CREEK ESTATES | 25 |
+| 125 | HICKORY RUN | 12 |
+| 126 | HICKORY VALE FARM | 42 |
+| 127 | HIDDEN FOREST | 34 |
+| 128 | HILL CREST ACRES | 5 |
+| 129 | HOLLY KNOLL | 341 |
+| 130 | HOLLY KNOLL KINNEYS ADDITION | 3 |
+| 131 | HORTENSE PLACE | 5 |
+| 132 | IRENE CHARPENTIER BETTIUS | 10 |
+| 133 | IVAN J MONEY SUBDIVISION | 4 |
+| 134 | J G COLBY JOINT VENTURE THE LAND OF | 2 |
+| 135 | JACKSON HILLS | 20 |
+| 136 | JACKSON MILL WOODS | 22 |
+| 137 | JEFFERSON RUN MANOR SUBD | 6 |
+| 138 | JEFFREY H & JOAN M GUNTHER | 2 |
+| 139 | JOHN W. HANES GUNNEL RUN FARM | 6 |
+| 140 | JOHN W. HANES JR. GUNNELL'S RUN FARM | 6 |
+| 141 | KENMORE FARMS | 14 |
+| 142 | KENMORE SUBDIVISION | 24 |
+| 143 | KENTLAND FARMS | 35 |
+| 144 | KENTLAND POND | 7 |
+| 145 | KEYSTONE ESTATES | 5 |
+| 146 | KINGS SUBDIVISION | 7 |
+| 147 | LAKE WINDERMERE | 32 |
+| 148 | LANE AT FOUR STAIRS | 6 |
+| 149 | LAYLIN FAMILY TRUST | 10 |
+| 150 | LEIGH CORNERS CONDOMINIUM | 52 |
+| 151 | LEIGH MILL COMMONS | 18 |
+| 152 | LEIGH MILL MEADOWS | 25 |
+| 153 | LEXINGTON ESTATES | 210 |
+| 154 | LOCKMAR | 13 |
+| 155 | LOCKMEADE | 176 |
+| 156 | LOCUST HILL | 93 |
+| 157 | MACKALL HOME PLACE | 10 |
+| 158 | MALLORY SQUARE | 5 |
+| 159 | MARIA AVENUE SUBDIVISION | 8 |
+| 160 | MARKELL PROPERTY | 5 |
+| 161 | MARMOTA FARM | 12 |
+| 162 | MARQUETTE | 8 |
+| 163 | MARTIN REDMON SUBDIVISION | 10 |
+| 164 | MAYNOR ESTATES | 5 |
+| 165 | MEADOWBROOK | 21 |
+| 166 | MEADOWS AT GREAT FALLS | 4 |
+| 167 | MEADOWS OF GREAT FALLS THE | 8 |
+| 168 | MERRYELLE ACRES | 13 |
+| 169 | MILL CREEK LANDING SUBDIVISION | 8 |
+| 170 | MILL RUN ACRES | 55 |
+| 171 | MORISON ESTATE THE | 9 |
+| 172 | MULMARY SUBDIVISION | 7 |
+| 173 | NICHOLS RUN ESTATES | 4 |
+| 174 | OFFUTT HOME TRACT | 26 |
+| 175 | OLD DOMINION ESTATES | 8 |
+| 176 | OLD MILL ESTATES | 52 |
+| 177 | OLD MILL ESTATES SHOTWELL'S ADDITION | 12 |
+| 178 | OLD SAYBROOK | 31 |
+| 179 | OLIVER ESTATES | 93 |
+| 180 | OLIVERS CORNER CONDOMINIUM | 12 |
+| 181 | PARK ROYAL | 25 |
+| 182 | PARRISH FARM | 12 |
+| 183 | PATRICIAN WOODS | 7 |
+| 184 | PAUL C AND JANET A WOODBRIDGE | 7 |
+| 185 | PHOENIX MEADOWS | 12 |
+| 186 | PINEY POND ESTATES | 9 |
+| 187 | PINEY RUN ESTATES | 3 |
+| 188 | POLO RIDGE | 13 |
+| 189 | POPENOE SUBDIVISION | 5 |
+| 190 | POTOMAC FOREST | 15 |
+| 191 | POTOMAC MEADOWS SUBDIVISION | 7 |
+| 192 | POTOMAC RIDGE ESTATES | 10 |
+| 193 | POULIN HOMES RESUB OF KENTLAND FARMS | 6 |
+| 194 | PRESGRAVES SUBDIVISION | 3 |
+| 195 | PUTNAM FARM ESTATES | 6 |
+| 196 | RECTOR SUBDIVISION | 10 |
+| 197 | REEMA ESTATES | 4 |
+| 198 | REGAL HOMES ESTATES | 2 |
+| 199 | RICHLAND FOREST | 5 |
+| 200 | RICHLAND MEADOWS | 57 |
+| 201 | RIVER BEND FOREST | 10 |
+| 202 | RIVER BEND MANOR | 7 |
+| 203 | RIVER BEND WALK | 4 |
+| 204 | RIVERBEND | 10 |
+| 205 | RIVERBEND FARM | 17 |
+| 206 | RIVERBEND KNOLLS | 21 |
+| 207 | RIVERBEND LANDING | 10 |
+| 208 | RIVERMONT | 19 |
+| 209 | RIVERSCAPE | 21 |
+| 210 | RIVERSIDE MANOR | 56 |
+| 211 | RIVERSIDE MEADOWS | 14 |
+| 212 | ROBERT T. SHEA SUBDIVISION | 8 |
+| 213 | ROLLING MEADOWS | 19 |
+| 214 | ROSS F ROGERS | 14 |
+| 215 | ROUSSOS PROPERTY | 5 |
+| 216 | RUNNING BROOK ESTATES | 25 |
+| 217 | SADDLEBROOKE ESTATES | 50 |
+| 218 | SAUNDERS HAVEN | 9 |
+| 219 | SENECA CORNER LAND CONDOMINIUM | 5 |
+| 220 | SENECA FARMS | 45 |
+| 221 | SENECA GATE | 9 |
+| 222 | SENECA GREEN | 13 |
+| 223 | SENECA HILLS | 17 |
+| 224 | SENECA HUNT | 28 |
+| 225 | SENECA KNOLL | 22 |
+| 226 | SENECA RIDGE SUBDIVISION | 15 |
+| 227 | SENECA VIEW | 10 |
+| 228 | SOUTHDOWN | 32 |
+| 229 | SOUTHDOWN FARM | 11 |
+| 230 | SPRING VALLEY WOODS | 4 |
+| 231 | SPRINGVALE ESTATES | 8 |
+| 232 | SPRINGVALE KNOLLS | 6 |
+| 233 | SPRINGVALE MEADOWS | 13 |
+| 234 | SPRINGVALE WOODS | 10 |
+| 235 | SPRINGWOOD | 9 |
+| 236 | SQUIRE'S HAVEN | 22 |
+| 237 | SUMMER CREEK | 9 |
+| 238 | SYCAMORE SPRINGS SUBDIVISION | 10 |
+| 239 | SYLVAN ESTATES | 4 |
+| 240 | TALLY-HO | 31 |
+| 241 | THE ESTATES AT LONGWOOD | 49 |
+| 242 | THE MAPLES | 8 |
+| 243 | THISTLE HILL | 6 |
+| 244 | THOMAS AVENUE | 14 |
+| 245 | THOMPSON PROPERTY | 6 |
+| 246 | THOMPSON'S ADDITION OLD MILL ESTATES | 9 |
+| 247 | TIMBER POINTE | 6 |
+| 248 | TIMBERLAKE ESTATES | 27 |
+| 249 | TIMBERLAKE ESTATES NORTH | 28 |
+| 250 | TIMBERLAKE ESTATES SOUTH | 82 |
+| 251 | TIMBERLAKE RUN | 10 |
+| 252 | TRALEE ESTATES | 28 |
+| 253 | VALLEY STREAM | 29 |
+| 254 | VAN PATTEN PROPERTY | 8 |
+| 255 | VILLAGE CENTRE CONDOMINIUM | 94 |
+| 256 | W. FUSS SUBDIVISION | 4 |
+| 257 | WALKER GLEN | 7 |
+| 258 | WALKER HILL ESTATES | 14 |
+| 259 | WALKER WOODS FARM | 15 |
+| 260 | WALKER WOODS LAKE | 18 |
+| 261 | WASHINGTON GREAT FALLS SURVEY | 15 |
+| 262 | WEANT SUBDIVISION | 48 |
+| 263 | WINDERMERE | 34 |
+| 264 | WOLF TRAP GREEN | 80 |
+| 265 | WOLFTRAP ESTATES | 16 |
+| 266 | WOODLAND FALLS | 15 |
+| 267 | WOODLEAF | 13 |
+| 268 | WOODSFIELD | 25 |
+
+---
+
+## ZIP Code 22067 - Greenway
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22079 - Lorton
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 158
+- **Total Recorded Units:** 10,960
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ALLEN INDUSTRIAL PARK | 2 |
+| 2 | BARNES SUBDIVISION | 44 |
+| 3 | BEECHWOOD CLUSTER SUBDIVISION | 35 |
+| 4 | BELMONT PARK ESTATES | 115 |
+| 5 | CALLAWAY GREENS SUBDIVISION | 8 |
+| 6 | CHESTER PARK | 10 |
+| 7 | CLARENCE J. ROBINSON | 5 |
+| 8 | COLCHESTER | 15 |
+| 9 | CONDOMINIUM AT GUNSTON SQUARE THE | 66 |
+| 10 | COURTS OF LAUREL CREST | 51 |
+| 11 | COZZOS ADDITION TO GREEN RIDGE | 28 |
+| 12 | CRANDALL RUN | 35 |
+| 13 | CRANFORD AT GUNSTON COVE | 35 |
+| 14 | CROSSPOINTE | 77 |
+| 15 | CROSSPOINTE GLEN | 16 |
+| 16 | DAVISON WOODS | 4 |
+| 17 | DENALI WAY | 29 |
+| 18 | EARL H CURTIS AND WIFE | 6 |
+| 19 | EAST HILL | 73 |
+| 20 | EVANS SUBDIVISION | 24 |
+| 21 | FAIRFAX YACHT CLUB CONDOMINUM | 1 |
+| 22 | FIRST ADDITION TO SOUTH POINTE | 8 |
+| 23 | FLOYD M. CLIFTON | 4 |
+| 24 | FOREST AT SOUTHRUN | 40 |
+| 25 | G B GALYON SUBDIVISION | 19 |
+| 26 | GABLESCONDOMINIUM AT GUNSTON | 125 |
+| 27 | GATEWAY 95 BUSINESS PARK | 8 |
+| 28 | GILES OVERLOOK | 52 |
+| 29 | GRACE BIBLE CHURCH | 10 |
+| 30 | GREEN PINES SUBDIVISION | 11 |
+| 31 | GREEN RIDGE | 8 |
+| 32 | GUNSTON CENTER CONDOMINIUM | 5 |
+| 33 | GUNSTON COMMONS | 29 |
+| 34 | GUNSTON CORNER | 104 |
+| 35 | GUNSTON CORNER CONDOMINIUM | 290 |
+| 36 | GUNSTON COVE BUSINESS CENTER CONDOMINIUM | 25 |
+| 37 | GUNSTON HALL FOREST | 14 |
+| 38 | GUNSTON HEIGHTS | 77 |
+| 39 | GUNSTON HILL | 80 |
+| 40 | GUNSTON MANOR | 172 |
+| 41 | GUNSTON SQUARE | 176 |
+| 42 | HALLOWING POINT RIVER ESTATES | 200 |
+| 43 | HAMPTON STATION | 13 |
+| 44 | HAPPY VALLEY | 3 |
+| 45 | HARLEY FARM ESTATES | 9 |
+| 46 | HARLEY ROAD | 6 |
+| 47 | HIGHLANDS AT GUNSTON CORNER A CONDOMINIUM THE | 88 |
+| 48 | HILLTOP INDUSTRIAL PARK | 87 |
+| 49 | HOLLYBROOK FARM SUBDIVISION | 19 |
+| 50 | HOLLYMEADE | 27 |
+| 51 | HUNTER ESTATES | 118 |
+| 52 | HUNTERWOOD | 21 |
+| 53 | INDIAN SPRINGS ESTATES | 8 |
+| 54 | JAMES W CRANFORD ESTATES | 3 |
+| 55 | JOHN LEARY SUBDIVISION THE | 54 |
+| 56 | KEVIN KRAIG ROAD | 16 |
+| 57 | KINCANNON BUILDING | 5 |
+| 58 | LAKE HILL FARMS | 7 |
+| 59 | LAKE HILLS | 19 |
+| 60 | LAKE HILLS SUBDIVISION | 4 |
+| 61 | LAUREL CREST | 93 |
+| 62 | LAUREL HIGHLANDS | 258 |
+| 63 | LAUREL HILL | 733 |
+| 64 | LAUREL HILL ADAPTIVE REUSE | 195 |
+| 65 | LAUREL HILLS CROSSING | 37 |
+| 66 | LAUREL OVERLOOK | 10 |
+| 67 | LAUREL RIDGE CROSSING | 44 |
+| 68 | LEATHERLAND PROPERTY | 7 |
+| 69 | LIBERTY TOWNHOMES SUBDIVISION | 74 |
+| 70 | LORFAX HEIGHTS | 150 |
+| 71 | LORTON MARKET STREET | 34 |
+| 72 | LORTON PROFESSIONAL CENTER CONDOMINIUM | 17 |
+| 73 | LORTON STATION NORTH CONDOMINIUM | 80 |
+| 74 | LORTON STATION SOUTH | 251 |
+| 75 | LORTON TOWN CENTER | 398 |
+| 76 | LORTON VALLEY | 1 |
+| 77 | LORTON VALLEY INDUSTRIAL CENTER | 4 |
+| 78 | LORTON VALLEY NORTH | 264 |
+| 79 | LORTON VALLEY WEST | 30 |
+| 80 | LYNDAM HILL | 99 |
+| 81 | MALCOLM AT OCCOQUAN OVERLOOK | 36 |
+| 82 | MAROVELLI FOREST | 10 |
+| 83 | MASONS PASSAGE | 172 |
+| 84 | MAYWOOD | 12 |
+| 85 | MEEKER SUBDIVISION | 26 |
+| 86 | MONACAN ESTATES | 8 |
+| 87 | MOUNT AIR SUBDIVISION | 50 |
+| 88 | MOUNT VERNON MEADOWS | 32 |
+| 89 | McDONALD ESTATES | 7 |
+| 90 | NEW HAVEN | 5 |
+| 91 | NEWINGTON BUSINESS CENTER CONDOMINIUM | 13 |
+| 92 | NEWINGTON COMMERCE CENTER CONDOMINIUM | 17 |
+| 93 | NEWINGTON COMMONS | 213 |
+| 94 | NEWINGTON HEIGHTS | 318 |
+| 95 | NIRVANA PALACE | 20 |
+| 96 | OCCOQUAN OVERLOOK | 89 |
+| 97 | OCCOQUAN PARK | 10 |
+| 98 | OVERLOOK POINTE SUBDIVISION | 53 |
+| 99 | PINEWOOD STATION | 152 |
+| 100 | POHICK ESTATES | 264 |
+| 101 | POHICK INDUSTRIAL PARK | 46 |
+| 102 | POHICK LANDING | 45 |
+| 103 | POHICK RIVER PINES | 28 |
+| 104 | POHICK SQUARE | 106 |
+| 105 | POHICK VILLAGE | 275 |
+| 106 | PUMPELLY POINT | 4 |
+| 107 | QUARTERS COMDOMINIUM, THE | 8 |
+| 108 | RACEWAY FARMS | 205 |
+| 109 | REMINGTON PLACE | 12 |
+| 110 | RESERVE THE | 11 |
+| 111 | RESIDENCES OF LORTON STATION CONDOMINIUM THE | 43 |
+| 112 | ROBMONT | 10 |
+| 113 | ROYAL RIDGE | 38 |
+| 114 | SHEPHERD HILLS | 110 |
+| 115 | SHIRLEY ACRES | 43 |
+| 116 | SILVERBROOK ESTATES | 77 |
+| 117 | SILVERBROOK FARMS | 6 |
+| 118 | SOUTH POINTE | 47 |
+| 119 | SOUTHERN OAKS | 60 |
+| 120 | SOUTHERN OAKS RESERVE | 6 |
+| 121 | SOUTHGATE WOODS TOWNHOUSES | 137 |
+| 122 | SPRING HILL CONDOMINIUM | 125 |
+| 123 | SPRING HILL SENIOR CAMPUS | 189 |
+| 124 | SPRINGFIELD FARMS | 32 |
+| 125 | SPRINGFIELD NEWINGTON CONDOMINIUM | 18 |
+| 126 | SPRINGMANS SUBDIVISION | 8 |
+| 127 | SUBDIVISION OF HARBOR VIEW | 175 |
+| 128 | SULLENBERGER PROPERTY | 8 |
+| 129 | SUMMERHILL | 263 |
+| 130 | SUMMIT OAKS | 67 |
+| 131 | SYDNEY B. SMITH PROPERTY | 17 |
+| 132 | T.K.DARROUGH & M.L.WILSON PROPERTY | 1 |
+| 133 | TAVARES | 1 |
+| 134 | TELEGRAPH SQUARE A CONDOMINIUM | 87 |
+| 135 | TERRACE TOWNE HOMES OF GUNSTON | 281 |
+| 136 | THE HIGHLANDS | 140 |
+| 137 | THE RESERVE | 1 |
+| 138 | THOMPSON'S CREEK | 7 |
+| 139 | TOWNES OF POHICK THE | 10 |
+| 140 | TWINBROOK AT MOUNT AIR | 35 |
+| 141 | UNITED AMERICAN BUSINESS CENTER | 21 |
+| 142 | UNITED AMERICAN BUSINESS CENTER AT HILLTOP | 18 |
+| 143 | VAUGHN'S | 3 |
+| 144 | VILLAGE AT LORTON VALLEY | 209 |
+| 145 | VILLAGE OF MOUNT AIR | 182 |
+| 146 | VILLAS AT NEWINGTON CHASE | 8 |
+| 147 | VIRGINIA ESTATES | 27 |
+| 148 | WASHINGTON SQUARE | 225 |
+| 149 | WILDWOOD | 22 |
+| 150 | WILEY SUBDIVISION | 62 |
+| 151 | WILLIAMSBURG SQUARE | 172 |
+| 152 | WINDRUSH | 7 |
+| 153 | WINSTEAD MANOR | 43 |
+| 154 | WINSTEAD MANOR II | 4 |
+| 155 | WORSHAM INDUSTRIAL CONDOMINIUMS | 8 |
+| 156 | WORTHINGTON WOODS | 191 |
+| 157 | WRIGHT'S OVERLOOK | 42 |
+| 158 | YORKSHIRE SUBDIVISION | 5 |
+
+---
+
+## ZIP Code 22081 - Merrifield
+
+- **Postal Classification:** PO Box / Commercial Hub
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box / Commercial Hub).*
+
+---
+
+## ZIP Code 22082 - Merrifield
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22095 - Chantilly
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22096 - Reston / Chantilly
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22101 - McLean
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 285
+- **Total Recorded Units:** 10,891
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | AMANS McLEAN ESTATES | 8 |
+| 2 | ANNIE S PHILLIPS ESTATES | 4 |
+| 3 | ANTEZANA PROPERTY | 4 |
+| 4 | ARBORS OF McLEAN | 10 |
+| 5 | ARQUIN & SYMMES | 9 |
+| 6 | BALLANTRAE FARMS | 87 |
+| 7 | BALLANTRAE HILL | 4 |
+| 8 | BALLANTRAE LANE SUBDIVISION | 7 |
+| 9 | BALLS HILL SUBDIVISION | 5 |
+| 10 | BALMACARA | 57 |
+| 11 | BASIL COURT | 7 |
+| 12 | BEDFORD ACRES | 7 |
+| 13 | BEVERLY MANOR | 181 |
+| 14 | BEVERLY MANOR GOODWINS ADDN | 7 |
+| 15 | BEVERLY ONE BUILDING THE A CONDOMINIUM | 4 |
+| 16 | BIRCH GROVE | 6 |
+| 17 | BIRCHWOOD | 30 |
+| 18 | BIRCHWOOD SUBDIVISION | 47 |
+| 19 | BRAEWOOD | 30 |
+| 20 | BRIAR RIDGE | 30 |
+| 21 | BRIGGS & HOOPER CHESTERBROOK WOODS, ADD | 45 |
+| 22 | BRIGGS AND HOOPERS ADDITION TO CHESTERBROOK WOODS | 64 |
+| 23 | BRIGGS AND HOOPERS ADDNITION TO CHESTER-BROOK WOODS | 3 |
+| 24 | BROOKHAVEN | 62 |
+| 25 | BROYHILL GLEN GARY PARK | 104 |
+| 26 | BROYHILL LANGLEY ESTATES | 241 |
+| 27 | BROYHILL McLEAN ESTATES | 34 |
+| 28 | BROYHILLS McLEAN ESTATES | 216 |
+| 29 | BRYN MAWR | 22 |
+| 30 | BRYN MAWR 1st ADDN | 6 |
+| 31 | BRYN MAWR 2nd ADDN | 42 |
+| 32 | BRYN MAWR 2nd ADDN. | 30 |
+| 33 | BRYN MAWR CLUSTER | 55 |
+| 34 | BRYN MAWR RESUB | 17 |
+| 35 | BRYNMAWR HEIGHTS | 10 |
+| 36 | CARLIN TERRACE | 23 |
+| 37 | CECILE COURT | 5 |
+| 38 | CEDAR CLUSTER TOWNHOUSE | 6 |
+| 39 | CHAIN BRIDGE ESTATES CONDOMINIUM | 36 |
+| 40 | CHAIN BRIDGE FOREST | 90 |
+| 41 | CHAIN BRIDGE HEIGHTS | 30 |
+| 42 | CHAIN BRIDGE SQUARE | 11 |
+| 43 | CHAIN BRIDGE WOODS | 35 |
+| 44 | CHALICE CREST | 13 |
+| 45 | CHESTERBROOK | 78 |
+| 46 | CHESTERBROOK ESTATES | 59 |
+| 47 | CHESTERBROOK FARM | 53 |
+| 48 | CHESTERBROOK GARDENS | 150 |
+| 49 | CHESTERBROOK HILLS | 13 |
+| 50 | CHESTERBROOK KNOLLS | 5 |
+| 51 | CHESTERBROOK MANOR | 12 |
+| 52 | CHESTERBROOK MEWS SUBDIVISION | 19 |
+| 53 | CHESTERBROOK VALE SUBDIVISION | 23 |
+| 54 | CHESTERBROOK WOODS | 98 |
+| 55 | CHESTERBROOK WOODS HOOPER'S ADDITION | 22 |
+| 56 | CHESTERBROOK WOODS, JAMES HOOPERS 1ST ADDTN | 46 |
+| 57 | CHESTERBROOK WOOODS | 4 |
+| 58 | CHESTERFIELD | 67 |
+| 59 | CHESTERFORD | 43 |
+| 60 | CLEARVIEW MANOR | 44 |
+| 61 | CLOISTERS | 32 |
+| 62 | COUNTRY ACRES | 21 |
+| 63 | COUNTRYSIDE | 25 |
+| 64 | COUNTRYSIDE SOUTH | 5 |
+| 65 | COURTS OF INGLESIDE THE A CONDOMINIUM | 6 |
+| 66 | CRIMMINS SUBDIVISION | 9 |
+| 67 | CROSSWOODS THE | 34 |
+| 68 | CURRAN SQUARE OFFICE CONDOMINIUM I | 17 |
+| 69 | D P DIVINE | 12 |
+| 70 | D S MACKALLS ADDITION TO MCLEAN | 3 |
+| 71 | D. S. MACKALLS ADDITION TO WEST MCLEAN | 5 |
+| 72 | DANA HEIGHTS | 47 |
+| 73 | DEIBERT PROPERTY AT DOUGLASS DRIVE | 4 |
+| 74 | DEVON PARK | 220 |
+| 75 | DIGGES ADDITION TO CHESTERBROOK | 28 |
+| 76 | DIVINE | 9 |
+| 77 | DIVINE LANDING | 14 |
+| 78 | DIVINES CHESTERBROOK | 72 |
+| 79 | DOGWOODS AT LANGLEY THE | 64 |
+| 80 | DOLLEY MADISON ESTS | 44 |
+| 81 | DOMINION HILL | 12 |
+| 82 | DOMINION OFFICE PARK | 12 |
+| 83 | DOMINION VILLA | 29 |
+| 84 | DOMINION WOODS | 43 |
+| 85 | DOOD PROPERTY | 6 |
+| 86 | DOWNSCREST | 30 |
+| 87 | DP DIVINE PROPERTY | 35 |
+| 88 | DUNNINGHAM SOUTH CONDOMINIUM | 10 |
+| 89 | EAGLE ACRES | 5 |
+| 90 | EAGLE ROCK SUBDIVISION | 14 |
+| 91 | EL NIDO | 45 |
+| 92 | ELINIDO ESTATES | 9 |
+| 93 | ELIZABETH GLEN | 5 |
+| 94 | ELM SQUARE OFFICE CONDOMINIUM | 3 |
+| 95 | ELMWOOD ESTATES | 55 |
+| 96 | ELNIDO | 3 |
+| 97 | ELNIDO ESTATES | 144 |
+| 98 | ELNIDO, PIMMIT ADDITION TO | 3 |
+| 99 | EMERSON ONE BUILDING THE A CONDOMINIUM | 8 |
+| 100 | ERWIN O WIELAND SUBDIVISION | 3 |
+| 101 | ESQUIRE HICKS | 5 |
+| 102 | ESTATES AT FRANKLIN PARK | 5 |
+| 103 | EVANS FARM | 122 |
+| 104 | EVANS FARM CONDOMINIUM | 6 |
+| 105 | EVANS MILL POND | 50 |
+| 106 | EVERMAY | 159 |
+| 107 | FIRST ADDITION TO ROSEMONT | 2 |
+| 108 | FOREST VILLA | 33 |
+| 109 | FOREST VILLA WOODS | 38 |
+| 110 | FOXHALL | 46 |
+| 111 | FRANKLIN FOREST | 85 |
+| 112 | FRANKLIN PARK | 260 |
+| 113 | GALLEGOS SUBDIVISION | 7 |
+| 114 | GENTRY'S ADDITION TO CHESTERBROOK WOODS | 10 |
+| 115 | GLOUCESTER PLACE | 9 |
+| 116 | GOLF CLUB MANORS | 8 |
+| 117 | GRACE MANOR AT MINOR HILL | 16 |
+| 118 | GRASS RIDGE | 102 |
+| 119 | GREAT FALLS MANOR | 26 |
+| 120 | GREAT FALLS MANOR SUBDIVISION | 10 |
+| 121 | GREGORY SUBDIVISION | 3 |
+| 122 | H CABELL MADDUX PROPERTY | 3 |
+| 123 | HALLS MANOR | 8 |
+| 124 | HAMEL HILL | 11 |
+| 125 | HAMPTONS OF McLEAN | 125 |
+| 126 | HANSBOROUGH SUBDIVISION | 90 |
+| 127 | HARVEY ROAD FARMS | 2 |
+| 128 | HASTINGS ESTATES | 14 |
+| 129 | HEATH MANOR | 5 |
+| 130 | HEATHER HILL | 31 |
+| 131 | HIGHLAND GLEN | 12 |
+| 132 | HIGHVIEW TERRACE | 13 |
+| 133 | HILLSIDE MANOR | 77 |
+| 134 | HUNTER PROPERTY | 5 |
+| 135 | HUNTING HILL OF McLEAN | 23 |
+| 136 | HUNTING RIDGE | 24 |
+| 137 | INGLESIDE | 69 |
+| 138 | INGLESIDE FAIRFAX LAND CO ADDITION | 41 |
+| 139 | INGLESIDE FAIRFAX LAND CO ADDN | 6 |
+| 140 | JARVIS SUBDIVISION | 5 |
+| 141 | JOE CHILDERS ADDITION TO OAKVIEW | 5 |
+| 142 | KEDLESTON SUBDIVISION | 8 |
+| 143 | KENBARGAN | 31 |
+| 144 | KENT GARDENS | 143 |
+| 145 | KENTFIELD | 8 |
+| 146 | KING'S MANOR | 117 |
+| 147 | KINGS MANOR | 48 |
+| 148 | KINGS MANOR HATCHS SECOND ADDITION | 7 |
+| 149 | KINGS MANOR TOWNHOUSES | 200 |
+| 150 | KINGS MANOR, SCOTSS ADDITION TO | 14 |
+| 151 | KIRBY KNOLL | 6 |
+| 152 | KIRBY PARK | 5 |
+| 153 | KIRBY RUN | 8 |
+| 154 | KRAMER SUBDIVISION | 2 |
+| 155 | LANE ON GEORGETOWN PIKE THE | 5 |
+| 156 | LANES RESUB. CHESTERBROOK | 10 |
+| 157 | LANGLEY COURT | 5 |
+| 158 | LANGLEY FARMS | 42 |
+| 159 | LANGLEY FOREST | 206 |
+| 160 | LANGLEY FOREST SUBDIVISION | 3 |
+| 161 | LANGLEY HILL | 13 |
+| 162 | LANGLEY MANOR | 82 |
+| 163 | LANGLEY OAKS | 311 |
+| 164 | LANGLEY SPRINGS | 6 |
+| 165 | LEGION ACRES | 3 |
+| 166 | LEWINSVILLE HEIGHTS | 112 |
+| 167 | LEWINSVILLE SQUARE | 23 |
+| 168 | LINWAY PARK OF McLEAN | 13 |
+| 169 | LINWAY TERRACE | 7 |
+| 170 | LYNWOOD | 54 |
+| 171 | MACKALL FARMS | 12 |
+| 172 | MADISON OF McLEAN | 63 |
+| 173 | MANORS AT CHAIN BRIDGE | 10 |
+| 174 | MARLBORO ESTATES | 73 |
+| 175 | MCINTOSH MANOR ADDITION TO OLDE CHESTERBROOK | 10 |
+| 176 | MCLEAN COVE | 26 |
+| 177 | MCLEAN HOUSE NORTH CONDOMINIUM | 257 |
+| 178 | MCLEAN MEADOWS ESTATES | 5 |
+| 179 | MCLEAN OFFICE SQUARE CONDOMINIUM | 23 |
+| 180 | MCLEAN/KM PROPERTIES | 3 |
+| 181 | MCLEOD SHIELDS PROPERTY SUBDIVISION | 13 |
+| 182 | MEHR FARMS | 10 |
+| 183 | MERRIMAC ESTATES | 11 |
+| 184 | MERRYHILL | 19 |
+| 185 | MERRYWOOD-ON-THE-POTOMAC | 36 |
+| 186 | McLEAN COMMONS | 27 |
+| 187 | McLEAN CORNER | 5 |
+| 188 | McLEAN CREST | 64 |
+| 189 | McLEAN HEIGHTS | 14 |
+| 190 | McLEAN KNOLLS | 38 |
+| 191 | McLEAN MANOR | 159 |
+| 192 | McLEAN MEWS | 47 |
+| 193 | McLEAN OAKS | 15 |
+| 194 | McLEAN PARK MANOR | 30 |
+| 195 | McLEAN STATION | 44 |
+| 196 | McLEAN VILLAGE | 29 |
+| 197 | McLEAN WEST | 48 |
+| 198 | McLEAN WOODS | 29 |
+| 199 | McLean Heights, Thomas Addition | 15 |
+| 200 | McNEIR MANOR | 4 |
+| 201 | NEVROS AND MELVINS ADDITION TO POTOMAC HILLS | 22 |
+| 202 | NICOLE MARIE COURT SUBDIVISION | 4 |
+| 203 | OAK VIEW | 2 |
+| 204 | OAKS AT McLEAN | 35 |
+| 205 | OAKVIEW | 4 |
+| 206 | OD-E&L MASTER CONDOMINIUM | 46 |
+| 207 | OLD DOMINION GARDENS | 82 |
+| 208 | OLD DOMINION SQUARE | 56 |
+| 209 | OLD MCLEAN VILLAGE A CONDOMINIUM | 22 |
+| 210 | PALLADIUM AT MCLEAN THE A CONDOMINIUM | 72 |
+| 211 | PARC OF MCLEAN THE | 3 |
+| 212 | PARCEL A1 MASTER CONDOMINIUM | 1 |
+| 213 | PARK GROVE | 9 |
+| 214 | PARK ROAD PROPERTY | 3 |
+| 215 | PARK WEST SUBDIVISION | 4 |
+| 216 | PARKVIEW HILLS | 48 |
+| 217 | PIMMIT HEIGHTS | 6 |
+| 218 | PIMMIT PARK ADDITION TO ELNIDO | 8 |
+| 219 | PIMMIT PARK ELNIDO | 5 |
+| 220 | PINE HILL ESTATES | 4 |
+| 221 | POPLAR PLACE | 6 |
+| 222 | POTOMAC ESTATES | 15 |
+| 223 | POTOMAC ESTATES SUBDIVISION | 10 |
+| 224 | POTOMAC HILLS | 219 |
+| 225 | POTOMAC HILLS REYNOLDS 3rd. ADDITION | 33 |
+| 226 | POTOMAC HILLS, REYNOLDS  FIRST ADDITION | 38 |
+| 227 | POTOMAC HILLS, REYNOLDS  SECOND ADDITION | 54 |
+| 228 | PROPERTY OF CORTES W RANDELL | 5 |
+| 229 | PROVIDENCE FOREST | 25 |
+| 230 | R H STOWES ADDITION TO CHESTERBROOK WOODS | 18 |
+| 231 | R S REISS ADDITION TO WESTMONT | 1 |
+| 232 | RANLEIGH | 19 |
+| 233 | REID HEIGHTS | 10 |
+| 234 | REIDS GROVE | 24 |
+| 235 | RESUBDIVISION OF OUTLOT A BRIGGS AND HOOPERS ADDITION TO CHESTERBROOK WOODS | 5 |
+| 236 | RETREAT AT MCLEAN THE | 21 |
+| 237 | REYNOLDS 4th ADDITION TO POTOMAC HILLS | 12 |
+| 238 | RICHLAND TERRACE | 5 |
+| 239 | RIVER OAKS | 122 |
+| 240 | ROCKLAND FARMS | 4 |
+| 241 | ROKEBY FARM | 3 |
+| 242 | ROKEBY FARMS | 14 |
+| 243 | ROSEMONT | 192 |
+| 244 | RUCKERS ADDITION TO LANGLEY | 48 |
+| 245 | SALONA VILLAGE | 273 |
+| 246 | SAVILE MANOR | 12 |
+| 247 | SEARS BUILDING THE A CONDOMINIUM | 5 |
+| 248 | SIGNET CONDOMINIUM THE | 121 |
+| 249 | SIMPSON AND MAYS FIRST ADDITION TO CHESTERBROOK WOODS | 41 |
+| 250 | SMOOTS ADDITION TO CHESTERBROOK WOODS | 59 |
+| 251 | SOLAR ONE CONDOMINIUM | 3 |
+| 252 | SOLITAIRE | 29 |
+| 253 | SOUTHRIDGE | 101 |
+| 254 | SOUTHRIDGE PARCEL C | 8 |
+| 255 | SPRING SIDE | 10 |
+| 256 | ST JOHNS CHURCH & YOUTH APOSTLE INST | 4 |
+| 257 | ST. JOHNS WOODS | 14 |
+| 258 | STONELEIGH | 134 |
+| 259 | STURBRIDGE SUBDIVISION | 22 |
+| 260 | SUBDIVISION OF RIDGEWOOD | 5 |
+| 261 | SUNNY SIDE SUBDIVISION | 9 |
+| 262 | TALAH | 4 |
+| 263 | TRAVIATA | 5 |
+| 264 | TREELINE | 23 |
+| 265 | TRINITY SUBDIVISION | 3 |
+| 266 | VINSON ESTATES SUBDIVISION | 5 |
+| 267 | VISTAS OF McLEAN | 14 |
+| 268 | WALDEN OF McLEAN | 22 |
+| 269 | WALKERS HILL SUBDIVISION | 5 |
+| 270 | WALTER HEIGHTS SUBDIVISION | 53 |
+| 271 | WEST GRASS RIDGE | 69 |
+| 272 | WEST LANGLEY | 60 |
+| 273 | WEST LEWINSVILLE HEIGHTS | 181 |
+| 274 | WEST LEWINSVILLE HGTS | 99 |
+| 275 | WEST McLEAN | 217 |
+| 276 | WESTMONT | 33 |
+| 277 | WESTMORELAND PLACE | 10 |
+| 278 | WILLIAM E MOSS 1ST CHESTERBROOK WOODS | 4 |
+| 279 | WILLIAMSBURG WOODS | 2 |
+| 280 | WILLOW RUN PARK | 6 |
+| 281 | WINDRIDGE ADDITION CHESTERBROOK WOODS | 15 |
+| 282 | WOOD GLYNN | 12 |
+| 283 | WOODLAND ACRES | 2 |
+| 284 | WOODY SUBDIVISION | 7 |
+| 285 | WRENWOOD | 24 |
+
+---
+
+## ZIP Code 22102 - McLean / Tysons
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 148
+- **Total Recorded Units:** 9,100
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 7601 LEWINSVILLE ROAD OFFICE CONDOMINIUM | 22 |
+| 2 | 7940 JONES BRANCH DRIVE CONDOMINIUM | 1 |
+| 3 | 8000 GEORGETOWN PIKE | 10 |
+| 4 | 8218 LEESBURG PIKE LAND CONDOMINIUM | 1 |
+| 5 | ADDITION TO BRYAN POND | 5 |
+| 6 | APPLE GROVE | 10 |
+| 7 | APPLE GROVE, HOGES ADDITION TO | 2 |
+| 8 | ASCENT CONDOMINIUM THE | 1 |
+| 9 | ASHMIT WOODS | 5 |
+| 10 | BEAUFORT PARK | 20 |
+| 11 | BELLMEADE II | 10 |
+| 12 | BELLVIEW PLACE | 5 |
+| 13 | BEXLEY CONDOMINIUM THE | 111 |
+| 14 | BLAKELY MANOR | 16 |
+| 15 | BORO PARCEL A B MASTER CONDOMINIUM THE | 25 |
+| 16 | BORO PARCEL C2 CONDOMINIUM THE | 13 |
+| 17 | BREEZEWOOD SUBDIVISION | 17 |
+| 18 | BRIDLE PATH MANOR | 10 |
+| 19 | BRYAN POND | 4 |
+| 20 | BULL NECK | 2 |
+| 21 | BULLS NECK HUNDRED | 12 |
+| 22 | CAPITAL ONE BLOCK C CONDOMINIUM | 13 |
+| 23 | CEDARS OF McLEAN | 51 |
+| 24 | CHANDLER D R | 2 |
+| 25 | CHEQUERS | 9 |
+| 26 | CHESHIRE | 7 |
+| 27 | CHINQUAPIN SUBDIVISION | 6 |
+| 28 | COLONIES THE CONDOMINIUM | 460 |
+| 29 | CONDON MANOR OF McLEAN | 16 |
+| 30 | COURTS THE | 19 |
+| 31 | DALEY WRIGHT FARMS | 8 |
+| 32 | DAVID C. & MARIE T. LEWIS | 10 |
+| 33 | DOGWOODS ADDITION TO WOODHAVEN | 41 |
+| 34 | DOLLEY MADISON VILLAGE CONDOMINIUM | 214 |
+| 35 | ENCORE OF MCLEAN A CONDOMINIUM | 221 |
+| 36 | FOSTER ESTATES ADDITION | 9 |
+| 37 | FOSTER SUBDIVISION | 10 |
+| 38 | FOUNTAINS AT MCLEAN CONDOMINIUM THE | 503 |
+| 39 | FOXHALL OF MCLEAN | 14 |
+| 40 | GARFIELD PARK | 168 |
+| 41 | GATES OF MCLEAN CONDOMINIUM THE | 625 |
+| 42 | GEORGETOWN PLACE | 16 |
+| 43 | GEORGETOWN PLACE II | 8 |
+| 44 | GEORGETOWN RIDGE | 13 |
+| 45 | GLENDALE KNOLLS | 1 |
+| 46 | GREAT HAMPTONS THE | 16 |
+| 47 | GREENSBORO SQUARE OFFICE COMPLEX | 30 |
+| 48 | GREENWAY HEIGHTS | 88 |
+| 49 | HALLCREST HEIGHTS | 158 |
+| 50 | HITCHCOCK SUBDIVISION | 4 |
+| 51 | HORVATH SUBDIVISION | 3 |
+| 52 | HUNTING RIDGE | 189 |
+| 53 | JAMES MAGARITY SUBDIVISION | 11 |
+| 54 | JAMES MAGARITY TRACT | 7 |
+| 55 | JEWELL KIRBY KEROHER | 7 |
+| 56 | KAREN FOREST | 5 |
+| 57 | L.V. HUFFMAN PROPERTY | 10 |
+| 58 | LANGLEY RIDGE | 13 |
+| 59 | LAURELMONT | 7 |
+| 60 | LEASCO OFFICE PARK | 22 |
+| 61 | LEWINSVILLE MEWS | 7 |
+| 62 | LILLIAN COURT AT TYSONS II CONDOMINIUM A | 287 |
+| 63 | LINGANORE | 17 |
+| 64 | LOFTS AT PARK CREST CONDOMINIUM THE | 2 |
+| 65 | MACINTOSH ESTATES | 7 |
+| 66 | MAPLEWOOD | 38 |
+| 67 | MARSHALL PROPERTY | 10 |
+| 68 | MCLEAN COURT | 16 |
+| 69 | MCLEAN GREENWAY HEIGHTS | 11 |
+| 70 | MCLEAN PLACE TOWNHOME CONDOMINIUM | 61 |
+| 71 | MCLEAN TERRACE | 4 |
+| 72 | MEADOW RUN | 11 |
+| 73 | MILLPOND VALLEY | 11 |
+| 74 | MILLWOOD | 26 |
+| 75 | MONARCH CONDOMINIUM | 96 |
+| 76 | MONTCLAIR | 10 |
+| 77 | MORGAN AT MCLEAN CONDOMINIUM | 33 |
+| 78 | McLEAN CHASE SUBDIVISION | 8 |
+| 79 | McLEAN COUNTRY ESTATES | 32 |
+| 80 | McLEAN ESTATES | 75 |
+| 81 | McLEAN FALLS AT CHINQUAPIN | 16 |
+| 82 | McLEAN HAMLET | 506 |
+| 83 | McLEAN HILLS A CONDOMINIUM | 148 |
+| 84 | McLEAN HUNT | 104 |
+| 85 | McLEAN HUNT ESTATES | 61 |
+| 86 | McLEAN RUN | 4 |
+| 87 | ODRICKS SUBDIVISION | 3 |
+| 88 | OLD GEORGETOWN ESTATES | 16 |
+| 89 | OLDE SWINKS MILL ESTATES | 56 |
+| 90 | ONE PARK CREST CONDOMINIUM | 335 |
+| 91 | OVERVIEW | 6 |
+| 92 | PEACOCK ESTATES | 4 |
+| 93 | PEACOCK STATION SUBDIVISION | 37 |
+| 94 | PETTIT PLACE | 6 |
+| 95 | PLEASANT KNOLLS SUBDIVISION | 24 |
+| 96 | POTOMAC KNOLLS SUBDIVISION | 20 |
+| 97 | POTOMAC OVERLOOK | 46 |
+| 98 | POTOMAC RIDGE | 7 |
+| 99 | PRESERVE AT SCOTTS RUN THE | 18 |
+| 100 | PROSPECT HILL | 28 |
+| 101 | RAM ESTATES SUBDIVISION | 5 |
+| 102 | REGENCY CLUB OF MCLEAN CONDOMINIUM | 321 |
+| 103 | REIDS ADDITION TO WOODSIDE ESTATES | 9 |
+| 104 | RICHARD T JACKSON | 11 |
+| 105 | ROCKY RUN RIDGE | 5 |
+| 106 | ROCKY RUN SUBDIVISION | 8 |
+| 107 | ROLLING VIEW | 5 |
+| 108 | ROTUNDA CONDOMINIUM THE | 1,168 |
+| 109 | SAIGON SUBDIVISION | 43 |
+| 110 | SALOME SUBDIVISION | 4 |
+| 111 | SCOTTS RUN SUBDIVISION | 24 |
+| 112 | SMC McLEAN | 96 |
+| 113 | SPRING HILL FARM LAND | 18 |
+| 114 | SPRING HILL ROAD | 37 |
+| 115 | SPRING MEADOWS SUBDIVISION | 10 |
+| 116 | SPRINGHAVEN ESTATES | 45 |
+| 117 | SPRINGWOOD OF McLEAN | 7 |
+| 118 | STONY POINT | 5 |
+| 119 | SUGAR MILL MEADOW | 19 |
+| 120 | SUMMERWOOD | 59 |
+| 121 | SWINKS MILL | 10 |
+| 122 | SWINKS MILL ACRES | 11 |
+| 123 | SWINKS MILL WOODS | 20 |
+| 124 | THE BORO | 6 |
+| 125 | TIMBERLY | 51 |
+| 126 | TIMBERLY SOUTH | 84 |
+| 127 | TOLLBROOK RIDGE | 8 |
+| 128 | TRAMMELLS ADDITION TO SAIGON | 4 |
+| 129 | TROXELL MANOR | 8 |
+| 130 | TYSONS II | 122 |
+| 131 | UNION PARK AT MCLEAN CONDOMINIUM | 227 |
+| 132 | URQUHART SUBDIVISION | 5 |
+| 133 | VANELL ADDITION LANGLEY RIDGE | 3 |
+| 134 | VERSE CONDOMINIUM THE | 140 |
+| 135 | VICTOR COURT | 5 |
+| 136 | VISTA WOODS | 6 |
+| 137 | WELLS DIVISION | 7 |
+| 138 | WESTERLIES THE | 201 |
+| 139 | WESTGATE INDUSTRIAL PARK | 58 |
+| 140 | WESTGATE PARK | 63 |
+| 141 | WESTPARK SUBDIVISION | 275 |
+| 142 | WINDY HILL | 13 |
+| 143 | WINSTON SUBDIVISION | 3 |
+| 144 | WOODHAVEN | 53 |
+| 145 | WOODLEA MILL | 67 |
+| 146 | WOODSIDE ESTATES | 200 |
+| 147 | WOODSIDE PARK | 15 |
+| 148 | ZUCKERMANS ADDITION TO GREENWAY HEIGHTS | 13 |
+
+---
+
+## ZIP Code 22103 - McLean
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22106 - McLean
+
+- **Postal Classification:** PO Box / Commercial
+- **Total Subdivisions:** 1
+- **Total Recorded Units:** 1
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | INGLESIDE | 1 |
+
+---
+
+## ZIP Code 22107 - McLean
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22108 - McLean
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22109 - McLean
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22116 - Merrifield
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22118 - Oakton
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22119 - Oakton
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22121 - Mount Vernon
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22122 - Newington
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22124 - Oakton
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 197
+- **Total Recorded Units:** 6,437
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | AIRSTON AT FOX MILL | 25 |
+| 2 | ALLANS ADDITION TO FAIRFAX FARMS | 6 |
+| 3 | ARROWOOD | 167 |
+| 4 | ASHTON | 10 |
+| 5 | AVON GLEN | 17 |
+| 6 | AVON PARK | 50 |
+| 7 | AVONDALE GLEN | 33 |
+| 8 | BARDEN OAKS | 30 |
+| 9 | BARRINGTON WOODS | 6 |
+| 10 | BERRYLAND FARM | 152 |
+| 11 | BLACKSTONE AT VALE RIDGE | 5 |
+| 12 | BLAKE COURTYARD ESTATES | 6 |
+| 13 | BLAKELEE | 77 |
+| 14 | BRIAN'S HILL ESTATES SUBDIVISION | 7 |
+| 15 | BRIDGES OF OAKTON | 36 |
+| 16 | BUTTE PROPERTY | 4 |
+| 17 | C.R. BOTKIN PROPERTY | 6 |
+| 18 | CARMEL IN THE WOODS SUBDIVISION | 11 |
+| 19 | CAVALIER'S ADDITION TO FOX LAKE | 16 |
+| 20 | CHERRYWOOD SQUARE | 90 |
+| 21 | CIMMARON OAKS CONDOMINIUM | 32 |
+| 22 | CINNAMON RIDGE | 158 |
+| 23 | CLARKE PROPERTY | 3 |
+| 24 | CLARKES LANDING | 140 |
+| 25 | CONCORD VILLAGE | 176 |
+| 26 | CONNEMARA | 18 |
+| 27 | CONSTANCE L COOPER | 7 |
+| 28 | CRONIN PROPERTY | 3 |
+| 29 | CYRANDALL VALLEY | 3 |
+| 30 | CYRANDALL VALLEY PROPERTY | 41 |
+| 31 | DARTMOOR WOODS | 32 |
+| 32 | DOGWOOD KNOLLS | 5 |
+| 33 | EDGEMOORE MANOR | 15 |
+| 34 | ELLICOTT SUBDIVISION | 6 |
+| 35 | ENGLISH OAKS | 6 |
+| 36 | EVERGREEN SQUARE | 22 |
+| 37 | FAIRFAX FARMS | 1 |
+| 38 | FAIRHUNT ESTATES | 9 |
+| 39 | FAIRWINDS | 44 |
+| 40 | FIRST ADDITION TO SILKWOOD | 10 |
+| 41 | FLINT HILL MANOR TOWNHOUSE | 86 |
+| 42 | FOUR WINDS AT OAKTON CONDOMINIUM | 368 |
+| 43 | FOX DEN | 23 |
+| 44 | FOX DEN ESTATES | 11 |
+| 45 | FOX HERITAGE | 76 |
+| 46 | FOX HILLS | 27 |
+| 47 | FOX LAKE | 42 |
+| 48 | FOX VALE | 18 |
+| 49 | FOX VALE ESTATES | 55 |
+| 50 | FOX VALE GLEN | 6 |
+| 51 | FOX VALE SUBDIVISION | 48 |
+| 52 | FOXVALE | 87 |
+| 53 | FOXWOOD | 45 |
+| 54 | GILMAR ESTATES | 15 |
+| 55 | GRAY STREET | 5 |
+| 56 | GRAY'S SUBDIVISION | 52 |
+| 57 | GRAYS OAKTON | 37 |
+| 58 | GRAYS SUBD | 2 |
+| 59 | GRENFELL SUBDIVISION | 4 |
+| 60 | HAINES PROPERTY | 2 |
+| 61 | HAMDEN VALE | 14 |
+| 62 | HANNAH HILLS | 39 |
+| 63 | HANNAH, ROBERT PPTY | 3 |
+| 64 | HANNAH, ROBERT V PPTY | 3 |
+| 65 | HANNAS RUN | 6 |
+| 66 | HEARTHSTONE VILLAGE OAKTON | 59 |
+| 67 | HICKORY HILLS | 20 |
+| 68 | HICKORY HILLS II | 7 |
+| 69 | HICKORY HILLS III | 15 |
+| 70 | HICKORY HOLLOW FOREST | 21 |
+| 71 | HIDDEN ESTATES | 8 |
+| 72 | HIDDEN VALLEY | 2 |
+| 73 | HILL ACRES | 6 |
+| 74 | HOLLY ACRES SUBDIVISION | 5 |
+| 75 | HOLLYBROOK | 11 |
+| 76 | HUNT VALLEY ESTATES | 78 |
+| 77 | HUNTER CROSSING | 6 |
+| 78 | HUNTERBROOKE | 15 |
+| 79 | HUNTERS VALE | 9 |
+| 80 | HUNTERS VALLEY | 10 |
+| 81 | HUNTING HILLS | 48 |
+| 82 | LAKE RIDGE SUBDIVISION | 16 |
+| 83 | LITTLE DIFFICULT FARMS | 10 |
+| 84 | LLOYD HILL ESTATES | 5 |
+| 85 | MADISON MEADOWS | 5 |
+| 86 | MAGNOLIA OAKS CONDOMINIUM | 20 |
+| 87 | MANOR STATION | 6 |
+| 88 | MARBURY WOODS | 6 |
+| 89 | MARIE PERZEL PROPERTY | 7 |
+| 90 | MARY A EDELIN | 6 |
+| 91 | MARY A. EDELIN SUBDIVISION | 3 |
+| 92 | MARY EDELIN SUBDIVISION | 3 |
+| 93 | MILL RUN CROSSING | 83 |
+| 94 | MILLER HEIGHTS | 35 |
+| 95 | MITCHELL S. CUTLER | 4 |
+| 96 | MORGAN ACRES | 3 |
+| 97 | MURTHY MANORS | 3 |
+| 98 | OAK CREEK | 47 |
+| 99 | OAK MANOR | 39 |
+| 100 | OAK MARR COURTS | 135 |
+| 101 | OAKBOROUGH SQUARE | 40 |
+| 102 | OAKCREST FARMS | 47 |
+| 103 | OAKCREST FARMS ESTATES | 7 |
+| 104 | OAKLEIGH | 38 |
+| 105 | OAKLEIGH WOODS | 29 |
+| 106 | OAKMONT | 12 |
+| 107 | OAKTON | 4 |
+| 108 | OAKTON A CONDOMINIUM THE | 242 |
+| 109 | OAKTON COMMONS | 41 |
+| 110 | OAKTON CROSSING | 7 |
+| 111 | OAKTON EAST | 36 |
+| 112 | OAKTON ESTATES | 7 |
+| 113 | OAKTON GREEN | 6 |
+| 114 | OAKTON HEIGHTS | 17 |
+| 115 | OAKTON HILLS ESTATES | 18 |
+| 116 | OAKTON HOLLOWS | 5 |
+| 117 | OAKTON KNOLL ESTATES | 23 |
+| 118 | OAKTON MAINS | 23 |
+| 119 | OAKTON MANOR | 38 |
+| 120 | OAKTON MILL ESTATES | 81 |
+| 121 | OAKTON PROFESSIONAL CENTER CONDOMINIUM | 27 |
+| 122 | OAKTON RETREAT SUBDIVISION | 16 |
+| 123 | OAKTON RIDGE ESTATES | 14 |
+| 124 | OAKTON SQUARE | 6 |
+| 125 | OAKTON STATION | 12 |
+| 126 | OAKTON VALE | 61 |
+| 127 | OAKTON VIEW SUBDIVISION | 22 |
+| 128 | OAKTON VILLAGE | 290 |
+| 129 | OAKTON WOODS | 7 |
+| 130 | OAKTON WOODS ESTATES | 19 |
+| 131 | PALMER GLEN | 21 |
+| 132 | PEN ACRES | 10 |
+| 133 | PENDERWOOD | 39 |
+| 134 | PERSHINGS FIELD | 7 |
+| 135 | PETRELLIS ADDITION TO AVON PARK | 6 |
+| 136 | PRESTON HEIGHTS | 13 |
+| 137 | PROFFITT SUBD | 6 |
+| 138 | PROFFITT SUBDIVISION | 4 |
+| 139 | PROPERTY OF ROBERT L & ROSEMARY S. THORBURN | 2 |
+| 140 | RAINWATER RUN SUBDIVISION | 7 |
+| 141 | RESERVE AT TIMBER LAKE, THE | 12 |
+| 142 | RESERVE AT WAPLES MILL, THE | 28 |
+| 143 | RICE PROPERTY | 11 |
+| 144 | RICHARD I. SOURS SUBDIVISION | 2 |
+| 145 | RIDGECREST | 13 |
+| 146 | ROAN STALLON ESTATES | 12 |
+| 147 | ROBERT & ROSEMARY THOBURN | 1 |
+| 148 | SILKWOOD | 8 |
+| 149 | SOUTH FORK | 6 |
+| 150 | STUART MILL ACRES | 3 |
+| 151 | STUART MILL ESTATES | 10 |
+| 152 | STUART MILL LANDING | 4 |
+| 153 | STUARTS MILL WOODS | 68 |
+| 154 | TADDEO ESTATES | 2 |
+| 155 | TAJ THE | 8 |
+| 156 | TATTERSALL | 71 |
+| 157 | TATTERSALL RJLS ADDITION | 4 |
+| 158 | TATTERSALL SUBDIVISION | 43 |
+| 159 | THE MANORS OF FOX MILL | 27 |
+| 160 | THE VISTAS CONDOMINIUM | 48 |
+| 161 | TIMBER LAKE PROPERTY | 56 |
+| 162 | TIMBERLINE ESTATES | 3 |
+| 163 | TIMBERTON | 11 |
+| 164 | TIMBERTON WEST | 6 |
+| 165 | TREEBROOKE CONDOMINIUM | 54 |
+| 166 | TREVOR HOUSE CONDOMINIUM | 128 |
+| 167 | TWA BURNIE SUBDIVISION | 1 |
+| 168 | TWIN OAK PLAZA CONDOMINIUM | 10 |
+| 169 | TWINMILL | 59 |
+| 170 | VALE PARK | 18 |
+| 171 | VALE PARK WEST | 90 |
+| 172 | VALE PARK WEST SUBDIVISION | 24 |
+| 173 | VALE SPRING WOODS | 42 |
+| 174 | VALE VALLEY ESTATES | 43 |
+| 175 | VALE VALLEY ESTS | 4 |
+| 176 | VALE VISTA ESTATES | 4 |
+| 177 | VALE WOOD KNOLLS | 5 |
+| 178 | VALEWOOD MANOR | 142 |
+| 179 | VALEWOODS | 7 |
+| 180 | VINTAGE CREST | 5 |
+| 181 | VISTAS OF VIENNA CONDOMINIUM | 72 |
+| 182 | VISTAS OF VIENNA CONDOMINIUM EAST | 72 |
+| 183 | WAPLES CREST | 16 |
+| 184 | WAPLES GLEN SUBDIVISION | 6 |
+| 185 | WAPLES MILL ESTATES | 192 |
+| 186 | WAPLES MILL MANOR | 17 |
+| 187 | WEBER PROPERTY | 14 |
+| 188 | WESTOAKS | 29 |
+| 189 | WHEATLAND FARMS | 48 |
+| 190 | WILLOW CREEK ESTATES | 52 |
+| 191 | WILLOW OAKS | 8 |
+| 192 | WINDSONG | 26 |
+| 193 | WINDSONG SOUTH | 12 |
+| 194 | WINDSONG SOUTH 1ST ADDITION | 12 |
+| 195 | WINDSONG WEST | 27 |
+| 196 | WYANT PROPERTY | 112 |
+| 197 | WYNBERN | 4 |
+
+---
+
+## ZIP Code 22150 - Springfield (Central)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 65
+- **Total Recorded Units:** 6,786
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ACCOTINK BLUFF | 14 |
+| 2 | ACCOTINK BLUFF ESTATES | 44 |
+| 3 | ACCOTINK PARK | 3 |
+| 4 | ALBAN CENTER | 15 |
+| 5 | B. F. WILTSHIRES ADDITION TO FAIR VERNON | 20 |
+| 6 | BEN FRANKLIN PARK | 110 |
+| 7 | BEVERLY FOREST | 124 |
+| 8 | BEVERLY PARK | 153 |
+| 9 | BONNIEMILL ACRES SUBDIVISION | 102 |
+| 10 | BONNIEMILL OAKS SUBDIVISION | 7 |
+| 11 | CATON WOODS | 20 |
+| 12 | CHARLESTON COLLECTION AT SPRINGFIELD FOREST | 65 |
+| 13 | DEVERS PROPERTY | 5 |
+| 14 | DODSON ESTATES | 1 |
+| 15 | DUDROW SUBDIVISION | 9 |
+| 16 | EAST GARFIELD TRACT | 11 |
+| 17 | FRANCONIA HEIGHTS | 38 |
+| 18 | FRANKLIN MEWS | 22 |
+| 19 | GRANDVIEW OF VA | 129 |
+| 20 | GRAVES ADDITION TO SPRINGVALE | 6 |
+| 21 | HIGHGROVE ESTATES | 163 |
+| 22 | HIGHLAND BUSINESS PARK CONDOMINIUM | 12 |
+| 23 | HOOES ROAD PROPERTY | 6 |
+| 24 | HUGO MATERS SUBDIVISION | 6 |
+| 25 | HUNTER TRACT SUBDIVISION | 105 |
+| 26 | HURON POINT | 8 |
+| 27 | INTERSTATE INDUSTRIAL PARK | 18 |
+| 28 | JAPONICA | 444 |
+| 29 | LAUREL CREEK | 38 |
+| 30 | LOISDALE ESTATES | 288 |
+| 31 | LYNBROOK | 296 |
+| 32 | MERIWETHER ESTATES | 37 |
+| 33 | MEYERS SUBDIVISION | 18 |
+| 34 | MONTICELLO FOREST | 297 |
+| 35 | MONTICELLO WOODS | 311 |
+| 36 | NEWINGTON BELVOIR INDUSTRIAL PARK | 23 |
+| 37 | PR SPRINGFIELD TOWN CENTER LLC | 232 |
+| 38 | PREMIER PLAZA CONDOMINUIM | 39 |
+| 39 | SCHUPP'S ADDITION TO SPRINGFIELD FOREST | 7 |
+| 40 | SHIRLEY SPRINGS | 21 |
+| 41 | SOUTH PARK | 6 |
+| 42 | SPRING VILLAGE ESTATES SUBDIVISION | 18 |
+| 43 | SPRINGFIELD | 1,383 |
+| 44 | SPRINGFIELD ESTATES | 434 |
+| 45 | SPRINGFIELD FOREST | 176 |
+| 46 | SPRINGFIELD FOREST SCHUPPS ADDITION | 2 |
+| 47 | SPRINGFIELD GREEN, A CONDOMINIUM | 99 |
+| 48 | SPRINGFIELD MALL | 3 |
+| 49 | SPRINGFIELD PARK | 145 |
+| 50 | SPRINGFIELD PLAZA | 72 |
+| 51 | SPRINGFIELD SOUTH OFFICE CONDOMINIUM | 8 |
+| 52 | SPRINGFIELD SQUARE | 116 |
+| 53 | SPRINGFIELD VILLAGE | 107 |
+| 54 | SPRINGVALE | 271 |
+| 55 | TALBERT SUBDIVISION | 15 |
+| 56 | TOWNES OF MANCHESTER WOODS THE | 118 |
+| 57 | TOWNS AT VILLA PARK | 40 |
+| 58 | TRUE LANE PROPERTY | 8 |
+| 59 | TYLEE'S ADDITION TO SPRINGVALE | 7 |
+| 60 | VILLA-del-REY | 77 |
+| 61 | WESTHAVEN | 192 |
+| 62 | WOODLAND SUBDIVISION | 17 |
+| 63 | YATES VILLAGE | 137 |
+| 64 | YORK MANOR | 57 |
+| 65 | ZEKAN VILLAGE | 11 |
+
+---
+
+## ZIP Code 22151 - Springfield (North)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 35
+- **Total Recorded Units:** 5,701
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | BACKLICK EXECUTIVE CENTRE A CONDOMINIUM | 7 |
+| 2 | BACKLICK PROFESSIONAL VILLAGE | 16 |
+| 3 | BACKLICK PROFESSIONAL VILLAGE A CONDOMINIUM | 29 |
+| 4 | BACKLICK RUN WOODS - TWO | 11 |
+| 5 | BRADDOCK MEWS | 32 |
+| 6 | BRADDOCK OAKS | 20 |
+| 7 | CAROLINA PLACE OFFICE CONDOMINIUM | 11 |
+| 8 | CLEARFIELD | 28 |
+| 9 | DANBURY FOREST | 326 |
+| 10 | EDSALL PARK | 482 |
+| 11 | EDSALL ROAD PROPERTY | 3 |
+| 12 | FIRST ADDITTION TO LEEWOOD ESTATES | 4 |
+| 13 | GRANBERRY ESTATES | 13 |
+| 14 | KINGS PARK | 1,147 |
+| 15 | LARRLYN ESTATES | 3 |
+| 16 | LEESVILLE VILLAGE OFFICE CONDOMINIUM | 16 |
+| 17 | LEEWOOD | 252 |
+| 18 | LEEWOOD ESTATES | 12 |
+| 19 | LEEWOOD FOREST | 100 |
+| 20 | LEEWOOD RESUB | 7 |
+| 21 | MEADOWOOD FOREST | 5 |
+| 22 | NORTH SPRINGFIELD | 1,981 |
+| 23 | NORTH SPRINGFIELD CENTER A CONDOMINIUM | 25 |
+| 24 | NORTH SPRINGFIELD PARK | 138 |
+| 25 | RAVENSWORTH | 791 |
+| 26 | RAVENSWORTH INDUSTRIAL PARK | 143 |
+| 27 | RESUBDIVISION OF PART OF lOT 13, LEEWOOD | 5 |
+| 28 | SECOND ADDITION TO LEEWOOD ESTATES | 8 |
+| 29 | SEQUOIA PARK | 21 |
+| 30 | SHIRLEY INDUSTRIAL PARK | 30 |
+| 31 | SPRINGFIELD MANOR | 3 |
+| 32 | SUBDIVISION OF 7017 WOODLAND DRIVE | 4 |
+| 33 | WOODLAND MEADOWS | 4 |
+| 34 | WOODLAND VILLAGE SUBDIVISION | 15 |
+| 35 | WOODLAND WAY ESTATES | 9 |
+
+---
+
+## ZIP Code 22152 - Springfield (West)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 85
+- **Total Recorded Units:** 10,450
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | BARKERS VILLAGE | 3 |
+| 2 | BAUER PROPERTY | 25 |
+| 3 | BENTLEY VILLAGE | 99 |
+| 4 | BRAMBLEWOOD | 3 |
+| 5 | CAMEO GLEN | 18 |
+| 6 | CARDINAL ESTATES | 4 |
+| 7 | CARDINAL FOREST | 550 |
+| 8 | CARDINAL FOREST CONDOMINIUM | 1,054 |
+| 9 | CARDINAL FOREST SUBDIVISION | 181 |
+| 10 | CARDINAL HILL 3 | 14 |
+| 11 | CARDINAL RUN | 22 |
+| 12 | CARDINAL RUN II | 23 |
+| 13 | CARDINAL SQUARE | 153 |
+| 14 | CARY PROFESSIONAL CENTER CONDOMINIUM | 25 |
+| 15 | CENTER PARK | 26 |
+| 16 | CHARLESTOWN | 501 |
+| 17 | COCKS COVE | 6 |
+| 18 | DAVENTRY PARK | 36 |
+| 19 | EVANGEL ESTATES | 1 |
+| 20 | FAIRFAX PARK | 69 |
+| 21 | FAIRFAX PARK UNIT 1 | 4 |
+| 22 | FAIRFAX PARK UNIT 1, 2 & 3 | 62 |
+| 23 | FIRST ADDITION TO ORANGE HUNT ESTATES | 4 |
+| 24 | GLEN OAKS SUBDIVISION | 22 |
+| 25 | GREENTREE VILLAGE | 125 |
+| 26 | GRUM WOODS | 3 |
+| 27 | HIDDENBROOKE CONDOMINIUM | 91 |
+| 28 | HILLSIDE COMMONS | 38 |
+| 29 | HILLSIDE LANDING | 60 |
+| 30 | HILLSIDE RIDGE | 30 |
+| 31 | HILLSIDE ROAD PROP. | 27 |
+| 32 | HUNTER VILLAGE | 726 |
+| 33 | JAMES CREEK | 38 |
+| 34 | KEENE MILL HEIGHTS | 17 |
+| 35 | KEENE MILL MANOR | 471 |
+| 36 | KEENE MILL OAKS SECOND ADDITION | 13 |
+| 37 | KEENE MILL OVERLOOK | 25 |
+| 38 | KEENE MILL STATION | 236 |
+| 39 | KEENE MILL VILLAGE | 380 |
+| 40 | KENWOOD HILLS | 75 |
+| 41 | KENWOOD OAKS | 99 |
+| 42 | KENWOOD TOWNES | 45 |
+| 43 | LEE-BROOKE | 39 |
+| 44 | LINDENWOOD | 12 |
+| 45 | MATTES ADDITION TO ROLLING VALLEY | 8 |
+| 46 | MILLWOOD ESTATES | 81 |
+| 47 | MILTON ADDITION TO DAVENTRY PARK | 35 |
+| 48 | OLDE OAK RIDGE | 131 |
+| 49 | ORANGE HUNT ESTATES | 452 |
+| 50 | ORNDORFF SUBDIVISION | 1 |
+| 51 | PARK FOREST | 13 |
+| 52 | PRESIDENTIAL HILLS | 1 |
+| 53 | PROSPECT GLEN SUBDIVISION | 14 |
+| 54 | RAMBLEWOOD AT DAVENTRY A CONDOMINIUM | 160 |
+| 55 | RED FOX ESTATES | 23 |
+| 56 | RESIDENCES AT MCCONNELL MANOR | 25 |
+| 57 | RHYGATE | 100 |
+| 58 | ROLLING FOREST | 438 |
+| 59 | ROLLING MILL OFFICE PARK A CONDOMINIUM | 24 |
+| 60 | ROLLING MILL PROFESSIONAL PARK | 21 |
+| 61 | ROLLING VALLEY | 647 |
+| 62 | ROLLING VALLEY CLUSTER | 15 |
+| 63 | SCHWARTZ ACREAGE | 17 |
+| 64 | SCHWARTZ ACREAGE UNIT 1 | 9 |
+| 65 | SHANNON STATION | 374 |
+| 66 | SOUTHERN GROVE | 111 |
+| 67 | SPRING FOREST | 27 |
+| 68 | SPRINGFIELD PROFESSIONAL PARK A CONDOMINIUM | 51 |
+| 69 | STREAM VALLEY ESTATES | 18 |
+| 70 | THE TALLWOODS | 127 |
+| 71 | THE TIMBERS | 391 |
+| 72 | TIVOLI | 272 |
+| 73 | UNITED PLAZA OFFICE CONDOMINIUM | 17 |
+| 74 | WENTWORTH GLEN | 9 |
+| 75 | WEST SPRINGFIELD | 564 |
+| 76 | WEST SPRINGFIELD BUSINESS CENTER | 21 |
+| 77 | WEST SPRINGFIELD MEWS | 31 |
+| 78 | WEST SPRINGFIELD PROFESSIONAL BUILDING A CONDOMINIUM | 11 |
+| 79 | WEST SPRINGFIELD TERRACE | 25 |
+| 80 | WEST SPRINGFIELD VILLAGE | 425 |
+| 81 | WESTBURY OAKS | 39 |
+| 82 | WESTMEATH | 21 |
+| 83 | WESTVIEW HILLS | 175 |
+| 84 | WHITLERS CREEK | 25 |
+| 85 | WOODS OF POHICK, THE | 46 |
+
+---
+
+## ZIP Code 22153 - Springfield (South / Newington)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 96
+- **Total Recorded Units:** 11,108
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 7904 YARNWOOD CONDOMINIUM | 4 |
+| 2 | AFTON GLEN | 142 |
+| 3 | ANGUS BUSINESS CENTER | 12 |
+| 4 | BARKERS VILLAGE | 19 |
+| 5 | BETHELEN WOODS | 175 |
+| 6 | BRAMBLEWOOD | 124 |
+| 7 | BRISTOL SQUARE | 43 |
+| 8 | BUILDAMERICA TWO A CONDOMINIUM | 26 |
+| 9 | BUILDAMERICA-1 A CONDOMINIUM | 26 |
+| 10 | BURGOYNE FOREST WEST | 127 |
+| 11 | CHANCELOR FARMS | 141 |
+| 12 | CHAPEL ACRES | 74 |
+| 13 | CORBETT MANOR SUBDIVISION | 7 |
+| 14 | COVERED BRIDGE | 38 |
+| 15 | COVINGTON WOODS | 9 |
+| 16 | COVINGTON WOODS ADDITION | 4 |
+| 17 | DONEGAL OAKS | 46 |
+| 18 | ELENORE HINTON PROPERTY | 3 |
+| 19 | EVANGEL ESTATES | 6 |
+| 20 | FIRST ADDITION TO ORANGE HUNT ESTATES | 178 |
+| 21 | FOREST AT SOUTHRUN | 139 |
+| 22 | FOREST VIEW | 67 |
+| 23 | FULLERTON CENTER BUSINESS CONDOMINIUM | 20 |
+| 24 | FULLERTON INDUSTRIAL PARK | 201 |
+| 25 | FULLERTON INDUSTRIAL PARK 1ST ADDITION | 45 |
+| 26 | FULLERTON INDUSTRIAL PARK A WAREHOUSE CONDOMINIUM | 6 |
+| 27 | FULLERTON INDUSTRIAL PARK, SECOND ADDITION TO | 14 |
+| 28 | GAMBRILL COURT | 46 |
+| 29 | GAMBRILL ESTATES | 16 |
+| 30 | GAMBRILL OAKS | 23 |
+| 31 | GAMBRILL POINTE | 20 |
+| 32 | GAMBRILL WOODS | 18 |
+| 33 | GLENWOOD MANOR | 467 |
+| 34 | GREENWOOD ESTATES | 99 |
+| 35 | HUNTSMAN MANOR SUBDIVISION | 7 |
+| 36 | INNISFREE | 47 |
+| 37 | KNOLLS AT MIDDLE RUN | 41 |
+| 38 | LAKEWOOD HILLS | 1,075 |
+| 39 | LAUREL HILL NORTH | 18 |
+| 40 | LAURELWOOD | 21 |
+| 41 | LAURELWOOD II | 10 |
+| 42 | MAZZELLO COVE | 8 |
+| 43 | MIDDLE RUN ESTATES | 28 |
+| 44 | MIDDLE VALLEY | 275 |
+| 45 | MIDDLEFORD | 148 |
+| 46 | MIDDLEFORD RIDGE | 13 |
+| 47 | NEWINGTON FOREST | 1,764 |
+| 48 | NEWINGTON STATION | 609 |
+| 49 | NEWINGTON STATION SWIMMING POOL | 1 |
+| 50 | NEWINGTON WOODS | 49 |
+| 51 | NEWINGTON WOODS WEST | 28 |
+| 52 | ORANGE HUNT ESTATES | 60 |
+| 53 | ORANGE HUNT ESTATES WEST | 242 |
+| 54 | ORANGE HUNT SQUARE | 130 |
+| 55 | PARK POINTE | 18 |
+| 56 | POHICK CREEK ESTATES | 5 |
+| 57 | POHICK CROSSING | 11 |
+| 58 | POHICK FOREST SUBDIVISION | 14 |
+| 59 | POHICK OVERLOOK | 14 |
+| 60 | POHICK RETREAT | 15 |
+| 61 | POHICK WOODS | 15 |
+| 62 | PRESIDENTIAL HILLS SUBDIVISION | 65 |
+| 63 | RIDGE ROAD ESTATES | 37 |
+| 64 | ROLLING FULLERTON PHASE II, PARCEL D, CONDOMINIUM | 14 |
+| 65 | ROLLING GREEN | 21 |
+| 66 | ROLLING OAKS | 16 |
+| 67 | ROLLING VALLEY | 450 |
+| 68 | ROLLING-FULLERTON | 28 |
+| 69 | ROLLINGWOOD SUBDIVISION | 8 |
+| 70 | ROLLINGWOOD WEST | 10 |
+| 71 | SABINA ROLLING ESTATES SUBDIVISION | 9 |
+| 72 | SARATOGA | 691 |
+| 73 | SARATOGA TOWNHOUSES | 461 |
+| 74 | SARATOGA TOWNS | 10 |
+| 75 | SCARBOROUGH SUBDIVISION | 29 |
+| 76 | SCIENTIFIC DEVICES BUILDING, A CONDOMINIUM | 5 |
+| 77 | SHADOWBROOK | 127 |
+| 78 | SOMERSET AT SOUTH RUN | 123 |
+| 79 | SOUTH RUN FOREST | 327 |
+| 80 | SOUTH WIND | 19 |
+| 81 | SPRING WOODS | 53 |
+| 82 | SPRINGFIELD GLEN | 89 |
+| 83 | SPRINGFIELD OAKS | 382 |
+| 84 | SUBDIVISION OF THE LAND OF WILL H. KRAUS | 5 |
+| 85 | SUMMIT WALK | 51 |
+| 86 | TARA HEIGHTS | 37 |
+| 87 | TERRA GRANDE | 260 |
+| 88 | TOWNES OF ORANGE HUNT THE | 155 |
+| 89 | VA 95 ASSOCIATE PROPERTY | 33 |
+| 90 | VA 95 BUSINESS PARK | 4 |
+| 91 | WALNUT KNOLL | 20 |
+| 92 | WESLEY CRANFORD ESTATES | 41 |
+| 93 | WESLEY H. CRANFORD | 34 |
+| 94 | WESTWATER POINT | 101 |
+| 95 | WHISPERWOOD | 120 |
+| 96 | WOODSTREAM | 222 |
+
+---
+
+## ZIP Code 22156 - Springfield
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22158 - Springfield
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22159 - Springfield (Industrial)
+
+- **Postal Classification:** PO Box / Commercial
+- **Total Subdivisions:** 1
+- **Total Recorded Units:** 1
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | SHIRLEY INDUSTRIAL PARK | 1 |
+
+---
+
+## ZIP Code 22160 - Springfield (Industrial)
+
+- **Postal Classification:** PO Box / Commercial
+- **Total Subdivisions:** 1
+- **Total Recorded Units:** 1
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | RAVENSWORTH INDUSTRIAL PARK | 1 |
+
+---
+
+## ZIP Code 22161 - Springfield (Industrial)
+
+- **Postal Classification:** PO Box / Commercial
+- **Total Subdivisions:** 1
+- **Total Recorded Units:** 1
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | RAVENSWORTH INDUSTRIAL PARK | 1 |
+
+---
+
+## ZIP Code 22180 - Vienna (Town / South)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 226
+- **Total Recorded Units:** 8,084
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 100 CHURCH STREET CONDOMINIUMS | 37 |
+| 2 | 307 OFFICE COMPLEX | 1 |
+| 3 | 311 CONDOMINIUM COMMERCIAL OFFICE COMPLEX | 10 |
+| 4 | 360-370 CONDOMINIUM OFFICE COMPLEX | 11 |
+| 5 | 410 PINE STREET CONDOMINIUM | 3 |
+| 6 | 600 NUTLEY STREET SW | 2 |
+| 7 | ADELMANS 1ST EAST | 2 |
+| 8 | AINSTREE | 7 |
+| 9 | ALBEAS ADDITION TO AYRHILL | 18 |
+| 10 | ALLEN DALE SUBDIVISION | 4 |
+| 11 | ALVA MISHOE | 2 |
+| 12 | AMANDA PLACE II | 40 |
+| 13 | AMANDA PLACE III | 16 |
+| 14 | AUDREYS MANOR | 3 |
+| 15 | AUFFENBERS JOHN SUBD | 7 |
+| 16 | AVALON | 6 |
+| 17 | AVENIR PLACE LAND CONDOMINIUM | 10 |
+| 18 | AVONDALE | 5 |
+| 19 | AYR HILL | 5 |
+| 20 | AYR HILL HEIGHTS | 57 |
+| 21 | AYR HILL PARK | 13 |
+| 22 | AYR HILL SQUARE | 16 |
+| 23 | AYR HILL STATION CONDOMINIUM | 4 |
+| 24 | AYR HILL TRACT | 13 |
+| 25 | AYRHILL ESTATES | 19 |
+| 26 | AYRHILL TRACT | 41 |
+| 27 | BEECHWOOD | 12 |
+| 28 | BENNETT KILN | 18 |
+| 29 | BERKLEY MANOR | 34 |
+| 30 | BERRYS AYR HILL | 8 |
+| 31 | BEULAH HEIGHTS | 35 |
+| 32 | BIRCH OFFICE CONDOMINIUM | 5 |
+| 33 | BLAEUER SUBD | 5 |
+| 34 | BLAINE SUBDIVISION | 10 |
+| 35 | BLAIR WOODS | 13 |
+| 36 | BLAKE ESTATES | 7 |
+| 37 | BRADMOOR | 10 |
+| 38 | BRIARWOOD FARMS | 2 |
+| 39 | BRICK BAY ROW CONDOMINIUM | 11 |
+| 40 | BROADLEAF TERRACE | 19 |
+| 41 | BROADVIEW | 42 |
+| 42 | CADENCE ON CENTER CONDOMINIUM | 17 |
+| 43 | CADENCE ON PARK CONDOMINIUM | 6 |
+| 44 | CARTER'S GLEN | 25 |
+| 45 | CEDAR CROSSING | 17 |
+| 46 | CEDAR WOODS | 7 |
+| 47 | CHELSEA COURT | 2 |
+| 48 | COMMONWELTH PARK | 6 |
+| 49 | CONCORD GREEN | 71 |
+| 50 | COOPER CONDOMINIUM OFFICE BUILDINGS | 12 |
+| 51 | COUNCIL SQUARE I | 16 |
+| 52 | COUNCIL SQUARE II | 49 |
+| 53 | COURTHOUSE COTTAGES CONDOMINIUMM | 13 |
+| 54 | COURTHOUSE SQUARE | 18 |
+| 55 | CUNNINGHAM PARK COURT SUBDIVISION | 8 |
+| 56 | DAL-SHAR | 5 |
+| 57 | DIANE MANOR | 3 |
+| 58 | DODD PROPERTY | 2 |
+| 59 | DOGWOOD OFFICE CONDOMINIUM | 8 |
+| 60 | DOMINION ROAD CONDOMINIUM | 5 |
+| 61 | DRIFTWOOD TERRACE | 21 |
+| 62 | DUNN LORING VILLAGE | 230 |
+| 63 | DUNN LORING WOODS | 540 |
+| 64 | EAST CREEK | 23 |
+| 65 | EAST VIENNA WOODS | 164 |
+| 66 | EASTBRIAR | 14 |
+| 67 | EDGEKNOLL | 6 |
+| 68 | EDWIN I. REEVES | 4 |
+| 69 | ESTATES AT ORCHARD COURT | 11 |
+| 70 | EWELL'S ADDITION TO WINDOVER HEIGHTS | 10 |
+| 71 | FAIRWAY MANOR ESTATES | 51 |
+| 72 | FIRST ADDITION TO BEULAH HEIGHTS THE | 24 |
+| 73 | FISHER SUBDIVISION | 8 |
+| 74 | GLEN, THE | 5 |
+| 75 | GLYNDON FLATS CONDOMINIUM THE | 9 |
+| 76 | GLYNHILL | 20 |
+| 77 | GRANGE CAMP | 29 |
+| 78 | GREENHOOT FISCHER PROPERTY | 4 |
+| 79 | GROVE ON PARK CONDOMINIUM, THE | 29 |
+| 80 | HAMPTON | 11 |
+| 81 | HAVENNER SUBDIVISION | 18 |
+| 82 | HEADS HILL | 18 |
+| 83 | HERITAGE OF VINNEA | 33 |
+| 84 | HILLSIDE | 15 |
+| 85 | IRIS MANOR SUBDIVISION | 4 |
+| 86 | JADE MANOR | 9 |
+| 87 | JENNIE LYNN DIVISION | 5 |
+| 88 | JENNINGS ADDITION TO HAMPTON | 2 |
+| 89 | JENNINGS ADDITION TO HAMPTON SUBDIVISION | 2 |
+| 90 | JOHN MARSHALL PROPERTY | 7 |
+| 91 | JOHN T MYERS' SUBDIVISION | 6 |
+| 92 | KATRINA HINE ECHOLS PROPERTY | 13 |
+| 93 | KENDALE PARK | 13 |
+| 94 | KENDALE PARK WILLIAMSON ADDITION | 3 |
+| 95 | KESSEL SUBDIVISION | 3 |
+| 96 | KIDD PROPERTY | 5 |
+| 97 | KINGCREST SUBDIVISION | 7 |
+| 98 | KINGS CREST RESUB | 10 |
+| 99 | KINGS WAY ESTATES | 10 |
+| 100 | KINGSCREST | 51 |
+| 101 | LEE MANOR | 22 |
+| 102 | LESTER H. POOLE PROPERTY OF | 4 |
+| 103 | LINNCREST | 15 |
+| 104 | LOCUST STREET CONDOMINIUM | 5 |
+| 105 | LONGWOOD | 21 |
+| 106 | LOWES SUBDIVISION | 7 |
+| 107 | LYNNHILL | 5 |
+| 108 | MAITARD ESTATES | 11 |
+| 109 | MALCOLM HEIGHTS | 34 |
+| 110 | MALCOLM HOLLOW | 5 |
+| 111 | MALCOLM ROAD | 3 |
+| 112 | MAPLE GROVE | 29 |
+| 113 | MAPLE VIEW | 8 |
+| 114 | MARSHALL WOODS | 8 |
+| 115 | MASHIE DRIVE SUBDIVISION | 6 |
+| 116 | MERRIFIELD VIEW | 109 |
+| 117 | METRO PLACE AT DUNN LORING | 57 |
+| 118 | MICHAELS ADDN MURMURING PINES | 9 |
+| 119 | MILLS SUBDIVISION | 5 |
+| 120 | MOIDONE ACRES | 32 |
+| 121 | MOIDONE ACRES, HERSANDS ADDITION TO | 6 |
+| 122 | MOORE MEWS | 4 |
+| 123 | MOOREFIELD | 30 |
+| 124 | MORADA RIDGE | 8 |
+| 125 | MURMURING PINES | 98 |
+| 126 | MURRAYLAND | 3 |
+| 127 | McHENRY HEIGHTS | 62 |
+| 128 | OAK FORREST | 13 |
+| 129 | OAK GLEN | 18 |
+| 130 | OAK GROVE | 28 |
+| 131 | OAK RIDGE | 19 |
+| 132 | OAKDALE PARK | 32 |
+| 133 | ONONDIO | 59 |
+| 134 | ONONDIO CHAPPELL SUBDIVISION | 3 |
+| 135 | ONONDIO COVE | 8 |
+| 136 | ONONDIO SUBD | 57 |
+| 137 | ONONDIO SUBDIVISION | 12 |
+| 138 | OWAISSA ESTATES | 13 |
+| 139 | PAQUETTE SUBDIVISION | 5 |
+| 140 | PARK PLACE PROFESSIONAL BUILDING | 7 |
+| 141 | PARK PLAZA OFFICES A CONDOMINIUM | 24 |
+| 142 | PARK STREET PROPERTIES | 5 |
+| 143 | PARK TERRACE CONDOMINIUM | 154 |
+| 144 | PARK WEST | 6 |
+| 145 | PARK WOOD | 6 |
+| 146 | PARKVALE | 5 |
+| 147 | PARKWOOD OAKS | 6 |
+| 148 | PEARL E DIMSEY | 6 |
+| 149 | PICKETT ESTATES | 58 |
+| 150 | POPLAR OFFICE CONDOMINIUM | 5 |
+| 151 | PRESCOTT SUBDIVISION | 6 |
+| 152 | PROPERTY OF ARCHIE R. JACKSON | 7 |
+| 153 | PROVIDENCE PARK | 166 |
+| 154 | REGENCY RIDGE | 27 |
+| 155 | RIDGEWOOD SUBDIVISION | 8 |
+| 156 | ROBIN HILL | 5 |
+| 157 | SHADY ACRES | 8 |
+| 158 | SHAHRAAM | 12 |
+| 159 | SHERWOOD MANOR | 13 |
+| 160 | SOMERSET | 54 |
+| 161 | SOMERSET WEST | 3 |
+| 162 | SOUTHWIND | 5 |
+| 163 | SPRINGWOOD | 8 |
+| 164 | STATTS PROPERTY | 5 |
+| 165 | STONEHOUSE COURT | 6 |
+| 166 | STONEWALL MANOR | 401 |
+| 167 | STONEWALL MANOR, KENNEYS ADDITION TO | 3 |
+| 168 | STOWES ADDITION TO WINDOVER | 6 |
+| 169 | SURREY ESTATES | 8 |
+| 170 | TANGLEWOOD | 4 |
+| 171 | TIFFANY PLACE CONDOMINIUM | 26 |
+| 172 | TOWN & COUNTRY ESTATES | 76 |
+| 173 | TOWN & COUNTRY ESTATES COZZOS ADDN | 13 |
+| 174 | TOWN & COUNTRY GARDENS | 26 |
+| 175 | TOWN OF VIENNA | 75 |
+| 176 | TOWNES OF MOOREFIELD | 152 |
+| 177 | TOWNES OF VIENNA | 11 |
+| 178 | TOWNES OF VIENNA IV | 33 |
+| 179 | TOWNES OF VIENNA SUBDIVISION | 10 |
+| 180 | TRAIL SIDE | 10 |
+| 181 | VANDERVATE ESTATES | 11 |
+| 182 | VIA SUBDIVISION | 9 |
+| 183 | VICTORIA WOODS | 26 |
+| 184 | VIENNA ACRES | 26 |
+| 185 | VIENNA COMMONS | 60 |
+| 186 | VIENNA HILLS | 97 |
+| 187 | VIENNA MARKET CONDOMINIUM | 42 |
+| 188 | VIENNA MEDICAL WEST CONDOMINIUM | 8 |
+| 189 | VIENNA PROF CENTER | 8 |
+| 190 | VIENNA SHOPPING CENTER | 11 |
+| 191 | VIENNA SQUARE PROFESSIONAL CENTER A CONDOMINIUM | 19 |
+| 192 | VIENNA TRAIL CONDOMINIUM | 23 |
+| 193 | VIENNA VILLAGE | 10 |
+| 194 | VIENNA VILLAGER APARTMENTS A CONDOMINIUM | 32 |
+| 195 | VIENNA WOODS | 1,381 |
+| 196 | VILLAGE GREEN SUBDIVISION | 15 |
+| 197 | VILLAGE SQUARE | 28 |
+| 198 | WEDDERBURN ESTATES | 24 |
+| 199 | WEDDERBURN STATION | 11 |
+| 200 | WEISS PROPERTY | 5 |
+| 201 | WEST END MANOR | 15 |
+| 202 | WEST VIENNA WOODS | 298 |
+| 203 | WESTBRIAR CONDOMINIUM | 224 |
+| 204 | WESTBRIAR COUNTRY CLUB ESTATES | 81 |
+| 205 | WESTBRIAR COUNTRY CLUB HILLS | 30 |
+| 206 | WESTBRIAR COUNTRY CLUB MANOR | 80 |
+| 207 | WESTBRIAR PLAZA CONDOMINIUM | 117 |
+| 208 | WESTWOOD MANOR | 158 |
+| 209 | WESTWOOD PARK | 12 |
+| 210 | WESTWOOD VIEW SUBDIVISION | 28 |
+| 211 | WHISPERING WIND SUBDIVISION | 11 |
+| 212 | WHITE OAK TOWER CONDOMINIUM | 29 |
+| 213 | WILKERSON ESTATES | 7 |
+| 214 | WILLIAM A WEST | 2 |
+| 215 | WILLOWMERE FARMS | 17 |
+| 216 | WILLOWMERE WOODS | 7 |
+| 217 | WILMAR PLACE | 24 |
+| 218 | WILSON ESTATES | 27 |
+| 219 | WILTON HOUSE CONDOMINIUM | 259 |
+| 220 | WINDOVER HEIGHTS | 60 |
+| 221 | WINDOVER HEIGHTS LOT 8 | 13 |
+| 222 | WINDOVER HGTS | 21 |
+| 223 | WINDOVER SUBDIVISION | 8 |
+| 224 | WINOVER HEIGHTS | 7 |
+| 225 | WOLFTRAP GLEN | 6 |
+| 226 | WOLFTRAPPE SQUARE | 35 |
+
+---
+
+## ZIP Code 22181 - Vienna (West / Oakton border)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 123
+- **Total Recorded Units:** 5,129
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ACADIA CONDOMINIUM | 168 |
+| 2 | ACREDALE | 32 |
+| 3 | ASHLAWN | 41 |
+| 4 | ASHLAWN HILL | 16 |
+| 5 | B. F. WEAVER'S SUBDIVISION | 9 |
+| 6 | BALMORAL | 57 |
+| 7 | BARRISTERS PLACE | 159 |
+| 8 | BERKELEY SQUARE APTS | 39 |
+| 9 | BERKLEY MANOR | 1 |
+| 10 | BEVERLY CORNER | 2 |
+| 11 | BLAKE HILLS SUBDIVISION | 12 |
+| 12 | BRIDLERIDGE | 32 |
+| 13 | BRUBECK PROPERTY | 4 |
+| 14 | BUSHONG | 3 |
+| 15 | CARRIAGE HILL | 54 |
+| 16 | CHILCOTT MANOR | 9 |
+| 17 | CODY TRACT | 31 |
+| 18 | COUNTRY CREEK | 444 |
+| 19 | COURTHOUSE COMMONS | 30 |
+| 20 | COURTHOUSE OAKS | 41 |
+| 21 | CYRANDALL VALLEY NORTH | 130 |
+| 22 | DIAMOND RIDGE | 4 |
+| 23 | EDGELEA GARDENS | 16 |
+| 24 | EDGELEA WOODS | 118 |
+| 25 | EDGEMOORE | 81 |
+| 26 | ENTERPRISE ADD BARRISTERS PLACE | 39 |
+| 27 | FAIRFAX METRO SQUARE | 82 |
+| 28 | FIRST OAKTON PLACE | 13 |
+| 29 | FIVE OAKS | 46 |
+| 30 | FLINT HILL | 6 |
+| 31 | FOX HUNT RUN | 7 |
+| 32 | GEORGE T & KATIE M BIRD SUBDIVISION | 5 |
+| 33 | GLENCANNON | 76 |
+| 34 | GRAY'S SUBDIVISION | 2 |
+| 35 | GUNNELL FARMS | 72 |
+| 36 | HAKOPIAN SUBDIVISION | 1 |
+| 37 | HALCYON HILL | 7 |
+| 38 | HELMWOOD RIDGE | 7 |
+| 39 | HIDDEN OAK ESTATES | 8 |
+| 40 | HIDDEN PLACE | 8 |
+| 41 | HOLLY GLEN | 7 |
+| 42 | HUNTER RIDGE | 16 |
+| 43 | HUNTER VALLEY ESTATES | 5 |
+| 44 | HUNTERS CREST | 29 |
+| 45 | HUNTERS CROSSING | 2 |
+| 46 | HUNTERS PLACE | 15 |
+| 47 | HUNTERS STATION | 20 |
+| 48 | HUNTERS VALLEY | 64 |
+| 49 | HUNTERS VALLEY EAST | 5 |
+| 50 | HUNTERS VALLEY MINCHEWS ADD'N | 2 |
+| 51 | HUNTERS VALLEY MINCHEWS ADDITION | 29 |
+| 52 | HUNTERS VALLEY MINCHEWS ADDN | 9 |
+| 53 | HUNTERS VALLEY NORTH | 36 |
+| 54 | HUNTERS VALLEY WHITNEYS ADDITION | 4 |
+| 55 | IVY SQUARE | 26 |
+| 56 | KEMPER PARK | 54 |
+| 57 | LAKEVALE COURT/BROYHILL'S ADDITION TO LAKEVALE ESTATES | 48 |
+| 58 | LAKEVALE ESTATES | 285 |
+| 59 | LAUREL RIDGE | 12 |
+| 60 | LAWYERS NORTH | 74 |
+| 61 | LEWIS MANOR | 24 |
+| 62 | LITTLE VIENNA ESTATES | 133 |
+| 63 | MADISON OAKS | 12 |
+| 64 | MAINS AT FLINT HILL, THE | 9 |
+| 65 | MARQUIS AT VIENNA STATION CONDOMINIUM | 327 |
+| 66 | MARSHALL ESTATES | 20 |
+| 67 | MARYWOOD | 11 |
+| 68 | MARYWOOD ESTATES | 9 |
+| 69 | MEADOWOOD SUBDIVISION | 9 |
+| 70 | MOSBYS LANDING A CONDOMINIUM | 283 |
+| 71 | OAK DALE WOODS SUBDIVISION | 24 |
+| 72 | OAK KNOB | 7 |
+| 73 | OAK MANOR | 18 |
+| 74 | OAK VALLEY COURT | 6 |
+| 75 | OAK VALLEY ESTATES | 32 |
+| 76 | OAKCREST | 44 |
+| 77 | OAKCREST FARMS | 12 |
+| 78 | OAKDEN | 26 |
+| 79 | OAKTON CLOISTERS | 47 |
+| 80 | OAKTON CREST | 18 |
+| 81 | OAKTON GLADE | 25 |
+| 82 | OAKTON GLEN | 150 |
+| 83 | OAKTON GROVE | 40 |
+| 84 | OAKTON PARK | 11 |
+| 85 | OAKTON PLANTATION | 24 |
+| 86 | OLD COURTHOUSE WOODS | 20 |
+| 87 | ORCHARD VIEW | 86 |
+| 88 | PESTANA | 2 |
+| 89 | PINE GLEN | 38 |
+| 90 | PINEY CREEK ESTATES | 5 |
+| 91 | POLO PLACE | 9 |
+| 92 | POLO POINTE | 3 |
+| 93 | RANEYVALE | 7 |
+| 94 | REGENCY FOREST | 8 |
+| 95 | RITCHEYS QUADRANGLE | 4 |
+| 96 | SOLTAS MANOR | 14 |
+| 97 | SOMERSET WEST | 5 |
+| 98 | SPANGLER | 4 |
+| 99 | SUMMER HILL ESTATES | 10 |
+| 100 | SUTTON GREEN | 13 |
+| 101 | SUTTON GROVE | 4 |
+| 102 | SUTTON HOUSE SUBD | 3 |
+| 103 | SUTTON MANOR | 8 |
+| 104 | SUTTON WOODS | 5 |
+| 105 | TANGLEWOOD | 147 |
+| 106 | THE GLADE | 17 |
+| 107 | TOWN & COUNTRY GARDENS | 47 |
+| 108 | VALEWOODS ESTATES | 7 |
+| 109 | VIENNA GLEN | 5 |
+| 110 | VIENNA GROVE SUBDIVISION | 9 |
+| 111 | VIENNA MEWS | 7 |
+| 112 | VIENNA OAKS | 114 |
+| 113 | VIENNA OAKS OFFICE CENTER CONDOMINIUM | 12 |
+| 114 | VIRGINIA CENTER | 152 |
+| 115 | WATERFORD | 180 |
+| 116 | WENDOVER | 66 |
+| 117 | WENDOVER II | 16 |
+| 118 | WESTS ADDITION TO HUNTERS VALLEY NORTH | 16 |
+| 119 | WICKENS SUBDIVISION | 25 |
+| 120 | WILDWOOD | 25 |
+| 121 | WILLIAMS MEADOW | 15 |
+| 122 | WILLIAMSBURG COMMONS | 39 |
+| 123 | WILLOW HILL | 7 |
+
+---
+
+## ZIP Code 22182 - Vienna (North / Tysons)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 251
+- **Total Recorded Units:** 8,717
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 8218 LEESBURG PIKE LAND CONDOMINIUM | 1 |
+| 2 | 8230 BOONE BOULEVARD A CONDOMINIUM | 27 |
+| 3 | 9318 OLD COURTHOUSE ROAD | 2 |
+| 4 | ABBEY GLEN | 10 |
+| 5 | ADAIRE CONDOMINIUM | 2 |
+| 6 | AMBERWOOD SUBDIVISION | 124 |
+| 7 | ANKER GLEN | 5 |
+| 8 | ANKERDALE | 48 |
+| 9 | ANNIE C. WILLIAMS HEIGHTS | 10 |
+| 10 | APPLE GROVE | 3 |
+| 11 | APPLE GROVE, HOGES ADDITION TO | 1 |
+| 12 | ASHGROVE PLANTATION | 114 |
+| 13 | ASHGROVE WOODS | 16 |
+| 14 | AUBREY PLACE | 18 |
+| 15 | AVIS SUBDIVISION | 6 |
+| 16 | AYRHILL ESTATES | 3 |
+| 17 | BACHMAN PROPERTY SUBDIVISION | 52 |
+| 18 | BAILIWICK | 40 |
+| 19 | BARONS BROOK | 9 |
+| 20 | BATTERY PARK | 8 |
+| 21 | BEAU RIDGE | 81 |
+| 22 | BEECHWOOD | 1 |
+| 23 | BELL SUBDIVISION | 2 |
+| 24 | BENNETT KILN | 30 |
+| 25 | BESLEY FARM | 10 |
+| 26 | BEULAH TERRACE | 48 |
+| 27 | BLUEBERRY HILL | 24 |
+| 28 | BLUFFS OF WOLF TRAP | 64 |
+| 29 | BRENTWOOD COURTS | 16 |
+| 30 | BRITTAIN SUBDIVISION | 5 |
+| 31 | BROOKSIDE EAST | 5 |
+| 32 | BROOKSIDE WEST | 34 |
+| 33 | BROWNS MILL FOREST | 24 |
+| 34 | BUILD AMERICA THREE A CONDOMINIUM | 25 |
+| 35 | BUILDAMERICA THREE A CONDOMINIUM | 18 |
+| 36 | BUSBY TRACT | 7 |
+| 37 | CAMPBELLS LANDING SUBDIVISION | 44 |
+| 38 | CAROLL DODSONS SUBDIVISION | 5 |
+| 39 | CARPER'S FARM HOUSE | 5 |
+| 40 | CARPERS FARM | 130 |
+| 41 | CARPERS RIDGE | 5 |
+| 42 | CARRINGTON | 105 |
+| 43 | CARTERS GREEN | 43 |
+| 44 | CARTERS GROVE | 20 |
+| 45 | CEDAR FOREST | 19 |
+| 46 | CEDAR LANE | 20 |
+| 47 | CEDAR MEDICAL CENTER CONDOMINIUM | 6 |
+| 48 | CEDAR MILL | 43 |
+| 49 | CEDAR RUN | 37 |
+| 50 | CEDARS OF TYSONS | 10 |
+| 51 | CENTENNIAL PLAZA ONE OFFICE CONDOMINIUM | 40 |
+| 52 | CHAPEL HILL | 20 |
+| 53 | CHATHAMS FORD ESTATES | 7 |
+| 54 | CHATHAMS FORD SUBDIVISION | 12 |
+| 55 | CHESTNUT FARM | 13 |
+| 56 | CHRISTMAS TREE FARM | 5 |
+| 57 | CIARA ESTATES | 32 |
+| 58 | CINNAMON CREEK | 106 |
+| 59 | CLARKS CROSSING | 142 |
+| 60 | COHEN PROPERTY | 4 |
+| 61 | COLONIES OF MADRILLON | 70 |
+| 62 | COLVIN RUN ESTATES | 27 |
+| 63 | COLVIN'S GLEN | 67 |
+| 64 | COLVINS FOREST | 5 |
+| 65 | COLVINS GLEN | 75 |
+| 66 | CORAL RIDGE | 18 |
+| 67 | CORBIN PROPERTY | 14 |
+| 68 | COUNTRY PLACE, A | 24 |
+| 69 | COURTHOUSE STATION | 123 |
+| 70 | COURTHOUSE WOODS | 38 |
+| 71 | COURTS OF TYSONS | 155 |
+| 72 | COVENTRY SPRINGS ESTATES | 16 |
+| 73 | CREEK CROSSING VILLA | 8 |
+| 74 | DAVID C. MOLUMBY | 5 |
+| 75 | DEERCREST MEADOW | 7 |
+| 76 | DIVISION OF THE PROPERTIES OF MARTHA MILLARD SAMUEL MILLARD & CHARLES MCGAVIN ET UX | 7 |
+| 77 | DODD MANOR | 7 |
+| 78 | DOMINION SQUARE | 1 |
+| 79 | DOMINION STATION | 9 |
+| 80 | DOUGLAS WOODS | 5 |
+| 81 | DREW SUBDIVISION | 4 |
+| 82 | DUNN LORING GARDENS | 61 |
+| 83 | DUNN LORING HIGHLANDS | 23 |
+| 84 | DUNN LORING PROFESSIONAL CENTER | 13 |
+| 85 | ELGIN MANOR | 14 |
+| 86 | EMBASSY COURT II | 14 |
+| 87 | EMBASSY COURT III | 2 |
+| 88 | ESTATES AT GREAT FALLS CROSSING I | 49 |
+| 89 | ESTATES AT GREAT FALLS CROSSING II THE | 15 |
+| 90 | EUDORA | 142 |
+| 91 | FOX CREEK | 35 |
+| 92 | FOXSTONE | 45 |
+| 93 | FRANCIS YOUNG ESTATES | 15 |
+| 94 | FREEDOM HILL FARMS | 56 |
+| 95 | FREEDOM PARK | 10 |
+| 96 | FULL CRY FARM | 30 |
+| 97 | GALLOWS ONE AN OFFICE CONDOMINIUM | 8 |
+| 98 | GATEWAY AT SPRING LAKE, THE | 4 |
+| 99 | GEORGE A MERRY SUBD | 3 |
+| 100 | GEORGE ASSEMBLAGE | 21 |
+| 101 | GEORGE WASHINGTON ROAD PROPERTY | 10 |
+| 102 | GLEN HAVEN FOREST | 9 |
+| 103 | GUNDERVALE | 15 |
+| 104 | HAHN PROPERTY | 112 |
+| 105 | HARVEST KING | 50 |
+| 106 | HARVEST RIDGE | 12 |
+| 107 | HAWTHORNE | 10 |
+| 108 | HAWTHORNE ESTATES | 40 |
+| 109 | HEARTHSTONE COURTS | 22 |
+| 110 | HIGHVIEW THREE | 5 |
+| 111 | HILLTOP SUBDIVISION | 30 |
+| 112 | HINKS ADDITION TO CLARKS CROSSING | 5 |
+| 113 | HOLLINSWOOD | 4 |
+| 114 | HOLLY HILLS | 19 |
+| 115 | HOMESTEADE | 9 |
+| 116 | HUGHES SUBDIVISION | 1 |
+| 117 | HUNTER MILL ESTATES | 162 |
+| 118 | HUNTER MILL FOREST | 60 |
+| 119 | HUNTER MILL OVERLOOK | 6 |
+| 120 | HUNTERS KNOLL | 6 |
+| 121 | HUNTERS VIEW | 3 |
+| 122 | KELLEYS GREEN | 7 |
+| 123 | KELLY ESTATES | 4 |
+| 124 | KIDWELL TOWNS | 48 |
+| 125 | KONKEL | 3 |
+| 126 | LEE’S ADDITION TO WEDDERBURN HEIGHTS | 3 |
+| 127 | LEIGH MEADOW | 30 |
+| 128 | LEROY SUBDIVISION | 2 |
+| 129 | LESTER C. COOPER SUBDIVISION | 3 |
+| 130 | LITTLE RUN FARM | 17 |
+| 131 | LORD FAIRFAX ESTATES | 8 |
+| 132 | LORD FAIRFAX MANORS | 30 |
+| 133 | LUCKY ESTATES | 10 |
+| 134 | MADRILLON ESTATES | 22 |
+| 135 | MADRILLON ESTATES II | 23 |
+| 136 | MADRILLON FARMS | 35 |
+| 137 | MADRILLON MANORS | 14 |
+| 138 | MADRILLON OAKS | 15 |
+| 139 | MADRILLON SPRINGS | 116 |
+| 140 | MAJESTIC KNOLLS | 14 |
+| 141 | MANORS AT WOLFTRAP | 43 |
+| 142 | MARTIN SUBDIVISION | 4 |
+| 143 | MAYMONT | 60 |
+| 144 | MEADOWMERE | 11 |
+| 145 | MEADOWRIDGE | 5 |
+| 146 | MEADOWRIDGE SUBDIVISION | 11 |
+| 147 | MERRY OAKS | 39 |
+| 148 | MIDDLETON II | 73 |
+| 149 | MILL RACE ESTATES | 7 |
+| 150 | MONTICELLO OF TYSONS | 27 |
+| 151 | OLD COURT HOUSE SUBDIVISION | 21 |
+| 152 | OLD COURTHOUSE SUBD | 2 |
+| 153 | OLD COURTHOUSE SUBDIVISION | 33 |
+| 154 | OVERLOOK ACRES | 8 |
+| 155 | PANOPOULOS ESTATES | 17 |
+| 156 | PEARSON RESERVE SUBDIVISION | 11 |
+| 157 | RHINEHART PROPERTY SUBDIVISION, THE | 9 |
+| 158 | RICHLAND HUNT | 27 |
+| 159 | RIDGE AT WOLF TRAP, THE | 4 |
+| 160 | ROBIN GLEN | 52 |
+| 161 | ROBIN GLEN SUBDIVISION | 17 |
+| 162 | ROBINSON DIVISION | 4 |
+| 163 | RODIER SUBDIVISION | 4 |
+| 164 | ROLLING HEIGHTS SUBDIVISION | 4 |
+| 165 | ROLLING RIDGE | 16 |
+| 166 | SADDLEBROOK FARMS | 18 |
+| 167 | SADDLEBROOK LORD FAIRFAX | 31 |
+| 168 | SALUJA CHADHA PROPERTY | 5 |
+| 169 | SCHALET ADDITION TO CINNAMON CREEK | 4 |
+| 170 | SEMINOLES ADDITION TO MERRY OAKS | 4 |
+| 171 | SHERMAN WELLS A EST | 4 |
+| 172 | SHOUSE VILLAGE | 263 |
+| 173 | SILENTREE OF TYSONS | 49 |
+| 174 | SIMPSONS ADDITION TO TYSONS WOODS | 6 |
+| 175 | SOUTH TYSONS OFFICE PARK | 25 |
+| 176 | SPRING HILL STATION | 1 |
+| 177 | SPRING LAKE | 22 |
+| 178 | SPRING LAKE SUBDIVISION | 70 |
+| 179 | SPRING RIDGE | 46 |
+| 180 | SQUIRES CREST | 8 |
+| 181 | SQUIRES CREST  II | 4 |
+| 182 | STARKS CROSSING | 28 |
+| 183 | STEELE SUBDIVISION | 1 |
+| 184 | SUN VALLEY | 167 |
+| 185 | SUNNYBROOK | 61 |
+| 186 | SYMPHONY HILL WEST | 49 |
+| 187 | SYMPHONY MEADOWS | 28 |
+| 188 | TALISMAN COURT | 26 |
+| 189 | TAMARACK | 153 |
+| 190 | THE HUNT AT LAKE FAIRFAX | 1 |
+| 191 | THE RESERVE AT TYSONS CORNER | 92 |
+| 192 | THISTLE RIDGE | 9 |
+| 193 | TIBURON | 149 |
+| 194 | TOWLSTON MEADOW | 75 |
+| 195 | TRAILS THE | 117 |
+| 196 | TYCO PARK | 85 |
+| 197 | TYCO ROAD LAND CONDOMINIUM | 17 |
+| 198 | TYCON TOWER | 5 |
+| 199 | TYSON'S VILLAGE | 114 |
+| 200 | TYSONS COURT | 47 |
+| 201 | TYSONS CREEK | 5 |
+| 202 | TYSONS CREST | 6 |
+| 203 | TYSONS DOMINION SQUARE LAND CONDOMINIUM | 3 |
+| 204 | TYSONS ESTATES | 9 |
+| 205 | TYSONS GREEN | 201 |
+| 206 | TYSONS MANOR | 75 |
+| 207 | TYSONS SQUARE OFFICE CONDOMINIUM | 12 |
+| 208 | TYSONS TERRACE | 42 |
+| 209 | TYSONS TOWNES | 28 |
+| 210 | TYSONS TRACE SUBDIVISION | 28 |
+| 211 | TYSONS VALLEY | 48 |
+| 212 | TYSONS WEST | 65 |
+| 213 | TYSONS WOODS | 165 |
+| 214 | VICTORIA FARMS | 38 |
+| 215 | VIENNA ESTATES AT SUNCREST | 32 |
+| 216 | VIENNA MANOR | 21 |
+| 217 | VILLA LORING | 54 |
+| 218 | WAVERLY | 150 |
+| 219 | WAYSIDE | 123 |
+| 220 | WEDDERBURN HEIGHTS | 72 |
+| 221 | WEST CREEK | 11 |
+| 222 | WESTFORD | 23 |
+| 223 | WESTWOOD | 25 |
+| 224 | WESTWOOD ESTATES | 48 |
+| 225 | WESTWOOD FOREST | 50 |
+| 226 | WESTWOOD OAKS SUBDIVISION | 30 |
+| 227 | WESTWOOD TOWNS | 55 |
+| 228 | WESTWOOD VILLAGE CONDOMINIUM | 154 |
+| 229 | WEXFORD | 45 |
+| 230 | WEXFORD EAST | 59 |
+| 231 | WEXFORD SOUTH | 36 |
+| 232 | WHEYSTONE | 35 |
+| 233 | WHISPERING PINES SUBD | 3 |
+| 234 | WILLIAMS HILL | 42 |
+| 235 | WINCANTON | 21 |
+| 236 | WINDSOR MEADOWS | 6 |
+| 237 | WINDSTONE | 22 |
+| 238 | WOLF TRAP DOWNS | 19 |
+| 239 | WOLF TRAP WOODS | 20 |
+| 240 | WOLFTRAP CREEK ESTATES | 12 |
+| 241 | WOLFTRAP MEADOWS | 166 |
+| 242 | WOLFTRAP RIDGE | 14 |
+| 243 | WOLFTRAP VALE | 36 |
+| 244 | WOLFTRAP WOODS | 206 |
+| 245 | WOODFORD MEWS | 3 |
+| 246 | WOODFORD OAKS | 24 |
+| 247 | WOODFORD PARK COURTS | 29 |
+| 248 | WOODLAND ESTATES | 30 |
+| 249 | WORTHINGTON HEIGHTS | 5 |
+| 250 | WRIGHT PROPERTY | 10 |
+| 251 | ZELINGER FAMILY TRUST | 3 |
+
+---
+
+## ZIP Code 22183 - Vienna
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22185 - Vienna
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22199 - Lorton / Mason Neck
+
+- **Postal Classification:** PO Box Only
+- **Total Subdivisions:** 0
+- **Total Recorded Units:** 0
+
+> *No subdivisions recorded (Designated as PO Box Only).*
+
+---
+
+## ZIP Code 22207 - Arlington (Fairfax Border Overlap)
+
+- **Postal Classification:** Border Overlap
+- **Total Subdivisions:** 9
+- **Total Recorded Units:** 77
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | CHAIN BRIDGE FOREST | 2 |
+| 2 | CHAIN BRIDGE HEIGHTS | 6 |
+| 3 | COUNTRY ACRES | 2 |
+| 4 | FRANKLIN PARK | 1 |
+| 5 | GOLF CLUB MANORS | 13 |
+| 6 | McNEIR MANOR | 5 |
+| 7 | REYNOLDS 3RD ADDNGOLF CLUB MANORS | 28 |
+| 8 | WILLIAMSBURG WOODS | 7 |
+| 9 | WOODLAND ACRES | 13 |
+
+---
+
+## ZIP Code 22303 - Alexandria (Huntington / Penn Daw)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 50
+- **Total Recorded Units:** 5,045
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ANNALANE TERRACE | 42 |
+| 2 | ARDEN LAND CONDOMINIUM THE | 3 |
+| 3 | BERKSHIRE | 23 |
+| 4 | BERKSHIRE EAST | 55 |
+| 5 | BURGUNDY FARM | 156 |
+| 6 | BURGUNDY MANOR | 76 |
+| 7 | BURGUNDY VILLAGE | 254 |
+| 8 | BURGUNDY WOODS | 11 |
+| 9 | BUTLERS ADDITION TO FORT LYON HEIGHTS | 3 |
+| 10 | CITY VIEW, PARCEL A | 1 |
+| 11 | COURTS AT HUNTINGTON STATION CONDOMINIUM, THE | 8 |
+| 12 | CRIDER PARK | 18 |
+| 13 | DIVISION OF PROPERTY OF JOSEPH P & ELISABETH A KLECKNER | 11 |
+| 14 | DIVISION PART OF ROZIER C BAYLY PROPERTY | 3 |
+| 15 | E F CANNON SUBDIVISION | 12 |
+| 16 | ELLSWORTHS ADDITION TO FORT LYON HEIGHTS | 4 |
+| 17 | ELMWOOD | 40 |
+| 18 | ELMWOOD MANOR | 14 |
+| 19 | FAIR HAVEN | 239 |
+| 20 | FARRINGTON PLACE CONDOMINIUM | 66 |
+| 21 | FORT LYON HEIGHTS | 56 |
+| 22 | HICKORY KNOLL | 44 |
+| 23 | HUNGTINGTON | 26 |
+| 24 | HUNTING CREEK CLUB APARTMENT | 216 |
+| 25 | HUNTINGTON | 541 |
+| 26 | HUNTINGTON CLUB A CONDOMINIUM | 366 |
+| 27 | HUNTINGTON COMMONS | 34 |
+| 28 | HUNTINGTON CROSSING CONDOMINIUM | 67 |
+| 29 | HUNTINGTON MEWS | 85 |
+| 30 | HUNTINGTON STATION | 48 |
+| 31 | JCE BURGUNDY WOODS | 27 |
+| 32 | JEFFERSON MANOR | 586 |
+| 33 | KINGS CROSSING LAND CONDOMINUM | 13 |
+| 34 | LMC ALEXANDRIA CROSSING INVESTOR | 56 |
+| 35 | LOFTRIDGE | 96 |
+| 36 | LYNCHS ADDITION TO BURGUNDY MANOR | 3 |
+| 37 | MIDTOWN ALEXANDRIA STATION CONDOMINIUM | 368 |
+| 38 | MIZELLE SUBDIVISION | 1 |
+| 39 | MONTEBELLO CONDOMINIUM | 1,008 |
+| 40 | NORTON SQUARE | 30 |
+| 41 | NORTON VILLA | 5 |
+| 42 | PAVILIONS AT HUNTINGTON METRO TOWNHOUSES | 50 |
+| 43 | PAVILIONS AT HUNTINGTON STATION CONDOMINIUM,THE | 4 |
+| 44 | PENN DAW TOWNHOUSES | 41 |
+| 45 | PENN DAW VILLAGE | 73 |
+| 46 | SOMERVILLE HILL | 35 |
+| 47 | SPRING BANK | 67 |
+| 48 | SUBDIVISION OF BURGUNDY MANOR | 49 |
+| 49 | VILLAGES AT HUNTINGTON | 6 |
+| 50 | WILTON HALL | 5 |
+
+---
+
+## ZIP Code 22304 - Alexandria (West End Overlap)
+
+- **Postal Classification:** Border Overlap
+- **Total Subdivisions:** 1
+- **Total Recorded Units:** 148
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | LANDMARK MEWS | 148 |
+
+---
+
+## ZIP Code 22306 - Alexandria (Groveton / Hybla Valley)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 116
+- **Total Recorded Units:** 7,096
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 6631 SOUTH KINGS HIGHWAY | 2 |
+| 2 | AVERY PARK | 23 |
+| 3 | B M SMITH | 10 |
+| 4 | B M SMITH SUBDIVISION | 24 |
+| 5 | BEDOOS HEIGHTS | 5 |
+| 6 | BELLE HAVEN MEADOWS | 19 |
+| 7 | BEVERLY PLAZA | 10 |
+| 8 | BRIARY FARM TOWNHOMES | 46 |
+| 9 | BROSAR PARK | 38 |
+| 10 | BROSAR VILLAGE | 52 |
+| 11 | BRYANT TOWNE | 14 |
+| 12 | BUCKNELL HEIGHTS | 1 |
+| 13 | CALVERT PARK | 32 |
+| 14 | CALVERT SUBDIVISION | 14 |
+| 15 | CATALINA | 29 |
+| 16 | COLCHESTER TOWNE CONDOMINIUM | 202 |
+| 17 | COUNTRY CLUB ESTATES | 46 |
+| 18 | DEER RUN CROSSING | 102 |
+| 19 | DIVISION OF THE LAND OF HARRELSON | 1 |
+| 20 | DIVISION OF THE PROPERTY OF PRESTON B. BERGIN | 2 |
+| 21 | EDWARD HINKLE PROPERTY | 3 |
+| 22 | EVERGREEN FARM | 142 |
+| 23 | FAIR VIEW | 69 |
+| 24 | FAIR VIEW, SECOND ADDITION TO | 11 |
+| 25 | FAIRVIEW, FIRST ADDITION TO | 14 |
+| 26 | FIRST ADDITION TO BEDOO HEIGHTS | 13 |
+| 27 | FIRST ADDITION TO KINGS COLONY | 21 |
+| 28 | FRALEYS ADDITION TO GROVETON HEIGHTS | 3 |
+| 29 | FRYES ADDITION TO FAIRVIEW | 5 |
+| 30 | GABRIEL PLAZA | 28 |
+| 31 | GLASSELLWOOD | 6 |
+| 32 | GREGORY HEIGHTS | 28 |
+| 33 | GROVETON BAPTIST CHURCH, SUBDIVISION OF PROPERTY OF | 13 |
+| 34 | GROVETON HEIGHTS | 154 |
+| 35 | GROVETON WOODS | 6 |
+| 36 | GROVETON WOODS CONDOMINIUM | 148 |
+| 37 | GROVTON HEIGHTS | 16 |
+| 38 | GROVTON HGHTS | 64 |
+| 39 | GUM SPRINGS | 18 |
+| 40 | GUM SPRINGS GLEN CONDOMINIUM | 5 |
+| 41 | HABITAT LOCKHAVEN CONDOMINIUM | 9 |
+| 42 | HOLLAND COURT | 11 |
+| 43 | HOLLAND HOLLOWS | 9 |
+| 44 | HOLLIN BROOK PARK | 60 |
+| 45 | HOLLIN HILLS | 162 |
+| 46 | HOLLIN MEADOWS | 19 |
+| 47 | HOLLINDALE | 119 |
+| 48 | HOLLINDALE 4TH ADD | 6 |
+| 49 | HOLLINDALE, FIRST ADDITION TO | 24 |
+| 50 | HOLLINDALE, THIRD ADDITION TO | 17 |
+| 51 | HOLLY ACRES | 67 |
+| 52 | HUNTINGTON AT MOUNT VERNON | 69 |
+| 53 | HUNTINGTON AT MT VERNON | 129 |
+| 54 | HUNTINGTON GROVE | 40 |
+| 55 | HUNTINGTON OF MT VERNON | 1 |
+| 56 | HUNTINGTON RUN A CONDOMINIUM | 30 |
+| 57 | HUNTINGTON WALK CONDOMINIUM | 72 |
+| 58 | HUNTLEY | 25 |
+| 59 | HUNTLEY MEADOWS | 86 |
+| 60 | HYBLA VALLEY | 208 |
+| 61 | HYBLA VALLEY FARMS | 195 |
+| 62 | JACKSON HALL | 18 |
+| 63 | JANNA LEE CONDOMINIUM | 351 |
+| 64 | JEREMIAH STOKES | 2 |
+| 65 | KINGS COLONY | 19 |
+| 66 | KINGS HIGHWAY SUBDIVISION | 47 |
+| 67 | KIRK SUBDIVISION | 28 |
+| 68 | KIRKSIDE | 145 |
+| 69 | LITTLE HOLLIN HALL, SUBDIVISION OF | 1 |
+| 70 | LUTHER A GILLIAM | 12 |
+| 71 | MEMORIAL HEIGHTS | 240 |
+| 72 | MILLSIDE | 9 |
+| 73 | MILWAY MEADOWS | 69 |
+| 74 | MILWAY MEADOWS ESTATES | 7 |
+| 75 | MOUNT VERNON MEDICAL PROFESSIONAL CONDOMINIUM | 18 |
+| 76 | MOUNT VERNON PROFESSIONAL CONDOMINIUM II | 36 |
+| 77 | MOUNT VERNON PROFESSIONAL CONDOMINIUM IV | 11 |
+| 78 | MOUNT VERNON SQUARE TOWNHOUSES | 156 |
+| 79 | MOUNT WOODLEY MANOR | 70 |
+| 80 | NINE OAKES | 5 |
+| 81 | NORTH HILL | 122 |
+| 82 | PARCEL F AND OUTLOT A OF THE LAND OF HOLLIN HALL VILLAGE INC | 1 |
+| 83 | POPKINS FARM ESTATES | 37 |
+| 84 | POPKINS HEIGHTS SUBDIVISION | 30 |
+| 85 | POTOMAC TERRACE | 35 |
+| 86 | PROFFTTS ADDITION TO WHITE OAK | 4 |
+| 87 | PROPERTY OF PF2 LLC | 4 |
+| 88 | REID SUBDIVISION | 4 |
+| 89 | SAINT MARKS SUBDIVISION | 11 |
+| 90 | SCHOOLEY ACRES | 19 |
+| 91 | SECOND ADDITION TO BEDOO HEIGHTS | 16 |
+| 92 | SHERWOOD CROSSING A CONDOMINIUM | 20 |
+| 93 | SHERWOOD FOREST | 18 |
+| 94 | SHERWOOD HALL | 58 |
+| 95 | SHERWOOD HALL ESTATES | 3 |
+| 96 | SHERWOOD HALL MEDICAL CENTER A CONDOMINIUM | 32 |
+| 97 | SHERWOOD HALL SUBDIVISION | 15 |
+| 98 | SOUTH KINGS FOREST | 46 |
+| 99 | SOUTH KINGS STATION | 138 |
+| 100 | SOUTH MEADOWS CONDOMINIUM | 277 |
+| 101 | STONEYBROOK | 228 |
+| 102 | STONEYBROOKE | 421 |
+| 103 | TAVENNER WOODS CONDOMINIUM | 12 |
+| 104 | TEMPLE VIEW | 25 |
+| 105 | TEMPLE VIEW, FIRST ADDITION TO | 31 |
+| 106 | THE GROVE AT HUNTLEY MEADOWS | 286 |
+| 107 | THIRD ADDITION TO BEDDOO HEIGHTS | 22 |
+| 108 | THORNROSE | 47 |
+| 109 | TOWNS AT NORTH HILL THE | 175 |
+| 110 | VALLEY VIEW SUBDIVISION | 160 |
+| 111 | VILLAGE AT GUM SPRINGS THE | 163 |
+| 112 | VIRGINIA HILLS | 2 |
+| 113 | WHITE OAKS | 42 |
+| 114 | WILLIAMSBURG MANOR NORTH | 41 |
+| 115 | WOODLAWN SUBDIVISION | 8 |
+| 116 | WOODSTONE | 502 |
+
+---
+
+## ZIP Code 22307 - Alexandria (Belle Haven)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 41
+- **Total Recorded Units:** 4,673
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 1111 EYE STREET A CONDOMINIUM | 2 |
+| 2 | 1ST ADDITION TO WESTGROVE | 40 |
+| 3 | BEACON MANOR | 130 |
+| 4 | BEACON VILLAGE | 14 |
+| 5 | BELLE HAVEN | 425 |
+| 6 | BELLE HAVEN ESTATES | 35 |
+| 7 | BELLE HAVEN MEWS | 18 |
+| 8 | BELLE HAVEN ON THE GREEN SUBDIVISION | 38 |
+| 9 | BELLE HAVEN ON THE GREENSUBDIVISION | 36 |
+| 10 | BELLE HAVEN PROFESSIONAL CONDOMINIUM | 13 |
+| 11 | BELLE HAVEN TERRACE | 118 |
+| 12 | BELLE HAVEN, SUBDIVISION OF SECTION 17 | 11 |
+| 13 | BELLE VIEW | 1 |
+| 14 | BELLE VIEW CONDOMINIUM | 984 |
+| 15 | BUCKNELL HEIGHTS | 165 |
+| 16 | BUCKNELL MANOR | 647 |
+| 17 | COUNTRY CLUB TERRACE | 10 |
+| 18 | EMMETT D QUANDER, DIVISION OF THE PROPERTY OF | 4 |
+| 19 | FORDHAM VILLAGE | 18 |
+| 20 | GUYLEN HEIGHTS | 1 |
+| 21 | HAZELTINE HEIGHTS | 15 |
+| 22 | HOLLIN GLEN | 55 |
+| 23 | HOLLIN HILLS | 289 |
+| 24 | JACKSON HALL | 2 |
+| 25 | JEREMIAH STOKES | 11 |
+| 26 | KARAUS ADDITION TO WELLINGTON HEIGHTS | 6 |
+| 27 | LMC ALEXANDRIA CROSSING INVESTOR | 3 |
+| 28 | MARLAN FOREST | 68 |
+| 29 | MARLAN HEIGHTS | 70 |
+| 30 | MASON HILL | 112 |
+| 31 | NEW ALEXANDRIA | 214 |
+| 32 | OLDE BELHAVEN TOWNE | 132 |
+| 33 | POPKINS HEIGHTS SUBDIVISION | 1 |
+| 34 | RANDALL ESTATES | 15 |
+| 35 | RANDALL SUBDIVISION | 48 |
+| 36 | RIVER TOWERS CONDOMINIUM | 526 |
+| 37 | SIMMS ADDITION TO BUCKNELL MANOR | 3 |
+| 38 | SUBDIVSION OF THE PROPERTY OF ELIZABETH J. QUANDER | 2 |
+| 39 | VILLAMAY | 251 |
+| 40 | WESTGROVE | 97 |
+| 41 | WHITE OAKS | 43 |
+
+---
+
+## ZIP Code 22308 - Alexandria (Fort Hunt)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 65
+- **Total Recorded Units:** 4,867
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | A.H. TINKLE SUBDIVISION | 19 |
+| 2 | ANDALUSIA ON THE POTOMAC | 12 |
+| 3 | BERNICE CARTER DAVIS'S ADDITION TO WELLINGTON | 6 |
+| 4 | BISHOP CREST | 10 |
+| 5 | BOULEVARD ACRES | 42 |
+| 6 | BRIDGEHAVEN | 22 |
+| 7 | CALEB PARK | 3 |
+| 8 | CARTER COURT | 10 |
+| 9 | CLYDESDALE | 6 |
+| 10 | COLLINGWOOD CHASE | 7 |
+| 11 | COLLINGWOOD ESTATES | 96 |
+| 12 | COLLINGWOOD FARMS SUBDIVISION | 10 |
+| 13 | COLLINGWOOD MANOR | 76 |
+| 14 | COLLINGWOOD MANOR WEST | 6 |
+| 15 | COLLINGWOOD ON THE POTOMAC | 187 |
+| 16 | COLLINGWOOD SPRINGS | 149 |
+| 17 | DENVER SPRINGS, SUBDIVISION OF | 20 |
+| 18 | ELLIOTTS ADDITION TO POTOMAC VALLEY | 10 |
+| 19 | FENWICK ESTATES SUBDIVISION | 12 |
+| 20 | FITTON'S ADDITION TO COLLINGWOOD | 5 |
+| 21 | FORT HUNT MANOR FIRST ADDITION TO | 4 |
+| 22 | FORTHUNT EST. | 25 |
+| 23 | FORTHUNT ESTATES | 17 |
+| 24 | FT. HUNT MANOR SUBDIVISION | 19 |
+| 25 | GRAND VIEW | 6 |
+| 26 | HENSLEY ESTATE | 12 |
+| 27 | HOLLIN HALL VILLAGE | 648 |
+| 28 | HUNTER'S MANOR | 17 |
+| 29 | KARAUS ADDITION TO WELLINGTON HEIGHTS | 1 |
+| 30 | KHORIATY'S ADDITION TO COLLINGWOOD SPRINGS | 19 |
+| 31 | KIRK | 56 |
+| 32 | KIRK SUBD | 72 |
+| 33 | KIRK SUBDIVISION | 2 |
+| 34 | KNIGHT | 2 |
+| 35 | MANORS AT MOUNT VERNON THE | 72 |
+| 36 | NORTH BRANCH ESTATES | 14 |
+| 37 | OAKBROOKE AT FORT HUNT SUBDIVISION | 41 |
+| 38 | OATES ADDITION TO PLYMOUTH HAVEN | 15 |
+| 39 | PARKSIDE ADDITION TO HOLLIN HALL VILLAGE | 10 |
+| 40 | PLANTATION ESTATES | 23 |
+| 41 | PLYMOUTH HAVEN | 63 |
+| 42 | PLYMOUTH HAVEN ADDITION | 93 |
+| 43 | PLYMOUTH HAVEN SUBDIVISION ADDITION TO | 1 |
+| 44 | POTOMAC VALLEY | 126 |
+| 45 | RIVER BEND ESTS | 56 |
+| 46 | RIVERSIDE | 71 |
+| 47 | RIVERSIDE GARDENS | 214 |
+| 48 | RIVERSIDE PARK | 34 |
+| 49 | RIVERSIDE PARK HESSICK AND SHARP ADDN | 7 |
+| 50 | RIVERVIEW AT MOUNT VERNON | 18 |
+| 51 | STRATFORD LANDING | 591 |
+| 52 | STRATFORD ON THE POTOMAC | 341 |
+| 53 | SUBDIVISION OF BOGUESS & SIMPSON PROPERTY | 4 |
+| 54 | SULGRAVE VILLAGE | 27 |
+| 55 | TAUXEMONT | 112 |
+| 56 | VERNON ON THE POTOMAC, ALFRED HIGBIE ADDITION B | 44 |
+| 57 | WARDS ADDITION TO COLLINGWOOD SPRINGS | 25 |
+| 58 | WAYNEWOOD | 751 |
+| 59 | WELLINGTON ESTATES | 143 |
+| 60 | WELLINGTON HEIGHTS | 83 |
+| 61 | WELLINGTON MANOR | 21 |
+| 62 | WELLINGTON NO. 2 | 92 |
+| 63 | WELLINGTON NO.1 | 69 |
+| 64 | WELLINGTON WOODS | 5 |
+| 65 | WILLIAMSBURG MANOR NORTH | 93 |
+
+---
+
+## ZIP Code 22309 - Alexandria (Mount Vernon / Woodlawn)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 137
+- **Total Recorded Units:** 9,551
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | AGNEW FARMS | 14 |
+| 2 | ALEXANDRIA RESERVE AT MOUNT VERNON | 5 |
+| 3 | ASPEN GLEN | 27 |
+| 4 | AVERYS ADDITION TO MARY LEA PARK | 4 |
+| 5 | BADGER PARK | 21 |
+| 6 | BARCLAY CT | 30 |
+| 7 | BARLEY FARMS SUBDIVISION | 58 |
+| 8 | BELLE RIVE | 44 |
+| 9 | BLAS G GARCIA SUBDIVISION | 25 |
+| 10 | BLEVINS ADDITION TO SKYVIEW PARK SUBDIVISION | 11 |
+| 11 | BRANDY WOODS SUBDIVISION | 6 |
+| 12 | CECIL CASE ESTATES | 8 |
+| 13 | CHATEAUNEUF | 30 |
+| 14 | CLUSTERS AT WOODLAWN, A CONDOMINIUM THE | 192 |
+| 15 | COLONIAL ACRES | 25 |
+| 16 | COLONIAL FARMS | 28 |
+| 17 | COLUMBIAS ADDITION MOUNT VERNON ESTATES | 16 |
+| 18 | COURT AT MOUNT VERNON CONDOMINIUM THE | 12 |
+| 19 | DAWSON WOODS | 10 |
+| 20 | DIVISION OF WILLIAM A AND JULIA WRIGHT PROPERTY | 3 |
+| 21 | DONIPHAN PROPERTY, DIVISION OF THE | 7 |
+| 22 | EASTGATE AT MOUNT VERNON | 41 |
+| 23 | ENGLESIDE | 47 |
+| 24 | ENGLESIDE VILLAGE | 32 |
+| 25 | FAIRFIELD | 254 |
+| 26 | FERRY LANDING EST | 8 |
+| 27 | FERRY LANDING PRESERVE | 8 |
+| 28 | FERRY LANDING VILLA | 11 |
+| 29 | FERRY POINT ESTATES | 14 |
+| 30 | FIELDS OF WOODLAWN THE | 7 |
+| 31 | FRYE PARK | 6 |
+| 32 | G. C. RUSSELL | 19 |
+| 33 | GALLAHAN PROPERTY | 6 |
+| 34 | GEORGELAND VILLAGE | 152 |
+| 35 | GILLINGHAM SUBDIVISION | 42 |
+| 36 | GRIST MILL WOODS | 30 |
+| 37 | GUSTAFSON | 27 |
+| 38 | HALLEY FARM | 6 |
+| 39 | J.W. COX AND MARGARET H. COX SUBDIVISION | 8 |
+| 40 | JONES FARM SUBDIVISION | 13 |
+| 41 | KEYS & RUSSELL | 52 |
+| 42 | KINGS HILL SUBDIVISION | 23 |
+| 43 | KRESS & ZIMBROS ADDITION TO YACHT HAVEN ESTATES | 8 |
+| 44 | KUEHLING FARM | 34 |
+| 45 | MARY LEA PARK | 28 |
+| 46 | MOUNT VEE MANOR | 187 |
+| 47 | MOUNT VERNON FOREST | 108 |
+| 48 | MOUNT VERNON GROVE | 183 |
+| 49 | MOUNT VERNON LAKES CONDOMINIUM | 136 |
+| 50 | MOUNT VERNON MANOR | 103 |
+| 51 | MOUNT VERNON MEWS | 6 |
+| 52 | MOUNT VERNON PARK SUBDIVISION | 104 |
+| 53 | MOUNT VERNON TERRACE | 95 |
+| 54 | MOUNT VERNON TOWNES | 49 |
+| 55 | MOUNT VERNON VALLEY | 328 |
+| 56 | MOUNT VERNON WALK SUBDIVISION | 9 |
+| 57 | MOUNT ZEPHYR BUSINESS CENTER CONDOMINIUM | 19 |
+| 58 | MOUNT ZEPHYR COMMONS | 38 |
+| 59 | MT VERNON CEDARS | 7 |
+| 60 | MT VERNON ON THE GREEN | 8 |
+| 61 | MT VERNON ON THE POTOMAC | 117 |
+| 62 | MT ZEPHYR | 14 |
+| 63 | MT. VERNON ESTATES | 25 |
+| 64 | MT. VERNON HILLS | 161 |
+| 65 | MT. VERNON VALLEY | 80 |
+| 66 | MT. VERNON WOODS | 147 |
+| 67 | MT. ZEPHYR | 177 |
+| 68 | MT. ZEPHYR PARK | 30 |
+| 69 | MT.VERNON MANOR | 55 |
+| 70 | OAKWOOD GIBBS | 12 |
+| 71 | OLDE MILL TOWNS | 23 |
+| 72 | OLDE MILL, A CONDOMINIUM | 156 |
+| 73 | OLIVE PARK | 15 |
+| 74 | OXFORD | 36 |
+| 75 | PEMBROOK VILLAGE, A CONDOMINIUM | 150 |
+| 76 | PIN OAK ESTATES | 8 |
+| 77 | PINEWOOD LAKE | 543 |
+| 78 | PINEWOOD LAWNS | 289 |
+| 79 | PINEWOOD SOUTH | 145 |
+| 80 | POINTE-O-CREEK | 6 |
+| 81 | POTOMAC SQUARE COMMERCIAL CONDOMINIUMS | 38 |
+| 82 | PURKS ADDITION TO PETITTS LANDING | 32 |
+| 83 | RIVERBEND AT MT VERNON CONDOMINIUM | 6 |
+| 84 | RIVERSIDE ESTATES | 464 |
+| 85 | RIVERSIDE TERRACE | 35 |
+| 86 | RIVERWOOD | 107 |
+| 87 | ROLLING HILLS | 35 |
+| 88 | ROXBURY MEWS | 15 |
+| 89 | ROXBURY OF MT VERNON | 82 |
+| 90 | SACRAMENTO MEWS | 28 |
+| 91 | SEDGEWICK FOREST | 50 |
+| 92 | SEQUOYAH | 1,019 |
+| 93 | SEQUOYAH TOWNES | 8 |
+| 94 | SKY VIEW PARK SUBDIVISION | 2 |
+| 95 | SKYVIEW PARK | 153 |
+| 96 | SKYVIEW PARK CONDOMINIUMS | 8 |
+| 97 | SOUTHWOOD | 96 |
+| 98 | SPRING VALLEY | 13 |
+| 99 | ST JAMES | 3 |
+| 100 | SUBDIVISION OF SUNNY VIEW | 4 |
+| 101 | SULGRAVE MANOR | 138 |
+| 102 | SUN UP | 14 |
+| 103 | SUNNY VIEW | 93 |
+| 104 | SURREY AT THE POTOMAC | 15 |
+| 105 | TALBOTT PROPERTY | 24 |
+| 106 | TERRACE TOWNE HOMES OF WOODLAWN | 150 |
+| 107 | THE VILLAGES | 215 |
+| 108 | THE WOODLANDS | 6 |
+| 109 | TIMOTHY PARK | 77 |
+| 110 | TIMOTHY PARK RESUB. | 39 |
+| 111 | TIMOTHY PARK, DIVISION OF PARCEL B OF THE SUBDIVISION | 5 |
+| 112 | TWIN OAKS | 29 |
+| 113 | UNION FARM | 21 |
+| 114 | VERNON HEIGHTS | 47 |
+| 115 | VERNON VILLAGE | 3 |
+| 116 | VILLAGE OF MOUNT VERNON | 131 |
+| 117 | WASHINGTON WOODS ON THE POTOMAC | 34 |
+| 118 | WESSYNTON | 157 |
+| 119 | WESTGATE | 85 |
+| 120 | WILSON MANOR | 10 |
+| 121 | WINELANDS ADDITION TO YACHT HAVEN ESTATES | 3 |
+| 122 | WOODLAND HEIGHTS SUBDIVISION | 10 |
+| 123 | WOODLAND PARK | 67 |
+| 124 | WOODLAND PARK REV PARCEL B | 5 |
+| 125 | WOODLAND PARK SUBDIVISION | 3 |
+| 126 | WOODLAWN ACRES | 32 |
+| 127 | WOODLAWN ESTATES | 18 |
+| 128 | WOODLAWN HEIGHTS | 91 |
+| 129 | WOODLAWN MANOR | 95 |
+| 130 | WOODLAWN MEWS | 128 |
+| 131 | WOODLAWN TERRACE | 214 |
+| 132 | WOODLEIGH WOODS | 27 |
+| 133 | WOODLEY HILLS | 69 |
+| 134 | WOODMILL ESTATES | 43 |
+| 135 | WYCLIFFE ON THE POTOMAC | 14 |
+| 136 | WYNGATE | 49 |
+| 137 | YACHT HAVEN ESTATES | 171 |
+
+---
+
+## ZIP Code 22310 - Alexandria (Franconia / Rose Hill)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 185
+- **Total Recorded Units:** 10,360
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 6348-6350 WALKER LANE CONDOMINIUM | 2 |
+| 2 | 6359-6363 WALKER LANE CONDOMINIUM | 3 |
+| 3 | ANNE LY ESTATES | 5 |
+| 4 | ANNE LY ESTATES II | 6 |
+| 5 | ARDEN ACRES | 77 |
+| 6 | ASHLAND MANOR ESTATES | 4 |
+| 7 | AUTUMN CHASE HUNT | 235 |
+| 8 | B.R.SIMMS ADDITION TO MAPLE GROVE ESTATES | 6 |
+| 9 | BLY-ANN ADDITION TO SILVER SPRINGS | 4 |
+| 10 | BRIARVIEW | 11 |
+| 11 | BROOKLAND EST 1ST ADDN. | 20 |
+| 12 | BROOKLAND EST 2ND ADDN | 31 |
+| 13 | BROOKLAND ESTATES | 60 |
+| 14 | BURBERRY COURT CONDOMINIUM | 44 |
+| 15 | BURGUNDY FARM | 21 |
+| 16 | BUSH HILL WOODS | 281 |
+| 17 | CAMERON VILLA FARMS | 17 |
+| 18 | CASSEL GLEN SUBD | 8 |
+| 19 | CLERMONT | 121 |
+| 20 | CLERMONT ESTATES | 15 |
+| 21 | CLERMONT RESUBDIVISION | 28 |
+| 22 | CLERMONT SECTION 1 | 8 |
+| 23 | CLERMONT SECTION 1, RESUBDIVISION OF LOTS 47A, 48A, & 50A | 14 |
+| 24 | CLERMONT SECTION 2, RESUBDIVISION OF LOT 61 | 11 |
+| 25 | COBBS CREEK | 4 |
+| 26 | COBBS CREEK OF FAIRFAX | 5 |
+| 27 | COUNTRY CLUB ESTATES | 13 |
+| 28 | COURTYARDS OF ALEXANDRIA | 20 |
+| 29 | CRESTED KNOLLS | 16 |
+| 30 | CRIST SUBDIVISION | 4 |
+| 31 | CROWN ROYALS GATE | 3 |
+| 32 | DAIL PARK | 14 |
+| 33 | DERIN GLEN | 10 |
+| 34 | DIVISION OF NELSON PROPERTY | 1 |
+| 35 | DIVISION OF THE PROPERTY OF MARJORIE HOWARD | 4 |
+| 36 | DIVISION OF THE PROPERTY OF PRESTON B. BERGIN | 1 |
+| 37 | E F CANNON SUBDIVISION | 3 |
+| 38 | ELMWOOD MANOR | 17 |
+| 39 | ESSEX HOUSE CONDOMINIUM | 200 |
+| 40 | FAIRFAX HOMES | 308 |
+| 41 | FIRST ADDITION TO BROOKLAND ESTATES | 25 |
+| 42 | FIRST ADDITION TO SECTION 1, KERRYBROOKE | 17 |
+| 43 | FIRST ADDITION TO WILTON WOODS | 1 |
+| 44 | FLEETSIDE SUBDIVISION | 19 |
+| 45 | FLORANCE LANE SUBDIVISION | 4 |
+| 46 | FLORENCE OVERLOOK | 31 |
+| 47 | FLOWERS ADDITION TO WILTON WOODS | 11 |
+| 48 | FOSTERS CREST | 54 |
+| 49 | FOUNDERS WALK CONDOMINIUM | 201 |
+| 50 | FRALEYS ADDITION TO GROVETON HEIGHTS | 2 |
+| 51 | FRANCONIA COMMONS | 324 |
+| 52 | FRANCONIA FOREST | 170 |
+| 53 | FRANCONIA FOREST SUBDIVISION | 24 |
+| 54 | FRANCONIA HILLS | 82 |
+| 55 | FRANCONIA PROFESSIONAL OFFICE | 64 |
+| 56 | FRANCONIA VILLAGE | 16 |
+| 57 | FRANCONIA VILLAS OFFICE CONDOMINIUM COMPLEX | 12 |
+| 58 | GAUTREAUXS ADDITION TO GROVETON HEIGHTS | 3 |
+| 59 | GEORGETOWN WOODS | 155 |
+| 60 | GLASSELLWOOD | 12 |
+| 61 | GLENWOOD ESTATES | 11 |
+| 62 | GLENWOOD PARK | 21 |
+| 63 | GOVERNORS GROVE | 157 |
+| 64 | GOVERNORS HILL | 86 |
+| 65 | GREEN MEADOW | 56 |
+| 66 | GRENADIERS ADDITION TO VIRGINIA HILLS | 12 |
+| 67 | GROVEDALE OFFICE CENTER | 1 |
+| 68 | GROVEDALE OFFICE PARK CONDOMINIUM | 32 |
+| 69 | GROVEDALE PROFESSIONAL CENTER CONDOMINIUM | 26 |
+| 70 | GROVETON HEIGHTS | 15 |
+| 71 | GUILFORD | 70 |
+| 72 | GUNNELL | 108 |
+| 73 | HAMPDEN HEIGHTS | 48 |
+| 74 | HAVEN AT WOODWAY, THE | 9 |
+| 75 | HAWTHORNE MANOR | 27 |
+| 76 | HEBRON PARK | 7 |
+| 77 | HERBYS ADDITION TO CLERMONT | 5 |
+| 78 | HERITAGE HILL OF ALEXANDRIA | 81 |
+| 79 | HERITAGE KNOLL, A CONDOMINIUM | 66 |
+| 80 | HIGHAMS ADDITION TO KATHMOOR | 3 |
+| 81 | HIGHLAND PARK | 3 |
+| 82 | HIGHLANDS ESTATES | 10 |
+| 83 | HILLVIEW AVENUE | 20 |
+| 84 | J EDGAR SCHURTZ PROPERTY OF | 4 |
+| 85 | JEFFERSON AT VAN DORN | 15 |
+| 86 | KATHMOOR SUBDIVISION | 43 |
+| 87 | KEE-WANIS PARK | 13 |
+| 88 | KERRYBROOKE | 84 |
+| 89 | KINGS LANDING | 208 |
+| 90 | KINGSTOWNE | 6 |
+| 91 | LAWRENCE PARK | 11 |
+| 92 | LAYNE ESTATES | 9 |
+| 93 | LEWELL PARK | 8 |
+| 94 | LOFTRIDGE | 189 |
+| 95 | LYNHILL | 27 |
+| 96 | MADISON HILL | 25 |
+| 97 | MALTON | 4 |
+| 98 | MANCHESTER LAKES | 378 |
+| 99 | MAPLE GROVE EST | 48 |
+| 100 | MAPLE GROVE ESTATES | 19 |
+| 101 | MAPLE VALLEY | 23 |
+| 102 | MAPLEFIELD | 18 |
+| 103 | MARL PAT | 23 |
+| 104 | MARL-PAT | 24 |
+| 105 | MARYVIEW SUBDIVISION | 24 |
+| 106 | MEADOWS AT ROSE HILL THE | 16 |
+| 107 | MIDWOOD ESTATES | 23 |
+| 108 | MISSION HEIGHTS | 17 |
+| 109 | MOORES ADDITION TO MAPLE GROVE ESTATES | 11 |
+| 110 | MOUNT ERIN | 11 |
+| 111 | MT. HEBRON PARK | 23 |
+| 112 | OAK TREE PLAZA A CONDOMINIUM | 50 |
+| 113 | OAKBROOK KNOLLS | 42 |
+| 114 | OAKWOOD | 26 |
+| 115 | OAKWOOD LAND CONDOMINIUM | 2 |
+| 116 | OAKWOOD, SECTION 2 | 52 |
+| 117 | OLDE FRANCONIA STATION | 13 |
+| 118 | PARKSIDE | 32 |
+| 119 | PARKSIDE STATION | 5 |
+| 120 | PENWOOD CIRCLE | 9 |
+| 121 | PIKE BRANCH ADDITION TO WILTON WOODS | 71 |
+| 122 | PILGRIM PARK | 4 |
+| 123 | PINE VIEW ESTATES | 21 |
+| 124 | PINEBROOK ADDITION TO WILTON WOODS | 30 |
+| 125 | PLAUGHERS ADDITION TO BROOKLAND ESTATES | 29 |
+| 126 | POTTERS GLEN | 135 |
+| 127 | RESERVE AT BROOKVIEW ESTATES THE | 5 |
+| 128 | RESUBDIVISIO KATHMOOR | 5 |
+| 129 | RIDGE VIEW | 218 |
+| 130 | ROSE HILL FARM | 289 |
+| 131 | ROSE HILL FARMS | 164 |
+| 132 | ROSE HILL MANOR | 9 |
+| 133 | ROSE HILL MANOR SUBDIVISION | 13 |
+| 134 | ROSE HILL PARK | 125 |
+| 135 | ROSE HILL PARK SUBDIVISION | 4 |
+| 136 | ROSE HILL RESERVE | 45 |
+| 137 | RUNNYMEADE | 347 |
+| 138 | SCHEBISH PROPERTY | 6 |
+| 139 | SECOND ADDITION TO BROOKLAND ESTATES | 48 |
+| 140 | SERENITY 3 SUBDIVISION | 3 |
+| 141 | SHADY HILL SUBDIVISION | 18 |
+| 142 | SHARON | 25 |
+| 143 | SHIRLEY PARK | 36 |
+| 144 | SILVER SPRINGS | 39 |
+| 145 | SKYLINE HOMES | 48 |
+| 146 | SPRINGFIELD HEALTHPLEX CONDOMINIUM | 30 |
+| 147 | SUMNER PARK | 17 |
+| 148 | SUMNER WAY | 10 |
+| 149 | SUNNY RIDGE ESTATES | 218 |
+| 150 | SURRY AT MANCHESTER LAKES A CONDOMINIUM | 198 |
+| 151 | SYCAMORES AT VAN DORN CONDOMINIUM THE | 173 |
+| 152 | TARA VILLAGE | 26 |
+| 153 | TAYLORS ADDITION TO GROVETON HEIGHTS | 4 |
+| 154 | TELEGRAPH ESTATES | 7 |
+| 155 | THE JEFFERSON AT VAN DORN | 16 |
+| 156 | TIERS AT MANCHESTER LAKES CONDOMINIUM | 216 |
+| 157 | TOWNES AT MANCHESTER PARK THE | 94 |
+| 158 | VALLEIGH | 79 |
+| 159 | VALLEY VIEW ESTATES | 27 |
+| 160 | VALLEY VIEW MANOR | 33 |
+| 161 | VAN DORN STATION | 20 |
+| 162 | VAN DORN VILLAGE | 295 |
+| 163 | VICTORIA CROSSING | 216 |
+| 164 | VICTORIA OAKS | 16 |
+| 165 | VILLAGES AT HUNTINGTON | 38 |
+| 166 | VIRGINIA HILLS | 730 |
+| 167 | WALHAVEN | 94 |
+| 168 | WALHAVEN CONDOMINIUM AT KINGSTOWNE | 33 |
+| 169 | WELLINGTON COMMONS | 141 |
+| 170 | WESTRIDGE | 14 |
+| 171 | WILLOW CREEK SUBDIVISION | 78 |
+| 172 | WILSON WOODS | 9 |
+| 173 | WILTON FOREST | 51 |
+| 174 | WILTON HALL | 40 |
+| 175 | WILTON HILL | 12 |
+| 176 | WILTON KNOLL | 36 |
+| 177 | WILTON RIDGE | 25 |
+| 178 | WILTON WOODS | 179 |
+| 179 | WILTON WOODS ESTATES | 5 |
+| 180 | WILTON WOODS VILLAGE | 51 |
+| 181 | WISE PARK | 2 |
+| 182 | WOODFIELD ESTATES | 57 |
+| 183 | WOODLAND CREST | 7 |
+| 184 | WOODLAND LAKE | 26 |
+| 185 | WOODLAND STREAM | 9 |
+
+---
+
+## ZIP Code 22311 - Alexandria (Lincolnia Border Overlap)
+
+- **Postal Classification:** Border Overlap
+- **Total Subdivisions:** 15
+- **Total Recorded Units:** 585
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | ANDRUS PROP. | 4 |
+| 2 | BELL MANOR III | 9 |
+| 3 | DOWDEN TERR. | 23 |
+| 4 | DOWDEN TERRACE | 132 |
+| 5 | DUNLEIGH COURT SUBDIVISION | 6 |
+| 6 | HAMMER PARK | 7 |
+| 7 | HIGHLAND VIEW | 5 |
+| 8 | HOLMES RUN | 3 |
+| 9 | MIRACLE WOODS | 13 |
+| 10 | OLIVERS ADDITION TO SYLVAN HILLS | 3 |
+| 11 | RODRIGUEZ-COOPER PROPERTY | 2 |
+| 12 | SUNSET MANOR | 118 |
+| 13 | SYLVAN HILLS | 33 |
+| 14 | THE PALISADES | 120 |
+| 15 | WESTBRIAR CONDOMINIUM | 107 |
+
+---
+
+## ZIP Code 22312 - Alexandria (Lincolnia / Pinecrest)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 94
+- **Total Recorded Units:** 6,087
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 1st FAIRLAND | 3 |
+| 2 | 4810 BEAUREGARD CONDOMINIUM | 28 |
+| 3 | 5350 SHAWNEE ROAD A CONDOMINIUM | 14 |
+| 4 | 5720 A CONDOMINIUM | 3 |
+| 5 | ADDN. TO BARCROFT TERRACE | 5 |
+| 6 | ASHLEY ESTATES | 20 |
+| 7 | ASHTON COMMONS | 28 |
+| 8 | AUTUMN COVE | 14 |
+| 9 | AUTUMN GLEN | 22 |
+| 10 | BARCROFT FOREST | 30 |
+| 11 | BARCROFT SQUARE | 55 |
+| 12 | BARCROFT TERRACE | 69 |
+| 13 | BIRCH LANE ESTATES | 4 |
+| 14 | BRADDOCK ACRES | 62 |
+| 15 | BRADDOCK PLACE | 35 |
+| 16 | BRADDOCK ROAD TOWNHOUSES | 9 |
+| 17 | BREN MAR PARK | 438 |
+| 18 | BREN POINTE | 97 |
+| 19 | BROOKSIDE OFFICE PARK | 11 |
+| 20 | BUILD AMERICA FIVE | 89 |
+| 21 | BURNT PINE ESTATES | 5 |
+| 22 | CALVERT OAKS | 4 |
+| 23 | CARR AT PINECREST A CONDOMINIUM | 209 |
+| 24 | CJM CONDOMINIUM, THE | 3 |
+| 25 | CLEARFIELD | 34 |
+| 26 | COTTAGE FARMS | 24 |
+| 27 | EARLY'S ADDITION TO FAIRLAND | 3 |
+| 28 | ELIZABETH CROSSING | 6 |
+| 29 | FAIRLAND | 65 |
+| 30 | FAIRLAND TOWNS | 72 |
+| 31 | FAIRLYN SUBDIVISION | 3 |
+| 32 | FARRAR ADDITION TO SPRING VALLEY | 4 |
+| 33 | FIRST ADDITION TO FAIRLAND | 41 |
+| 34 | FOSTER PROPERTY | 34 |
+| 35 | GLENDALE | 15 |
+| 36 | GLENVIEW HEIGHTS | 10 |
+| 37 | HANNA PARK | 19 |
+| 38 | HEYWOOD GLEN | 121 |
+| 39 | INDIAN RUN COMMONS | 10 |
+| 40 | INDIAN RUN OFFICE PARK | 2 |
+| 41 | INDIAN RUN PARK | 47 |
+| 42 | INDIAN SPRING | 66 |
+| 43 | ISABELLA AT MONTICELLO MEWS CONDOMINIUM, THE | 144 |
+| 44 | JANETS ADDITION TO LINCOLNIA PARK | 2 |
+| 45 | JEFFERSON GREEN | 195 |
+| 46 | KEYES 2ND ADDITION TO LINCOLNIA PARK | 10 |
+| 47 | KEYES ADDITION TO LINCOLNIA PARK | 4 |
+| 48 | LANDMARK | 45 |
+| 49 | LINCOLN MANOR | 11 |
+| 50 | LINCOLN MEWS | 19 |
+| 51 | LINCOLNIA ESTATES | 13 |
+| 52 | LINCOLNIA HEIGHTS | 122 |
+| 53 | LINCOLNIA HILLS | 49 |
+| 54 | LINCOLNIA MEWS | 71 |
+| 55 | LINCOLNIA PARK | 175 |
+| 56 | LINCOLNIA WOODS | 10 |
+| 57 | LINMAR | 57 |
+| 58 | LITTLE RIVER VILLAGE | 67 |
+| 59 | MAGNOLIA MANOR | 8 |
+| 60 | MEYER'S ADDITION TO INDIAN RUN PARK | 24 |
+| 61 | MONTROSE PARK | 4 |
+| 62 | MULBERRY GROVE | 6 |
+| 63 | OAK RUN PARK | 23 |
+| 64 | OVERLOOK | 364 |
+| 65 | OVERLOOK CONDOMINIUM | 80 |
+| 66 | PARKLAWN | 496 |
+| 67 | PEARSONS ADDITION TO FAIRLYN SUBDIVISION | 1 |
+| 68 | PINECREST | 231 |
+| 69 | PINECREST OFFICE PARK CONDOMINIUM | 48 |
+| 70 | PINECREST RESUBDIVISION OF | 7 |
+| 71 | PINECREST VIEW | 24 |
+| 72 | RESIDENCES AT SULLIVAN PLACE CONDOMINIUM | 122 |
+| 73 | RIDGES AT EDSALL | 24 |
+| 74 | SHELL OIL PARK | 199 |
+| 75 | SHERRY HEIGHTS | 36 |
+| 76 | SMARRLAND | 12 |
+| 77 | SOUTHERN VILLA | 83 |
+| 78 | SPRING VALLEY ASSOCIATES ADDITION TO SPRING VALLEY FOREST | 8 |
+| 79 | SPRING VALLEY FOREST | 25 |
+| 80 | SUBDIVISION OF THE PROPERTY OF ALBAN REALTY CORPORATION | 16 |
+| 81 | SUMMERS AND LEE ADDITION TO MT. PLEASANT | 5 |
+| 82 | SUSQUEHANNA IND. PARK | 1 |
+| 83 | SUSQUEHANNA INDUSTRIAL PARK | 2 |
+| 84 | THE PINECREST | 616 |
+| 85 | THE RIDGES OF ALEXANDRIA | 41 |
+| 86 | TWIN KNOLLS I | 6 |
+| 87 | TWIN KNOLLS II | 6 |
+| 88 | VALLEY PARK CONDO. | 130 |
+| 89 | VALLEY PARK CONDOMINIUM | 103 |
+| 90 | VICTORIA SQUARE CONDOMINIUM | 9 |
+| 91 | WEYANOKE | 223 |
+| 92 | WILCOFF VALLEY | 7 |
+| 93 | WINDY HILL AT LINCOLNIA | 178 |
+| 94 | WINDY HILL CONDOMINIUM | 92 |
+
+---
+
+## ZIP Code 22315 - Alexandria (Kingstowne / Island Creek)
+
+- **Postal Classification:** Standard Residential
+- **Total Subdivisions:** 54
+- **Total Recorded Units:** 10,227
+
+| # | Subdivision / Real Estate Community | Recorded Address Units |
+|---|---|---:|
+| 1 | 7100 BEULAH | 26 |
+| 2 | AMBERLEIGH | 489 |
+| 3 | ASHBY HEIGHTS | 18 |
+| 4 | BANNER HEIGHTS | 176 |
+| 5 | CARDINAL PLACE CONDOMINIUM | 202 |
+| 6 | CARRINGTON ESTATES | 32 |
+| 7 | CEDAR KNOLL | 44 |
+| 8 | CHANCERY CONDOMINIUM OF KINGSTOWNE | 170 |
+| 9 | CONDOMINIUM AT ISLAND CREEK, THE | 130 |
+| 10 | CREST OF ALEXANDRIA | 136 |
+| 11 | CREST OF ALEXANDRIA CONDOMINIUM | 124 |
+| 12 | CRESTLEIGH | 39 |
+| 13 | DEVONSHIRE TOWNHOMES | 65 |
+| 14 | DEWEY PARK | 20 |
+| 15 | DIVISION OF NALLS PROPERTY | 4 |
+| 16 | DIVISION OF THE PROPERTY OF W J CASH | 18 |
+| 17 | EDGEHILL | 32 |
+| 18 | ENCLAVE AT LONG BRANCH | 35 |
+| 19 | ETON SQUARE CONDOMINIUM | 299 |
+| 20 | FOUNDERS RIDGE | 80 |
+| 21 | GAYFIELDS ROAD | 40 |
+| 22 | GLYNALTA PARK | 46 |
+| 23 | HAWTHORNE | 149 |
+| 24 | HAYFIELD ESTATES | 8 |
+| 25 | HAYFIELD FARM | 693 |
+| 26 | HAYFIELD VIEW | 225 |
+| 27 | ISLAND CREEK | 714 |
+| 28 | KENDRICK | 8 |
+| 29 | KINGSTOWNE | 3,193 |
+| 30 | LAKE D EVEREUX | 283 |
+| 31 | LANDSDOWNE | 620 |
+| 32 | LEWIN PARK | 3 |
+| 33 | LINCOLN HEIGHTS | 29 |
+| 34 | MANCHESTER LAKES | 118 |
+| 35 | MCSHAY ADDITION TO DEVONSHIRE | 14 |
+| 36 | NORTHAMPTON | 100 |
+| 37 | O. N. MILLER SUBDIVISION | 5 |
+| 38 | PINEY GLEN | 22 |
+| 39 | PINEY RUN | 11 |
+| 40 | SILVER LAKE | 9 |
+| 41 | SMALL PROPERTY | 62 |
+| 42 | STRATFORD PLACE AT KINGSTOWNE, A CONDOMINIUM | 245 |
+| 43 | SUBDIVISION OF RICH PROPERTY | 10 |
+| 44 | TAVARES | 11 |
+| 45 | THE MEWS | 122 |
+| 46 | TIERS AT MANCHESTER LAKES II A CONDOMINIUM, THE | 118 |
+| 47 | TURNBERRY MEWS | 19 |
+| 48 | WELLFLEET | 51 |
+| 49 | WICKFORD | 126 |
+| 50 | WINDSOR EST | 48 |
+| 51 | WINDSOR ESTATES | 125 |
+| 52 | WINDSOR KNOLL | 34 |
+| 53 | WINDSOR PARK | 387 |
+| 54 | d EVEREUX WEST | 440 |
+
+---
+

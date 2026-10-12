@@ -53,7 +53,7 @@ export default function SellerAppointmentSection({ prefilledAddress = "", isH1 =
             <h2 className="section-title-bold">Book an In-Home Listing Appointment</h2>
           )}
           <p className="section-lead-text">
-            Hire Northern Virginia's top listing team. We analyze recent settled sales, calculate your maximum net proceeds, and prepare your 30-day listing launch.
+            Hire Northern Virginia's top listing agent. We analyze recent settled sales, calculate your maximum net proceeds, and prepare your 30-day listing launch.
           </p>
         </div>
 

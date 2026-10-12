@@ -94,6 +94,21 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/herndon-va-real-estate" style={{ color: "#475569", textDecoration: "none" }}>
+                  Herndon VA Real Estate
+                </Link>
+              </li>
+              <li>
+                <Link href="/chantilly-va-real-estate" style={{ color: "#475569", textDecoration: "none" }}>
+                  Chantilly VA Real Estate
+                </Link>
+              </li>
+              <li>
+                <Link href="/centreville-va-real-estate" style={{ color: "#475569", textDecoration: "none" }}>
+                  Centreville VA Real Estate
+                </Link>
+              </li>
+              <li>
                 <Link href="/burke-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none" }}>
                   Burke &amp; Lake Braddock
                 </Link>
@@ -116,6 +131,16 @@ export default function Footer() {
               <li>
                 <Link href="/alexandria-va-townhomes-for-sale" style={{ color: "#475569", textDecoration: "none" }}>
                   Alexandria Townhomes &amp; Condos
+                </Link>
+              </li>
+              <li>
+                <Link href="/skyline-condominiums" style={{ color: "#475569", textDecoration: "none" }}>
+                  Skyline Condominiums
+                </Link>
+              </li>
+              <li>
+                <Link href="/northampton-place-condominiums" style={{ color: "#475569", textDecoration: "none" }}>
+                  Northampton Place Condos
                 </Link>
               </li>
             </ul>
@@ -290,6 +315,15 @@ export default function Footer() {
               </Link>
               <Link href="/oakton-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
                 Oakton Houses For Sale
+              </Link>
+              <Link href="/herndon-va-real-estate" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Herndon VA Real Estate
+              </Link>
+              <Link href="/chantilly-va-real-estate" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Chantilly VA Real Estate
+              </Link>
+              <Link href="/centreville-va-real-estate" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
+                Centreville VA Real Estate
               </Link>
               <Link href="/burke-va-homes-for-sale" style={{ color: "#475569", textDecoration: "none", fontWeight: 600 }}>
                 Burke VA Real Estate

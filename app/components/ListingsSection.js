@@ -173,41 +173,6 @@ export default function ListingsSection({ searchFilters, onSelectPropertyForTour
           )}
         </div>
 
-        {/* High-Converting Seller Callout Banner */}
-        <div style={{
-          marginTop: "48px",
-          background: "linear-gradient(135deg, #0F172A 0%, #1E293B 100%)",
-          color: "#FFFFFF",
-          borderRadius: "16px",
-          padding: "36px 30px",
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          flexWrap: "wrap",
-          gap: "24px"
-        }}>
-          <div style={{ maxWidth: "680px" }}>
-            <span style={{ fontSize: "0.8rem", color: "var(--accent-gold)", fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.08em", display: "block", marginBottom: "6px" }}>
-              ✦ Looking to List Your Home?
-            </span>
-            <h3 style={{ fontSize: "1.65rem", fontWeight: 800, color: "#FFFFFF", margin: "0 0 8px" }}>
-              Want Your Property Featured with This Level of Marketing?
-            </h3>
-            <p style={{ fontSize: "0.98rem", color: "#CBD5E1", margin: 0, lineHeight: 1.6 }}>
-              We invest upfront in cinema-grade 4K architectural photography, custom drone videos, and targeted corporate relocation ads to ensure your home sells for record value.
-            </p>
-          </div>
-
-          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
-            <a 
-              href="#sell" 
-              className="btn btn-primary"
-              style={{ background: "var(--accent-gold)", borderColor: "var(--accent-gold)", color: "#0F172A", fontWeight: 800, padding: "12px 24px" }}
-            >
-              Book In-Home Listing Consultation &rarr;
-            </a>
-          </div>
-        </div>
 
         <div style={{ marginTop: "32px", textAlign: "center", fontSize: "0.86rem", color: "var(--ink-500)", fontWeight: 500 }}>
           Direct Bright MLS IDX Integration. Information deemed reliable but not guaranteed. Equal Housing Opportunity.

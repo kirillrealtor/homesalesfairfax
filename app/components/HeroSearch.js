@@ -78,7 +78,7 @@ export default function HeroSearch({ onSearch, onOpenTourModal, onSellerAddressS
       {activeMode === "sell" ? (
         <>
           <h1 className="hero-title-main">
-            Hire Northern Virginia's Top Listing Team.
+            Hire Northern Virginia's Top Listing Agent.
           </h1>
 
           <p className="hero-subtitle-clean">

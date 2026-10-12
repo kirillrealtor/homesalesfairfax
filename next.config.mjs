@@ -223,6 +223,26 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/fairfax-county-history',
+        destination: '/fairfax-county-history-real-estate-landscape',
+        permanent: true,
+      },
+      {
+        source: '/fairfax-county-virginia-history-and-the-real-estate-landscape',
+        destination: '/fairfax-county-history-real-estate-landscape',
+        permanent: true,
+      },
+      {
+        source: '/vienna-va-homes-for-sale',
+        destination: '/vienna-va-real-estate',
+        permanent: true,
+      },
+      {
+        source: '/oakton-va-real-estate',
+        destination: '/oakton-homes-for-sale',
+        permanent: true,
+      },
     ];
   },
 };
