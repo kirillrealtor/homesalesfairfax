@@ -197,6 +197,12 @@ export default function sitemap() {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/burke-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/skyline-condominiums`,
       lastModified: new Date(),
       changeFrequency: "weekly",
