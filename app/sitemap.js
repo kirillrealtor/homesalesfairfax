@@ -173,6 +173,18 @@ export default function sitemap() {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/hybla-valley-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/lorton-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/skyline-condominiums`,
       lastModified: new Date(),
       changeFrequency: "weekly",
