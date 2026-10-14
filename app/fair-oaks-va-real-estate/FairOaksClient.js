@@ -47,7 +47,7 @@ export default function FairOaksClient() {
           {/* Hero Banner Image */}
           <div className="doc-hero-wrap">
             <img
-              src="/images/communities/fair-oaks.jpg"
+              src="/images/County/Fair%20Oaks.jpg"
               alt="Fair Oaks, Virginia - Resort-style golf course fairways, mature tree canopies, and manicured residential enclaves in Penderbrook"
               className="doc-hero-img"
               loading="eager"

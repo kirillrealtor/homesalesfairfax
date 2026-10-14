@@ -520,7 +520,7 @@ export default function HomeClient() {
           >
             <div className="home-top-hero-img-wrap">
               <img
-                src="/images/communities/fairfax-city.jpg"
+                src="/images/County/City%20of%20Fairfax.jpg"
                 alt="City of Fairfax, VA Real Estate: Historic Old Town, Country Club Hills & GMU Nexus"
                 className="home-top-hero-img"
                 loading="eager"
@@ -548,7 +548,7 @@ export default function HomeClient() {
           >
             <div className="home-top-hero-img-wrap">
               <img
-                src="/images/communities/fair-oaks.jpg"
+                src="/images/County/Fair%20Oaks.jpg"
                 alt="Fair Oaks, VA Real Estate: Penderbrook Golf Course, Inova Medical Campus & I-66 Corridor"
                 className="home-top-hero-img"
                 loading="eager"
@@ -561,6 +561,34 @@ export default function HomeClient() {
                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                   </svg>
                   <span>Read about Fair Oaks</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/fairfax-station-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Fairfax Station, VA Real Estate: The Definitive Acreage, Equestrian & Watershed Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Fairfax%20Station.jpg"
+                alt="Fairfax Station, VA Real Estate: Multi-Acre Wooded Estates, Occoquan Watershed & VRE Commuter Rail"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Fairfax Station</span>
                   <span className="home-top-hero-badge-arrow">→</span>
                 </span>
               </div>

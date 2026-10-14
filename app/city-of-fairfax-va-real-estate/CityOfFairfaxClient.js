@@ -47,7 +47,7 @@ export default function CityOfFairfaxClient() {
           {/* Hero Banner Image */}
           <div className="doc-hero-wrap">
             <img
-              src="/images/communities/fairfax-city.jpg"
+              src="/images/County/City%20of%20Fairfax.jpg"
               alt="City of Fairfax, Virginia - Historic Old Town streetscape, vibrant municipal center, and surrounding leafy residential enclaves"
               className="doc-hero-img"
               loading="eager"
