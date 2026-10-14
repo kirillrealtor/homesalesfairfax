@@ -148,16 +148,16 @@ export default function HomeClient() {
           </Link>
 
           <Link
-            href="/oakton-homes-for-sale"
+            href="/oakton-va-real-estate"
             target="_blank"
             rel="noopener noreferrer"
             className="home-top-hero-link"
-            title="Oakton, VA Real Estate: The Complete Guide to Wooded Acreage, Luxury Estates, and School Pyramids"
+            title="Oakton, VA Real Estate: The Definitive Wooded Acreage, Vienna Metro & Luxury Enclave Guide"
           >
             <div className="home-top-hero-img-wrap">
               <img
-                src="/images/oakton.jpg"
-                alt="Oakton, VA Real Estate: The Complete Guide to Wooded Acreage, Luxury Estates, and School Pyramids"
+                src="/images/County/Oakton.jpg"
+                alt="Oakton, VA Real Estate: Wooded Acreage, Vienna Metrorail & Oakton High School"
                 className="home-top-hero-img"
                 loading="eager"
               />
@@ -197,6 +197,34 @@ export default function HomeClient() {
                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                   </svg>
                   <span>Read about Herndon</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/reston-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Reston, VA Real Estate: The Definitive Planned Community & Silver Line Metro Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Reston.jpg"
+                alt="Reston, VA Real Estate: Lake Anne Waterfront, Reston Town Center & Silver Line Metro"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Reston</span>
                   <span className="home-top-hero-badge-arrow">→</span>
                 </span>
               </div>
@@ -589,6 +617,118 @@ export default function HomeClient() {
                     <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
                   </svg>
                   <span>Read about Fairfax Station</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/springfield-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Springfield, VA Real Estate: The Definitive Transit, Parkway & Neighborhood Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Springfield.jpg"
+                alt="Springfield, VA Real Estate: Franconia-Springfield Metro, VRE & West Springfield"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Springfield</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/kingstowne-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Kingstowne, VA Real Estate: The Definitive Master-Planned Community & Lifestyle Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Kingstowne.jpg"
+                alt="Kingstowne, VA Real Estate: Master-Planned Lakefront Living, Townhomes & KROC Amenities"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Kingstowne</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/annandale-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Annandale, VA Real Estate: The Definitive Mid-Century, Tree Canopy & Inner-Beltway Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Annandale.jpg"
+                alt="Annandale, VA Real Estate: Mid-Century Brick Ramblers, Half-Acre Lots & Beltway Access"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Annandale</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/baileys-crossroads-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Bailey's Crossroads, VA Real Estate: The Definitive Urban Infill & Commuter Corridor Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Baileys_Cross.jpg"
+                alt="Bailey's Crossroads, VA Real Estate: Skyline Living, Columbia Pike Transit & Alexandria Gateway"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Bailey's Crossroads</span>
                   <span className="home-top-hero-badge-arrow">→</span>
                 </span>
               </div>

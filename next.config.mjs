@@ -243,11 +243,6 @@ const nextConfig = {
         destination: '/vienna-va-real-estate',
         permanent: true,
       },
-      {
-        source: '/oakton-va-real-estate',
-        destination: '/oakton-homes-for-sale',
-        permanent: true,
-      },
     ];
   },
 };

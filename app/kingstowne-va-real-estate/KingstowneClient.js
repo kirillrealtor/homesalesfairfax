@@ -43,6 +43,23 @@ export default function KingstowneClient() {
             <span className="doc-meta-pill">Verified Public Records</span>
           </div>
 
+          {/* Hero Banner Image */}
+          <div className="doc-hero-wrap">
+            <img
+              src="/images/County/Kingstowne.jpg"
+              alt="Kingstowne, Virginia - Master-planned lakeside promenades, luxury brick townhome villages, and resort community centers"
+              className="doc-hero-img"
+              loading="eager"
+            />
+            <div className="doc-hero-caption">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Master-planned lakefront promenade and stately brick residential architecture in Kingstowne, Fairfax County, Virginia, combining resort-caliber recreation with swift transit to Fort Belvoir and the Pentagon.
+            </div>
+          </div>
+
           {/* Section 1: Executive Summary & Foundational Takeaways */}
           <h2 id="executive-summary" className="doc-h2">
             1. Executive Summary &amp; Foundational Takeaways
