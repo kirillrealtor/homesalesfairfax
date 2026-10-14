@@ -52,6 +52,11 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
+      {
+        source: '/fairfax-city-va-real-estate',
+        destination: '/city-of-fairfax-va-real-estate',
+        permanent: true,
+      },
 
       // Communities hub and community detail pages redirects
       {
