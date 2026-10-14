@@ -520,7 +520,7 @@ export default function HomeClient() {
           >
             <div className="home-top-hero-img-wrap">
               <img
-                src="/images/communities/great-falls.jpg"
+                src="/images/County/Great%20Falls.jpg"
                 alt="Great Falls, VA Real Estate: Potomac Palisades & 2-Acre Luxury Estates"
                 className="home-top-hero-img"
                 loading="eager"

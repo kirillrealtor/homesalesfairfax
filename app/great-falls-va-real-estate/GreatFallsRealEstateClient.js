@@ -46,7 +46,7 @@ export default function GreatFallsRealEstateClient() {
           {/* Hero Banner Image */}
           <div className="doc-hero-wrap">
             <img
-              src="/images/communities/great-falls.jpg"
+              src="/images/County/Great%20Falls.jpg"
               alt="Great Falls, Virginia - Stately luxury stone estate nestled in mature hardwood acreage near the Potomac River"
               className="doc-hero-img"
               loading="eager"
