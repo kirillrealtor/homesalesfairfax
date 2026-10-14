@@ -54,6 +54,15 @@ export default function FairfaxStationClient({ stationListings }) {
                 <li><strong>Commuter Rail Access:</strong> Burke Centre VRE Station (10 mins)</li>
                 <li><strong>Parks &amp; Nature:</strong> Burke Lake &amp; Fountainhead Regional Park</li>
               </ul>
+              <div style={{ marginTop: "18px", paddingTop: "14px", borderTop: "1px solid var(--ink-200)" }}>
+                <Link 
+                  href="/fairfax-station-va-real-estate" 
+                  style={{ color: "#92400E", fontWeight: 700, textDecoration: "none", display: "inline-flex", alignItems: "center", gap: "6px" }}
+                >
+                  <span>Read our in-depth Fairfax Station Community &amp; Architectural Guide</span>
+                  <span>→</span>
+                </Link>
+              </div>
             </div>
           </div>
 
