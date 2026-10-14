@@ -203,6 +203,12 @@ export default function sitemap() {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/great-falls-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/skyline-condominiums`,
       lastModified: new Date(),
       changeFrequency: "weekly",
