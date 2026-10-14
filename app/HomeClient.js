@@ -258,6 +258,230 @@ export default function HomeClient() {
               </div>
             </div>
           </Link>
+
+          <Link
+            href="/merrifield-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Merrifield, VA Real Estate: The Definitive Guide to the Mosaic District, Inova & Transit Infill"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Merrifield.jpg"
+                alt="Merrifield, VA Real Estate: Mosaic District and Inova Regional Health Nexus"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Merrifield</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/dunn-loring-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Dunn Loring, VA Real Estate: The Definitive Guide to Fairfax County’s Oldest Platted Subdivision, Metro & W&OD Trail"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Dunn%20Loring.jpg"
+                alt="Dunn Loring, VA Real Estate: Oldest Platted Subdivision and Metrorail"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Dunn Loring</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/mount-vernon-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Mount Vernon, VA Real Estate: The Definitive Potomac Riverfront & Heritage Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Mount%20Vernon.jpg"
+                alt="Mount Vernon, VA Real Estate: Historic Potomac Riverfront Estates & GW Parkway"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Mount Vernon</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/hybla-valley-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Hybla Valley, VA Real Estate: The Definitive Route 1 & Huntley Meadows Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Hybla%20Valley.jpg"
+                alt="Hybla Valley, VA Real Estate: Richmond Highway Revitalization & Huntley Meadows"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Hybla Valley</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/lorton-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Lorton, VA Real Estate: The Definitive Laurel Hill, Liberty & VRE Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Lorton.jpg"
+                alt="Lorton, VA Real Estate: Laurel Hill, Liberty Adaptive Reuse & VRE Commuter Rail"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Lorton</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/mason-neck-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Mason Neck, VA Real Estate: The Definitive Potomac Coastal & Wildlife Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Mason%20Neck.jpg"
+                alt="Mason Neck, VA Real Estate: Gunston Hall, Potomac Riverfront & Bald Eagle Sanctuary"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Mason Neck</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/clifton-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Clifton, VA Real Estate: The Definitive Historic Town & 5-Acre Estate Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Clifton.jpg"
+                alt="Clifton, VA Real Estate: Historic Victorian Village & 5-Acre Occoquan Estates"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Clifton</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
+
+          <Link
+            href="/burke-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Burke, VA Real Estate: The Definitive Burke Centre, Lake Braddock & VRE Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Burke.jpg"
+                alt="Burke, VA Real Estate: Burke Centre Conservancy, Lake Braddock & VRE Stations"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Burke</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
 

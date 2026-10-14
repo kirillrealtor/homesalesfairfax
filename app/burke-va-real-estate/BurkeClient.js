@@ -43,6 +43,23 @@ export default function BurkeClient() {
             <span className="doc-meta-pill">Verified Public Records</span>
           </div>
 
+          {/* Hero Banner Image */}
+          <div className="doc-hero-wrap">
+            <img
+              src="/images/County/Burke.jpg"
+              alt="Burke, Virginia - Peaceful tree-lined master-planned suburban community adjacent to Burke Lake Park and Burke Centre Conservancy"
+              className="doc-hero-img"
+              loading="eager"
+            />
+            <div className="doc-hero-caption">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Master-planned suburban living in Burke, Fairfax County, Virginia, featuring mature oak canopies, extensive pedestrian nature trails, dual VRE stations, and proximity to the 888-acre Burke Lake Park.
+            </div>
+          </div>
+
           {/* Section 1: Executive Summary & Foundational Takeaways */}
           <h2 id="executive-summary" className="doc-h2">
             1. Executive Summary &amp; Foundational Takeaways
