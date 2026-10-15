@@ -275,6 +275,36 @@ export default function sitemap() {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/seven-corners-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/lake-barcroft-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/lincolnia-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/west-falls-church-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/idylwood-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/burke-va-homes-for-sale`,
       lastModified: new Date(),
       changeFrequency: "weekly",
