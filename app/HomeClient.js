@@ -5,7 +5,6 @@ import Link from "next/link";
 import Navbar from "./components/Navbar";
 import TrustStats from "./components/TrustStats";
 import SellerAppointmentSection from "./components/SellerAppointmentSection";
-import SkylineFeaturedSection from "./components/SkylineFeaturedSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "./components/Footer";
 import ShowingModal from "./components/ShowingModal";
@@ -964,8 +963,6 @@ export default function HomeClient() {
       <TrustStats />
 
       <SellerAppointmentSection prefilledAddress={sellerAddress} isH1={true} />
-
-      <SkylineFeaturedSection />
 
       <TestimonialsSection />
 
