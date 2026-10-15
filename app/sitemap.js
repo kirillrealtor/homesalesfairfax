@@ -155,6 +155,12 @@ export default function sitemap() {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/lincolnia-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/springfield-va-real-estate`,
       lastModified: new Date(),
       changeFrequency: "weekly",
