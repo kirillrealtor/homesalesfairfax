@@ -143,6 +143,12 @@ export default function sitemap() {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/seven-corners-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/springfield-va-real-estate`,
       lastModified: new Date(),
       changeFrequency: "weekly",
