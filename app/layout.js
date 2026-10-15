@@ -47,11 +47,11 @@ export const metadata = {
   },
   icons: {
     icon: [
-      { url: "/icon.jpeg", sizes: "any" },
-      
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.jpeg", type: "image/jpeg" },
     ],
-    shortcut: "/icon.jpeg",
-    apple: "/icon.jpeg",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
