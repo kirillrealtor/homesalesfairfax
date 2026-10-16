@@ -957,6 +957,34 @@ export default function HomeClient() {
               </div>
             </div>
           </Link>
+
+          <Link
+            href="/belle-haven-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Belle Haven, VA Real Estate: The Definitive Potomac River, Country Club & Architecture Guide"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Belle%20Haven.jpg"
+                alt="Belle Haven, VA Real Estate: Belle Haven Country Club, Historic 1920s Estates, Dyke Marsh & West Potomac High"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Belle Haven</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
 
