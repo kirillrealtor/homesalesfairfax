@@ -1,10 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
 import TrustStats from "./components/TrustStats";
 import SellerAppointmentSection from "./components/SellerAppointmentSection";
+import FeaturedCondosSection from "./components/FeaturedCondosSection";
+import SatisfiedClientsSection from "./components/SatisfiedClientsSection";
 import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "./components/Footer";
 import ShowingModal from "./components/ShowingModal";
@@ -14,6 +16,19 @@ export default function HomeClient() {
   const [tourModalOpen, setTourModalOpen] = useState(false);
   const [selectedProperty, setSelectedProperty] = useState(null);
   const [sellerAddress, setSellerAddress] = useState("");
+  const carouselRef = useRef(null);
+
+  const scrollLeft = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: -400, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (carouselRef.current) {
+      carouselRef.current.scrollBy({ left: 400, behavior: "smooth" });
+    }
+  };
 
   const handlePropertyTour = (property) => {
     setSelectedProperty(property);
@@ -31,8 +46,52 @@ export default function HomeClient() {
       <div className="page-wrapper" style={{ paddingBottom: 0 }}>
         <Navbar onOpenTourModal={handleOpenGeneralTour} />
 
-        {/* Top Hero Image Banner: Fairfax, Tysons, and McLean */}
-        <div className="home-top-hero-banner">
+        {/* Top Hero Carousel Section: Explore Fairfax County Communities */}
+        <section className="home-top-hero-section" aria-label="Fairfax County Community Guides">
+          <div className="home-top-hero-header">
+            <div>
+              <div className="home-top-hero-pill-badge">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Fairfax County Neighborhood Monographs</span>
+              </div>
+              <h2 className="home-top-hero-title">
+                Explore Premier Fairfax County Communities
+              </h2>
+              <p className="home-top-hero-subtitle">
+                Definitive architectural monographs, school pyramid feeder analyses &amp; lifestyle guides.
+              </p>
+            </div>
+
+            <div className="home-top-hero-controls">
+              <button
+                type="button"
+                onClick={scrollLeft}
+                className="home-top-hero-btn"
+                aria-label="Scroll left to previous communities"
+                title="Scroll left"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </button>
+              <button
+                type="button"
+                onClick={scrollRight}
+                className="home-top-hero-btn"
+                aria-label="Scroll right to more communities"
+                title="Scroll right"
+              >
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div className="home-top-hero-banner" ref={carouselRef}>
           <Link
             href="/fairfax-county-history-real-estate-landscape"
             target="_blank"
@@ -2049,12 +2108,17 @@ export default function HomeClient() {
               </div>
             </div>
           </Link>
-        </div>
+          </div>
+        </section>
       </div>
 
       <TrustStats />
 
       <SellerAppointmentSection prefilledAddress={sellerAddress} isH1={true} />
+
+      <FeaturedCondosSection />
+
+      <SatisfiedClientsSection />
 
       <TestimonialsSection />
 
