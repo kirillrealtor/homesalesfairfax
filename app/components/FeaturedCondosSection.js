@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 
 export default function FeaturedCondosSection() {
   return (
@@ -23,17 +22,17 @@ export default function FeaturedCondosSection() {
               Skyline Condominiums
             </h2>
             <p className="featured-condo-text">
-              Welcome to Skyline Subdivision located in Falls Church, Virginia, across the Potomac River from Washington DC. It is only 5 miles from the Pentagon and 7 miles from Reagan National Airport. In the heart of Northern Virginia, it offers a convenient lifestyle in a serene surrounding.
+              Welcome to the iconic Skyline Subdivision situated in Falls Church, Virginia, just across the Potomac River from Washington, D.C. Positioned merely five miles from the Pentagon and seven miles from Reagan National Airport, this landmark high-rise enclave provides unmatched regional convenience enveloped by serene, mature parkland.
             </p>
             <p className="featured-condo-text">
-              Envisioned by developer Charles E. Smith in the early 1970s Skyline, situated in the historic Bailey&apos;s Crossroads section of Falls Church, Skyline Subdivision offers a total living environment with places to eat, shop, work, play and reside - all within an easy distance from your front door.
+              Pioneered by master developer Charles E. Smith in the early 1970s within the historic Bailey&apos;s Crossroads corridor, Skyline delivers an all-inclusive vertical community. Comprising Skyline Plaza, Skyline Square, and Skyline House, residents enjoy seamless access to dining, shopping, outdoor recreation, and direct transit corridors right outside their front door.
             </p>
             <Link
               href="/skyline-condominiums"
               className="featured-condo-btn"
-              title="View Skyline Condominiums Floorplans and Listings"
+              title="Explore Skyline Condominiums Residences and Community Guide"
             >
-              VIEW FLOORPLANS AND LISTINGS
+              EXPLORE RESIDENCES &amp; LISTINGS
             </Link>
           </div>
         </div>
@@ -54,14 +53,17 @@ export default function FeaturedCondosSection() {
               Northampton Place Condominiums
             </h2>
             <p className="featured-condo-text">
-              NHP is a beautiful, 16 story, 275-unit condominium community located in Alexandria Virginia. Northampton Place boasts an elegant lobby with marble and granite finishes, a fitness center, billiards room and party room available for resident use twenty-four hours daily. It&apos;s state of the art building systems and professional management team keep the property and grounds in pristine condition year-round. If location is everything, Northampton Place has it all, perfectly located just outside of historic Old Town Alexandria and just minutes from Crystal City, the Pentagon, Pentagon City, and Washington, D.C. Other amenities include 24 h. concierge service, heated outdoor pool, gated courtyard with dining tables and charcoal grills, and underground parking.
+              Northampton Place stands as a premier 16-story luxury condominium tower comprising 275 refined residences along the prestigious South Columbia Pike corridor in Alexandria, Virginia. The building welcomes residents with an imposing marble and granite foyer, round-the-clock executive concierge services, an expansive fitness center, a billiards lounge, and private hospitality suites.
+            </p>
+            <p className="featured-condo-text">
+              Backed by state-of-the-art building infrastructure and an exceptional management team, Northampton Place offers year-round resort living moments from Historic Old Town Alexandria, Crystal City, the Pentagon, and downtown Washington, D.C. Premium community amenities include a heated swimming pool, a landscaped private courtyard with barbecue dining, and secure garage parking.
             </p>
             <Link
               href="/northampton-place-condominiums"
               className="featured-condo-btn"
-              title="View Northampton Place Condominiums Floorplans and Listings"
+              title="Explore Northampton Place Condominiums Residences and Community Guide"
             >
-              VIEW FLOORPLANS AND LISTINGS
+              EXPLORE RESIDENCES &amp; LISTINGS
             </Link>
           </div>
         </div>

@@ -247,15 +247,15 @@ export default function NorthamptonPlaceClient() {
               </h2>
 
               <p style={{ fontSize: "1.02rem", color: "var(--ink-700)", lineHeight: 1.75, marginBottom: "20px" }}>
-                NHP is a beautiful, 16 story, 275-unit condominium community located in Alexandria Virginia. Northampton Place boasts an elegant lobby with marble and granite finishes, a fitness center, billiards room and party room available for resident use twenty-four hours daily.
+                Northampton Place stands as a premier 16-story luxury condominium tower comprising 275 refined residences along the prestigious South Columbia Pike corridor in Alexandria, Virginia. The building welcomes residents with an imposing marble and granite foyer, round-the-clock executive concierge services, an expansive fitness center, a billiards lounge, and private hospitality suites.
               </p>
 
               <p style={{ fontSize: "1.02rem", color: "var(--ink-700)", lineHeight: 1.75, marginBottom: "20px" }}>
-                It&apos;s state of the art building systems and professional management team keep the property and grounds in pristine condition year-round. If location is everything, Northampton Place has it all, perfectly located just outside of historic Old Town Alexandria and just minutes from Crystal City, the Pentagon, Pentagon City, and Washington, D.C.
+                Backed by state-of-the-art building infrastructure and an exceptional management team, Northampton Place maintains pristine condition throughout the year. The community offers seamless connectivity to Historic Old Town Alexandria, Crystal City, Amazon HQ2, the Pentagon, and downtown Washington, D.C.
               </p>
 
               <p style={{ fontSize: "1.02rem", color: "var(--ink-700)", lineHeight: 1.75, marginBottom: "28px" }}>
-                Other amenities include 24 h. concierge service, heated outdoor pool, gated courtyard with dining tables and charcoal grills, and underground parking.
+                Full-service lifestyle amenities include 24-hour concierge reception, a heated outdoor swimming pool, a landscaped private courtyard with barbecue dining stations, and secured underground garage parking.
               </p>
 
 

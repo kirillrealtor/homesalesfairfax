@@ -107,15 +107,15 @@ export default function SkylineCondominiumsClient() {
               </h2>
 
               <p style={{ fontSize: "1.02rem", color: "var(--ink-700)", lineHeight: 1.75, marginBottom: "16px" }}>
-                Welcome to Skyline Subdivision located in Falls Church, Virginia, across the Potomac River from Washington DC. It is only 5 miles from the Pentagon and 7 miles from Reagan National Airport. In the heart of Northern Virginia, it offers a convenient lifestyle in a serene surrounding.
+                Welcome to the landmark Skyline Subdivision located in Falls Church, Virginia, directly across the Potomac River from Washington, D.C. Situated five miles from the Pentagon and seven miles from Reagan National Airport, Skyline delivers exceptional regional accessibility paired with peaceful residential surroundings.
               </p>
 
               <p style={{ fontSize: "1.02rem", color: "var(--ink-700)", lineHeight: 1.75, marginBottom: "16px" }}>
-                Envisioned by developer Charles E. Smith in the early 1970s Skyline, situated in the historic Bailey&apos;s Crossroads section of Falls Church, Skyline Subdivision offers a total living environment with places to eat, shop, work, play and reside – all within an easy distance from your front door. Skyline Subdivision is just minutes away from the Tyson&apos;s Corner, Ballston Commons, Metro stations and all major transportation arteries. Enjoy an easy commute to DC, the Pentagon and all points in Northern Virginia.
+                Conceived by master builder Charles E. Smith in the early 1970s within the historic Bailey&apos;s Crossroads corridor, Skyline establishes a comprehensive vertical lifestyle village. Residents enjoy immediate proximity to Tysons Corner, Ballston, regional Metro lines, and primary Northern Virginia commuter routes, ensuring an effortless daily commute.
               </p>
 
               <p style={{ fontSize: "1.02rem", color: "var(--ink-700)", lineHeight: 1.75, marginBottom: "28px" }}>
-                The residential units are spacious boasting generous room sizes, lots of roomy closets, in-unit laundry facilities, panoramic views, 24-hour security and front desk service plus garage parking.
+                Residences feature expansive interior layouts, ample storage capacity, in-unit laundry accommodations, sweeping panoramic views of Northern Virginia and the capital skyline, 24-hour concierge security, and reserved garage parking.
               </p>
 
               {/* Three Red Enclave Action Buttons */}
