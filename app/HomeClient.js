@@ -1769,6 +1769,34 @@ export default function HomeClient() {
               </div>
             </div>
           </Link>
+
+          <Link
+            href="/wolf-trap-va-real-estate"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="home-top-hero-link"
+            title="Wolf Trap, VA Real Estate: Luxury Estates, National Park & Vienna"
+          >
+            <div className="home-top-hero-img-wrap">
+              <img
+                src="/images/County/Wolf Trap.jpg"
+                alt="Wolf Trap, VA Real Estate: Luxury Custom Estates, National Park for the Performing Arts & Tysons Proximity"
+                className="home-top-hero-img"
+                loading="eager"
+              />
+              <div className="home-top-hero-overlay" />
+              <div className="home-top-hero-badge">
+                <span className="home-top-hero-badge-pill">
+                  <svg className="home-top-hero-badge-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                    <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+                  </svg>
+                  <span>Read about Wolf Trap</span>
+                  <span className="home-top-hero-badge-arrow">→</span>
+                </span>
+              </div>
+            </div>
+          </Link>
         </div>
       </div>
 
