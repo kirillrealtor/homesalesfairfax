@@ -19,13 +19,13 @@ export default function HomeClient() {
 
   const scrollLeft = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: -400, behavior: "smooth" });
+      carouselRef.current.scrollBy({ left: -560, behavior: "smooth" });
     }
   };
 
   const scrollRight = () => {
     if (carouselRef.current) {
-      carouselRef.current.scrollBy({ left: 400, behavior: "smooth" });
+      carouselRef.current.scrollBy({ left: 560, behavior: "smooth" });
     }
   };
 
