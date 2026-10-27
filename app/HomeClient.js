@@ -7,7 +7,6 @@ import TrustStats from "./components/TrustStats";
 import SellerAppointmentSection from "./components/SellerAppointmentSection";
 import FeaturedCondosSection from "./components/FeaturedCondosSection";
 import SatisfiedClientsSection from "./components/SatisfiedClientsSection";
-import TestimonialsSection from "./components/TestimonialsSection";
 import Footer from "./components/Footer";
 import ShowingModal from "./components/ShowingModal";
 
@@ -2119,8 +2118,6 @@ export default function HomeClient() {
       <FeaturedCondosSection />
 
       <SatisfiedClientsSection />
-
-      <TestimonialsSection />
 
       <Footer />
 
