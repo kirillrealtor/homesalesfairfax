@@ -258,30 +258,7 @@ export default function NorthamptonPlaceClient() {
                 Other amenities include 24 h. concierge service, heated outdoor pool, gated courtyard with dining tables and charcoal grills, and underground parking.
               </p>
 
-              {/* Red Action Button: Floorplans */}
-              <div>
-                <a
-                  href="https://drive.google.com/file/d/0B9vFwDtLUX4uOGViZWU0ZjgtZDZmNy00MmMzLThhY2UtMDVmYjAwNjg2ZDNi/view?hl=en"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    backgroundColor: "#DC2830",
-                    color: "#FFFFFF",
-                    padding: "13px 26px",
-                    borderRadius: "6px",
-                    fontSize: "0.88rem",
-                    fontWeight: 700,
-                    letterSpacing: "0.04em",
-                    textTransform: "uppercase",
-                    textDecoration: "none",
-                    display: "inline-block",
-                    boxShadow: "0 2px 10px rgba(220, 40, 48, 0.25)",
-                    transition: "all 0.15s ease"
-                  }}
-                >
-                  Floorplans &rarr;
-                </a>
-              </div>
+
             </div>
           </div>
         </div>
