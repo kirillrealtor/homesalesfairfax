@@ -491,6 +491,12 @@ export default function sitemap() {
       priority: 0.95,
     },
     {
+      url: `${baseUrl}/accotink-va-real-estate`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.95,
+    },
+    {
       url: `${baseUrl}/burke-va-homes-for-sale`,
       lastModified: new Date(),
       changeFrequency: "weekly",
