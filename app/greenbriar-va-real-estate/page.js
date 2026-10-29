@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Greenbriar.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Greenbriar VA Real Estate - Levitt & Sons Homes, Greenbriar Pool & Chantilly High",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Greenbriar VA Real Estate: Mid-Century Colonials & Chantilly High",
     description: "Exhaustive guide to Greenbriar VA real estate: 1.6 sq mi CDP, Levitt & Sons colonials & split-levels, Greenbriar East/West Elementary, Rocky Run Middle & Chantilly High.",
+    images: ["/images/County/Greenbriar.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function GreenbriarPage() {
       "headline": "Greenbriar, VA Real Estate: The Definitive Guide to Levitt & Sons Mid-Century Architecture, Greenbriar East & West Elementary, Rocky Run & Chantilly Feeder Pyramids",
       "description": "Comprehensive architectural monograph & real estate guide to Greenbriar VA: 1.6 square-mile Census-Designated Place, classic Levitt & Sons single-family colonials and split-levels with zero mandatory HOA, Greenbriar Shopping Center, Greenbriar Pool Club, Rocky Run Middle School, and Chantilly High School pyramid.",
       "url": "https://www.homesalesfairfax.com/greenbriar-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Greenbriar.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

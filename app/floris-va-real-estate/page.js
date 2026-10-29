@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Floris.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Floris VA Real Estate - Frying Pan Farm Park, Custom Enclaves & Dulles Tech Corridor",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Floris VA Real Estate: Frying Pan Park, Tech Corridor & Homes",
     description: "Exhaustive guide to Floris VA real estate: 2.8 sq mi CDP, historic Frying Pan Farm Park, Dulles Tech Corridor, Floris Elementary, and Silver Line Metro access.",
+    images: ["/images/County/Floris.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function FlorisPage() {
       "headline": "Floris, VA Real Estate: The Definitive Guide to Frying Pan Farm Park, Dulles Tech Corridor, Executive Colonials & Silver Line Metro",
       "description": "Comprehensive architectural monograph & real estate guide to Floris VA: 2.8 square-mile Census-Designated Place, historic 135-acre working Frying Pan Farm Park, executive single-family colonials with zero mandatory HOA, top-ranked Floris Elementary and Carson Middle, and Innovation Center Silver Line Metrorail connectivity.",
       "url": "https://www.homesalesfairfax.com/floris-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Floris.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

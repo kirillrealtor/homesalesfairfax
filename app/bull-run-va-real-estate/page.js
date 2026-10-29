@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Bull Run.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Bull Run VA Real Estate - Regional Park, Trails & Colonials",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Bull Run VA Real Estate: Regional Park, Trails & Homes",
     description: "Exhaustive guide to Bull Run VA real estate: 2.6 sq mi CDP, 1,500-acre Bull Run Regional Park, Bull Run Occoquan Trail & Westfield/Centreville pyramids.",
+    images: ["/images/County/Bull Run.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function BullRunPage() {
       "headline": "Bull Run, VA Real Estate: The Definitive Guide to 1,500-Acre Regional Parkland Living, Historic Battlefields, Wooded Colonials & Westfield Pyramids",
       "description": "Comprehensive architectural monograph & real estate guide to Bull Run VA: 2.6 square-mile Census-Designated Place, 1,500-acre Bull Run Regional Park, 19.7-mile Bull Run Occoquan Trail, executive single-family colonials and townhomes, and premier Westfield and Centreville high school feeder pyramids.",
       "url": "https://www.homesalesfairfax.com/bull-run-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Bull%20Run.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

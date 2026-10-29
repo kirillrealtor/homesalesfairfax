@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Pohick.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Pohick VA Real Estate - Historic 1769 Pohick Church, Pohick Bay & Wooded Estates",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Pohick VA Real Estate: Historic Church, Bay & Community Guide",
     description: "Exhaustive guide to Pohick VA real estate: historic 1769 Pohick Church, Pohick Bay Regional Park, custom homes, South County schools, and VRE access.",
+    images: ["/images/County/Pohick.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function PohickPage() {
       "headline": "Pohick, VA Real Estate: The Definitive Guide to Colonial Heritage, Pohick Church, Pohick Bay & South County Living",
       "description": "Comprehensive architectural monograph & real estate guide to Pohick VA: historic 1769 Pohick Church of George Washington and George Mason, Pohick Bay Regional Park, Pohick Creek Stream Valley, executive and custom single-family homes, South County High School, and Lorton VRE commuter rail access.",
       "url": "https://www.homesalesfairfax.com/pohick-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Pohick.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

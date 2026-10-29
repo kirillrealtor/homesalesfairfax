@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Crosspointe.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Crosspointe VA Real Estate - Silverbrook Lake, Pools & Homes",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Crosspointe VA Real Estate: Community Guide, Lakes & Trails",
     description: "Exhaustive guide to Crosspointe VA real estate: 2.4 sq mi master-planned CDP, two community lakes, dual pool complexes, Silverbrook Elementary, and South County pyramid.",
+    images: ["/images/County/Crosspointe.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function CrosspointePage() {
       "headline": "Crosspointe, VA Real Estate: The Definitive Guide to Master-Planned Living, Twin Community Lakes, Resort Amenities & South County Schools",
       "description": "Comprehensive architectural monograph & real estate guide to Crosspointe VA: 2.4 square-mile master-planned Census-Designated Place, Silverbrook Lake and Woodglen Lake, dual swimming pool complexes, executive single-family colonials, Silverbrook Elementary, South County High School, and Fairfax County Parkway access.",
       "url": "https://www.homesalesfairfax.com/crosspointe-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Crosspointe.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

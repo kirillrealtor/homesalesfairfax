@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Difficult Run.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Difficult Run VA Real Estate - Stream Valley & Secluded Custom Acreage Estates",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Difficult Run VA Real Estate: Wooded Acreage Estates & Parklands",
     description: "Exhaustive guide to Difficult Run VA real estate: 58 sq mi watershed basin, custom multi-acre luxury estates, Cross County Trail & top Fairfax school pyramids.",
+    images: ["/images/County/Difficult Run.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function DifficultRunPage() {
       "headline": "Difficult Run, VA Real Estate: The Definitive Guide to 58-Square-Mile Watershed Living, Multi-Acre Wooded Estates, Cross County Trail & Premier School Feeder Pyramids",
       "description": "Comprehensive architectural monograph & real estate guide to Difficult Run VA: Fairfax County's largest watershed basin, secluded custom acreage manors and transitional farmhouses with zero mandatory HOA, Difficult Run Stream Valley Park and Cross County Trail network, and top Oakton and Langley school pyramids.",
       "url": "https://www.homesalesfairfax.com/difficult-run-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Difficult%20Run.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

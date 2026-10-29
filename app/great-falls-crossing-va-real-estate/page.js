@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Great Falls Crossing.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Great Falls Crossing VA Real Estate - Executive Brick Colonials, Pool & Metro Proximity",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Great Falls Crossing VA Real Estate: Luxury Colonials & Pools",
     description: "Exhaustive guide to Great Falls Crossing VA real estate: premier executive enclave, NVHomes brick colonials, community pool, Difficult Run trails & top schools.",
+    images: ["/images/County/Great Falls Crossing.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function GreatFallsCrossingPage() {
       "headline": "Great Falls Crossing, VA Real Estate: The Definitive Guide to Executive Brick Colonials, Community Pool Amenities, Difficult Run Trails & Silver Line Metro",
       "description": "Comprehensive architectural monograph & real estate guide to Great Falls Crossing VA: premier master-planned luxury enclave in northern Fairfax County, stately NVHomes brick colonials with side-load garages, private community pool and tennis facilities, Difficult Run Stream Valley trail access, and top Langley and Oakton feeder pyramids.",
       "url": "https://www.homesalesfairfax.com/great-falls-crossing-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Great%20Falls%20Crossing.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Newington Forest.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Newington Forest VA Real Estate - Master-Planned Community, NFCA Pools, Trails & Schools",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Newington Forest VA Real Estate: Community Guide, Trails & Schools",
     description: "Comprehensive guide to Newington Forest VA real estate: 3.4 sq mi master-planned CDP, community pool & trails, South County pyramid, and Fairfax County Parkway access.",
+    images: ["/images/County/Newington Forest.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function NewingtonForestPage() {
       "headline": "Newington Forest, VA Real Estate: The Definitive Guide to Master-Planned Living, Pohick Stream Valley, NFCA Amenities & South County Schools",
       "description": "Comprehensive architectural monograph & real estate guide to Newington Forest VA: 3.4 square-mile master-planned Census-Designated Place, Newington Forest Community Association (NFCA) recreational amenities, detached homes and townhomes, Newington Forest Elementary, South County High School, and multimodal commuter corridors.",
       "url": "https://www.homesalesfairfax.com/newington-forest-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Newington%20Forest.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/McNair.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "McNair VA Real Estate - Innovation Center Silver Line Metro, Townhomes & Tech Corridor",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "McNair VA Real Estate: Innovation Center Metro & Modern Homes",
     description: "Exhaustive guide to McNair VA real estate: 2.1 sq mi CDP, Innovation Center Silver Line Metro, McNair Farms, McNair Upper Elementary & Dulles Tech Corridor.",
+    images: ["/images/County/McNair.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function McNairPage() {
       "headline": "McNair, VA Real Estate: The Definitive Guide to Innovation Center Silver Line Metro, McNair Farms, Executive Townhomes & Tech Corridor Living",
       "description": "Comprehensive architectural monograph & real estate guide to McNair VA: 2.1 square-mile Census-Designated Place, Innovation Center Metrorail Station (Silver Line), McNair Farms master-planned amenities, luxury multi-level townhomes, McNair Elementary and Upper campuses, and immediate Dulles Technology Corridor connectivity.",
       "url": "https://www.homesalesfairfax.com/mcnair-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/McNair.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Sully Square.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Sully Square VA Real Estate - Route 28 Tech Corridor, Executive Townhomes & Udvar-Hazy",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Sully Square VA Real Estate: Route 28 Tech Hub & Homes",
     description: "Exhaustive guide to Sully Square VA real estate: 1.8 sq mi CDP, Route 28 & Route 50 corridor, Udvar-Hazy Center, executive townhomes & Chantilly/Westfield pyramids.",
+    images: ["/images/County/Sully Square.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function SullySquarePage() {
       "headline": "Sully Square, VA Real Estate: The Definitive Guide to Route 28 Tech Corridor Living, Executive Townhomes, Udvar-Hazy Center & Chantilly/Westfield Pyramids",
       "description": "Comprehensive architectural monograph & real estate guide to Sully Square VA: 1.8 square-mile Census-Designated Place, Route 28 and Route 50 interchange, Udvar-Hazy Air & Space Museum, executive brick townhomes and single-family colonials, and top Chantilly and Westfield high school pyramids.",
       "url": "https://www.homesalesfairfax.com/sully-square-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Sully%20Square.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Newington.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Newington VA Real Estate - Saratoga, Mount Air, Fort Belvoir & I-95 Corridors",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Newington VA Real Estate: Community Guide, Parks & Commuter Hub",
     description: "Exhaustive guide to Newington VA real estate: 4.6 sq mi CDP, historic Mount Air, Saratoga, Newington Station, Fort Belvoir proximity, and I-95 Express access.",
+    images: ["/images/County/Newington.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function NewingtonPage() {
       "headline": "Newington, VA Real Estate: The Definitive Guide to Spatial Morphology, Mount Air Heritage, Fort Belvoir & Multimodal Corridors",
       "description": "Comprehensive architectural monograph & real estate guide to Newington VA: 4.6 square-mile Census-Designated Place, historic 18th-century Mount Air Plantation estate, Saratoga, Newington Station, detached homes with zero mandatory HOA, Accotink Stream Valley, Saratoga Elementary, and direct I-95 Express Lanes connectivity.",
       "url": "https://www.homesalesfairfax.com/newington-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Newington.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

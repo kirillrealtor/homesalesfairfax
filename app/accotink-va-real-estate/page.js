@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Accotink.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Accotink VA Real Estate - Lake Accotink, Stream Valley & Homes",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Accotink VA Real Estate: Stream Valley, Lake & Community Guide",
     description: "Exhaustive guide to Accotink VA real estate: historic village, Lake Accotink Park, Accotink Stream Valley trail, Fort Belvoir proximity, and top FCPS schools.",
+    images: ["/images/County/Accotink.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function AccotinkPage() {
       "headline": "Accotink, VA Real Estate: The Definitive Guide to Stream Valley Living, Historic Accotink Village, Lake Accotink & Fort Belvoir Gateway",
       "description": "Comprehensive architectural monograph & real estate guide to Accotink VA: historic 18th-century mill village and stream basin, 493-acre Lake Accotink Park, Gerry Connolly Cross County Trail, single-family detached homes with zero mandatory HOA, Fort Belvoir proximity, and multimodal transit corridors.",
       "url": "https://www.homesalesfairfax.com/accotink-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Accotink.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

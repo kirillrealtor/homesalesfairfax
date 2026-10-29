@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Dranesville.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Dranesville VA Real Estate - Historic Crossroads, Custom Manors & Langley High",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Dranesville VA Real Estate: Luxury Estates & Langley High",
     description: "Exhaustive guide to Dranesville VA real estate: 3.9 sq mi CDP, historic 1820s Dranesville Tavern, Colvin Run Mill, custom acreage estates & Langley High pyramid.",
+    images: ["/images/County/Dranesville.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function DranesvillePage() {
       "headline": "Dranesville, VA Real Estate: The Definitive Guide to Historic Stagecoach Crossroads, Custom Acreage Estates, Colvin Run Mill & Langley High Pyramid",
       "description": "Comprehensive architectural monograph & real estate guide to Dranesville VA: 3.9 square-mile Census-Designated Place, historic 1820s Dranesville Tavern and 1861 Civil War battlefield, operational Colvin Run Mill, custom multi-acre luxury manors with zero mandatory HOA, and top-tier Langley High School pyramid.",
       "url": "https://www.homesalesfairfax.com/dranesville-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Dranesville.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

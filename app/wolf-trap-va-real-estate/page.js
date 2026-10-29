@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Wolf Trap.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Wolf Trap VA Real Estate - Luxury Custom Estates, National Park for Performing Arts & Vienna",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Wolf Trap VA Real Estate: Luxury Estates, National Park & Vienna",
     description: "Definitive guide to Wolf Trap VA real estate: 9.8 sq mi luxury CDP, Wolf Trap National Park for the Performing Arts, 1-2+ acre estates, Langley & Madison pyramids.",
+    images: ["/images/County/Wolf Trap.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function WolfTrapPage() {
       "headline": "Wolf Trap, VA Real Estate: The Definitive Guide to Luxury Estate Living, Wolf Trap National Park, Difficult Run & Vienna Corridors",
       "description": "Comprehensive architectural monograph & real estate guide to Wolf Trap VA: 9.8 square-mile luxury Census-Designated Place, the nation's only National Park for the Performing Arts, custom estates on one- to two-plus acre wooded lots with zero mandatory HOA, Difficult Run Stream Valley, and Langley and Madison High School pyramids.",
       "url": "https://www.homesalesfairfax.com/wolf-trap-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Wolf%20Trap.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Franklin Farm.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Franklin Farm VA Real Estate - Master-Planned Enclave, 6 Ponds & Trails",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Franklin Farm VA Real Estate: 1,280-Acre Master Plan, Ponds & Homes",
     description: "Exhaustive guide to Franklin Farm VA real estate: 1,280-acre master-planned community, 6 fishing ponds, 13+ miles of trails, 2 pools, Oak Hill Elementary & Chantilly/Oakton pyramids.",
+    images: ["/images/County/Franklin Farm.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function FranklinFarmPage() {
       "headline": "Franklin Farm, VA Real Estate: The Definitive Guide to 1,280-Acre Master-Planned Living, 6 Fishing Ponds, 13+ Miles of Trails & Top School Pyramids",
       "description": "Comprehensive architectural monograph & real estate guide to Franklin Farm VA: 1,280-acre nationally recognized master-planned community, 6 community fishing ponds, 13+ miles of paved forested trails, dual aquatic centers, tennis and pickleball facilities, Oak Hill Elementary, Franklin Middle, and Chantilly/Oakton high school pyramids.",
       "url": "https://www.homesalesfairfax.com/franklin-farm-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Franklin%20Farm.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

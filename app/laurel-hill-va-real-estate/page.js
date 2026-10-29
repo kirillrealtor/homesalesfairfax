@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/Laurel Hill.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "Laurel Hill VA Real Estate - Workhouse Arts Center, Championship Golf & Homes",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Laurel Hill VA Real Estate: Community Guide, Arts & Golf",
     description: "Definitive guide to Laurel Hill VA real estate: 4.6 sq mi CDP, Workhouse Arts Center, championship Laurel Hill Golf Club, South County schools, and VRE access.",
+    images: ["/images/County/Laurel Hill.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function LaurelHillPage() {
       "headline": "Laurel Hill, VA Real Estate: The Definitive Guide to Master-Planned Living, Workhouse Arts Center, Championship Golf & South County Schools",
       "description": "Comprehensive architectural monograph & real estate guide to Laurel Hill VA: 4.6 square-mile Census-Designated Place, historic Workhouse Arts Center adaptive reuse, championship 18-hole Laurel Hill Golf Club, neo-traditional single-family homes and luxury townhomes, Laurel Hill Elementary, and Lorton VRE commuter rail access.",
       "url": "https://www.homesalesfairfax.com/laurel-hill-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/Laurel%20Hill.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",

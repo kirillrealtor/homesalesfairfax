@@ -13,11 +13,20 @@ export const metadata = {
     siteName: "homesalesfairfax.com",
     locale: "en_US",
     type: "article",
+    images: [
+      {
+        url: "/images/County/South Run.jpg",
+        width: 2048,
+        height: 1152,
+        alt: "South Run VA Real Estate - Custom Brick Colonials, South Run RECenter & Lake Mercer Trails",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "South Run VA Real Estate: Community Guide, RECenter & Trails",
     description: "Exhaustive guide to South Run VA real estate: 2.6 sq mi executive CDP, South Run RECenter, Lake Mercer, Burke Lake trails, and Lake Braddock pyramid.",
+    images: ["/images/County/South Run.jpg"],
   },
 };
 
@@ -31,6 +40,7 @@ export default function SouthRunPage() {
       "headline": "South Run, VA Real Estate: The Definitive Guide to Executive Living, South Run RECenter, Lake Mercer & Burke Lake Trails",
       "description": "Comprehensive architectural monograph & real estate guide to South Run VA: 2.6 square-mile executive Census-Designated Place, custom brick colonials on half-acre to one-acre wooded lots, South Run Community Association pool, South Run RECenter, Lake Mercer and Burke Lake trail connectivity, and top FCPS pyramids.",
       "url": "https://www.homesalesfairfax.com/south-run-va-real-estate",
+      "image": "https://www.homesalesfairfax.com/images/County/South%20Run.jpg",
       "inLanguage": "en-US",
       "publisher": {
         "@type": "Organization",
